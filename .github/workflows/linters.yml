@@ -1,0 +1,33 @@
+name: Linters Check
+
+on:
+  pull_request:
+    branches: [ "public" ]
+
+jobs:
+  linting:
+    name: Run linting rules
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Yarn Install
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: install # will run `yarn install` command
+
+      - name: ESLint Check
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: lint:eslint # will run `yarn lint:eslint` command
+
+      - name: Prettier Check
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: lint:prettier # will run `yarn lint:prettier` command
+
+      - name: Markdownlint Check
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: lint:markdown # will run `yarn lint:eslint` command

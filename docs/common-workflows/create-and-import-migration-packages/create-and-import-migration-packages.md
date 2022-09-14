@@ -1,0 +1,24 @@
+---
+title: Create and Import Migration Packages
+description: You can use REST API requests to create and import migration packages.
+---
+
+:::tip
+
+You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7a6ff268-6e87-449b-a51f-30f134ab54d4?ctx=documentation).
+
+Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+
+:::
+
+You can use REST API requests to create and import migration packages.
+
+- [Create a Migration Package](./create-a-migration-package.md)
+- [Import a Migration Package](./import-a-migration-package.md)
+- [View Content from a Newly Created Package](./view-newly-created-package.md)
+- [View Content from an Uploaded Package](./view-uploaded-package.md)
+- [Manage Content Group Packages](./manage-content-group-packages.md)
+
+See [KB34475](https://community.microstrategy.com/s/article/KB34475-How-to-migrate-Security-Roles-and-Security-Filters?language=en_US) for more information about how to migrate security roles and security filters between projects using MicroStrategy Object Manager. You can use the above REST API workflows to do the same thing.
+
+See [KB485076](https://community.microstrategy.com/s/article/Troubleshoot-object-migration-RESTful-API-issues) for more information about how to troubleshoot object migration issues.

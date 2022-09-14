@@ -1,0 +1,27 @@
+env:
+  browser: true
+  commonjs: true
+  es2022: true
+  node: true
+extends:
+  - 'eslint:recommended'
+  - 'plugin:markdown/recommended'
+  - 'prettier'
+plugins:
+  - markdown
+  - prettier
+parserOptions:
+  sourceType: module
+  ecmaVersion: 13
+overrides:
+  - files:
+    - "**/*.md"
+    processor: "markdown/markdown"
+  - files:
+      - '**/*.md/*.{js,javascript}'
+    parserOptions:
+      ecmaFeatures:
+        impliedStrict: true
+rules:
+  prettier/prettier:
+    - error

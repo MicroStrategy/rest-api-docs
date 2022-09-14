@@ -1,0 +1,12 @@
+{
+  "*.md": [
+    "yarn eslint --fix --quiet",
+    "yarn prettier --loglevel warn --config ./.prettierrc --write",
+    "yarn prettier --loglevel warn --config ./.prettiermarkdownrc --write",
+    "yarn markdownlint --fix"
+  ],
+  "*.js": [
+    "yarn eslint --fix --quiet",
+    "yarn prettier --loglevel warn --config ./.prettierrc --write"
+  ]
+}
