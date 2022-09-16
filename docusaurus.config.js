@@ -11,7 +11,7 @@ const config = {
   url: process.env.URL || "https://github.microstrategy.com/",
   baseUrl: process.env.BASE_URL || "/",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenMarkdownLinks: "throw",
   favicon: "img/favicon.ico",
   // we will use `undefined` to be intuitive for our case
   trailingSlash: undefined,
@@ -44,7 +44,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: `https://${process.env.GITHUB_HOST}/${process.env.ORGANIZATION_NAME}/${process.env.REPO_NAME}/tree/main`,
+          editUrl: `https://${process.env.GITHUB_HOST}/${process.env.ORGANIZATION_NAME}/${process.env.REPO_NAME}/tree/${process.env.BRANCH_NAME}`,
           // includeCurrentVersion: true,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
