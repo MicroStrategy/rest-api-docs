@@ -15,7 +15,6 @@ Description: What's New in the REST API.
 
 ## 2021 Update 5
 
-- [Retrieve, create, and update time zone objects.](./common-workflows/manage-time-zone-objects/manage-time-zone-objects.md)
 - [Retrieve, create, and update metric objects.](./common-workflows/manage-metric-objects/manage-metric-objects.md)
 - [Retrieve, create, and update transformation objects.](./common-workflows/manage-transformation-objects/manage-transformation-objects.md)
 - [Retrieve, create, and update base formula objects.](./common-workflows/manage-base-formula-objects/manage-base-formula-objects.md)
