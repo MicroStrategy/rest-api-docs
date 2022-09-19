@@ -481,20 +481,6 @@ const sidebars = {
           type: "category",
           link: {
             type: "doc",
-            id: "common-workflows/manage-time-zone-objects/manage-time-zone-objects",
-          },
-          label: "Manage Time Zone Objects",
-          items: [
-            "common-workflows/manage-time-zone-objects/retrieve-a-list-of-time-zones-definitions",
-            "common-workflows/manage-time-zone-objects/retrieve-a-time-zones-definition",
-            "common-workflows/manage-time-zone-objects/create-a-time-zone-object",
-            "common-workflows/manage-time-zone-objects/update-a-time-zone-object",
-          ],
-        },
-        {
-          type: "category",
-          link: {
-            type: "doc",
             id: "common-workflows/manage-custom-group-objects/manage-custom-group-objects",
           },
           label: "Manage Custom Group Objects",
