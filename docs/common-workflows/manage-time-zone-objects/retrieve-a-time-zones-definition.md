@@ -121,7 +121,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
 
    Sample Response Code: 201 (A new changeset is created successfully.)
 
-1. Get the time zone's definition within a changeset using [`GET api/model/timezones/{timezoneId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timezones/862780DC499A14D74FEC7EB2EF317DA2).
+1. Get the time zone's definition within a changeset using [`GET /api/model/timezones/{timezoneId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timezones/862780DC499A14D74FEC7EB2EF317DA2).
 
    Sample Request Header
 

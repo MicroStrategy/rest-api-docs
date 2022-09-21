@@ -25,10 +25,10 @@ You can use REST APIs to perform the following actions on attribute qualificatio
 
 Use the following REST API endpoints to get information about attribute qualification prompts applied to dossier, document, and report objects in the metadata, as well as instance of those objects:
 
-- GET `/documents/{id}/prompts`
-- GET `/documents/{id}/instances/{instanceId}/prompts`
-- GET `/reports/{reportId}/prompts`
-- GET `/reports/{reportId}/instances/{instanceId}/prompts`
+- GET `/api/documents/{id}/prompts`
+- GET `/api/documents/{id}/instances/{instanceId}/prompts`
+- GET `/api/reports/{reportId}/prompts`
+- GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
 
 Provide the ID of the document, dossier, or report in the path of the request. You also need to provide the instance ID if you are getting information about a prompt applied to an instance of a document, dossier, or report. The response contains the prompt information. All available parameters for the prompt definition are shown below.
 
@@ -119,8 +119,8 @@ Besides the commonly-used fields, the attribute qualification prompt also contai
 
 Use the following REST API endpoints to get an attribute qualification prompt's available answer:
 
-- GET `/reports/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
-- GET `/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
+- GET `/api/reports/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
+- GET `/api/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
 
 In an attribute qualification prompt, the available objects returned by this endpoint, as well as the objects used to answer the prompt, are attributes that contain the attribute ID/name and its form ID/name. The level prompt provides the user with a list of available answers. These answers can come from three different sources:
 
@@ -171,8 +171,8 @@ The sample code below contains the definition of the elements of an attribute.
 
 Use the following REST API endpoints to answer an attribute qualification prompt applied to a dossier, document, or report:
 
-- PUT `/reports/{id}/instances/{instanceId}/prompts/answers`
-- PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
 ### Provide Specific Prompt Answers
 

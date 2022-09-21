@@ -27,46 +27,46 @@ Here is a workflow sample for using REST APIs to execute object prompts:
 
 1. The user authenticates into the environment using the following endpoint and standard authentication:
 
-   - POST `/auth/login`
+   - POST `/api/auth/login`
 
 1. Use the following endpoints to create a report or dossier/document instance:
 
-- POST `/reports/{reportId}/instances`
-- POST `/documents/{id}/instances`
+- POST `/api/reports/{reportId}/instances`
+- POST `/api/documents/{id}/instances`
 
 1. Use the following endpoints to get the collection of prompts and their respective definitions from a report, document, or dossier:
 
-   - GET `/reports/{reportId}/prompts`
-   - GET `/reports/{reportId}/instances/{instanceId}/prompts`
-   - GET `/documents/{id}/prompts`
-   - GET `/documents/{id}/instances/{instanceId}/prompts`
+   - GET `/api/reports/{reportId}/prompts`
+   - GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
+   - GET `/api/documents/{id}/prompts`
+   - GET `/api/documents/{id}/instances/{instanceId}/prompts`
 
 1. Use the following endpoints to get an available list of objects for answering the prompts for a report, document, or dossier instance:
 
-   - GET `/reports/{reportId}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
-   - GET `/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
+   - GET `/api/reports/{reportId}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
+   - GET `/api/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
 
 1. Use the following endpoints to answer a prompt applied to a dossier, document, or report instance:
 
-   - PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
-   - POST `/documents/{id}/instances/{instanceId}/prompts/answers`
+   - PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
+   - POST `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
 1. Use the following endpoints to answer specified prompts on the document, dossier, or report instance:
 
-   - PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
-   - PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
+   - PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
+   - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
 1. Get the result of a report instance. Use the following API endpoints to get report data after applying a prompt on top of the report instance:
 
-   - GET `/reports/{reportId}/instances/{instancesId}`
-   - GET `/dossiers/{dossierId}/instances/{dossierInstanceId}`
+   - GET `/api/reports/{reportId}/instances/{instancesId}`
+   - GET `/api/dossiers/{dossierId}/instances/{dossierInstanceId}`
 
 ## Obtain Elements for Answering Object Prompts
 
 To answer an object prompt, the user needs to know which object can be supplied as the answer. The following REST APIs can be used to obtain this list of objects.
 
-- GET `/reports/{reportId}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
-- GET `/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
+- GET `/api/reports/{reportId}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
+- GET `/api/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
 
 The response changes based on the request parameters provided by the caller. All available parameters are shown below.
 
@@ -87,8 +87,8 @@ The response changes based on the request parameters provided by the caller. All
 
 You use the following REST API endpoints to answer an object prompt applied to a dossier, document, or report:
 
-- PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
-- PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
+- PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
 ### Provide Specific Prompt Answers
 
@@ -139,13 +139,13 @@ Sample code for answering multiple object prompts in a single request is provide
 
 You use the following REST API endpoints to get information about object prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
 
-- GET `/documents/{id}/prompts`
+- GET `/api/documents/{id}/prompts`
 
-- GET `/documents/{id}/instances/{instanceId}/prompts`
+- GET `/api/documents/{id}/instances/{instanceId}/prompts`
 
-- GET `/reports/{reportId}/prompts`
+- GET `/api/reports/{reportId}/prompts`
 
-- GET `/reports/{reportId}/instances/{instanceId}/prompts`
+- GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
 
 You provide the ID of the document, dossier, or report in the path of the request, as well as the instance ID if you are getting information about a prompt applied to an instance of a document, dossier, or report. The response contains the prompt information.
 

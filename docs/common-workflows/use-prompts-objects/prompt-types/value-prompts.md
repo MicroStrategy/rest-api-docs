@@ -25,9 +25,9 @@ You can use REST APIs to perform the following action on value prompts:
 
 You use the following REST API endpoints to answer a value prompt applied to a dossier, document, or report:
 
-- PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
-- PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
 ### Provide Specific Prompt Answers
 
@@ -97,13 +97,13 @@ Sample code for answering a value prompt for each data type is provided below:
 
 You use the following REST API endpoints to get information about value prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
 
-- GET `/documents/{id}/prompts`
+- GET `/api/documents/{id}/prompts`
 
-- GET `/documents/{id}/instances/{instanceId}/prompts`
+- GET `/api/documents/{id}/instances/{instanceId}/prompts`
 
-- GET `/reports/{reportId}/prompts`
+- GET `/api/reports/{reportId}/prompts`
 
-- GET `/reports/{reportId}/instances/{instanceId}/prompts`
+- GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
 
 You provide the ID of the document, dossier, or report in the path of the request, as well as the instance ID if you are getting information about a prompt applied to an instance of a document, dossier, or report. The response contains the prompt information.
 

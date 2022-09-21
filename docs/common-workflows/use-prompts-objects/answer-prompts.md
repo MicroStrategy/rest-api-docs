@@ -33,13 +33,13 @@ Detailed explanations for each step are provided below:
 
 Endpoints:
 
-- POST `/documents/{id}/instances`
+- POST `/api/documents/{id}/instances`
 
-- POST `/reports/{reportId}/instances`
+- POST `/api/reports/{reportId}/instances`
 
 :::tip
 
-You can also use POST `/dossiers/{dossierId}/instances` to create an instance of a dossier.
+You can also use POST `/api/dossiers/{dossierId}/instances` to create an instance of a dossier.
 
 :::
 
@@ -73,9 +73,9 @@ The response body when you create an instance of a prompted report would look li
 
 Endpoints:
 
-- PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
-- PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
 You can provide prompt answers for three separate prompt types: attribute element prompts, object prompts, and value prompts. Sample JSON for each prompt answer is provided below. The request returns an HTTP status code of 204.
 
@@ -124,7 +124,7 @@ You can provide prompt answers for three separate prompt types: attribute elemen
 
 ## Export results to PDF
 
-Endpoint: POST `/documents/{id}/instances/{instanceId}/pdf`
+Endpoint: POST `/api/documents/{id}/instances/{instanceId}/pdf`
 
 This endpoint allows the caller to export the document to a PDF file (in the form of binary data with Base64 encoding) using the instance ID and object ID of the document. Exporting to PDF is not a required part of the prompt workflow, but it is useful for confirming that the prompts have been applied correctly.
 
@@ -136,9 +136,9 @@ The prompts supported in the MicroStrategy platform are defined in [EnumDSSXMLPr
 
 You use the following REST API endpoints to answer a prompt applied to a dossier, document, or report:
 
-- PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
-- PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
 You can use REST APIs to answer the following three prompt types:
 
@@ -152,9 +152,9 @@ You can identify prompts with the prompt key, prompt ID, or prompt name. If more
 
 You use the following REST API endpoints to answer a prompt with the default prompt answers:
 
-- PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
-- PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
 You can answer the following prompts with default answers:
 
@@ -194,9 +194,9 @@ Sample code for answering several types of prompts with the default answer, with
 
 You close a prompt by using a REST API to answer the prompt, but not providing an answer. You can call one of the following REST API endpoints to close a prompt:
 
-- PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
-- PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
 The prompts you close must all be optional; if you try to close a required prompt, you will get an error.
 
@@ -228,25 +228,25 @@ When this report is executed, the user is prompted to select the year and then q
 
 To achieve this workflow via REST API, you simply need to loop through the following workflow:
 
-1. Execute the report using POST `/v2/reports/{id}/instances`.
+1. Execute the report using POST `/api/v2/reports/{id}/instances`.
 
    There is a response with an HTTP status of 200. Inside the body, status=2, which means there are prompts to be answered.
 
    ![execute_report_response_600x160](../../images/execute_report_response_600x160.png)
 
-1. Fetch the current open prompts using GET `/reports/{id}/instances/{instanceId}/prompts`.
+1. Fetch the current open prompts using GET `/api/reports/{id}/instances/{instanceId}/prompts`.
 
    There is a response with an HTTP status of 200. One prompt is in the body.
 
    ![fetch_current_open_prompts_response_600x364](../../images/fetch_current_open_prompts_response_600x364.png)
 
-1. Fetch potential elements for prompt answering using GET `/reports/{id}/instances/{instanceId}/prompts/{id}/elements`.
+1. Fetch potential elements for prompt answering using GET `/api/reports/{id}/instances/{instanceId}/prompts/{id}/elements`.
 
    There is a response with an HTTP status of 200 and a list of elements.
 
    ![fetch_potential_elements_response_600x358](../../images/fetch_potential_elements_response_600x358.png)
 
-1. Answer the prompt using PUT `/reports/{id}/instances/{instancedId}/prompts/answers`.
+1. Answer the prompt using PUT `/api/reports/{id}/instances/{instancedId}/prompts/answers`.
 
    Request Body:
 
@@ -254,31 +254,31 @@ To achieve this workflow via REST API, you simply need to loop through the follo
 
    HTTP Response Status: 204
 
-1. Check the status of report/fetch data using GET `/v2/reports/{id}/instances/{instanceId}`.
+1. Check the status of report/fetch data using GET `/api/v2/reports/{id}/instances/{instanceId}`.
 
    There is a response of 200. The status within the body is still 2, which means there are still unanswered prompts.
 
    ![check_report_status_response_600x168](../../images/check_report_status_response_600x168.png)
 
-1. Fetch the current open prompts using GET `/reports/{id}/instances/{instanceId}/prompts`.
+1. Fetch the current open prompts using GET `/api/reports/{id}/instances/{instanceId}/prompts`.
 
    There is a response of 200 with two prompts. One prompt is closed=true, since it was already answered. If you call the GET /api/prompts API with a closed=true query parameter, the answered prompt is filtered out.
 
    ![fetch_open_prompts_response_600x447](../../images/fetch_open_prompts_response_600x447.png)
 
-1. Fetch potential elements for prompt answering using GET `/reports/{id}/instances/{instanceId}/prompts/{id}/elements`.
+1. Fetch potential elements for prompt answering using GET `/api/reports/{id}/instances/{instanceId}/prompts/{id}/elements`.
 
    There is a response of 200 with a list of elements for Quarter, which is filtered based on the prompt answer used for Year.
 
    ![fetch_elements_prompt_answer_response_600x361](../../images/fetch_elements_prompt_answer_response_600x361.png)
 
-1. Answer the prompt using PUT `/reports/{id}/instances/{instancedId}/prompts/answers`.
+1. Answer the prompt using PUT `/api/reports/{id}/instances/{instancedId}/prompts/answers`.
 
    Request Body:
 
    ![answer_prompt_request_body2_600x351](../../images/answer_prompt_request_body2_600x351.png)
 
-1. Check the status of report/fetch data using GET `/v2/reports/{id}/instances/{instanceId}`.
+1. Check the status of report/fetch data using GET `/api/v2/reports/{id}/instances/{instanceId}`.
 
 There is a response of 200. The response body now contains the data, since all prompts have been answered.
 
@@ -286,7 +286,7 @@ There is a response of 200. The response body now contains the data, since all p
 
 To reprompt a document or dossier, use the following endpoint:
 
-- POST `/documents/{id}/instances/{instanceId}/rePrompt`
+- POST `/api/documents/{id}/instances/{instanceId}/rePrompt`
 
 This sets the status back to "1", indicating that the document or dossier is waiting for prompt answers.
 
@@ -296,4 +296,4 @@ When you use this endpoint, a new instance ID is generated, different from the o
 
 To reprompt a report, simply execute the prompted report again, using the same endpoint you used originally.
 
-- PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`

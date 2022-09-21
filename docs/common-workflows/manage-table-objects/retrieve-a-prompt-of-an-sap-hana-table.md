@@ -152,7 +152,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (A new changeset is created successfully.)
 
-### Step 2: Get a table's prompt within a changeset using [GET api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails)
+### Step 2: Get a table's prompt within a changeset using [GET /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails)
 
 Sample Request Header:
 

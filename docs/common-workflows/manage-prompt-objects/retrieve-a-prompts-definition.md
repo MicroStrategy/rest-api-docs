@@ -1,5 +1,5 @@
 ---
-title: Workflow Sample - Retrieve a Prompt's Definition
+title: Workflow Sample - Retrieve a prompt's definition
 sidebar_label: Retrieve a Prompt's Definition
 description: This workflow sample demonstrates how to retrieve a prompt's definition.
 ---
@@ -16,9 +16,15 @@ This workflow sample demonstrates how to retrieve a prompt's definition.
 
 You want to get the definition of the `"Call Center in USA"` prompt object. The object ID of the prompt is `2804B5284AFF95E8E0EEB4AC09B5B972` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
+:::info
+
 An authorization token allows the API layer to hide internal session-related implementations such as managing different project-specific sessions. Once the REST API layer has validated the user's credentials using the specified authentication mode, it initiates a session with the Intelligence server and creates a unique authorization token for the client.
 
-:::info
+A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
+
+:::
+
+:::tip
 
 Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
@@ -26,7 +32,9 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-## 1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
+## Create a changeset
+
+Use [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset), to create a changeset.
 
 Sample Request Header
 
@@ -64,7 +72,9 @@ Sample Response Body:
 
 Sample Response Code: 201 (A new changeset is created successfully.)
 
-## 2. Get the prompt's definition within the changeset using [GET /api/model/prompts/{PromptID}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-getPromptDetails)
+## Get the prompt's definition within the changeset
+
+Use [GET /api/model/prompts/{PromptID}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-getPromptDetails).
 
 Sample Request Header:
 
@@ -146,3 +156,27 @@ You can view the prompt's definition in the body of the response.
 ```
 
 Response Code: 200 (The prompt's definition is returned successfully.)
+
+## Delete a changeset
+
+Use [DELETE /api/model/changesets/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
+
+Sample Request Header:
+
+```http
+"accept": "application/json"
+"X-MSTR-AuthToken": "bbjpsjos3b7ebokq9jdfvknska"
+"X-MSTR-MS-Changeset": "2A131744C91B4915B54A61FFDC528F62"
+```
+
+Sample Request Body: Empty
+
+Sample Curl:
+
+```bash
+curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/8DF1659E9D74484D9D47B9478D4C7D00" -H "accept: \*/\*" -H "X-MSTR-AuthToken: bbjpsjos3b7ebokq9jdfvknska" -H "X-MSTR-MS-Changeset: 2A131744C91B4915B54A61FFDC528F62"
+```
+
+Sample Request Body: Empty
+
+Sample Response Code: 204 (The changeset has been deleted successfully.)

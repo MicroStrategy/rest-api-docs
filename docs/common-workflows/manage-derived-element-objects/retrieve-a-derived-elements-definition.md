@@ -220,7 +220,7 @@ Sample Response Code: 200 (A new changeset is created successfully.)
 
 ### Get the derived element's definition within a changeset
 
-Use [GET api/model/derivedElements/{DerivedElementId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Derived%20Elements/ms-getDerivedElement).
+Use [GET /api/model/derivedElements/{DerivedElementId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Derived%20Elements/ms-getDerivedElement).
 
 Sample Request Header
 

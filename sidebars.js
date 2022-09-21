@@ -561,19 +561,7 @@ const sidebars = {
           },
           label: "Make External Data Available Using the Push Data API",
           items: [
-            {
-              type: "category",
-              link: {
-                type: "doc",
-                id: "common-workflows/make-external-data-available/create-a-dataset-with-one-request/create-a-dataset-with-one-request",
-              },
-              label: "Create a Dataset with One Request",
-              items: [
-                "common-workflows/make-external-data-available/create-a-dataset-with-one-request/workflow-create-a-dataset-with-one-request",
-                "common-workflows/make-external-data-available/create-a-dataset-with-one-request/workflow-modify-a-dataset-with-one-request",
-                "common-workflows/make-external-data-available/create-a-dataset-with-one-request/workflow-create-and-modify-a-dataset-with-one-request",
-              ],
-            },
+            "common-workflows/make-external-data-available/create-a-dataset-with-one-request/workflow-create-and-modify-a-dataset-with-one-request",
             {
               type: "category",
               link: {

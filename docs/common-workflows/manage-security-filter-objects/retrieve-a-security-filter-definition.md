@@ -154,7 +154,7 @@ Sample Response Code: 200 (A new changeset is created successfully.)
 
 ### Get the security filter's definition within a changeset
 
-Use [GET api/model/securityFilters/{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters/ms-getFilterDetails).
+Use [GET /api/model/securityFilters/{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters/ms-getFilterDetails).
 
 Sample Request Header:
 
@@ -264,7 +264,7 @@ If `showFilterTokens` is omitted or `false`, only "text" and "tree" formats are 
 
 :::
 
-Get the security filter's definition in tokens format using [GET api/model/securityFilters/{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/getSecurityFilterDetails) with `showFilterTokens=true`.
+Get the security filter's definition in tokens format using [GET /api/model/securityFilters/{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/getSecurityFilterDetails) with `showFilterTokens=true`.
 
 Sample Curl:
 
@@ -400,7 +400,7 @@ If `tokens`, the custom expression is returned in "text" and "tokens" format.
 
 :::
 
-Get the security filter's definition in tokens format using [GET api/model/securityFilters/{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/getSecurityFilterDetails) with `showExpressionAs=tree` and `showExpressionAs=tokens`.
+Get the security filter's definition in tokens format using [GET /api/model/securityFilters/{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/getSecurityFilterDetails) with `showExpressionAs=tree` and `showExpressionAs=tokens`.
 
 Sample Curl:
 
@@ -528,7 +528,7 @@ Sample Response Code: 200 (The security filter's definition is returned successf
 
 In this workflow sample, you want to get the definition of a security filter that contains an inline custom expression. The object ID of the security filter is `B488A1B711EB330926FF0080EFB57956`.
 
-Get the security filter's definition with its inline custom expression in tree and tokens format using [GET api/model/securityFilters/{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/getSecurityFilterDetails) with `showExpressionAs=tree` and `showExpressionAs=tokens`.
+Get the security filter's definition with its inline custom expression in tree and tokens format using [GET /api/model/securityFilters/{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/getSecurityFilterDetails) with `showExpressionAs=tree` and `showExpressionAs=tokens`.
 
 Sample Curl:
 
