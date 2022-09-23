@@ -17,10 +17,10 @@ Use REST APIs to perform the following actions on hierarchy qualification prompt
 
 Use the following REST API endpoints to get information about hierarchy qualification prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
 
-- GET `/documents/{id}/prompts`
-- GET `/documents/{id}/instances/{instanceId}/prompts`
-- GET `/reports/{reportId}/prompts`
-- GET `/reports/{reportId}/instances/{instanceId}/prompts`
+- GET `/api/documents/{id}/prompts`
+- GET `/api/documents/{id}/instances/{instanceId}/prompts`
+- GET `/api/reports/{reportId}/prompts`
+- GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
 
 Provide the ID of the document, dossier, or report in the path of the request. In addition, you need to supply the instance ID if you are getting information about a prompt applied to an instance of a document, dossier, or report. The response contains the prompt information. All available parameters for the prompt definition are shown below.
 
@@ -112,8 +112,8 @@ Besides the commonly-used fields, the hierarchy qualification prompt also contai
 
 Use the following REST API endpoints to get a hierarchy qualification prompt's available objects:
 
-- GET `/reports/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
-- GET `/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
+- GET `/api/reports/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
+- GET `/api/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
 
 In a hierarchy qualification prompt, the available objects returned by this endpoint are hierarchies, which contain an ID and name. The hierarchy prompt provides the user with a list of available objects. These objects can come from three different sources:
 
@@ -138,7 +138,7 @@ The sample code below contains a hierarchy qualification prompt's available obje
 
 After getting a hierarchy qualification prompt's available objects, the user may need to get the attributes of some hierarchies to construct their own view filter expression. Use the following REST API endpoints to retrieve the attributes of a hierarchy.
 
-GET `/hierarchies/{hierarchyId}/attributes`
+GET `/api/hierarchies/{hierarchyId}/attributes`
 
 The sample code below contains the definition of the attributes of a hierarchy.
 
@@ -172,8 +172,8 @@ The sample code below contains the definition of the attributes of a hierarchy.
 
 Use the following REST API endpoints to answer a hierarchy qualification prompt applied to a dossier, document, or report:
 
-- PUT `/reports/{id}/instances/{instanceId}/prompts/answers`
-- PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
 ### Provide Specific Prompt Answers
 

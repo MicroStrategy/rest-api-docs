@@ -15,11 +15,11 @@ An attribute qualification prompt is a restrictive type prompt that allows you t
 
 Use REST APIs to perform the following actions on attribute qualification prompts:
 
-- [Retrieve a Prompt's Definition](../retrieve-a-prompts-definition.md)
-- [Create a New Prompt](#create-a-new-prompt)
-- [Update an Existing Prompt](#update-an-existing-prompt)
+- [Retrieve a prompt's definition](../retrieve-a-prompts-definition.md)
+- [Create a new prompt](#create-a-new-prompt)
+- [Update an existing prompt](#update-an-existing-prompt)
 
-## Create a New Prompt
+## Create a new prompt
 
 1. To create an attribute qualification prompt, you must enter the required fields with the correct information, using [POST /api/model/prompts](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-postPrompt).
 1. The response can change based on the request parameters provided by the caller. Use the following parameters.
@@ -95,7 +95,7 @@ Use REST APIs to perform the following actions on attribute qualification prompt
    }
    ```
 
-## Update an Existing Prompt
+## Update an existing prompt
 
 1. Update the definition of the attribute qualification prompt using [PUT /api/model/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
 1. Provide the following headers in the request:

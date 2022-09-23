@@ -29,7 +29,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-Get the consolidation's definition using [GET api/model/consolidations/{consolidationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Consolidations/ms-getConsolidation).
+Get the consolidation's definition using [GET /api/model/consolidations/{consolidationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Consolidations/ms-getConsolidation).
 
 Sample Request Header:
 
@@ -513,7 +513,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
 
    Sample Response Code: 201 (A new changeset is created successfully.)
 
-1. Get the consolidation's definition within a changeset using [GET api/model/consolidations/{consolidationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Consolidations/ms-getConsolidation).
+1. Get the consolidation's definition within a changeset using [GET /api/model/consolidations/{consolidationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Consolidations/ms-getConsolidation).
 
    Sample Request Header
 

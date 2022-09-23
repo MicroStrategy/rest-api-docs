@@ -18,10 +18,10 @@ Use REST APIs to perform the following actions on metric expression prompts:
 
 Use the following REST API endpoints to get information about metric expression prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
 
-- GET `/documents/{id}/prompts`
-- GET `/documents/{id}/instances/{instanceId}/prompts`
-- GET `/reports/{reportId}/prompts`
-- GET `/reports/{reportId}/instances/{instanceId}/prompts`
+- GET `/api/documents/{id}/prompts`
+- GET `/api/documents/{id}/instances/{instanceId}/prompts`
+- GET `/api/reports/{reportId}/prompts`
+- GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
 
 Provide the ID of the document, dossier, or report in the path of the request. You also need to provide the instance ID if you are getting information about a prompt applied to an instance of a document, dossier, or report. The response contains the prompt information. All available parameters for the prompt definition are shown below.
 
@@ -143,7 +143,7 @@ Besides the commonly-used fields, the metric expression prompt also contains the
 
 Use the following REST API endpoint to get a metric expression prompt's available answer:
 
-GET `/reports/{reportId}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
+GET `/api/reports/{reportId}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
 
 The metric this endpoint returns can be used when you generate the expression to answer the prompt. The operator should work on metrics.
 
@@ -165,8 +165,8 @@ The sample code below contains a metric expression prompt's available answer.
 
 Use the following REST API endpoints to answer a metric expression prompt applied to a dossier, document, or report:
 
-- PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
-- PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
+- PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
 ### Provide Specific Prompt Answers
 

@@ -25,7 +25,7 @@ Since time zone objects are configuration objects, you must set the project ID a
 
 :::
 
-Get the time zones' definitions within a changeset using [`GET api/model/timezones`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Timezones).
+Get the time zones' definitions within a changeset using [`GET /api/model/timezones`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Timezones).
 
 Sample Request Header:
 
@@ -185,7 +185,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
 
    Sample Response Code: 201 (A new changeset is created successfully.)
 
-1. Get the time zones' definitions within a changeset using [`GET api/model/timezones`](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timezones).
+1. Get the time zones' definitions within a changeset using [`GET /api/model/timezones`](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timezones).
 
    Sample Request Header
 

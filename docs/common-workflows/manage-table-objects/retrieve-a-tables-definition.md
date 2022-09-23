@@ -375,7 +375,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
    Sample Response Code: 201 (A new changeset is created successfully.)
 
-1. Get a table's definition within a changeset using [GET api/model/tables/{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
+1. Get a table's definition within a changeset using [GET /api/model/tables/{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
 
    Sample Request Header:
 

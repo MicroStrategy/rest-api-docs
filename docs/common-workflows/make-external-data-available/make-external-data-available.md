@@ -19,7 +19,7 @@ The Push Data API, which belongs to the Dataset API family, lets you make extern
 
 When the Push Data API was introduced in MicroStrategy 10.11, it supported only a single table and data was uploaded and published in the same request. This single request workflow works well for small, simple dataset creation scenarios, but a newer multiple request workflow supports more complex scenarios where a large number of columns/metrics need to be managed at a different update/load/refresh schedule. This workflow separates dataset definition, data upload, and dataset creation, using multiple requests to incrementally add data before publication.
 
-- [Creating a dataset with one request](./create-a-dataset-with-one-request/create-a-dataset-with-one-request.md)
+- [Creating a dataset with one request](./create-a-dataset-with-one-request/workflow-create-and-modify-a-dataset-with-one-request.md)
 
   If you have only a small amount of data, you can upload and publish data to the Intelligence Server at the same time. This method is quick and simple, but it has limitations such as only supporting a single table.
 

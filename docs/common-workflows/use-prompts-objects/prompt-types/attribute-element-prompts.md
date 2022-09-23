@@ -25,9 +25,9 @@ You can use REST APIs to perform the following action on attribute element promp
 
 To answer an attribute element prompt, the user must know which attribute elements can be supplied as an answer. Use the following REST APIs to obtain this list of elements.
 
-- GET `/reports/{id}/instances/{instanceId}/prompts/{promptIdentifier}/elements`
+- GET `/api/reports/{id}/instances/{instanceId}/prompts/{promptIdentifier}/elements`
 
-- GET `/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/elements`
+- GET `/api/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/elements`
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 
@@ -68,9 +68,9 @@ Sample code for obtaining the available attribute elements is provided below:
 
 You use the following REST API endpoints to answer an attribute element prompt applied to a dossier, document, or report:
 
-- PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
+- PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
-- PUT `/reports/{reportId}/instances/{instanceId}/prompts/answers`
+- PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
 ### Provide Specific Prompt Answers
 
@@ -102,13 +102,13 @@ Sample code for answering an attribute element prompt is provided below:
 
 You use the following REST API endpoints to get information about attribute element prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
 
-- GET `/documents/{id}/prompts`
+- GET `/api/documents/{id}/prompts`
 
-- GET `/documents/{id}/instances/{instanceId}/prompts`
+- GET `/api/documents/{id}/instances/{instanceId}/prompts`
 
-- GET `/reports/{reportId}/prompts`
+- GET `/api/reports/{reportId}/prompts`
 
-- GET `/reports/{reportId}/instances/{instanceId}/prompts`
+- GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
 
 You provide the ID of the document, dossier, or report in the path of the request, as well as the instance ID if you are getting information about a prompt applied to an instance of a document, dossier, or report. The response contains the prompt information.
 

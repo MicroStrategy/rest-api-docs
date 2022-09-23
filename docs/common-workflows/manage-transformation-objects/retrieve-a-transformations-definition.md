@@ -141,7 +141,7 @@ Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/
 
    Sample Response Code: 201 (A new changeset is created successfully.)
 
-1. Get a transformation’s definition within a changeset using [`GET api/model/transformations/{transformationId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-getTransformation).
+1. Get a transformation’s definition within a changeset using [`GET /api/model/transformations/{transformationId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-getTransformation).
 
    Sample Request Header:
 

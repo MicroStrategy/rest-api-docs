@@ -19,11 +19,11 @@ Use the following REST APIs to answer a level prompt for a report, document, or 
 
 - Reports
 
-  PUT `/reports/{id}/instances/{instanceId}/prompts/answers`
+  PUT `/api/reports/{id}/instances/{instanceId}/prompts/answers`
 
 - Documents or Dossiers
 
-  PUT `/documents/{id}/instances/{instanceId}/prompts/answers`
+  PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
 All available parameters for the prompt definition are shown below.
 
@@ -66,11 +66,11 @@ Use the following REST APIs to get a level prompt's available answers for a repo
 
 - Reports
 
-  GET `/reports/{id}/instances/{instanceId}/prompts/{id}/objects`
+  GET `/api/reports/{id}/instances/{instanceId}/prompts/{id}/objects`
 
 - Documents or Dossiers
 
-  GET `/documents/{id}/instances/{instanceId}/prompts/{id}/objects`
+  GET `/api/documents/{id}/instances/{instanceId}/prompts/{id}/objects`
 
 All available parameters for getting the level prompt's available answers are shown below.
 
@@ -111,15 +111,15 @@ Use the following REST APIs to get a the level prompt's definition for a report,
 
 - Reports
 
-  GET `/reports/{id}/prompts`
+  GET `/api/reports/{id}/prompts`
 
-  GET `/reports/{id}/instances/{instanceId}/prompts`
+  GET `/api/reports/{id}/instances/{instanceId}/prompts`
 
 - Documents or Dossiers
 
-  GET `/documents/{id}/prompts`
+  GET `/api/documents/{id}/prompts`
 
-  GET `/documents/{id}/instances/{instanceId}/prompts`
+  GET `/api/documents/{id}/instances/{instanceId}/prompts`
 
 All available parameters for getting the level prompt's definition are shown below.
 

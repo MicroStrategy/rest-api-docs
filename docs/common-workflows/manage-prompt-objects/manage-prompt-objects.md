@@ -13,7 +13,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create, update, and delete the prompt objects through the Modeling service:
 
-- [Retrieve a Prompt's Definition](./retrieve-a-prompts-definition.md)
+- [Retrieve a prompt's definition](./retrieve-a-prompts-definition.md)
 - [Create a Prompt within a Changeset](./create-a-prompt-within-a-changeset.md)
 - [Update a Prompt's Definition within a Changeset](./update-a-prompts-definition-within-a-changeset.md)
 - [Prompt Types](./prompt-types/prompt-types.md)
