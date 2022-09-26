@@ -14,10 +14,10 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow sample demonstrates how to create a new prompt object through the Modeling service.
 
-1. [Create a changeset using POST /api/model/changesets](#create-a-changeset-using-post-apimodelchangesets)
+1. [Create a changeset using `POST /api/model/changesets](#create-a-changeset-using-post-apimodelchangesets)`
 1. [Create a prompt using POST/api/model/prompts](#create-a-prompt-using-postapimodelprompts)
-1. [Commit a changeset using POST /api/model/changesets/{ChangesetId}/commit](#commit-a-changeset-using-post-apimodelchangesetschangesetidcommit)
-1. [Delete a changeset using DELETE /api/model/changesets/{ChangesetId}](#delete-a-changeset-using-delete-apimodelchangesetschangesetid)
+1. [Commit a changeset using `POST /api/model/changesets/{changesetId}/commit](#commit-a-changeset-using-post-apimodelchangesetschangesetidcommit)`
+1. [Delete a changeset using `DELETE /api/model/changesets/{changesetId}](#delete-a-changeset-using-delete-apimodelchangesetschangesetid)`
 
 You want to create a new prompt object for the `"Call Center in USA"` prompt under a specific folder in the MicroStrategy Tutorial project. The folder object ID is `8A1831FF494F528D02A4A8BF5FB73459`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
@@ -206,7 +206,7 @@ Response Code: 201 (A new prompt is created successfully in the changeset.)
 
 ## Commit a changeset
 
-Use [POST /api/model/changesets/{ChangesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
+Use [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
 
 Sample Request Header:
 
@@ -244,7 +244,7 @@ Sample Response Code: 201 (The changeset is committed successfully.)
 
 ## Delete a changeset
 
-Use [DELETE /api/model/changesets/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
+Use [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
 
 Sample Request Header:
 

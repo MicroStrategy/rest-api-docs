@@ -17,40 +17,29 @@ When you use a view filter to refine the data returned in a report or cube insta
 
     ```json
     {
-
       "id": "4ACD9EEE4154BB87CE3F9DA279A733FB",
-
       "name": "Report - Derived Metric",
-
       "result": {
-
         "definition": {
-
           "availableObjects": {
-
             "attributes": [
-
               {
-
                 "name": "Year_number&date",
-
                 "id": "573FF5AB482CA58FDFF1F95AF53690D42",
-
                 "type": "Attribute",
-
                 "forms": [
-
                   {
-
-                    "id": "**45C11FA478E745FEA08D781CEA190FE5**",
-
+                    "id": "45C11FA478E745FEA08D781CEA190FE5",
                     "name": "ID",
-
-                    "dataType": "**Real**"
-
+                    "dataType": "Real"
                   }
-
-    ...
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
     ```
 
 - View filters are applied on report objects, instead of on grid objects (that is, they are applied before aggregation). For example, if a report has (Year, Category, Revenue) in the report objects, but only (Year, Revenue) on the grid, a filter on Revenue is applied on the (Year, Category) level, instead of on the (Year) level. To achieve the desired result, you may want to put all report objects on the grid so the filtering level is the same as the display level.

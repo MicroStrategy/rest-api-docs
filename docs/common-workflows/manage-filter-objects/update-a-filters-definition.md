@@ -14,10 +14,10 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow sample demonstrates how to update a filter's definition through the Modeling service.
 
-- [1. Create a changeset using POST /api/model/changesets](#1-create-a-changeset-using-post-apimodelchangesets)
-- [2. Update the filter's definition using PUT /api/model/filters/{FilterId}](#2-update-the-filters-definition-using-put-apimodelfiltersfilterid)
-- [3. Commit the changeset using POST /api/model/changesets/{ChangesetId}/commit](#3-commit-the-changeset-using-post-apimodelchangesetschangesetidcommit)
-- [4. Delete the changeset using DELETE /api/model/changesets/{ChangesetId}](#4-delete-the-changeset-using-delete-apimodelchangesetschangesetid)
+- [1. Create a changeset using `POST /api/model/changesets](#1-create-a-changeset-using-post-apimodelchangesets)`
+- [2. Update the filter's definition using `PUT /api/model/filters/{FilterId}](#2-update-the-filters-definition-using-put-apimodelfiltersfilterid)`
+- [3. Commit the changeset using `POST /api/model/changesets/{changesetId}/commit](#3-commit-the-changeset-using-post-apimodelchangesetschangesetidcommit)`
+- [4. Delete the changeset using `DELETE /api/model/changesets/{changesetId}](#4-delete-the-changeset-using-delete-apimodelchangesetschangesetid)`
 
 You want to update the definition of the "Year > 2015" filter and rename it to "Year > 2020". The filter is in the MicroStrategy Tutorial project. The object ID of the filter is 8018C24FEBC4406CB9E36838C01C82D1. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754
 
@@ -170,7 +170,7 @@ Sample Response Body: You can view the filter's new definition in the body of th
 
 Response Code: 200 (The filter's definition is updated successfully in the changeset.)
 
-## 3. Commit the changeset using [POST /api/model/changesets/{ChangesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+## 3. Commit the changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
 Sample Request Header:
 
@@ -206,7 +206,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (The changeset is committed successfully.)
 
-## 4. Delete the changeset using [DELETE /api/model/changesets/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+## 4. Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header:
 

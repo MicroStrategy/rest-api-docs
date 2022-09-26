@@ -53,34 +53,23 @@ There are four filters, but only three filter conditions are returned. This is b
 
 ```json
 {
-
   "key": "W110",
-
   "name": "Visualization 1",
-
   "result": {
-
     "definition": {
-
       "attributes": [],
-
       "metrics": [],
-
       "thresholds": [],
-
       "sorting": [],
-
       "metricLimitSummary": "Profit > 99999", // metric limit filter definition
-
       // template limit definition
       "templateLimitSummary": "((Category = Electronics) Or (Category = Books))",
-
       // view filter definition
-      "viewFilterSummary": "(Category = Books, Electronics) And (Profit > 11111)",
-
+      "viewFilterSummary": "(Category = Books, Electronics) And (Profit > 11111)"
     },
-
     "data": {
-
-      ...
+      // ...
+    }
+  }
+}
 ```

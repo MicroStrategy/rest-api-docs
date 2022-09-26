@@ -300,7 +300,7 @@ Endpoint: `PUT /api/objects/{id}`
 
 Let's use the `PUT` operation to update the ACL value for the MicroStrategy Test Folder, previously mentioned in step 1. Update the ACL value for Developer from Full Control (255) to View (199). Then, add a trustee called Mobile User, with an ID of 0AA72D6042B938FF3FBED3AAC39349F5 and an ACL value of View (199).
 
-The `PUT /api/objects/{id}endpoint` is used to update information for a specific object, in a specific project. Obtain the authorization token needed to execute the request using `POST /api/auth/login`. Obtain the project ID using `GET /api/projects`. Pass the authorization token and the project ID in the request header. Specify the object ID in the path of the request. Specify the object type as a query parameter; possible values for object type are provided in [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html).
+The `PUT /api/objects/{id}` endpoint is used to update information for a specific object, in a specific project. Obtain the authorization token needed to execute the request using `POST /api/auth/login`. Obtain the project ID using `GET /api/projects`. Pass the authorization token and the project ID in the request header. Specify the object ID in the path of the request. Specify the object type as a query parameter; possible values for object type are provided in [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html).
 
 Parameters:
 

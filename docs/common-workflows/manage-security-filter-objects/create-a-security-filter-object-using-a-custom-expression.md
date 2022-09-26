@@ -8,8 +8,8 @@ This workflow sample demonstrates how to create a security filter definition thr
 
 - [1. Create a changeset using `POST /api/model/changesets`](#1-create-a-changeset-using-post-apimodelchangesets)
 - [2. Create a security filter using a custom expression with `POST /api/model/securityFilters`](#2-create-a-security-filter-using-a-custom-expression-with-post-apimodelsecurityfilters)
-- [3. Commit the changeset using `POST /api/model/changesets/{ChangesetId}/commit`](#3-commit-the-changeset-using-post-apimodelchangesetschangesetidcommit)
-- [4. Delete the changeset using `DELETE /api/model/changesets/{ChangesetId}`](#4-delete-the-changeset-using-delete-apimodelchangesetschangesetid)
+- [3. Commit the changeset using `POST /api/model/changesets/{changesetId}/commit`](#3-commit-the-changeset-using-post-apimodelchangesetschangesetidcommit)
+- [4. Delete the changeset using `DELETE /api/model/changesets/{changesetId}`](#4-delete-the-changeset-using-delete-apimodelchangesetschangesetid)
 - [More Samples](#more-samples)
   - [Escape Sequences for Full Paths](#escape-sequences-for-full-paths)
   - [Escape Sequences for Double Quotes](#escape-sequences-for-double-quotes)
@@ -22,15 +22,15 @@ In this workflow sample, you want to create a new security filter object to qual
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
-## 1. Create a changeset using [`POST /api/model/changesets`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
+## 1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
 
-## 2. Create a security filter using a custom expression with [`POST /api/model/securityFilters`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/postSecurityFilter)
+## 2. Create a security filter using a custom expression with [POST /api/model/securityFilters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/postSecurityFilter)
 
 Sample Request Header:
 
@@ -454,9 +454,9 @@ You can view the new security filter's definition in the body of the response.
 
 Response Code: 201 (A new security filter is created successfully in the changeset.)
 
-## 3. Commit the changeset using [`POST /api/model/changesets/{ChangesetId}/commit`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+## 3. Commit the changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
-## 4. Delete the changeset using [`DELETE /api/model/changesets/{ChangesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+## 4. Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 ## More Samples
 

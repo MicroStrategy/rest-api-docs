@@ -203,7 +203,7 @@ You can view the table’s definition in the body of the response.
 
 Sample Response Code: 200 (Table's prompt is returned successfully.)
 
-### Step 3: Delete a changeset using [DELETE /api/model/changeset/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+### Step 3: Delete a changeset using [DELETE /api/model/changeset/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header:
 

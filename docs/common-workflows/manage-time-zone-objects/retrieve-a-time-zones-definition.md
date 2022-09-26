@@ -19,13 +19,13 @@ You want to get the definition of a system time zone. The object ID of the time 
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Since time zone objects are configuration objects, you must set the project ID as an empty string.
 
 :::
 
-Get the time zone's definition using [`GET /api/model/timezones/{timezoneId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Timezones).
+Get the time zone's definition using [GET /api/model/timezones/{timezoneId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Timezones).
 
 Sample Request Header:
 
@@ -71,7 +71,7 @@ You want the definition of a custom time zone object. That object ID of the time
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Since time zone objects are configuration objects, you must set the project ID as an empty string.
 
@@ -79,11 +79,11 @@ Since time zone objects are configuration objects, you must set the project ID a
 
 :::tip
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of GET /api/model/timezones to create a new time zone or update the custom time zone's definitions, it is recommended to associate all requests to one changeset.
+A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/timezones` to create a new time zone or update the custom time zone's definitions, it is recommended to associate all requests to one changeset.
 
 :::
 
-1. Create a changeset using [`POST /api/model/changesets`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset).
+1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset).
 
    Sample Request Header:
 
@@ -121,7 +121,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
 
    Sample Response Code: 201 (A new changeset is created successfully.)
 
-1. Get the time zone's definition within a changeset using [`GET /api/model/timezones/{timezoneId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timezones/862780DC499A14D74FEC7EB2EF317DA2).
+1. Get the time zone's definition within a changeset using [GET /api/model/timezones/{timezoneId}](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timezones/862780DC499A14D74FEC7EB2EF317DA2).
 
    Sample Request Header
 
@@ -165,7 +165,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
 
    Response Code: 200 (time zone's definition is returned successfully)
 
-1. Delete a changeset using [`DELETE /api/model/changesets/{ChangesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#//Changesets/ms-dehttps://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changeset/ms-deleteChangeset).
+1. Delete a changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#//Changesets/ms-dehttps://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changeset/ms-deleteChangeset).
 
    Sample Request Header:
 

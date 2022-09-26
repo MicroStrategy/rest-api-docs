@@ -30,4 +30,4 @@ jobs:
       - name: Markdownlint Check
         uses: borales/actions-yarn@v3.0.0
         with:
-          cmd: lint:markdown # will run `yarn lint:eslint` command
+          cmd: lint:markdownlint # will run `yarn lint:eslint` command

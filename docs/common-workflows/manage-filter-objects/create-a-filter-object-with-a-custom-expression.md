@@ -14,10 +14,10 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow sample demonstrates how to create a new filter object using a custom expression through the Modeling service
 
-- [1. Create a changeset using POST /api/model/changesets](#create-a-changeset-using-post-apimodelchangesets)
-- [2. Create a new filter using a custom expression with POST /api/model/filters.](#create-a-new-filter-using-a-custom-expression-with-post-apimodelfilters)
-- [3. Commit the changeset using POST /api/model/changesets/{ChangesetId}/commit](#commit-the-changeset-using-post-apimodelchangesetschangesetidcommit)
-- [4. Delete the changeset using DELETE /api/model/changesets/{ChangesetId}](#delete-the-changeset-using-delete-apimodelchangesetschangesetid)
+- [1. Create a changeset using `POST /api/model/changesets](#create-a-changeset-using-post-apimodelchangesets)`
+- [2. Create a new filter using a custom expression with `POST /api/model/filters`.](#create-a-new-filter-using-a-custom-expression-with-post-apimodelfilters)
+- [3. Commit the changeset using `POST /api/model/changesets/{changesetId}/commit](#commit-the-changeset-using-post-apimodelchangesetschangesetidcommit)`
+- [4. Delete the changeset using `DELETE /api/model/changesets/{changesetId}](#delete-the-changeset-using-delete-apimodelchangesetschangesetid)`
 - [More Samples](#more-samples)
   - [Escape Sequences for Full Paths](#escape-sequences-for-full-paths)
   - [Escape Sequences for Double Quotes](#escape-sequences-for-double-quotes)
@@ -29,9 +29,9 @@ You want to create a new "(Year(CurrentDate()) - 5)< Year@ID" filter object unde
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
@@ -493,7 +493,7 @@ Sample Response Body: You can view the new filter's definition in the body of th
 
 Response Code: 201 (A new filter is created successfully in the changeset.)
 
-## Commit the changeset using [POST /api/model/changesets/{ChangesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+## Commit the changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
 Sample Request Header:
 
@@ -529,7 +529,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (The changeset is committed successfully.)
 
-## Delete the changeset using [DELETE /api/model/changesets/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+## Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header
 

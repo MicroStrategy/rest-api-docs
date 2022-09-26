@@ -44,9 +44,9 @@ Empty
 
 ```bash
 curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/drillMaps/CC2E6AA3421EFF5C41C2D0939750BB24" \
-     -H "accept: application/json" \
-     -H "X-MSTR-AuthToken: lmiouhsue1osvl8uf2vuvlbcfp" \
-     -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
+-H "accept: application/json" \
+-H "X-MSTR-AuthToken: lmiouhsue1osvl8uf2vuvlbcfp" \
+-H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
 ```
 
 ### Sample Response Body

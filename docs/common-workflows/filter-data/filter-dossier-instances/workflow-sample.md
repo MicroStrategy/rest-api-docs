@@ -346,7 +346,7 @@ Sample Response
   ```json
   {
     "mid": "0ADDDAF34260EBA5D5FB73BFE5852AC3"
-    //...
+    // ...
   }
   ```
 

@@ -1,27 +1,27 @@
 <!-- markdownlint-disable-file MD041 -->
 
-# Development Guidelines
+# Development guidelines
 
 ## Requirements
 
 - [Node.js](https://nodejs.org/en/download/) version 16.14 or above (which can be checked by running `node -v`). You can use [nvm](https://github.com/nvm-sh/nvm) for managing multiple Node versions on a single machine installed.
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Getting Started
+## Getting started
 
 1. Fork the repo.
 1. Clone the forked repo to your local machine.
 1. Run `yarn` in the directory.
 1. Run `yarn start` to view the documentation locally.
 
-## Content Styling Guidelines
+## Content styling guidelines
 
 We want to keep our documentation consistent in styling. More details could be found [here](./content-style-guide.md).
 
 ## Adding new content
 
 - All documentation markdown files are located within `./docs/`.
-- Every documentation markdown file should have the front matter. You should have required `title` and optional `sidebar_label`. Please see the example below:
+- Every documentation markdown file should have the front matter. You should have required `title`, `description`, and an optional `sidebar_label`. Please see the example below:
 
   ```text
   ---
@@ -32,7 +32,13 @@ We want to keep our documentation consistent in styling. More details could be f
   ```
 
   - `title` is the `h1` heading that shows on the HTML page.
-  - `sidebar_label` is the title you want to show in the sidebar navigation.
+  - `sidebar_label` is the title you want to show in the sidebar navigation. If it is not included:
+
+    1. the label in sidebars.js for the file will be used.
+    1. the title in front matter will be used if the label doesn't exist.
+
+    An exception exists for folders' index page or pages in sidebars.js with type `category`. The `label` field is required (instead of optional) in sidebars.js and will take priority over `sidebar_label`. Examples include: `add-functionality/add-functionality.md`, `support-for-different-authentication-environments/support-for-different-authentication-environments.md`.
+
   - `description` is the summary for this page. It provides better text snippet in the search result. This is only for SEO purpose.
 
   Note: Don't use backticks in front matter. The text won't be surrounded by code background effect.
@@ -51,7 +57,7 @@ There are three main ways to add your new doc into the sidebar:
 {
   "type": "doc",
   "id": "whats-new",
-  "label": "What's New"
+  "label": "What's new" // The sidebar's label value
 }
 ```
 
@@ -64,7 +70,7 @@ There are three main ways to add your new doc into the sidebar:
     "type": "doc",
     "id": "support-for-different-authentication-environments/support-for-different-authentication-environments"
   },
-  "label": "Support for Different Authentication Environments",
+  "label": "Support for different authentication environments",
   "items": ["support-for-different-authentication-environments/guest-authentication-mode-only", "support-for-different-authentication-environments/multiple-modes", "support-for-different-authentication-environments/authentication-saml", "support-for-different-authentication-environments/authentication-custom"]
 }
 ```
@@ -94,6 +100,6 @@ You can also run `yarn lint` before committing to make sure no errors exist.
 
 When you try to commit your changes, `yarn lint:eslint`, `yarn lint:prettier`, and `yarn lint:markdownlint` will be run in sequence. If any error is detected, the commit will fail. You need to follow the error messages and suggestions of changes to fix all the errors before committing them.
 
-## Creating Pull Request
+## Creating pull request
 
 When you finish making changes, and you'd like to propose them for review, fill up the [pull request template](../.github/pull_request_template.md) to open your PR (pull request). You can find more detail on creating a PR in the official GitHub documentation [here](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).

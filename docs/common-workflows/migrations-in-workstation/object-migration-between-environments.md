@@ -41,7 +41,7 @@ Sample Request Header:
 ```http
 "Content-Type": "application/json"
 "X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"  // auth token from Authorization response.
-"X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F" //required for creating project package
+"X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F" // required for creating project package
 ```
 
 There are two types of supported migration packages: `project package` and `configuration package`. For `project package`, the related `X-MSTR-ProjectID` project ID is required in the request header of each endpoint. For `configuration package`, the project ID should not be used in the request header.
@@ -111,7 +111,7 @@ Sample Response Body:
 }
 ```
 
-### Step 2: Use the `GET /api/migrations/{{migrationId}}` API call to the source Library
+### Step 2: Use the `GET /api/migrations/{migrationId}` API call to the source Library
 
 Since the package creation is asynchronously processing, this call checks the creation status, which is `usually creating`, created, or `create_failed`.
 
@@ -183,7 +183,7 @@ Sample Response Body:
 }
 ```
 
-### Step 3: Use the `PATCH /api/migrations/{{migrationId}}` API call to the source Library
+### Step 3: Use the `PATCH /api/migrations/{migrationId}` API call to the source Library
 
 This call requests and approves the import migration.
 
@@ -258,7 +258,7 @@ Sample Response Body:
 }
 ```
 
-### Step 4: Use the `GET /api/migrations/{{migrationId}}?showContent=all` API call to the source Library
+### Step 4: Use the `GET /api/migrations/{migrationId}?showContent=all` API call to the source Library
 
 This call gets the full content of the migration to prepare the import call.
 
@@ -308,7 +308,7 @@ Sample Response Body:
 }
 ```
 
-### Step 5: Use the `PUT /api/migrations/{{migrationId}}` API call to the target Library
+### Step 5: Use the `PUT /api/migrations/{migrationId}` API call to the target Library
 
 This call triggers the package import.
 
@@ -317,7 +317,7 @@ Sample Request Header:
 ```http
 "Content-Type": "application/json"
 "X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"  // auth token from Authorization response.
-"X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F" //required for creating project package
+"X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F" // required for creating project package
 ```
 
 Sample Request Body:
@@ -386,7 +386,7 @@ Sample Response Body:
 }
 ```
 
-### Step 6 (Optional): Use the `GET /api/migrations/{{migrationId}}` API call to the target Library
+### Step 6 (Optional): Use the `GET /api/migrations/{migrationId}` API call to the target Library
 
 Since the package import is asynchronously processing, this call checks the import status. It is usually `importing`, `imported`, or `import_failed`.
 
@@ -424,7 +424,7 @@ Since the package import is asynchronously processing, this call checks the impo
 
 ## Undo Migration
 
-### Step 1: Use the `PATCH /api/migrations/{{migrationId}}` API call to the target Library
+### Step 1: Use the `PATCH /api/migrations/{migrationId}` API call to the target Library
 
 This call requests a package undo.
 
@@ -467,7 +467,7 @@ Sample Response Body:
 }
 ```
 
-### Step 2: Use the `PATCH /api/migrations/{{migrationId}}` API call to the target Library
+### Step 2: Use the `PATCH /api/migrations/{migrationId}` API call to the target Library
 
 This call approves the package undo and triggers the undo process.
 
@@ -511,7 +511,7 @@ Sample Response Body:
 }
 ```
 
-### Step 3 (Optional): Use the `GET /api/migrations/{{migrationId}}` API call to the target Library
+### Step 3 (Optional): Use the `GET /api/migrations/{migrationId}` API call to the target Library
 
 Since the package undo is asynchronously processing, this call checks the undo status. Usually it is `undoing`, `undo_success`, or `undo_failed`.
 

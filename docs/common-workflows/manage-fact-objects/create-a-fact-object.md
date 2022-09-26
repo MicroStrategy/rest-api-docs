@@ -23,9 +23,9 @@ You want to create a "Profit" fact object under the Public Objects folder in the
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
@@ -79,7 +79,7 @@ Sample Response Code: 201 (A new changeset is created successfully.)
 
 ## Create a fact object
 
-Endpoint: [`POST /api/model/facts`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Facts/ms-postFact)
+Endpoint: [POST /api/model/facts](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Facts/ms-postFact)
 
 You want to create a fact named "Profit" with one expression `"TOT_DOLLAR_SALES - TOT_COST"` in "tokens" format. This expression will be used in the two tables `"CITY_MNTH_SLS"` and `"CUSTOMER_SLS"`. More examples of creating a new fact are listed below.
 
@@ -275,7 +275,7 @@ To create a fact, in the request body, "expressions" contains a list of fact exp
 
 ## Commit a changeset
 
-Endpoint: [`POST /api/model/changesets/:changesetId/commit`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+Endpoint: [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
 Sample Request Header:
 
@@ -313,7 +313,7 @@ Sample Response Code: 201 (The changeset is committed successfully.)
 
 ## Delete the changeset
 
-Endpoint: [`DELETE /api/model/changesets/:changesetId`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+Endpoint: [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header
 

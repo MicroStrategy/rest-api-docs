@@ -51,7 +51,7 @@ You need to use the metadata search API to get the indirect and direct component
    https://demo.microstrategy/MicroStrategyLibrary/api/metadataSearches/results?domain=2&usedByObject=B7CA92F04B9FAE8D941C3E9B7E0CD754%3B32&usedByRecursive=false
    ```
 
-1. Use GET /api/metadataSearches/results to get the search results. Get the search results previously stored in an instance in the Intelligence Server memory and display them in a list.
+1. Use `GET /api/metadataSearches/results` to get the search results. Get the search results previously stored in an instance in the Intelligence Server memory and display them in a list.
 
 ### List Dependents
 

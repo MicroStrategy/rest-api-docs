@@ -259,87 +259,93 @@ When you use the sorting parameter in the request body, the output of the endpoi
 
 ```json
 {
-   "name": "Demo Report",
-   "id": "D380293E4CC8AE5AACAC66B75F9C7999",
-   "instanceId": "F48AF33E11EB297ED2F20080EF05A058",
-   "status": 1,
-   "definition": {
-       "grid": {
-           "crossTab": true,
-           "metricsPosition": {
-               "axis": "columns",
-               "index": 2
-           },
-           "rows": [ ... ],
-           "columns": [ ... ],
-           "pageBy": [ ... ],
-           "subtotals": { ... },
-           "sorting": {
-               "rows": [
-                   {
-                       "type": "form",
-                       "attribute": {
-                           "id": "8D679D5111D3E4981000E787EC6DE8A4",
-                           "name": "Year"
-                       },
-                       "form": {
-                           "id": "45C11FA478E745FEA08D781CEA190FE5",
-                           "name": "ID"
-                       },
-                       "subtotalsPosition": "first",
-                       "order": "descending"
-                   },
-                   {
-                       "type": "metric",
-                       "metric": {
-                           "id": "4C051DB611D3E877C000B3B2D86C964F",
-                           "name": "Profit"
-                       },
-                       "elements": [
-                           {
-                               "formValues": [
-                                   "USA"
-                               ],
-                               "id": "h1;8D679D3811D3E4981000E787EC6DE8A4"
-                           },
-                           {
-                               "formValues": [
-                                   "Central"
-                               ],
-                               "id": "h4;8D679D4B11D3E4981000E787EC6DE8A4"
-                           }
-                       ],
-                       "subtotalsPosition": "mixed",
-                       "order": "ascending"
-                   }
-               ],
-               "columns": [
-                   {
-                       "type": "subtotalsPosition",
-                       "subtotalsPosition": "first",
-                       "order": "ascending"
-                   }
-               ],
-               "pageBy": [
-                   {
-                       "type": "form",
-                       "attribute": {
-                           "id": "8D679D3711D3E4981000E787EC6DE8A4",
-                           "name": "Category"
-                       },
-                       "form": {
-                           "id": "CCFBE2A5EADB4F50941FB879CCF1721C",
-                           "name": "DESC"
-                       },
-                       "subtotalsPosition": "inherit",
-                       "order": "ascending"
-                   }
-               ]
-           },
-           "thresholds": []
-       }
-   },
-   "data": { ... }
+  "name": "Demo Report",
+  "id": "D380293E4CC8AE5AACAC66B75F9C7999",
+  "instanceId": "F48AF33E11EB297ED2F20080EF05A058",
+  "status": 1,
+  "definition": {
+    "grid": {
+      "crossTab": true,
+      "metricsPosition": {
+        "axis": "columns",
+        "index": 2
+      },
+      "rows": [
+        // ...
+      ],
+      "columns": [
+        // ...
+      ],
+      "pageBy": [
+        // ...
+      ],
+      "subtotals": {
+        // ...
+      },
+      "sorting": {
+        "rows": [
+          {
+            "type": "form",
+            "attribute": {
+              "id": "8D679D5111D3E4981000E787EC6DE8A4",
+              "name": "Year"
+            },
+            "form": {
+              "id": "45C11FA478E745FEA08D781CEA190FE5",
+              "name": "ID"
+            },
+            "subtotalsPosition": "first",
+            "order": "descending"
+          },
+          {
+            "type": "metric",
+            "metric": {
+              "id": "4C051DB611D3E877C000B3B2D86C964F",
+              "name": "Profit"
+            },
+            "elements": [
+              {
+                "formValues": ["USA"],
+                "id": "h1;8D679D3811D3E4981000E787EC6DE8A4"
+              },
+              {
+                "formValues": ["Central"],
+                "id": "h4;8D679D4B11D3E4981000E787EC6DE8A4"
+              }
+            ],
+            "subtotalsPosition": "mixed",
+            "order": "ascending"
+          }
+        ],
+        "columns": [
+          {
+            "type": "subtotalsPosition",
+            "subtotalsPosition": "first",
+            "order": "ascending"
+          }
+        ],
+        "pageBy": [
+          {
+            "type": "form",
+            "attribute": {
+              "id": "8D679D3711D3E4981000E787EC6DE8A4",
+              "name": "Category"
+            },
+            "form": {
+              "id": "CCFBE2A5EADB4F50941FB879CCF1721C",
+              "name": "DESC"
+            },
+            "subtotalsPosition": "inherit",
+            "order": "ascending"
+          }
+        ]
+      },
+      "thresholds": []
+    }
+  },
+  "data": {
+    // ...
+  }
 }
 ```
 

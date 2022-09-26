@@ -94,7 +94,7 @@ End Point: `POST /api/usergroups`
 
 This endpoint allows a caller with administrative rights to create a new user group. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You provide the information to create the user group in the body parameter of the request.
 
-In this example, you create a new user group called "Developers". You make it a member of a parent user group called "Technology", and you add a child user group called "Testers". You need to provide the IDs of the parent and child user groups as part of the user group creation information in the request body. To get these IDs, you first get a list of user groups using GET /api/usergroups. The response to this endpoint includes the names and IDs of all available user groups. You then find the names and IDs of the user groups that you want to use when you create the user group.
+In this example, you create a new user group called "Developers". You make it a member of a parent user group called "Technology", and you add a child user group called "Testers". You need to provide the IDs of the parent and child user groups as part of the user group creation information in the request body. To get these IDs, you first get a list of user groups using `GET /api/usergroups`. The response to this endpoint includes the names and IDs of all available user groups. You then find the names and IDs of the user groups that you want to use when you create the user group.
 
 ![swagger_POST_UserGroups](../../images/swagger_POST_UserGroups.jpg)
 

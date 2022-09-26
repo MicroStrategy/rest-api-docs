@@ -209,7 +209,7 @@ Obtain the datasource connection id from the response body of the previous call.
 
 :::
 
-End Point: POST /api/datasources
+End Point: `POST /api/datasources`
 
 Sample Request Header:
 
@@ -243,7 +243,7 @@ Sample Request Body:
 Sample Curl:
 
 ```bash
-  curl --location --request POST 'https://demo.microstrategy.com/MicroStrategyLibrary/api/datasources' \
+curl --location --request POST 'https://demo.microstrategy.com/MicroStrategyLibrary/api/datasources' \
 --header 'X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch' \
 --header 'Content-Type: application/json' \
 --data-raw '{

@@ -267,7 +267,7 @@ A changeset is required for creating and updating objects (such as filters, fact
 
    Response Code: 201 (A new table is created successfully in the changeset.)
 
-1. Commit a changeset using [POST /api/model/changesets/{ChangesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
+1. Commit a changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
 
    Sample Request Header
 
@@ -303,7 +303,7 @@ A changeset is required for creating and updating objects (such as filters, fact
 
    Sample Response Code: 201 (The changeset is committed successfully.)
 
-1. Delete a changeset using [DELETE /api/model/changesets/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/tables/ms-deleteChangeset).
+1. Delete a changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/tables/ms-deleteChangeset).
 
    Sample Request Header:
 

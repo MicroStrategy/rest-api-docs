@@ -56,7 +56,7 @@ Response Code: 204 (Success: No Content)
 
 Endpoint: `GET /api/v2/projects/{projectId}/settings/config`
 
-This endpoint allows the user to retrieve information on all project settings that are available in MicroStrategy REST API. The information includes the setting description, type, options, unit, minimum value, maximum value, and reboot rule. You must specify an authorization token in the request header, which can be obtained from POST /api/auth/login during [login](#log-in).
+This endpoint allows the user to retrieve information on all project settings that are available in MicroStrategy REST API. The information includes the setting description, type, options, unit, minimum value, maximum value, and reboot rule. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
 :::tip
 
@@ -131,7 +131,7 @@ Response Code: 200 (Success: OK)
 
 Endpoint: `GET /api/v2/projects/{projectId}/settings`
 
-This endpoint allows you to retrieve all project setting values that are available in MicroStrategy REST API. You must specify an authorization token in the request header, which can be obtained from POST /api/auth/login during [login](#log-in).
+This endpoint allows you to retrieve all project setting values that are available in MicroStrategy REST API. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
 :::tip
 
@@ -186,7 +186,7 @@ Response Code: 200 (Success: OK)
 
 Endpoint: `PATCH /api/v2/projects/{projectId}/settings`
 
-This endpoint allows you to modify part of the project settings exposed in REST API via GET /api/v2/projects/{projectId}/settings/config. You must specify an authorization token in the request header, which can be obtained from POST /api/auth/login during [login](#log-in).
+This endpoint allows you to modify part of the project settings exposed in REST API via `GET /api/v2/projects/{projectId}/settings/config`. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
 :::tip
 

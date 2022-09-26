@@ -18,15 +18,15 @@ In this workflow sample, you update an existing `"Last year’s"` transformation
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
 A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
 
-## 1. Create a changeset using [`POST /api/model/changesets`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset), along with `schemaEdit=true` to commit a changeset with schema manipulations
+## 1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset), along with `schemaEdit=true` to commit a changeset with schema manipulations
 
 Sample Request Header:
 
@@ -65,7 +65,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (A new changeset is created successfully.)
 
-## 2. Update the transformation’s definition using [`PATCH /api/model/transformations/{transformationId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-updateTransformation)
+## 2. Update the transformation’s definition using [PATCH /api/model/transformations/{transformationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-updateTransformation)
 
 You want to update the definition of the `"Last year’s"` transformation so that its attribute has a new `"PREV_YEAR_ID"` form expression. The transformation object ID is `49713ED26BC94DB3A68964A5A085E2FC`.
 
@@ -190,7 +190,7 @@ You can view the transformation’s new definition in the body of the response.
 
 Response Code: 200 (The transformation’s definition is updated successfully in the changeset.)
 
-## 3. Commit a changeset using [`POST /api/model/changesets/{changesetId}/commit`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+## 3. Commit a changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
 Sample Request Header:
 
@@ -229,7 +229,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (The changeset is committed successfully.)
 
-## 4. Delete a changeset using [`DELETE /api/model/changesets/{changesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+## 4. Delete a changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header:
 

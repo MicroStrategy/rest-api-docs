@@ -23,9 +23,7 @@ Install the site and run an initial build command:
 
 ```bash
 cd restapi-docs
-
 yarn
-
 yarn start
 ```
 

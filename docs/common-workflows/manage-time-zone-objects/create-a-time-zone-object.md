@@ -18,7 +18,7 @@ You want to create a new custom time zone named `"New York"` under the `Custom T
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Since time zone objects are configuration objects, you must set the project ID as an empty string.
 
@@ -32,7 +32,7 @@ A changeset is required for creating and updating objects (such as filters, fact
 
 `schemaEdit` must be `true` if you are committing a changeset that contains schema manipulations.
 
-## 1. Create a changeset using [`POST /api/model/changesets`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset) with `schemaEdit=false`
+## 1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset) with `schemaEdit=false`
 
 Sample Request Header:
 
@@ -70,7 +70,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (A new changeset is created successfully.)
 
-## 2. Create a new custom time zone using [`POST /api/model/timezones`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/timezones)
+## 2. Create a new custom time zone using [POST /api/model/timezones](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/timezones)
 
 You want to create the time zone by providing its name and base time zone.
 
@@ -127,7 +127,7 @@ You can view the new time zone's definition in the body of the response.
 
 Response Code: 201 (A new time zone is created successfully in the changeset.)
 
-## 3. Commit the changeset using [`POST /api/model/changesets/{ChangesetId}/commit`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+## 3. Commit the changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
 Sample Request Header:
 
@@ -163,7 +163,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (The changeset is committed successfully.)
 
-## 4. Delete the changeset using [`DELETE /api/model/changesets/{ChangesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+## 4. Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header
 

@@ -126,12 +126,13 @@ The sample code below contains a hierarchy qualification prompt's available obje
 ```json
 {
   "objects": [
-  {
-    "id": "C11D3E4981000E8D679D3787EC6DE8A4",
-    "name": "Time",
-    "type": "HIERARCHY"
-  }
-]
+    {
+      "id": "C11D3E4981000E8D679D3787EC6DE8A4",
+      "name": "Time",
+      "type": "HIERARCHY"
+    }
+  ]
+}
 ```
 
 ## Get the Attributes of a Hierarchy
@@ -193,35 +194,39 @@ The sample code below answers an attribute qualification prompt.
 
 ```json
 {
-  "prompts":[{
-    "key": "12FF3D5D43A6A17E8847FB9304FEA1E1@0@10",
-    "id": "12FF3D5D43A6A17E8847FB9304FEA1E1",
-    "name": "test prompt",
-    "type": "EXPRESSION",
-    "answers": {
+  "prompts": [
+    {
+      "key": "12FF3D5D43A6A17E8847FB9304FEA1E1@0@10",
+      "id": "12FF3D5D43A6A17E8847FB9304FEA1E1",
+      "name": "test prompt",
+      "type": "EXPRESSION",
+      "answers": {
         "content": "Category In List 1, 2, 3, 4, 5",
         "expression": {
-            "operator": "In",
-            "operands": [
-              {
-                "type": "form",
-                "attribute":{
-                  "id": "8D679D3711D3E4981000E787EC6DE8A4",
-                  "name": "Category"
-                },
-                "form": {
-                  "id": "45C11FA478E745FEA08D781CEA190FE5",
-                  "name": "ID"
-                }
+          "operator": "In",
+          "operands": [
+            {
+              "type": "form",
+              "attribute": {
+                "id": "8D679D3711D3E4981000E787EC6DE8A4",
+                "name": "Category"
               },
-              {
-                "type": "constants",
-                "dataType": "Real",
-                "values": ["1", "2", "3", "4", "5"]
+              "form": {
+                "id": "45C11FA478E745FEA08D781CEA190FE5",
+                "name": "ID"
               }
-           ]
+            },
+            {
+              "type": "constants",
+              "dataType": "Real",
+              "values": ["1", "2", "3", "4", "5"]
+            }
+          ]
         }
-    },
+      }
+    }
+  ]
+}
 ```
 
 Some things to keep in mind:

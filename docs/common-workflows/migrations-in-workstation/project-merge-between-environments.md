@@ -45,7 +45,7 @@ Sample Request Header:
 ```http
 "Content-Type": "application/json"
 "X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"  // auth token from Authorization response.
-"X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F" //required for creating project package
+"X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F" // required for creating project package
 ```
 
 Sample Request Body:
@@ -389,7 +389,7 @@ Sample Request Header:
 ```http
 "Content-Type": "application/json"
 "X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"  // auth token from Authorization response.
-"X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F" //required for creating project package
+"X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F" // required for creating project package
 ```
 
 Sample Request Body:
@@ -655,7 +655,7 @@ Sample Response Body:
 }
 ```
 
-### Step 2: Use the `PATCH /api/migrations/{{migrationId}}` API call to the target Library
+### Step 2: Use the `PATCH /api/migrations/{migrationId}` API call to the target Library
 
 This call approves the package undo and triggers the undo process.
 
@@ -699,7 +699,7 @@ Sample Response Body:
 }
 ```
 
-### Step 3 (Optional): Use the `GET /api/migrations/{{migrationId}}` API call to the target Library
+### Step 3 (Optional): Use the `GET /api/migrations/{migrationId}` API call to the target Library
 
 Since the package undo is asynchronously processing, this call checks the undo status. Usually it is `undoing`, `undo_success`, or `undo_failed`.
 

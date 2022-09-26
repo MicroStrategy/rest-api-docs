@@ -1,6 +1,6 @@
 <!-- markdownlint-disable-file MD041 -->
 
-# Contributing Guidelines
+# Contributing guidelines
 
-- [Content Style Guidelines](./content-style-guide.md)
-- [Development Guidelines](./development.md)
+- [Content style guidelines](./content-style-guide.md)
+- [Development guidelines](./development.md)

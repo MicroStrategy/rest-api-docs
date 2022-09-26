@@ -242,7 +242,7 @@ Sample Response
 
 ## Get information about a user
 
-End Point: GET /api/users/{id}
+End Point: `GET /api/users/{id}`
 
 This endpoint allows the caller to get information for a specific user. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the user by specifying the user ID in the path of the request; you obtain the user ID using `GET /api/users` (as you did in a previous step).
 

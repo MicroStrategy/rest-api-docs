@@ -662,7 +662,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
    Response Code: 200 (The table's definition is returned successfully.)
 
-1. Delete a changeset using [DELETE /api/model/changeset/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
+1. Delete a changeset using [DELETE /api/model/changeset/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
 
    Sample Request Header
 

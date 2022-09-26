@@ -8,22 +8,22 @@ This workflow sample demonstrates how to update a security filter definition thr
 
 - [1. Create a changeset using `POST /api/model/changesets`](#1-create-a-changeset-using-post-apimodelchangesets)
 - [2. Update the security filter's definition using `PUT /api/model/securityFilters/{securityFilterId}`](#2-update-the-security-filters-definition-using-put-apimodelsecurityfilterssecurityfilterid)
-- [3. Commit the changeset using `POST /api/model/changesets/{ChangesetId}/commit`](#3-commit-the-changeset-using-post-apimodelchangesetschangesetidcommit)
-- [4. Delete the changeset using `DELETE /api/model/changesets/{ChangesetId}`](#4-delete-the-changeset-using-delete-apimodelchangesetschangesetid)
+- [3. Commit the changeset using `POST /api/model/changesets/{changesetId}/commit`](#3-commit-the-changeset-using-post-apimodelchangesetschangesetidcommit)
+- [4. Delete the changeset using `DELETE /api/model/changesets/{changesetId}`](#4-delete-the-changeset-using-delete-apimodelchangesetschangesetid)
 
 You want to update the definition of the `"Year > 2015"` security filter object with a new definition of `"Year@ID > 2020"` and a new object name of `"Year > 2020"`. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1`.
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
 A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
 
-## 1. Create a changeset using [`POST /api/model/changesets`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
+## 1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
 
 Sample Request Header
 
@@ -61,7 +61,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (A new changeset is created successfully.)
 
-## 2. Update the security filter's definition using [`PUT /api/model/securityFilters/{securityFilterId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/postSecurityFilter)
+## 2. Update the security filter's definition using [PUT /api/model/securityFilters/{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/postSecurityFilter)
 
 Sample Request Header:
 
@@ -166,7 +166,7 @@ You can view the security filter's definition in the body of the response.
 
 Response Code: 200 (The security filter's definition is updated successfully in the changeset.)
 
-## 3. Commit the changeset using [`POST /api/model/changesets/{ChangesetId}/commit`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+## 3. Commit the changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
 Sample Request Header:
 
@@ -202,7 +202,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (The changeset is committed successfully.)
 
-## 4. Delete the changeset using [`DELETE /api/model/changesets/{ChangesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+## 4. Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header:
 

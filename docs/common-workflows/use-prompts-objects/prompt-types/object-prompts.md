@@ -76,7 +76,7 @@ The response changes based on the request parameters provided by the caller. All
 | header   | X-MSTR-ProjectID | The ID of the project                                                                                                                                                                                                                                                                                                                                                                                                                                  | string    |
 | path     | reportId         | The ID of the report                                                                                                                                                                                                                                                                                                                                                                                                                                   | string    |
 | path     | instanceId       | The instance ID of the report                                                                                                                                                                                                                                                                                                                                                                                                                          | string    |
-| path     | promptIdentifier | The key or ID of the prompt. Either one can be used to identify the prompt. Only the key is unique, since some prompts can be present multiple times in the dataset. Both of these fields can be obtained from the GET /api/prompts API call.                                                                                                                                                                                                          |           |
+| path     | promptIdentifier | The key or ID of the prompt. Either one can be used to identify the prompt. Only the key is unique, since some prompts can be present multiple times in the dataset. Both of these fields can be obtained from the `GET /api/prompts` API call.                                                                                                                                                                                                        |           |
 | query    | fields           | Comma-separated top-level field white list. This allows the client to selectively retrieve part of the response model. If specified, extra filtering is applied and the top-level object (If the root model is an array, each array element), only the listed fields are kept in the response. For example, id,elements means to keep only the id field and the whole elements array field, omitting all other fields of the top-level response model. | string    |
 | query    | offset           | The starting point within the collection of returned results. Used to control paging behavior. The default is zero.                                                                                                                                                                                                                                                                                                                                    | integer   |
 | query    | limit            | The maximum number of items returned for a single request. The default value is 100. The maximum value is 200.                                                                                                                                                                                                                                                                                                                                         | integer   |
@@ -256,8 +256,9 @@ Numerous errors can occur during the prompt execution workflow, when answering p
 
 - Too many prompt answers provided
 
-  ```json
   HTTP - 400
+
+  ```json
   {
     "code": "ERR006",
     "message": "The number of objects provided for prompt name: Predefined list of objects key: 12FF3D5D43A6A17E8847FB9304FEA1E1@0@10 exceeds the maximum allowed(3} answers",
@@ -267,8 +268,9 @@ Numerous errors can occur during the prompt execution workflow, when answering p
 
 - Too few prompt answers provided
 
-  ```json
   HTTP - 400
+
+  ```json
   {
     "code": "ERR006",
     "message": "The number of objects provided for prompt name: Predefined list of objects key: 12FF3D5D43A6A17E8847FB9304FEA1E1@0@10 does not meet the minimum required(3} answer.",

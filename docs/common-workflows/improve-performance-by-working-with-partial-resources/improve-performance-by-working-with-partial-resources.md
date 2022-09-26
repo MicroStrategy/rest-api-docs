@@ -20,11 +20,15 @@ Some exceptions are:
 
 - The following Data API v2 result-fetching endpoints. A [specialized version of field selection](./field-selection-for-data-api-v2-result-fetching-endpoints.md) is supported.
 
-  POST /api/v2/reports/{reportId}/instances GET /api/v2/reports/{reportId}/instances/{instanceId} POST /api/v2/cubes/{cubeId}/instances GET /api/v2/cubes/{cubeId}/instances/{instanceId} GET /api/v2/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizationKey}
+  - `POST /api/v2/reports/{reportId}/instances`
+  - `GET /api/v2/reports/{reportId}/instances/{instanceId}`
+  - `POST /api/v2/cubes/{cubeId}/instances`
+  - `GET /api/v2/cubes/{cubeId}/instances/{instanceId}`
+  - `GET /api/v2/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizationKey}`
 
 - The following endpoint comes with a fields parameter specifically designed for its use cases. This is different from the general field selection described in this topic.
 
-  GET /api/dataset/{datasetId}
+  - `GET /api/dataset/{datasetId}`
 
 ## Specify Fields
 
@@ -50,7 +54,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 For endpoints that return a JSON object, the client specifies which fields to include for the root object. If a field is included that holds an array/object value, the entire nested array/object value is kept.
 
-Here is an example using GET /api/projects/MicroStrategy%20Tutorial?fields=id,name,owner.
+Here is an example using `GET /api/projects/MicroStrategy%20Tutorial?fields=id,name,owner`.
 
 ```json
 {
@@ -94,7 +98,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 For endpoints that return a JSON array, the client specifies which fields to include for every element of the root array. If a field is included and it holds an array/object value, the while nested array/object value is kept.
 
-Here is an example using GET /api/projects?fields=id,name.
+Here is an example using `GET /api/projects?fields=id,name`.
 
 ```json
 [

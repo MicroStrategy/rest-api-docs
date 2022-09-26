@@ -54,9 +54,7 @@ Sample Request Body:
 ```json
 {
   "loginMode": 1,
-
   "username": "administrator",
-
   "password": ""
 }
 ```
@@ -80,15 +78,10 @@ Sample Response Header:
 ```json
 {
   "pragma": "no-cache",
-
   "x-mstr-authtoken": "nllmm5lpmkjdsj4d4etgdikc6c",
-
   "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
-
   "date": "Wed, 16 Aug 2017 01:42:31 GMT",
-
   "expires": "0",
-
   "content-type": null
 }
 ```
@@ -1415,7 +1408,7 @@ Response Code: 204 (Success: OK)
 
 ## Log out
 
-`End Point: POST /api/auth/logout`
+`End Point:`POST /api/auth/logout``
 
 This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST Server. In this example, you close the active user session by providing the authorization token, `X-MSTR-AuthToken`, generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 

@@ -26,13 +26,13 @@ For different formats of base formula expressions, please refer to [Workflow Sam
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
-## 1. Create a changeset using [`POST /api/model/changesets.`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
+## 1. Create a changeset using [POST /api/model/changesets.](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
 
 Sample Request Header:
 
@@ -70,7 +70,7 @@ Sample Response Body:
 
 Sample Response Code: 200 (A new changeset is created successfully.)
 
-## 2. Get the definition of the specified base formula ID within a changeset using [`GET /api/model/formulas/{formulaId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Formulas/getFormulaDetails)
+## 2. Get the definition of the specified base formula ID within a changeset using [GET /api/model/formulas/{formulaId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Formulas/getFormulaDetails)
 
 Sample Request Header:
 
@@ -135,7 +135,7 @@ You can view the base formula's definition in the body of the response, includin
 
 Response Code: 200 (Base Formula's definition is returned successfully.)
 
-## 3. Commit a changeset using [`POST /api/model/changesets/{ChangesetId}/commit`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+## 3. Commit a changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
 Sample Request Header:
 
@@ -171,7 +171,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (The changeset is committed successfully.)
 
-## 4. Delete a changeset using [`DELETE /api/model/changesets/{changesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+## 4. Delete a changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header:
 
