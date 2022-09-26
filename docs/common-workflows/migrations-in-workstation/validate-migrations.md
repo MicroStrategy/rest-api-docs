@@ -31,7 +31,7 @@ For migrations, the validation action can only occur after the corresponding pac
 
 ## Validate Migration
 
-### Step 1: Use the `PATCH /api/migrations/{{migrationId}}` API call to the source Library
+### Step 1: Use the `PATCH /api/migrations/{migrationId}` API call to the source Library
 
 This call sets the target environment.
 
@@ -85,7 +85,7 @@ Sample Response Body:
 }
 ```
 
-### Step 2: Use the `GET /api/migrations/{{migrationId}}` API call to the source Library
+### Step 2: Use the `GET /api/migrations/{migrationId}` API call to the source Library
 
 This call gets the content of the migration to prepare the request body for the validation call.
 
@@ -263,7 +263,7 @@ Sample Response Body:
 }
 ```
 
-### Step 5: Use the `GET /api/migrations/{{migrationId}}` API call to the source Library until the validation status becomes `validated` or `validation_failed`
+### Step 5: Use the `GET /api/migrations/{migrationId}` API call to the source Library until the validation status becomes `validated` or `validation_failed`
 
 Since the validation is asynchronously processing, this call updates the validation status. It is usually `validating`, `validated`, or `validation_failed`.
 

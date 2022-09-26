@@ -4,6 +4,20 @@ sidebar_label: What's New
 Description: What's New in the REST API.
 ---
 
+## 2021 Update 7
+
+- [Object migration groups between environments.](./common-workflows/migrations-in-workstation/object-migration-groups-between-environments.md)
+- [Upload and download migration packages.](./common-workflows/migrations-in-workstation/upload-and-download-migration-packages.md)
+- [Retrieve, create, and update datamart objects.](./common-workflows/manage-datamart-objects/manage-datamart-objects.md)
+- [Retrieve, create, and update calendar objects.](./common-workflows/manage-calendar-objects/manage-calendar-objects.md)
+- [Retrieve, create, and update runtime objects.](./common-workflows/manage-runtime-objects/manage-runtimes.md)
+- Ability to duplicate users.
+- Configure and manage dynamic recipients lists for subscriptions.
+- Create and edit freeform SQL reports.
+- Create and modify reports and their advanced properties.
+- Ability to translate metadata objects.
+- Retrieve, create, and update language objects.
+
 ## 2021 Update 6
 
 - [Create and edit user and workload fences](./common-workflows/manage-fences/manage-fences.md)

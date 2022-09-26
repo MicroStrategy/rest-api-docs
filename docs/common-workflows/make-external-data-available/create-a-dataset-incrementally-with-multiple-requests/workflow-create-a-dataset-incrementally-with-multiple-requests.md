@@ -528,27 +528,56 @@ To improve performance, follow the recommendations below for chunking data:
 
 :::
 
-<a id="orientation"></a> Data formatting before base64 encoding:
+### Orientation
 
-- In ‘ROW’ orientation, each sub-array corresponds to data in a row:
+The data is before base64 encoding is formatted in different ways depending on the orientation parameter:
 
-  ```json
+- In ‘ROW’ orientation, each sub-array corresponds to data in a row.
+
+  Format:
+
+  ```text
   [
     [data_col1_row1, data_col2_row1],
     [data_col1_row2, data_col2_row2]
   ]
   ```
 
-- In ‘COLUMN’ orientation, each sub-array corresponds to data in a column:
+  Example:
 
   ```json
+  [
+    // This is the data with row orientation when "columnHeaders": ["ID", "Date", "Time", "Category", "Cost"]
+    [2, "2017-12-5", "11:00:00", "Books", 200],
+    [3, "2017-12-5", "12:00:00", "Electronics", 400]
+  ]
+  ```
+
+- In ‘COLUMN’ orientation, each sub-array corresponds to data in a column.
+
+  Format:
+
+  ```text
   [
     [data_col1_row1, data_col1_row2],
     [data_col2_row1, data_col2_row2]
   ]
   ```
 
-Request
+  Example:
+
+  ```json
+  [
+    // This is the data with column orientation when "columnHeaders": ["ID", "Date", "Time", "Category", "Cost"].
+    [2, 3],
+    ["2017-12-5", "2017-12-5"],
+    ["11:00:00", "12:00:00"],
+    ["Books", "Electronics"],
+    [200, 400]
+  ]
+  ```
+
+### Request
 
 - Request Parameters
 
@@ -583,7 +612,7 @@ Request
   }' 'https://demo.microstrategy.com/MicroStrategyLibrary/api/datasets/D13539E5433CDB837363F086C6DA6B5C/instances/9A4EE1C04C4EA20C8A976A8172034DD0/initializeUpload'
   ```
 
-Response
+### Response
 
 - Response Body: Empty
 
@@ -595,7 +624,7 @@ Endpoint: [POST /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}/publi
 
 This endpoint allows the caller to publish a specific multi-table dataset using data uploaded to the Intelligence Server. This request should be used after calling `PUT /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}` as many times as needed to upload all the data. You pass the authorization token and the project ID in the request header. You specify the dataset ID and the upload session ID in the path of the request; you obtain the dataset ID from `POST /api/datasets/models`, and the upload session ID from `POST /api/datasets/{datasetId}/uploadSessions`. If the call is successful, the resulting HTTP response returns an HTTP status code 200.
 
-Request
+### Request
 
 - Request Parameters
 
@@ -617,7 +646,7 @@ Request
   https://demo.microstrategy.com/MicroStrategyLibrary/api/datasets/D13539E5433CDB837363F086C6DA6B5C/instances/9A4EE1C04C4EA20C8A976A8172034DD0/addData'
   ```
 
-Response
+### Response
 
 - Response Body: Empty
 
@@ -627,9 +656,9 @@ Response
 
 Endpoint: [GET /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}/publishStatus](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2GetPublishStatus)
 
-This endpoint allows the caller to get the status of a multi-table dataset update operation after new data was uploaded to the dataset and published. This request should be called after `POST /api/datasets/{datasetId/uploadSessions/{uploadSessionId}/publish`. You pass the authorization token and the project ID in the request header. You specify the dataset ID and the upload session ID in the path of the request; you obtain the dataset ID from `POST /api/datasets/models`, and the upload session ID from `POST /api/datasets/{datasetId}/uploadSessions`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a status value; when the value is '1', the update action has finished.
+This endpoint allows the caller to get the status of a multi-table dataset update operation after new data was uploaded to the dataset and published. This request should be called after `POST /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}/publish`. You pass the authorization token and the project ID in the request header. You specify the dataset ID and the upload session ID in the path of the request; you obtain the dataset ID from `POST /api/datasets/models`, and the upload session ID from `POST /api/datasets/{datasetId}/uploadSessions`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a status value; when the value is '1', the update action has finished.
 
-Request
+### Request
 
 - Request Parameters
 
@@ -651,7 +680,7 @@ Request
   https://demo.microstrategy.com/MicroStrategyLibrary/datasets/5138232E11E8D37B08A20080EF253616/uploadSessions/DB78D99811E8D37B16360080EF25B558/publish'
   ```
 
-Response
+### Response
 
 - Response Body
 
@@ -685,7 +714,7 @@ Endpoint: [DELETE /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}](ht
 
 This endpoint allows the caller to delete the upload session after the dataset is published or cancel the publishing process. The request includes the authorization token generated when the user was authenticated, a project ID that was generated when the list of projects was returned, the ID of the dataset, and the ID of the upload session. If the call is successful, the resulting HTTP response returns an HTTP status code 200.
 
-Request
+### Request
 
 - Request Parameters
 
@@ -707,7 +736,7 @@ Request
   https://demo.microstrategy.com/MicroStrategyLibrary /api/datasets/5138232E11E8D37B08A20080EF253616/uploadSessions/DB78D99811E8D37B16360080EF25B558'
   ```
 
-Response
+### Response
 
 - Response Headers
 
@@ -735,7 +764,7 @@ End Point: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyL
 
 This endpoint allows the caller to log out for the authenticated user, using the MicroStrategy REST server. You close the active user session by providing the authorization token generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 
-Request
+### Request
 
 - Request Headers
 
@@ -752,6 +781,6 @@ Request
   curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-MSTR-AuthToken: r8t814um1kjnjocse1kgm7rijm' 'https://demo.microstrategy.com/MicroStrategyLibrary/api/auth/logout'
   ```
 
-Response
+### Response
 
 - Response code: 204

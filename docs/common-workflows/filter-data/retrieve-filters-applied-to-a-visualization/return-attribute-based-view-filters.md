@@ -22,9 +22,7 @@ An example of the JSON data that is returned for view filters is shown below. If
 ```json
 {
   "key": "W110",
-
   "name": "Visualization 1",
-
   "result": {
     "definition": {
       // view filter definition

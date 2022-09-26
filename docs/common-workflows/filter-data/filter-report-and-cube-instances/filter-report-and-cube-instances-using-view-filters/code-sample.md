@@ -7,29 +7,17 @@ The `viewLimits` parameter can include multiple filters, with both metric and at
 
 ```json
 "viewFilter": {
-
   "operator": "string",
-
   "operands": [
-
     {
-
       "operator": "string",
-
       "operands": []
-
     },
-
     {
-
     "operator": "string",
-
     "operands": []
-
     }
-
   ]
-
 }
 ```
 
@@ -73,23 +61,17 @@ Operator used: **In**
 {
   "viewFilter": {
     "operator": "In",
-
     "operands": [
       {
         "type": "attribute",
-
         "id": "8D679D3711D3E4981000E787EC6DE8A4",
-
         "name": "Category"
       },
-
       {
         "type": "elements",
-
         "elements": [
           {
             "id": "8D679D3711D3E4981000E787EC6DE8A4:2",
-
             "name": "Electronics"
           }
         ]
@@ -111,37 +93,27 @@ Operator used: **Between**
 {
   "viewFilter": {
     "operator": "Between",
-
     "operands": [
       {
         "type": "form",
-
         "attribute": {
           "id": "8D679D3711D3E4981000E787EC6DE8A4",
-
           "name": "Category"
         },
-
         "form": {
           "id": "45C11FA478E745FEA08D781CEA190FE5",
-
           "name": "ID"
         }
       },
-
       {
         "type": "constant",
-
         "dataType": "Real",
 
         "value": "1"
       },
-
       {
         "type": "constant",
-
         "dataType": "Real",
-
         "value": "3"
       }
     ]
@@ -194,21 +166,15 @@ Operator used: **Greater**
 {
   "viewFilter": {
     "operator": "Greater",
-
     "operands": [
       {
         "type": "metric",
-
         "id": "7FD5B69611D5AC76C000D98A4CC5F24F",
-
         "name": "Cost"
       },
-
       {
         "type": "metric",
-
         "id": "4C05177011D3E877C000B3B2D86C964F",
-
         "name": "Revenue"
       }
     ]
@@ -226,29 +192,20 @@ Operator used: **Between**
 {
   "viewFilter": {
     "operator": "Between",
-
     "operands": [
       {
         "type": "metric",
-
         "id": "7FD5B69611D5AC76C000D98A4CC5F24F",
-
         "name": "Cost"
       },
-
       {
         "type": "constant",
-
         "dataType": "Real",
-
         "value": "200000"
       },
-
       {
         "type": "constant",
-
         "dataType": "Real",
-
         "value": "400000"
       }
     ]
@@ -266,21 +223,15 @@ Operator used: **GreaterEqual**
 {
   "viewFilter": {
     "operator": "GreaterEqual",
-
     "operands": [
       {
         "type": "metric",
-
         "id": "7FD5B69611D5AC76C000D98A4CC5F24F",
-
         "name": "Cost"
       },
-
       {
         "type": "constant",
-
         "dataType": "Real",
-
         "value": "500000"
       }
     ]
@@ -298,21 +249,15 @@ Operator used: **Percent.Top**
 {
   "viewFilter": {
     "operator": "Percent.Top",
-
     "operands": [
       {
         "type": "metric",
-
         "id": "7FD5B69611D5AC76C000D98A4CC5F24F",
-
         "name": "Cost"
       },
-
       {
         "type": "constant",
-
         "dataType": "Real",
-
         "value": "20%"
       }
     ]
@@ -334,17 +279,12 @@ Operator used: **Rank.Top**
     "operands": [
       {
         "type": "metric",
-
         "id": "7FD5B69611D5AC76C000D98A4CC5F24F",
-
         "name": "Cost"
       },
-
       {
         "type": "constant",
-
         "dataType": "Real",
-
         "value": "3"
       }
     ]
@@ -362,21 +302,15 @@ Operator used: **Percent.Equals**
 {
   "viewFilter": {
     "operator": "Percent.Equals",
-
     "operands": [
       {
         "type": "metric",
-
         "id": "2FBA0F9B416EFE38DCF22F8CFE4AA75C",
-
         "name": "Revenue"
       },
-
       {
         "type": "constant",
-
         "dataType": "Real",
-
         "value": "0.5"
       }
     ]
@@ -396,59 +330,43 @@ Operators: **And**,**In**
 {
   "viewFilter": {
     "operator": "And",
-
     "operands": [
       {
         "operator": "In",
-
         "operands": [
           {
             "type": "attribute",
-
             "id": "8D679D4B11D3E4981000E787EC6DE8A4",
-
             "name": "Region"
           },
-
           {
             "type": "elements",
-
             "elements": [
               {
                 "id": "h1;8D679D4B11D3E4981000E787EC6DE8A4",
-
                 "name": "Northeast"
               },
-
               {
                 "id": "h6;8D679D4B11D3E4981000E787EC6DE8A4",
-
                 "name": "Northwest"
               }
             ]
           }
         ]
       },
-
       {
         "operator": "In",
-
         "operands": [
           {
             "type": "attribute",
-
             "id": "8D679D3711D3E4981000E787EC6DE8A4",
-
             "name": "Category"
           },
-
           {
             "type": "elements",
-
             "elements": [
               {
                 "id": "8D679D3711D3E4981000E787EC6DE8A4:2",
-
                 "name": "Electronics"
               }
             ]
@@ -470,57 +388,41 @@ Operators: **Or**, **In**, **GreaterEqual**
 {
   "viewFilter": {
     "operator": "Or",
-
     "operands": [
       {
         "operator": "In",
-
         "operands": [
           {
             "type": "attribute",
-
             "id": "8D679D4B11D3E4981000E787EC6DE8A4",
-
             "name": "Region"
           },
-
           {
             "type": "elements",
-
             "elements": [
               {
                 "id": "h1;8D679D4B11D3E4981000E787EC6DE8A4",
-
                 "name": "Northeast"
               },
-
               {
                 "id": "h6;8D679D4B11D3E4981000E787EC6DE8A4",
-
                 "name": "Northwest"
               }
             ]
           }
         ]
       },
-
       {
         "operator": "GreaterEqual",
-
         "operands": [
           {
             "type": "metric",
-
             "id": "7FD5B69611D5AC76C000D98A4CC5F24F",
-
             "name": "Cost"
           },
-
           {
             "type": "constant",
-
             "dataType": "Real",
-
             "value": "500000"
           }
         ]
@@ -540,33 +442,23 @@ Operators: **Not, Between**
 {
   "viewFilter": {
     "operator": "Not",
-
     "operands": [
       {
         "operator": "Between",
-
         "operands": [
           {
             "type": "metric",
-
             "id": "7FD5B69611D5AC76C000D98A4CC5F24F",
-
             "name": "Cost"
           },
-
           {
             "type": "constant",
-
             "dataType": "Real",
-
             "value": "200000"
           },
-
           {
             "type": "constant",
-
             "dataType": "Real",
-
             "value": "400000"
           }
         ]

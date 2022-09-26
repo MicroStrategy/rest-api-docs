@@ -18,15 +18,15 @@ In this workflow sample, you want to create a `"Last year’s"` transformation o
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
 A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
 
-### 1. Create a changeset using [`POST /api/model/changesets`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset), along with `schemaEdit=true` to commit a changeset with schema manipulations
+### 1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset), along with `schemaEdit=true` to commit a changeset with schema manipulations
 
 Sample Request Header:
 
@@ -65,7 +65,7 @@ Sample Response Body:
 
 Sample Response Code 201: 201 (A new changeset is created successfully.)
 
-### 2. Create a transformation object using [`POST /api/model/transformations`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-createTransformation)
+### 2. Create a transformation object using [POST /api/model/transformations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-createTransformation)
 
 You want to create a `"Last year’s"` transformation object with a transformation attribute based on a normal `"Year"` attribute. This transformation attribute has a form with a `"YEAR_ID - 1"` expression in “tokens” format and a `"LU_YEAR"` lookup table. The transformation’s mapping type is `"one_to_one"`. You must define the `"destinationFolderId"` as `9B25D45A4834A213A70C10B1703D4A77` to save this transformation in the desired folder when you commit the changeset later.
 
@@ -239,7 +239,7 @@ You can view the new transformation’s definition in the body of the response.
 
 Response Code: 201 (A new transformation is created successfully in the changeset.)
 
-### 3. Commit the changeset using [`POST /api/model/changesets/{changesetId}/commit`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+### 3. Commit the changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
 Sample Request Header:
 
@@ -276,7 +276,7 @@ Sample Response Body:
 }
 ```
 
-### 4. Delete the changeset using [`DELETE /api/model/changesets/{changesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+### 4. Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header:
 

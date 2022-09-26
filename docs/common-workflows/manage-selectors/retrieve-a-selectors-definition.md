@@ -5,7 +5,7 @@ description: The workflow to retrieve a selector's definition.
 
 You can retrieve a selector's definition using the following APIs.
 
-## API: [`GET /api/v2/dossiers/{dossierId}/definition`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList_1)
+## API: [GET /api/v2/dossiers/{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList_1)
 
 This endpoint fetches a selector's definition and dataset information of a dossier (without executing it). The following details are returned:
 
@@ -344,7 +344,7 @@ This endpoint fetches a selector's definition and dataset information of a dossi
 | X-MSTR-ProjectId | Project Id          | header         | string    | true      |
 | dossierId        | dossier id          | path           | string    | true      |
 
-## API: [`GET /api/v2/dossiers/{dossierId}/instances/{instanceId}/definition`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList_2)
+## API: [GET /api/v2/dossiers/{dossierId}/instances/{instanceId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList_2)
 
 This endpoint fetches a selector's definition and dataset information from an executed dossier. The following details are returned:
 

@@ -55,11 +55,11 @@ Sample Request
 - Curl
 
 ```bash
-       curl -X POST -i -c ~/cookie-jar.txt --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \\
-       "loginMode":1, \\
-       "username": "administrator", \\
-       "password": "" \\
-       }' https://demo.microstrategy.com/MicroStrategyLibrary/api/auth/login'
+curl -X POST -i -c ~/cookie-jar.txt --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \\
+"loginMode":1, \\
+"username": "administrator", \\
+"password": "" \\
+}' https://demo.microstrategy.com/MicroStrategyLibrary/api/auth/login'
 ```
 
 Sample Response
@@ -107,7 +107,7 @@ Sample Request
 - Curl
 
 ```bash
-       curl -X GET -b ~/cookie-jar.txt --header 'Accept: application/json' --header 'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c'  https://demo.microstrategy.com/MicroStrategyLibrary/api/projects'
+curl -X GET -b ~/cookie-jar.txt --header 'Accept: application/json' --header 'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c'  https://demo.microstrategy.com/MicroStrategyLibrary/api/projects'
 ```
 
 Sample Response
@@ -256,7 +256,7 @@ Sample Response
 
 ## Log out
 
-End Point: POST /api/auth/logout
+End Point: `POST /api/auth/logout`
 
 This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST server. In this example, you close the active user session by providing the authorization token, X-MSTR-AuthToken, generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 
@@ -266,24 +266,23 @@ REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs
 
 Sample Request
 
-```bash
-   'Accept: application/json'
-   'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c'
+```http
+'Accept: application/json'
+'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c'
 ```
 
 - Request Headers
-- Curl
 
-```bash
-       'Accept: application/json'
-       'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c'
+```http
+'Accept: application/json'
+'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c'
 ```
 
 - Request Body: Empty
 - Curl
 
 ```bash
-       curl -X POST -i -c ~/cookie-jar.txt --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c'  https://demo.microstrategy.com/MicroStrategyLibrary/api/auth/logout'
+curl -X POST -i -c ~/cookie-jar.txt --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c'  https://demo.microstrategy.com/MicroStrategyLibrary/api/auth/logout'
 ```
 
 Sample Response

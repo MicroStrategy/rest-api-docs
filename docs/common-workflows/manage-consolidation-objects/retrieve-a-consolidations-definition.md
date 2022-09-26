@@ -939,7 +939,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
 
    Response Code: 200
 
-1. Delete a changeset using [POST /api/model/changesets/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#//Changesets/ms-deleteChangeset).
+1. Delete a changeset using [POST /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#//Changesets/ms-deleteChangeset).
 
    Sample Request Header:
 

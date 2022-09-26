@@ -24,13 +24,13 @@ An authorization token allows the API layer to hide internal session-related imp
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
-Retrieve the definition of the specified metric within a changeset using [`GET /api/model/metrics/{metricId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Metrics/ms-getMetricDetails).
+Retrieve the definition of the specified metric within a changeset using [GET /api/model/metrics/{metricId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Metrics/ms-getMetricDetails).
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 

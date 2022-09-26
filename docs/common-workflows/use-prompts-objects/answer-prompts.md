@@ -85,7 +85,7 @@ You can provide prompt answers for three separate prompt types: attribute elemen
     {
       "key": "W34D600FCA9CE481F89859762AED04C69",
 
-      "type": "OBJECTS", //object prompts
+      "type": "OBJECTS", // object prompts
 
       "answers": [
         {
@@ -103,7 +103,7 @@ You can provide prompt answers for three separate prompt types: attribute elemen
     {
       "key": "W34D600FCA9CE481F89859762AED04C69",
 
-      "type": "ELEMENTS", //attribute element prompts
+      "type": "ELEMENTS", // attribute element prompts
 
       "answers": [
         {
@@ -114,7 +114,7 @@ You can provide prompt answers for three separate prompt types: attribute elemen
     {
       "key": "W34D600FCA9CE481F89859762AED04C68",
 
-      "type": "VALUE", //value prompts
+      "type": "VALUE", // value prompts
 
       "answers": ["abc", "dfg"]
     }
@@ -172,17 +172,17 @@ Sample code for answering several types of prompts with the default answer, with
 {
   "prompts": [
     {
-      "id": "055A4B7241396EB7FC27E3A5D2A9FB2F", //element prompt
+      "id": "055A4B7241396EB7FC27E3A5D2A9FB2F", // element prompt
 
       "useDefault": true
     },
     {
-      "id": "0B524DB54440D0280747C1A3058ED474", //object prompt
+      "id": "0B524DB54440D0280747C1A3058ED474", // object prompt
 
       "useDefault": true
     },
     {
-      "id": "0CE45CA4483E29FFB0AF969D68588E95", //value prompt
+      "id": "0CE45CA4483E29FFB0AF969D68588E95", // value prompt
 
       "useDefault": true
     }
@@ -262,7 +262,7 @@ To achieve this workflow via REST API, you simply need to loop through the follo
 
 1. Fetch the current open prompts using GET `/api/reports/{id}/instances/{instanceId}/prompts`.
 
-   There is a response of 200 with two prompts. One prompt is closed=true, since it was already answered. If you call the GET /api/prompts API with a closed=true query parameter, the answered prompt is filtered out.
+   There is a response of 200 with two prompts. One prompt is closed=true, since it was already answered. If you call the `GET /api/prompts` API with a closed=true query parameter, the answered prompt is filtered out.
 
    ![fetch_open_prompts_response_600x447](../../images/fetch_open_prompts_response_600x447.png)
 

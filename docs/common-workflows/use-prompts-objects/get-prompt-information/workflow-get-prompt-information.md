@@ -72,97 +72,62 @@ Endpoints:
   ```json
   [
     // Object prompts
-
     {
       "id": "0B524DB54440D0280747C1A3058ED474",
-
       "key": "0B524DB54440D0280747C1A3058ED474@0@10",
-
       "name": "Metric Prompt",
-
       "title": "Objects",
-
       "type": "OBJECTS",
-
       "required": false,
-
       "max": 2,
-
       "min": 1,
-
       "defaultAnswer": {
         "name": "Cost Growth",
-
         "id": "D823D64B48A0104B01135587BA87A2BD",
-
         "type": 4
       },
-
       "answers": {
         "name": "Cost Growth",
-
         "id": "D823D64B48A0104B01135587BA87A2BD",
-
         "type": 4
       }
     },
     // Attribute element prompts
     {
       "id": "055A4B7241396EB7FC27E3A5D2A9FB2F",
-
       "key": "055A4B7241396EB7FC27E3A5D2A9FB2F@0@10",
-
       "name": "Age Range Prompt",
-
       "title": "Age Range",
-
       "type": "ELEMENTS",
-
       "required": false,
-
       "source": {
         "name": "Age Range",
-
         "id": "5603951E4FE1BC04A44E44B85BBB8ED2",
-
         "type": 12
       },
-
       "defaultAnswer": [
         {
           "id": "5603951E4FE1BC04A44E44B85BBB8ED2:2",
-
           "name": "25 to 34"
         }
       ],
-
       "answers": [
         {
           "id": "5603951E4FE1BC04A44E44B85BBB8ED2:2",
-
           "name": "25 to 34"
         }
       ]
     },
-
     // Value prompts
     {
       "id": "0CE45CA4483E29FFB0AF969D68588E95",
-
       "key": "0CE45CA4483E29FFB0AF969D68588E95@0@10",
-
       "name": "NamePrompt",
-
       "title": "Name Prompt",
-
       "type": "VALUE",
-
       "required": true,
-
       "answers": "Darren",
-
       "defaultAnswer": "Darren",
-
       "dataType": 8
     }
   ]

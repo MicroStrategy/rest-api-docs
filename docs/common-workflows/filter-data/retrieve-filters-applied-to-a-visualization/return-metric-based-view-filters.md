@@ -21,20 +21,16 @@ An example of the JSON data that is returned for view filters is shown below. If
 
 ```json
 {
-
   "key": "W110",
-
   "name": "Visualization 1",
-
   "result": {
-
     "definition": {
-
-      ...
-
-      "viewFilterSummary": "(Category = Books, Electronics) And (Profit > 11111)", // view filter definition
-
-      ...
+      // ...
+      "viewFilterSummary": "(Category = Books, Electronics) And (Profit > 11111)" // view filter definition
+      // ...
+    }
+  }
+}
 ```
 
 Metric-based view filters can be applied in a number of ways. For example, they can be applied in Workstation as follows::

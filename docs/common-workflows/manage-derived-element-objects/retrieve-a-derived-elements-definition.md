@@ -359,7 +359,7 @@ Response Code: 200 (The derived element's definition is returned successfully.)
 
 ### Delete a changeset
 
-Use [POST /api/model/changesets/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#//Changesets/ms-deleteChangeset).
+Use [POST /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#//Changesets/ms-deleteChangeset).
 
 Sample Request Header:
 

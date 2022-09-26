@@ -703,7 +703,7 @@ Sample Response
 
 End Point: `DELETE /api/users/{userID}/addresses/{addressID}`
 
-This endpoint deletes a specific address for a specific user. You obtain the authorization token needed to execute the request using POST /api/auth/login. You identify the user and the address by specifying the user ID and address ID in the path of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 204 and an empty response body.
+This endpoint deletes a specific address for a specific user. You obtain the authorization token needed to execute the request using `POST /api/auth/login`. You identify the user and the address by specifying the user ID and address ID in the path of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 204 and an empty response body.
 
 Sample Request
 

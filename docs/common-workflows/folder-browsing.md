@@ -14,10 +14,10 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 The workflow for browsing folders in the metadata includes the following sequence of REST API requests.
 
-1. [Log in](#log-in) User authenticates into the environment with POST /api/auth/login and standard authentication
-1. [Get project list](#get-project-list) User obtains the project list from GET /api/projects
-1. [Browse to the Shared Reports folder](#browse-to-the-shared-reports-folder) User calls GET /api/folders/preDefined to perform folder browsing to the Shared Reports folder (may be multiple requests)
-1. [Log out](#log-out) User calls POST /api/logout to close the session
+1. [Log in](#log-in) User authenticates into the environment with `POST /api/auth/login` and standard authentication
+1. [Get project list](#get-project-list) User obtains the project list from `GET /api/projects`
+1. [Browse to the Shared Reports folder](#browse-to-the-shared-reports-folder) User calls `GET /api/folders/preDefined` to perform folder browsing to the Shared Reports folder (may be multiple requests)
+1. [Log out](#log-out) User calls `POST /api/logout` to close the session
 
 A detailed explanation of each step is provided below:
 
@@ -138,7 +138,7 @@ The response body contains information for each project that is returned, includ
 
 End Point: `GET /api/folders/preDefined/{folderType}`
 
-This endpoint allows the caller to get the objects under a predefined folder with the MicroStrategy REST Server. In this example, you get the objects under Shared Reports in the "MicroStrategy Tutorial". You use the authorization token returned by POST /api/auth/login as the value for X-MSTR-AuthToken and a project ID returned by GET /api/projects as the value for X-MSTR-ProjectID. You provide a value for folderType from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. In this example, you use the value "7" , which specifies the predefined "Shared Reports" folder under the "Public Objects" folder. If the call is successful, the resulting HTTP response returns an HTTP status 200 and a list of metadata objects under the Shared Reports folder.
+This endpoint allows the caller to get the objects under a predefined folder with the MicroStrategy REST Server. In this example, you get the objects under Shared Reports in the "MicroStrategy Tutorial". You use the authorization token returned by `POST /api/auth/login` as the value for X-MSTR-AuthToken and a project ID returned by `GET /api/projects` as the value for X-MSTR-ProjectID. You provide a value for folderType from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. In this example, you use the value "7" , which specifies the predefined "Shared Reports" folder under the "Public Objects" folder. If the call is successful, the resulting HTTP response returns an HTTP status 200 and a list of metadata objects under the Shared Reports folder.
 
 ![swagger_GET_folders_preDefined](../images/swagger_GET_folders_preDefined.png)
 

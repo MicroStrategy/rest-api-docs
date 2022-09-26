@@ -98,6 +98,10 @@ The Projects API family allows an authenticated user to obtain the list of proje
 
 The Reports API family allows developers to retrieve the data from a specific report. The Reports API currently supports reports with attributes on rows and metrics on columns. Together with the Cubes API, this API is often referred to as the JSON Data API.
 
+## [Runtimes API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Runtimes)
+
+The Runtimes API family allows developers to obtain a runtime's definition, create a runtime object, update the definition of an existing runtime, and delete a runtime object. The runtime objects currently work with the containerized Intelligence Server.
+
 ## [Schema API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Schema)
 
 The Schema API family allows developers to obtain the schema lock status, lock the schema, unlock the schema, and reload or update the schema synchronously or asynchronously.

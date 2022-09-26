@@ -70,7 +70,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (A new changeset is created successfully.)
 
-1. Create a custom group object using [`POST /api/model/customGroups`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups/ms-postCustomGroup)
+1. Create a custom group object using [POST /api/model/customGroups](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups/ms-postCustomGroup)
 
    You want to create the custom group with filter elements using the `“tree”` format for the `"qualifications”`. More examples of creating a custom group are listed below.
 

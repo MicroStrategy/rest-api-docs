@@ -434,6 +434,21 @@ const sidebars = {
           type: "category",
           link: {
             type: "doc",
+            id: "common-workflows/manage-runtime-objects/manage-runtimes",
+          },
+          label: "Manage Runtimes",
+          items: [
+            "common-workflows/manage-runtime-objects/create-a-runtime",
+            "common-workflows/manage-runtime-objects/update-a-runtime",
+            "common-workflows/manage-runtime-objects/retrieve-a-runtime-definition",
+            "common-workflows/manage-runtime-objects/delete-a-runtime",
+            "common-workflows/manage-runtime-objects/retrieve-all-runtimes",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
             id: "common-workflows/manage-incremental-refresh-report/manage-incremental-refresh-report",
           },
           label: "Manage Incremental Refresh Report (IRRs)",
@@ -475,6 +490,20 @@ const sidebars = {
             "common-workflows/manage-user-hierarchy-objects/update-a-user-hierarchys-definition",
             "common-workflows/manage-user-hierarchy-objects/retrieve-a-list-of-available-user-hierarchies",
             "common-workflows/manage-user-hierarchy-objects/user-hierarchy-import-parameters",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
+            id: "common-workflows/manage-calendar-objects/manage-calendar-objects",
+          },
+          label: "Manage Calendar Objects",
+          items: [
+            "common-workflows/manage-calendar-objects/retrieve-a-list-of-calendars-definitions",
+            "common-workflows/manage-calendar-objects/retrieve-a-calendar-definition",
+            "common-workflows/manage-calendar-objects/create-a-calendar-object",
+            "common-workflows/manage-calendar-objects/update-a-calendar-object",
           ],
         },
         {
@@ -647,6 +676,8 @@ const sidebars = {
             "common-workflows/migrations-in-workstation/object-migration-between-environments",
             "common-workflows/migrations-in-workstation/project-merge-between-environments",
             "common-workflows/migrations-in-workstation/validate-migrations",
+            "common-workflows/migrations-in-workstation/object-migration-groups-between-environments",
+            "common-workflows/migrations-in-workstation/upload-and-download-migration-packages",
           ],
         },
         {
@@ -675,6 +706,20 @@ const sidebars = {
             "common-workflows/manage-subscriptions/create-and-get-a-subscription",
             "common-workflows/manage-subscriptions/create-subscription-for-multi-content",
             "common-workflows/manage-subscriptions/create-subscription-with-prompted-content",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
+            id: "common-workflows/manage-datamart-objects/manage-datamart-objects",
+          },
+          label: "Manage Datamart Objects",
+          items: [
+            "common-workflows/manage-datamart-objects/create-a-datamart-from-a-source-report",
+            "common-workflows/manage-datamart-objects/create-a-datamart-from-scratch",
+            "common-workflows/manage-datamart-objects/retrieve-a-datamart-definition",
+            "common-workflows/manage-datamart-objects/update-a-datamart-definition",
           ],
         },
       ],

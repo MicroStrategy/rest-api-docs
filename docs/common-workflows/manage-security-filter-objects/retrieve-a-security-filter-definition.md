@@ -98,7 +98,7 @@ Response Code: 200 (The security filter's definition was returned successfully.)
 
 :::tip
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of GET /api/model/securityFilters/{securityFilterId} to create a new security filter or update the security filter's definition, it is recommended to associate all requests to one changeset.
+A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/securityFilters/{securityFilterId}` to create a new security filter or update the security filter's definition, it is recommended to associate all requests to one changeset.
 
 :::
 
@@ -226,7 +226,7 @@ Response Code: 200 (The security filter's definition is returned successfully.)
 
 ### Delete a changeset
 
-Use [DELETE /api/model/changesets/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
+Use [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
 
 Sample Request Header:
 

@@ -15,12 +15,12 @@ For Data API v2 result-fetching endpoints, the MicroStrategy REST API provides a
 
 The endpoints are:
 
-- POST /api/v2/reports/{reportId}/instances
-- PUT /api/v2/reports/{reportId}/instances/{instanceId}
-- GET /api/v2/reports/{reportId}/instances/{instanceId}
-- POST /api/v2/cubes/{cubeId}/instances
-- GET /api/v2/cubes/{cubeId}/instances/{instanceId}
-- GET /api/v2/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizationKey}
+- `POST /api/v2/reports/{reportId}/instances`
+- `PUT /api/v2/reports/{reportId}/instances/{instanceId}`
+- `GET /api/v2/reports/{reportId}/instances/{instanceId}`
+- `POST /api/v2/cubes/{cubeId}/instances`
+- `GET /api/v2/cubes/{cubeId}/instances/{instanceId}`
+- `GET /api/v2/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizationKey}`
 
 ## Background
 

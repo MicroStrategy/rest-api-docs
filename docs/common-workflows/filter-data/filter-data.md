@@ -51,7 +51,7 @@ You can use the following REST API to get information about the [filter applied 
 
 You can use the following REST API request to return information about the [filters that were applied to a visualization in a dossier](./retrieve-filters-applied-to-a-visualization/retrieve-filters-applied-to-a-visualization.md):
 
-- GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey/visualizations/{visualizationKey}
+- `GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey/visualizations/{visualizationKey}`
 
 The following types of filters are applied at specific points in the data aggregation process.
 

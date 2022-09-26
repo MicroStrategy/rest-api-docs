@@ -5,7 +5,7 @@ description: You can set the different types of selector using the following req
 
 You can set the different types of selector using the following requests.
 
-## API: [`POST /api/dossiers/instances`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?visibility=all#/Dossiers%20and%20Documents/createDossierInstance_1)
+## API: [POST /api/dossiers/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?visibility=all#/Dossiers%20and%20Documents/createDossierInstance_1)
 
 This endpoint is used to execute a dossier with specific filtering criteria applied in the current chapter. You can set the following selector types:
 
@@ -390,7 +390,7 @@ Response Code: 204 (no content)
 | (existed old metric selector json input)<br/><br/>Invalid operator input                                  | Invalid operator - {input operator}                                                                                                                                                                 | 400                | Only metric expression selector. Existed old metric selector json input.                                                                             |
 | (existed old metric selector json input)<br/><br/>Invalid constant counts                                 | Constants count is not right                                                                                                                                                                        | 400                | Only metric expression selector.<br/><br/>Similar error in view filter functionality. Existed old metric selector json input.                        |
 
-## API: [`GET /api/dossiers/{dossierId}/instances/{instanceId}/elements`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?visibility=all#/Dossiers%20and%20Documents/getDossierDatasetFilterElements)
+## API: [GET /api/dossiers/{dossierId}/instances/{instanceId}/elements](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?visibility=all#/Dossiers%20and%20Documents/getDossierDatasetFilterElements)
 
 This endpoint is used to fetch available elements for the element list selector.
 

@@ -31,14 +31,14 @@ The status of a cube tells you how the cube is currently being used and whether 
 
 Cube cache monitoring is exposed through the following REST APIs:
 
-| API                                                      | Function                                                                 |
-| -------------------------------------------------------- | ------------------------------------------------------------------------ |
-| GET /api/monitors/caches/cubes                           | Fetch cube caches on an specific intelligence server node.               |
-| GET /api/monitors/caches/cubes/{cacheId}                 | Get cache information for a single cube.                                 |
-| GET /api/monitors/caches/cubes/aggregatedUsages          | Get aggregated cube cache capacity usage information by user or project. |
-| PATCH /api/monitors/caches/cubes/{cacheId}               | Alter cache status for a specific cube.                                  |
-| GET /api/monitors/caches/cubes/manipulations/{id}/status | Get cache manipulation status.                                           |
-| DELETE /api/monitors/caches/cubes/{cacheId}              | Delete a single cube cache.                                              |
+| API                                                        | Function                                                                 |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `GET /api/monitors/caches/cubes`                           | Fetch cube caches on an specific intelligence server node.               |
+| `GET /api/monitors/caches/cubes/{cacheId}`                 | Get cache information for a single cube.                                 |
+| `GET /api/monitors/caches/cubes/aggregatedUsages`          | Get aggregated cube cache capacity usage information by user or project. |
+| `PATCH /api/monitors/caches/cubes/{cacheId}`               | Alter cache status for a specific cube.                                  |
+| `GET /api/monitors/caches/cubes/manipulations/{id}/status` | Get cache manipulation status.                                           |
+| `DELETE /api/monitors/caches/cubes/{cacheId}`              | Delete a single cube cache.                                              |
 
 The workflow sample below demonstrates how to:
 
@@ -172,7 +172,7 @@ Fill in the sample below to design your own output.
 
 | Invalid Input              | Error Message                                                                                                                                                     | HTTP Response Code |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| Cluster node doesn't exist | The cluster node ''{0}'' is not connected or canonical name, you should use the cluster node name from the GET /api/monitors/iServer/nodes                        | 503                |
+| Cluster node doesn't exist | The cluster node ''{0}'' is not connected or canonical name, you should use the cluster node name from the `GET /api/monitors/iServer/nodes`                      | 503                |
 | offset is invalid          | The offset value {offset} is not valid, it must be greater than or equal to 0                                                                                     | 400                |
 | limit is invalid           | The limit value {limit} is not valid, it must be greater than or equal to 1, and less than or equal to 1000                                                       | 400                |
 | projectIds is invalid      | At least one of GUID provided in the list is not valid                                                                                                            | 400                |
@@ -339,11 +339,11 @@ Fill in the sample below to design your own output.
 
 ### Error Handling
 
-| Invalid Input                                                            | Error Message                                                                                                                              | HTTP Response Code |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| cacheId is invalid                                                       | Invalid cube cache Id '{cacheId}'                                                                                                          | 404                |
-| cacheId does not exist in Intelligence server                            | The cube cache '{cacheId}' is not found in Intelligence server                                                                             | 404                |
-| cacheId is invalid with an invalid cluster node (based on code 64) in it | The cluster node ''{0}'' is not connected or canonical name, you should use the cluster node name from the GET /api/monitors/iServer/nodes | 503                |
+| Invalid Input                                                            | Error Message                                                                                                                                | HTTP Response Code |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| cacheId is invalid                                                       | Invalid cube cache Id '{cacheId}'                                                                                                            | 404                |
+| cacheId does not exist in Intelligence server                            | The cube cache '{cacheId}' is not found in Intelligence server                                                                               | 404                |
+| cacheId is invalid with an invalid cluster node (based on code 64) in it | The cluster node ''{0}'' is not connected or canonical name, you should use the cluster node name from the `GET /api/monitors/iServer/nodes` | 503                |
 
 ## Fetch Aggregated Cube Cache Capacity Usage Information
 
@@ -370,7 +370,7 @@ Fill in the sample below to design your own output. We recommend you specify all
       "id": "string",
       "name": "string",
       "currentUsage": 0,
-      "capacity": 0 //Capacity just for project level, not for user level
+      "capacity": 0 // Capacity just for project level, not for user level
     }
   ]
 }
@@ -385,19 +385,19 @@ Fill in the sample below to design your own output. We recommend you specify all
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
       "name": "MicroStrategy Tutorial",
       "currentUsage": 178000,
-      "capacity": 280000 //Capacity just for project level, not for user level
+      "capacity": 280000 // Capacity just for project level, not for user level
     },
     {
       "id": "132D3C9F414694BC371BAE94EF08D339",
       "name": "New Project for Quota",
       "currentUsage": 0,
-      "capacity": 290000 //Capacity just for project level, not for user level
+      "capacity": 290000 // Capacity just for project level, not for user level
     },
     {
       "id": "4D5AD5814107623836895EB96B70B0E1",
       "name": "VLDBInherit",
       "currentUsage": 0,
-      "capacity": 260000 //Capacity just for project level, not for user level
+      "capacity": 260000 // Capacity just for project level, not for user level
     }
   ]
 }
@@ -449,7 +449,7 @@ This endpoint alters cube cache status for a specific cube, on a specific node.
 The following change status actions are supported: active, deactive, load, and unload.
 
 {
-  "state": {"active":boolean}
+  "state": {"active":true}
 }
 or
 {
@@ -535,7 +535,7 @@ Fill in the sample below to design your own output. This sample is for a respons
 
 ```json
 {
-  "status": "string", //status is an enum string
+  "status": "string", // status is an enum string
   "statusDetail": "String"
 }
 ```

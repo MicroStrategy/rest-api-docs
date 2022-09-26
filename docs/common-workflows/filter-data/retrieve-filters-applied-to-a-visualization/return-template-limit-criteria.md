@@ -21,7 +21,6 @@ An example of the JSON data that is returned for a simple template limit is show
 {
   "key": "W110",
   "name": "Visualization 1",
-
   "result": {
     "definition": {
       // template limit definition

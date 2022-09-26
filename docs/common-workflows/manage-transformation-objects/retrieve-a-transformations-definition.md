@@ -20,13 +20,13 @@ In this workflow sample, you want to get the definition of the `"2 Weeks Ago"` t
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
-Retrieve the transformation’s definition using [`GET /api/model/transformations/{transformationId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-getTransformation).
+Retrieve the transformation’s definition using [GET /api/model/transformations/{transformationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-getTransformation).
 
 Sample Request Header
 
@@ -92,17 +92,17 @@ Response Code: 200 (The transformation's definition is returned successfully.)
 
 In this workflow sample, you want to get the definition of the same transformation object mentioned in [Retrieve a Transformation's Definition](#retrieve-a-transformations-definition), while within a changeset. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of GET /api/model/transformations/{transformationId} to create a new table or update a specific table's definitions, you should associate all requests with one changeset.
+A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/transformations/{transformationId}` to create a new table or update a specific table's definitions, you should associate all requests with one changeset.
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
-1. Create a changeset using [`POST /api/model/changesets`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset).
+1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset).
 
    Sample Request Header:
 
@@ -141,7 +141,7 @@ Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/
 
    Sample Response Code: 201 (A new changeset is created successfully.)
 
-1. Get a transformation’s definition within a changeset using [`GET /api/model/transformations/{transformationId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-getTransformation).
+1. Get a transformation’s definition within a changeset using [GET /api/model/transformations/{transformationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-getTransformation).
 
    Sample Request Header:
 
@@ -203,7 +203,7 @@ Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/
 
    Sample Response Code: 200 (The transformation's definition is returned successfully.)
 
-1. Delete a changeset using [`DELETE /api/model/changesets/{changesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
+1. Delete a changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
 
    Sample Request Header:
 
@@ -256,7 +256,7 @@ Sample Request Body: Empty
 Sample Curl:
 
 ```bash
-    curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/transformations/6CB9ABB711D3E4F11000E887EC6DE8A4?showExpressionAs=tokens&showExpressionAs=tree" -H "accept: application/json" -H "X-MSTR-AuthToken: ino4r9h9nvjv2beivbj99n0ia3" -H "X-MSTR-ProjectID: B19DEDCC11D4E0EFC000EB9495D0F44F"
+curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/transformations/6CB9ABB711D3E4F11000E887EC6DE8A4?showExpressionAs=tokens&showExpressionAs=tree" -H "accept: application/json" -H "X-MSTR-AuthToken: ino4r9h9nvjv2beivbj99n0ia3" -H "X-MSTR-ProjectID: B19DEDCC11D4E0EFC000EB9495D0F44F"
 ```
 
 Sample Response Body:

@@ -308,7 +308,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (The changeset is committed successfully.)
 
-### Step 4: Delete a changeset using [DELETE /api/model/changeset/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+### Step 4: Delete a changeset using [DELETE /api/model/changeset/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header:
 

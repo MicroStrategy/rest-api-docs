@@ -159,7 +159,7 @@ You can view the new prompt definition in the body of the response.
 
 Response Code: 201 (The prompt of the table is updated successfully in the changeset.)
 
-### Step 3: Commit a changeset using [POST /api/model/changesets/{ChangesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+### Step 3: Commit a changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
 Sample Request Header:
 
@@ -198,7 +198,7 @@ Sample Response Body:
 
 Sample Response Code: 201 (The changeset is committed successfully.)
 
-### Step 4: Delete a changeset using [DELETE /api/model/changeset/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+### Step 4: Delete a changeset using [DELETE /api/model/changeset/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header:
 

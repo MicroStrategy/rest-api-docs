@@ -812,7 +812,7 @@ Response Code: 201 (A new filter is created successfully in the changeset.)
 
 ## Commit the changeset
 
-Endpoint: [POST /api/model/changesets/{ChangesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
+Endpoint: [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
 
 Sample Request Header:
 
@@ -849,7 +849,7 @@ Sample Response Code: 201 (The changeset is committed successfully.)
 
 ## Delete the changeset
 
-Endpoint: [DELETE /api/model/changesets/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
+Endpoint: [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
 
 Sample Request Header
 

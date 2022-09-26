@@ -72,7 +72,7 @@ Sample Response Code: 200 (A new changeset is created successfully.)
 
 ## Get the definition of the specified user hierarchy within a changeset
 
-Endpoint: [`GET /api/model/hierarchies/{hierarchyId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html/User%20Hierarchies/ms-getHierarchy).
+Endpoint: [GET /api/model/hierarchies/{hierarchyId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html/User%20Hierarchies/ms-getHierarchy).
 
 Sample Request Header:
 

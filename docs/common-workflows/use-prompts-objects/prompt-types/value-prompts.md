@@ -238,8 +238,9 @@ Numerous errors can occur during the prompt execution workflow, when answering p
 
 - Does not meet minimum date range
 
-  ```json
   HTTP - 400
+
+  ```json
 
   {
     "code": "ERR006",
@@ -252,8 +253,9 @@ Numerous errors can occur during the prompt execution workflow, when answering p
 
 - Exceeds maximum date range
 
-  ```json
   HTTP - 400
+
+  ```json
 
   {
     "code": "ERR006",
@@ -266,8 +268,9 @@ Numerous errors can occur during the prompt execution workflow, when answering p
 
 - Does not meet minimum value
 
-  ```json
   HTTP - 400
+
+  ```json
 
   {
     "code": "ERR006",
@@ -280,8 +283,9 @@ Numerous errors can occur during the prompt execution workflow, when answering p
 
 - Exceeds maximum value
 
-  ```json
   HTTP - 400
+
+  ```json
 
   {
     "code": "ERR006",
@@ -294,8 +298,9 @@ Numerous errors can occur during the prompt execution workflow, when answering p
 
 - Text length too short
 
-  ```json
   HTTP - 400
+
+  ```json
 
   {
     "code": "ERR006",
@@ -308,8 +313,9 @@ Numerous errors can occur during the prompt execution workflow, when answering p
 
 - Text length too long
 
-  ```json
   HTTP - 400
+
+  ```json
 
   {
     "code": "ERR006",

@@ -212,7 +212,7 @@ Response Code: 200 (The prompt's definition is updated successfully in the chang
 
 ## Commit a changeset
 
-Use [POST /api/model/changesets/{ChangesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
+Use [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
 
 Sample Request Header:
 
@@ -250,7 +250,7 @@ Sample Response Code: 201 (The changeset is committed successfully.)
 
 ## Delete a changeset
 
-Use [DELETE /api/model/changesets/{ChangesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
+Use [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
 
 Sample Request Header:
 

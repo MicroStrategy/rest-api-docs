@@ -23,9 +23,9 @@ In this workflow sample, you want to create a "Year > 2015" security filter obje
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
@@ -33,7 +33,7 @@ A changeset is required for creating and updating objects (such as filters, fact
 
 ## Create a changeset
 
-Use [`POST /api/model/changesets`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
+Use [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
 
 Sample Request Header:
 
@@ -59,7 +59,7 @@ Sample Response Code: 201 (A new changeset is created successfully.)
 
 ## Create a security filter
 
-Use [`POST /api/model/securityFilters`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/postSecurityFilter) with `"tree"` format for the `"qualifications"`. [More examples](#more-samples) of creating a new security filter are listed further below
+Use [POST /api/model/securityFilters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/postSecurityFilter) with `"tree"` format for the `"qualifications"`. [More examples](#more-samples) of creating a new security filter are listed further below
 
 To create a security filter, in the request body, the security filter’s "qualification" needs to be in either "tree" or "tokens" format. If both are provided, only "tree" is used.
 
@@ -177,7 +177,7 @@ Response Code: 201 (A new security filter is created successfully in the changes
 
 ## Commit a changeset
 
-Use [`POST /api/model/changesets/{ChangesetId}/commit`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+Use [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
 Sample Request Header:
 
@@ -215,7 +215,7 @@ Sample Response Code: 201 (The changeset is committed successfully.)
 
 ## Delete the changeset
 
-Use [`DELETE /api/model/changesets/{ChangesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+Use [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 Sample Request Header:
 
@@ -245,8 +245,8 @@ In this section we provide sample request body JSON for creating security filter
 
 - [1. Create a changeset using `POST /api/model/changesets`](#create-a-changeset)
 - [2. Create a security filter using `POST /api/model/securityFilters` with `"tree"` format for the `"qualifications"`.](#create-a-security-filter)
-- [3. Commit a changeset using `POST /api/model/changesets/{ChangesetId}/commit`](#commit-a-changeset)
-- [4. Delete the changeset using `DELETE /api/model/changesets/{ChangesetId}`](#delete-the-changeset)
+- [3. Commit a changeset using `POST /api/model/changesets/{changesetId}/commit`](#commit-a-changeset)
+- [4. Delete the changeset using `DELETE /api/model/changesets/{changesetId}`](#delete-the-changeset)
 - More Samples
   - [Attribute Form Qualification](#attribute-form-qualification)
   - [Attribute Element List Qualification](#attribute-element-list-qualification)

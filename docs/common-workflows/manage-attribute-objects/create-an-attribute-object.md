@@ -18,9 +18,9 @@ You want to create a "Subcategory" attribute object under the Public Objects fol
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [`GET /api/projects`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
@@ -74,7 +74,7 @@ Sample Response Code: 201 (A new changeset is created successfully.)
 
 ## Create an attribute object
 
-Use [`POST /api/model/attributes`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Attributes/ms-createAttribute).
+Use [POST /api/model/attributes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Attributes/ms-createAttribute).
 
 You want to create a "Subcategory" attribute object with ID form and DESC form.
 
@@ -110,12 +110,14 @@ Construct the expression.
 Make a copy of the following "tokens" format template and modify the `"attribute_form_expression"` to construct an expression.
 
 ```json
-"expression":{
-  "tokens":[
-    {
-      "value":"<attribute_form_expression>"
-    }
-  ]
+{
+  "expression": {
+    "tokens": [
+      {
+        "value": "<attribute_form_expression>"
+      }
+    ]
+  }
 }
 ```
 
@@ -490,7 +492,7 @@ Sample Response Code: 201 (The changeset is committed successfully.)
 
 ## Delete the changeset
 
-Use [`DELETE /api/model/changesets/{changesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
+Use [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
 
 Sample Request Header
 
