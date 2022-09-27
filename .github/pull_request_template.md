@@ -19,7 +19,7 @@
 - [ ] My changes pass linter checks by running `yarn lint`.
 - [ ] My changes are rendered as expected by running `yarn start`.
 - [ ] My changes are technically accurate.
-- [ ] My changes follow the [style guide](https://github.microstrategy.com/Tech/restapi-docs/tree/main/contributing/content-style-guide.md).
+- [ ] My changes follow the [style guide](https://github.com/MicroStrategy/rest-api-docs/blob/public/contributing/content-style-guide.md).
 - [ ] My changes include the relevant documentation update If it is needed.
 
 ## Helpful Info

@@ -44,7 +44,7 @@ Fork using GitHub Desktop:
 
 ### Make your update
 
-Make your changes to the file(s) you'd like to update. Here are some tips and tricks for [using the docs codebase](#working-in-the-microstrategyrestapi-docs-repository).
+Make your changes to the file(s) you'd like to update. Here are some tips and tricks for [using the docs codebase](#working-in-the-microstrategyrest-api-docs-repository).
 
 - Are you making changes to the application code? You'll need **Node.js v16** to run the site locally. See [contributing/development.md](contributing/development.md).
 - Are you contributing to markdown? We use [Markdown](https://www.markdownguide.org/basic-syntax/).
@@ -77,7 +77,7 @@ Now that you're a part of the MicroStrategy Docs community, you can keep partici
   - [:earth_asia: Translations](#earth_asia-translations)
 - [Starting with an issue](#starting-with-an-issue)
 - [Opening a pull request](#opening-a-pull-request)
-- [Working in the MicroStrategy/restapi-docs repository](#working-in-the-microstrategyrestapi-docs-repository)
+- [Working in the MicroStrategy/rest-api-docs repository](#working-in-the-microstrategyrest-api-docs-repository)
 - [Reviewing](#reviewing)
   - [Self review](#self-review)
   - [Test it locally](#test-it-locally)
@@ -117,7 +117,7 @@ You can browse existing issues to find something that needs help!
 
 You can use the GitHub user interface :pencil2: for some small changes, like fixing a typo or updating a readme. You can also fork the repo and then clone it locally, to view changes and run your tests on your machine.
 
-## Working in the MicroStrategy/restapi-docs repository
+## Working in the MicroStrategy/rest-api-docs repository
 
 Here's some information that might be helpful while working on a Docs PR:
 

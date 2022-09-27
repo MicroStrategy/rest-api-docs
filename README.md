@@ -22,7 +22,7 @@ git clone https://github.com/MicroStrategy/rest-api-docs.git
 Install the site and run an initial build command:
 
 ```bash
-cd restapi-docs
+cd rest-api-docs
 yarn
 yarn start
 ```
