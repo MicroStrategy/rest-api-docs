@@ -1,5 +1,5 @@
 ---
-title: Supported Features and Considerations
+title: Supported features and considerations
 description: The JSON Data API supports the following features - Reports and published cubes as data sources, Attributes on rows and Metrics on columns.
 ---
 
@@ -13,7 +13,7 @@ The JSON Data API supports the following features:
 
 If you request that all report data be returned (that is, you set `limit` to `"\-1"` in the request), you need to compare the values for `current` and `total` in the results. If the value of current is less than the value of `total`, you need to send a subsequent request with the value of `offset` equal to the value of `current` to get the next set of data.
 
-## Non-Supported Features
+## Non-supported features
 
 The JSON Data API does not currently support:
 

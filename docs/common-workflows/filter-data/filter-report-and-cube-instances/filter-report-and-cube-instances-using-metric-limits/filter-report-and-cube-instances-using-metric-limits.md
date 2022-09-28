@@ -1,5 +1,5 @@
 ---
-title: Filter Report and Cube Instances Using Metric Limits
+title: Filter report and cube instances using metric limits
 description: How to filter report and cube instances using metric limits.
 ---
 

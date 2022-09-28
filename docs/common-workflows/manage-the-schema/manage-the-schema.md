@@ -1,5 +1,5 @@
 ---
-title: Manage the Schema
+title: Manage the schema
 description: You can use REST API requests to retrieve the schema lock, lock and unlock the schema, and reload (update) the schema.
 ---
 

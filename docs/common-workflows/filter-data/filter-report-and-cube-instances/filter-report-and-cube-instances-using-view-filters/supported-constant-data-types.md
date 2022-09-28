@@ -1,5 +1,5 @@
 ---
-title: Supported Constant Data Types for View Filters
+title: Supported constant data types for view filters
 description: The supported constant data types for view filters.
 ---
 

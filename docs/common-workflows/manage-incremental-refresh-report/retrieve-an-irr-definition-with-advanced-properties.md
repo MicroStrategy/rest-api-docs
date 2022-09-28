@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve the Incremental Refresh Report Definition With Advanced Properties
-sidebar_label: Retrieve an IRR Definition with Advanced Properties
+title: Workflow sample - Retrieve the incremental refresh report definition with advanced properties
+sidebar_label: Retrieve an IRR definition with advanced properties
 description: This topic covers several workflows to retrieve the definition for an Incremental Refresh Report with an advanced property value.
 ---
 
@@ -18,7 +18,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-## Get the definition of the specified Incremental Refresh Report with advanced properties using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/get_api_model_incrementalRefresh__incrementalRefreshReportId_)
+## Get the definition of the specified incremental refresh report with advanced properties using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/get_api_model_incrementalRefresh__incrementalRefreshReportId_)
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 

@@ -1,5 +1,5 @@
 ---
-title: MicroStrategy REST API Samples
+title: MicroStrategy REST API samples
 description: A variety of samples are provided to illustrate how to use REST APIs
 ---
 

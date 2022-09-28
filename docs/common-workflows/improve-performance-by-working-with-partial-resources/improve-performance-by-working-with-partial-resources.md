@@ -1,5 +1,5 @@
 ---
-title: Improve Performance by Working with Partial Resources
+title: Improve performance by working with partial resources
 description: While API endpoints define full response models, you may only need a subset of the available data. You can ask the server to only send the fields you need and get a partial response instead. This helps improve performance, since extra resources are not devoted transferring, parsing, and storing unnecessary fields.
 ---
 
@@ -12,7 +12,7 @@ MicroStrategy supports top-level field selection on most endpoints.
 
 Field selection only allows the API caller to specify fields at the root level or root level within a collection. It is not possible to specify field selection for child or nested objects.
 
-## Supported Endpoints
+## Supported endpoints
 
 Top-level field selection is supported for most endpoints that return JSON responses. You can check if an endpoint supports the standard fields parameters through the [REST API Explorer](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html).
 
@@ -30,7 +30,7 @@ Some exceptions are:
 
   - `GET /api/dataset/{datasetId}`
 
-## Specify Fields
+## Specify fields
 
 The fields query parameter is exposed on endpoints that support field selection.
 
@@ -42,7 +42,7 @@ The fields query parameter is exposed on endpoints that support field selection.
 
 - Field selection only applies to successful responses. Error responses are always returned in full.
 
-### Field Selection on a Root Object
+### Field selection on a root object
 
 :::tip
 
@@ -86,7 +86,7 @@ Here is an example of full representation without fields.
 }
 ```
 
-### Field Selection on Root Array Elements
+### Field selection on root array elements
 
 :::tip
 

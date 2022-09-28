@@ -1,5 +1,5 @@
 ---
-title: Value Prompts
+title: Value prompts
 description: A value prompt allows the results to be filtered based on a specific value, such as a specific date, number, or word/phrase.
 ---
 
@@ -244,7 +244,7 @@ Sample code for creating a number prompt's definition is shown below.
 }
 ```
 
-### Big Decimal
+### Big decimal
 
 You can create a prompt that allows the results to be filtered based on a specific big decimal value, by providing the fields shown below.
 

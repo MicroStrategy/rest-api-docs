@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update and Incremental Refresh Report Advanced Properties
-sidebar_label: Update IRR Advanced Properties
+title: Workflow sample - Update and incremental refresh report advanced properties
+sidebar_label: Update IRR advanced properties
 description: This topic covers several workflows for updating an Incremental Refresh Report advanced properties through the Modeling service.
 ---
 
@@ -18,7 +18,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-## Update the Incremental Refresh Report using [PUT /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/put_api_model_incrementalRefresh__incrementalRefreshReportId_)
+## Update the incremental refresh report using [PUT /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/put_api_model_incrementalRefresh__incrementalRefreshReportId_)
 
 To update the Incremental Refresh Report, you must submit the request body with the correct information.
 

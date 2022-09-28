@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update SAP HANA Parameters for an SAP HANA Table with Input Parameters
-sidebar_label: Update SAP HANA Parameters
+title: Workflow sample - Update SAP HANA parameters for an SAP HANA table with input parameters
+sidebar_label: Update SAP HANA parameters
 description: You can use REST APIs to update a prompt of a table through the Modeling service.
 ---
 

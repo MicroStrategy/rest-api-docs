@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create and Update User Groups
-sidebar_label: Create and Update User Groups
+title: Workflow sample - Create and update user groups
+sidebar_label: Create and update user groups
 description: A workflow sample for managing user groups in the metadata is provided below. The following sequence of REST API requests allows an administrative user to create and update a user group, and optionally get information about the user group to confirm the creation and updates.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: User Hierarchy Import Parameters
+title: User hierarchy import parameters
 description: The following import parameters in the API response body define a user hierarchy.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: REST API Architecture
+title: REST API architecture
 description: The MicroStrategy REST framework follows REST conventions to provide a simplified interface for utilizing platform capabilities through JSON data via HTTP(s) protocol.
 ---
 

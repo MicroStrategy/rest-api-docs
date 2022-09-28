@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Base Formula's Definition
-sidebar_label: Retrieve a Base Formula's Definition
+title: Workflow sample - Retrieve a base formula's definition
+sidebar_label: Retrieve a base formula's definition
 description: This topic covers several workflows for retrieving a filter's definition.
 ---
 
@@ -52,7 +52,7 @@ Sample Request Body: Empty
 
 With the above parameters, you can retrieve a base formula in different formats.
 
-## Retrieve a Base Formula's Definition
+## Retrieve a base formula's definition
 
 Sample Curl:
 
@@ -81,7 +81,7 @@ You can view the base formula's definition in the body of the response. The foll
 
 Response Code: 200 (Base Formula's definition is returned successfully.)
 
-## Retrieve a Base Formula’s Definition in Tree Format
+## Retrieve a base formula’s definition in tree format
 
 Sample Curl:
 
@@ -134,7 +134,7 @@ You can view the base formula's definition in the body of the response, includin
 
 Response Code: 200 (Base Formula's definition is returned successfully.)
 
-## Retrieve a Base Formula’s Definition in Tokens Format
+## Retrieve a base formula’s definition in tokens format
 
 Sample Curl:
 

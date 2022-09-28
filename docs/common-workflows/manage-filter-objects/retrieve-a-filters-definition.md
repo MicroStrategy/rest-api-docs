@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Filter's Definition
-sidebar_label: Retrieve a Filter's Definition
+title: Workflow sample - Retrieve a filter's definition
+sidebar_label: Retrieve a filter's definition
 description: This topic covers several workflows for retrieving a filter's definition.
 ---
 
@@ -19,7 +19,7 @@ This topic covers several workflows for retrieving a filter's definition:
 - [Retrieve a Filter's Definition with Custom Expressions in Tree and Tokens Formats](#retrieve-a-filters-definition-with-custom-expressions-in-tree-and-tokens-formats)
 - [Retrieve a Filter's Definition That Contains Inline Custom Expressions, with the Expression in Tree and Tokens Formats](#retrieve-a-filters-definition-that-contains-inline-custom-expressions-with-the-expression-in-tree-and-tokens-formats)
 
-## Retrieve a Filter's Definition
+## Retrieve a filter's definition
 
 This workflow sample demonstrates how to retrieve the definition of a filter through the Modeling service.
 
@@ -101,7 +101,7 @@ You can view the filter's definition in the body of the response.
 
 Response Code: 200 (The filter's definition was returned successfully.)
 
-## Retrieve a Filter's Definition in Tokens Format
+## Retrieve a filter's definition in tokens format
 
 In this workflow sample, you want to get the definition of the "Year < 2015" filter object. The object ID of the filter is `8018C24FEBC4406CB9E36838C01C82D1`. Unlike the first workflow, we want to enable the showFilterTokens parameter to retrieve the filter's definition in tokens format as well.
 
@@ -229,7 +229,7 @@ Sample Response Body: You can view the filter’s definition in the body of the 
 }
 ```
 
-## Retrieve a Filter's Definition with Custom Expressions in Tree and Tokens Formats
+## Retrieve a filter's definition with custom expressions in tree and tokens formats
 
 In this workflow sample, you want to get the definition of a filter that contains the custom expression, "Year@ID > 2015", with the expression returned in tree and tokens formats. The object ID of the filter is `B4B9AE1411EB3309268D0080EFE5DA56`. The following is a screenshot of what the filter looks like in the Filter editor.
 
@@ -371,7 +371,7 @@ Sample Response Body: You can view the filter’s definition in the body of the 
 
 Sample Response Code: 200 (Filter's definition is returned successfully.)
 
-## Retrieve a Filter's Definition That Contains Inline Custom Expressions, with the Expression in Tree and Tokens Formats
+## Retrieve a filter's definition that contains inline custom expressions, with the expression in tree and tokens formats
 
 In this workflow sample, you want to get the definition of a filter that contains an inline custom expression, with the expression returned in tree and tokens format. The object ID of the filter is `B488A1B711EB330926FF0080EFB57956`. The following is a screenshot of what the filter looks like in the Filter editor.
 

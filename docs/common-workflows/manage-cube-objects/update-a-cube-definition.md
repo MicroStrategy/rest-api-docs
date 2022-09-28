@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Cube's Definition and Publish It
-sidebar_label: Update a Cube Definition
+title: Workflow sample - Update a cube's definition and publish it
+sidebar_label: Update a cube definition
 description: This workflow sample demonstrates how to update a cube’s definition through the Modeling service and Publish it through Library Server.
 ---
 
@@ -24,9 +24,9 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-## Update a Cube Definition
+## Update a cube definition
 
-### Update a cube object using [PUT /api/model/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube) (New in 2021 Update 4)
+### Update a cube object using [PUT /api/model/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube) (new in 2021 Update 4)
 
 Sample Request Header:
 
@@ -456,9 +456,9 @@ Sample Response:
 
 Sample Response Code: 200 (The cube definition is updated successfully.)
 
-## Publish the Cube
+## Publish the cube
 
-### Publish the cube using [POST /api/v2/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2) (New in 2021 Update 4)
+### Publish the cube using [POST /api/v2/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2) (new in 2021 Update 4)
 
 Sample Request Header:
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve an Incremental Refresh Report Definition
-sidebar_label: Retrieve an IRR Definition
+title: Workflow sample - Retrieve an incremental refresh report definition
+sidebar_label: Retrieve an IRR definition
 description: This topic covers several workflows to retrieve an Incremental Refresh Report definition.
 ---
 
@@ -29,7 +29,7 @@ The response can change based on the request parameters provided by the caller. 
   - If omitted or `false`, only `text` and `tree` formats are returned.
   - If `true`, all `text`, `tree`, and `tokens` formats are returned.
 
-## Retrieve an Incremental Refresh Report Definition
+## Retrieve an incremental refresh report definition
 
 Retrieve the Incremental Refresh Report definition using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/get_api_model_incrementalRefresh__incrementalRefreshReportId_).
 
@@ -94,7 +94,7 @@ You can view the Incremental Refresh Report definition in the body of the respon
 
 Response Code: 200 (Incremental Refresh Report's definition is returned successfully.)
 
-## Retrieve an Incremental Refresh Report Definition With Filter Using Tokens
+## Retrieve an incremental refresh report definition with filter using tokens
 
 Retrieve the Incremental Refresh Report definition using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/get_api_model_incrementalRefresh__incrementalRefreshReportId_).
 

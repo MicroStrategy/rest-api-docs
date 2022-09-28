@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Base Formula's Definition within a Changeset
-sidebar_label: Update a Base Formula's Definition within a Changeset
+title: Workflow sample - Update a base formula's definition within a changeset
+sidebar_label: Update a base formula's definition within a changeset
 description: This workflow sample demonstrates how to update a base formula's definition through the Modeling service.
 ---
 

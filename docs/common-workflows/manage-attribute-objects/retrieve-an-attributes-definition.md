@@ -1,6 +1,6 @@
 ---
-title: Workflow Samples - Retrieve an Attribute's Definition
-sidebar_label: Retrieve an Attribute's Definition
+title: Workflow samples - Retrieve an attribute's definition
+sidebar_label: Retrieve an attribute's definition
 description: This workflow sample demonstrates how to retrieve the definition of an attribute through the Modeling service.
 ---
 
@@ -12,7 +12,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-## Retrieve an Attribute's Definition
+## Retrieve an attribute's definition
 
 This workflow sample demonstrates how to retrieve the definition of an attribute through the Modeling service.
 
@@ -207,7 +207,7 @@ You can view the attribute's definition in the body of the response.
 
 Response Code: 200 (The attribute's definition was returned successfully.)
 
-## Retrieve an Attribute's Definition with Expressions in Tree and Tokens Formats
+## Retrieve an attribute's definition with expressions in tree and tokens formats
 
 In this workflow sample, you want to get the definition of the "`Subcategory`“ attribute object, with the expression returned in tree and tokens formats. The object ID of the attribute is `E8C034036E4EE6404513A6B12FAE9481` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 

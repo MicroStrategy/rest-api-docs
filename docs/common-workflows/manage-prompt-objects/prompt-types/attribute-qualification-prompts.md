@@ -1,5 +1,5 @@
 ---
-title: Attribute Qualification Prompts
+title: Attribute qualification prompts
 description: An attribute qualification prompt is a restrictive type prompt that allows you to filter the data of a report or document based on the qualification of multiple attributes. For example, you determine a single attribute or a list of attributes from which each user can select elements to define their report filter.
 ---
 

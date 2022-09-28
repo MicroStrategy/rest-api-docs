@@ -1,5 +1,5 @@
 ---
-title: Unlock the Schema
+title: Unlock the schema
 description: This workflow sample demonstrates how to unlock the schema.
 ---
 

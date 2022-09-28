@@ -1,6 +1,6 @@
 ---
-title: Workflow Samples - Retrieve a Security Filter Definition
-sidebar_label: Retrieve a Security Filter Definition
+title: Workflow samples - Retrieve a security filter definition
+sidebar_label: Retrieve a security filter definition
 description: This topic covers several workflows for retrieving a security filter's definition through the Modeling service.
 ---
 
@@ -12,7 +12,7 @@ This topic covers several workflows for retrieving a security filter's definitio
 - [Retrieve a Security Filter's Definition with Custom Expressions in Tree and Tokens Formats](#retrieve-a-security-filters-definition-with-custom-expressions-in-tree-and-tokens-formats)
 - [Retrieve a Filter's Definition That Contains Inline Custom Expressions, with the Expression in Tree and Tokens Formats](#retrieve-a-filters-definition-that-contains-inline-custom-expressions-with-the-expression-in-tree-and-tokens-formats)
 
-## Retrieve a Security Filter's Definition
+## Retrieve a security filter's definition
 
 In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
@@ -94,7 +94,7 @@ You can view the security filter's definition in the body of the response.
 
 Response Code: 200 (The security filter's definition was returned successfully.)
 
-## Retrieve a Security Filter's Definition within a Changeset
+## Retrieve a security filter's definition within a changeset
 
 :::tip
 
@@ -248,7 +248,7 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset has been deleted successfully)
 
-## Retrieve a Security Filter's Definition in Tokens Format
+## Retrieve a security filter's definition in tokens format
 
 In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the MicroStrategy Tutorial project. This procedure is similar to [Retrieve a Security Filter's Definition](#retrieve-a-security-filters-definition), except you want to enable the `showFilterTokens` parameter to retrieve the security filter's definition in tokens format.
 
@@ -376,7 +376,7 @@ You can view the security filter's definition in the body of the response. Notic
 }
 ```
 
-## Retrieve a Security Filter's Definition with Custom Expressions in Tree and Tokens Formats
+## Retrieve a security filter's definition with custom expressions in tree and tokens formats
 
 In this workflow sample, you want to get the definition of a security filter that contains a "Year@ID < 2015" custom expression. The object ID of the security filter is `B4B9AE1411EB3309268D0080EFE5DA56`.
 
@@ -524,7 +524,7 @@ You can view the security filter's definition in the body of the response. Notic
 
 Sample Response Code: 200 (The security filter's definition is returned successfully.)
 
-## Retrieve a Filter's Definition That Contains Inline Custom Expressions, with the Expression in Tree and Tokens Formats
+## Retrieve a filter's definition that contains inline custom expressions, with the expression in tree and tokens formats
 
 In this workflow sample, you want to get the definition of a security filter that contains an inline custom expression. The object ID of the security filter is `B488A1B711EB330926FF0080EFB57956`.
 

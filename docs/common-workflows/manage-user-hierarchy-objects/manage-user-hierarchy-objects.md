@@ -1,5 +1,5 @@
 ---
-title: Manage User Hierarchy Objects
+title: Manage user hierarchy objects
 description: You can use REST API requests to retrieve, create, and delete user hierarchy objects through the Modeling service.
 ---
 

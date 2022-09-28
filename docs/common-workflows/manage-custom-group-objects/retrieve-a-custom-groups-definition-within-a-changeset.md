@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Custom Group's Definition within a Changeset
-sidebar_label: Retrieve a Custom Group's Definition within a Changeset
+title: Workflow sample - Retrieve a custom group's definition within a changeset
+sidebar_label: Retrieve a custom group's definition within a changeset
 description: This workflow sample demonstrates how to retrieve a custom group’s definition within a changeset.
 ---
 

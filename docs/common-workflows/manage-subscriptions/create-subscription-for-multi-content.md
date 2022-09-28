@@ -1,5 +1,5 @@
 ---
-title: Create Subscription for Multi Content
+title: Create subscription for multi content
 description: This workflow sample demonstrates how to create email subscriptions with multiple types of content contained within them.
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve Report or Card SQL
-sidebar_label: Retrieve Report or Card SQL
+title: Workflow sample - Retrieve report or card SQL
+sidebar_label: Retrieve report or card SQL
 description: You can retrieve a report or card instance’s SQL statement. In this workflow sample, a document with a report object is used. However, the same workflow applies to card objects.
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Fact Object
-sidebar_label: Update a Fact Object
+title: Workflow sample - Update a fact object
+sidebar_label: Update a fact object
 description: The workflow to update a fact object.
 ---
 

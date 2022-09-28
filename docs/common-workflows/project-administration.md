@@ -1,5 +1,5 @@
 ---
-title: Project Administration
+title: Project administration
 description: The workflow below allows an administrator to manage project distribution and configuration.
 ---
 
@@ -13,13 +13,13 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 The following sequence of REST API requests allows an administrator to manage project distribution and configuration:
 
-## Log In
+## Log in
 
 End Point: `POST /api/auth/login`
 
 This endpoint allows the caller to authenticate with the MicroStrategy REST Server. Provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting response returns a status code of 204 and a response header containing X-MSTR-AuthToken, the authorization token that will be used by subsequent requests.
 
-### Sample Request
+### Sample request
 
 - Request body:
 
@@ -49,7 +49,7 @@ This endpoint allows the caller to authenticate with the MicroStrategy REST Serv
 
 - Response code: 204 (Success: No Content)
 
-## Get Information about Nodes and Projects with Current Status
+## Get information about nodes and projects with current status
 
 End Point: `GET /api/monitors/iServer/nodes`
 
@@ -156,7 +156,7 @@ To apply a filter on project id and node name, you can use the filter option of 
   }
   ```
 
-## Update Properties for a Specific Project
+## Update properties for a specific project
 
 End Point: `PATCH /api/monitors/iServer/nodes/{nodeName}/projects/{projectId}`
 
@@ -268,7 +268,7 @@ This operation requires the "Load and Unload project" and "Idle and Resume proje
      }
      ```
 
-## Get Update Information About Projects for a Node
+## Get update information about projects for a node
 
 End Point: `GET /api/monitors/iServer/nodes`
 
@@ -303,7 +303,7 @@ In the example above, the project status of `"MicroStrategy Tutorial"` was chang
   }
   ```
 
-## Log Out
+## Log out
 
 End Point: `POST /api/auth/logout`
 

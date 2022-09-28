@@ -1,5 +1,5 @@
 ---
-title: Filter Dossier Instances
+title: Filter dossier instances
 description: You can use the following REST APIs to filter the data that is returned when you create or update an instance of a dossier, including clearing the filter selections.
 ---
 

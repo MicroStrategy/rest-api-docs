@@ -1,5 +1,5 @@
 ---
-title: Manage User and Workload Fences
+title: Manage user and workload fences
 description: Within a cluster, fences allows an administrator or a user with DssXmlPrivilegesConfigureServerBasic and DssXmlPrivilegesUseClusterMonitor privileges to reserve specific nodes for use by certain users or certain workloads during normal operations.
 ---
 

@@ -3,7 +3,7 @@ title: MicroStrategy REST API Playground
 description: MicroStrategy REST API Playground is a place you can see live demos of our REST API, API specifications, and code examples. You can also play with it without writing a single line of code.
 ---
 
-## What is the Playground?
+## What is the playground?
 
 MicroStrategy REST API Playground is a place you can see live demos of our REST API, API specifications, and code examples. You can also play with it without writing a single line of code.
 
@@ -19,13 +19,13 @@ You need to pick an environment to run the requests. There are two environments 
 - demo.microstrategy.com: It contains the connection information to the demo environment. A guest user only has limited assess to the environment, hence not all requests will pass.
 - A template for cloud environment. You can make a copy and change the connection information.
 
-## Other Useful Information
+## Other useful information
 
 - If you are interested in Embedded Analytics solutions, play with our Embedding SDK Playground at <https://playground.microstrategy.com>.
 - You can also visit our [Swagger API-Docs page](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html) or in your Library environment.
 - Check out more examples and demos [here](https://github.com/MicroStrategy).
 
-## How to Contribute?
+## How to contribute?
 
 You can be a part of the playground project in the following ways.
 

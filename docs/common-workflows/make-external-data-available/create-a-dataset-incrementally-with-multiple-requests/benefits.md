@@ -1,5 +1,5 @@
 ---
-title: Benefits of Creating a Dataset Incrementally with Multiple Requests
+title: Benefits of creating a dataset incrementally with multiple requests
 description: The benefits of creating a dataset incrementally with multiple requests.
 ---
 

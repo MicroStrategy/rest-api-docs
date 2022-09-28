@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a User Hierarchy's Definition
-sidebar_label: Update a User Hierarchy's Definition
+title: Workflow sample - Update a user hierarchy's definition
+sidebar_label: Update a user hierarchy's definition
 description: This workflow sample demonstrates how to update an user hierarchy's definition through the Modeling service.
 ---
 

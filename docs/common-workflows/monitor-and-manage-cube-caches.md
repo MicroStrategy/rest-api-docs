@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Monitor and Manage Cube Caches
-sidebar_label: Monitor and Manage Cube Caches
+title: Workflow sample - Monitor and manage cube caches
+sidebar_label: Monitor and manage cube caches
 description: The status of a cube tells you how the cube is currently being used and whether reports/dossiers can access the cube. For example, if a cube is deactivated, reports that access that cube fail to execute. Cube status is accessed through the System Monitors in Developer. All published cubes have an entry in the cube monitor. Deleting an entry from the cube monitor unpublishes the cube.
 ---
 
@@ -14,7 +14,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 The status of a cube tells you how the cube is currently being used and whether reports/dossiers can access the cube. For example, if a cube is deactivated, reports that access that cube fail to execute. Cube status is accessed through the System Monitors in Developer. All published cubes have an entry in the cube monitor. Deleting an entry from the cube monitor unpublishes the cube.
 
-## Instructions to access the Cube Cache Monitor in Developer
+## Instructions to access the cube cache monitor in Developer
 
 1. Open MicroStrategy Developer.
 1. In the left pane, navigate to **Administration** > **System Monitors** > **Caches** > **Intelligent Cubes** to access the cube cache list.
@@ -55,7 +55,7 @@ Endpoint: `GET /api/monitors/caches/cubes`
 
 This endpoint fetches the cube cache list on a specific Intelligence server node.
 
-### API Parameter Details
+### API parameter details
 
 | Parameter         | Description                                                                                                                                | Parameter Type | Data Type | Is Required |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------- | --------- | ----------- |
@@ -77,7 +77,7 @@ The `sortBy` query parameter allows input such as `"+size"`, `"-size"`, and `"si
 - Project
 - Owner
 
-### Output Design
+### Output design
 
 Fill in the sample below to design your own output.
 
@@ -125,7 +125,7 @@ Fill in the sample below to design your own output.
 }
 ```
 
-### Output Example
+### Output example
 
 ```json
 {
@@ -168,7 +168,7 @@ Fill in the sample below to design your own output.
 }
 ```
 
-### Error Handling
+### Error handling
 
 | Invalid Input              | Error Message                                                                                                                                                     | HTTP Response Code |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
@@ -179,20 +179,20 @@ Fill in the sample below to design your own output.
 | status is invalid          | Invalid filter field state.loadedState input ''{0}'', it should like: 'loaded'                                                                                    | 400                |
 | sortBy is invalid          | Invalid sortBy input '{sortBy input}', it should like: ^[+ -]{0,1}(cubeName size &#124; hitCount &#124; lastUpdateTime &#124; status &#124; project &#124; owner) | 400                |
 
-## Get Cache Information for a Single Cube
+## Get cache information for a single cube
 
 Endpoint: `GET /api/monitors/caches/cubes/{cacheId}`
 
 This endpoint gets cache information for a single cube.
 
-### API Parameter Details
+### API parameter details
 
 | Parameter        | Description         | Parameter Type | Data Type | Is Required |
 | ---------------- | ------------------- | -------------- | --------- | ----------- |
 | X-MSTR-AuthToken | Authorization token | header         | string    | true        |
 | id               | Cache ID            | path           | string    | true        |
 
-### Output Design
+### Output design
 
 Fill in the sample below to design your own output.
 
@@ -260,7 +260,7 @@ Fill in the sample below to design your own output.
 }
 ```
 
-### Output Example
+### Output example
 
 ```json
 {
@@ -337,7 +337,7 @@ Fill in the sample below to design your own output.
 }
 ```
 
-### Error Handling
+### Error handling
 
 | Invalid Input                                                            | Error Message                                                                                                                                | HTTP Response Code |
 | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
@@ -345,13 +345,13 @@ Fill in the sample below to design your own output.
 | cacheId does not exist in Intelligence server                            | The cube cache '{cacheId}' is not found in Intelligence server                                                                               | 404                |
 | cacheId is invalid with an invalid cluster node (based on code 64) in it | The cluster node ''{0}'' is not connected or canonical name, you should use the cluster node name from the `GET /api/monitors/iServer/nodes` | 503                |
 
-## Fetch Aggregated Cube Cache Capacity Usage Information
+## Fetch aggregated cube cache capacity usage information
 
 Endpoint: `GET /api/monitors/caches/cubes/aggregatedUsages`
 
 This endpoint fetches aggregated cube cache capacity usage information by project or user.
 
-### API Parameter Details
+### API parameter details
 
 | Parameter        | Description                                                                                                                           | Parameter Type | Data Type   | Is Required |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------- | ----------- |
@@ -359,7 +359,7 @@ This endpoint fetches aggregated cube cache capacity usage information by projec
 | clusterNode      | Cluster node name                                                                                                                     | query          | string      | true        |
 | aggregateBy      | An enum to control aggregated cache size by object. Aggregation is currently supported by project and user. Default value is project. | query          | enum string | true        |
 
-### Output Design
+### Output design
 
 Fill in the sample below to design your own output. We recommend you specify all sizes in bytes across your REST APIs.
 
@@ -376,7 +376,7 @@ Fill in the sample below to design your own output. We recommend you specify all
 }
 ```
 
-### Output Example for Grouping by Project
+### Output example for grouping by project
 
 ```json
 {
@@ -403,7 +403,7 @@ Fill in the sample below to design your own output. We recommend you specify all
 }
 ```
 
-### Output Example for Grouping by User
+### Output example for grouping by user
 
 ```json
 {
@@ -422,20 +422,20 @@ Fill in the sample below to design your own output. We recommend you specify all
 }
 ```
 
-### Error Handling
+### Error handling
 
 | Invalid Input              | Error Message                                                                                   | HTTP Response Code |
 | -------------------------- | ----------------------------------------------------------------------------------------------- | ------------------ |
 | Cluster node doesn't exist | Invalid cluster node name {clusterNode}                                                         | 400                |
 | groupByObject is invalid   | The group by object {groupByObject} is invalid, currently just support group by user or project | 400                |
 
-## Alter Cube Cache Status for a Specific Cube
+## Alter cube cache status for a specific cube
 
 Endpoint: `PATCH /api/monitors/caches/cubes/{cacheId}`
 
 This endpoint alters cube cache status for a specific cube, on a specific node.
 
-### API Parameter Details
+### API parameter details
 
 | Parameter        | Description                                                                     | Parameter Type | Data Type | Is Required |
 | ---------------- | ------------------------------------------------------------------------------- | -------------- | --------- | ----------- |
@@ -443,7 +443,7 @@ This endpoint alters cube cache status for a specific cube, on a specific node.
 | id               | Cache ID                                                                        | path           | string    | true        |
 | Prefer           | Allows client to set preferences. Execute asynchronous mode with respond-async. | header         | string    | true        |
 
-### Body Input
+### Body input
 
 ```json
 The following change status actions are supported: active, deactive, load, and unload.
@@ -461,7 +461,7 @@ or
 }
 ```
 
-### Body Input Example
+### Body input example
 
 ```json
 {
@@ -469,7 +469,7 @@ or
 }
 ```
 
-### Output Design
+### Output design
 
 Fill in the sample below to design your own output. This sample is for a successful response code of 202 (Accepted). The response location header includes a URI where this same status can be retrieved, so that the client stays up-to-date.
 
@@ -480,7 +480,7 @@ Fill in the sample below to design your own output. This sample is for a success
 }
 ```
 
-### Output Example
+### Output example
 
 ```json
 {
@@ -489,7 +489,7 @@ Fill in the sample below to design your own output. This sample is for a success
 }
 ```
 
-### Prerequisite Condition Details
+### Prerequisite condition details
 
 Check the cube prerequisite status for action in the REST-API side.
 
@@ -508,7 +508,7 @@ An invalid action input, which is the code validation logic on the REST-API side
 | Not persisted and not active | Active | The cube cache ''{0}'' is not persisted. The cube cache must be persisted before active it |
 | Not active and not loaded    | Load   | The cube cache ''{0}'' is not active. The cube cache must be active before loading it      |
 
-### Error Handling
+### Error handling
 
 | Invalid Input                                | Error Message                                                                                      | HTTP Response Code |
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------ |
@@ -516,20 +516,20 @@ An invalid action input, which is the code validation logic on the REST-API side
 | cacheId doesn't exist in Intelligence server | The cube cache '{cacheId}' is not found in Intelligence server                                     | 404                |
 | Unsupported status input                     | unsupported statue input, currently just support formats: {"active":boolean} or {"loaded":boolean} | 400                |
 
-## Get Cube Cache Manipulation Status Information
+## Get cube cache manipulation status information
 
 Endpoint: `GET /api/monitors/caches/cubes/manipulations/{id}/status`
 
 This endpoint get cube cache manipulation status information.
 
-### API Parameter Details
+### API parameter details
 
 | Parameter        | Description           | Parameter Type | Data Type | Is Required |
 | ---------------- | --------------------- | -------------- | --------- | ----------- |
 | X-MSTR-AuthToken | Authorization token   | header         | string    | true        |
 | id               | Cache manipulation ID | path           | string    | true        |
 
-### Output Design
+### Output design
 
 Fill in the sample below to design your own output. This sample is for a response status code of 200.
 
@@ -547,7 +547,7 @@ For each enum state:
 - When the manipulation is “error“ it means the manipulation finished with an error.
 - When the manipulation is “requestHandlingFailed“ it means the manipulation request failed. This request is handled by Intelligence server.
 
-### Output Example
+### Output example
 
 This example is for a response status code of 200.
 
@@ -557,30 +557,30 @@ This example is for a response status code of 200.
 }
 ```
 
-### Error Handling
+### Error handling
 
 | Invalid Input      | Error Message               | HTTP Response Code |
 | ------------------ | --------------------------- | ------------------ |
 | cacheId is invalid | Invalid manipulation id {0} | 400                |
 
-## Delete a Cube Cache
+## Delete a cube cache
 
 Endpoint: `DELETE /api/monitors/caches/cubes/{cacheId}`
 
 This endpoint deletes a cube cache.
 
-### API Parameter Details
+### API parameter details
 
 | Parameter        | Description         | Parameter Type | Data Type | Is Required |
 | ---------------- | ------------------- | -------------- | --------- | ----------- |
 | X-MSTR-AuthToken | Authorization token | header         | string    | true        |
 | id               | Cache ID            | path           | string    | true        |
 
-### Output Design
+### Output design
 
 Successful response code 204 (no content).
 
-### Error Handling
+### Error handling
 
 | Invalid Input                                | Error Message                                                  | HTTP Response Code |
 | -------------------------------------------- | -------------------------------------------------------------- | ------------------ |

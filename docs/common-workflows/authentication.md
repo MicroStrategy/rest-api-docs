@@ -1,6 +1,6 @@
 ---
 sidebar_label: Authentication
-title: Workflow Sample - Authentication
+title: Workflow sample - Authentication
 description: The REST API provides authentication end points to initiate a session with the Intelligence Server. It supports multiple authentication modes such as Standard, LDAP, SAML, and so on.
 ---
 

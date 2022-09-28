@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a New Table Object
-sidebar_label: Create a New Table Object
+title: Workflow sample - Create a new table object
+sidebar_label: Create a new table object
 description: This workflow sample demonstrates how to create a new table object through the Modeling service.
 ---
 
@@ -14,7 +14,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow sample demonstrates how to create a new table object through the Modeling service.
 
-## Create a New Table Object
+## Create a new table object
 
 In this workflow sample, you create a new `"CITY_CTR_SLS"` table object in the MicroStrategy Tutorial project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`. All schema tables are created under the objects/tables folder schema.
 
@@ -325,9 +325,9 @@ A changeset is required for creating and updating objects (such as filters, fact
 
    Sample Response Code: 204 (The changeset has been deleted successfully.)
 
-## More Examples
+## More examples
 
-### Create a Freeform SQL Table
+### Create a freeform SQL table
 
 Besides defining the physical table field via a warehouse table, using the table name and namespace, you can also define the physical table field using a freeform SQL statement and column information. This is called a freeform SQL table. The type must be specified in the `"physicalTable"` field as `"type": "sql"`.
 
@@ -445,7 +445,7 @@ You can view the new table's definition in the body of the response.
 }
 ```
 
-### Create a Table Alias
+### Create a table alias
 
 You can also create a table by reusing an existing physical table. This is called a table alias.
 

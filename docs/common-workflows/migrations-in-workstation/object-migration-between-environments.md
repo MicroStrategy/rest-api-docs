@@ -1,5 +1,5 @@
 ---
-title: Object Migration Between Environments
+title: Object migration between environments
 description: You can move packages of objects between environments within Workstation.
 ---
 
@@ -16,7 +16,7 @@ You must [configure the package storage location in Workstation](https://www2.mi
 - [GET /api/migrations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/getMigrationList)
 - [DELETE /api/migrations?packageId={{packageId}}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/deletePackage)
 
-## Privileges and Authorization
+## Privileges and authorization
 
 You need the following privileges for both the source and target environments:
 
@@ -26,11 +26,11 @@ You need the following privileges for both the source and target environments:
 
 To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response body. Keep the token value. It is required to execute the REST API. See [Workflow Sample: Authentication](../authentication.md) for more information.
 
-## Use Scenario
+## Use scenario
 
 The best practice scenario is when Workstation uses one Library server as a source and another Library server as a target. The source and target environments can be the same.
 
-## Create Migration
+## Create migration
 
 ### Step 1: Use the `POST /api/migrations` API call to the source Library
 
@@ -386,7 +386,7 @@ Sample Response Body:
 }
 ```
 
-### Step 6 (Optional): Use the `GET /api/migrations/{migrationId}` API call to the target Library
+### Step 6 (optional): Use the `GET /api/migrations/{migrationId}` API call to the target Library
 
 Since the package import is asynchronously processing, this call checks the import status. It is usually `importing`, `imported`, or `import_failed`.
 
@@ -422,7 +422,7 @@ Since the package import is asynchronously processing, this call checks the impo
 }
 ```
 
-## Undo Migration
+## Undo migration
 
 ### Step 1: Use the `PATCH /api/migrations/{migrationId}` API call to the target Library
 
@@ -511,11 +511,11 @@ Sample Response Body:
 }
 ```
 
-### Step 3 (Optional): Use the `GET /api/migrations/{migrationId}` API call to the target Library
+### Step 3 (optional): Use the `GET /api/migrations/{migrationId}` API call to the target Library
 
 Since the package undo is asynchronously processing, this call checks the undo status. Usually it is `undoing`, `undo_success`, or `undo_failed`.
 
-## Delete Package
+## Delete package
 
 Make sure to delete migrations from the source and target one by one.
 

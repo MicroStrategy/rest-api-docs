@@ -1,5 +1,5 @@
 ---
-title: Supported Operators for Metric Limits
+title: Supported operators for metric limits
 description: The supported operators for metric limits.
 ---
 

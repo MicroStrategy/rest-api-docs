@@ -1,6 +1,6 @@
 ---
-title: Manage Fact Objects
-sidebar_label: Manage Fact Objects
+title: Manage fact objects
+sidebar_label: Manage fact objects
 description: You can use REST API requests to retrieve, create and update fact objects through the Modeling service.
 ---
 

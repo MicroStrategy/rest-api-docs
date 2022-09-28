@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Security Filter Definition
-sidebar_label: Update a Security Filter Definition
+title: Workflow sample - Update a security filter definition
+sidebar_label: Update a security filter definition
 description: This workflow sample demonstrates how to update a security filter definition through the Modeling service.
 ---
 

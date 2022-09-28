@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Subtotal within a Changeset
-sidebar_label: Update a Subtotal within a Changeset
+title: Workflow sample - Update a subtotal within a changeset
+sidebar_label: Update a subtotal within a changeset
 description: This workflow sample demonstrates how to update a subtotal's definition through the Modeling service.
 ---
 

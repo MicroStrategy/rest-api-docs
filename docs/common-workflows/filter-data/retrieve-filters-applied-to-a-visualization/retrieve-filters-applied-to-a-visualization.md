@@ -1,5 +1,5 @@
 ---
-title: Retrieve Filters Applied to a Visualization
+title: Retrieve filters applied to a visualization
 description: You can use the following REST API endpoint to return information about the individual filters that have been applied to the dataset available to a visualization in a dossier, called the visualization-level dataset. The filtering information that is returned can be used by other REST API endpoints.
 ---
 

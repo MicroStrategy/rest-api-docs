@@ -1,5 +1,5 @@
 ---
-title: Manage Security Filter Objects
+title: Manage security filter objects
 description: You can use REST API requests to retrieve, create and update security filter objects through the Modeling service.
 ---
 

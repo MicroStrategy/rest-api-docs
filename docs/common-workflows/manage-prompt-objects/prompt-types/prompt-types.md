@@ -1,5 +1,5 @@
 ---
-title: Prompt Types for Managing Prompt Objects
+title: Prompt types for managing prompt objects
 description: There are several different prompt types in the MicroStrategy platform. Each prompt type is defined by a specific set of parameters and corresponds to a value in EnumDSSXMLPromptType.
 ---
 

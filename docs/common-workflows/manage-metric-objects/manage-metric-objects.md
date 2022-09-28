@@ -1,5 +1,5 @@
 ---
-title: Manage Metric Objects
+title: Manage metric objects
 description: You can use REST API requests to retrieve, create, and update metric objects through the Modeling service.
 ---
 

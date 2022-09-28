@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a List of Objects Associated with a Drill Map
-sidebar_label: Retrieve a List of Objects
+title: Workflow sample - Retrieve a list of objects associated with a drill map
+sidebar_label: Retrieve a list of objects
 description: This workflow sample demonstrates how to get the list of objects associated with a specific drill map.
 ---
 

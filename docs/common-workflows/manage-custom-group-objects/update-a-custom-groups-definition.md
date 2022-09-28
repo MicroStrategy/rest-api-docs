@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Custom Group's Definition
-sidebar_label: Update a Custom Group's Definition
+title: Workflow sample - Update a custom group's definition
+sidebar_label: Update a custom group's definition
 description: This workflow sample demonstrates how to update a custom group’s definition through the Modeling service.
 ---
 

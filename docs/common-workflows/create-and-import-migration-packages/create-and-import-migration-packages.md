@@ -1,5 +1,5 @@
 ---
-title: Create and Import Migration Packages
+title: Create and import migration packages
 description: You can use REST API requests to create and import migration packages.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Filter Report and Cube Instances
+title: Filter report and cube instances
 description: You can filter data that is returned by the following REST API requests when you create an instance of a report or cube. You can also define how the results will be filtered in the body parameter of the request.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Retrieve SQL Statements and Query Details
+title: Retrieve SQL statements and query details
 description: You can use REST API requests to retrieve SQL statements and query details.
 ---
 

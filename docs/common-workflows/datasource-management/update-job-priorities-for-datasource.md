@@ -1,5 +1,5 @@
 ---
-title: Update Job Priorities for Datasource
+title: Update job priorities for datasource
 description: This workflow sample demonstrates how to update job priorities for a datasource.
 ---
 

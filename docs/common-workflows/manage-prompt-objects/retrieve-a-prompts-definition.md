@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a prompt's definition
-sidebar_label: Retrieve a Prompt's Definition
+title: Workflow sample - Retrieve a prompt's definition
+sidebar_label: Retrieve a prompt's definition
 description: This workflow sample demonstrates how to retrieve a prompt's definition.
 ---
 

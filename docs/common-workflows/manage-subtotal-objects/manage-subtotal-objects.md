@@ -1,5 +1,5 @@
 ---
-title: Manage Subtotal Objects
+title: Manage subtotal objects
 description: Subtotals allow you to dynamically control the computation and display of report data within desired groupings. Subtotals are applied to report metrics to calculate totals and for dynamic aggregation.
 ---
 

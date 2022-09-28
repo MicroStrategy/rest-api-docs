@@ -1,5 +1,5 @@
 ---
-title: Filter Report and Cube Instances Using View Filters
+title: Filter report and cube instances using view filters
 description: How to filter report and cube instances using view filters.
 ---
 

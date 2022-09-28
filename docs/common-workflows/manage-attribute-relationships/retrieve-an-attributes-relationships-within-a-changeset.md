@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve an Attribute's Relationships within a Changeset
-sidebar_label: Retrieve an Attribute's Relationships within a Changeset
+title: Workflow sample - Retrieve an attribute's relationships within a changeset
+sidebar_label: Retrieve an attribute's relationships within a changeset
 description: This workflow sample demonstrates how to retrieve an attribute's relationships within a changeset.
 ---
 

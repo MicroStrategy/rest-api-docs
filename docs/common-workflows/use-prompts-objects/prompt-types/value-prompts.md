@@ -1,5 +1,5 @@
 ---
-title: Value Prompts
+title: Value prompts
 description: A value prompt allows the results to be filtered based on a specific value, such as a specific date, number, or word/phrase.
 ---
 
@@ -29,7 +29,7 @@ You use the following REST API endpoints to answer a value prompt applied to a d
 
 - PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
-### Provide Specific Prompt Answers
+### Provide specific prompt answers
 
 You provide answers to a value prompt in the body parameter of the request. You must provide the prompt ID and specify the prompt type as "VALUE".
 
@@ -93,7 +93,7 @@ Sample code for answering a value prompt for each data type is provided below:
   }
   ```
 
-## Get Information About a Value Prompt
+## Get information about a value prompt
 
 You use the following REST API endpoints to get information about value prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
 
@@ -109,7 +109,7 @@ You provide the ID of the document, dossier, or report in the path of the reques
 
 ![swagger_promptAnswerModel_response](../../../images/swagger_promptAnswerModel_response.png)
 
-## Value Prompt Definition
+## Value prompt definition
 
 The model for the definition of a value prompt can be represented with the following fields:
 
@@ -232,7 +232,7 @@ Sample code for the value prompt definition for each data type is provided below
   }
   ```
 
-## Possible Prompt Execution Errors for Value Prompts
+## Possible prompt execution errors for value prompts
 
 Numerous errors can occur during the prompt execution workflow, when answering prompts. Some of these are [general errors](../prompt-execution-errors.md), and others occur only for specific types of prompts. The errors listed below are specific to value prompts.
 

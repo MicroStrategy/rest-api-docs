@@ -1,5 +1,5 @@
 ---
-title: Create Subscription with Prompted Content
+title: Create subscription with prompted content
 description: This workflow sample demonstrates how to create a prompted subscription.
 ---
 

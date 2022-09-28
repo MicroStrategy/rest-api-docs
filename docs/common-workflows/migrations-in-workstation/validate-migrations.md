@@ -1,5 +1,5 @@
 ---
-title: Validate Migrations
+title: Validate migrations
 description: You can validate migrations between environments within Workstation. When you validate a migration, you are performing all merges without committing any changes to the metadata. If a migration fails to be validated in a target environment, the migration also fails when being migrated to the same target. Administrator users can only validate migrations prior to migration.
 ---
 
@@ -13,7 +13,7 @@ You must [configure the package storage location in Workstation](https://www2.mi
 - [GET /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/getMigration)
 - [PUT /api/migrations/{migrationId}/validation](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/triggerValidate)
 
-## Privileges and Authorization
+## Privileges and authorization
 
 Only Administrator users can validate migrations. Administrators must have the following privileges:
 
@@ -23,13 +23,13 @@ Only Administrator users can validate migrations. Administrators must have the f
 
 To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response body. Keep the token value. It is required to execute the REST API. See [Workflow Sample: Authentication](../authentication.md) for more information.
 
-## Use Scenarios
+## Use scenarios
 
 The best practice scenario is when Workstation uses one Library server as a source and another Library server as a target. The source and target environments can be the same.
 
 For migrations, the validation action can only occur after the corresponding package is created and before migrating. This means the package status should be created.
 
-## Validate Migration
+## Validate migration
 
 ### Step 1: Use the `PATCH /api/migrations/{migrationId}` API call to the source Library
 

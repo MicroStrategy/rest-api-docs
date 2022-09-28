@@ -1,6 +1,6 @@
 ---
-title: Retrieve a Time Zone's Definition
-description: You can use REST APIs to retrieve the definition for a time zone through the Modeling service. This topic includes the following workflows.
+title: Retrieve a timezone's definition
+description: You can use REST APIs to retrieve the definition for a timezone through the Modeling service. This topic includes the following workflows.
 ---
 
 :::tip
@@ -11,21 +11,21 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-You can use REST APIs to retrieve the definition for a time zone through the Modeling service. This topic includes the following workflows.
+You can use REST APIs to retrieve the definition for a timezone through the Modeling service. This topic includes the following workflows.
 
-## Retrieve a Time Zone's Definition
+## Retrieve a timezone's definition
 
-You want to get the definition of a system time zone. The object ID of the time zone is `1D18D39B4594CFAF60A6C1B2F48164E8`.
+You want to get the definition of a system timezone. The object ID of the timezone is `1D18D39B4594CFAF60A6C1B2F48164E8`.
 
 :::info
 
 Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Since time zone objects are configuration objects, you must set the project ID as an empty string.
+Since timezone objects are configuration objects, you must set the project ID as an empty string.
 
 :::
 
-Get the time zone's definition using [GET /api/model/timezones/{timezoneId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Timezones).
+Get the timezone's definition using [GET /api/model/timezones/{timezoneId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Timezones).
 
 Sample Request Header:
 
@@ -45,7 +45,7 @@ curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timez
 
 Sample Response Body:
 
-You can view the time zone's definition in the body of the response.
+You can view the timezone's definition in the body of the response.
 
 ```json
 {
@@ -57,29 +57,29 @@ You can view the time zone's definition in the body of the response.
     "objectId": "1D18D39B4594CFAF60A6C1B2F48164E8",
     "subType": "timezone_system",
     "name": "America New York time",
-    "description": "The state of New York uses the Eastern Time Zone (UTC-05:00) with daylight saving time (UTC-04:00)."
+    "description": "The state of New York uses the Eastern Timezone (UTC-05:00) with daylight saving time (UTC-04:00)."
   },
   "currentOffset": -18000
 }
 ```
 
-Response Code: 200 (The time zone's definition is returned successfully.)
+Response Code: 200 (The timezone's definition is returned successfully.)
 
-## Retrieve a Time Zone's Definition Within a Changset
+## Retrieve a timezone's definition within a changset
 
-You want the definition of a custom time zone object. That object ID of the time zone is `E99B4F7692564D36A5B324A7956CB84F`.
+You want the definition of a custom timezone object. That object ID of the timezone is `E99B4F7692564D36A5B324A7956CB84F`.
 
 :::info
 
 Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Since time zone objects are configuration objects, you must set the project ID as an empty string.
+Since timezone objects are configuration objects, you must set the project ID as an empty string.
 
 :::
 
 :::tip
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/timezones` to create a new time zone or update the custom time zone's definitions, it is recommended to associate all requests to one changeset.
+A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/timezones` to create a new timezone or update the custom timezone's definitions, it is recommended to associate all requests to one changeset.
 
 :::
 
@@ -121,7 +121,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
 
    Sample Response Code: 201 (A new changeset is created successfully.)
 
-1. Get the time zone's definition within a changeset using [GET /api/model/timezones/{timezoneId}](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timezones/862780DC499A14D74FEC7EB2EF317DA2).
+1. Get the timezone's definition within a changeset using [GET /api/model/timezones/{timezoneId}](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timezones/862780DC499A14D74FEC7EB2EF317DA2).
 
    Sample Request Header
 
@@ -141,7 +141,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
 
    Sample Response Body:
 
-   You can view the time zone's definition in the body of the response.
+   You can view the timezone's definition in the body of the response.
 
    ```json
    {
@@ -163,7 +163,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
    }
    ```
 
-   Response Code: 200 (time zone's definition is returned successfully)
+   Response Code: 200 (timezone's definition is returned successfully)
 
 1. Delete a changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#//Changesets/ms-dehttps://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changeset/ms-deleteChangeset).
 

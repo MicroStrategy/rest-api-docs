@@ -1,5 +1,5 @@
 ---
-title: Create and Get a Subscription
+title: Create and get a subscription
 description: This workflow sample demonstrates how to retrieve a subscription, as well as create your own.
 ---
 

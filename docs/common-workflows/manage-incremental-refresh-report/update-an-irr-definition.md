@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update the Incremental Refresh Report Definition
-sidebar_label: Update an IRR Definition
+title: Workflow sample - Update the incremental refresh report definition
+sidebar_label: Update an IRR definition
 description: This workflow sample demonstrates how to update an Incremental Refresh Report definition through the Modeling service.
 ---
 
@@ -30,7 +30,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-## Update the Incremental Refresh Report using [PUT /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/put_api_model_incrementalRefresh__incrementalRefreshReportId_)
+## Update the incremental refresh report using [PUT /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/put_api_model_incrementalRefresh__incrementalRefreshReportId_)
 
 Sample Request Header:
 

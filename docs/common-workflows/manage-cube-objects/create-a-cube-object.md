@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Cube Object and Publish it
-sidebar_label: Create a Cube Object
+title: Workflow sample - Create a cube object and publish it
+sidebar_label: Create a cube object
 description: This workflow sample demonstrates how to create a new cube object through the Modeling service and publish it through Library server.
 ---
 
@@ -24,9 +24,9 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-## Create a Cube Object
+## Create a cube object
 
-### Create a cube object using [POST /api/model/cubes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-createCube) (New in 2021 Update 4)
+### Create a cube object using [POST /api/model/cubes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-createCube) (new in 2021 Update 4)
 
 Sample Request Header:
 
@@ -440,9 +440,9 @@ Sample Response:
 
 Sample Response Code: 201 (A cube is created successfully.)
 
-## Publish the Cube
+## Publish the cube
 
-### Publish the cube using [POST /api/v2/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2) (New in 2021 Update 4)
+### Publish the cube using [POST /api/v2/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2) (new in 2021 Update 4)
 
 Sample Request Header:
 

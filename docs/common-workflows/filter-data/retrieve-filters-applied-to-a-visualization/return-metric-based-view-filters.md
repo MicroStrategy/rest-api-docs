@@ -1,5 +1,5 @@
 ---
-title: Return the Metric-Based View Filter Criteria Applied Prior to Aggregation
+title: Return the metric-based view filter criteria applied prior to aggregation
 description: A view filter specifies a set of attribute or metric-based filtering criteria. In dossiers, a view filter is applied to a visualization-level dataset before metrics are aggregated. Because view filters are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
 ---
 

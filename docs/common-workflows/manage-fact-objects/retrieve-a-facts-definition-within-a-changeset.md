@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Fact's Definition within a Changeset
-sidebar_label: Retrieve a Fact's Definition within a Changeset
+title: Workflow sample - Retrieve a fact's definition within a changeset
+sidebar_label: Retrieve a fact's definition within a changeset
 description: This workflow sample demonstrates how to retrieve a fact's definition within a changeset.
 ---
 

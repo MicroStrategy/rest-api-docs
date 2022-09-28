@@ -1,5 +1,5 @@
 ---
-title: Code Sample - Filter Reports and Cubes Using Metric Limits
+title: Code sample - Filter reports and cubes using metric limits
 description: The code sample for filter reports and cubes using metric limits.
 ---
 

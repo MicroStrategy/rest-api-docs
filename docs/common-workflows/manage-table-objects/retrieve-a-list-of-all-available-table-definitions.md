@@ -1,12 +1,12 @@
 ---
-title: Workflow Sample - Retrieve a List of All Available Table Definitions
-sidebar_label: Retrieve a List of All Available Table Definitions
+title: Workflow sample - Retrieve a list of all available table definitions
+sidebar_label: Retrieve a list of all available table definitions
 description: You can use REST APIs to retrieve the definitions for a list of all available tables through the Modeling service.
 ---
 
 You can use REST APIs to retrieve the definitions for a list of all available tables through the Modeling service.
 
-## Retrieve a List of All Available Tables' Definitions
+## Retrieve a list of all available tables' definitions
 
 In this workflow sample, you want to get the definitions of all available tables in the project schema. Use the MicroStrategy Tutorial project. Its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
@@ -85,7 +85,7 @@ You can view the tables' definitions in the body of the response.
 
 Response Code: 200 (The tables' definitions are returned successfully.)
 
-### Retrieve a List of Available Tables' Definitions within a Changeset
+### Retrieve a list of available tables' definitions within a changeset
 
 In this workflow sample, you want to get the definitions of all available tables in the project schema. Use the MicroStrategy Tutorial project. Its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
@@ -230,7 +230,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
    Sample Response Code: 204 (The changeset has been deleted successfully.)
 
-### Retrieve a Table's Definition with Only Specified Fields
+### Retrieve a table's definition with only specified fields
 
 In this workflow sample, you use the `fields` parameter to retrieve specific fields. If the `fields` parameter is not specified, the API only returns the `"information"` field by default.
 
@@ -281,7 +281,7 @@ You can view the returned tables' definitions in the body of the response. Notic
 
 Sample Response Code: 200 (The tables' definitions are returned successfully.)
 
-### Retrieve a Sliced Array of Tables' Definitions
+### Retrieve a sliced array of tables' definitions
 
 In this workflow sample, you retrieve a sliced array of the tables' definitions using the following parameters:
 

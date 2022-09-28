@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Get Prompt Information
-sidebar_label: Get Prompt Information
+title: Workflow sample - Get prompt information
+sidebar_label: Get prompt information
 ---
 
 You can use REST APIs to get a list of the prompts that have been applied to a dossier, document or report, together with the definition of each prompt. A workflow sample for using REST APIs to obtain information about prompts:

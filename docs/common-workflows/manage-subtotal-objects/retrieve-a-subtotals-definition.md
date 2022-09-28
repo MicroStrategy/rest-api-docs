@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Subtotal's Definition
-sidebar_label: Retrieve a Subtotal's Definition
+title: Workflow sample - Retrieve a subtotal's definition
+sidebar_label: Retrieve a subtotal's definition
 description: This topic covers several workflows for retrieving a metric's definition.
 ---
 
@@ -50,7 +50,7 @@ Sample Request Header:
 
 Sample Request Body: Empty
 
-## Retrieve a Subtotal's Definition
+## Retrieve a subtotal's definition
 
 Sample Curl:
 
@@ -82,7 +82,7 @@ You can view the subtotal's definition in the body of the response. The followin
 
 Response Code: 200 (Subtotal's definition is returned successfully.)
 
-## Retrieve a Subtotal's Definition in Tree Format
+## Retrieve a subtotal's definition in tree format
 
 Sample Curl:
 
@@ -125,7 +125,7 @@ You can view the subtotal's definition in the body of the response, including th
 
 Response Code: 200 (Subtotal's definition is returned successfully.)
 
-## Retrieve a Subtotal's Definition in Tokens Format
+## Retrieve a subtotal's definition in tokens format
 
 Sample Curl:
 

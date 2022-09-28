@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Drill Map Definition"
-sidebar_label: Retrieve a Drill Map Definition
+title: Workflow sample - Retrieve a drill map definition"
+sidebar_label: Retrieve a drill map definition
 description: You can use REST API requests to retrieve, create, and update drill map objects through the Modeling service.
 ---
 
@@ -14,7 +14,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST APIs to retrieve the definition of a drill map through the Modeling service. This workflow includes the following REST API requests.
 
-## Retrieve a Drill Map Definition
+## Retrieve a drill map definition
 
 You want to get the definition of a drill map object. The object ID of the drill map is `CC2E6AA3421EFF5C41C2D0939750BB24` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
@@ -28,7 +28,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 Retrieve the drill map’s definition using [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/DrillMaps/ms-getDrillMap).
 
-### Sample Request Header
+### Sample request header
 
 ```http
 "accept": "application/json"
@@ -36,11 +36,11 @@ Retrieve the drill map’s definition using [GET /api/model/drillMaps/{drillMapI
 "X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
 ```
 
-### Sample Request Body
+### Sample request body
 
 Empty
 
-### Sample Curl
+### Sample curl
 
 ```bash
 curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/drillMaps/CC2E6AA3421EFF5C41C2D0939750BB24" \
@@ -49,7 +49,7 @@ curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/drill
 -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
 ```
 
-### Sample Response Body
+### Sample response body
 
 You can view the drill map definition in the body of the response.
 
@@ -173,11 +173,11 @@ You can view the drill map definition in the body of the response.
 }
 ```
 
-### Response Code
+### Response code
 
 200 (The drill map definition is returned successfully.)
 
-## Retrieve a Drill Map Definition within a Changeset
+## Retrieve a drill map definition within a changeset
 
 :::info
 

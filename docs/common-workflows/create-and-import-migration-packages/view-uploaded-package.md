@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - View Content from an Uploaded Package
-sidebar_label: View Content from an Uploaded Package
+title: Workflow sample - View content from an uploaded package
+sidebar_label: View content from an uploaded package
 description: This workflow sample demonstrates how to view an uploaded migration package using REST APIs.
 ---
 

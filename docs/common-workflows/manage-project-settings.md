@@ -1,5 +1,5 @@
 ---
-title: Manage Project Settings
+title: Manage project settings
 description: A high-level workflow sample for managing project settings is shown below. The sequence of REST API requests in the following procedure allows an administrative user to manage the project settings.
 ---
 
@@ -13,7 +13,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 A high-level workflow sample for managing project settings is shown below. The sequence of REST API requests in the following procedure allows an administrative user to manage the project settings.
 
-## Log In
+## Log in
 
 Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin)
 
@@ -21,7 +21,7 @@ This endpoint allows the user to authenticate with the MicroStrategy REST Server
 
 In the following example, standard authentication uses a username of administrator and a blank password.
 
-### Sample Request
+### Sample request
 
 Request Body:
 
@@ -38,7 +38,7 @@ Curl:
 curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/auth/login" -H "accept: application/json" -H "Content-Type: application/json" -d "{\\"username\\":\\"administrator\\",\\"password\\":\\"yourPassword\\"}"
 ```
 
-### Sample Response
+### Sample response
 
 Response Header:
 
@@ -52,7 +52,7 @@ x-mstr-authtoken: f34qc7evsntsks0qe6hfcgt0ur
 
 Response Code: 204 (Success: No Content)
 
-## Get the Project Setting Configurations
+## Get the project setting configurations
 
 Endpoint: `GET /api/v2/projects/{projectId}/settings/config`
 
@@ -64,7 +64,7 @@ This operation requires the Web User privilege.
 
 :::
 
-### Sample Request
+### Sample request
 
 Request Parameter:
 
@@ -78,7 +78,7 @@ Curl:
 curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/v2/projects/{projectId}/settings/config" -H "accept: application/json" -H "X-MSTR-AuthToken: hhl9cvevf3gqcvjadojen0p45j"
 ```
 
-### Sample Response
+### Sample response
 
 Response Body:
 
@@ -127,7 +127,7 @@ The following sample is part of the complete response body.
 
 Response Code: 200 (Success: OK)
 
-## Get the Setting Values for a Specific Project
+## Get the setting values for a specific project
 
 Endpoint: `GET /api/v2/projects/{projectId}/settings`
 
@@ -139,7 +139,7 @@ This operation requires the Web User privilege.
 
 :::
 
-### Sample Request
+### Sample request
 
 Request Parameter:
 
@@ -157,7 +157,7 @@ Curl:
 curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/v2/projects/{projectId}/settings" -H "accept: application/json" -H "X-MSTR-AuthToken: ks6ehab41hkleoj03qvamq3bk4"
 ```
 
-### Sample Response
+### Sample response
 
 Response Body:
 
@@ -182,7 +182,7 @@ The following sample is part of the complete response body.
 
 Response Code: 200 (Success: OK)
 
-## Update a Part of the Setting Values for a Specific Project
+## Update a part of the setting values for a specific project
 
 Endpoint: `PATCH /api/v2/projects/{projectId}/settings`
 
@@ -194,7 +194,7 @@ Depending on the setting you are modifying, the response body will tell you whic
 
 :::
 
-### Sample Request
+### Sample request
 
 Request Parameter:
 
@@ -228,7 +228,7 @@ Curl:
 curl -X PATCH "https://demo.microstrategy.com/MicroStrategyLibrary/api/v2/projects/{projectId}/settings" -H "accept: application/json" -H "X-MSTR-AuthToken: b3q75vgt84er8ektbvhbpt9qoh" -H "Content-Type: application/json" -d "{\\"enableDeleteObjectDependencies\\":{\\"value\\":true},\\"cacheEncryptionLevel\\":{\\"value\\":1},\\"maxEmailSubscriptionCount\\":{\\"value\\":200}}"
 ```
 
-### Sample Response
+### Sample response
 
 Response Body:
 
@@ -253,7 +253,7 @@ The following sample is part of the complete response body. A complete list of p
 
 Response Code: 200 (Success: OK)
 
-## Update All Project Setting Values
+## Update all project setting values
 
 Endpoint: `PUT /api/v2/projects/{projectId}/settings`
 
@@ -274,7 +274,7 @@ This operation requires the following privileges:
 
 :::
 
-### Sample Request
+### Sample request
 
 Request Parameter:
 
@@ -326,7 +326,7 @@ Curl:
 curl -X PUT "https://demo.microstrategy.com/MicroStrategyLibrary/api/v2/projects/{projectId}/settings" -H "accept: application/json" -H "X-MSTR-AuthToken: 9kdr8gbhtt60crk0mulbma4msp" -H "Content-Type: application/json" -d "{\\"enableDeleteObjectDependencies\\":{\\"value\\":true},\\"appendInfoForEmailDelivery\\":{\\"value\\":[\\"recipient_name\\",\\"owner_name\\",\\"report_document_name\\",\\"project_name\\",\\"delivery_method\\",\\"schedule\\",\\"subscription_name\\",\\"delivery_status\\",\\"date\\",\\"time\\",\\"email_address\\",\\"error_message\\"]},\\"cacheEncryptionLevel\\":{\\"value\\":1},\\"maxEmailSubscriptionCount\\":{\\"value\\":200},...}"
 ```
 
-### Sample Response
+### Sample response
 
 Response Body:
 
@@ -351,13 +351,13 @@ The following sample is part of the complete response body. A complete list of p
 
 Response Code: 200 (Success: OK)
 
-## Log Out
+## Log out
 
 Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 This endpoint allows the caller to log out the authenticated user from the MicroStrategy REST server. In this example, you close the active user session by providing the `X-MSTR-AuthToken` authorization token, which is generated by `POST /api/auth/login`. If the call is successful, the resulting response returns a status code of 204.
 
-### Sample Request
+### Sample request
 
 Curl:
 
@@ -365,6 +365,6 @@ Curl:
 curl -X POST "https:// demo.microstrategy.com/MicroStrategyLibrary/api/auth/logout" -H "accept: application/json" -H "X-MSTR-AuthToken: c8afkjurl1r9qk2k7puj2hs9cu"
 ```
 
-### Sample Response
+### Sample response
 
 Response Code: 204 (Accepted)

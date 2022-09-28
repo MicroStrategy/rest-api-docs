@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Migration Package
-sidebar_label: Create a Migration Package
+title: Workflow sample - Create a migration package
+sidebar_label: Create a migration package
 description: This workflow sample demonstrates how to create a migration package using REST APIs.
 ---
 
@@ -20,7 +20,7 @@ This workflow sample demonstrates how to create a migration package using REST A
   - [Create a Configuration Package](#create-a-configuration-package)
   - [Create a Project Security Package](#create-a-project-security-package)
 
-## Creating a Project Package
+## Creating a project package
 
 In this workflow sample, you want to create a project package that contains a `"Year"` object with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4` and all its dependents in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. Use `"replace"` as a conflict rule for all these objects.
 
@@ -270,11 +270,11 @@ Sample Response Body:
 
 Sample Response Code: 202 (The package is being deleted.)
 
-## More Examples
+## More examples
 
 Three types of migration package are supported. The only difference between the three is the definition of the package type when using the PUT API. The examples below provide sample request body JSON to create packages of each type.
 
-### Create a Project Package
+### Create a project package
 
 Create a project package that contains the `"Year"` object, with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4`, and its dependents. Make sure the request header contains a project ID.
 
@@ -301,7 +301,7 @@ Sample Request Body:
 }
 ```
 
-### Create a Configuration Package
+### Create a configuration package
 
 Create a configuration package that contains the `"Administrator"` object, with a user object ID of `54F3D26011D2896560009A8E67019608`, and its dependents. Make sure that the request header does _not_ contain a project ID.
 
@@ -328,7 +328,7 @@ Sample Request Body:
 }
 ```
 
-### Create a Project Security Package
+### Create a project security package
 
 A project security package includes links to security roles, security filters, connection mappings, profile folder links, and personal preferences that are related to the selected user and/or user group objects. Security roles and security filters objects are _not_ included. Only links are included.
 

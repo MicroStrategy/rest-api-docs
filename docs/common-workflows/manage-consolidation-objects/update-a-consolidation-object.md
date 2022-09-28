@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Consolidation Object
-sidebar_label: Update a Consolidation Object
+title: Workflow sample - Update a consolidation object
+sidebar_label: Update a consolidation object
 description: This workflow sample demonstrates how to replace an existing consolidation object through the Modeling service.
 ---
 

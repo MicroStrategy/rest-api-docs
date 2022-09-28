@@ -1,6 +1,6 @@
 ---
-title: Workflow Samples - Update an Attribute's Definition
-sidebar_label: Update an Attribute's Definition
+title: Workflow samples - Update an attribute's definition
+sidebar_label: Update an attribute's definition
 description: This workflow sample demonstrates how to update an attribute's definition through the Modeling service.
 ---
 

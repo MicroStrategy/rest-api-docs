@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update an Attribute's Relationships
-sidebar_label: Update an Attribute's Relationships
+title: Workflow sample - Update an attribute's relationships
+sidebar_label: Update an attribute's relationships
 description: This workflow sample demonstrates how to update an attribute's relationship through the Modeling service.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Manage Prompt Objects
+title: Manage prompt objects
 description: You can use REST API requests to retrieve, create, update, and delete the prompt objects through the Modeling service.
 ---
 

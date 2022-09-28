@@ -1,5 +1,5 @@
 ---
-title: Manage Objects
+title: Manage objects
 description: An Access Control List (ACL) is a set of permissions on objects so that users or user groups have control over individual objects in the system. Those permissions decide whether or not a user can perform a particular class of operations on a particular object. For example, a user may have permissions to view and execute a report , but cannot modify the report definition or delete the report.
 ---
 
@@ -34,7 +34,7 @@ ACLs include the following information.
 
 The workflow sample below demonstrates how to get and update an object's ACL.
 
-## Get a Folder's ACL
+## Get a folder's ACL
 
 Endpoint: `GET /api/objects/{id}`
 
@@ -155,7 +155,7 @@ In Workstation, you can view the permissions for the MicroStrategy Test Folder.
 
 ![manage_objects_workstation](../images/manage_objects_workstation.png)
 
-## Get an Attribute's ACL
+## Get an attribute's ACL
 
 Endpoint: `GET /api/objects/{id}`
 
@@ -294,7 +294,7 @@ In Workstation, you can view the permissions for the Total Sales attribute.
 
 ![manage_objects_attribute](../images/manage_objects_attribute.png)
 
-## Update a Folder's ACL
+## Update a folder's ACL
 
 Endpoint: `PUT /api/objects/{id}`
 
@@ -439,7 +439,7 @@ Response Body:
 }
 ```
 
-## Attribute Inherits ACL of Parent Folder
+## Attribute inherits ACL of parent folder
 
 Endpoint: `GET /api/objects/{id}`
 

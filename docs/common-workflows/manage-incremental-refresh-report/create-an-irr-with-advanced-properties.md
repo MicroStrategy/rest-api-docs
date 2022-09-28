@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create an Incremental Refresh Report With Advanced Properties
-sidebar_label: Create an IRR with Advanced Properties
+title: Workflow sample - Create an incremental refresh report with advanced properties
+sidebar_label: Create an IRR with advanced properties
 description: This topic covers several workflows for creating a new Incremental Refresh Report with advanced properties through the Modeling service.
 ---
 

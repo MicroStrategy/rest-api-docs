@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Drill Map
-sidebar_label: Update a Drill Map
+title: Workflow sample - Update a drill map
+sidebar_label: Update a drill map
 description: This workflow sample demonstrates how to update an existing drill map object through the Modeling service.
 ---
 

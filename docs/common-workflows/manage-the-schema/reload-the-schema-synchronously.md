@@ -1,5 +1,5 @@
 ---
-title: Reload the Schema Synchronously
+title: Reload the schema synchronously
 description: This workflow sample demonstrates how to reload (update) the schema synchronously.
 ---
 

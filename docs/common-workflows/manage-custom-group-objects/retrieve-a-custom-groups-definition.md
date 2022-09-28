@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Custom Group's Definition
-sidebar_label: Retrieve a Custom Group's Definition
+title: Workflow sample - Retrieve a custom group's definition
+sidebar_label: Retrieve a custom group's definition
 description: This topic covers three workflows for retrieving a custom group’s definition.
 ---
 
@@ -14,7 +14,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This topic covers three workflows for retrieving a custom group’s definition.
 
-## Retrieve a Custom Group’s Definition with Filter Elements
+## Retrieve a custom group’s definition with filter elements
 
 This workflow sample demonstrates how to retrieve the definition of a custom group with filter elements through the Modeling service.
 
@@ -270,7 +270,7 @@ You can view the custom group's definition in the body of the response.
 
 Response Code: 200 (The custom group's definition was returned successfully.)
 
-## Retrieve a Custom Group’s Definition with a Banding Element
+## Retrieve a custom group’s definition with a banding element
 
 This workflow sample demonstrates how to retrieve the definition of a custom group with a banding element through the Modeling service.
 
@@ -371,7 +371,7 @@ You can view the custom group's definition in the body of the response.
 
 Response Code: 200 (The custom group's definition was returned successfully.)
 
-## Retrieve a Customer Group Definition with Filter Elements' Expressions in Tree and Tokens Formats
+## Retrieve a customer group definition with filter elements' expressions in tree and tokens formats
 
 In this workflow sample, you want to get the definition of a custom group with its filter elements’ custom expressions return in tree and tokens formats. The object ID of the custom group is F315B42A4C64DC733261BFB5347F75FF.
 

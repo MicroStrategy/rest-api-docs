@@ -1,5 +1,5 @@
 ---
-title: Error Messages for View Filters
+title: Error messages for view filters
 description: The error messages for view filters.
 ---
 

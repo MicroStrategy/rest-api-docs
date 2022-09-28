@@ -1,5 +1,5 @@
 ---
-title: Manage Selectors
+title: Manage selectors
 description: The MicroStrategy RESTful server supports different types of selectors, similar to the function in MicroStrategy Library Web.
 ---
 
@@ -74,7 +74,7 @@ For library versions on and after MicroStrategy 2021 Update 1, the behavior chan
     - Object replacement selector(Attribute/metric selector)
     - Visualization as filter
 
-## How to Use Selector Consumption APIs
+## How to use selector consumption APIs
 
 The diagrams below outlines common workflows for using APIs for dossier selector functionalities.
 

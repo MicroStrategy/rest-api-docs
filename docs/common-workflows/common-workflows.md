@@ -1,5 +1,5 @@
 ---
-title: Common Workflows
+title: Common workflows
 description: The first step in a typical MicroStrategy REST API workflow is authenticating the user and creating a session on the Intelligence Server. When authentication is successful, an authorization token and a session cookie are returned in the response header. The authorization token and the cookie must be provided in every subsequent request. If a browser is handling requests, it will also handle the cookies. However, if you are using your own client, you need to maintain the cookie and include it in further requests, together with the authorization token.
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Consolidation
-sidebar_label: Create a Consolidation
+title: Workflow sample - Create a consolidation
+sidebar_label: Create a consolidation
 description: This workflow sample demonstrates how to create a new consolidation object through the Modeling service.
 ---
 
@@ -307,7 +307,7 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset is deleted successfully.)
 
-## Example: Create a Consolidation with Two Elements
+## Example: Create a consolidation with two elements
 
 In the above example, the consolidation has only one element. However, it can have multiple elements, and an element can be referred by other elements.
 

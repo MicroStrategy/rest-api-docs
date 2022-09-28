@@ -1,5 +1,5 @@
 ---
-title: Retrieve Filters Applied to Dossier Chapters
+title: Retrieve filters applied to dossier chapters
 description: You can use the following REST API to get information about the filter applied in each chapter in a specific dossier, including the key and name of the filter, a text summary of the filter expression, and information for the filter source.
 ---
 

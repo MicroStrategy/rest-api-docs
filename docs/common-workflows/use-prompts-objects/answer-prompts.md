@@ -1,9 +1,9 @@
 ---
-title: Answer Prompts
+title: Answer prompts
 description: The workflow to answer prompts.
 ---
 
-## Workflow Sample: Answer Prompts
+## Workflow sample: Answer prompts
 
 Here is a workflow sample for using REST APIs to answer prompts:
 
@@ -128,7 +128,7 @@ Endpoint: POST `/api/documents/{id}/instances/{instanceId}/pdf`
 
 This endpoint allows the caller to export the document to a PDF file (in the form of binary data with Base64 encoding) using the instance ID and object ID of the document. Exporting to PDF is not a required part of the prompt workflow, but it is useful for confirming that the prompts have been applied correctly.
 
-## Answer Prompts with Specific Answers
+## Answer prompts with specific answers
 
 You can use REST APIs to provide prompt answers for three types of prompts applied to dossiers, documents, and reports. For these three prompt types, you can provide specific answers to prompts, choose to [use default prompt answers](#use-default-prompt-answers), or [close optional prompts without providing answers](#close-prompts-without-answers). You can also reset the status so that the dossier, document, or report will be re-prompted the next time it is run.
 
@@ -148,7 +148,7 @@ You can use REST APIs to answer the following three prompt types:
 
 You can identify prompts with the prompt key, prompt ID, or prompt name. If more than one identifier is provided, the logic for identifying the prompt will follow this order: key, ID, name. The prompt key is used first if is available because the key is the only unique value. Since the same prompt can be applied more than once to a dataset, the ID and the name might not be unique. Despite this possibility, the name is often the most convenient way to identify a prompt because of its descriptive nature.
 
-## Use Default Prompt Answers
+## Use default prompt answers
 
 You use the following REST API endpoints to answer a prompt with the default prompt answers:
 
@@ -190,7 +190,7 @@ Sample code for answering several types of prompts with the default answer, with
 }
 ```
 
-## Close Prompts without Answers
+## Close prompts without answers
 
 You close a prompt by using a REST API to answer the prompt, but not providing an answer. You can call one of the following REST API endpoints to close a prompt:
 
@@ -208,11 +208,11 @@ You can close the following prompts by not providing answers:
 
 In the body parameter of the request, you use the `id`, `key`, or `name` parameter to identify the prompt and the type parameter to specify the prompt type. For the parameters where you would have provided a prompt answer, you leave the value blank.
 
-## Reprompt
+## Re-prompt
 
-You can use a REST API to cause a prompted document or dossier to be re-prompted. You cannot currently use a REST API to specifically reprompt a report.
+You can use a REST API to cause a prompted document or dossier to be re-prompted. You cannot currently use a REST API to specifically re-prompt a report.
 
-## Nested Prompts
+## Nested prompts
 
 It is possible that the report, dossier, or document contains nested prompts which need to be resolved prior to fetching data. These prompts can be nested _n_ levels deep, so this workflow may need to be iterated over.
 
@@ -282,9 +282,9 @@ To achieve this workflow via REST API, you simply need to loop through the follo
 
 There is a response of 200. The response body now contains the data, since all prompts have been answered.
 
-### Documents and Dossiers
+### Documents and dossiers
 
-To reprompt a document or dossier, use the following endpoint:
+To re-prompt a document or dossier, use the following endpoint:
 
 - POST `/api/documents/{id}/instances/{instanceId}/rePrompt`
 
@@ -294,6 +294,6 @@ When you use this endpoint, a new instance ID is generated, different from the o
 
 ### Reports
 
-To reprompt a report, simply execute the prompted report again, using the same endpoint you used originally.
+To re-prompt a report, simply execute the prompted report again, using the same endpoint you used originally.
 
 - PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`

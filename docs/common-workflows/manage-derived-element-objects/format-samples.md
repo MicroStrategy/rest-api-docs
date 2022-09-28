@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Format Samples for Derived Elements
-sidebar_label: Format Samples for Derived Elements
+title: Workflow sample - Format samples for derived elements
+sidebar_label: Format samples for derived elements
 description: In a derived element, you can set header and values formats for each element in the POST and PUT REST APIs.
 ---
 
@@ -110,7 +110,7 @@ Sample Body:
 | 8     | Special     |
 | 9     | General     |
 
-### Decimal Places
+### Decimal places
 
 This property controls the number of decimal places shown in the report.
 
@@ -125,7 +125,7 @@ Sample Body:
 
 `"value"` is an integer of `"0"` through `"30"`. The default value is `"0"`.
 
-### Thousands Separator
+### Thousands separator
 
 This property controls the display of a thousands separator.
 
@@ -140,7 +140,7 @@ Sample Body:
 
 `"value"` is a case-insensitive Boolean of `"true"` or `"false"`. The default value is `"true"`.
 
-### Currency Symbol
+### Currency symbol
 
 This property controls the display of the currency symbol.
 
@@ -155,7 +155,7 @@ Sample Body:
 
 `"value"` is a string no longer than four characters. The default value is `"$"`.
 
-### Currency Position
+### Currency position
 
 This property controls the position of the currency symbol.
 
@@ -192,7 +192,7 @@ Sample Body:
 
 `"value"` is a string no longer than 255 characters. The default value is `"General"`.
 
-### Negative Numbers
+### Negative numbers
 
 This property specifies the format of negative numbers.
 
@@ -263,7 +263,7 @@ Sample Body:
 | 2     | Positions cell data vertically, in the center of the cell. |
 | 3     | Positions cell data vertically, at the bottom of the cell. |
 
-### Text Wrap
+### Text wrap
 
 This property controls text wrapping.
 
@@ -278,7 +278,7 @@ Sample Body:
 
 `"value"` is a case-insensitive Boolean of `"true"` or `"false"`. The default value is `"false"`.
 
-### Text Direction
+### Text direction
 
 This property controls text direction.
 
@@ -293,7 +293,7 @@ Sample Body:
 
 `"value"` is an integer of `"0"`, `"90"`, or `"-90"` that represents the text direction in degrees. If `"value"` is `"0"`, the text is horizontal. `"90"` places the text at a 90 degree angle. `"-90"` places the text at a -90 degree angle.
 
-### Left Padding
+### Left padding
 
 This property controls left padding.
 
@@ -308,7 +308,7 @@ Sample Body:
 
 `"value"` is a double of `"0"` through `"100"`. The default value is `"1.0"`.
 
-### Right Padding
+### Right padding
 
 This property controls right padding.
 
@@ -323,7 +323,7 @@ Sample Body:
 
 `"value"` is a double of `"0"` through `"100"`. The default value is `"1.0"`.
 
-### Top Padding
+### Top padding
 
 This property controls top padding.
 
@@ -338,7 +338,7 @@ Sample Body:
 
 `"value"` is a double of `"0"` through `"100"`. The default value is `"1.0"`.
 
-### Bottom Padding
+### Bottom padding
 
 This property controls bottom padding.
 
@@ -481,7 +481,7 @@ Sample Body:
 
 This section describes the properties used to format cell borders in a report.
 
-### Top Style
+### Top style
 
 This property controls the top border style of cells.
 
@@ -508,7 +508,7 @@ Sample Body:
 | 5     | thick       |
 | 6     | double      |
 
-### Bottom Style
+### Bottom style
 
 This property controls the bottom border style of cells.
 
@@ -523,7 +523,7 @@ Sample Body:
 
 This border style uses the same `"value"` as the [Top Style](#top-style).
 
-### Left Style
+### Left style
 
 This property controls the left cell border style of cells.
 
@@ -538,7 +538,7 @@ Sample Body:
 
 This border style uses the same `"value"` as the [Top Style](#top-style).
 
-### Right Style
+### Right style
 
 This property controls the right border style of cells.
 
@@ -553,7 +553,7 @@ Sample Body:
 
 This border style uses the same `"value"` as the [Top Style](#top-style).
 
-### Top Color
+### Top color
 
 This property controls the color of top cell borders.
 
@@ -568,7 +568,7 @@ Sample Body:
 
 `"value"` is an integer from `"0"` to `"16777215"` that represents the color using the decimal color format. The default value is `"0"`, which is black.
 
-### Bottom Color
+### Bottom color
 
 This property controls the color of bottom cell borders.
 
@@ -583,7 +583,7 @@ Sample Body:
 
 `"value"` is an integer from `"0"` to `"16777215"` that represents the color using the decimal color format. The default value is `"0"`, which is black.
 
-### Left Color
+### Left color
 
 This property controls the color of left cell borders.
 
@@ -598,7 +598,7 @@ Sample Body:
 
 `"value"` is an integer from `"0"` to `"16777215"` that represents the color using the decimal color format. The default value is `"0"`, which is black.
 
-### Right Color
+### Right color
 
 This property controls the color of right cell borders.
 
@@ -617,7 +617,7 @@ Sample Body:
 
 This section describes the properties used to format the background.
 
-### Fill Style
+### Fill style
 
 This property controls the fill style of the background.
 
@@ -639,7 +639,7 @@ Sample Body:
 | 2     | gradient<br/>You also select other supporting properties for [fill color](#fill-color), [gradient color](#gradient-color), [gradient angle](#gradient-angle), [gradient X offset](#gradient-x-offset), and [gradient X offset](#gradient-x-offset). |
 | 3     | pattern<br/>You can also select other supporting properties for [fill color](#fill-color), [pattern color](#pattern-color), and [pattern style](#pattern-style).                                                                                    |
 
-### Fill Color
+### Fill color
 
 This property control the fill color of the background. If the [fill style](#fill-style) is set to `"2"` for a gradient fill, this represents the gradient color.
 
@@ -654,7 +654,7 @@ Sample Body:
 
 `"value"` is an integer from `"0"` to `"16777215"` that represents the color using the decimal color format. The default value is `"16777215"`, which is white.
 
-### Pattern Color
+### Pattern color
 
 This property controls the pattern color of the background.
 
@@ -669,7 +669,7 @@ Sample Body:
 
 `"value"` is an integer from `"0"` to `"16777215"` that represents the color using the decimal color format. The default value is `"8650752"`, which is red.
 
-### Pattern Style
+### Pattern style
 
 This property controls the pattern style of the background.
 
@@ -686,7 +686,7 @@ Sample Body:
 
 ![pattern_styles](../../images/pattern_styles.png)
 
-### Gradient Color
+### Gradient color
 
 This property controls the gradient color.
 
@@ -703,7 +703,7 @@ Sample Body:
 
 `"value"` is an integer from `"0"` to `"16777215"` that represents the color using the decimal color format. The default value is `"16777215"`, which is white.
 
-### Gradient Angle
+### Gradient angle
 
 This property sets the gradient angle.
 
@@ -720,7 +720,7 @@ Sample Body:
 
 See the image [below](#gradient_image) for an example of how a gradient appears with different combinations of angle, X offset, and Y offset.
 
-### Gradient X Offset
+### Gradient X offset
 
 This property sets the gradient X axis offset.
 
@@ -737,7 +737,7 @@ Sample Body:
 
 See the image [below](#gradient_image) for an example of how a gradient appears with different combinations of angle, X offset, and Y offset.
 
-### Gradient Y Offset
+### Gradient Y offset
 
 This property sets the gradient Y axis offset.
 

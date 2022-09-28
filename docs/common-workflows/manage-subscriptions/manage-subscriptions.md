@@ -1,5 +1,5 @@
 ---
-title: Manage Subscriptions
+title: Manage subscriptions
 description: You can use REST API requests to retrieve and create different types of subscriptions.
 ---
 

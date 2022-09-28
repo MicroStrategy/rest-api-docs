@@ -1,11 +1,11 @@
 ---
-title: Handle REST API Errors
+title: Handle REST API errors
 description: This page provides a guidance on designing exception workflows when using MicroStrategy REST API.
 ---
 
 When developers use MicroStrategy REST APIs to build dynamic applications, they need to add code to handle error conditions. The instructions below are designed to provide a guidance on designing exception workflows when using MicroStrategy REST API.
 
-## 1. Understand the Status Code
+## 1. Understand the status code
 
 Determine whether the REST API request succeeded or failed, based on the HTTP status response code returned.
 
@@ -20,11 +20,11 @@ The HTTP status response code returned by the REST API call indicates whether th
 
 We follow RFC standards to define our HTTP status codes. You can refer to [HTTP response status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) to understand the meaning of each status code.
 
-## 2. Look for More Information in Payload
+## 2. Look for more information in payload
 
 If the REST API request failed and the response is `application/json`, there is more information in the response body in JSON format.
 
-## 3. Error Code in the Response Body
+## 3. Error code in the response body
 
 Look for the error code in response body to determine if it provides insight into what caused the exception and use that insight to create meaningful text for the error message.
 
@@ -63,15 +63,15 @@ The value of `code` is a MicroStrategy REST API Server code. The table below pro
 | ERR0023    | Secret Key configuration issue  |
 | ERR0024    | Trust store configuration issue |
 
-## 4. IServer Error Code
+## 4. IServer error code
 
 The MicroStrategy error message may also contain an integer value for `iServerCode`. This integer value maps to a constant value in the [WebAPIErrorCodes](https://www2.microstrategy.com/producthelp/Current/ReferenceFiles/reference/com/microstrategy/utils/localization/WebAPIErrorCodes.html) class. There are many error codes in this class. You should look at the `iServerCode` error and decide if you think it provides meaningful context. If so, you may want to handle it in your code.
 
 If needed, you can also find more information in the Library Sever's error log, such as stack traces.
 
-## Status Code Explained
+## Status code explained
 
-### 200 Level Status Code
+### 200 level status code
 
 #### 200 OK
 
@@ -93,7 +93,7 @@ A 202 status code means the request has been received but not yet acted upon. It
 
 A 204 status code means the request is succeeded, but there is no data in the response body.
 
-### 400 Level Status Code
+### 400 level status code
 
 #### 400 Bad Request
 
@@ -152,7 +152,7 @@ Example:
 }
 ```
 
-### 500 Level Status Code
+### 500 level status code
 
 If you receive 500 level status code, you may not receive a JSON response body.
 
@@ -164,10 +164,10 @@ With a 500 error code, you will get a JSON in the response body. You can check R
 
 A 501 error means the request method is not supported by the server and cannot be handled.
 
-#### 502 Bad Gateway Error
+#### 502 Bad Gateway
 
 A 502 error means the client is having difficulty connecting to the server. Your cloud infrastructure might not be working correctly.
 
-#### 503 Service Temporarily Unavailable
+#### 503 Service Unavailable
 
 A 503 error means your server is down or overloaded. Your cloud infrastructure might not be working correctly.

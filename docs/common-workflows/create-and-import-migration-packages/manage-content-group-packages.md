@@ -1,9 +1,9 @@
 ---
-title: Manage Content Group Packages
+title: Manage content group packages
 description: How to manage content group packages in different cases.
 ---
 
-## Migrate Content Group Objects, Recipient List, and Content
+## Migrate content group objects, recipient list, and content
 
 See [Create and Import Migration Packages](../create-and-import-migration-packages/create-and-import-migration-packages.md) to manage object migration.
 
@@ -14,7 +14,7 @@ Create a content group package using REST APIs:
 1. In the destination metadata, first import the configuration package and then the project package, one by one.
 1. In MicroStrategy Workstation, enable the content bundle feature. If the user in the destination metadata has the same GUID with the source metadata, then the recipient (user or user group) link will migrate over. However, if the user has the same name with a different GUID, then the recipient link will not migrate anymore.
 
-## Object Package Requirements
+## Object package requirements
 
 The number of required object packages that need to be created for a content group varies based on requirements. The following are examples of different cases.
 

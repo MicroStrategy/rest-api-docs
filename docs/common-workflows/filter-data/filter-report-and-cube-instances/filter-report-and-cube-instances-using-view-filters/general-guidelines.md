@@ -1,5 +1,5 @@
 ---
-title: General Guidelines for Using View Filters
+title: General guidelines for using view filters
 description: The general guidelines for using view filters.
 ---
 

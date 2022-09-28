@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Filter Object with a Custom Expression
-sidebar_label: Create a Filter Object with a Custom Expression
+title: Workflow sample - Create a filter object with a custom expression
+sidebar_label: Create a filter object with a custom expression
 description: This workflow sample demonstrates how to create a new filter object using a custom expression through the Modeling service.
 ---
 
@@ -551,11 +551,11 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset is deleted successfully.)
 
-## More Samples
+## More samples
 
 The following are additional examples to replace `<custom expression>` from the input template.
 
-### Escape Sequences for Full Paths
+### Escape sequences for full paths
 
 Use full paths to the object to avoid ambiguity. Make sure to use escape sequences for any backslashes in the expression.
 
@@ -586,7 +586,7 @@ Sample Request Body:
 }
 ```
 
-### Escape Sequences for Double Quotes
+### Escape sequences for double quotes
 
 Make sure to use escape sequences for any double quotes in the expression.
 
@@ -617,7 +617,7 @@ Sample Request Body:
 }
 ```
 
-### Escape Sequences for the ApplyComparison Function
+### Escape sequences for the `ApplyComparison` function
 
 If you use the `ApplyComparison` function in an expression, make sure to use escape sequences for the double quotes.
 

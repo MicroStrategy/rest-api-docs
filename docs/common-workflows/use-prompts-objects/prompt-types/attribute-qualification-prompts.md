@@ -1,5 +1,5 @@
 ---
-title: Attribute Qualification Prompts
+title: Attribute qualification prompts
 description: The attribute qualification prompt is a restrictive type prompt that allows you to filter the data of a report or document based on the qualification of multiple attributes. For example, you determine a single attribute or a list of attributes from which each user that executes the report can select elements to define their report filter.
 ---
 
@@ -21,7 +21,7 @@ You can use REST APIs to perform the following actions on attribute qualificatio
 - [Answer an Attribute Qualification Prompt](#answer-an-attribute-qualification-prompt)
   - [Provide Specific Prompt Answers](#provide-specific-prompt-answers)
 
-## Get Information About an Attribute Qualification Prompt
+## Get information about an attribute qualification prompt
 
 Use the following REST API endpoints to get information about attribute qualification prompts applied to dossier, document, and report objects in the metadata, as well as instance of those objects:
 
@@ -115,7 +115,7 @@ Besides the commonly-used fields, the attribute qualification prompt also contai
 
 **maxElementsPerSelection** The maximum number of elements that can be supplied to answer the prompt per selection. The default setting of **-1** means there is no limit to the maximum number of elements.
 
-## Get the Attribute Qualification Prompt's Available Objects
+## Get the attribute qualification prompt's available objects
 
 Use the following REST API endpoints to get an attribute qualification prompt's available answer:
 
@@ -146,7 +146,7 @@ The sample code below contains an attribute qualification prompt's available ans
 ]
 ```
 
-## Get the Elements of an Attribute
+## Get the elements of an attribute
 
 After getting an attribute qualification prompt's available objects, the user may need to get the elements of some attributes to construct their own view filter expression. Use the following REST API endpoints to retrieve the elements of an attribute:
 
@@ -167,14 +167,14 @@ The sample code below contains the definition of the elements of an attribute.
 ]
 ```
 
-## Answer an Attribute Qualification Prompt
+## Answer an attribute qualification prompt
 
 Use the following REST API endpoints to answer an attribute qualification prompt applied to a dossier, document, or report:
 
 - PUT `/api/reports/{id}/instances/{instanceId}/prompts/answers`
 - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
-### Provide Specific Prompt Answers
+### Provide specific prompt answers
 
 You provide answers to an attribute qualification prompt in the body parameter of the request. Identify the prompt by providing the prompt ID, name or key, and specify the prompt type as EXPRESSION. Then, specify the expression used to answer the prompt. The format of the expression is the same as the [JSON Data API's view filter](../../filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-view-filters/filter-report-and-cube-instances-using-view-filters.md). This expression can be used with attribute elements.
 

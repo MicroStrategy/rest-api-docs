@@ -19,23 +19,15 @@ const sidebars = {
   // But you can create a sidebar manually
   tutorialSidebar: [
     "index",
-    {
-      type: "doc",
-      id: "whats-new",
-      label: "What's New",
-    },
-    {
-      type: "doc",
-      id: "upgrade",
-      label: "Upgrade",
-    },
+    "whats-new",
+    "upgrade",
     {
       type: "category",
       link: {
         type: "doc",
         id: "getting-started/getting-started",
       },
-      label: "Getting Started",
+      label: "Getting started",
       items: [
         "getting-started/rest-api-architecture",
         "getting-started/configure-clustered-environments",
@@ -45,46 +37,26 @@ const sidebars = {
         "getting-started/embedding-sdk",
       ],
     },
-    {
-      type: "doc",
-      id: "rest-api-families",
-      label: "REST API Families",
-    },
+    "rest-api-families",
     {
       type: "category",
       link: {
         type: "doc",
         id: "common-workflows/common-workflows",
       },
-      label: "Common Workflows",
+      label: "Common workflows",
       items: [
-        {
-          type: "doc",
-          id: "common-workflows/authentication",
-          label: "Authentication",
-        },
-        {
-          type: "doc",
-          id: "common-workflows/folder-browsing",
-          label: "Folder Browsing",
-        },
-        {
-          type: "doc",
-          id: "common-workflows/search-for-objects",
-          label: "Search for Objects",
-        },
-        {
-          type: "doc",
-          id: "common-workflows/sort-data",
-          label: "Sort Data",
-        },
+        "common-workflows/authentication",
+        "common-workflows/folder-browsing",
+        "common-workflows/search-for-objects",
+        "common-workflows/sort-data",
         {
           type: "category",
           link: {
             type: "doc",
             id: "common-workflows/filter-data/filter-data",
           },
-          label: "Filter Data",
+          label: "Filter data",
           items: [
             {
               type: "category",
@@ -92,7 +64,7 @@ const sidebars = {
                 type: "doc",
                 id: "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances",
               },
-              label: "Filter Report and Cube Instances",
+              label: "Filter report and cube instances",
               items: [
                 {
                   type: "category",
@@ -100,7 +72,7 @@ const sidebars = {
                     type: "doc",
                     id: "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-view-filters/filter-report-and-cube-instances-using-view-filters",
                   },
-                  label: "Filter Report and Cube Instances Using View Filters",
+                  label: "Filter report and cube instances using view filters",
                   items: [
                     "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-view-filters/general-guidelines",
                     "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-view-filters/supported-operators",
@@ -115,7 +87,7 @@ const sidebars = {
                     type: "doc",
                     id: "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-metric-limits/filter-report-and-cube-instances-using-metric-limits",
                   },
-                  label: "Filter Report and Cube Instances Using Metric Limits",
+                  label: "Filter report and cube instances using metric limits",
                   items: [
                     "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-metric-limits/supported-operators",
                     "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-metric-limits/code-sample",
@@ -129,7 +101,7 @@ const sidebars = {
                     id: "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-requested-objects/filter-report-and-cube-instances-using-requested-objects",
                   },
                   label:
-                    "Filter Report and Cube Instances Using requestedObjects",
+                    "Filter report and cube instances using requestedObjects",
                   items: [
                     "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-requested-objects/general-guidelines",
                     "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-requested-objects/code-sample",
@@ -143,23 +115,19 @@ const sidebars = {
                 type: "doc",
                 id: "common-workflows/filter-data/filter-dossier-instances/filter-dossier-instances",
               },
-              label: "Filter Dossier Instances",
+              label: "Filter dossier instances",
               items: [
                 "common-workflows/filter-data/filter-dossier-instances/workflow-sample",
               ],
             },
-            {
-              type: "doc",
-              id: "common-workflows/filter-data/retrieve-filters-applied-to-dossier-chapters",
-              label: "Retrieve Filters Applied to Dossier Chapters",
-            },
+            "common-workflows/filter-data/retrieve-filters-applied-to-dossier-chapters",
             {
               type: "category",
               link: {
                 type: "doc",
                 id: "common-workflows/filter-data/retrieve-filters-applied-to-a-visualization/retrieve-filters-applied-to-a-visualization",
               },
-              label: "Retrieve Filters Applied to a Visualization",
+              label: "Retrieve filters applied to a visualization",
               items: [
                 "common-workflows/filter-data/retrieve-filters-applied-to-a-visualization/return-metric-based-view-filters",
                 "common-workflows/filter-data/retrieve-filters-applied-to-a-visualization/return-attribute-based-view-filters",
@@ -175,7 +143,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-cube-objects/manage-cube-objects",
           },
-          label: "Manage Cube Objects",
+          label: "Manage cube objects",
           items: [
             "common-workflows/manage-cube-objects/retrieve-a-cube-definition",
             "common-workflows/manage-cube-objects/create-a-cube-object",
@@ -188,7 +156,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-fact-objects/manage-fact-objects",
           },
-          label: "Manage Fact Objects",
+          label: "Manage fact objects",
           items: [
             "common-workflows/manage-fact-objects/retrieve-a-facts-definition",
             "common-workflows/manage-fact-objects/retrieve-a-facts-definition-within-a-changeset",
@@ -202,7 +170,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-fences/manage-fences",
           },
-          label: "Manage Fences",
+          label: "Manage fences",
           items: [
             "common-workflows/manage-fences/retrieve-list-of-fences",
             "common-workflows/manage-fences/retrieve-specific-fence",
@@ -217,7 +185,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-filter-objects/manage-filter-objects",
           },
-          label: "Manage Filter Objects",
+          label: "Manage filter objects",
           items: [
             "common-workflows/manage-filter-objects/retrieve-a-filters-definition",
             "common-workflows/manage-filter-objects/retrieve-a-filters-definition-within-a-changeset",
@@ -232,7 +200,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-attribute-objects/manage-attribute-objects",
           },
-          label: "Manage Attribute Objects",
+          label: "Manage attribute objects",
           items: [
             "common-workflows/manage-attribute-objects/retrieve-an-attributes-definition",
             "common-workflows/manage-attribute-objects/retrieve-an-attributes-definition-within-a-changeset",
@@ -246,7 +214,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-attribute-relationships/manage-attribute-relationships",
           },
-          label: "Manage Attribute Relationships",
+          label: "Manage attribute relationships",
           items: [
             "common-workflows/manage-attribute-relationships/retrieve-an-attributes-relationships",
             "common-workflows/manage-attribute-relationships/retrieve-an-attributes-relationships-within-a-changeset",
@@ -259,7 +227,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-transformation-objects/manage-transformation-objects",
           },
-          label: "Manage Transformation Objects",
+          label: "Manage transformation objects",
           items: [
             "common-workflows/manage-transformation-objects/retrieve-a-transformations-definition",
             "common-workflows/manage-transformation-objects/create-a-transformation-object",
@@ -272,7 +240,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-metric-objects/manage-metric-objects",
           },
-          label: "Manage Metric Objects",
+          label: "Manage metric objects",
           items: [
             "common-workflows/manage-metric-objects/retrieve-a-metrics-definition",
             "common-workflows/manage-metric-objects/retrieve-a-metrics-definition-within-a-changeset",
@@ -286,7 +254,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-base-formula-objects/manage-base-formula-objects",
           },
-          label: "Manage Base Formula Objects",
+          label: "Manage base formula objects",
           items: [
             "common-workflows/manage-base-formula-objects/retrieve-a-base-formulas-definition",
             "common-workflows/manage-base-formula-objects/retrieve-a-base-formulas-definition-within-a-changeset",
@@ -300,7 +268,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-subtotal-objects/manage-subtotal-objects",
           },
-          label: "Manage Subtotal Objects",
+          label: "Manage subtotal objects",
           items: [
             "common-workflows/manage-subtotal-objects/retrieve-a-subtotals-definition",
             "common-workflows/manage-subtotal-objects/retrieve-a-subtotals-definition-within-a-changeset",
@@ -314,7 +282,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-selectors/manage-selectors",
           },
-          label: "Manage Selectors",
+          label: "Manage selectors",
           items: [
             "common-workflows/manage-selectors/retrieve-a-selectors-definition",
             "common-workflows/manage-selectors/set-selector-type",
@@ -326,7 +294,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-drill-maps/manage-drill-maps",
           },
-          label: "Manage Drill Maps",
+          label: "Manage drill maps",
           items: [
             "common-workflows/manage-drill-maps/retrieve-a-drill-map-definition",
             "common-workflows/manage-drill-maps/create-a-drill-map",
@@ -340,7 +308,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-derived-element-objects/manage-derived-element-objects",
           },
-          label: "Manage Derived Element Objects",
+          label: "Manage derived element objects",
           items: [
             "common-workflows/manage-derived-element-objects/retrieve-a-derived-elements-definition",
             "common-workflows/manage-derived-element-objects/create-a-derived-element",
@@ -354,7 +322,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-consolidation-objects/manage-consolidation-objects",
           },
-          label: "Manage Consolidation Objects",
+          label: "Manage consolidation objects",
           items: [
             "common-workflows/manage-consolidation-objects/retrieve-a-consolidations-definition",
             "common-workflows/manage-consolidation-objects/create-a-consolidation-object",
@@ -367,7 +335,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-prompt-objects/manage-prompt-objects",
           },
-          label: "Manage Prompt Objects",
+          label: "Manage prompt objects",
           items: [
             "common-workflows/manage-prompt-objects/retrieve-a-prompts-definition",
             "common-workflows/manage-prompt-objects/create-a-prompt-within-a-changeset",
@@ -378,7 +346,7 @@ const sidebars = {
                 type: "doc",
                 id: "common-workflows/manage-prompt-objects/prompt-types/prompt-types",
               },
-              label: "Prompt Types for Managing Prompt Objects",
+              label: "Prompt types for managing prompt objects",
               items: [
                 "common-workflows/manage-prompt-objects/prompt-types/attribute-element-prompts",
                 "common-workflows/manage-prompt-objects/prompt-types/attribute-qualification-prompts",
@@ -396,7 +364,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/use-prompts-objects/use-prompts-objects",
           },
-          label: "Use Prompts Objects",
+          label: "Use prompts objects",
           items: [
             "common-workflows/use-prompts-objects/answer-prompts",
             {
@@ -405,7 +373,7 @@ const sidebars = {
                 type: "doc",
                 id: "common-workflows/use-prompts-objects/get-prompt-information/get-prompt-information",
               },
-              label: "Get Prompt Information",
+              label: "Get prompt information",
               items: [
                 "common-workflows/use-prompts-objects/get-prompt-information/workflow-get-prompt-information",
               ],
@@ -416,7 +384,7 @@ const sidebars = {
                 type: "doc",
                 id: "common-workflows/use-prompts-objects/prompt-types/prompt-types",
               },
-              label: "Prompt Types",
+              label: "Prompt types",
               items: [
                 "common-workflows/use-prompts-objects/prompt-types/attribute-element-prompts",
                 "common-workflows/use-prompts-objects/prompt-types/attribute-qualification-prompts",
@@ -451,7 +419,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-incremental-refresh-report/manage-incremental-refresh-report",
           },
-          label: "Manage Incremental Refresh Report (IRRs)",
+          label: "Manage incremental refresh report (IRRs)",
           items: [
             "common-workflows/manage-incremental-refresh-report/retrieve-an-irr-definition",
             "common-workflows/manage-incremental-refresh-report/create-an-irr",
@@ -467,7 +435,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-security-filter-objects/manage-security-filter-objects",
           },
-          label: "Manage Security Filter Objects",
+          label: "Manage security filter objects",
           items: [
             "common-workflows/manage-security-filter-objects/retrieve-a-security-filter-definition",
             "common-workflows/manage-security-filter-objects/create-a-security-filter-object",
@@ -483,7 +451,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-user-hierarchy-objects/manage-user-hierarchy-objects",
           },
-          label: "Manage User Hierarchy Objects",
+          label: "Manage user hierarchy objects",
           items: [
             "common-workflows/manage-user-hierarchy-objects/retrieve-a-user-hierarchys-definition",
             "common-workflows/manage-user-hierarchy-objects/create-a-user-hierarchy",
@@ -512,7 +480,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-custom-group-objects/manage-custom-group-objects",
           },
-          label: "Manage Custom Group Objects",
+          label: "Manage custom group objects",
           items: [
             "common-workflows/manage-custom-group-objects/retrieve-a-custom-groups-definition",
             "common-workflows/manage-custom-group-objects/retrieve-a-custom-groups-definition-within-a-changeset",
@@ -527,7 +495,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-table-objects/manage-table-objects",
           },
-          label: "Manage Table Objects",
+          label: "Manage table objects",
           items: [
             "common-workflows/manage-table-objects/retrieve-a-list-of-all-available-table-definitions",
             "common-workflows/manage-table-objects/retrieve-a-tables-definition",
@@ -545,7 +513,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/improve-performance-by-working-with-partial-resources/improve-performance-by-working-with-partial-resources",
           },
-          label: "Improve Performance by Working with Partial Resources",
+          label: "Improve performance by working with partial resources",
           items: [
             "common-workflows/improve-performance-by-working-with-partial-resources/field-selection-for-data-api-v2-result-fetching-endpoints",
           ],
@@ -559,7 +527,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-the-schema/manage-the-schema",
           },
-          label: "Manage the Schema",
+          label: "Manage the schema",
           items: [
             "common-workflows/manage-the-schema/retrieve-the-schema-lock",
             "common-workflows/manage-the-schema/lock-the-schema",
@@ -574,7 +542,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-user-and-user-groups/manage-user-and-user-groups",
           },
-          label: "Manage Users and User Groups",
+          label: "Manage users and user groups",
           items: [
             "common-workflows/manage-user-and-user-groups/create-and-update-user-groups",
             "common-workflows/manage-user-and-user-groups/create-new-users",
@@ -588,7 +556,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/make-external-data-available/make-external-data-available",
           },
-          label: "Make External Data Available Using the Push Data API",
+          label: "Make external data available using the Push Data API",
           items: [
             "common-workflows/make-external-data-available/create-a-dataset-with-one-request/workflow-create-and-modify-a-dataset-with-one-request",
             {
@@ -597,7 +565,7 @@ const sidebars = {
                 type: "doc",
                 id: "common-workflows/make-external-data-available/create-a-dataset-incrementally-with-multiple-requests/create-a-dataset-incrementally-with-multiple-requests",
               },
-              label: "Create a Dataset Incrementally with Multiple Requests",
+              label: "Create a dataset incrementally with multiple requests",
               items: [
                 "common-workflows/make-external-data-available/create-a-dataset-incrementally-with-multiple-requests/benefits",
                 "common-workflows/make-external-data-available/create-a-dataset-incrementally-with-multiple-requests/logic-for-creating-a-dataset-incrementally",
@@ -613,7 +581,7 @@ const sidebars = {
             id: "common-workflows/retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server",
           },
           label:
-            "Retrieve Data from the Intelligence Server Using the JSON Data API",
+            "Retrieve data from the Intelligence Server using the JSON Data API",
           items: [
             "common-workflows/retrieve-data-from-the-intelligence-server/workflow-retrieve-data-from-the-intelligence-server",
             "common-workflows/retrieve-data-from-the-intelligence-server/supported-features-and-considerations",
@@ -630,7 +598,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/server-level-privileges/server-level-privileges",
           },
-          label: "Server-Level Privileges",
+          label: "Server-level privileges",
           items: [
             "common-workflows/server-level-privileges/manage-server-level-privileges",
           ],
@@ -643,7 +611,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/retrieve-sql-statements-and-query-details/retrieve-sql-statements-and-query-details",
           },
-          label: "Retrieve SQL Statements and Query Details",
+          label: "Retrieve SQL statements and query details",
           items: [
             "common-workflows/retrieve-sql-statements-and-query-details/retrieve-report-or-card-sql",
             "common-workflows/retrieve-sql-statements-and-query-details/retrieve-dataset-sql",
@@ -657,7 +625,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/create-and-import-migration-packages/create-and-import-migration-packages",
           },
-          label: "Create and Import Migration Packages",
+          label: "Create and import migration packages",
           items: [
             "common-workflows/create-and-import-migration-packages/create-a-migration-package",
             "common-workflows/create-and-import-migration-packages/import-a-migration-package",
@@ -686,7 +654,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/datasource-management/datasource-management",
           },
-          label: "Datasource Management",
+          label: "Datasource management",
           items: [
             "common-workflows/datasource-management/create-a-datasource",
             "common-workflows/datasource-management/update-a-datasource",
@@ -701,7 +669,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-subscriptions/manage-subscriptions",
           },
-          label: "Manage Subscriptions",
+          label: "Manage subscriptions",
           items: [
             "common-workflows/manage-subscriptions/create-and-get-a-subscription",
             "common-workflows/manage-subscriptions/create-subscription-for-multi-content",
@@ -730,7 +698,7 @@ const sidebars = {
         type: "doc",
         id: "microstrategy-rest-api-samples/microstrategy-rest-api-samples",
       },
-      label: "MicroStrategy REST API Samples",
+      label: "MicroStrategy REST API samples",
       items: [
         "microstrategy-rest-api-samples/create-reports-on-the-fly",
         "microstrategy-rest-api-samples/react-user-manage-sample",
