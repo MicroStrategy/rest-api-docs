@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve Visualization Query Details
-sidebar_label: Retrieve Visualization Query Details
+title: Workflow sample - Retrieve visualization query details
+sidebar_label: Retrieve visualization query details
 description: This workflow sample demonstrates how to retrieve the query details of visualizations in a dossier instance.
 ---
 

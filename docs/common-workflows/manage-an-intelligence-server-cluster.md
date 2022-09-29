@@ -1,5 +1,5 @@
 ---
-title: Manage an Intelligence Server Cluster
+title: Manage an Intelligence Server cluster
 description: Intelligence Server provides you the functionality to cluster a group of Intelligence Server machines to take advantage of the many benefits available in a clustered environment.
 ---
 
@@ -26,7 +26,7 @@ Intelligence Server provides you the functionality to cluster a group of Intelli
   - Make sure no other user is connected to Library Server and Intelligence Server nodes. Editing cluster membership is an administrative action and should be performed exclusively.
   - Make sure all Intelligence Server nodes are running during the life-time of Library Server. If some Intelligence Server nodes are/were down, you can start them first and then restart Library Server. This ensures changes are synchronized in a timely manner.
 
-## List Nodes
+## List nodes
 
 `GET /api/monitors/iServer/nodes`
 
@@ -48,9 +48,9 @@ This operation requires the "Monitor cluster" privilege.
 | ---------------- | ------------------- | -------------- | --------- | -------- |
 | X-MSTR-AuthToken | Authorization token | Header         | String    | Yes      |
 
-- Response: 200 (Success : Ok)
+- Response: 200 (Success : OK)
 
-### Sample Request
+### Sample request
 
 ```json
 {
@@ -73,7 +73,7 @@ This operation requires the "Monitor cluster" privilege.
 }
 ```
 
-## Add a Node
+## Add a node
 
 `PUT /api/monitors/iServer/nodes/{name}`
 
@@ -101,7 +101,7 @@ In case of complicated network configuration, it's recommended to provide a host
   - **Timeout, still in-progress**: 202 Accepted
   - **Node unreachable**: 404 Not Found
 
-## Remove a Node
+## Remove a node
 
 `DELETE /api/monitors/iServer/nodes/{name}`
 

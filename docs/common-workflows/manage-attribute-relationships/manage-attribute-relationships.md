@@ -1,5 +1,5 @@
 ---
-title: Manage Attribute Relationships
+title: Manage attribute relationships
 description: You can use REST API requests to retrieve, create and update an attribute's relationship through the Modeling service.
 ---
 

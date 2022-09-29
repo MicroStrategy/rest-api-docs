@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Metric's Definition within a Changeset
-sidebar_label: Retrieve a Metric's Definition within a Changeset
+title: Workflow sample - Retrieve a metric's definition within a changeset
+sidebar_label: Retrieve a metric's definition within a changeset
 description: This workflow sample demonstrates how to retrieve a metric's definition within a changeset.
 ---
 

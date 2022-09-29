@@ -1,6 +1,6 @@
 ---
-sidebar_label: Folder Browsing
-title: Workflow Sample - Folder Browsing
+sidebar_label: Folder browsing
+title: Workflow sample - Folder browsing
 description: The workflow for browsing folders in the metadata includes the following sequence of REST API requests.
 ---
 
@@ -134,7 +134,7 @@ The response body contains information for each project that is returned, includ
 
 - Response Code: 204 (Success: OK)
 
-## Browse to the Shared Reports folder
+## Browse to the shared reports folder
 
 End Point: `GET /api/folders/preDefined/{folderType}`
 

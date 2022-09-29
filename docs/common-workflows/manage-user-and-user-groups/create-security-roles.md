@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create Security Roles
-sidebar_label: Create Security Roles
+title: Workflow sample - Create security roles
+sidebar_label: Create security roles
 description: A security role is a set of privileges that can be assigned to users and reused from project to project. Security roles enable you to assign a unique set of privileges to users on a per project basis. They are created and maintained at the project source level and assigned to users at the project level.
 ---
 
@@ -24,7 +24,7 @@ Administrators can make REST API calls to perform a full set of operations on th
 
 To avoid security vulnerabilities, administrators should have a clear understanding of the privileges and security requirements of their system before assigning privileges which provide access to application functionality.
 
-## Creating a Security Role and Managing Privileges of a Security Role
+## Creating a security role and managing privileges of a security role
 
 A workflow sample for creating a new security role in the metadata is provided below. The following sequence of REST API requests allows an administrator to create a new security role, and optionally get information about the security role to confirm the creation and updates.
 
@@ -66,7 +66,7 @@ This endpoint allows the caller to authenticate with the MicroStrategy REST Serv
 
 In this example, standard authentication and log in credentials "administrator" with `<blank>` password is used.
 
-### Sample Request
+### Sample request
 
 - Request Headers:
 
@@ -93,7 +93,7 @@ In this example, standard authentication and log in credentials "administrator" 
   H "Content-Type: application/json" -d "{\"username\":\"administrator\",\"password\":\"\",\"loginMode\":1}"
   ```
 
-### Sample Response
+### Sample response
 
 - Response Headers:
 
@@ -121,7 +121,7 @@ This endpoint is for administrative user to create a new security role and speci
 
 In this example, you create a new security role called "NewSecurityRole". You must provide description for the security role along with a privilege id. Here the id is 1. For a complete list of privilege ids visit EnumDSSXMLPrivilegeTypes. The response to this endpoint includes the ID of the Security Role object in the metadata. This ID can be directly used to access the security role to view, modify or delete it.
 
-### Sample Request
+### Sample request
 
 - Request parameters:
 
@@ -157,7 +157,7 @@ In this example, you create a new security role called "NewSecurityRole". You mu
   AuthToken: pdcmrontjrlf494tl1eu6nt7hg" -H "Content-Type: application/json" -d "{\"name\":\"NewSecurityRole\",\"description\":\"a new Security Role for testing\",\"privileges\":[{\"id\":\"1\"}]}"
   ```
 
-### Sample Response
+### Sample response
 
 - Response headers:
 
@@ -204,7 +204,7 @@ For both purposes, the workflow is as follows:
 
 Two examples are provided below. In the first example to make security role assignment, the `PATCH` operation `replace` is being performed to the information of members for a particular project id associated with a specified security role id. The member ids present in the body of the request will replace the previously existing members for this security role and project id. In the second example, `addElement` operation is used in request body to add one privilege to the security role.
 
-### Sample Request for security role assignment
+### Sample request for security role assignment
 
 - Request parameters:
 
@@ -250,11 +250,14 @@ Two examples are provided below. In the first example to make security role assi
 - Curl:
 
   ```bash
-  curl -X PATCH "https://demo.microstrategy.com/MicroStrategyLibrary/api/securityRoles/F80E38174DA4A8AF4C82D18F34A2D5E8" -H
-  "accept: application/json" -H "X-MSTR-AuthToken: pdcmrontjrlf494tl1eu6nt7hg’" -H "Content-Type: application/json" -d "\"operationList\":[{\"op\":\"replace\",\"path\":\"/member\",\"value\":{\"projectId\":\" B19DEDCC11D4E0EFC000EB9495D0F44F\",\"memberIds\"["D09773F94699124B4D75B48F1B358327\",\"54F3D26011D2896560009A8E67019608\"]}}]}"
+  curl -X PATCH "https://demo.microstrategy.com/MicroStrategyLibrary/api/securityRoles/F80E38174DA4A8AF4C82D18F34A2D5E8" \
+  -H "accept: application/json" \
+  -H "X-MSTR-AuthToken: pdcmrontjrlf494tl1eu6nt7hg’" \
+  -H "Content-Type: application/json" \
+  -d '"operationList":[{"op":"replace","path": "member","value":{"projectId":" B19DEDCC11D4E0EFC000EB9495D0F44F","memberIds":["D09773F94699124B4D75B48F1B358327","54F3D26011D2896560009A8E67019608"]}}]'
   ```
 
-### Sample Response for security role assignment
+### Sample response for security role assignment
 
 - Response header:
 
@@ -266,7 +269,7 @@ Two examples are provided below. In the first example to make security role assi
 
   ```json
   {
-  "name": "NewSecurityRole",
+    "name": "NewSecurityRole",
     "id": "F80E38174DA4A8AF4C82D18F34A2D5E8",
     "type": 44,
     "description": "testing",
@@ -342,13 +345,14 @@ Two examples are provided below. In the first example to make security role assi
         "name": "Human Resources Analysis Module",
         "id": "AF09B3E3458F78B4FBE4DEB68528BF7B",
         "members": []
-      },
-      {
+      }
+    ]
+  }
   ```
 
-- Response code: 200 (Success : Ok)
+- Response code: 200 (Success : OK)
 
-### Sample Request for security role update
+### Sample request for security role update
 
 - Request parameters:
 
@@ -383,12 +387,11 @@ Two examples are provided below. In the first example to make security role assi
         "op": "addElement",
         "path": "/privileges",
         "value": [
-                 {
-                   "name": "use consolidation editor",
-                   "id": "12"
-                 }
-          ]
-        }
+          {
+            "name": "use consolidation editor",
+            "id": "12"
+          }
+        ]
       }
     ]
   }
@@ -398,10 +401,10 @@ Two examples are provided below. In the first example to make security role assi
 
   ```bash
   curl -X PATCH "https://demo.microstrategy.com/MicroStrategyLibrary/api/securityRoles/F80E38174DA4A8AF4C82D18F34A2D5E8" -H
-  "accept: application/json" -H "X-MSTR-AuthToken: pdcmrontjrlf494tl1eu6nt7hg’" -H "Content-Type: application/json" -d "{\"operationList\":[{\"op\":\"replace\",\"path\":\"/privileges\",\"value\": [{  \"name\": \"use consolidation editor\", \"id\": \"12\"} ]}]}"
+  "accept: application/json" -H "X-MSTR-AuthToken: pdcmrontjrlf494tl1eu6nt7hg’" -H "Content-Type: application/json" -d "{"operationList":[{"op":"replace","path":"/privileges","value": [{  "name": "use consolidation editor", "id": "12"} ]}]}"
   ```
 
-### Sample Response for security role update
+### Sample response for security role update
 
 - Response header:
 
@@ -499,7 +502,7 @@ Two examples are provided below. In the first example to make security role assi
   }
   ```
 
-- Response code: 200 (Success : Ok)
+- Response code: 200 (Success : OK)
 
 ## Get information about a specific security role
 
@@ -507,7 +510,7 @@ End Point: `GET/securityRoles/{id}`
 
 Get information for a specific security role using the security role id. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You specify security role ID in the path of the request, then you can obtain the security role information about its base info(such as name, id and type), assigned privileges and assigned <project, members> relations info about assigning this created security role to user/userGroup in specified project.
 
-### Sample Request
+### Sample request
 
 - Request parameters:
 
@@ -530,7 +533,7 @@ Get information for a specific security role using the security role id. You obt
   "https://demo.microstrategy.com/MicroStrategyLibrary/api/securityRoles/F80E38174DA4A8AF4C82D18F34A2D5E8" -H "accept: application/json" -H "X-MSTR-AuthToken: pdcmrontjrlf494tl1eu6nt7hg"
   ```
 
-### Sample Response
+### Sample response
 
 - Response header:
 
@@ -628,7 +631,7 @@ Get information for a specific security role using the security role id. You obt
   }
   ```
 
-- Response code: 200 (Success: Ok)
+- Response code: 200 (Success: OK)
 
 ## Delete a security role
 
@@ -636,7 +639,7 @@ End Point: `DELETE/securityRoles/{id}`
 
 Delete info for a security role with given Id. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You delete the security role using `Delete /api/securityRoles/{id}`.
 
-### Sample Request
+### Sample request
 
 - Request parameters:
 
@@ -659,7 +662,7 @@ Delete info for a security role with given Id. You obtain the authorization toke
   curl -X DELETE "https://demo.microstrategy.com/api/MicroStrategyLibrary/api/securityRoles/F80E38174DA4A8AF4C82D18F34A2D5E8" -H "accept: */*" -H "X-MSTR-AuthToken: pdcmrontjrlf494tl1eu6nt7hg"
   ```
 
-### Sample Response
+### Sample response
 
 - Response header:
 
@@ -675,7 +678,7 @@ End Point: `GET/securityRoles`
 
 This API endpoint is used to get information for all security roles. A security role describes the ability to do something, such as create, edit, add, delete, view, manage, save, search, share, export, and so on. A security role has a name, a description, and a privilege. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. The response includes the security role ID, which other endpoints use as a request parameter to specify the security role to perform an action on.
 
-### Sample Request
+### Sample request
 
 - Request parameters:
 
@@ -696,7 +699,7 @@ This API endpoint is used to get information for all security roles. A security 
   curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/securityRoles" -H "accept: application/json" -H "X-MSTR-AuthToken: pdcmrontjrlf494tl1eu6nt7hg"
   ```
 
-### Sample Response
+### Sample response
 
 - Response header:
 
@@ -739,407 +742,11 @@ This API endpoint is used to get information for all security roles. A security 
         "id": "54F3D26011D2896560009A8E67019608"
       },
       "extType": 0
-    },
-    {
-      "name": "Application Administrator",
-      "id": "55B74261409C4546650FB9B9A5955439",
-      "type": 44,
-      "description": "Users granted this role have access to all application-specific tasks",
-      "subtype": 11264,
-      "dateCreated": "2017-09-15T06:19:15.000+0000",
-      "dateModified": "2018-11-29T06:50:14.000+0000",
-      "version": "764B937E444FFD80BED60DB63A14C593",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Application Architect",
-      "id": "BB510B3B40F460AC5485398B710C9C22",
-      "type": 44,
-      "description": "Users granted this role can create, share, and maintain intelligence applications for the enterprise.",
-      "subtype": 11264,
-      "dateCreated": "2018-09-06T09:14:19.000+0000",
-      "dateModified": "2018-11-29T06:50:15.000+0000",
-      "version": "640CFB144C0DBB9FCFA6DFB4C6ADE340",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Certifier",
-      "id": "6903B3B8498FA8E8D8F01EBD40F0C4BB",
-      "type": 44,
-      "description": "Users assigned this role can certify objects in addition to having authoring capabilities",
-      "subtype": 11264,
-      "dateCreated": "2017-09-15T06:19:15.000+0000",
-      "dateModified": "2019-03-22T16:12:34.000+0000",
-      "version": "6DB2C66A4A1218A681F210A32DBC3F9D",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Collaborator",
-      "id": "F1576BD844BA6D4EA84AEC823F0B1309",
-      "type": 44,
-      "description": "Collaborator - Users granted this role can view and collaborate on a dossier or document that they have access to.",
-      "subtype": 11264,
-      "dateCreated": "2018-02-07T08:52:01.000+0000",
-      "dateModified": "2018-11-29T06:50:15.000+0000",
-      "version": "2CE6EDFE4B27BFE86F60E7AE325E8714",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Consumer",
-      "id": "8E89FD22450E8703D35025A964B960F4",
-      "type": 44,
-      "description": "Consumer - Users granted this role can only view a dossier or document that they have access to.",
-      "subtype": 11264,
-      "dateCreated": "2018-02-07T08:52:01.000+0000",
-      "dateModified": "2019-03-22T16:13:06.000+0000",
-      "version": "920A000644AF94A2E25D1E97A4C777A4",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Customers",
-      "id": "28ECA95811D5188EC000E9ABCA1B1A4F",
-      "type": 44,
-      "subtype": 11264,
-      "dateCreated": "2001-03-14T15:45:30.000+0000",
-      "dateModified": "2003-05-06T20:32:07.000+0000",
-      "version": "333419F011D77F4BB00092BE4E571AD0",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Database Architect",
-      "id": "FDBC64664726547BF65A03937F8F529B",
-      "type": 44,
-      "description": "Users granted this role can optimize query performance and utilization based on query type, usage patterns, and application design requirements by tuning VLDB settings or configuring schema objects",
-      "subtype": 11264,
-      "dateCreated": "2018-09-06T09:14:19.000+0000",
-      "dateModified": "2018-11-29T06:50:16.000+0000",
-      "version": "3868F58C40E43895C3C5C196BD9CAA21",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Demo Security Role",
-      "id": "EC8677374A2ED18D1258829A1A6EC1E7",
-      "type": 44,
-      "description": "Demo for security role creation",
-      "subtype": 11264,
-      "dateCreated": "2019-05-20T16:41:58.000+0000",
-      "dateModified": "2019-05-20T16:49:14.000+0000",
-      "version": "B170165F4443B5D2BEDA6382DAFA4568",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Embedded Analytics Architect",
-      "id": "66A48222443561C09000CAA008DADAEC",
-      "type": 44,
-      "description": "Users granted this role can inject, extend, embed analytics into portals, third-party, mobile, and white-labelled applications",
-      "subtype": 11264,
-      "dateCreated": "2018-09-06T09:14:19.000+0000",
-      "dateModified": "2018-11-29T06:50:16.000+0000",
-      "version": "6CD4F68C4001CB781B6290AB07A1533B",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "IntroBI",
-      "id": "26C31B6E4A18FCF1CF0DF0B56050B8AD",
-      "type": 44,
-      "description": "This security role is used for the MicroStrategy class \"Introduction to Enterprise Business Intelligence\".",
-      "subtype": 11264,
-      "dateCreated": "2010-03-04T20:00:05.000+0000",
-      "dateModified": "2010-06-17T09:14:42.000+0000",
-      "version": "1D9A0777422392DE8D8C45970B72407C",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Managers",
-      "id": "E96A7CDE11D4BBCE10004694316DE8A4",
-      "type": 44,
-      "subtype": 11264,
-      "dateCreated": "2001-01-02T20:49:55.000+0000",
-      "dateModified": "2003-05-06T20:32:08.000+0000",
-      "version": "333419F311D77F4BB00092BE4E571AD0",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Mobile Architect",
-      "id": "ED6F68FC431C59D21A7972950B5C65DB",
-      "type": 44,
-      "description": "Users granted this role can build, compile, deploy, and maintain mobile environments and applications. Users with this can also optimize the end user experience when accessing applications via mobile devices",
-      "subtype": 11264,
-      "dateCreated": "2018-09-06T09:14:19.000+0000",
-      "dateModified": "2018-11-29T06:50:15.000+0000",
-      "version": "B980B61842067E7CB7374EA1060CFC22",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "New Security Role",
-      "id": "682BE14445B2E7C100A77299E78B1B5A",
-      "type": 44,
-      "description": "Demo for security role",
-      "subtype": 11264,
-      "dateCreated": "2019-05-20T16:35:33.000+0000",
-      "dateModified": "2019-05-20T16:35:33.000+0000",
-      "version": "B90CB9F2455F39C7642519B55A568081",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Normal Users",
-      "id": "73F7482111D3596C60001B8F67019608",
-      "type": 44,
-      "subtype": 11264,
-      "dateCreated": "2001-01-02T20:39:17.000+0000",
-      "dateModified": "2019-05-22T05:00:43.000+0000",
-      "version": "90BE9BAB4233AE02EE7DE99DFE0B1961",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Northeast Users",
-      "id": "A6EAF53F47942B29F1060EA369D1F609",
-      "type": 44,
-      "description": "This security role is used for the MicroStrategy class \"Introduction to Enterprise Business Intelligence\".",
-      "subtype": 11264,
-      "dateCreated": "2008-12-18T16:51:05.000+0000",
-      "dateModified": "2010-06-17T09:14:42.000+0000",
-      "version": "F18E81654017123AA54EDF88E46ABC0B",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Platform Administrator",
-      "id": "0BF9F9D241DBB519BCA019A64D6CDCDE",
-      "type": 44,
-      "description": "Users granted this role can configure the Intelligence Server, maintain the security layer, monitor system usage, and optimize architecture in order to reduce errors, maximize uptime, and boost performance.",
-      "subtype": 11264,
-      "dateCreated": "2018-09-06T09:14:19.000+0000",
-      "dateModified": "2018-11-29T06:50:16.000+0000",
-      "version": "AA960A844B0F391529B2EFB1E5885A17",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Power Users",
-      "id": "73F7482011D3596C60001B8F67019608",
-      "type": 44,
-      "subtype": 11264,
-      "dateCreated": "2001-01-02T20:39:17.000+0000",
-      "dateModified": "2010-06-17T09:14:49.000+0000",
-      "version": "0D835866428FBBE6903469B1B3F18842",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Project Bulk Administrators",
-      "id": "0DF476E547AAD0F294D4438EFB52E10C",
-      "type": 44,
-      "description": "Users granted this role can do bulk administration activities for the project",
-      "subtype": 11264,
-      "dateCreated": "2008-12-22T14:07:57.000+0000",
-      "dateModified": "2018-02-07T08:52:01.000+0000",
-      "version": "CCFDEDD94F4F1D4E9C81FEAFD4189B9B",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Project Operations Administrators",
-      "id": "4E4CD5BD4D945FD951F9A984D14CB858",
-      "type": 44,
-      "description": "Users granted this role can perform run-time maintenance and operations for the project",
-      "subtype": 11264,
-      "dateCreated": "2008-12-22T14:07:58.000+0000",
-      "dateModified": "2018-02-07T08:52:01.000+0000",
-      "version": "CCFDEDD94F4F1D4E9C81FEAFD4189B9B",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Project Operations Monitors",
-      "id": "A3C52AF7430BE62350F8878BA8382963",
-      "type": 44,
-      "description": "Users granted this role can view the monitors for the project",
-      "subtype": 11264,
-      "dateCreated": "2008-12-22T14:07:58.000+0000",
-      "dateModified": "2018-02-07T08:52:01.000+0000",
-      "version": "CCFDEDD94F4F1D4E9C81FEAFD4189B9B",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Project Resource Settings Administrators",
-      "id": "F6FAD92945EAB317745D31997D1527AF",
-      "type": 44,
-      "description": "Users granted this role can set project configuration settings except security",
-      "subtype": 11264,
-      "dateCreated": "2008-12-22T14:07:58.000+0000",
-      "dateModified": "2018-02-07T08:52:01.000+0000",
-      "version": "CCFDEDD94F4F1D4E9C81FEAFD4189B9B",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Project Security Administrators",
-      "id": "06A5A96442B774117E28C0BE07923DAB",
-      "type": 44,
-      "description": "Users granted this role can configure security for the project",
-      "subtype": 11264,
-      "dateCreated": "2008-12-22T14:07:58.000+0000",
-      "dateModified": "2018-02-07T08:52:01.000+0000",
-      "version": "CCFDEDD94F4F1D4E9C81FEAFD4189B9B",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "Security Role Testing",
-      "id": "C3582452417C223AC4AC2F833CD207C5",
-      "type": 44,
-      "description": "a new Security Role for testing",
-      "subtype": 11264,
-      "dateCreated": "2019-05-17T15:44:53.000+0000",
-      "dateModified": "2019-05-17T15:44:53.000+0000",
-      "version": "9658A85E402CD93F7DD67AAC58FCD90B",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "System Administrator",
-      "id": "B3D00D8146E0947C1B8C5BAEF87B0B7B",
-      "type": 44,
-      "description": "Users granted this role can set up, maintain, monitor, and continuously support the infrastructure environment through deployment on AWS, Windows, or Linux.",
-      "subtype": 11264,
-      "dateCreated": "2018-09-06T09:14:19.000+0000",
-      "dateModified": "2018-11-29T06:50:16.000+0000",
-      "version": "BBCE1AF547FB403F9601BBABE31611CA",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
-    },
-    {
-      "name": "test SR",
-      "id": "F80E38174DA4A8AF4C82D18F34A2D5E8",
-      "type": 44,
-      "description": "testing",
-      "subtype": 11264,
-      "dateCreated": "2019-05-21T18:34:36.000+0000",
-      "dateModified": "2019-05-21T18:34:36.000+0000",
-      "version": "F07A19FC4CCEC22CC2E2A9978DF79A4F",
-      "acg": 255,
-      "owner": {
-        "name": "Administrator",
-        "id": "54F3D26011D2896560009A8E67019608"
-      },
-      "extType": 0
     }
   ]
   ```
 
-- Response code: 200 (Success: Ok)
+- Response code: 200 (Success: OK)
 
 ## Log out
 
@@ -1147,7 +754,7 @@ End Point: `POST/auth/logout`
 
 This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST Server. In this example, you close the active user session by providing the authorization token, X-MSTR-AuthToken, generated by `POST /api/auth/login`. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 
-### Sample Request
+### Sample request
 
 - Request header:
 
@@ -1165,6 +772,6 @@ This endpoint allows the caller to log out for the authenticated user with the M
   'https://demo.microstrategy.com/MicroStrategyLibrary/api/auth/logout'
   ```
 
-### Sample Response
+### Sample response
 
-- Response code: 204 (Success: Ok)
+- Response code: 204 (Success: OK)

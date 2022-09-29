@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Table's Definition
-sidebar_label: Retrieve a Table's Definition
+title: Workflow sample - Retrieve a table's definition
+sidebar_label: Retrieve a table's definition
 description: You can use REST APIs to retrieve the definition for a table through the Modeling service.
 ---
 
@@ -14,7 +14,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST APIs to retrieve the definition for a table through the Modeling service.
 
-## Retrieve a Table's Definition
+## Retrieve a table's definition
 
 In this workflow sample, you want to get the definition of a table that is defined by a normal warehouse table. The object ID of the table is `862780DC499A14D74FEC7EB2EF317DA2`. The table is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
@@ -319,7 +319,7 @@ You can view the table's definition in the body of the response.
 
 Response Code: 200 (The table's definition is returned successfully.)
 
-## Retrieve a Table's Definition within a Changeset
+## Retrieve a table's definition within a changeset
 
 In this workflow sample, you want to get the definition of the same table object mentioned in [Retrieve a Table's Definition](#retrieve-a-tables-definition), while within a changeset. The object ID of the table is `862780DC499A14D74FEC7EB2EF317DA2`. The table is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
@@ -684,7 +684,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
    Sample Response Code: 204 (The changeset is deleted successfully.)
 
-## Retrieve a Table's Definition with Specific Fields
+## Retrieve a table's definition with specific fields
 
 In this workflow sample, you get the definition of the `"CITY_CTR_SLS"` table object using its object ID of `862780DC499A14D74FEC7EB2EF317DA2`. You also use the `fields` parameter to retrieve specific fields. If the `fields` parameter is not specified, the API returns all fields by default as shown in [Retrieve a Table's Definition](#retrieve-a-tables-definition)
 

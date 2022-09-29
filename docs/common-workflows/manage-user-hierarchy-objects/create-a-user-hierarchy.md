@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a User Hierarchy
-sidebar_label: Create a User Hierarchy
+title: Workflow sample - Create a user hierarchy
+sidebar_label: Create a user hierarchy
 description: This workflow sample demonstrates how to create a user hierarchy object through the Modeling service.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Manage Table Objects
+title: Manage table objects
 description: You can use REST API requests to retrieve, create, and update table objects through the Modeling service.
 ---
 

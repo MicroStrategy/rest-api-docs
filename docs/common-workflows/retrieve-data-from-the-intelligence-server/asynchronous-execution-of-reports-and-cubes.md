@@ -1,5 +1,5 @@
 ---
-title: Asynchronous Execution of Reports and Cubes
+title: Asynchronous execution of reports and cubes
 description: Asynchronous instance creation prevents the client from holding a thread or HTTP request open when report, cube, and dossier execution takes longer than usual.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Prompt Types
+title: Prompt types
 description: There are several different prompt types in the MicroStrategy platform. Each prompt type is defined by a specific set of parameters and corresponds to a value in EnumDSSXMLPromptType.
 ---
 

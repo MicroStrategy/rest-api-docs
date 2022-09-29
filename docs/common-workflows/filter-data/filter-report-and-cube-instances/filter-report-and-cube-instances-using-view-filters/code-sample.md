@@ -1,5 +1,5 @@
 ---
-title: Code Sample - Filter Reports and Cubes Using View Filters
+title: Code sample - Filter reports and cubes using view filters
 description: The code sample for filter reports and cubes using view filters.
 ---
 
@@ -49,7 +49,7 @@ Metrics
 
 Each code sample returns only the subset of data defined by the specific view filter for that sample.
 
-## Filter on Attribute Elements
+## Filter on attribute elements
 
 Requested data: Get all report or cube data for Electronics
 
@@ -81,7 +81,7 @@ Operator used: **In**
 }
 ```
 
-## Filter on Attribute Forms
+## Filter on attribute forms
 
 Requested data: Get all report or cube data where the ID form of Category is between 1 and 3
 
@@ -121,7 +121,7 @@ Operator used: **Between**
 }
 ```
 
-## Multiple Filters on Attribute Forms
+## Multiple filters on attribute forms
 
 Requested data: Get all report or cube data where the value of items are The Painted Word and Hirschfeld on Line.
 
@@ -154,7 +154,7 @@ Operator used: **In**
 }
 ```
 
-## Filter on Metrics
+## Filter on metrics
 
 Requested data: Get report or cube data with revenue less than cost (i.e., cost greater than revenue)
 
@@ -318,7 +318,7 @@ Operator used: **Percent.Equals**
 }
 ```
 
-## Combine Filters
+## Combine filters
 
 Requested data: Get Cost and Revenue for Electronics for the Northeast and Northwest
 

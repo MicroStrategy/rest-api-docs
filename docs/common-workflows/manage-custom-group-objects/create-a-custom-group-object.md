@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Custom Group Object
-sidebar_label: Create a Custom Group Object
+title: Workflow sample - Create a custom group object
+sidebar_label: Create a custom group object
 description: This workflow sample demonstrates how to create a new custom group object through the Modeling service.
 ---
 
@@ -601,7 +601,7 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset is deleted successfully.)
 
-## More Samples
+## More samples
 
 The following are additional examples for creating a custom group object.
 

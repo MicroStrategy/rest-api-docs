@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Import a Migration Package
-sidebar_label: Import a Migration Package
+title: Workflow sample - Import a migration package
+sidebar_label: Import a migration package
 description: This workflow sample demonstrates how to import a migration package using REST APIs.
 ---
 
@@ -23,7 +23,7 @@ This workflow sample demonstrates how to import a migration package using REST A
 1. [Delete the import process.](#delete-the-import-process)
 1. [Delete the package.](#delete-the-package)
 
-## Import a Project Package
+## Import a project package
 
 You want to import a project package that contains a `"Year"` object, with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4`, and all its dependents in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. You are using the `"Demo Project"`, which has a project ID of `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
@@ -323,7 +323,7 @@ Sample Response Body:
 
 Sample Response Code: 202 (The package is being deleted.)
 
-## More Examples
+## More examples
 
 By default, the package import process automatically generates an undo package. In some cases, such as when the “`KeepBoth“` package is used as conflict rule, the undo package cannot be created. The following sample request imports a package without creating the undo package.
 

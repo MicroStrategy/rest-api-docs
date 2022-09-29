@@ -1,5 +1,5 @@
 ---
-title: Retrieve a List of Time Zones' Definitions
+title: Retrieve a list of time zones' definitions
 description: You can use REST APIs to retrieve definitions for a list of available time zones through the Modeling service. This topic includes the following workflows.
 ---
 
@@ -13,7 +13,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST APIs to retrieve definitions for a list of available time zones through the Modeling service. This topic includes the following workflows.
 
-## Retrieve a List of All Time Zones' Definitions
+## Retrieve a list of all time zones' definitions
 
 You want to get the definitions of all available time zones in the configuration project.
 
@@ -21,7 +21,7 @@ You want to get the definitions of all available time zones in the configuration
 
 Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Since time zone objects are configuration objects, you must set the project ID as an empty string.
+Since timezone objects are configuration objects, you must set the project ID as an empty string.
 
 :::
 
@@ -59,7 +59,7 @@ You can view the time zones' definitions in the body of the response. In this sa
         "objectId": "1D18D39B4594CFAF60A6C1B2F48164E8",
         "subType": "timezone_system",
         "name": "America New York time",
-        "description": "The state of New York uses the Eastern Time Zone (UTC-05:00) with daylight saving time (UTC-04:00)."
+        "description": "The state of New York uses the Eastern Timezone (UTC-05:00) with daylight saving time (UTC-04:00)."
       },
       "currentOffset": -18000
     },
@@ -129,7 +129,7 @@ You can view the time zones' definitions in the body of the response. In this sa
 
 Response Code: 200 (time zones' definitions are returned successfully.)
 
-## Retrieve a List of All Available Timezones' Definitions Within a Changeset
+## Retrieve a list of all available timezones' definitions within a changeset
 
 You want the definitions of all available time zones in the configuration project.
 
@@ -137,13 +137,13 @@ You want the definitions of all available time zones in the configuration projec
 
 Obtain the authorization token needed to execute the request using `[POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)`.
 
-Since time zone objects are configuration objects, you must set the project ID as an empty string.
+Since timezone objects are configuration objects, you must set the project ID as an empty string.
 
 :::
 
 :::tip
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/timezones` to create a new time zone or update the time zones' definitions, it is recommended to associate all requests to one changeset.
+A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/timezones` to create a new timezone or update the time zones' definitions, it is recommended to associate all requests to one changeset.
 
 :::
 
@@ -219,7 +219,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
            "objectId": "1D18D39B4594CFAF60A6C1B2F48164E8",
            "subType": "timezone_system",
            "name": "America New York time",
-           "description": "The state of New York uses the Eastern Time Zone (UTC-05:00) with daylight saving time (UTC-04:00)."
+           "description": "The state of New York uses the Eastern Timezone (UTC-05:00) with daylight saving time (UTC-04:00)."
          },
          "currentOffset": -18000
        },
@@ -311,7 +311,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
 
    Sample Response Code: 204 (The changeset has been deleted successfully.)
 
-## Retrieve a List of Time Zones' Definitions With a Specified SubType
+## Retrieve a list of time zones' definitions with a specified `subType`
 
 You want to enable the `subType` parameter to retrieve only system time zones or custom time zones.
 

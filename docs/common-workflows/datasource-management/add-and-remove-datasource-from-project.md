@@ -1,5 +1,5 @@
 ---
-title: Add and Remove Datasource From Project
+title: Add and remove datasource from project
 description: This workflow sample demonstrates how to add a datasource to a project.
 ---
 

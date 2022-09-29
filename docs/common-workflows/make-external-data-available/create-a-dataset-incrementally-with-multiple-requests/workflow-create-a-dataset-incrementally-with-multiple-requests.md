@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Dataset Incrementally with Multiple Requests
-sidebar_label: Create a Dataset Incrementally with Multiple Requests
+title: Workflow sample - Create a dataset incrementally with multiple requests
+sidebar_label: Create a dataset incrementally with multiple requests
 description: The steps below illustrate the workflow for defining a dataset with one or more tables and then incrementally uploading data to the Intelligence Server with multiple requests, before publishing the final dataset.
 ---
 

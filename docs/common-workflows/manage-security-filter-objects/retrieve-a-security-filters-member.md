@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Security Filter's Member
-sidebar_label: Retrieve a Security Filter's Member
+title: Workflow sample - Retrieve a security filter's member
+sidebar_label: Retrieve a security filter's member
 description: This workflow sample demonstrates how to get the users and user groups that the specified security filter is applied to.
 ---
 

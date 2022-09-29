@@ -1,5 +1,5 @@
 ---
-title: Filter Report and Cube Instances Using requestedObjects
+title: Filter report and cube instances using requestedObjects
 description: How to filter report and cube instances using requestedObjects.
 ---
 

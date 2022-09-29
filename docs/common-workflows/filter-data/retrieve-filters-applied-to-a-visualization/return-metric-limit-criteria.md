@@ -1,5 +1,5 @@
 ---
-title: Return the Metric Limit Criteria Applied Prior to Aggregation
+title: Return the metric limit criteria applied prior to aggregation
 description: A metric limit specifies a set of metric-based filtering criteria. In dossiers, a metric limit is applied to a visualization-level dataset after all pre-aggregation filters have first been applied and then metrics have been aggregated. Because metric limits are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
 ---
 

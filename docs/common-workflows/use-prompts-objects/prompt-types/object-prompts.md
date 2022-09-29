@@ -1,5 +1,5 @@
 ---
-title: Object Prompts
+title: Object prompts
 description: An object prompt allows the caller to supply a list of objects, such as attributes, metrics, hierarchies, and so on from which a selection is made.
 ---
 
@@ -21,7 +21,7 @@ An object prompt allows the caller to supply a list of objects, such as attribut
   - [Object Prompt Definition](#object-prompt-definition)
   - [Possible Prompt Execution Errors for Object Prompts](#possible-prompt-execution-errors-for-object-prompts)
 
-## Workflow for Object Prompts
+## Workflow for object prompts
 
 Here is a workflow sample for using REST APIs to execute object prompts:
 
@@ -61,7 +61,7 @@ Here is a workflow sample for using REST APIs to execute object prompts:
    - GET `/api/reports/{reportId}/instances/{instancesId}`
    - GET `/api/dossiers/{dossierId}/instances/{dossierInstanceId}`
 
-## Obtain Elements for Answering Object Prompts
+## Obtain elements for answering object prompts
 
 To answer an object prompt, the user needs to know which object can be supplied as the answer. The following REST APIs can be used to obtain this list of objects.
 
@@ -90,7 +90,7 @@ You use the following REST API endpoints to answer an object prompt applied to a
 - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 - PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
-### Provide Specific Prompt Answers
+### Provide specific prompt answers
 
 You provide answers to an object prompt in the body parameter of the request. You identify the prompt by providing the prompt ID or key; you specify the prompt type as "OBJECTS". You specify the object used to answer the prompt by providing the object GUID and the object type; the value of the object type depends on the kind of object used by the prompt.
 
@@ -135,7 +135,7 @@ Sample code for answering multiple object prompts in a single request is provide
 }
 ```
 
-### Get Information About an Object Prompt
+### Get information about an object prompt
 
 You use the following REST API endpoints to get information about object prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
 
@@ -151,7 +151,7 @@ You provide the ID of the document, dossier, or report in the path of the reques
 
 ![swagger_promptAnswerModel_response](../../../images/swagger_promptAnswerModel_response.png)
 
-### Object Prompt Definition
+### Object prompt definition
 
 The model for the definition of an object prompt can be represented with the following fields:
 
@@ -250,7 +250,7 @@ Additional sample code for an object prompt definition is provided below:
 }
 ```
 
-### Possible Prompt Execution Errors for Object Prompts
+### Possible prompt execution errors for object prompts
 
 Numerous errors can occur during the prompt execution workflow, when answering prompts. Some of these are [general errors](../prompt-execution-errors.md), and others occur only for specific types of prompts. The errors listed below are specific to object prompts.
 

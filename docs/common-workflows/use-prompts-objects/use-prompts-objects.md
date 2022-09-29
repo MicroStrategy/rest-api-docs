@@ -1,5 +1,5 @@
 ---
-title: Use Prompts Objects
+title: Use prompts objects
 description: Prompts are a platform capability of MicroStrategy that refine the data displayed in reports, documents, and dossiers. The system poses the prompt as a question during execution of a dossier, document, or report, and the answer determines the data that is returned. A prompt is similar to a filter; both are applied at runtime and customize the results of data that is returned from a data source. The actual prompt definition cannot be changed at runtime, but the answers to the prompt can be changed dynamically. Together with filtering, prompts allow you to build feature-rich applications by leveraging core MicroStrategy platform capabilities.
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Metric's Definition
-sidebar_label: Retrieve a Metric's Definition
+title: Workflow sample - Retrieve a metric's definition
+sidebar_label: Retrieve a metric's definition
 description: This topic covers several workflows for retrieving a metric's definition.
 ---
 
@@ -40,7 +40,7 @@ The response can change based on the request parameters provided by the caller. 
 | header   | X-MSTR-ProjectID | The ID of the project                                                                                                                                                                                                                                  |
 | params   | showExpressionAs | Omitted, tree, or tokens:<br/>- If omitted, the expression is returned in only “text“ formats.<br/>- If `tree`, the expression is returned in "text" and "tree" formats.<br/>- If `tokens`, the expression is returned in "text" and "tokens" formats. |
 
-## Retrieve a Metric's Definition
+## Retrieve a metric's definition
 
 Sample Curl:
 
@@ -196,7 +196,7 @@ You can view the metric's definition in the body of the response. The following 
 
 Response Code: 200 (Metric's definition is returned successfully.)
 
-## Retrieve a Metric's Definition in Tree Format
+## Retrieve a metric's definition in tree format
 
 Sample Curl:
 
@@ -363,7 +363,7 @@ You can view the metric's definition of the body of the response in "text" and "
 
 Response Code: 200 (Metric's definition is returned successfully.)
 
-## Retrieve a Metric's Definition in Tokens Format
+## Retrieve a metric's definition in tokens format
 
 Sample Curl:
 

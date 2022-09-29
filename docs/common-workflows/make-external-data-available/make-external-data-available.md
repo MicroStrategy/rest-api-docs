@@ -1,5 +1,5 @@
 ---
-title: Make External Data Available Using the Push Data API
+title: Make external data available using the Push Data API
 description: The Push Data API, which belongs to the Dataset API family, lets you make external data easily available for analysis in MicroStrategy. You use REST APIs to create and modify datasets using external data uploaded directly to the Intelligence Server.
 ---
 

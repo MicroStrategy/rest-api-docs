@@ -1,5 +1,5 @@
 ---
-title: Manage Server Settings
+title: Manage server settings
 description: A high-level workflow sample for managing server settings is shown below. The sequence of REST API requests in the following procedure allows an administrative user to manage the Intelligence Server settings.
 ---
 
@@ -15,7 +15,7 @@ A high-level workflow sample for managing server settings is shown below. The se
 
 A detailed explanation of each step is provided below.
 
-## Log In
+## Log in
 
 Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin)
 
@@ -23,7 +23,7 @@ This endpoint allows the user to authenticate with the MicroStrategy REST Server
 
 In the following example, standard authentication uses a username of administrator and a blank password.
 
-### Sample Request
+### Sample request
 
 Request Body:
 
@@ -40,7 +40,7 @@ Curl:
 curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/auth/login" -H "accept: application/json" -H "Content-Type: application/json" -d "{\\"username\\":\\"administrator\\",\\"password\\":\\"yourPassword\\"}"
 ```
 
-### Sample Response
+### Sample response
 
 Response Header:
 
@@ -54,7 +54,7 @@ x-mstr-authtoken: f34qc7evsntsks0qe6hfcgt0ur
 
 Response Code: 204 (Success: No Content)
 
-## Get the Intelligence Server Setting Configurations
+## Get the Intelligence Server setting configurations
 
 Endpoint: `GET /api/v2/iserver/settings/config`
 
@@ -66,7 +66,7 @@ This operation requires the Web User privilege.
 
 :::
 
-### Sample Request
+### Sample request
 
 Request Parameter:
 
@@ -80,7 +80,7 @@ Curl:
 curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/v2/iserver/settings/config" -H "accept: application/json" -H "X-MSTR-AuthToken: 562f9s80514s26mm7qhi47o96f"
 ```
 
-### Sample Response
+### Sample response
 
 Response Body:
 
@@ -125,13 +125,13 @@ The following sample is part of the complete response body.
 
 Response Code: 200 (Success: OK)
 
-## Get the Intelligence Server Setting Values
+## Get the Intelligence Server setting values
 
 Endpoint: `GET /api/v2/iserver/settings`
 
 This endpoint allows you to retrieve all Intelligence Server setting values that are available in MicroStrategy REST API. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
-### Sample Request
+### Sample request
 
 Request Parameter:
 
@@ -145,7 +145,7 @@ Curl:
 curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/v2/iserver/settings/config" -H
 ```
 
-### Sample Response
+### Sample response
 
 Response Body:
 
@@ -176,7 +176,7 @@ The following sample is part of the complete response body.
 
 Response Code: 200 (Success: OK)
 
-## Update a Part of the Intelligence Server Setting Values
+## Update a part of the Intelligence Server setting values
 
 Endpoint: `PATCH /api/v2/iserver/settings`
 
@@ -188,7 +188,7 @@ Depending on the setting you are modifying, the response body will tell you whic
 
 :::
 
-### Sample Request
+### Sample request
 
 Request Parameter:
 
@@ -215,7 +215,7 @@ Curl:
 curl -X PATCH "https://demo.cloud.microstrategy.com/MicroStrategyLibrary/api/v2/iserver/settings" -H "accept: application/json" -H "X-MSTR-AuthToken: 562f9s80514s26mm7qhi47o96f" -H "Content-Type: application/json" -d "{\\"maxUsedVirtualByte\\":{\\"value\\":98},\\"importSAPUser\\":{\\"value\\":true}}"
 ```
 
-### Sample Response
+### Sample response
 
 Response Body:
 
@@ -243,7 +243,7 @@ The following sample is part of the complete response body. A complete list of I
 
 Response Code: 200 (Success: OK)
 
-## Update All Intelligence Server Setting Values
+## Update all Intelligence Server setting values
 
 Endpoint: `PUT /api/v2/iserver/settings`
 
@@ -263,7 +263,7 @@ This operation requires the following privileges:
 
 :::
 
-### Sample Request
+### Sample request
 
 Request Parameter:
 
@@ -304,7 +304,7 @@ Curl:
 curl -X PUT "https://demo.microstrategy.com/MicroStrategyLibrary/api/v2/iserver/settings" -H "accept: application/json" -H "X-MSTR-AuthToken: 562f9s80514s26mm7qhi47o96f" -H "Content-Type: application/json" -d "{\\"maxUsedVirtualByte\\":{\\"value\\":99},\\"importSAPUser\\":{\\"value\\":false},\\"maxInboxMsgLifeTime\\":{\\"value\\":-1},\\"hashIterations\\":{\\"value\\":10000},\\"tokenTTL\\":{\\"value\\":1440},\\"loadBalanceMode\\":{\\"value\\":false},...}"
 ```
 
-### Sample Response
+### Sample response
 
 Response Body:
 
@@ -335,13 +335,13 @@ The following sample is part of the complete response body. A complete list of I
 
 Response Code: 200 (Success: OK)
 
-## Log Out
+## Log out
 
 Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 This endpoint allows the caller to log out the authenticated user from the MicroStrategy REST server. In this example, you close the active user session by providing the `X-MSTR-AuthToken` authorization token, which is generated by `POST /api/auth/login`. If the call is successful, the resulting response returns a status code of 204.
 
-### Sample Request
+### Sample request
 
 Curl:
 
@@ -349,6 +349,6 @@ Curl:
 curl -X POST "https:// demo.microstrategy.com/MicroStrategyLibrary/api/auth/logout" -H "accept: application/json" -H "X-MSTR-AuthToken: c8afkjurl1r9qk2k7puj2hs9cu"
 ```
 
-### Sample Response
+### Sample response
 
 Response Code: 204 (Accepted)

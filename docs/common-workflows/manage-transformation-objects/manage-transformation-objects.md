@@ -1,5 +1,5 @@
 ---
-title: Manage Transformation Objects
+title: Manage transformation objects
 description: You can use REST API requests to retrieve, create, and update table objects through the Modeling service.
 ---
 

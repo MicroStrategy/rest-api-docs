@@ -1,5 +1,5 @@
 ---
-title: "Sample Workflow: Create an Incremental Refresh Report"
+title: "Sample workflow: Create an incremental refresh report"
 sidebar_label: Create an IRR
 description: This workflow sample demonstrates how to create a new Incremental Refresh Report object through the Modeling service.
 ---
@@ -28,7 +28,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-## Create a new Incremental Refresh Report using [POST /api/model/incrementalRefresh](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/post_api_model_incrementalRefresh)
+## Create a new incremental refresh report using [POST /api/model/incrementalRefresh](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/post_api_model_incrementalRefresh)
 
 To create the new Incremental Refresh Report, you must submit the request body with the correct information.
 
@@ -149,7 +149,7 @@ You can view the new Incremental Refresh Report definition in the body of the re
 
 Response Code: 201 (An Incremental Refresh Report is created successfully.)
 
-## The Model for the Definition of the Incremental Refresh Report
+## The model for the definition of the incremental refresh report
 
 The model for the definition of the Incremental Refresh Report can be represented with the following fields.
 

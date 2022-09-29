@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Transformation's Definition
-sidebar_label: Retrieve a Transformation's Definition
+title: Workflow sample - Retrieve a transformation's definition
+sidebar_label: Retrieve a transformation's definition
 description: This topic covers the following workflows for retrieving an transformation’s definition.
 ---
 
@@ -14,7 +14,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This topic covers the following workflows for retrieving an transformation’s definition.
 
-## Retrieve a Transformation's Definition
+## Retrieve a transformation's definition
 
 In this workflow sample, you want to get the definition of the `"2 Weeks Ago"` transformation object. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
@@ -88,7 +88,7 @@ You can view the transformation's definition in the body of the response.
 
 Response Code: 200 (The transformation's definition is returned successfully.)
 
-## Retrieve a Transformation's Definition within a Changeset
+## Retrieve a transformation's definition within a changeset
 
 In this workflow sample, you want to get the definition of the same transformation object mentioned in [Retrieve a Transformation's Definition](#retrieve-a-transformations-definition), while within a changeset. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
@@ -225,7 +225,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
    Sample Response Code: 204 (The changeset is deleted successfully.)
 
-## Retrieve a Transformation's Definition with Transformation Attribute Form Expressions in Tree and Tokens Formats
+## Retrieve a transformation's definition with transformation attribute form expressions in tree and tokens formats
 
 In this sample workflow, you want to get the definition of the `"2 Weeks Ago"` transformation object, with its transformation attribute form expressions returned in tree and tokens formats. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 

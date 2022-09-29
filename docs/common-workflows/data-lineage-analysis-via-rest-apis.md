@@ -1,5 +1,5 @@
 ---
-title: Data Lineage Analysis via REST APIs
+title: Data lineage analysis via REST APIs
 description: The metadata is used in object management use cases, such as editing a metric to use a different fact object. In such a use case, the user needs to understand how an object is used and where it comes from. To do so, the user can use a data lineage or data traceability function. Here, we can use search API to perform data lineage analysis on the metadata.
 ---
 
@@ -26,7 +26,7 @@ The metadata search API has one restriction that search cannot be triggered in p
 
 :::
 
-## List Components
+## List components
 
 You need to use the metadata search API to get the indirect and direct components of a specific object.
 
@@ -53,7 +53,7 @@ You need to use the metadata search API to get the indirect and direct component
 
 1. Use `GET /api/metadataSearches/results` to get the search results. Get the search results previously stored in an instance in the Intelligence Server memory and display them in a list.
 
-### List Dependents
+### List dependents
 
 You need to use the metadata search API to get the indirect and direct dependents of a specific object.
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Table's Definition
-sidebar_label: Update a Table's Definition
+title: Workflow sample - Update a table's definition
+sidebar_label: Update a table's definition
 description: This workflow sample demonstrates how to update an existing table through the Modeling service.
 ---
 

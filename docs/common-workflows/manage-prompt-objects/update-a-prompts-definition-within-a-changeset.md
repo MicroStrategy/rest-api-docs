@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Prompt's Definition within a Changeset
-sidebar_label: Update a Prompt's Definition within a Changeset
+title: Workflow sample - Update a prompt's definition within a changeset
+sidebar_label: Update a prompt's definition within a changeset
 description: This workflow demonstrates how to update a prompt's definition through the Modeling service.
 ---
 

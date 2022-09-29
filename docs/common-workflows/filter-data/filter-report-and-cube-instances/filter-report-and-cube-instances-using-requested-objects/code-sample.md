@@ -1,5 +1,5 @@
 ---
-title: Code Sample - Filter Reports and Cubes Using requestedObjects
+title: Code sample - Filter reports and cubes using requestedObjects
 description: The code sample for filter reports and cubes using requestedObjects.
 ---
 

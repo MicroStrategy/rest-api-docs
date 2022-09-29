@@ -1,6 +1,6 @@
 ---
-title: Workflow Samples - Create an Attribute Object
-sidebar_label: Create an Attribute Object
+title: Workflow samples - Create an attribute object
+sidebar_label: Create an attribute object
 description: This workflow sample demonstrates how to create an attribute object through the Modeling service.
 ---
 
@@ -514,7 +514,7 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset is deleted successfully.)
 
-## More Samples
+## More samples
 
 The following are additional examples for creating an attribute object.
 

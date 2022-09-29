@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Transformation's Definition
-sidebar_label: Update a Transformation's Definition
+title: Workflow sample - Update a transformation's definition
+sidebar_label: Update a transformation's definition
 description: This workflow sample demonstrates how to update an existing transformation through the Modeling service.
 ---
 

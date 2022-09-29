@@ -1,5 +1,5 @@
 ---
-title: Configure Clustered Environments
+title: Configure clustered environments
 description: This page provides information for clustered environment configuration.
 ---
 

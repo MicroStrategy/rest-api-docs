@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Metric within a Changeset
-sidebar_label: Create a Metric within a Changeset
+title: Workflow sample - Create a metric within a changeset
+sidebar_label: Create a metric within a changeset
 description: This workflow sample demonstrates how to create a metric object through the Modeling service.
 ---
 

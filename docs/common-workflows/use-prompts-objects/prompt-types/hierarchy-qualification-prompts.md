@@ -1,5 +1,5 @@
 ---
-title: Hierarchy Qualification Prompts
+title: Hierarchy qualification prompts
 description: A hierarchy qualification prompt allows users to filter data in a report or document based on the qualification of multiple attributes from the hierarchies. For example, you can determine a single hierarchy or list of hierarchies from which users can select attributes and make qualifications on these attributes to define their filters.
 ---
 
@@ -13,7 +13,7 @@ Use REST APIs to perform the following actions on hierarchy qualification prompt
 - [Answer a Hierarchy Qualification Prompt](#answer-a-hierarchy-qualification-prompt)
   - [Provide Specific Prompt Answers](#provide-specific-prompt-answers)
 
-## Get Information About a Hierarchy Qualification Prompt
+## Get information about a hierarchy qualification prompt
 
 Use the following REST API endpoints to get information about hierarchy qualification prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
 
@@ -108,7 +108,7 @@ Besides the commonly-used fields, the hierarchy qualification prompt also contai
 
 **maxElementsPerSelection** The maximum number of elements that can be supplied to answer the prompt per selection. The default setting of **-1** means there is no limit to the maximum number of elements.
 
-## Get the Hierarchy Qualification Prompt's Available Objects
+## Get the hierarchy qualification prompt's available objects
 
 Use the following REST API endpoints to get a hierarchy qualification prompt's available objects:
 
@@ -135,7 +135,7 @@ The sample code below contains a hierarchy qualification prompt's available obje
 }
 ```
 
-## Get the Attributes of a Hierarchy
+## Get the attributes of a hierarchy
 
 After getting a hierarchy qualification prompt's available objects, the user may need to get the attributes of some hierarchies to construct their own view filter expression. Use the following REST API endpoints to retrieve the attributes of a hierarchy.
 
@@ -169,14 +169,14 @@ The sample code below contains the definition of the attributes of a hierarchy.
 }
 ```
 
-## Answer a Hierarchy Qualification Prompt
+## Answer a hierarchy qualification prompt
 
 Use the following REST API endpoints to answer a hierarchy qualification prompt applied to a dossier, document, or report:
 
 - PUT `/api/reports/{id}/instances/{instanceId}/prompts/answers`
 - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
-### Provide Specific Prompt Answers
+### Provide specific prompt answers
 
 You provide answers to a hierarchy qualification prompt in the body parameter of the request. Identify the prompt by providing the prompt ID, name or key, and specify the prompt type as EXPRESSION. Then, specify the expression used to answer the prompt. The format of the expression is the same as the [JSON Data API's view filter](./../../filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-view-filters/filter-report-and-cube-instances-using-view-filters.md). This expression can be used with attribute elements.
 

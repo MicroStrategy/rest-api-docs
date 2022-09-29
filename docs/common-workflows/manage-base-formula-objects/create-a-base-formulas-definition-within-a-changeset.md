@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Base Formula's Definition within a Changeset
-sidebar_label: Create a Base Formula's Definition within a Changeset
+title: Workflow sample - Create a base formula's definition within a changeset
+sidebar_label: Create a base formula's definition within a changeset
 description: This workflow sample demonstrates how to create an attribute object through the Modeling service.
 ---
 

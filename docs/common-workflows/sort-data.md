@@ -1,5 +1,5 @@
 ---
-title: Sort Data
+title: Sort data
 description: When you use a REST API request to create a cube or report, you can sort the data that is returned. This is particularly helpful when you are using incremental fetch. You define the kind of sorting to apply in the body parameter of the request. You can apply sorting on all rows, columns, and pages.
 ---
 

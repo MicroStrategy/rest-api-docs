@@ -1,5 +1,5 @@
 ---
-title: Datasource Management
+title: Datasource management
 description: You can use REST API requests to manage datasources.
 ---
 

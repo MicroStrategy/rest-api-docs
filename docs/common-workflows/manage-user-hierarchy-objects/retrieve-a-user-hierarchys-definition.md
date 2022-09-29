@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a User Hierarchy's Definition
-sidebar_label: Retrieve a User Hierarchy's Definition
+title: Workflow sample - Retrieve a user hierarchy's definition
+sidebar_label: Retrieve a user hierarchy's definition
 description: This workflow sample demonstrates how to retrieve an user hierarchy's definition within a changeset.
 ---
 

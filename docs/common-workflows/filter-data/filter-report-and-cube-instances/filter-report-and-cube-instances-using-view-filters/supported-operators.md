@@ -1,5 +1,5 @@
 ---
-title: Supported Operators for View Filters
+title: Supported operators for view filters
 description: The supported operators for view filters.
 ---
 

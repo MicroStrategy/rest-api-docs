@@ -1,5 +1,5 @@
 ---
-title: Attribute Element Prompts
+title: Attribute element prompts
 description: An attribute element prompt is one of the most commonly used prompt types. It allows the caller to provide a list of attribute elements from which a selection is made. For example, you can define a prompt as "Call Center in USA".
 ---
 

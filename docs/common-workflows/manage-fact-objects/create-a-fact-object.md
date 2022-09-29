@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Fact Object
-sidebar_label: Create a Fact Object
+title: Workflow sample - Create a fact object
+sidebar_label: Create a fact object
 description: This workflow sample demonstrates how to create a fact object through the Modeling service.
 ---
 
@@ -335,7 +335,7 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset is deleted successfully.)
 
-## More Samples
+## More samples
 
 The following are additional examples for creating a fact object.
 

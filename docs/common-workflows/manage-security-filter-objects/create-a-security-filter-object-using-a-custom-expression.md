@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Security Filter Object Using a Custom Expression
-sidebar_label: Create a Security Filter Object Using a Custom Expression
+title: Workflow sample - Create a security filter object using a custom expression
+sidebar_label: Create a security filter object using a custom expression
 description: This workflow sample demonstrates how to create a security filter definition through the Modeling service using a custom expression.
 ---
 
@@ -458,11 +458,11 @@ Response Code: 201 (A new security filter is created successfully in the changes
 
 ## 4. Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
-## More Samples
+## More samples
 
 Here are more samples you can use to replace `<custom expression>` in the [template file](#template_file).
 
-### Escape Sequences for Full Paths
+### Escape sequences for full paths
 
 Use full paths to the object to avoid ambiguity. Make sure to use escape sequences for any backslashes in the expression.
 
@@ -493,7 +493,7 @@ Sample Request Body:
 }
 ```
 
-### Escape Sequences for Double Quotes
+### Escape sequences for double quotes
 
 Make sure to use escape sequences for any double quotes in the expression.
 
@@ -524,7 +524,7 @@ Sample Request Body:
 }
 ```
 
-### Escape Sequences for the ApplyComparison Function
+### Escape sequences for the ApplyComparison function
 
 If you use the `ApplyComparison` function in an expression, make sure to use escape sequences for the double quotes.
 
@@ -557,7 +557,7 @@ Sample Request Body:
 }
 ```
 
-### Parsed Tokens
+### Parsed tokens
 
 Use a full format of tokens (a parsed token) to retrieve data using the GET method or construct them yourself.
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Prompt within a Changeset
-sidebar_label: Create a Prompt within a Changeset
+title: Workflow sample - Create a prompt within a changeset
+sidebar_label: Create a prompt within a changeset
 description: This workflow sample demonstrates how to create a new prompt object through the Modeling service.
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Transformation Object
-sidebar_label: Create a Transformation Object
+title: Workflow sample - Create a transformation object
+sidebar_label: Create a transformation object
 description: The workflow to create a transformation object.
 ---
 
@@ -12,7 +12,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-## Create a Transformation Object
+## Create a transformation object
 
 In this workflow sample, you want to create a `"Last year’s"` transformation object under the My Personal Objects/My Objects (MSTR User/My Objects) folder in the MicroStrategy Tutorial project. The folder object ID is `9B25D45A4834A213A70C10B1703D4A77`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
@@ -298,11 +298,11 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset has been deleted successfully.)
 
-## More Examples
+## More examples
 
 Use the following additional examples for creating a transformation object.
 
-### Multiple Transformation Attributes
+### Multiple transformation attributes
 
 You can create a transformation object with multiple attributes.
 
@@ -345,7 +345,7 @@ Sample Request Body:
 }
 ```
 
-### Transformation Attribute Form’s Expression in “tree” Format
+### Transformation attribute form’s expression in “tree” format
 
 In this example, you want to create a `"Last year’s"` transformation with a transformation attribute based on a normal `"Year"` attribute. This transformation attribute has a form with a `"YEAR_ID - 1"` expression in `"tree"` format and a `"LU_YEAR"` lookup table .
 

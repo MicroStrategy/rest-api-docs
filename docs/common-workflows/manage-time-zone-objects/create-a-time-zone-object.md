@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Custom Time Zone Object
-sidebar_label: Create a Custom Time Zone Object
+title: Workflow sample - Create a custom timezone object
+sidebar_label: Create a custom timezone object
 description: This workflow demonstrates how to create a new custom object through the Modeling service.
 ---
 
@@ -14,13 +14,13 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow demonstrates how to create a new custom object through the Modeling service.
 
-You want to create a new custom time zone named `"New York"` under the `Custom Timezones` folder in the configuration.
+You want to create a new custom timezone named `"New York"` under the `Custom Timezones` folder in the configuration.
 
 :::info
 
 Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Since time zone objects are configuration objects, you must set the project ID as an empty string.
+Since timezone objects are configuration objects, you must set the project ID as an empty string.
 
 :::
 
@@ -70,13 +70,13 @@ Sample Response Body:
 
 Sample Response Code: 201 (A new changeset is created successfully.)
 
-## 2. Create a new custom time zone using [POST /api/model/timezones](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/timezones)
+## 2. Create a new custom timezone using [POST /api/model/timezones](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/timezones)
 
-You want to create the time zone by providing its name and base time zone.
+You want to create the timezone by providing its name and base timezone.
 
 :::tip
 
-'name' is not required to create a new time zone. If 'name' is not provided, the new time zone will be named using the base time zone's name. If the base time zone's name already exists in the folder, the suffix like `(1)`, `(2)`, and so on will be appended.
+'name' is not required to create a new timezone. If 'name' is not provided, the new timezone will be named using the base timezone's name. If the base timezone's name already exists in the folder, the suffix like `(1)`, `(2)`, and so on will be appended.
 
 :::
 
@@ -103,7 +103,7 @@ curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/time
 
 Sample Response Body:
 
-You can view the new time zone's definition in the body of the response.
+You can view the new timezone's definition in the body of the response.
 
 ```json
 {
@@ -125,7 +125,7 @@ You can view the new time zone's definition in the body of the response.
 }
 ```
 
-Response Code: 201 (A new time zone is created successfully in the changeset.)
+Response Code: 201 (A new timezone is created successfully in the changeset.)
 
 ## 3. Commit the changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 

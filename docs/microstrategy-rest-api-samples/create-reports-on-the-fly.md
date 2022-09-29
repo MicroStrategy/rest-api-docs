@@ -1,6 +1,6 @@
 ---
-sidebar_label: Create Reports on the Fly
-title: REST API Sample - Create Reports on the Fly
+sidebar_label: Create reports on the fly
+title: REST API sample - Create reports on the fly
 description: This interactive REST API sample highlights the ability to create reports on the fly, with ad-hoc object fetching and incremental fetch.
 ---
 
@@ -10,7 +10,7 @@ This sample gets data from an Intelligent cube or a report. It uses the attribut
 
 You can [view a live demo](https://microstrategy.github.io/data-api-demo/site/) of the sample. You can also [download the code](https://github.com/microstrategy/data-api-demo/) for this sample to help you understand and use MicroStrategy REST APIs in your application.
 
-## Understand the REST API Workflow in the Sample
+## Understand the REST API workflow in the sample
 
 This sample uses REST APIs to authenticate the user, get a list of reports and cubes, get definitions for the reports and cubes, and then run the reports and cubes with selected attributes and metrics, using defined view filters.
 
@@ -46,11 +46,11 @@ This REST API returns the results of a specific report instance in a specified p
 
 This REST API returns the results of a specific report instance based on a specified cube in a specified project. It supports fetching the results of the report instance incrementally,
 
-## Set Up the Sample
+## Set up the sample
 
 If you want to setup the sample, you can [download the source code from GitHub](https://github.com/microstrategy/data-api-demo/). Follow the instruct to build and deploy the project. It is a React App.
 
-## Configure the Sample
+## Configure the sample
 
 The config.js file is used to configure the sample for your environment. Set values for the following variables to configure the Intelligence Server, project, folder, user credentials, and number of documents to display on the page.
 
@@ -64,7 +64,7 @@ The config.js file is used to configure the sample for your environment. Set val
 | reports       | Array of report IDs. These reports are listed in the Datasets panel on the left of the sample, under Reports. Be sure to use valid report IDs.     |
 | datasets      | Array of reports or cubes to be shown by default.                                                                                                  |
 
-## Use the Sample
+## Use the sample
 
 Initially, the demo displays a list of cubes and reports in the panel on the left, including the name of the cube or report and the number of attributes and metrics; users can also see the JSON representation of the cube or report definition from the log view at the bottom.
 

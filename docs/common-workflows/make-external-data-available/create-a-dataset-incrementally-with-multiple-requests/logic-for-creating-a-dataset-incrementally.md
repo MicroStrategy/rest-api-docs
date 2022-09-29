@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Logic for Creating a Dataset Incrementally
-sidebar_label: Logic for Creating a Dataset Incrementally
+title: Workflow sample - Logic for creating a dataset incrementally
+sidebar_label: Logic for creating a dataset incrementally
 description: Separating the action of defining the dataset from the actual creation of the dataset allows you to add data in an incremental fashion. Making publishing the dataset another separate step allows you to schedule publication at any time after all the data has been added. This incremental approach has a beneficial impact on performance and is very important when you are working with very large datasets.
 ---
 

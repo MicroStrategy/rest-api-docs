@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Custom Group Object with Filter Elements using Custom Expressions
-sidebar_label: Create a Custom Group Object with Filter Elements using Custom Expressions
+title: Workflow sample - Create a custom group object with filter elements using custom expressions
+sidebar_label: Create a custom group object with filter elements using custom expressions
 description: This workflow sample demonstrates how to create a new custom group object with filter elements using custom expressions through the Modeling service.
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a List of Available User Hierarchies
-sidebar_label: Retrieve a List of Available User Hierarchies
+title: Workflow sample - Retrieve a list of available user hierarchies
+sidebar_label: Retrieve a list of available user hierarchies
 description: This workflow sample demonstrates how to retrieve the list of available user hierarchies in one project within a changeset.
 ---
 

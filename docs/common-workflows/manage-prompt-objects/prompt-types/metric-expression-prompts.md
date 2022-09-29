@@ -1,5 +1,5 @@
 ---
-title: Metric Expression Prompts
+title: Metric expression prompts
 description: A metric expression element prompt is one of the most commonly used prompt types. It allows the caller to provide an expression to filter the data in a report or dossier. For example, you define a prompt as "Get data when Avg Revenue per Customer is greater than 10".
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Drill Map
-sidebar_label: Create a Drill Map
+title: Workflow sample - Create a drill map
+sidebar_label: Create a drill map
 description: This workflow sample demonstrates how to create a new drill map object through the Modeling service.
 ---
 
@@ -225,7 +225,7 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset is deleted successfully.)
 
-## More Examples
+## More examples
 
 In the above example, the drill map has only one drill path. However, a drill map can have multiple drill paths.
 

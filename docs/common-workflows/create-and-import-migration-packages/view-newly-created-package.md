@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - View Content from a Newly Created Package
-sidebar_label: View Content from a Newly Created Package
+title: Workflow sample - View content from a newly created package
+sidebar_label: View content from a newly created package
 description: This workflow sample demonstrates how to view a newly created migration package using REST APIs.
 ---
 

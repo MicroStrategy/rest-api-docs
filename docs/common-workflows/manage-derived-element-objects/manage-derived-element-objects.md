@@ -1,5 +1,5 @@
 ---
-title: Manage Derived Element Objects
+title: Manage derived element objects
 description: You can use REST API requests to retrieve, create, and replace derived element objects through the Modeling service.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: React User Manager Sample
+title: React user manager sample
 description: This sample illustrates how REST API calls work with ReactJS and showcases a React component that can be used to display a log of all REST API calls.
 ---
 

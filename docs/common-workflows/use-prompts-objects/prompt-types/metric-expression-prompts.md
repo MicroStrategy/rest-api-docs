@@ -1,5 +1,5 @@
 ---
-title: Metric Expression Prompts
+title: Metric expression prompts
 description: can define a prompt as "Get data when Avg Revenue per Customer is greater than 10".
 ---
 
@@ -14,7 +14,7 @@ Use REST APIs to perform the following actions on metric expression prompts:
   - [Use Default Prompt Answers](../answer-prompts.md#use-default-prompt-answers)
   - [Close Prompts without Answers](../answer-prompts.md#close-prompts-without-answers)
 
-## Get Information About a Metric Expression Prompt
+## Get information about a metric expression prompt
 
 Use the following REST API endpoints to get information about metric expression prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
 
@@ -139,7 +139,7 @@ Besides the commonly-used fields, the metric expression prompt also contains the
 |               | expression | Reuse the [JSON Data API view filter's format](./../../filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-view-filters/filter-report-and-cube-instances-using-view-filters.md). This field appears when the prompt's expression is supported by the prompt. |
 |               | xml        | The xml that represents the prompt's expression. This field appears when the prompt's expression is not supported.                                                                                                                                                                           |
 
-## Get the Metric Expression Prompt's Available Answer
+## Get the metric expression prompt's available answer
 
 Use the following REST API endpoint to get a metric expression prompt's available answer:
 
@@ -161,14 +161,14 @@ The sample code below contains a metric expression prompt's available answer.
 }
 ```
 
-## Answer a Metric Expression Prompt
+## Answer a metric expression prompt
 
 Use the following REST API endpoints to answer a metric expression prompt applied to a dossier, document, or report:
 
 - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 - PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
-### Provide Specific Prompt Answers
+### Provide specific prompt answers
 
 :::
 

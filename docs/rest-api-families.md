@@ -1,6 +1,6 @@
 ---
-sidebar_label: REST API Families
-title: MicroStrategy REST API Families
+sidebar_label: REST API families
+title: MicroStrategy REST API families
 description: The MicroStrategy REST API Explorer lets you drill down into the individual APis. You can see HTTP headers and input and output information for each request, and enter values to try out the APIs.
 ---
 
@@ -42,7 +42,7 @@ The Consolidations API family allows developers to obtain a consolidation’s de
 
 The Cubes API family allows developers to create a report instance based on a cube and incrementally fetch slices of the report instance. The Cubes API lets developers leverage the performance advantage of in-memory cubes. The cube can be either an Intelligent Cube or a DDA(Direct Data Access)/MDX-based Live Connect cube. Together with the Reports API, this API is often referred to as the JSON Data API.
 
-## [Custom Groups API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups)
+## [Custom groups API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups)
 
 The Custom Groups API family allows developers to obtain a custom group's definition, create a custom group object, and update the definition of an existing custom group.
 
@@ -50,15 +50,15 @@ The Custom Groups API family allows developers to obtain a custom group's defini
 
 The Datasets API family allows developers to push external data directly to the MicroStrategy Intelligence Server. This data can be used to create a dataset or to modify an existing dataset in a Data Import cube. Once the data has been pushed to the Intelligence Server, developers can use the Cubes API or the Reports API to manipulate that data. This API is often referred to as the Push Data API.
 
-## [Datasource Management API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management)
+## [Datasource management API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management)
 
 The Datasource Management API family allows administrators to create, update, and delete database connections in the MicroStrategy metadata. This functionality can be used to automate the update of data source credentials.
 
-## [Derived Elements API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Derived%20Elements)
+## [Derived elements API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Derived%20Elements)
 
 The Derived Elements API family allows developers to obtain a derived element's definition, create a derived element object, and update the definition of an existing derived element.
 
-## [Dossiers and Documents API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents)
+## [Dossiers and documents API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents)
 
 The Dossiers and Documents API family exposes functionality that allows the execution and exporting of dossiers and documents to a variety of export formats.
 
@@ -78,7 +78,7 @@ The Filters API family allows developers to obtain a filter's definition, create
 
 The Library API family exposes the publishing workflow, allowing requests to publish or un-publish to a set of users/usergroups and obtain the library for the authenticated user.
 
-## [Object Management API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management)
+## [Object management API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management)
 
 The Object Management API family exposes the ability to programmatically manage objects in the MicroStrategy metadata. Endpoints can be used to certify or de-certify a report or dossier, delete objects, and update object info for any object type.
 
@@ -106,19 +106,19 @@ The Runtimes API family allows developers to obtain a runtime's definition, crea
 
 The Schema API family allows developers to obtain the schema lock status, lock the schema, unlock the schema, and reload or update the schema synchronously or asynchronously.
 
-## [Security Filters API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters)
+## [Security filters API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters)
 
 The Security Filters API family allows the retrieval, creation, and update of security filter objects through the Modeling service.
 
-## [Security Roles API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles)
+## [Security roles API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles)
 
 The Security Roles API family allows administrators and developers to obtain a list of roles, its members and current privileges, and to manage security role membership.
 
-## [System Administration API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration)
+## [System administration API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration)
 
 The System Administration API family allows administrators and developers to programmatically configure the settings related to the MicroStrategy Library web application. For example, this functionality can be used to configure default values related to the authentication process, set up trust relationships to the Intelligence Server, and more.
 
-## [System Hierarchy API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Hierarchy)
+## [System hierarchy API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Hierarchy)
 
 The System Hierarchy API family allows developers to obtain and update an attribute's relationships.
 
@@ -126,10 +126,10 @@ The System Hierarchy API family allows developers to obtain and update an attrib
 
 The Tables API family allows developers to obtain a table's definition, create a table object, and update the definition of an existing table.
 
-## [User Hierarchies API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Hierarchies)
+## [User hierarchies API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Hierarchies)
 
 The User Hierarchies API family allows developers to obtain a user hierarchy’s definition, create a user hierarchy object, and update the definition of an existing user hierarchy.
 
-## [User Management API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management)
+## [User management API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management)
 
 The User Management API family allows developers to create, update, and delete users and usergroups; perform usergroup membership management; and manage membership within Security Roles. This functionality can be used to automate user creation and management in conjunction with the onboarding process.

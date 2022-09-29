@@ -1,6 +1,6 @@
 ---
-title: What's New in the REST API
-sidebar_label: What's New
+title: What's new in the REST API
+sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 

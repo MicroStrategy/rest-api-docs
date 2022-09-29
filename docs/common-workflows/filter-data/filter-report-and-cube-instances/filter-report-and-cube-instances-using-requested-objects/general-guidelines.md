@@ -1,5 +1,5 @@
 ---
-title: General Guidelines for Using requestedObjects
+title: General guidelines for using requestedObjects
 description: The general guidelines for using requestedObjects.
 ---
 

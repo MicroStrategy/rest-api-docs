@@ -1,5 +1,5 @@
 ---
-title: Manage Attribute Objects
+title: Manage attribute objects
 description: You can use REST API requests to retrieve, create and update attribute objects through the Modeling service.
 ---
 

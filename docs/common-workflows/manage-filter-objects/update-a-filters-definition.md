@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Filter's Definition
-sidebar_label: Update a Filter's Definition
+title: Workflow sample - Update a filter's definition
+sidebar_label: Update a filter's definition
 description: This workflow sample demonstrates how to update a filter's definition through the Modeling service.
 ---
 

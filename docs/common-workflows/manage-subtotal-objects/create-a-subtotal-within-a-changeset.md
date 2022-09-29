@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Subtotal within a Changeset
-sidebar_label: Create a Subtotal within a Changeset
+title: Workflow sample - Create a subtotal within a changeset
+sidebar_label: Create a subtotal within a changeset
 description: This workflow sample demonstrates how to create a subtotal object through the Modeling service.
 ---
 

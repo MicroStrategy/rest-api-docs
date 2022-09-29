@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Derived Element
-sidebar_label: Create a Derived Element
+title: Workflow sample - Create a derived element
+sidebar_label: Create a derived element
 description: This workflow sample demonstrates how to create a new derived element object through Modeling service.
 ---
 
@@ -23,7 +23,7 @@ This workflow sample demonstrates how to create a new derived element object thr
   - [Create a Derived Element Using a Filter Element](#create-a-derived-element-using-a-filter-element)
   - [Create a Derived Element Using a Calculation Element](#create-a-derived-element-using-a-filter-element)
 
-## Create a Derived Element Using a List Element
+## Create a derived element using a list element
 
 You want to create a new `"{Age Range} = 25 to 34, Under 24"` derived element object under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `091B51154B22036C53CFBB9958B2E8FC`.
 
@@ -290,11 +290,11 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset is deleted successfully.)
 
-## More Examples
+## More examples
 
 In the above workflow, you created a derived element with `"list"` element. This section contains more examples of how to create a derived element with a `"filter"` or `"calculation"` element.
 
-### Create a Derived Element Using a Filter Element
+### Create a derived element using a filter element
 
 In a derived element, only [attribute form qualifications](../manage-filter-objects/create-a-filter-object.md#attribute-form-qualifications) and [attribute element list qualifications](../manage-filter-objects/create-a-filter-object.md#attribute-element-list-qualification) are supported for filters. See those pages for more samples.
 
@@ -368,7 +368,7 @@ Sample Response Body:
 }
 ```
 
-### Create a Derived Element Using a Calculation Element
+### Create a derived element using a calculation element
 
 Create an `Average({Age Range=Under 24}, 4.0, 5.0)` derived element with a calculation element.
 

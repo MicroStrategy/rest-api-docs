@@ -1,5 +1,5 @@
 ---
-title: Field Selection for Data API v2 Result-Fetching Endpoints
+title: Field selection for data API v2 result-fetching endpoints
 description: For Data API v2 result-fetching endpoints, the MicroStrategy REST API provides a specialized flavor of field selection support. It is tailored for Data API specific use cases using a similar syntax.
 ---
 
@@ -32,7 +32,7 @@ Keep in the mind the following specific considerations for Data API v2 result-fe
 
 Therefore, general field selection is designed to not apply to these endpoints. On the other hand, we are also aware of valid client use cases and make them possible through field selection syntax in a disciplined way.
 
-## General Usage
+## General usage
 
 You can specify one or more comma-separated rules through the well-known fields param.
 
@@ -43,7 +43,7 @@ Some things to keep in mind:
 - The specified fields value only applies to the specific HTTP request. It does not apply to subsequent requests against the same instance.
 - Field selection rules are closely related to response models and this topic reflects the status as of 2020 Update 2 release.
 
-## Supported Rule: Filtering Metric Value Representations and Other per Metric-Cell Information
+## Supported rule: Filtering metric value representations and other per metric-cell information
 
 MicroStrategy Library Server 2020 Update 2 and above
 

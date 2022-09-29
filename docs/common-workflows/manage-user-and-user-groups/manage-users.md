@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Manage Users
-sidebar_label: Manage Users
+title: Workflow sample - Manage users
+sidebar_label: Manage users
 description: A workflow sample for managing users in the metadata is provided below. The following sequence of REST API requests allows an administrative user to search for a user, update the user, and get information about the user to confirm the updates.
 ---
 

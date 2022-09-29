@@ -1,5 +1,5 @@
 ---
-title: Attribute Element Prompts
+title: Attribute element prompts
 description: The attribute element prompt is one of the most commonly used prompt types. It allows the caller to provide a list of attribute elements from which a selection is made. For example, you can define a prompt as - 'Choose from a list of elements in Month'.
 ---
 
@@ -21,7 +21,7 @@ You can use REST APIs to perform the following action on attribute element promp
 - [Get Information About an Attribute Element Prompt](#get-information-about-an-attribute-element-prompt)
 - [Attribute Element Prompt Definition](#attribute-element-prompt-definition)
 
-## Obtain Elements for Answering Attribute Element Prompts
+## Obtain elements for answering attribute element prompts
 
 To answer an attribute element prompt, the user must know which attribute elements can be supplied as an answer. Use the following REST APIs to obtain this list of elements.
 
@@ -64,7 +64,7 @@ Sample code for obtaining the available attribute elements is provided below:
 }
 ```
 
-## Answer an Attribute Element Prompt
+## Answer an attribute element prompt
 
 You use the following REST API endpoints to answer an attribute element prompt applied to a dossier, document, or report:
 
@@ -72,7 +72,7 @@ You use the following REST API endpoints to answer an attribute element prompt a
 
 - PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
-### Provide Specific Prompt Answers
+### Provide specific prompt answers
 
 You provide answers to an attribute element prompt in the body parameter of the request. You identify the prompt by providing the prompt ID, name or key; you specify the prompt type as "ELEMENTS". You specify the attribute element used to answer the prompt by providing either the full attribute element ID or the attribute element name.
 
@@ -98,7 +98,7 @@ Sample code for answering an attribute element prompt is provided below:
 }
 ```
 
-## Get Information About an Attribute Element Prompt
+## Get information about an attribute element prompt
 
 You use the following REST API endpoints to get information about attribute element prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
 
@@ -114,7 +114,7 @@ You provide the ID of the document, dossier, or report in the path of the reques
 
 ![Prompt Answer Model Response](../../../images/swagger_promptAnswerModel_response.png)
 
-## Attribute Element Prompt Definition
+## Attribute element prompt definition
 
 The model for the definition of an attribute element prompt can be represented with the following fields:
 

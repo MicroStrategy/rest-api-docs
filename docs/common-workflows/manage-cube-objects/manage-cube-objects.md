@@ -1,5 +1,5 @@
 ---
-title: Manage Cube Objects
+title: Manage cube objects
 description: You can use REST API requests to retrieve, create, and update cube objects through the Modeling service.
 ---
 

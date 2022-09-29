@@ -1,5 +1,5 @@
 ---
-title: Manage Base Formula Objects
+title: Manage base formula objects
 description: Base formulas are mathematical expressions created using existing facts. They can be re-used to build any number of metrics. You can use REST API requests to retrieve, create, and update the base formula objects through the Modeling service.
 ---
 

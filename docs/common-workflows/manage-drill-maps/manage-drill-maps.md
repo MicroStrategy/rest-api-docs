@@ -1,5 +1,5 @@
 ---
-title: Manage Drill Maps
+title: Manage drill maps
 description: You can use REST API requests to retrieve, create, and update drill map objects through the Modeling service.
 ---
 

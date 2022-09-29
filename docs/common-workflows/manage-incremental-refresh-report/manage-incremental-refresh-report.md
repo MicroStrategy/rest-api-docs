@@ -1,5 +1,5 @@
 ---
-title: Manage Incremental Refresh Reports
+title: Manage incremental refresh reports
 description: You can use REST API requests retrieve, create, and update the Incremental Refresh Report (IRR) objects through the Modeling service.
 ---
 
@@ -13,33 +13,33 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 Starting in MicroStrategy 2021 Update 6, you can use REST API requests retrieve, create, and update the Incremental Refresh Report (IRR) objects through the Modeling service.
 
-## Important Fields
+## Important fields
 
 This section outlines the important fields in the API response body defined for an Incremental Refresh Report.
 
-### information
+### `information`
 
 Stores the basic information for the Incremental Refresh Report including `dateCreated`, `dateModified`, `versionId`, `primaryLocale`, `objectId`, `subType`, and `name`.
 
 For Incremental Refresh Report, `subType` is `report_increment_refresh`.
 
-### targetCube
+### `targetCube`
 
 Stores the `objectId`, `subType`, and `name` for the target cube that the Incremental Refresh Report is built on. This is required when creating a new Incremental Refresh Report.
 
 For target cube, `subType` is `report_cube`.
 
-### incrementType
+### `incrementType`
 
 Specifies the incremental type for an Incremental Refresh Report, which can only be `filter` and `report`.
 
-### refreshType
+### `refreshType`
 
 Specifies the refresh type for an Incremental Refresh Report, which can only be `update`, `insert`, `delete`, `update_only`, and `replace`.
 
 The replace `refreshType` is only supported for the `incrementType` filter of the Incremental Refresh Report.
 
-### filter
+### `filter`
 
 Stores the information for the filter used in the Incremental Refresh Report, which has the same structure as a filter object.
 
@@ -53,7 +53,7 @@ If `showFilterTokens` is omitted or `false`, only `text` and `tree` formats are 
 
 If `showFilterTokens` is `true`, all `text`, `tree`, and `tokens` formats are returned.
 
-### template
+### `template`
 
 Stores the information of the template used in the Incremental Refresh Report, which includes rows, columns and pageBy.
 

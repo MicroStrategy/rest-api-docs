@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Security Filter Object
-sidebar_label: Create a Security Filter Object
+title: Workflow sample - Create a security filter object
+sidebar_label: Create a security filter object
 description: This workflow sample demonstrates how to create a new security filter object through the Modeling service.
 ---
 
@@ -237,7 +237,7 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset has been deleted successfully.)
 
-## More Samples
+## More samples
 
 A security filter takes the form of an expression tree over data structures known as predicates. Each predicate represents a single restriction on the available data. The security filter expression tree combines predicates together using logical operators.
 
@@ -256,7 +256,7 @@ In this section we provide sample request body JSON for creating security filter
   - [Logic Operators](#logic-operators)
   - [Attribute Form Qualification with Top/Bottom Level](#attribute-form-qualification-with-topbottom-level)
 
-### Attribute Form Qualification
+### Attribute form qualification
 
 You can create a security filter based on attribute forms using `"type": "predicate_form_qualification"`.
 
@@ -340,7 +340,7 @@ The following example demonstrates creating a new security filter where Year@ID 
 }
 ```
 
-### Attribute Element List Qualification
+### Attribute element list qualification
 
 You can create a security filter based on attribute elements using `"type": "predicate_element_list"`.
 
@@ -381,7 +381,7 @@ The following example demonstrates creating a new security filter with Category 
 }
 ```
 
-### Shortcut-to-a-Filter Qualification
+### Shortcut-to-a-filter qualification
 
 You can create a security filter based on an existing filter using `"type": "predicate_filter_qualification"`.
 
@@ -412,7 +412,7 @@ The following example demonstrates creating a new security filter using an exist
 }
 ```
 
-### Attribute Join Element List Qualification
+### Attribute join element list qualification
 
 You can create a security filter based on attribute elements from different attributes using `"type": "predicate_joint_element_list"`.
 
@@ -471,11 +471,11 @@ The following example demonstrates creating a new security filter that returns t
 }
 ```
 
-### Custom Expression Qualification
+### Custom expression qualification
 
 You can create a security filter based on a custom expression using `"type": "predicate_custom"`. See [Workflow Sample: Create a Security Filter Object Using a Custom Expression](./create-a-security-filter-object-using-a-custom-expression.md) for more information.
 
-### Logic Operators
+### Logic operators
 
 You can create a security filter using logic operators to combine multiple predicates.
 
@@ -589,7 +589,7 @@ The following example demonstrates creating a new security filter that returns t
 }
 ```
 
-### Attribute Form Qualification with Top/Bottom Level
+### Attribute form qualification with top/bottom level
 
 Top and bottom range attributes place aggregation ceilings and floors on metrics used on a report. If neither a top nor a bottom range attribute is specified, the security filter is applied to every level of analysis.
 

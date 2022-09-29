@@ -1,6 +1,6 @@
 ---
-title: Workflow Samples - Retrieve an Attribute's Definition within a Changeset
-sidebar_label: Retrieve an Attribute's Definition within a Changeset
+title: Workflow samples - Retrieve an attribute's definition within a changeset
+sidebar_label: Retrieve an attribute's definition within a changeset
 description: This workflow sample demonstrates how to retrieve an attribute's definition within a changeset.
 ---
 

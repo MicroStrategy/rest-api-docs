@@ -1,5 +1,5 @@
 ---
-title: Retrieve the Schema Lock
+title: Retrieve the schema lock
 description: This workflow sample demonstrates how to retrieve the schema lock.
 ---
 

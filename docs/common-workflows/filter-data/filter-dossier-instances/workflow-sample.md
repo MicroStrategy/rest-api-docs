@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Apply Filters to a Dossier
-sidebar_label: Apply Filters to a Dossier
+title: Workflow sample - Apply filters to a dossier
+sidebar_label: Apply filters to a dossier
 description: In this workflow, you create an instance of a dossier using the filter selections originally defined for the dossier. You then change the values for the filter selections and re-execute the dossier instance with the new values. As a way to see the results of each filter, you export the dossier instance to PDF.
 ---
 
@@ -542,7 +542,7 @@ Sample code for clearing filter selections using the filter name:
 ]
 ```
 
-## Export the dossier instance to PDF Again
+## Export the dossier instance to PDF again
 
 Call `POST /api/documents/{id}/instances/{instanceId}/pdf` again to export the dossier to a PDF file. This allows you to see the results with a revised definition for the existing filter applied.
 

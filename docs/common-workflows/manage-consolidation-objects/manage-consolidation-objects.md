@@ -1,5 +1,5 @@
 ---
-title: Manage Consolidation Objects
+title: Manage consolidation objects
 description: You can use REST API requests to retrieve, create, and replace consolidation objects through the Modeling service.
 ---
 

@@ -1,6 +1,6 @@
 ---
-sidebar_label: Search for Objects
-title: Workflow Sample - Search for Objects
+sidebar_label: Search for objects
+title: Workflow sample - Search for objects
 description: The workflow for performing a quick search for specific objects includes the following sequence of REST API requests.
 ---
 

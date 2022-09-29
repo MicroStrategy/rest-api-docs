@@ -1,5 +1,5 @@
 ---
-title: Object Prompts
+title: Object prompts
 description: An object prompt allows the caller to supply a list of objects, such as attributes, metrics, hierarchies, and so on from which a selection is made. Folder objects cannot be used in object prompts.
 ---
 

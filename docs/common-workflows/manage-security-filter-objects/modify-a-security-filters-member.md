@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Modify a Security Filter's Member
-sidebar_label: Modify a Security Filter's Member
+title: Workflow sample - Modify a security filter's member
+sidebar_label: Modify a security filter's member
 description: This workflow sample demonstrates how to modify the users and user groups that a specified security filter is applied to.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Manage Filter Objects
+title: Manage filter objects
 description: You can use REST API requests to retrieve, create and update filter objects through the Modeling service.
 ---
 

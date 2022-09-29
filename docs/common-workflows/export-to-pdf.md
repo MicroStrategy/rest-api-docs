@@ -21,7 +21,7 @@ The workflow for exporting a document to PDF includes the following sequence of 
 
 A detailed explanation of each step is provided below:
 
-## Log In
+## Log in
 
 End Point: `POST /api/auth/login`
 

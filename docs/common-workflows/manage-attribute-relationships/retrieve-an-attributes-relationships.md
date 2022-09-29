@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve an Attribute's Relationships
-sidebar_label: Retrieve an Attribute's Relationships
+title: Workflow sample - Retrieve an attribute's relationships
+sidebar_label: Retrieve an attribute's relationships
 description: This workflow sample demonstrates how to retrieve the relationships related to an attribute through the Modeling service.
 ---
 

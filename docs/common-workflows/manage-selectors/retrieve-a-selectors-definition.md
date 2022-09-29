@@ -1,5 +1,5 @@
 ---
-title: Retrieve a Selector's Definition
+title: Retrieve a selector's definition
 description: The workflow to retrieve a selector's definition.
 ---
 

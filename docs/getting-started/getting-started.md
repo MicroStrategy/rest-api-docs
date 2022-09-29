@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Getting started
 description: The following topics are designed to help you get started using the MicroStrategy REST API.
 ---
 

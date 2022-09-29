@@ -1,6 +1,6 @@
 ---
 sidebar_label: Upgrade
-title: Upgrade to a Newer Version of MicroStrategy
+title: Upgrade to a newer version of MicroStrategy
 description: When you upgrade to a newer version of MicroStrategy, you should check What's New to see what the latest version of the REST API offers.
 ---
 

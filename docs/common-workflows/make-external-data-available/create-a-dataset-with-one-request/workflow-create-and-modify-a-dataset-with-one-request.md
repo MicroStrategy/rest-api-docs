@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create and Modify a Dataset with One Request
-sidebar_label: Create and Modify a Dataset with One Request
+title: Workflow sample - Create and modify a dataset with one request
+sidebar_label: Create and modify a dataset with one request
 description: The steps below illustrate the workflow for creating and modifying a dataset, using external data uploaded directly to the Intelligence Server. In this workflow, you create the dataset with one REST API request and you modify it with another single request.
 ---
 

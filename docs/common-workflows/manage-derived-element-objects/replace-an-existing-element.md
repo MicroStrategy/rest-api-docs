@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Replace an Existing Derived Element
-sidebar_label: Replace an Existing Derived Element
+title: Workflow sample - Replace an existing derived element
+sidebar_label: Replace an existing derived element
 description: This workflow sample demonstrates how to replace an existing derived element object through the Modeling service.
 ---
 

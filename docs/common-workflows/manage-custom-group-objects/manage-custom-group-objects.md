@@ -1,5 +1,5 @@
 ---
-title: Manage Custom Group Objects
+title: Manage custom group objects
 description: You can use REST API requests to retrieve, create, and update custom group objects through the Modeling service.
 ---
 

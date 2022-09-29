@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve a Base Formula's Definition within a Changeset
-sidebar_label: Retrieve a Base Formula's Definition within a Changeset
+title: Workflow sample - Retrieve a base formula's definition within a changeset
+sidebar_label: Retrieve a base formula's definition within a changeset
 description: This workflow sample demonstrates how to retrieve a base formula's definition within a changeset.
 ---
 

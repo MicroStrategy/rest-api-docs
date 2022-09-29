@@ -1,5 +1,5 @@
 ---
-title: Level Prompts
+title: Level prompts
 description: The level prompt is one of the most popular prompt types. It allows callers to specify the calculation level of a metric. For example, users can define a level prompt at the country level and apply it to a cost fact, as shown below, to generate a new **Cost_Level_Prompt** metric that aggregates the sum of **Cost** at the country level.
 ---
 
@@ -13,7 +13,7 @@ Use REST APIs to perform the following actions on level prompts:
 - [Get the Level Prompt's Available Answers](#get-the-level-prompts-available-answers)
 - [Get the Level Prompt's Definition](#get-the-level-prompts-definition)
 
-## Answer a Level Prompt
+## Answer a level prompt
 
 Use the following REST APIs to answer a level prompt for a report, document, or dossier:
 
@@ -60,7 +60,7 @@ The sample code below answers a level prompt.
 }
 ```
 
-## Get the Level Prompt's Available Answers
+## Get the level prompt's available answers
 
 Use the following REST APIs to get a level prompt's available answers for a report, document, or dossier:
 
@@ -105,7 +105,7 @@ The sample code below gets the level prompt's available answers.
 }
 ```
 
-## Get the Level Prompt's Definition
+## Get the level prompt's definition
 
 Use the following REST APIs to get a the level prompt's definition for a report, document, or dossier:
 

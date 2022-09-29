@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve the SQL Statement of Datasets in a Document or Dossier Instance
-sidebar_label: Retrieve the SQL Statement of Datasets in a Document or Dossier Instance
+title: Workflow sample - Retrieve the SQL statement of datasets in a document or dossier instance
+sidebar_label: Retrieve the SQL statement of datasets in a document or dossier instance
 description: You can retrieve the SQL statements of all datasets in a document or dossier instance. In this workflow sample, a dossier instance is used. However, the same workflow applies to a document instance.
 ---
 

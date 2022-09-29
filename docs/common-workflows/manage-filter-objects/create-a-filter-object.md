@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Filter Object
-sidebar_label: Create a Filter Object
+title: Workflow sample - Create a filter object
+sidebar_label: Create a filter object
 description: This workflow sample demonstrates how to create a new filter object through the Modeling service.
 ---
 
@@ -249,7 +249,7 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset is deleted successfully.)
 
-## More Samples
+## More samples
 
 A filter takes the form of an expression tree over data structures known as predicates. Each predicate represents a single restriction on the available data. The filter expression tree combines predicates together using logical operators.
 

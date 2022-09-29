@@ -1,5 +1,5 @@
 ---
-title: Lock the Schema
+title: Lock the schema
 description: This workflow sample demonstrates how to lock the schema.
 ---
 

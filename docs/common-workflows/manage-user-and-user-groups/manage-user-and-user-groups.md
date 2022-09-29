@@ -1,5 +1,5 @@
 ---
-title: Manage Users and User Groups
+title: Manage users and user groups
 description: Administrators can make REST API calls to manage users and user groups. They can create new users, a process often called onboarding, and assign the new users to one or more user groups. They can create new user groups and update existing ones. And, they can update information for users.
 ---
 

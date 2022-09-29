@@ -1,5 +1,5 @@
 ---
-title: Return the Template Limit Criteria Applied Prior to Aggregation
+title: Return the template limit criteria applied prior to aggregation
 description: A template limit specifies a set of attribute or metric-based filtering criteria. In dossiers, a template limit is applied to a visualization-level dataset before metrics are aggregated. Because template limits are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
 ---
 

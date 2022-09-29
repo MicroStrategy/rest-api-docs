@@ -1,5 +1,5 @@
 ---
-title: Prompt Execution Errors
+title: Prompt execution errors
 description: Various errors can occur during prompt execution. Some errors can happen with all types of prompts, and others occur only for specific types of prompts.
 ---
 
@@ -16,7 +16,7 @@ Various errors can occur during prompt execution. Some errors can happen with [a
   - The caller attempts to dismiss required prompts
   - The caller attempts to answer the prompt with no answers but the prompt requires them
 
-## Errors That Apply to All Prompt Types
+## Errors that apply to all prompt types
 
 - Bad request. JSON is not formatted properly.
 
@@ -103,7 +103,7 @@ Various errors can occur during prompt execution. Some errors can happen with [a
   }
   ```
 
-## Prompt-Specific Errors
+## Prompt-specific errors
 
 - [Errors that occur only for attribute element prompts](#errors-that-occur-only-for-attribute-element-prompts)
 - [Errors that occur only for object prompts](#errors-that-occur-only-for-object-prompts)

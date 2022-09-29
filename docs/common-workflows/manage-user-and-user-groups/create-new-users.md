@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create New Users
-sidebar_label: Create New Users
+title: Workflow sample - Create new users
+sidebar_label: Create new users
 description: A workflow sample for creating a new user, a process often called onboarding, is provided below. The following sequence of REST API requests allows an administrative user to create a new user, update the user information, create an email address for the user, and send the new user a welcome email.
 ---
 
@@ -85,7 +85,7 @@ Sample Response
 
   - Response Code: 204 (Success: No Content)
 
-## Create a New User
+## Create a new user
 
 End Point: `POST /api/users`
 

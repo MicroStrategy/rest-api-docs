@@ -1,5 +1,5 @@
 ---
-title: Get Prompt Information
+title: Get prompt information
 ---
 
 You can use REST APIs to get information about five supported types of prompts applied to dossiers, documents, and reports. You can get a list of the prompts that have been applied to a dossier, document or report, together with the definition of each prompt.

@@ -1,5 +1,5 @@
 ---
-title: Server-Level Privileges
+title: Server-level privileges
 description: Privileges are assigned to users and user groups to authorize what functionality they can use. Some privileges are at the project or server level. Project-level privileges can be directly assigned to a user or through security roles assigned to users or user groups. Server-level privileges can only be assigned to users or user groups.
 ---
 

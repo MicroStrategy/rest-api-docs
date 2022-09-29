@@ -1,5 +1,5 @@
 ---
-title: Error Messages for Metric Limits
+title: Error messages for metric limits
 description: The error messages for metric limits.
 ---
 

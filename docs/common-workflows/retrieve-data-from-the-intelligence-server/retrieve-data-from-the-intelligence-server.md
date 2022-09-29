@@ -1,5 +1,5 @@
 ---
-title: Retrieve Data from the Intelligence Server Using the JSON Data API
+title: Retrieve data from the Intelligence Server using the JSON Data API
 description: You can use the Reports API, the Cubes API and the Dossiers API to retrieve definitions and data from the Intelligence Server. Together, they are often referred to as the JSON Data API. They are part of the MicroStrategy REST Server, which is shipped inside the "MicroStrategyLibrary.war" web application.
 ---
 

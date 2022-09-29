@@ -1,5 +1,5 @@
 ---
-title: Manage Page-By Information
+title: Manage page-by information
 description: You can use REST API requests to manage page-by information for reports.
 ---
 
@@ -21,7 +21,7 @@ The workflows on this page use the Unit Sales Paged report located in the MicroS
 
 ![page_by_report](../images/page_by_report.png)
 
-## Fetch the Report Definition and Include Page-By Information
+## Fetch the report definition and include page-by information
 
 This workflow sample demonstrates how to retrieve the definition of a report that contains a page-by section.
 
@@ -293,7 +293,7 @@ The report definition is returned in the body of the response. This includes inf
 }
 ```
 
-## Execute the Report and Fetch Data to Apply to the Page-By Information
+## Execute the report and fetch data to apply to the page-by information
 
 This workflow sample demonstrates how to execute a report by applying the page-by section provided by the API caller during execution. The assumption for this workflow is that the API caller is already aware of the existence of the objects on the page-by axis and their elements.
 
@@ -647,7 +647,7 @@ Metric data has been omitted from the following JSON sample for simplicity.
 }
 ```
 
-## Update a Report Instance to Modify the Current Page of Page-By(s)
+## Update a report instance to modify the current page of Page-By(s)
 
 This workflow sample demonstrates how to update the current page of page-by(s) within a report. The report has been previously executed and the instance is reused across requests. This workflow can be used to extract data for multiple pages in a looped workflow.
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve Grid or Graph Query Details
-sidebar_label: Retrieve Grid or Graph Query Details
+title: Workflow sample - Retrieve grid or graph query details
+sidebar_label: Retrieve grid or graph query details
 description: This workflow sample demonstrates how to retrieve the query details of grids and graphs in a document instance.
 ---
 
