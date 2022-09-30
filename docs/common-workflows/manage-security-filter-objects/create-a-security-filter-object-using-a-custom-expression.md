@@ -10,13 +10,13 @@ This workflow sample demonstrates how to create a security filter definition thr
 - [2. Create a security filter using a custom expression with `POST /api/model/securityFilters`](#2-create-a-security-filter-using-a-custom-expression-with-post-apimodelsecurityfilters)
 - [3. Commit the changeset using `POST /api/model/changesets/{changesetId}/commit`](#3-commit-the-changeset-using-post-apimodelchangesetschangesetidcommit)
 - [4. Delete the changeset using `DELETE /api/model/changesets/{changesetId}`](#4-delete-the-changeset-using-delete-apimodelchangesetschangesetid)
-- [More Samples](#more-samples)
-  - [Escape Sequences for Full Paths](#escape-sequences-for-full-paths)
-  - [Escape Sequences for Double Quotes](#escape-sequences-for-double-quotes)
-  - [Escape Sequences for the ApplyComparison Function](#escape-sequences-for-the-applycomparison-function)
-  - [Parsed Tokens](#parsed-tokens)
+- [More samples](#more-samples)
+  - [Escape sequences for full paths](#escape-sequences-for-full-paths)
+  - [Escape sequences for double quotes](#escape-sequences-for-double-quotes)
+  - [Escape sequences for the applycomparison function](#escape-sequences-for-the-applycomparison-function)
+  - [Parsed tokens](#parsed-tokens)
 
-Additional examples are provided in [More Samples](#more-samples).
+Additional examples are provided in [More samples](#more-samples).
 
 In this workflow sample, you want to create a new security filter object to qualification for the last five years. The custom expression is `“(Year(CurrentDate()) - 5)< Year@ID”`. Save the security filter under the Public Objects folder in the MicroStrategy Tutorial project. The folder ID is `98FE182C2A10427EACE0CD30B6768258`. The MicroStrategy Tutorial project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 

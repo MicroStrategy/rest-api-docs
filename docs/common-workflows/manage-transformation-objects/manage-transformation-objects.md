@@ -13,8 +13,8 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create, and update table objects through the Modeling service.
 
-- [Retrieve a Transformation's Definition](./retrieve-a-transformations-definition.md)
-- [Create a Transformation Object](./create-a-transformation-object.md)
-- [Update a Transformation's Definition](./update-a-transformations-definition.md)
+- [Retrieve a transformation's definition](./retrieve-a-transformations-definition.md)
+- [Create a transformation object](./create-a-transformation-object.md)
+- [Update a transformation's definition](./update-a-transformations-definition.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

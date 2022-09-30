@@ -13,9 +13,9 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create, and update table objects through the Modeling service.
 
-- [Retrieve a List of All Available Table Definitions](./retrieve-a-list-of-all-available-table-definitions.md)
-- [Retrieve a Table's Definition](./retrieve-a-tables-definition.md)
-- [Create a New Table Object](./create-a-new-table-object.md)
-- [Update a Table's Definition](./update-a-tables-definition.md)
+- [Retrieve a list of all available table definitions](./retrieve-a-list-of-all-available-table-definitions.md)
+- [Retrieve a table's definition](./retrieve-a-tables-definition.md)
+- [Create a new table object](./create-a-new-table-object.md)
+- [Update a table's definition](./update-a-tables-definition.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

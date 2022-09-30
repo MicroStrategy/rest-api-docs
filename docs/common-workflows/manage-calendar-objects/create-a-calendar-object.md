@@ -1,6 +1,6 @@
 ---
-title: Create a Custom Calendar Object
-sidebar_label: Create a Custom Calendar Object
+title: Create a custom calendar object
+sidebar_label: Create a custom calendar object
 description: This workflow demonstrates how to create a new custom calendar object through the Modeling service.
 ---
 

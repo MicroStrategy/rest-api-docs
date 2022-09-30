@@ -13,9 +13,9 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create and update attribute objects through the Modeling service:
 
-- [Retrieve an Attribute's Definition](./create-an-attribute-object.md)
-- [Retrieve an Attribute's Definition within a Changeset](./retrieve-an-attributes-definition-within-a-changeset.md)
-- [Create an Attribute Object](./create-an-attribute-object.md)
-- [Update an Attribute's Definition](./update-an-attributes-definition.md)
+- [Retrieve an attribute's definition](./create-an-attribute-object.md)
+- [Retrieve an attribute's definition within a changeset](./retrieve-an-attributes-definition-within-a-changeset.md)
+- [Create an attribute object](./create-an-attribute-object.md)
+- [Update an attribute's definition](./update-an-attributes-definition.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

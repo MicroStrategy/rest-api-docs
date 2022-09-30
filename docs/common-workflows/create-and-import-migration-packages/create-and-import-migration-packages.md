@@ -13,11 +13,11 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to create and import migration packages.
 
-- [Create a Migration Package](./create-a-migration-package.md)
-- [Import a Migration Package](./import-a-migration-package.md)
-- [View Content from a Newly Created Package](./view-newly-created-package.md)
-- [View Content from an Uploaded Package](./view-uploaded-package.md)
-- [Manage Content Group Packages](./manage-content-group-packages.md)
+- [Create a migration package](./create-a-migration-package.md)
+- [Import a migration package](./import-a-migration-package.md)
+- [View content from a newly created package](./view-newly-created-package.md)
+- [View content from an uploaded package](./view-uploaded-package.md)
+- [Manage content group packages](./manage-content-group-packages.md)
 
 See [KB34475](https://community.microstrategy.com/s/article/KB34475-How-to-migrate-Security-Roles-and-Security-Filters?language=en_US) for more information about how to migrate security roles and security filters between projects using MicroStrategy Object Manager. You can use the above REST API workflows to do the same thing.
 

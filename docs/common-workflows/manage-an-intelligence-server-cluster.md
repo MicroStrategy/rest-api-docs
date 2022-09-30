@@ -38,7 +38,7 @@ Get information about nodes in the connected Intelligence Server cluster, includ
 
 :::tip
 
-See [Project Administration](./project-administration.md) for more information.
+See [Project administration](./project-administration.md) for more information.
 
 :::
 

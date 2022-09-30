@@ -7,12 +7,12 @@ The metric expression element prompt is one of the most commonly used prompt typ
 
 Use REST APIs to perform the following actions on metric expression prompts:
 
-- [Get Information About a Metric Expression Prompt](#get-information-about-a-metric-expression-prompt)
-- [Get the Metric Expression Prompt's Available Answer](#get-the-metric-expression-prompts-available-answer)
-- [Answer a Metric Expression Prompt](#answer-a-metric-expression-prompt)
-  - [Provide Specific Prompt Answers](#provide-specific-prompt-answers)
-  - [Use Default Prompt Answers](../answer-prompts.md#use-default-prompt-answers)
-  - [Close Prompts without Answers](../answer-prompts.md#close-prompts-without-answers)
+- [Get information about a metric expression prompt](#get-information-about-a-metric-expression-prompt)
+- [Get the metric expression prompt's available answer](#get-the-metric-expression-prompts-available-answer)
+- [Answer a metric expression prompt](#answer-a-metric-expression-prompt)
+  - [Provide specific prompt answers](#provide-specific-prompt-answers)
+  - [Use default prompt answers](../answer-prompts.md#use-default-prompt-answers)
+  - [Close prompts without answers](../answer-prompts.md#close-prompts-without-answers)
 
 ## Get information about a metric expression prompt
 

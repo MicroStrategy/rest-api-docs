@@ -13,9 +13,9 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create, and replace derived element objects through the Modeling service.
 
-- [Retrieve a Derived Element's Definition](./retrieve-a-derived-elements-definition.md)
-- [Create a Derived Element](./create-a-derived-element.md)
-- [Replace an Existing Derived Element](./replace-an-existing-element.md)
-- [Format Samples](./format-samples.md)
+- [Retrieve a derived element's definition](./retrieve-a-derived-elements-definition.md)
+- [Create a derived element](./create-a-derived-element.md)
+- [Replace an existing derived element](./replace-an-existing-element.md)
+- [Format samples](./format-samples.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

@@ -1,5 +1,5 @@
 ---
-title: Manage Runtimes
+title: Manage runtimes
 description: You can use REST API requests to retrieve, create, update, and delete runtime objects through the REST API.
 ---
 
@@ -11,8 +11,8 @@ In the Python remote execution workflow, the end user could choose the runtime i
 
 Currently, the Python remote execution is only supported in containerized Intelligence Server.
 
-- [Create a Runtime](./create-a-runtime)
-- [Update a Runtime](./update-a-runtime)
-- [Retrieve a Runtime Definition](./retrieve-a-runtime-definition)
-- [Delete a Runtime](./delete-a-runtime)
-- [Retrieve all Runtimes](./retrieve-all-runtimes)
+- [Create a runtime](./create-a-runtime)
+- [Update a runtime](./update-a-runtime)
+- [Retrieve a runtime definition](./retrieve-a-runtime-definition)
+- [Delete a runtime](./delete-a-runtime)
+- [Retrieve all runtimes](./retrieve-all-runtimes)

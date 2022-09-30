@@ -15,10 +15,10 @@ Base formulas are mathematical expressions created using existing facts. They ca
 
 You can use REST API requests to retrieve, create, and update the base formula objects through the Modeling service:
 
-- [Retrieve a Base Formula's Definition](./retrieve-a-base-formulas-definition.md)
-- [Retrieve a Base Formula's Definition within a Changeset](./retrieve-a-base-formulas-definition-within-a-changeset.md)
-- [Create a Base Formula's Definition within a Changeset](./create-a-base-formulas-definition-within-a-changeset.md)
-- [Update a Base Formula's Definition within a Changeset](./update-a-base-formulas-definition-within-a-changeset.md)
+- [Retrieve a base formula's definition](./retrieve-a-base-formulas-definition.md)
+- [Retrieve a base formula's definition within a changeset](./retrieve-a-base-formulas-definition-within-a-changeset.md)
+- [Create a base formula's definition within a changeset](./create-a-base-formulas-definition-within-a-changeset.md)
+- [Update a base formula's definition within a changeset](./update-a-base-formulas-definition-within-a-changeset.md)
 
 There are two important fields in the API response body defined for a base formula:
 

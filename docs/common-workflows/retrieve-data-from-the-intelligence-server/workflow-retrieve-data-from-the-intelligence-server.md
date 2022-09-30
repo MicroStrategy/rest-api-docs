@@ -443,7 +443,7 @@ In the sample that is provided, the metric limit is set to null. For detailed in
 
 :::tip
 
-In the sample that is provided, sorting is set to null. For detailed information, refer to [Sorting Data](../sort-data.md).
+In the sample that is provided, sorting is set to null. For detailed information, refer to [Sorting data](../sort-data.md).
 
 :::
 

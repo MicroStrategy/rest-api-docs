@@ -259,7 +259,7 @@ The following are sample JSON request bodies for creating filters of each type o
 - [Create a new filter](#create-a-new-filter)
 - [Commit the changeset](#commit-the-changeset)
 - [Delete the changeset](#delete-the-changeset)
-- [More Samples](#more-samples)
+- [More samples](#more-samples)
   - [Attribute form qualifications](#attribute-form-qualifications)
   - [Attribute element list qualification](#attribute-element-list-qualification)
   - [Metric set qualification](#metric-set-qualification)
@@ -721,7 +721,7 @@ Create a filter based on a custom expression.
 
 `"type"`: `"predicate_custom"`
 
-Please refer to [Workflow Sample: Create a New Filter Object using a Custom Expression](./create-a-filter-object-with-a-custom-expression.md).
+Please refer to [Workflow sample: Create a new filter object using a custom expression](./create-a-filter-object-with-a-custom-expression.md).
 
 ### Logic operators
 

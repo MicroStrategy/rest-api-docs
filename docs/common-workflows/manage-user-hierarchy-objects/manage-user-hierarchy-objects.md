@@ -13,11 +13,11 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create, and delete user hierarchy objects through the Modeling service.
 
-- [Retrieve a User Hierarchy's Definition](./retrieve-a-user-hierarchys-definition.md)
-- [Create a User Hierarchy](./create-a-user-hierarchy.md)
-- [Update a User Hierarchy's Definition](./update-a-user-hierarchys-definition.md)
-- [Retrieve a List of Available User Hierarchies](./retrieve-a-list-of-available-user-hierarchies.md)
-- [User Hierarchy Import Parameters](./user-hierarchy-import-parameters.md)
+- [Retrieve a user hierarchy's definition](./retrieve-a-user-hierarchys-definition.md)
+- [Create a user hierarchy](./create-a-user-hierarchy.md)
+- [Update a user hierarchy's definition](./update-a-user-hierarchys-definition.md)
+- [Retrieve a list of available user hierarchies](./retrieve-a-list-of-available-user-hierarchies.md)
+- [User hierarchy import parameters](./user-hierarchy-import-parameters.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).
 

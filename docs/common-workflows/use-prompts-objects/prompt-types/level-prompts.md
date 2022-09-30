@@ -9,9 +9,9 @@ The level prompt is one of the most popular prompt types. It allows callers to s
 
 Use REST APIs to perform the following actions on level prompts:
 
-- [Answer a Level Prompt](#answer-a-level-prompt)
-- [Get the Level Prompt's Available Answers](#get-the-level-prompts-available-answers)
-- [Get the Level Prompt's Definition](#get-the-level-prompts-definition)
+- [Answer a level prompt](#answer-a-level-prompt)
+- [Get the level prompt's available answers](#get-the-level-prompts-available-answers)
+- [Get the level prompt's definition](#get-the-level-prompts-definition)
 
 ## Answer a level prompt
 

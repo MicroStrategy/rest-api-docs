@@ -13,7 +13,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve SQL statements and query details.
 
-- [Retrieve Report or Card SQL](./retrieve-report-or-card-sql.md)
-- [Retrieve Dataset SQL](./retrieve-dataset-sql.md)
-- [Retrieve Visualization Query Details](./retrieve-visualization-query-details.md)
-- [Retrieve Grid or Graph Query Details](./retrieve-grid-or-graph-query-details.md)
+- [Retrieve report or card SQL](./retrieve-report-or-card-sql.md)
+- [Retrieve dataset SQL](./retrieve-dataset-sql.md)
+- [Retrieve visualization query details](./retrieve-visualization-query-details.md)
+- [Retrieve grid or graph query details](./retrieve-grid-or-graph-query-details.md)

@@ -28,7 +28,7 @@ You need the following privileges for both the source and target environments:
 - Create package
 - Apply package
 
-To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response body. Keep the token value. It is required to execute the REST API. See [Workflow Sample: Authentication](../authentication.md) for more information.
+To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response body. Keep the token value. It is required to execute the REST API. See [Workflow sample: Authentication](../authentication.md) for more information.
 
 ## Use scenario
 
@@ -757,7 +757,7 @@ A package created in an earlier platform version can be imported to a newer plat
 
 ## Troubleshooting
 
-- If the Library server cannot connect to the database, you may receive the following error response:
+- If the Library Server cannot connect to the database, you may receive the following error response:
   - The API requires MicroStrategy Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
     - Database not running

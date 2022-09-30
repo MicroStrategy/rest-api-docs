@@ -13,6 +13,6 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve and create different types of subscriptions.
 
-- [Create and Get a Subscription](./create-and-get-a-subscription.md)
-- [Create Subscription for Multi Content](./create-subscription-for-multi-content.md)
-- [Create Subscription with Prompted Content](create-subscription-with-prompted-content)
+- [Create and get a subscription](./create-and-get-a-subscription.md)
+- [Create subscription for multi content](./create-subscription-for-multi-content.md)
+- [Create subscription with prompted content](create-subscription-with-prompted-content)

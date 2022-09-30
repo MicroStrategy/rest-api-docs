@@ -14,17 +14,17 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 A high-level workflow sample for loading project settings at the startup of the Intelligence Server is shown below.
 
 - [Log in](#log-in)
-  - [Sample Request](#sample-request)
-  - [Sample Response](#sample-response)
-- [Get the Current Project Load Settings on Intelligence Server Startup](#get-the-current-project-load-settings-on-intelligence-server-startup)
-  - [Sample Request](#sample-request-1)
-  - [Sample Response](#sample-response-1)
-- [Update the Project Load Settings on Intelligence Server Startup](#update-the-project-load-settings-on-intelligence-server-startup)
-  - [Sample Request](#sample-request-2)
-  - [Sample Response](#sample-response-2)
-- [Log Out](#log-out)
-  - [Sample Request](#sample-request-3)
-  - [Sample Response](#sample-response-3)
+  - [Sample request](#sample-request)
+  - [Sample response](#sample-response)
+- [Get the current project load settings on Intelligence Server startup](#get-the-current-project-load-settings-on-intelligence-server-startup)
+  - [Sample request](#sample-request-1)
+  - [Sample response](#sample-response-1)
+- [Update the project load settings on Intelligence Server startup](#update-the-project-load-settings-on-intelligence-server-startup)
+  - [Sample request](#sample-request-2)
+  - [Sample response](#sample-response-2)
+- [Log out](#log-out)
+  - [Sample request](#sample-request-3)
+  - [Sample response](#sample-response-3)
 
 A detailed explanation of each step is provided below.
 

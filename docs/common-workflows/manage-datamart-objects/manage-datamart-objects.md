@@ -10,7 +10,7 @@ Starting in MicroStrategy 2021 Update 7, you can use REST API requests retriev
 - [Update a datamart definition](./update-a-datamart-definition.md)
 - [Retrieve a datamart definition](./retrieve-a-datamart-definition.md)
 
-## Important Fields
+## Important fields
 
 This section outlines the important fields in the API response body defined for an Incremental Refresh Report.
 
@@ -50,7 +50,7 @@ Stores the information for timezone that’s applied on the source report.
 
 Store the information of all the available advanced properties for the datamart.
 
-## Out of Scope for 11.3.7
+## Out of scope for 11.3.7
 
 User can’t create datamart on top of Query builder report or get/update datamart based on query build/mdx type, since this type of report is not supported in Modeling service yet.
 

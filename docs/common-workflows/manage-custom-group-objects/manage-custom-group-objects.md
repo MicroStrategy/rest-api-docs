@@ -13,10 +13,10 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create, and update custom group objects through the Modeling service.
 
-- [Retrieve a Custom Group's Definition](./retrieve-a-custom-groups-definition.md)
-- [Retrieve a Custom Group's Definition within a Changeset](./retrieve-a-custom-groups-definition-within-a-changeset.md)
-- [Create a Custom Group Object](./create-a-custom-group-object.md)
-- [Create a Custom Group Object with Filter Elements using Custom Expressions](./create-a-custom-group-object-with-filter-elements-using-custom-expressions.md)
-- [Update a Custom Group's Definition](./update-a-custom-groups-definition.md)
+- [Retrieve a custom group's definition](./retrieve-a-custom-groups-definition.md)
+- [Retrieve a custom group's definition within a changeset](./retrieve-a-custom-groups-definition-within-a-changeset.md)
+- [Create a custom group object](./create-a-custom-group-object.md)
+- [Create a custom group object with filter elements using custom expressions](./create-a-custom-group-object-with-filter-elements-using-custom-expressions.md)
+- [Update a custom group's definition](./update-a-custom-groups-definition.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

@@ -1,6 +1,6 @@
 ---
-title: Workflow sample - Update the Datamart Definition
-sidebar_label: Update a Datamart Definition
+title: Workflow sample - Update the datamart definition
+sidebar_label: Update a datamart definition
 description: This workflow sample demonstrates how to update a Datamart definition through the Modeling service.
 ---
 

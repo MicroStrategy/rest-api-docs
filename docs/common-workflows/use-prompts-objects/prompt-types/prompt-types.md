@@ -7,10 +7,10 @@ There are several different prompt types in the MicroStrategy platform. Each pro
 
 For the following prompt types, you can perform prompt actions supported by REST APIs. This includes getting prompt definitions, providing specific prompt answers, specifying that default prompt answers should be used, closing prompts without supplying answers for optional prompts, or resetting prompts.
 
-- [Attribute Element Prompts](./attribute-element-prompts.md)
-- [Attribute Qualification Prompts](./attribute-qualification-prompts.md)
-- [Object Prompts](./object-prompts.md)
-- [Value Prompts](./value-prompts.md)
-- [Metric Expression Prompts](./metric-expression-prompts.md)
-- [Hierarchy Qualification Prompts](./hierarchy-qualification-prompts.md)
-- [Level Prompts](./level-prompts.md)
+- [Attribute element prompts](./attribute-element-prompts.md)
+- [Attribute qualification prompts](./attribute-qualification-prompts.md)
+- [Object prompts](./object-prompts.md)
+- [Value prompts](./value-prompts.md)
+- [Metric expression prompts](./metric-expression-prompts.md)
+- [Hierarchy qualification prompts](./hierarchy-qualification-prompts.md)
+- [Level prompts](./level-prompts.md)

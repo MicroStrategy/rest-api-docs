@@ -14,8 +14,8 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST APIs to retrieve the definition for a derived element through the Modeling service. This topic includes the following workflows:
 
-- [Retrieve a Derived Element's Definition](#retrieve-a-derived-elements-definition)
-- [Retrieve a Derived Element's Definition within a Changeset](#retrieve-the-definition-of-a-derived-element-within-a-changeset)
+- [Retrieve a derived element's definition](#retrieve-a-derived-elements-definition)
+- [Retrieve a derived element's definition within a changeset](#retrieve-the-definition-of-a-derived-element-within-a-changeset)
 
 ## Retrieve a derived element's definition
 

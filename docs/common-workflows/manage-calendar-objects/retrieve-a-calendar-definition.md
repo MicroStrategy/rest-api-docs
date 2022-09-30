@@ -1,11 +1,11 @@
 ---
-title: Retrieve a Calendar's Definition
+title: Retrieve a calendar's definition
 description: You can use REST APIs to retrieve the definition for a calendar through the Modeling service. This topic includes the following workflows.
 ---
 
 You can use REST APIs to retrieve the definition for a calendar through the Modeling service. This topic includes the following workflows.
 
-## 1.Retrieve a Calendar's Definition
+## Retrieve a calendar's definition
 
 You want to view the definition of a specific custom calendar with the ObjectId of 015FB8D4CF30413DAF120DCDE4C2F85C.
 
@@ -75,7 +75,7 @@ You can view the calendar's definition in the body of the response.
 
 Response Code: 200 (Upon success, the API returns a full definition of the specified calendar.)
 
-## 2.Retrieve a Calendar's Definition within a Changset
+## Retrieve a calendar's definition within a changset
 
 You want to view the definition of a specific custom calendar with the ObjectId of 015FB8D4CF30413DAF120DCDE4C2F85C.
 

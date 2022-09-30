@@ -13,9 +13,9 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create, and replace consolidation objects through the Modeling service.
 
-- [Retrieve a Consolidation's Definition](./retrieve-a-consolidations-definition.md)
-- [Create a Consolidation Object](./create-a-consolidation-object.md)
-- [Update a Consolidation Object](./update-a-consolidation-object.md)
+- [Retrieve a consolidation's definition](./retrieve-a-consolidations-definition.md)
+- [Create a consolidation object](./create-a-consolidation-object.md)
+- [Update a consolidation object](./update-a-consolidation-object.md)
 
 :::info
 

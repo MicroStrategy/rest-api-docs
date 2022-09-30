@@ -13,7 +13,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 Administrators can make REST API calls to manage users and user groups. They can create new users, a process often called onboarding, and assign the new users to one or more user groups. They can create new user groups and update existing ones. And, they can update information for users.
 
-- [Workflow Sample: Create and Update User Groups](./create-and-update-user-groups.md)
-- [Workflow Sample: Create New Users](./create-new-users.md)
-- [Workflow Sample: Manage Users](./manage-users.md)
-- [Workflow Sample: Create Security Roles](./create-security-roles.md)
+- [Workflow sample: Create and update user groups](./create-and-update-user-groups.md)
+- [Workflow sample: Create new users](./create-new-users.md)
+- [Workflow sample: Manage users](./manage-users.md)
+- [Workflow sample: Create security roles](./create-security-roles.md)

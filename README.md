@@ -47,10 +47,10 @@ If you've found a problem, you can open an issue [here](https://github.com/Micro
 
 #### Solve an issue
 
-If you have a solution to one of the open issues, you will need to fork the repository and submit a pull request. For more details about this process, please check out [Getting Started with Contributing](CONTRIBUTING.md).
+If you have a solution to one of the open issues, you will need to fork the repository and submit a pull request. For more details about this process, please check out [Getting started with contributing](CONTRIBUTING.md).
 
 #### And that's it
 
 That's how you can get started easily as a member of the MicroStrategy Embedding SDK Documentation community. :sparkles:
 
-If you want to know more, or you're making a more complex contribution, check out [Getting Started with Contributing](CONTRIBUTING.md).
+If you want to know more, or you're making a more complex contribution, check out [Getting started with contributing](CONTRIBUTING.md).

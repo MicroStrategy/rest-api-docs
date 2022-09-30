@@ -13,8 +13,8 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create and update an attribute's relationship through the Modeling service:
 
-- [Retrieve an Attribute's Relationships](./retrieve-an-attributes-relationships.md)
-- [Retrieve an Attribute's Relationships within a Changeset](./retrieve-an-attributes-relationships-within-a-changeset.md)
-- [Update an Attribute's Relationships](./update-an-attributes-relationships.md)
+- [Retrieve an attribute's relationships](./retrieve-an-attributes-relationships.md)
+- [Retrieve an attribute's relationships within a changeset](./retrieve-an-attributes-relationships-within-a-changeset.md)
+- [Update an attribute's relationships](./update-an-attributes-relationships.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

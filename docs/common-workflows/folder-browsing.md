@@ -134,7 +134,7 @@ The response body contains information for each project that is returned, includ
 
 - Response Code: 204 (Success: OK)
 
-## Browse to the shared reports folder
+## Browse to the Shared Reports folder
 
 End Point: `GET /api/folders/preDefined/{folderType}`
 

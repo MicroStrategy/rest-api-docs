@@ -7,9 +7,9 @@ There are several different prompt types in the MicroStrategy platform. Each pro
 
 For the following prompt types, you can perform prompt actions supported by REST APIs for managing prompt objects. This includes retrieving prompt definitions, creating new prompts, modifying prompt definitions, and deleting existing prompts.
 
-- [Attribute Element Prompts](./attribute-element-prompts.md)
-- [Attribute Qualification Prompts](./attribute-qualification-prompts.md)
-- [Hierarchy Qualification Prompts](./hierarchy-qualification-prompts.md)
-- [Metric Expression Prompts](./metric-expression-prompts.md)
-- [Object Prompts](./object-prompts.md)
-- [Value Prompts](./value-prompts.md)
+- [Attribute element prompts](./attribute-element-prompts.md)
+- [Attribute qualification prompts](./attribute-qualification-prompts.md)
+- [Hierarchy qualification prompts](./hierarchy-qualification-prompts.md)
+- [Metric expression prompts](./metric-expression-prompts.md)
+- [Object prompts](./object-prompts.md)
+- [Value prompts](./value-prompts.md)

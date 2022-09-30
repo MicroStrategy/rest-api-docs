@@ -93,7 +93,7 @@ Sample Request Body:
 
 :::tip
 
-For more details on setting format properties, please refer to [Format Samples](../manage-derived-element-objects/format-samples.md). The format for consolidations is the same as derived elements.
+For more details on setting format properties, please refer to [Format samples](../manage-derived-element-objects/format-samples.md). The format for consolidations is the same as derived elements.
 
 :::
 

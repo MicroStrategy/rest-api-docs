@@ -321,7 +321,7 @@ Response Code: 200 (The table's definition is returned successfully.)
 
 ## Retrieve a table's definition within a changeset
 
-In this workflow sample, you want to get the definition of the same table object mentioned in [Retrieve a Table's Definition](#retrieve-a-tables-definition), while within a changeset. The object ID of the table is `862780DC499A14D74FEC7EB2EF317DA2`. The table is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you want to get the definition of the same table object mentioned in [Retrieve a table's definition](#retrieve-a-tables-definition), while within a changeset. The object ID of the table is `862780DC499A14D74FEC7EB2EF317DA2`. The table is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::tip
 
@@ -686,7 +686,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 ## Retrieve a table's definition with specific fields
 
-In this workflow sample, you get the definition of the `"CITY_CTR_SLS"` table object using its object ID of `862780DC499A14D74FEC7EB2EF317DA2`. You also use the `fields` parameter to retrieve specific fields. If the `fields` parameter is not specified, the API returns all fields by default as shown in [Retrieve a Table's Definition](#retrieve-a-tables-definition)
+In this workflow sample, you get the definition of the `"CITY_CTR_SLS"` table object using its object ID of `862780DC499A14D74FEC7EB2EF317DA2`. You also use the `fields` parameter to retrieve specific fields. If the `fields` parameter is not specified, the API returns all fields by default as shown in [Retrieve a table's definition](#retrieve-a-tables-definition)
 
 :::tip
 

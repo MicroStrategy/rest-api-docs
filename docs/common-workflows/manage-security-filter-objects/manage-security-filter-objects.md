@@ -13,11 +13,11 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create and update security filter objects through the Modeling service:
 
-- [Retrieve a Security Filter Definition](./retrieve-a-security-filter-definition.md)
-- [Create a Security Filter Object](./create-a-security-filter-object.md)
-- [Update a Security Filter Definition](./update-a-security-filter-definition.md)
-- [Create a Security Filter Object Using a Custom Expression](./create-a-security-filter-object-using-a-custom-expression.md)
-- [Retrieve a Security Filter's Member](./retrieve-a-security-filters-member.md)
-- [Modify a Security Filter's Member](./modify-a-security-filters-member.md)
+- [Retrieve a security filter definition](./retrieve-a-security-filter-definition.md)
+- [Create a security filter object](./create-a-security-filter-object.md)
+- [Update a security filter definition](./update-a-security-filter-definition.md)
+- [Create a security filter object using a custom expression](./create-a-security-filter-object-using-a-custom-expression.md)
+- [Retrieve a security filter's member](./retrieve-a-security-filters-member.md)
+- [Modify a security filter's member](./modify-a-security-filters-member.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

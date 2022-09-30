@@ -21,7 +21,7 @@ Only Administrator users can validate migrations. Administrators must have the f
 - Apply package
 - Bypass all objects security check
 
-To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response body. Keep the token value. It is required to execute the REST API. See [Workflow Sample: Authentication](../authentication.md) for more information.
+To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response body. Keep the token value. It is required to execute the REST API. See [Workflow sample: Authentication](../authentication.md) for more information.
 
 ## Use scenarios
 
@@ -358,7 +358,7 @@ A package validated in an earlier platform version can be validated to a newer p
 
 ## Troubleshooting
 
-- If the Library server cannot connect to the database, you may receive the following error response:
+- If the Library Server cannot connect to the database, you may receive the following error response:
   - The API requires MicroStrategy Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
     - Database not running

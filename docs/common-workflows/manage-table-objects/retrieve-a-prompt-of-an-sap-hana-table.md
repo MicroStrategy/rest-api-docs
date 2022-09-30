@@ -91,7 +91,7 @@ Response Code: 200 (Table's prompt is returned successfully.)
 
 ## Retrieve a table prompt within a changeset
 
-You want to get the prompt of the same table object mentioned in [Retrieve a Prompt of a Table](#retrieve-a-prompt-of-a-table), while within a changeset. The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the MicroStrategy Tutorial Advanced project and its project ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`.
+You want to get the prompt of the same table object mentioned in [Retrieve a prompt of a table](#retrieve-a-prompt-of-a-table), while within a changeset. The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the MicroStrategy Tutorial Advanced project and its project ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`.
 
 :::tip
 

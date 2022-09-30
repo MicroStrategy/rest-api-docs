@@ -11,10 +11,10 @@ You can use REST APIs to return information about the following prompts:
 - [Attribute element prompts](../prompt-types/attribute-element-prompts.md)
 - [Attribute qualification prompts](../prompt-types/attribute-qualification-prompts.md)
 - [Object prompts](../prompt-types/object-prompts.md)
-- [Value Prompts](../prompt-types/value-prompts.md)
+- [Value prompts](../prompt-types/value-prompts.md)
 - [Metric expression prompts](../prompt-types/metric-expression-prompts.md)
 - [Hierarchy qualification prompts](../prompt-types/hierarchy-qualification-prompts.md)
-- [Level Prompts](../prompt-types/level-prompts.md)
+- [Level prompts](../prompt-types/level-prompts.md)
 
 You can identify prompts with the prompt key, prompt ID, or prompt name. If more than one identifier is provided, the logic for identifying the prompt will follow this order: key, ID, name. The prompt key is used first if is available because the key is the only unique value. Since the same prompt can be applied more than once to a dataset, the ID and the name might not be unique. Despite this possibility, the name is often the most convenient way to identify a prompt because of its descriptive nature.
 

@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Retrieve all Runtimes
-sidebar_label: Retrieve all Runtimes
+title: Workflow sample - Retrieve all runtimes
+sidebar_label: Retrieve all runtimes
 description: This workflow sample demonstrates how to list all the runtime objects.
 ---
 

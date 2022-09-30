@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Create a Runtime
-sidebar_label: Create a Runtime
+title: Workflow sample - Create a runtime
+sidebar_label: Create a runtime
 description: This workflow sample demonstrates how to create a new runtime object through the REST API.
 ---
 

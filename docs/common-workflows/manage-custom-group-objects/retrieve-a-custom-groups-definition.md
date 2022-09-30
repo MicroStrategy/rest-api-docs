@@ -395,7 +395,7 @@ If `tokens`, the expression is returned in `"text"` and `"tokens"` formats.
 
 :::
 
-This workflow sample is similar to [Retrieve a Custom Group's Definition](#retrieve-a-custom-groups-definition-with-filter-elements), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
+This workflow sample is similar to [Retrieve a custom group's definition](#retrieve-a-custom-groups-definition-with-filter-elements), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
 
 Sample Curl:
 

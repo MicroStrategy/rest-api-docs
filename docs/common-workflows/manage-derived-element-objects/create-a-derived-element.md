@@ -14,14 +14,14 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow sample demonstrates how to create a new derived element object through Modeling service.
 
-- [Create a Derived Element Using a List Element](#create-a-derived-element-using-a-list-element)
+- [Create a derived element using a list element](#create-a-derived-element-using-a-list-element)
   1. [Create a changeset](#create-a-changeset)
   1. [Create a derived element](#create-a-new-derived-element)
   1. [Commit the changeset](#commit-the-changeset)
   1. [Delete the changeset](#delete-the-changeset)
-- [More Examples](#more-examples)
-  - [Create a Derived Element Using a Filter Element](#create-a-derived-element-using-a-filter-element)
-  - [Create a Derived Element Using a Calculation Element](#create-a-derived-element-using-a-filter-element)
+- [More examples](#more-examples)
+  - [Create a derived element using a filter element](#create-a-derived-element-using-a-filter-element)
+  - [Create a derived element using a calculation element](#create-a-derived-element-using-a-filter-element)
 
 ## Create a derived element using a list element
 
@@ -85,7 +85,7 @@ Sample Response Code: 201 (A new changeset is created successfully.)
 
 Use [POST /api/model/derivedElements](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Derived%20Elements/ms-postDerivedElement).
 
-The embedded elements in a derived element can be `"list"`, `"filter"`, `"calculation"` or `"all_other"`. In this example, you are creating a derived element that has an embedded `"list"` element. To create a derived element with a `"filter"` or `"calculation"` element, see [More Examples](#more-examples).
+The embedded elements in a derived element can be `"list"`, `"filter"`, `"calculation"` or `"all_other"`. In this example, you are creating a derived element that has an embedded `"list"` element. To create a derived element with a `"filter"` or `"calculation"` element, see [More examples](#more-examples).
 
 :::tip
 
@@ -105,7 +105,7 @@ Sample Request Body:
 
 :::tip
 
-For more details on how to set format properties, see [Format Samples for Derived Elements](./format-samples.md).
+For more details on how to set format properties, see [Format samples for derived elements](./format-samples.md).
 
 :::
 

@@ -7,11 +7,11 @@ A hierarchy qualification prompt allows users to filter data in a report or docu
 
 Use REST APIs to perform the following actions on hierarchy qualification prompts:
 
-- [Get Information About a Hierarchy Qualification Prompt](#get-information-about-a-hierarchy-qualification-prompt)
-- [Get the Hierarchy Qualification Prompt's Available Objects](#get-the-hierarchy-qualification-prompts-available-objects)
-- [Get the Attributes of a Hierarchy](#get-the-attributes-of-a-hierarchy)
-- [Answer a Hierarchy Qualification Prompt](#answer-a-hierarchy-qualification-prompt)
-  - [Provide Specific Prompt Answers](#provide-specific-prompt-answers)
+- [Get information about a hierarchy qualification prompt](#get-information-about-a-hierarchy-qualification-prompt)
+- [Get the hierarchy qualification prompt's available objects](#get-the-hierarchy-qualification-prompts-available-objects)
+- [Get the attributes of a hierarchy](#get-the-attributes-of-a-hierarchy)
+- [Answer a hierarchy qualification prompt](#answer-a-hierarchy-qualification-prompt)
+  - [Provide specific prompt answers](#provide-specific-prompt-answers)
 
 ## Get information about a hierarchy qualification prompt
 
