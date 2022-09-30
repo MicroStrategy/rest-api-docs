@@ -53,7 +53,7 @@ This endpoint allows the caller to authenticate with the MicroStrategy REST Serv
 
 End Point: `GET /api/monitors/iServer/nodes`
 
-This end point includes basic information, run time state, and information for the projects on each node. You specify an authorization token in the request header which you will get from `POST /api/auth/login` used during [Log In](#log-in).
+This end point includes basic information, run time state, and information for the projects on each node. You specify an authorization token in the request header which you will get from `POST /api/auth/login` used during [Log in](#log-in).
 
 You can also use filter option either on project id or node name or both to get specific information in response. This filed is optional.
 

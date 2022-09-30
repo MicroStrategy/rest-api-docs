@@ -25,7 +25,7 @@ You can manipulate the following types of value prompts through REST APIs:
   - [Date](#date)
   - [Text](#text)
   - [Number](#number)
-  - [Big Decimal](#big-decimal)
+  - [Big decimal](#big-decimal)
   - [Long](#long)
 - [Update an existing prompt](#update-an-existing-prompt)
 

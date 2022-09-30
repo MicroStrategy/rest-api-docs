@@ -13,8 +13,8 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create, and update cube objects through the Modeling service.
 
-- [Retrieve a Cube's Definition](./retrieve-a-cube-definition.md)
-- [Create a Cube Object](./create-a-cube-object.md)
-- [Update a Cube's Definition](./update-a-cube-definition.md)
+- [Retrieve a cube's definition](./retrieve-a-cube-definition.md)
+- [Create a cube object](./create-a-cube-object.md)
+- [Update a cube's definition](./update-a-cube-definition.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

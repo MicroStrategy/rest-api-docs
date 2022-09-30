@@ -1,5 +1,5 @@
 ---
-title: Object Migration Groups Between Environments
+title: Object migration groups between environments
 description: You can move a group of object packages between environments within Workstation.
 ---
 
@@ -16,7 +16,7 @@ You must [configure the package storage location in Workstation](https://www2.mi
 - [GET /api/migrationGroups](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/MigrationGroups/getMigrationGroupList)
 - [DELETE /api/migrationGroups?packageGroupId={{packageGroupId}}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/MigrationGroups/deletePackage)
 
-## Privileges and Authorization
+## Privileges and authorization
 
 You need the following privileges for both the source and target environments:
 
@@ -26,15 +26,15 @@ You need the following privileges for both the source and target environments:
 
 :::tip
 
-To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response body. Keep the token value. It is required to execute the REST API. See [Workflow Sample: Authentication](../authentication.md) for more information.
+To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response body. Keep the token value. It is required to execute the REST API. See [Workflow sample: Authentication](../authentication.md) for more information.
 
 :::
 
-## Use Scenario
+## Use scenario
 
 The best practice scenario is when Workstation uses one Library server as a source and another Library server as a target. The source and target environments can be the same.
 
-## Create & Import Migration Group
+## Create & import migration group
 
 ### Step 1: Use the `POST /api/migrationGroups` API call to the source Library
 
@@ -913,7 +913,7 @@ Sample Response Body:
 }
 ```
 
-### Step 6 (Optional): Use the `GET /api/migrationGroups/{{migrationGroupId}}` API call to the Library
+### Step 6 (optional): Use the `GET /api/migrationGroups/{{migrationGroupId}}` API call to the Library
 
 Since the package group import is an asynchronous process, this call checks the `migrations[*].importInfo.status`. It is usually `pending`, `importing`, `imported`, or `import_failed`. Need to query the status of all package imports in the group. Apply 'fail fast' strategy in handling the package group import which means that if one of the packages import fails, the whole package group import fails.
 
@@ -1103,7 +1103,7 @@ Since the package group import is an asynchronous process, this call checks the 
 }
 ```
 
-## Undo Migration
+## Undo migration
 
 ### Step 1: Use the `PATCH /api/migrationGroups/{{migrationGroupId}}` API call to the target Library
 
@@ -1233,11 +1233,11 @@ Sample Response Body:
 }
 ```
 
-### Step 3 (Optional): Use the `GET /api/migrationGroups/{{migrationGroupId}}` API call to the target Library
+### Step 3 (optional): Use the `GET /api/migrationGroups/{{migrationGroupId}}` API call to the target Library
 
 Since the package group undo is an asynchronous process, this call checks the undo status. Usually it is `undoing`, `undo_success`, or `undo_failed`. If one of the packages undo failed, it does not affect the undo process of the rest packages.
 
-## Delete Package
+## Delete package
 
 Make sure to delete migrations from the source and target one by one.
 
@@ -1309,7 +1309,7 @@ A package group created in an earlier platform version can be imported to a newe
 
 ## Troubleshooting
 
-- If the Library server cannot connect to the database, you may receive the following error response:
+- If the Library Server cannot connect to the database, you may receive the following error response:
   - The API requires MicroStrategy Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
   - Database not running

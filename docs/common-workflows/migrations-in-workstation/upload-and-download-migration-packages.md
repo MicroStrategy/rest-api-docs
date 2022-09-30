@@ -1,5 +1,5 @@
 ---
-title: Upload and Download Migration Packages
+title: Upload and download migration packages
 description: You can upload and download migration packages in Workstation.
 ---
 
@@ -26,7 +26,7 @@ You must [configure the package storage location in Workstation](https://www2.mi
 - [DELETE /api/mstrServices/library/storage/sharedFileStore/files/{fileId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Shared%20File%20Store/deleteSharedFile)
 - [DELETE /api/migrations?packageId={packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/deletePackage_1)
 
-## Privileges and Authorization
+## Privileges and authorization
 
 You need the following privileges for the environments where you download migration packages from:
 
@@ -43,13 +43,13 @@ You need the following privileges for the environments where you migrate migrati
 - Create Package
 - Bypass all objects security check
 
-To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response header. Keep the token value. It is required when executing the REST API. See [Workflow Sample: Authentication](../authentication.md) for more information.
+To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response header. Keep the token value. It is required when executing the REST API. See [Workflow sample: Authentication](../authentication.md) for more information.
 
-## Use Scenario
+## Use scenario
 
 The best practice scenario is when users are working on movement between different environments, an admin of old environments maybe has not been given access to the new platform, to which they want to move objects to. They can download the packages from the old environment and let another user, who has privilege on the new environment, to upload the packages.
 
-## Upload and Import Migration Package
+## Upload and import migration package
 
 ### Step 1: Use the `GET /api/migrations/packages/{packageId}/binary` API call to the source Library
 
@@ -306,7 +306,7 @@ Sample Response Body:
 }
 ```
 
-## Delete Uploaded Migration Package
+## Delete uploaded migration package
 
 Make sure to delete uploaded package metadata first then delete the migration import record in the target environment.
 
@@ -350,7 +350,7 @@ A package created in an earlier platform version can be downloaded, uploaded and
 
 ## Troubleshooting
 
-- If the Library server cannot connect to the database, you may receive the following error responses:
+- If the Library Server cannot connect to the database, you may receive the following error responses:
   - The API requires MicroStrategy Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
     - Database version is lower than required

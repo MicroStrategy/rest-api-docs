@@ -15,6 +15,6 @@ You can use REST API requests to manage datasources.
 
 - [Create a datasource](./create-a-datasource.md)
 - [Update a datasource](./update-a-datasource.md)
-- [Add and Remove Datasource from Project](./add-and-remove-datasource-from-project.md)
-- [Update Job Priorities for Datasource](./update-job-priorities-for-datasource.md)
+- [Add and remove datasource from project](./add-and-remove-datasource-from-project.md)
+- [Update job priorities for datasource](./update-job-priorities-for-datasource.md)
 - [Delete a datasource](./delete-a-datasource.md)

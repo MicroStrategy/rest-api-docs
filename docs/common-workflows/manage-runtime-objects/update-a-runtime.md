@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Update a Runtime
-sidebar_label: Update a Runtime
+title: Workflow sample - Update a runtime
+sidebar_label: Update a runtime
 description: This workflow sample demonstrates how to update an existing runtime object through the REST API.
 ---
 

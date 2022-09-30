@@ -14,11 +14,11 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow sample demonstrates how to create a migration package using REST APIs.
 
-- [Creating a Project Package](#creating-a-project-package)
-- [More Examples](#more-examples)
-  - [Create a Project Package](#create-a-project-package)
-  - [Create a Configuration Package](#create-a-configuration-package)
-  - [Create a Project Security Package](#create-a-project-security-package)
+- [Creating a project package](#creating-a-project-package)
+- [More examples](#more-examples)
+  - [Create a project package](#create-a-project-package)
+  - [Create a configuration package](#create-a-configuration-package)
+  - [Create a project security package](#create-a-project-security-package)
 
 ## Creating a project package
 

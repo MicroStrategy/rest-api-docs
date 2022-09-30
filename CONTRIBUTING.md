@@ -3,7 +3,7 @@
 # Contributing to this repository
 
 - [Getting started](#getting-started)
-  - [Use the 'Edit' button](#use-the-edit-button)
+  - [Use the `Edit` button](#use-the-edit-button)
   - [Don't see your issue? Open one](#dont-see-your-issue-open-one)
   - [Ready to make a change? Fork the repo](#ready-to-make-a-change-fork-the-repo)
   - [Make your update](#make-your-update)

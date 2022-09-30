@@ -102,6 +102,20 @@ The list below shows the usage of emojis in our Docs site:
 
 - Endpoints for REST API should have links if possible.
 
+- For internal links:
+
+  - If the description of the link is related to the title of some page, use sentence case. For example:
+
+    ```md
+    - [Retrieve, create, and update runtime objects.](./common-workflows/manage-runtime-objects/manage-runtimes.md)
+    ```
+
+  - If the description of the link is in the middle of the sentence and it is a brief explanation of what the link is, use proper cases as needed. For example:
+
+    ```md
+    You can use the following REST APIs to [filter the data that is returned when you create or update an instance of a dossier](./filter-dossier-instances/filter-dossier-instances.md), including clearing the filter selections.
+    ```
+
 ## Naming conventions
 
 - Folders and files

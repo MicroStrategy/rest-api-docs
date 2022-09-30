@@ -229,7 +229,7 @@ If `showExpressionAs` is `tokens`, the expression is returned in "text" and "tok
 
 :::
 
-This workflow sample is similar to [Retrieve an Attribute's Definition](#retrieve-an-attributes-definition), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
+This workflow sample is similar to [Retrieve an attribute's definition](#retrieve-an-attributes-definition), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
 
 Sample Curl:
 

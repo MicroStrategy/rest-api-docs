@@ -1,12 +1,12 @@
 ---
-title: Workflow Sample - Retrieve a Runtime Definition
-sidebar_label: Retrieve a Runtime Definition
+title: Workflow sample - Retrieve a runtime definition
+sidebar_label: Retrieve a runtime definition
 description: This workflow sample demonstrates how to retrieve an existing runtime object through the REST API.
 ---
 
 You can use REST APIs to retrieve the definition of a runtime object.
 
-## Retrieve a Runtime Definition
+## Retrieve a runtime definition
 
 You want to get the definition of a runtime object. The object ID of the runtime is `E6C5BF4C483FF06313BEE19EAD39978B`.
 
@@ -18,18 +18,18 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 Retrieve the runtime’s definition using [GET /api/runtimes/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Runtimes/getScriptRuntime).
 
-### Sample Request Header
+### Sample request header
 
 ```http
 "accept": "application/json"
 "X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
 ```
 
-### Sample Request Body
+### Sample request body
 
 Empty
 
-### Sample Curl
+### Sample curl
 
 ```bash
 curl -X 'GET' \
@@ -38,7 +38,7 @@ curl -X 'GET' \
   -H 'X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch'
 ```
 
-### Sample Response Body
+### Sample response body
 
 You can view the runtime definition in the body of the response.
 
@@ -101,6 +101,6 @@ Most of the fields in the response body are the definition of the runtime object
 
 :::
 
-### Response Code
+### Response code
 
 200 (The runtime definition is returned successfully.)

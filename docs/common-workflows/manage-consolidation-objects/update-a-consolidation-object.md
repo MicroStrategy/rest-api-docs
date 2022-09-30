@@ -93,7 +93,7 @@ Sample Request Body:
 
 :::tip
 
-For more details on how to set format properties, please refer to [Format Samples for Derived Elements](../manage-derived-element-objects/format-samples.md).
+For more details on how to set format properties, please refer to [Format samples for derived elements](../manage-derived-element-objects/format-samples.md).
 
 :::
 

@@ -13,9 +13,9 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve, create, and replace timezone objects through the Modeling service.
 
-- [Retrieve a List of All Available Time Zones' Definitions](./retrieve-a-list-of-time-zones-definitions.md)
-- [Retrieve a Timezone's Definition](./retrieve-a-time-zones-definition.md)
-- [Create a Timezone Object](./create-a-time-zone-object.md)
-- [Update a Timezone Object](./update-a-time-zone-object.md)
+- [Retrieve a list of all available time zones' definitions](./retrieve-a-list-of-time-zones-definitions.md)
+- [Retrieve a timezone's definition](./retrieve-a-time-zones-definition.md)
+- [Create a timezone object](./create-a-time-zone-object.md)
+- [Update a timezone object](./update-a-time-zone-object.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/2021/InstallConfig/en-us/Content/modeling_service.htm).

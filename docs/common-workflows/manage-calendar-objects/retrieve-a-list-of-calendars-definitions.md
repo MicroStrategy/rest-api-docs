@@ -1,11 +1,11 @@
 ---
-title: Retrieve a List of Calendar' Definitions
+title: Retrieve a list of calendars' definitions
 description: You can use REST APIs to retrieve definitions for a list of available calendars through the Modeling service. This topic includes the following workflows.
 ---
 
 You can use REST APIs to retrieve definitions for a list of available calendars through the Modeling service. This topic includes the following workflows.
 
-## 1. Retrieve a List of Calendars' Definitions
+## 1. Retrieve a list of calendars' definitions
 
 You want to get the definitions of all available calendars in the configuration project.
 
@@ -107,7 +107,7 @@ You can view the calendars' definitions in the body of the response. In this sam
 
 Response Code: 200 (calendars' definitions are returned successfully.)
 
-## 2. Retrieve a List of Calendars' Definitions within a Changeset
+## 2. Retrieve a list of calendars' definitions within a changeset
 
 You want the definitions of all available calendars in the configuration project.
 
@@ -299,7 +299,7 @@ Sample Response Body: Empty
 
 Sample Response Code: 204 (The changeset has been deleted successfully.)
 
-## 3. Retrieve a List of Calendars' Definitions With a Specified SubType
+## 3. Retrieve a list of calendars' definitions with a specified SubType
 
 You want to enable the `information.subType` parameter to retrieve only system calendars or custom calendars.
 

@@ -42,7 +42,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
    curl -X GET "http://10.23.7.118:8080/MicroStrategyLibrary/api/model/hierarchies" -H "accept: application/json" -H "X-MSTR-AuthToken": "4bb7n1dhjo860e7tlpchg57hl" -H "X-MSTR-MS-Changeset: 2A131744C91B4915B54A61FFDC528F62"
    ```
 
-   Sample Response Body: You can view the user hierarchy's definition in the body of the response. This includes the object ID, subtype, and name of each available user hierarchy in the specified project. See [User Hierarchy Import Parameters](./user-hierarchy-import-parameters.md) for more information about the import parameters that define the user hierarchy.
+   Sample Response Body: You can view the user hierarchy's definition in the body of the response. This includes the object ID, subtype, and name of each available user hierarchy in the specified project. See [User hierarchy import parameters](./user-hierarchy-import-parameters.md) for more information about the import parameters that define the user hierarchy.
 
    ```json
    {

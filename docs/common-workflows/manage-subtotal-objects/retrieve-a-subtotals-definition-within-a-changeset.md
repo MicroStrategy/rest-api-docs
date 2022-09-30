@@ -22,7 +22,7 @@ An authorization token allows the API layer to hide internal session-related imp
 
 You want to get the definition of an object with the ID of `514C2064DF754990AF60432A1C1E4A77` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
-For different formats of subtotal expressions, see [Workflow Sample - Retrieve a Subtotal's Definition](./retrieve-a-subtotals-definition.md).
+For different formats of subtotal expressions, see [Workflow sample - Retrieve a subtotal's definition](./retrieve-a-subtotals-definition.md).
 
 :::info
 

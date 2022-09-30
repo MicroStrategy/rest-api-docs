@@ -17,7 +17,7 @@ This workflow sample demonstrates how to create a new security filter object thr
 1. [Commit a changeset.](#commit-a-changeset)
 1. [Delete the changeset.](#delete-the-changeset)
 
-Additional samples are provided in [More Samples](#more-samples).
+Additional samples are provided in [More samples](#more-samples).
 
 In this workflow sample, you want to create a "Year > 2015" security filter object under the Public Objects folder in the MicroStrategy Tutorial project. The folder ID is `98FE182C2A10427EACE0CD30B6768258`. The MicroStrategy Tutorial project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
@@ -248,13 +248,13 @@ In this section we provide sample request body JSON for creating security filter
 - [3. Commit a changeset using `POST /api/model/changesets/{changesetId}/commit`](#commit-a-changeset)
 - [4. Delete the changeset using `DELETE /api/model/changesets/{changesetId}`](#delete-the-changeset)
 - More Samples
-  - [Attribute Form Qualification](#attribute-form-qualification)
-  - [Attribute Element List Qualification](#attribute-element-list-qualification)
-  - [Shortcut-to-a-Filter Qualification](#shortcut-to-a-filter-qualification)
-  - [Attribute Join Element List Qualification](#attribute-join-element-list-qualification)
-  - [Custom Expression Qualification](#custom-expression-qualification)
-  - [Logic Operators](#logic-operators)
-  - [Attribute Form Qualification with Top/Bottom Level](#attribute-form-qualification-with-topbottom-level)
+  - [Attribute form qualification](#attribute-form-qualification)
+  - [Attribute element list qualification](#attribute-element-list-qualification)
+  - [Shortcut-to-a-Filter qualification](#shortcut-to-a-filter-qualification)
+  - [Attribute join element list qualification](#attribute-join-element-list-qualification)
+  - [Custom expression qualification](#custom-expression-qualification)
+  - [Logic operators](#logic-operators)
+  - [Attribute form qualification with top/bottom level](#attribute-form-qualification-with-topbottom-level)
 
 ### Attribute form qualification
 
@@ -473,7 +473,7 @@ The following example demonstrates creating a new security filter that returns t
 
 ### Custom expression qualification
 
-You can create a security filter based on a custom expression using `"type": "predicate_custom"`. See [Workflow Sample: Create a Security Filter Object Using a Custom Expression](./create-a-security-filter-object-using-a-custom-expression.md) for more information.
+You can create a security filter based on a custom expression using `"type": "predicate_custom"`. See [Workflow sample: Create a security filter object using a custom expression](./create-a-security-filter-object-using-a-custom-expression.md) for more information.
 
 ### Logic operators
 

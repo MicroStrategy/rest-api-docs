@@ -22,7 +22,7 @@ This workflow applies only to SAP HANA tables with input parameters because only
 
 :::tip
 
-You should at least have **read access** to the table to successfully complete this workflow. If the prompt you want to update is a managed object, **write access** to the table is also required. The managed prompts of an SAP HANA table with input parameters are automatically created by MicroStrategy by default. However, you can choose to replace these managed prompts with standalone ones by following the steps in [Workflow Sample: Update SAP HANA Parameters for an SAP HANA Table with Input Parameters](./update-sap-hana-parameters.md). For more information on managed objects, see [About Managed Objects](https://www2.microstrategy.com/producthelp/2021/MDXCubeReporting/WebHelp/Lang_1033/Content/About_managed_objects.htm).
+You should at least have **read access** to the table to successfully complete this workflow. If the prompt you want to update is a managed object, **write access** to the table is also required. The managed prompts of an SAP HANA table with input parameters are automatically created by MicroStrategy by default. However, you can choose to replace these managed prompts with standalone ones by following the steps in [Workflow sample: Update SAP HANA parameters for an SAP HANA table with input parameters](./update-sap-hana-parameters.md). For more information on managed objects, see [About Managed Objects](https://www2.microstrategy.com/producthelp/2021/MDXCubeReporting/WebHelp/Lang_1033/Content/About_managed_objects.htm).
 
 :::
 

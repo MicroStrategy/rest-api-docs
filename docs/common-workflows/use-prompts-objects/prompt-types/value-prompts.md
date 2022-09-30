@@ -16,10 +16,10 @@ A value prompt allows the results to be filtered based on a specific value, such
 You can use REST APIs to perform the following action on value prompts:
 
 - [Answer a value prompt](#answer-a-value-prompt)
-  - [Provide Specific Prompt Answers](#provide-specific-prompt-answers)
-- [Get Information About a Value Prompt](#get-information-about-a-value-prompt)
-- [Value Prompt Definition](#value-prompt-definition)
-- [Possible Prompt Execution Errors for Value Prompts](#possible-prompt-execution-errors-for-value-prompts)
+  - [Provide specific prompt answers](#provide-specific-prompt-answers)
+- [Get information about a value prompt](#get-information-about-a-value-prompt)
+- [Value prompt definition](#value-prompt-definition)
+- [Possible prompt execution errors for value prompts](#possible-prompt-execution-errors-for-value-prompts)
 
 ## Answer a value prompt
 

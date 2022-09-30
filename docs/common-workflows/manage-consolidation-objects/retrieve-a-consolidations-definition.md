@@ -14,8 +14,8 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST APIs to retrieve the definition for a consolidation through the Modeling service. This topic includes the following workflows:
 
-- [Retrieve a Consolidation's Definition](#retrieve-a-consolidations-definition)
-- [Retrieve a Consolidation's Definition Within a Changeset](#retrieve-a-consolidations-definition-within-a-changeset)
+- [Retrieve a consolidation's definition](#retrieve-a-consolidations-definition)
+- [Retrieve a consolidation's definition within a changeset](#retrieve-a-consolidations-definition-within-a-changeset)
 
 ## Retrieve a consolidation's definition
 

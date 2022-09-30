@@ -5,7 +5,7 @@ description: How to manage content group packages in different cases.
 
 ## Migrate content group objects, recipient list, and content
 
-See [Create and Import Migration Packages](../create-and-import-migration-packages/create-and-import-migration-packages.md) to manage object migration.
+See [Create and import migration packages](../create-and-import-migration-packages/create-and-import-migration-packages.md) to manage object migration.
 
 Create a content group package using REST APIs:
 

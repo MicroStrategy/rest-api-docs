@@ -99,7 +99,7 @@ Sample Request Body:
 
 :::tip
 
-For more details on how to set format properties, please refer to [Format Samples for Derived Elements](./format-samples.md).
+For more details on how to set format properties, please refer to [Format samples for derived elements](./format-samples.md).
 
 :::
 

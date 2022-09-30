@@ -1,6 +1,6 @@
 ---
-title: Workflow Sample - Delete a Runtime
-sidebar_label: Delete a Runtime
+title: Workflow sample - Delete a runtime
+sidebar_label: Delete a runtime
 description: This workflow sample demonstrates how to delete an existing runtime object through the REST API.
 ---
 

@@ -521,7 +521,7 @@ Sample Body:
 }
 ```
 
-This border style uses the same `"value"` as the [Top Style](#top-style).
+This border style uses the same `"value"` as the [Top style](#top-style).
 
 ### Left style
 
@@ -536,7 +536,7 @@ Sample Body:
 }
 ```
 
-This border style uses the same `"value"` as the [Top Style](#top-style).
+This border style uses the same `"value"` as the [Top style](#top-style).
 
 ### Right style
 
@@ -551,7 +551,7 @@ Sample Body:
 }
 ```
 
-This border style uses the same `"value"` as the [Top Style](#top-style).
+This border style uses the same `"value"` as the [Top style](#top-style).
 
 ### Top color
 

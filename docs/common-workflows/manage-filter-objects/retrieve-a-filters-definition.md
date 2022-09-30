@@ -14,10 +14,10 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This topic covers several workflows for retrieving a filter's definition:
 
-- [Retrieve a Filter's Definition](#retrieve-a-filters-definition)
-- [Retrieve a Filter's Definition in Tokens Format](#retrieve-a-filters-definition-in-tokens-format)
-- [Retrieve a Filter's Definition with Custom Expressions in Tree and Tokens Formats](#retrieve-a-filters-definition-with-custom-expressions-in-tree-and-tokens-formats)
-- [Retrieve a Filter's Definition That Contains Inline Custom Expressions, with the Expression in Tree and Tokens Formats](#retrieve-a-filters-definition-that-contains-inline-custom-expressions-with-the-expression-in-tree-and-tokens-formats)
+- [Retrieve a filter's definition](#retrieve-a-filters-definition)
+- [Retrieve a filter's definition in tokens format](#retrieve-a-filters-definition-in-tokens-format)
+- [Retrieve a filter's definition with custom expressions in tree and tokens formats](#retrieve-a-filters-definition-with-custom-expressions-in-tree-and-tokens-formats)
+- [Retrieve a filter's definition that contains inline custom expressions, with the expression in tree and tokens formats](#retrieve-a-filters-definition-that-contains-inline-custom-expressions-with-the-expression-in-tree-and-tokens-formats)
 
 ## Retrieve a filter's definition
 
@@ -121,7 +121,7 @@ If `showFilterTokens` is `true`, all "text", "tree" and "tokens" formats are ret
 
 :::
 
-This workflow sample is similar to [Workflow Samples: Retrieve a Filter's Definition](./), except with `showFilterTokens=true`.
+This workflow sample is similar to [Workflow samples: Retrieve a filter's definition](./), except with `showFilterTokens=true`.
 
 Sample Curl:
 
@@ -129,7 +129,7 @@ Sample Curl:
 curl -X GET "https://demo.cloud.microstrategy.com/MicroStrategyLibrary/api/model/filters/5B64A6A6E5B1466497D9D4D35328D91B?showFilterTokens=true" -H "accept: application/json" -H "X-MSTR-AuthToken: mcgi1hfofet0f1nhs3u3kjurah" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
 ```
 
-Sample Response Body: You can view the filter’s definition in the body of the response. If you compare this to [Workflow Samples: Retrieve a Filter's Definition](#retrieve-a-filters-definition), "qualification" has an extra field of "tokens".
+Sample Response Body: You can view the filter’s definition in the body of the response. If you compare this to [Workflow samples: Retrieve a filter's definition](#retrieve-a-filters-definition), "qualification" has an extra field of "tokens".
 
 ```json
 {
@@ -251,7 +251,7 @@ If `tree`, the custom expression is returned in "text" and "tree" format.
 
 If `tokens`, the custom expression is returned in "text" and "tokens" format.
 
-This workflow is similar to [Retrieve a Filter's Definition](#retrieve-a-filters-definition), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
+This workflow is similar to [Retrieve a filter's definition](#retrieve-a-filters-definition), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
 
 Sample Curl:
 

@@ -1,6 +1,6 @@
 ---
-title: Update a Custom Calendar Object
-sidebar_label: Update a Custom Calendar Object
+title: Update a custom calendar object
+sidebar_label: Update a custom calendar object
 description: This workflow sample demonstrates how to update an existing custom calendar object through the Modeling service.
 ---
 

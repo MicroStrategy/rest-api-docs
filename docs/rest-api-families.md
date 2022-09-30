@@ -40,7 +40,7 @@ The Consolidations API family allows developers to obtain a consolidation’s de
 
 ## [Cubes API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes)
 
-The Cubes API family allows developers to create a report instance based on a cube and incrementally fetch slices of the report instance. The Cubes API lets developers leverage the performance advantage of in-memory cubes. The cube can be either an Intelligent Cube or a DDA(Direct Data Access)/MDX-based Live Connect cube. Together with the Reports API, this API is often referred to as the JSON Data API.
+The Cubes API family allows developers to create a report instance based on a cube and incrementally fetch slices of the report instance. The Cubes API lets developers leverage the performance advantage of in-memory cubes. The cube can be either an Intelligent Cube or a DDA(Direct Data Access)/MDX(Multidimensional Expressions)-based Live Connect cube. Together with the Reports API, this API is often referred to as the JSON Data API.
 
 ## [Custom groups API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups)
 
@@ -76,7 +76,7 @@ The Filters API family allows developers to obtain a filter's definition, create
 
 ## [Library API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Library)
 
-The Library API family exposes the publishing workflow, allowing requests to publish or un-publish to a set of users/usergroups and obtain the library for the authenticated user.
+The Library API family exposes the publishing workflow, allowing requests to publish or un-publish to a set of users/usergroups and obtain the Library for the authenticated user.
 
 ## [Object management API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management)
 

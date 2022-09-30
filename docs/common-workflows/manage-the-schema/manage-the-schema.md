@@ -13,8 +13,8 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to retrieve the schema lock, lock and unlock the schema, and reload (update) the schema.
 
-- [Retrieve the Schema Lock](./retrieve-the-schema-lock.md)
-- [Lock the Schema](./lock-the-schema.md)
-- [Unlock the Schema](./unlock-the-schema.md)
-- [Reload the Schema Synchronously](./reload-the-schema-synchronously.md)
-- [Reload the Schema Asynchronously](./reload-the-schema-asynchronously.md)
+- [Retrieve the schema lock](./retrieve-the-schema-lock.md)
+- [Lock the schema](./lock-the-schema.md)
+- [Unlock the schema](./unlock-the-schema.md)
+- [Reload the schema synchronously](./reload-the-schema-synchronously.md)
+- [Reload the schema asynchronously](./reload-the-schema-asynchronously.md)

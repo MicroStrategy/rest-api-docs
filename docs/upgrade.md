@@ -4,7 +4,7 @@ title: Upgrade to a newer version of MicroStrategy
 description: When you upgrade to a newer version of MicroStrategy, you should check What's New to see what the latest version of the REST API offers.
 ---
 
-When you upgrade to a newer version of MicroStrategy, you should check [What's New](./whats-new.md) to see what the latest version of the REST API offers, including:
+When you upgrade to a newer version of MicroStrategy, you should check [What's new](./whats-new.md) to see what the latest version of the REST API offers, including:
 
 - New features and functionality that have been added
 - Existing features and functionality that have been enhanced

@@ -19,7 +19,7 @@ You can filter data that is returned by the following REST API requests when you
 
 - `POST /api/cubes/{cubeId}/instances`
 
-  You can filter all types of cubes—normal cubes, DDA cubes, and MDX cubes.
+  You can filter all types of cubes — normal cubes, DDA cubes, and MDX cubes.
 
 You define how the results will be filtered in the body parameter of the request.
 

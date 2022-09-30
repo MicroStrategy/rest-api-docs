@@ -15,11 +15,11 @@ The attribute qualification prompt is a restrictive type prompt that allows you 
 
 You can use REST APIs to perform the following actions on attribute qualification prompts:
 
-- [Get Information About an Attribute Qualification Prompt](#get-information-about-an-attribute-qualification-prompt)
-- [Get the Attribute Qualification Prompt's Available Objects](#get-the-attribute-qualification-prompts-available-objects)
-- [Get the Elements of an Attribute](#get-the-elements-of-an-attribute)
-- [Answer an Attribute Qualification Prompt](#answer-an-attribute-qualification-prompt)
-  - [Provide Specific Prompt Answers](#provide-specific-prompt-answers)
+- [Get information about an attribute qualification prompt](#get-information-about-an-attribute-qualification-prompt)
+- [Get the attribute qualification prompt's available objects](#get-the-attribute-qualification-prompts-available-objects)
+- [Get the elements of an attribute](#get-the-elements-of-an-attribute)
+- [Answer an attribute qualification prompt](#answer-an-attribute-qualification-prompt)
+  - [Provide specific prompt answers](#provide-specific-prompt-answers)
 
 ## Get information about an attribute qualification prompt
 

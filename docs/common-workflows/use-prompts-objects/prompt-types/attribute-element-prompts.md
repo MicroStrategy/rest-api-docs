@@ -15,11 +15,11 @@ The attribute element prompt is one of the most commonly used prompt types. It a
 
 You can use REST APIs to perform the following action on attribute element prompts:
 
-- [Obtain Elements for Answering Attribute Element Prompts](#obtain-elements-for-answering-attribute-element-prompts)
-- [Answer an Attribute Element Prompt](#answer-an-attribute-element-prompt)
-  - [Provide Specific Prompt Answers](#provide-specific-prompt-answers)
-- [Get Information About an Attribute Element Prompt](#get-information-about-an-attribute-element-prompt)
-- [Attribute Element Prompt Definition](#attribute-element-prompt-definition)
+- [Obtain elements for answering attribute element prompts](#obtain-elements-for-answering-attribute-element-prompts)
+- [Answer an attribute element prompt](#answer-an-attribute-element-prompt)
+  - [Provide specific prompt answers](#provide-specific-prompt-answers)
+- [Get information about an attribute element prompt](#get-information-about-an-attribute-element-prompt)
+- [Attribute element prompt definition](#attribute-element-prompt-definition)
 
 ## Obtain elements for answering attribute element prompts
 

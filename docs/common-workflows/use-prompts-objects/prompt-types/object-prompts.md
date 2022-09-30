@@ -13,13 +13,13 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 An object prompt allows the caller to supply a list of objects, such as attributes, metrics, hierarchies, and so on from which a selection is made.
 
-- [Workflow for Object Prompts](#workflow-for-object-prompts)
-- [Obtain Elements for Answering Object Prompts](#obtain-elements-for-answering-object-prompts)
+- [Workflow for object prompts](#workflow-for-object-prompts)
+- [Obtain elements for answering object prompts](#obtain-elements-for-answering-object-prompts)
 - [Answer an object prompt](#answer-an-object-prompt)
-  - [Provide Specific Prompt Answers](#provide-specific-prompt-answers)
-  - [Get Information About an Object Prompt](#get-information-about-an-object-prompt)
-  - [Object Prompt Definition](#object-prompt-definition)
-  - [Possible Prompt Execution Errors for Object Prompts](#possible-prompt-execution-errors-for-object-prompts)
+  - [Provide specific prompt answers](#provide-specific-prompt-answers)
+  - [Get information about an object prompt](#get-information-about-an-object-prompt)
+  - [Object prompt definition](#object-prompt-definition)
+  - [Possible prompt execution errors for object prompts](#possible-prompt-execution-errors-for-object-prompts)
 
 ## Workflow for object prompts
 

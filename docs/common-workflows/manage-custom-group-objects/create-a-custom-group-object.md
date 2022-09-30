@@ -605,7 +605,7 @@ Sample Response Code: 204 (The changeset is deleted successfully.)
 
 The following are additional examples for creating a custom group object.
 
-Creating a custom group filter element is similar to creating a filter. The sample JSON can be found in [Workflow Sample: Create a Filter Object](../manage-filter-objects/create-a-filter-object.md). The following are sample JSONs for creating a custom group with banding elements.
+Creating a custom group filter element is similar to creating a filter. The sample JSON can be found in [Workflow sample: Create a filter object](../manage-filter-objects/create-a-filter-object.md). The following are sample JSONs for creating a custom group with banding elements.
 
 :::tip
 

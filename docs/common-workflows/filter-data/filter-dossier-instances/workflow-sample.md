@@ -411,7 +411,7 @@ Sample Response
 
 - Response Body
 
-  The REST server returns a JSON object containing the "data" property which includes the PDF data in Base64-encoded binary. To see a sample Base64-encoded binary data file or PDF file for the document, refer to the [Workflow Sample: Export to PDF](../../export-to-pdf.md) topic.
+  The REST server returns a JSON object containing the "data" property which includes the PDF data in Base64-encoded binary. To see a sample Base64-encoded binary data file or PDF file for the document, refer to the [Workflow sample: Export to PDF](../../export-to-pdf.md) topic.
 
   ```json
   {

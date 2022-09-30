@@ -142,7 +142,7 @@ You use the following REST API endpoints to answer a prompt applied to a dossier
 
 You can use REST APIs to answer the following three prompt types:
 
-- [Attribute Element Prompts](./prompt-types/attribute-element-prompts.md)
+- [Attribute element prompts](./prompt-types/attribute-element-prompts.md)
 - [Object prompts](./prompt-types/object-prompts.md)
 - [Value prompts](./prompt-types/value-prompts.md)
 
@@ -158,7 +158,7 @@ You use the following REST API endpoints to answer a prompt with the default pro
 
 You can answer the following prompts with default answers:
 
-- [Attribute Element Prompts](./prompt-types/attribute-element-prompts.md)
+- [Attribute element prompts](./prompt-types/attribute-element-prompts.md)
 - [Object prompts](./prompt-types/object-prompts.md)
 - [Value prompts](./prompt-types/value-prompts.md)
 

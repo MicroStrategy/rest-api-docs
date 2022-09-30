@@ -13,9 +13,9 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 You can use REST API requests to manage page-by information for reports.
 
-- [Fetch the Report Definition and Include Page-By Information](#fetch-the-report-definition-and-include-page-by-information)
-- [Execute the Report and Fetch Data to Apply to the Page-By Information](#execute-the-report-and-fetch-data-to-apply-to-the-page-by-information)
-- [Update a Report Instance to Modify the Current Page of Page-By(s)](#update-a-report-instance-to-modify-the-current-page-of-page-bys)
+- [Fetch the report definition and include page-by information](#fetch-the-report-definition-and-include-page-by-information)
+- [Execute the report and fetch data to apply to the page-by information](#execute-the-report-and-fetch-data-to-apply-to-the-page-by-information)
+- [Update a report instance to modify the current page of page-by(s)](#update-a-report-instance-to-modify-the-current-page-of-page-bys)
 
 The workflows on this page use the Unit Sales Paged report located in the MicroStrategy Tutorial project at **Shared Reports** > **MicroStrategy Platform Capabilities** > **MicroStrategy Office** > **Excel - Self-Service Report Book** > **Paged Report**.
 

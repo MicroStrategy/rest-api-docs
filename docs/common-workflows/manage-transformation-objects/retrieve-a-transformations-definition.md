@@ -90,7 +90,7 @@ Response Code: 200 (The transformation's definition is returned successfully.)
 
 ## Retrieve a transformation's definition within a changeset
 
-In this workflow sample, you want to get the definition of the same transformation object mentioned in [Retrieve a Transformation's Definition](#retrieve-a-transformations-definition), while within a changeset. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you want to get the definition of the same transformation object mentioned in [Retrieve a transformation's definition](#retrieve-a-transformations-definition), while within a changeset. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/transformations/{transformationId}` to create a new table or update a specific table's definitions, you should associate all requests with one changeset.
 
@@ -241,7 +241,7 @@ If `showExpressionAs` is `tree`, the expression is returned in "text" and "tree"
 
 If `showExpressionAs` is `tokens`, the expression is returned in "text" and "tokens" formats.
 
-The workflow sample is similar to [Retrieve a Transformation's Definition](#retrieve-a-transformations-definition), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
+The workflow sample is similar to [Retrieve a transformation's definition](#retrieve-a-transformations-definition), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
 
 Sample Request Header:
 

@@ -14,8 +14,8 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This topic covers two workflows for retrieving a fact’s definition:
 
-- [Retrieve a Fact's Definition](#retrieve-a-facts-definition)
-- [Retrieve a Fact's Definition with Expressions in Tree and Tokens Formats](#retrieve-a-facts-definition-with-expressions-in-tree-and-tokens-formats)
+- [Retrieve a fact's definition](#retrieve-a-facts-definition)
+- [Retrieve a fact's definition with expressions in tree and tokens formats](#retrieve-a-facts-definition-with-expressions-in-tree-and-tokens-formats)
 
 ## Retrieve a fact's definition
 
@@ -117,7 +117,7 @@ If `showExpressionAs` is `tokens`, the expression is returned in "text" and "tok
 
 :::
 
-This workflow sample is similar to [Retrieve a Fact's Definition](#retrieve-a-facts-definition), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
+This workflow sample is similar to [Retrieve a fact's definition](#retrieve-a-facts-definition), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
 
 Sample Request Header:
 

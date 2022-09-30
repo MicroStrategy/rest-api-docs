@@ -22,9 +22,9 @@ Description: What's New in the REST API.
 
 - [Create and edit user and workload fences](./common-workflows/manage-fences/manage-fences.md)
 - [Create and edit drill maps.](./common-workflows/manage-drill-maps/manage-drill-maps.md)
-- [Create and edit Incremental Refresh Reports (IRR).](./common-workflows/manage-incremental-refresh-report/manage-incremental-refresh-report.md)
+- [Create and edit incremental refresh reports (IRR).](./common-workflows/manage-incremental-refresh-report/manage-incremental-refresh-report.md)
 - [Create and manage cube objects](./common-workflows/manage-cube-objects/manage-cube-objects.md) with advanced properties.
-- [Create and manage SAP HANA tables with input parameters using the Modeling schema.](./common-workflows/manage-table-objects/manage-table-objects.md)
+- [Create and manage SAP HANA tables with input parameters using the modeling schema.](./common-workflows/manage-table-objects/manage-table-objects.md)
 - [Create and import migration packages](./common-workflows/migrations-in-workstation/migrations-in-workstation.md) just as in Workstation. This allows all packages to be managed by the MicroStrategy Storage Service so migration processes can be monitored in Workstation.
 
 ## 2021 Update 5
@@ -126,7 +126,7 @@ Description: What's New in the REST API.
 
 The ability to make external data available to MicroStrategy—often referred to as the Push Data API—has been enhanced. The newest version of the Push Data API supports complex scenarios where a large number of columns/metrics need to be managed at a different update/load/refresh schedule. This is accomplished by separating dataset definition, data upload, and dataset creation, using multiple requests to incrementally add data before publication.
 
-Performance was significantly improved for [Data Import using the Push Data API (with multiple requests)](./common-workflows/filter-data/filter-data.md), and issues were addressed for stability improvements.
+Performance was significantly improved for [Data import using the Push Data API (with multiple requests)](./common-workflows/filter-data/filter-data.md), and issues were addressed for stability improvements.
 
 - [Filtering data has been enhanced](./common-workflows/filter-data/filter-data.md)
 
@@ -146,7 +146,7 @@ The REST API now supports the export of cross-tabbed reports and report sub-tota
 
 The REST API has been enhanced to support the ability to pass filters into the REST API endpoints.
 
-- A new sample has been added to [React User Manager sample](./microstrategy-rest-api-samples/microstrategy-rest-api-samples.md).
+- A new sample has been added to [React user manager sample](./microstrategy-rest-api-samples/microstrategy-rest-api-samples.md).
 
 ## 10.11
 
@@ -158,7 +158,7 @@ The [JSON Data API](./common-workflows/retrieve-data-from-the-intelligence-serve
 
 - The REST API supports [sorting for cubes and reports](./common-workflows/sort-data.md).
 - The JSON Data API supports [fetching data from a visualization inside an existing dossier](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Dossiers-and-Documents/getVisualizationResult) which can leverage advanced capabilities, such as the data blending engine and other complex analytics.
-- The Cube API [supports Direct Data Access/MDX cubes](./rest-api-families.md#CubeAPI), in addition to Intelligent cubes.
+- The Cube API [supports DDA cubes and MDX cubes](./rest-api-families.md#CubeAPI), in addition to Intelligent cubes.
 
 ## 10.9
 
@@ -206,4 +206,4 @@ REST SDK content was included in the Web SDK, under the JSON Data API section, u
 
 REST SDK content was included in the Web SDK, under the JSON Data API section, until 10.7.
 
-- A new RESTful [View Filter API](./common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-view-filters/filter-report-and-cube-instances-using-view-filters.md) lets you refine the data returned from a report or cube using a variety of operators.
+- A new RESTful [View filter API](./common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-view-filters/filter-report-and-cube-instances-using-view-filters.md) lets you refine the data returned from a report or cube using a variety of operators.
