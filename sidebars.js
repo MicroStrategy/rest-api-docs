@@ -252,6 +252,19 @@ const sidebars = {
           type: "category",
           link: {
             type: "doc",
+            id: "common-workflows/manage-object-translations/manage-object-translations",
+          },
+          label: "Manage object's translations",
+          items: [
+            "common-workflows/manage-object-translations/retrieve-object-translations",
+            "common-workflows/manage-object-translations/remove-add-object-translations",
+            "common-workflows/manage-object-translations/update-object-translations",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
             id: "common-workflows/manage-base-formula-objects/manage-base-formula-objects",
           },
           label: "Manage base formula objects",
@@ -631,6 +644,7 @@ const sidebars = {
             "common-workflows/create-and-import-migration-packages/import-a-migration-package",
             "common-workflows/create-and-import-migration-packages/view-newly-created-package",
             "common-workflows/create-and-import-migration-packages/view-uploaded-package",
+            "common-workflows/create-and-import-migration-packages/manage-content-group-packages",
           ],
         },
         {
@@ -688,6 +702,25 @@ const sidebars = {
             "common-workflows/manage-datamart-objects/create-a-datamart-from-scratch",
             "common-workflows/manage-datamart-objects/retrieve-a-datamart-definition",
             "common-workflows/manage-datamart-objects/update-a-datamart-definition",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
+            id: "common-workflows/manage-report-objects/manage-report-objects",
+          },
+          label: "Manage Report Objects",
+          items: [
+            "common-workflows/manage-report-objects/retrieve-a-reports-definition",
+            "common-workflows/manage-report-objects/create-a-new-report",
+            "common-workflows/manage-report-objects/update-the-definition-of-an-existing-report",
+            "common-workflows/manage-report-objects/retrieve-a-derived-elements-definition-in-report",
+            "common-workflows/manage-report-objects/create-a-derived-element-in-report",
+            "common-workflows/manage-report-objects/delete-a-derived-element-in-report",
+            "common-workflows/manage-report-objects/execute-report",
+            "common-workflows/manage-report-objects/put-a-derived-element-in-report",
+            "common-workflows/manage-report-objects/retrieve-applicable-properties-of-a-report",
           ],
         },
       ],
