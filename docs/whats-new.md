@@ -14,8 +14,6 @@ Description: What's New in the REST API.
 - [Retrieve, create, and update report objects.](./common-workflows/manage-report-objects/manage-report-objects.md)
 - Ability to duplicate users.
 - Configure and manage dynamic recipients lists for subscriptions.
-- Create and edit freeform SQL reports.
-- Create and modify reports and their advanced properties.
 - [Ability to translate metadata objects.](./common-workflows/manage-object-translations/manage-object-translations.md)
 - Retrieve, create, and update language objects.
 
