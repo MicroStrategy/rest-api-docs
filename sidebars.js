@@ -342,6 +342,7 @@ const sidebars = {
             "common-workflows/manage-consolidation-objects/update-a-consolidation-object",
           ],
         },
+        "common-workflows/manage-languages",
         {
           type: "category",
           link: {
@@ -721,6 +722,22 @@ const sidebars = {
             "common-workflows/manage-report-objects/execute-report",
             "common-workflows/manage-report-objects/put-a-derived-element-in-report",
             "common-workflows/manage-report-objects/retrieve-applicable-properties-of-a-report",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
+            id: "common-workflows/manage-content-group-objects/manage-content-group-objects",
+          },
+          label: "Manage Content Group Objects",
+          items: [
+            "common-workflows/manage-content-group-objects/retrieve-a-content-group",
+            "common-workflows/manage-content-group-objects/retrieve-all-content-groups",
+            "common-workflows/manage-content-group-objects/create-a-content-group",
+            "common-workflows/manage-content-group-objects/update-a-content-group",
+            "common-workflows/manage-content-group-objects/retrieve-contents-of-an-existing-content-group",
+            "common-workflows/manage-content-group-objects/update-contents-of-an-existing-content-group",
           ],
         },
       ],
