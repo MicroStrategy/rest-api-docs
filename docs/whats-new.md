@@ -15,7 +15,7 @@ Description: What's New in the REST API.
 - Ability to duplicate users.
 - Configure and manage dynamic recipients lists for subscriptions.
 - [Ability to translate metadata objects.](./common-workflows/manage-object-translations/manage-object-translations.md)
-- Retrieve, create, and update language objects.
+- [Retrieve, create, and update language objects.](./common-workflows/manage-languages.md)
 
 ## 2021 Update 6
 
@@ -34,6 +34,10 @@ Description: What's New in the REST API.
 - [Retrieve, create, and update subtotal objects.](./common-workflows/manage-subtotal-objects/manage-subtotal-objects.md)
 - [Retrieve, create, and update cube objects.](./common-workflows/manage-cube-objects/manage-cube-objects.md)
 - Create, edit, and delete history list subscriptions.
+
+## 2021 Update 4
+
+- [Retrieve, create, and update content group objects.](./common-workflows/manage-content-group-objects/manage-content-group-objects.md)
 
 ## 2021 Update 3
 
