@@ -92,7 +92,7 @@ Response Code: 200 (The transformation's definition is returned successfully.)
 
 In this workflow sample, you want to get the definition of the same transformation object mentioned in [Retrieve a transformation's definition](#retrieve-a-transformations-definition), while within a changeset. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/transformations/{transformationId}` to create a new table or update a specific table's definitions, you should associate all requests with one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md). If you plan to use the response of `GET /api/model/transformations/{transformationId}` to create a new table or update a specific table's definitions, you should associate all requests with one changeset.
 
 :::info
 
@@ -102,128 +102,67 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset).
+Get a transformation’s definition within a changeset using [GET /api/model/transformations/{transformationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-getTransformation).
 
-   Sample Request Header:
+Sample Request Header:
 
-   ```http
-    "accept": "application/json"
-    "X-MSTR-AuthToken": "9mh6k91u1mdfe710ppbd78apof"
-    "X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F"
-   ```
+```http
+ "accept": "application/json"
+ "X-MSTR-AuthToken": "9mh6k91u1mdfe710ppbd78apof"
+ "X-MSTR-MS-Changeset": 9B7550F181D0463CAF8DA70408E88363`
+```
 
-   Sample Request Body: Empty
+Sample Request Body: Empty
 
-   Sample Curl:
+Sample Curl:
 
-   ```bash
-    curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets" -H "accept: application/json" -H "X-MSTR-AuthToken: 9mh6k91u1mdfe710ppbd78apof" -H "X-MSTR-ProjectID: B19DEDCC11D4E0EFC000EB9495D0F44F"
-   ```
+```bash
+ curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/transformations/6CB9ABB711D3E4F11000E887EC6DE8A4" -H "accept: application/json" -H "X-MSTR-AuthToken: 9mh6k91u1mdfe710ppbd78apof" -H "X-MSTR-MS-Changeset: 9B7550F181D0463CAF8DA70408E88363"
+```
 
-   Sample Response Body:
+Sample Response Body:
 
-   ```json
-   {
-     "id": "9B7550F181D0463CAF8DA70408E88363",
-     "type": "metadata",
-     "dateCreated": "2022-03-04T06:22:10.626286100Z",
-     "dateModified": "2022-03-04T06:22:10.626286100Z",
-     "status": "Ready",
-     "schemaEdit": false,
-     "userDateNumberLocale": "en-US",
-     "userMetadataLocale": "en-US",
-     "userWarehouseLocale": "en-US",
-     "mstrProjectId": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-     "mstrUserId": "668B60B14EE194EDD56CD6BF374E1F8D",
-     "userName": "MSTR User"
-   }
-   ```
+You can view the transformation's definition in the body of the response.
 
-   Sample Response Code: 201 (A new changeset is created successfully.)
+```json
+{
+  "information": {
+    "dateCreated": "2001-01-02T20:47:18.000Z",
+    "dateModified": "2022-02-16T08:18:55.645Z",
+    "versionId": "C6C93EDF42867E98F22182BF251F1259",
+    "primaryLocale": "en-US",
+    "objectId": "6CB9ABB711D3E4F11000E887EC6DE8A4",
+    "subType": "role_transformation",
+    "name": "2 Weeks Ago",
+    "description": "Transforms Day to 2 Weeks Ago Day"
+  },
+  "attributes": [
+    {
+      "id": "96ED42A511D5B117C000E78A4CC5F24F",
+      "baseAttribute": {
+        "objectId": "96ED3EC811D5B117C000E78A4CC5F24F",
+        "subType": "attribute",
+        "name": "Day"
+      },
+      "forms": [
+        {
+          "id": "45C11FA478E745FEA08D781CEA190FE5",
+          "name": "ID",
+          "lookupTable": {
+            "objectId": "24C30AD611D5AEC9C000E38A4CC5F24F",
+            "subType": "logical_table",
+            "name": "LU_DAY"
+          },
+          "expression": { "text": "ApplySimple(\"#0-14\",DAY_DATE)" }
+        }
+      ]
+    }
+  ],
+  "mappingType": "one_to_one"
+}
+```
 
-1. Get a transformation’s definition within a changeset using [GET /api/model/transformations/{transformationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-getTransformation).
-
-   Sample Request Header:
-
-   ```http
-    "accept": "application/json"
-    "X-MSTR-AuthToken": "9mh6k91u1mdfe710ppbd78apof"
-    "X-MSTR-MS-Changeset": 9B7550F181D0463CAF8DA70408E88363`
-   ```
-
-   Sample Request Body: Empty
-
-   Sample Curl:
-
-   ```bash
-    curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/transformations/6CB9ABB711D3E4F11000E887EC6DE8A4" -H "accept: application/json" -H "X-MSTR-AuthToken: 9mh6k91u1mdfe710ppbd78apof" -H "X-MSTR-MS-Changeset: 9B7550F181D0463CAF8DA70408E88363"
-   ```
-
-   Sample Response Body:
-
-   You can view the transformation's definition in the body of the response.
-
-   ```json
-   {
-     "information": {
-       "dateCreated": "2001-01-02T20:47:18.000Z",
-       "dateModified": "2022-02-16T08:18:55.645Z",
-       "versionId": "C6C93EDF42867E98F22182BF251F1259",
-       "primaryLocale": "en-US",
-       "objectId": "6CB9ABB711D3E4F11000E887EC6DE8A4",
-       "subType": "role_transformation",
-       "name": "2 Weeks Ago",
-       "description": "Transforms Day to 2 Weeks Ago Day"
-     },
-     "attributes": [
-       {
-         "id": "96ED42A511D5B117C000E78A4CC5F24F",
-         "baseAttribute": {
-           "objectId": "96ED3EC811D5B117C000E78A4CC5F24F",
-           "subType": "attribute",
-           "name": "Day"
-         },
-         "forms": [
-           {
-             "id": "45C11FA478E745FEA08D781CEA190FE5",
-             "name": "ID",
-             "lookupTable": {
-               "objectId": "24C30AD611D5AEC9C000E38A4CC5F24F",
-               "subType": "logical_table",
-               "name": "LU_DAY"
-             },
-             "expression": { "text": "ApplySimple(\"#0-14\",DAY_DATE)" }
-           }
-         ]
-       }
-     ],
-     "mappingType": "one_to_one"
-   }
-   ```
-
-   Sample Response Code: 200 (The transformation's definition is returned successfully.)
-
-1. Delete a changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
-
-   Sample Request Header:
-
-   ```http
-    "accept": "application/json"
-    "X-MSTR-AuthToken": "9mh6k91u1mdfe710ppbd78apof"
-    "X-MSTR-MS-Changeset": 9B7550F181D0463CAF8DA70408E88363
-   ```
-
-   Sample Request Body: Empty
-
-   Sample Curl:
-
-   ```bash
-    curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/9B7550F181D0463CAF8DA70408E88363" -H "accept: */*" -H "X-MSTR-AuthToken: 9mh6k91u1mdfe710ppbd78apof" -H "X-MSTR-MS-Changeset: 9B7550F181D0463CAF8DA70408E88363"
-   ```
-
-   Sample Response Body: Empty
-
-   Sample Response Code: 204 (The changeset is deleted successfully.)
+Sample Response Code: 200 (The transformation's definition is returned successfully.)
 
 ## Retrieve a transformation's definition with transformation attribute form expressions in tree and tokens formats
 

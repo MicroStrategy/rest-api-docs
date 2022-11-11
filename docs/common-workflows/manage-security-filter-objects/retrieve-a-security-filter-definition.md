@@ -98,7 +98,7 @@ Response Code: 200 (The security filter's definition was returned successfully.)
 
 :::tip
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/securityFilters/{securityFilterId}` to create a new security filter or update the security filter's definition, it is recommended to associate all requests to one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md). If you plan to use the response of `GET /api/model/securityFilters/{securityFilterId}` to create a new security filter or update the security filter's definition, it is recommended to associate all requests to one changeset.
 
 :::
 

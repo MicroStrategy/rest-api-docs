@@ -6,10 +6,10 @@ description: This workflow sample demonstrates how to create a security filter d
 
 This workflow sample demonstrates how to create a security filter definition through the Modeling service using a custom expression.
 
-- [1. Create a changeset using `POST /api/model/changesets`](#1-create-a-changeset-using-post-apimodelchangesets)
+- 1. Create a changeset using `POST /api/model/changesets`
 - [2. Create a security filter using a custom expression with `POST /api/model/securityFilters`](#2-create-a-security-filter-using-a-custom-expression-with-post-apimodelsecurityfilters)
-- [3. Commit the changeset using `POST /api/model/changesets/{changesetId}/commit`](#3-commit-the-changeset-using-post-apimodelchangesetschangesetidcommit)
-- [4. Delete the changeset using `DELETE /api/model/changesets/{changesetId}`](#4-delete-the-changeset-using-delete-apimodelchangesetschangesetid)
+- 3. Commit the changeset using `POST /api/model/changesets/{changesetId}/commit`
+- 4. Delete the changeset using `DELETE /api/model/changesets/{changesetId}`
 - [More samples](#more-samples)
   - [Escape sequences for full paths](#escape-sequences-for-full-paths)
   - [Escape sequences for double quotes](#escape-sequences-for-double-quotes)

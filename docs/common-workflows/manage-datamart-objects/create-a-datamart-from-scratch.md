@@ -1,6 +1,5 @@
 ---
-title: Sample workflow - Create a datamart from scratch
-sidebar_label: Create a datamart from scratch
+title: Create a datamart from scratch
 description: This workflow sample demonstrates how to create a new Datamart object from scratch through the Modeling service.
 ---
 
@@ -10,7 +9,7 @@ You want to create a new datamart and name it as “Customer in Region Northeast
 
 :::info
 
-An authorization token allows the API layer to hide internal session-related implementations such as managing different project-specific sessions. Once the REST API layer has validated the user's credentials using the specified authentication mode, it initiates a session with the Intelligence server and creates a unique authorization token for the client.
+An authorization token allows the API layer to hide internal session-related implementations such as managing different project-specific sessions. Once the REST API layer has validated the user's credentials using the specified authentication mode, it initiates a session with the Intelligence Server and creates a unique authorization token for the client.
 
 Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
@@ -147,7 +146,7 @@ Sample Curl:
 
 ```bash
 curl -X 'POST' \
-  'http://10.23.38.199:8080/MicroStrategyLibrary/api/model/datamarts' \
+  'https://demo.microstrategy.com/MicroStrategyLibrary/api/model/datamarts' \
   -H 'accept: application/json' \
   -H 'X-MSTR-AuthToken: 7k87j4b9q8mu22ve2tp5lophq7' \
   -H 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754' \
@@ -485,7 +484,7 @@ Sample Curl:
 
 ```bash
 curl -X 'POST' \
-  'http://10.23.38.199:8080/MicroStrategyLibrary/api/model/datamarts?showAdvancedProperties=true' \
+  'https://demo.microstrategy.com/MicroStrategyLibrary/api/model/datamarts?showAdvancedProperties=true' \
   -H 'accept: application/json' \
   -H 'X-MSTR-AuthToken: 4va2i187soo1gbjvbiuk90na6v' \
   -H 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754' \

@@ -20,7 +20,7 @@ You want to get the definition of the `"Call Center in USA"` prompt object. The 
 
 An authorization token allows the API layer to hide internal session-related implementations such as managing different project-specific sessions. Once the REST API layer has validated the user's credentials using the specified authentication mode, it initiates a session with the Intelligence server and creates a unique authorization token for the client.
 
-A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
 
 :::
 
@@ -31,46 +31,6 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
-
-## Create a changeset
-
-Use [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset), to create a changeset.
-
-Sample Request Header
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "4bb7n1dhjo860e7tlpchg57hl"
-"X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST "http://10.23.7.118:8080/MicroStrategyLibrary/api/model/changesets" -H "accept: application/json" -H "X-MSTR-AuthToken: 4bb7n1dhjo860e7tlpchg57hl" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "2A131744C91B4915B54A61FFDC528F62",
-  "dateCreated": "2021-02-20T07:53:00.849722500Z",
-  "dateModified": "2021-02-20T07:53:00.849722500Z",
-  "status": "Ready",
-  "schemaEdit": false,
-  "userName": "MS02_qichen",
-  "mstrUserId": "F82DAA9D40D07ACB1FFE12A81D74CE98",
-  "mstrProjectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-  "userWarehouseLocale": "en-US",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US"
-}
-```
-
-Sample Response Code: 201 (A new changeset is created successfully.)
 
 ## Get the prompt's definition within the changeset
 
@@ -156,27 +116,3 @@ You can view the prompt's definition in the body of the response.
 ```
 
 Response Code: 200 (The prompt's definition is returned successfully.)
-
-## Delete a changeset
-
-Use [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "bbjpsjos3b7ebokq9jdfvknska"
-"X-MSTR-MS-Changeset": "2A131744C91B4915B54A61FFDC528F62"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/8DF1659E9D74484D9D47B9478D4C7D00" -H "accept: \*/\*" -H "X-MSTR-AuthToken: bbjpsjos3b7ebokq9jdfvknska" -H "X-MSTR-MS-Changeset: 2A131744C91B4915B54A61FFDC528F62"
-```
-
-Sample Request Body: Empty
-
-Sample Response Code: 204 (The changeset has been deleted successfully.)
