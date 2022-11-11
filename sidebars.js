@@ -137,6 +137,7 @@ const sidebars = {
             },
           ],
         },
+        "common-workflows/changesets",
         {
           type: "category",
           link: {
@@ -441,6 +442,7 @@ const sidebars = {
             "common-workflows/manage-incremental-refresh-report/retrieve-an-irr-definition-with-advanced-properties",
             "common-workflows/manage-incremental-refresh-report/create-an-irr-with-advanced-properties",
             "common-workflows/manage-incremental-refresh-report/update-irr-advanced-properties",
+            "common-workflows/manage-incremental-refresh-report/retrieve-applicable-properties-of-an-incremental-refresh-report",
           ],
         },
         {
@@ -703,6 +705,7 @@ const sidebars = {
             "common-workflows/manage-datamart-objects/create-a-datamart-from-scratch",
             "common-workflows/manage-datamart-objects/retrieve-a-datamart-definition",
             "common-workflows/manage-datamart-objects/update-a-datamart-definition",
+            "common-workflows/manage-datamart-objects/retrieve-applicable-properties-of-a-datamart",
           ],
         },
         {

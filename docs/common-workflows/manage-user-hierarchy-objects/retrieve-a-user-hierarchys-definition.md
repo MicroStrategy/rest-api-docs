@@ -30,45 +30,11 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-## Create a changeset
+:::tip
 
-Endpoint: [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset).
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
 
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "4bb7n1dhjo860e7tlpchg57hl"
-"X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST "http://10.23.7.118:8080/MicroStrategyLibrary/api/model/changesets" -H "accept: application/json" -H "X-MSTR-AuthToken: 4bb7n1dhjo860e7tlpchg57hl" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "2A131744C91B4915B54A61FFDC528F62",
-  "dateCreated": "2021-06-15T03:04:56.613866Z",
-  "dateModified": "2021-06-15T03:04:56.613916Z",
-  "status": "Ready",
-  "schemaEdit": false,
-  "mstrProjectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-  "mstrUserId": "54F3D26011D2896560009A8E67019608",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userName": "Administrator"
-}
-```
-
-Sample Response Code: 200 (A new changeset is created successfully.)
+:::
 
 ## Get the definition of the specified user hierarchy within a changeset
 

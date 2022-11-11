@@ -24,48 +24,9 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
 
-### 1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset), along with `schemaEdit=true` to commit a changeset with schema manipulations
-
-Sample Request Header:
-
-```http
- "accept": "application/json"
- "X-MSTR-AuthToken": "u8pcsrhnuluouca9q7cfhsnonb"
- "X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
- curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets?schemaEdit=true" -H "accept: application/json" -H "X-MSTR-AuthToken: u8pcsrhnuluouca9q7cfhsnonb" -H "X-MSTR-ProjectID: B19DEDCC11D4E0EFC000EB9495D0F44F"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "7D530B05774048C2A8F0ADA91C54914A",
-  "type": "metadata",
-  "dateCreated": "2022-03-07T05:49:14.619478900Z",
-  "dateModified": "2022-03-07T05:49:14.619478900Z",
-  "status": "Ready",
-  "schemaEdit": true,
-  "userName": "MSTR User",
-  "mstrUserId": "668B60B14EE194EDD56CD6BF374E1F8D",
-  "mstrProjectId": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-  "userWarehouseLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userDateNumberLocale": "en-US"
-}
-```
-
-Sample Response Code 201: 201 (A new changeset is created successfully.)
-
-### 2. Create a transformation object using [POST /api/model/transformations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-createTransformation)
+### Create a transformation object using [POST /api/model/transformations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-createTransformation)
 
 You want to create a `"Last year’s"` transformation object with a transformation attribute based on a normal `"Year"` attribute. This transformation attribute has a form with a `"YEAR_ID - 1"` expression in “tokens” format and a `"LU_YEAR"` lookup table. The transformation’s mapping type is `"one_to_one"`. You must define the `"destinationFolderId"` as `9B25D45A4834A213A70C10B1703D4A77` to save this transformation in the desired folder when you commit the changeset later.
 
@@ -238,65 +199,6 @@ You can view the new transformation’s definition in the body of the response.
 ```
 
 Response Code: 201 (A new transformation is created successfully in the changeset.)
-
-### 3. Commit the changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
-
-Sample Request Header:
-
-```http
- "accept": "application/json"
- "X-MSTR-AuthToken": "u8pcsrhnuluouca9q7cfhsnonb"
- "X-MSTR-MS-Changeset": "7D530B05774048C2A8F0ADA91C54914A"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/7D530B05774048C2A8F0ADA91C54914A/commit" -H "accept: application/json" -H "X-MSTR-AuthToken: u8pcsrhnuluouca9q7cfhsnonb" -H "X-MSTR-MS-Changeset: 7D530B05774048C2A8F0ADA91C54914A"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "7D530B05774048C2A8F0ADA91C54914A",
-  "type": "metadata",
-  "dateCreated": "2022-03-07T07:18:32.834977600Z",
-  "dateModified": "2022-03-07T07:20:08.684406800Z",
-  "status": "Ready",
-  "schemaEdit": true,
-  "userName": "MSTR User",
-  "mstrUserId": "668B60B14EE194EDD56CD6BF374E1F8D",
-  "mstrProjectId": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-  "userWarehouseLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userDateNumberLocale": "en-US"
-}
-```
-
-### 4. Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
-
-Sample Request Header:
-
-```http
- "accept": "application/json"
- "X-MSTR-AuthToken": "u8pcsrhnuluouca9q7cfhsnonb"
- "X-MSTR-MS-Changeset": "7D530B05774048C2A8F0ADA91C54914A"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/7D530B05774048C2A8F0ADA91C54914A" -H "accept: */*" -H "X-MSTR-AuthToken: u8pcsrhnuluouca9q7cfhsnonb" -H "X-MSTR-MS-Changeset: 7D530B05774048C2A8F0ADA91C54914A"
-```
-
-Sample Response Body: Empty
-
-Sample Response Code: 204 (The changeset has been deleted successfully.)
 
 ## More examples
 

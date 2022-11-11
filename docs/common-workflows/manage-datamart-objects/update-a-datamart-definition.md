@@ -1,6 +1,5 @@
 ---
-title: Workflow sample - Update the datamart definition
-sidebar_label: Update a datamart definition
+title: Update the datamart definition
 description: This workflow sample demonstrates how to update a Datamart definition through the Modeling service.
 ---
 
@@ -17,7 +16,7 @@ The target datamart ID is D9DD010946CAFA3B1E2F6684F2D940B1 in the project of B7C
 
 :::info
 
-An authorization token allows the API layer to hide internal session-related implementations such as managing different project-specific sessions. Once the REST API layer has validated the user's credentials using the specified authentication mode, it initiates a session with the Intelligence server and creates a unique authorization token for the client.
+An authorization token allows the API layer to hide internal session-related implementations such as managing different project-specific sessions. Once the REST API layer has validated the user's credentials using the specified authentication mode, it initiates a session with the Intelligence Server and creates a unique authorization token for the client.
 
 Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
@@ -111,7 +110,7 @@ Sample Curl:
 
 ```bash
 curl -X 'PUT' \
-  'http://10.23.38.199:8080/MicroStrategyLibrary/api/model/datamarts/D9DD010946CAFA3B1E2F6684F2D940B1' \
+  'https://demo.microstrategy.com/MicroStrategyLibrary/api/model/datamarts/D9DD010946CAFA3B1E2F6684F2D940B1' \
   -H 'accept: application/json' \
   -H 'X-MSTR-AuthToken: a513l5d5dmoi3q73ebdif6bm8n' \
   -H 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754' \
@@ -372,7 +371,7 @@ Sample Curl:
 
 ```bash
 curl -X 'PUT' \
-  'http://10.23.38.199:8080/MicroStrategyLibrary/api/model/datamarts/D9DD010946CAFA3B1E2F6684F2D940B1?showAdvancedProperties=true' \
+  'https://demo.microstrategy.com/MicroStrategyLibrary/api/model/datamarts/D9DD010946CAFA3B1E2F6684F2D940B1?showAdvancedProperties=true' \
   -H 'accept: application/json' \
   -H 'X-MSTR-AuthToken: a513l5d5dmoi3q73ebdif6bm8n' \
   -H 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754' \

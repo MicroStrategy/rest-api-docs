@@ -181,7 +181,7 @@ You can view the drill map definition in the body of the response.
 
 :::info
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableList) to create a new drill map or update a drill map definition, you should associate all requests with one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md). If you plan to use the response of [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableList) to create a new drill map or update a drill map definition, you should associate all requests with one changeset.
 
 :::
 
@@ -195,48 +195,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-### Step 1: Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
-"X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets" \
--H "accept: application/json" \
--H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" \
--H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "0E9F01172ECF4BA2BB510F7B9FB4F6E8",
-  "dateCreated": "2020-11-17T16:38:09.825650Z",
-  "dateModified": "2020-11-17T16:38:09.825665Z",
-  "status": "Ready",
-  "schemaEdit": false,
-  "userName": "MSTR User",
-  "mstrProjectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-  "mstrUserId": "7FC05A65473CE2FD845CE6A1D3F13233",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US"
-}
-```
-
-Sample Response Code: 201 (A new changeset is created successfully.)
-
-### Step 2: Get the drill map definition within the changeset using [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/DrillMaps/ms-getDrillMap)
+### Get the drill map definition within the changeset using [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/DrillMaps/ms-getDrillMap)
 
 Sample Request Header:
 
@@ -260,28 +219,3 @@ curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/drill
 [Sample Response Body](#sample-response-body)
 
 Response Code: 200
-
-### Step 3: Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changeset/ms-deleteChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
-"X-MSTR-MS-Changeset": "0E9F01172ECF4BA2BB510F7B9FB4F6E8"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/0E9F01172ECF4BA2BB510F7B9FB4F6E8" \
--H "accept: */*" \
--H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" \
--H "X-MSTR-MS-Changeset: 0E9F01172ECF4BA2BB510F7B9FB4F6E8"
-```
-
-Sample Response Body: Empty
-
-Sample Response Code: 204 (The changeset has been deleted successfully.)

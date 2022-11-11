@@ -91,7 +91,7 @@ In this workflow sample, you want to get the definitions of all available tables
 
 :::tip
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of [GET /api/model/tables](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableList) to create a new table or update a specific table's definitions, you should associate all requests with one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md). If you plan to use the response of [GET /api/model/tables](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableList) to create a new table or update a specific table's definitions, you should associate all requests with one changeset.
 
 :::
 
@@ -103,132 +103,72 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset).
+Get the tables' definitions within a changeset using [GET /api/model/tables/{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
 
-   Sample Request Header:
+Sample Request Header
 
-   ```http
-   "accept": "application/json"
-   "X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
-   "X-MSTR-ProjectID": "B19DEDCC11D4E0EFC000EB9495D0F44F"
-   ```
+```http
+"accept": "application/json"
+"X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
+"X-MSTR-MS-Changeset": "0E9F01172ECF4BA2BB510F7B9FB4F6E8"
+```
 
-   Sample Request Body: Empty
+Sample Request Body: Empty
 
-   Sample Curl:
+Sample Curl:
 
-   ```bash
-   curl -X POST "https://10.23.9.111:8080/MicroStrategyLibrary/api/model/changesets" -H "accept: application/json" -H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" -H "X-MSTR-ProjectID: B19DEDCC11D4E0EFC000EB9495D0F44F"
-   ```
+```bash
+curl -X GET "http://10.23.9.111:8080/MicroStrategyLibrary/api/model/tables/862780DC499A14D74FEC7EB2EF317DA2" -H "accept: application/json" -H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" -H "X-MSTR-MS-Changeset: 0E9F01172ECF4BA2BB510F7B9FB4F6E8"
+```
 
-   Sample Response Body
+Sample Response Body:
 
-   ```json
-   {
-     "id": "0E9F01172ECF4BA2BB510F7B9FB4F6E8",
-     "dateCreated": "2020-11-17T16:38:09.825650Z",
-     "dateModified": "2020-11-17T16:38:09.825665Z",
-     "status": "Ready",
-     "schemaEdit": false,
-     "userName": "MSTR User",
-     "mstrProjectId": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-     "mstrUserId": "7FC05A65473CE2FD845CE6A1D3F13233",
-     "userDateNumberLocale": "en-US",
-     "userMetadataLocale": "en-US",
-     "userWarehouseLocale": "en-US"
-   }
-   ```
+You can view the tables' definitions in the body of the response.
 
-   Sample Response Code: 201 (A new changeset is created successfully.)
+```json
+{
+  "offset": 0,
+  "limit": -1,
+  "total": 73,
+  "tables": [
+    {
+      "information": {
+        "dateCreated": "2001-01-02T20:47:18.000Z",
+        "dateModified": "2012-06-06T12:13:04.000Z",
+        "versionId": "256D148442065F43BDC42FBB79438A3F",
+        "primaryLocale": "en-US",
+        "objectId": "8D67932011D3E4981000E787EC6DE8A4",
+        "subType": "table_partition_wh",
+        "name": "PMT_INVENTORY"
+      }
+    },
+    {
+      "information": {
+        "dateCreated": "2001-01-02T20:47:10.000Z",
+        "dateModified": "2012-06-06T12:12:35.000Z",
+        "versionId": "215230EB4F7089CD0261C1AD12D621AD",
+        "primaryLocale": "en-US",
+        "objectId": "8D67932C11D3E4981000E787EC6DE8A4",
+        "subType": "logical_table",
+        "name": "INVENTORY_ORDERS"
+      }
+    },
+    {
+      "information": {
+        "dateCreated": "2001-01-02T20:47:09.000Z",
+        "dateModified": "2012-06-06T12:12:35.000Z",
+        "versionId": "215230EB4F7089CD0261C1AD12D621AD",
+        "primaryLocale": "en-US",
+        "objectId": "8D67933211D3E4981000E787EC6DE8A4",
+        "subType": "logical_table",
+        "name": "LU_CALL_CTR"
+      }
+    }
+  ]
+}
+```
 
-1. Get the tables' definitions within a changeset using [GET /api/model/tables/{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
-
-   Sample Request Header
-
-   ```http
-   "accept": "application/json"
-   "X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
-   "X-MSTR-MS-Changeset": "0E9F01172ECF4BA2BB510F7B9FB4F6E8"
-   ```
-
-   Sample Request Body: Empty
-
-   Sample Curl:
-
-   ```bash
-   curl -X GET "http://10.23.9.111:8080/MicroStrategyLibrary/api/model/tables/862780DC499A14D74FEC7EB2EF317DA2" -H "accept: application/json" -H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" -H "X-MSTR-MS-Changeset: 0E9F01172ECF4BA2BB510F7B9FB4F6E8"
-   ```
-
-   Sample Response Body:
-
-   You can view the tables' definitions in the body of the response.
-
-   ```json
-   {
-     "offset": 0,
-     "limit": -1,
-     "total": 73,
-     "tables": [
-       {
-         "information": {
-           "dateCreated": "2001-01-02T20:47:18.000Z",
-           "dateModified": "2012-06-06T12:13:04.000Z",
-           "versionId": "256D148442065F43BDC42FBB79438A3F",
-           "primaryLocale": "en-US",
-           "objectId": "8D67932011D3E4981000E787EC6DE8A4",
-           "subType": "table_partition_wh",
-           "name": "PMT_INVENTORY"
-         }
-       },
-       {
-         "information": {
-           "dateCreated": "2001-01-02T20:47:10.000Z",
-           "dateModified": "2012-06-06T12:12:35.000Z",
-           "versionId": "215230EB4F7089CD0261C1AD12D621AD",
-           "primaryLocale": "en-US",
-           "objectId": "8D67932C11D3E4981000E787EC6DE8A4",
-           "subType": "logical_table",
-           "name": "INVENTORY_ORDERS"
-         }
-       },
-       {
-         "information": {
-           "dateCreated": "2001-01-02T20:47:09.000Z",
-           "dateModified": "2012-06-06T12:12:35.000Z",
-           "versionId": "215230EB4F7089CD0261C1AD12D621AD",
-           "primaryLocale": "en-US",
-           "objectId": "8D67933211D3E4981000E787EC6DE8A4",
-           "subType": "logical_table",
-           "name": "LU_CALL_CTR"
-         }
-       }
-     ]
-   }
-   ```
-
-   Response Code: 200 (The tables' definitions are returned successfully.)
-
-1. Delete a changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
-
-   Sample Request Header:
-
-   ```http
-   "accept": "application/json"
-   "X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
-   "X-MSTR-MS-Changeset": "0E9F01172ECF4BA2BB510F7B9FB4F6E8"
-   ```
-
-   Sample Request Body: Empty
-
-   Sample Curl:
-
-   ```bash
-   curl -X DELETE "https://10.23.9.111:8080/MicroStrategyLibrary/api/model/changesets/0E9F01172ECF4BA2BB510F7B9FB4F6E8" -H "accept: */*" -H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" -H "X-MSTR-MS-Changeset: 0E9F01172ECF4BA2BB510F7B9FB4F6E8"
-   ```
-
-   Sample Response Body: Empty
-
-   Sample Response Code: 204 (The changeset has been deleted successfully.)
+Response Code: 200 (The tables' definitions are returned successfully.)
 
 ### Retrieve a table's definition with only specified fields
 

@@ -14,7 +14,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow sample demonstrates how to retrieve a custom group’s definition within a changeset.
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of `GET /api/model/customGroups/{customGroupsId}` to create a new custom group or update the custom group's definition, it is recommended to associate all requests to one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md). If you plan to use the response of `GET /api/model/customGroups/{customGroupsId}` to create a new custom group or update the custom group's definition, it is recommended to associate all requests to one changeset.
 
 You want to get the definition of the `"Age Group"` custom group object. The object ID of the custom group is `085CBF314703A71E926EA187C2002969` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
@@ -25,46 +25,6 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
-
-## Create a changeset
-
-Endpoint: [POST /api/model/changesets.](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
-"X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets" -H "accept: application/json" -H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "0E9F01172ECF4BA2BB510F7B9FB4F6E8",
-  "dateCreated": "2020-11-17T16:38:09.825650Z",
-  "dateModified": "2020-11-17T16:38:09.825665Z",
-  "status": "Ready",
-  "schemaEdit": false,
-  "userName": "MSTR User",
-  "mstrProjectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-  "mstrUserId": "7FC05A65473CE2FD845CE6A1D3F13233",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US"
-}
-```
-
-Sample Response Code: 201 (A new changeset is created successfully.)
 
 ## Get a custom group's definition within a changeset
 
@@ -309,26 +269,3 @@ You can view the custom group's definition in the body of the response.
 ```
 
 Response Code: 200 (The custom group's definition is returned successfully.)
-
-## Delete a changeset
-
-Endpoint: [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/0E9F01172ECF4BA2BB510F7B9FB4F6E8" -H "accept: application/json" -H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch"
-```
-
-Sample Response Body: Empty
-
-Sample Response Code: 204 (The changeset is deleted successfully.)

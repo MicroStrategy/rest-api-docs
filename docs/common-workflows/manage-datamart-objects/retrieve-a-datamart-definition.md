@@ -1,6 +1,5 @@
 ---
-title: Workflow sample - Retrieve a datamart definition
-sidebar_label: Retrieve a datamart definition
+title: Retrieve a datamart definition
 description: This topic covers several workflows to retrieve an Datamart definition.
 ---
 
@@ -15,7 +14,7 @@ You want to get the definition of the “Customer" datamart object as below scre
 
 :::info
 
-An authorization token allows the API layer to hide internal session-related implementations such as managing different project-specific sessions. Once the REST API layer has validated the user's credentials using the specified authentication mode, it initiates a session with the Intelligence server and creates a unique authorization token for the client.
+An authorization token allows the API layer to hide internal session-related implementations such as managing different project-specific sessions. Once the REST API layer has validated the user's credentials using the specified authentication mode, it initiates a session with the Intelligence Server and creates a unique authorization token for the client.
 
 Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
@@ -41,7 +40,7 @@ Sample Curl:
 
 ```bash
 curl -X 'GET' \
-  'http://10.23.38.199:8080/MicroStrategyLibrary/api/model/datamarts/CEA3C6FC4E6749C8F8B19580D16D2443' \
+  'https://demo.microstrategy.com/MicroStrategyLibrary/api/model/datamarts/CEA3C6FC4E6749C8F8B19580D16D2443' \
   -H 'accept: application/json' \
   -H 'X-MSTR-AuthToken: 767tgudpermlvic06qb4mauv9k' \
   -H 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754'
@@ -216,7 +215,7 @@ Sample Curl:
 
 ```bash
 curl -X 'GET' \
-  'http://10.23.38.199:8080/MicroStrategyLibrary/api/model/datamarts/CEA3C6FC4E6749C8F8B19580D16D2443?showFilterTokens=true' \
+  'https://demo.microstrategy.com/MicroStrategyLibrary/api/model/datamarts/CEA3C6FC4E6749C8F8B19580D16D2443?showFilterTokens=true' \
   -H 'accept: application/json' \
   -H 'X-MSTR-AuthToken: n64eqd6mi28ma3vp8tmf8b1jdg' \
   -H 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754'
@@ -449,7 +448,7 @@ Sample Curl:
 
 ```bash
 curl -X 'GET' \
-  'http://10.23.38.199:8080/MicroStrategyLibrary/api/model/datamarts/B017E2E54F4967B2C8A6759459248BE8?showExpressionAs=tokens' \
+  'https://demo.microstrategy.com/MicroStrategyLibrary/api/model/datamarts/B017E2E54F4967B2C8A6759459248BE8?showExpressionAs=tokens' \
   -H 'accept: application/json' \
   -H 'X-MSTR-AuthToken: la1loq0l5700p1lm95gb08ktb6' \
   -H 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754'
@@ -694,7 +693,7 @@ Sample Curl:
 
 ```bash
 curl -X 'GET' \
-  'http://10.23.38.199:8080/MicroStrategyLibrary/api/model/datamarts/CEA3C6FC4E6749C8F8B19580D16D2443?showAdvancedProperties=true' \
+  'https://demo.microstrategy.com/MicroStrategyLibrary/api/model/datamarts/CEA3C6FC4E6749C8F8B19580D16D2443?showAdvancedProperties=true' \
   -H 'accept: application/json' \
   -H 'X-MSTR-AuthToken: n64eqd6mi28ma3vp8tmf8b1jdg' \
   -H 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754'

@@ -103,56 +103,11 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::info
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of [GET /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails) to update the table’s prompts, it is recommended to associate all requests to one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md). If you plan to use the response of [GET /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails) to update the table’s prompts, it is recommended to associate all requests to one changeset.
 
 :::
 
-### Step 1: Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "qu6j11maseap1gc67mrsf7ivdq"
-"X-MSTR-ProjectID": "6AB8DFFE4B99B7F6FB0E94AD176C4A28"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST 'http://10.23.38.62:8080/MicroStrategyLibrary/api/model/changesets?schemaEdit=false' \
--H 'Content-Type: application/json' \
--H 'X-MSTR-ProjectID: 6AB8DFFE4B99B7F6FB0E94AD176C4A28' \
--H 'X-MSTR-AuthToken: qu6j11maseap1gc67mrsf7ivdq' \
--H 'Cookie: JSESSIONID=741610581756E9B5B624E71E7FA84DD3; iSession=qu6j11maseap1gc67mrsf7ivdq' \
---data-raw ''
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "99B0CDA74BD6480DAA4C164FC361F4F0",
-  "type": "metadata",
-  "dateCreated": "2022-06-08T03:39:49.842053Z",
-  "dateModified": "2022-06-08T03:39:49.842072Z",
-  "status": "Ready",
-  "schemaEdit": false,
-  "mstrUserId": "54F3D26011D2896560009A8E67019608",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userDisplayLocale": "en-US",
-  "mstrProjectId": "6AB8DFFE4B99B7F6FB0E94AD176C4A28",
-  "userName": "Administrator"
-}
-```
-
-Sample Response Code: 201 (A new changeset is created successfully.)
-
-### Step 2: Get a table's prompt within a changeset using [GET /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails)
+### Get a table's prompt within a changeset using [GET /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails)
 
 Sample Request Header:
 
@@ -202,26 +157,3 @@ You can view the table’s definition in the body of the response.
 ```
 
 Sample Response Code: 200 (Table's prompt is returned successfully.)
-
-### Step 3: Delete a changeset using [DELETE /api/model/changeset/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "qu6j11maseap1gc67mrsf7ivdq"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X DELETE 'http://10.23.38.62:8080/MicroStrategyLibrary/api/model/changesets/99B0CDA74BD6480DAA4C164FC361F4F0' \
--H 'X-MSTR-AuthToken: qu6j11maseap1gc67mrsf7ivdq' \
--H 'Cookie: JSESSIONID=741610581756E9B5B624E71E7FA84DD3; iSession=qu6j11maseap1gc67mrsf7ivdq'
-```
-
-Sample Response Body: Empty
-
-Sample Response Code: 204 (The changeset has been deleted successfully.)

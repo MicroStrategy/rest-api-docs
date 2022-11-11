@@ -121,55 +121,11 @@ Since calendar objects are configuration objects, you must set the project ID as
 
 :::tip
 
-A changeset maintains an indivisible group of creations or modifications on modeling objects. If you plan to use the response of GET /api/model/calendars to create a new calendar or update the calendars' definitions, it is recommended to associate all requests to one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md). If you plan to use the response of GET /api/model/calendars to create a new calendar or update the calendars' definitions, it is recommended to associate all requests to one changeset.
 
 :::
 
-### 1. Create a changeset
-
-Endpoint: [`POST /api/model/changesets`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset).
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "4bb7n1dhjo860e7tlpchg57hl"
-"X-MSTR-ProjectID": ""
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X 'POST' \
-'https://env-294821.customer.cloud.microstrategy.com/MicroStrategyLibrary/api/model/changesets?schemaEdit=false' \
--H 'accept: application/json' \
--H 'X-MSTR-AuthToken: 4bb7n1dhjo860e7tlpchg57hl' \
--H 'X-MSTR-ProjectID:  ' \
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "2A131744C91B4915B54A61FFDC528F62",
-  "dateCreated": "2021-06-15T03:04:56.613866Z",
-  "dateModified": "2021-06-15T03:04:56.613916Z",
-  "status": "Ready",
-  "schemaEdit": false,
-  "mstrUserId": "4bb7n1dhjo860e7tlpchg57hl",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userName": "Administrator",
-  "mstrProjectId": "38A062302D4411D28E71006008960167"
-}
-```
-
-Sample Response Code: 201 (A new changeset is created successfully.)
-
-### 2. Get the calendars' definitions within a changeset
+### Get the calendars' definitions within a changeset
 
 Endpoint: [`GET /api/model/calendars`](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/calendars)
 
@@ -274,30 +230,6 @@ You can view the calendars' definitions in the body of the response. In this sam
 ```
 
 Response Code: 200 (calendars' definitions are returned successfully)
-
-### 3. Delete a changeset
-
-Endpoint: [`DELETE /api/model/changesets/{ChangesetId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "4bb7n1dhjo860e7tlpchg57hl"
-"X-MSTR-MS-Changeset": "2A131744C91B4915B54A61FFDC528F62"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/2A131744C91B4915B54A61FFDC528F62" -H "accept: */*" -H "X-MSTR-AuthToken: 4bb7n1dhjo860e7tlpchg57hl" -H "X-MSTR-MS-Changeset: 2A131744C91B4915B54A61FFDC528F62"
-```
-
-Sample Response Body: Empty
-
-Sample Response Code: 204 (The changeset has been deleted successfully.)
 
 ## 3. Retrieve a list of calendars' definitions with a specified SubType
 
