@@ -8,7 +8,7 @@ A changeset maintains an indivisible group of creations or modifications on mode
 
 :::info
 
-If the changeset is used to create or update schema objects through the corresponding APIs (tables, facts, attributes, hierarchies, transformation, partitions, and functions). The `"schemaEdit"` query is required to be `true` during the creation of the changeset through the API.
+If the changeset is used to create or update schema objects through the corresponding APIs (tables, facts, attributes, hierarchies, transformation, partitions, and functions). The `"schemaEdit"` query is required to be `true` during the creation of the changeset through the API. After committing the schema changes, you should also call [POST /api/model/schema/reload](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Schema/ms-schemaReload) to reload the schema.
 
 Some modeling APIs requires either a `X-MSTR-ProjectID` (project ID) or `X-MSTR-MS-Changeset` (changeset ID) in the header. The project ID is required to return an object's definition in the metadata. The changeset ID is required to return an objects's definition within a specific changeset. To execute the request, either the project ID or changeset ID needs to be provided. If both are provided, only the changeset ID is used.
 
@@ -21,6 +21,7 @@ The general workflow for using [changesets APIs](https://demo.microstrategy.com/
 1. [Creating a changeset](#create-a-changeset)
 1. [Making the modeling APIs call to get, create, or modify objects (i.e. filters, facts, attributes, etc.)](#make-a-modeling-api-call)
 1. [Committing the changeset](#commit-a-changeset)
+1. [Reload the schema](#reload-the-schema). This is needed only when `"schemaEdit"` is `true`.
 1. [Deleting the changeset](#delete-the-changeset)
 
 ### Create a changeset
@@ -422,7 +423,7 @@ Response Code: 201 (A new attribute is created successfully in the changeset.)
 
 ### Commit a changeset
 
-Use [`POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).`
+Use [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
 
 Sample Request Header:
 
@@ -431,6 +432,8 @@ Sample Request Header:
 "X-MSTR-AuthToken": "o0ak9privdo27nfo798j40m8aa"
 "X-MSTR-MS-Changeset": "805C5F3FB78A436FAE37C943471C24AD"
 ```
+
+Sample Request Body: Empty
 
 Sample Curl:
 
@@ -457,6 +460,42 @@ Sample Response Body:
 ```
 
 Sample Response Code: 201 (The changeset is committed successfully.)
+
+### Reload the schema
+
+Use [POST /api/model/schema/reload](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Schema/ms-schemaReload).
+
+This is needed only when `"schemaEdit"` is `true`.
+
+Sample Request Header:
+
+```http
+"accept": "application/json"
+"X-MSTR-AuthToken": "o0ak9privdo27nfo798j40m8aa"
+"X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
+```
+
+Sample Request Body:
+
+```json
+{
+  "updateTypes": ["table_key", "entry_level", "logical_size", "clear_element_cache"]
+}
+```
+
+Sample Curl:
+
+```bash
+curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/schema/reload" -H "accept: application/json" -H "X-MSTR-AuthToken: o0ak9privdo27nfo798j40m8aa" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754" -H "Content-Type: application/json" -d '{"updateTypes": ["table_key","entry_level,"logical_size","clear_element_cache"]}'
+```
+
+Sample Response Body:
+
+```json
+{}
+```
+
+Sample Response Code: 200 (The schema reload (synchronous call) executes successfully.)
 
 ### Delete the changeset
 

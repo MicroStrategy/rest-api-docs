@@ -25,6 +25,14 @@ The steps below illustrate the workflow for defining a dataset with one or more 
 1. [Delete the upload session](#delete-the-upload-session). Call `DELETE /api/datasets/{datasetId}/uploadSessions/{uploadSessionsId}` to end the upload session—either because the dataset has been published or to cancel the publish action before it has finished.
 1. [Log out](#log-out). Call `POST /api/logout` to close the authenticated user's session.
 
+:::info
+
+You can't have concurrent upload sessions.
+
+There is no limit of rows. But it is recommended to split data into multiple `PUT /api/datasets/{datasetId}/uploadSessions/{uploadSessionsId}` requests if the data size is larger than 50MB.
+
+:::
+
 A detailed explanation of each step, with code samples, is provided below:
 
 ## Log in
