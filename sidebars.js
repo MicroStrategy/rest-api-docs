@@ -740,6 +740,19 @@ const sidebars = {
           type: "category",
           link: {
             type: "doc",
+            id: "common-workflows/manage-transaction-report-objects/manage-transaction-report-objects",
+          },
+          label: "Manage transaction report objects",
+          items: [
+            "common-workflows/manage-transaction-report-objects/create-a-transaction-report",
+            "common-workflows/manage-transaction-report-objects/retrieve-transaction-report-definition",
+            "common-workflows/manage-transaction-report-objects/update-transaction-report-definition",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
             id: "common-workflows/manage-content-group-objects/manage-content-group-objects",
           },
           label: "Manage content group objects",
