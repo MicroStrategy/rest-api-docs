@@ -169,7 +169,20 @@ The following sample is part of the complete response body.
     "value": false
   },
   "appendInfoForEmailDelivery": {
-    "value": ["recipient_name", "owner_name", "report_document_name", "project_name", "delivery_method", "schedule", "subscription_name", "delivery_status", "date", "time", "email_address", "error_message"]
+    "value": [
+      "recipient_name",
+      "owner_name",
+      "report_document_name",
+      "project_name",
+      "delivery_method",
+      "schedule",
+      "subscription_name",
+      "delivery_status",
+      "date",
+      "time",
+      "email_address",
+      "error_message"
+    ]
   },
   "cacheEncryptionLevel": {
     "value": 0
@@ -240,7 +253,20 @@ The following sample is part of the complete response body. A complete list of p
     "value": true
   },
   "appendInfoForEmailDelivery": {
-    "value": ["recipient_name", "owner_name", "report_document_name", "project_name", "delivery_method", "schedule", "subscription_name", "delivery_status", "date", "time", "email_address", "error_message"]
+    "value": [
+      "recipient_name",
+      "owner_name",
+      "report_document_name",
+      "project_name",
+      "delivery_method",
+      "schedule",
+      "subscription_name",
+      "delivery_status",
+      "date",
+      "time",
+      "email_address",
+      "error_message"
+    ]
   },
   "cacheEncryptionLevel": {
     "value": 1
@@ -338,7 +364,20 @@ The following sample is part of the complete response body. A complete list of p
     "value": true
   },
   "appendInfoForEmailDelivery": {
-    "value": ["recipient_name", "owner_name", "report_document_name", "project_name", "delivery_method", "schedule", "subscription_name", "delivery_status", "date", "time", "email_address", "error_message"]
+    "value": [
+      "recipient_name",
+      "owner_name",
+      "report_document_name",
+      "project_name",
+      "delivery_method",
+      "schedule",
+      "subscription_name",
+      "delivery_status",
+      "date",
+      "time",
+      "email_address",
+      "error_message"
+    ]
   },
   "cacheEncryptionLevel": {
     "value": 1

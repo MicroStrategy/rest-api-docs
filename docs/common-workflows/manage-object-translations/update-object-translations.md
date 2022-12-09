@@ -1,5 +1,5 @@
 ---
-title: Workflow sample - update object's translations
+title: Workflow sample - Update object's translations
 sidebar_label: Update object's translations
 description: This topic covers workflow for updating object's translations.
 ---

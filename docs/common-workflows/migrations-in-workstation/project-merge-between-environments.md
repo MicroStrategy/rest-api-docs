@@ -66,7 +66,11 @@ Provide the correct `environment` and `project` in `packageInfo` of the request 
     },
     "tocView": {
       "settings": {
-        "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level", "update_schema_logical_info"],
+        "updateSchema": [
+          "recal_table_logical_size",
+          "recal_table_keys_fact_entry_level",
+          "update_schema_logical_info"
+        ],
         "aclOnReplacingObjects": "use_existing",
         "aclOnNewObjects": ["keep_acl_as_source_object"],
         "validateDependencies": true,
@@ -326,7 +330,11 @@ Sample Response Body:
     "existing": true,
     "tocView": {
       "settings": {
-        "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level", "update_schema_logical_info"],
+        "updateSchema": [
+          "recal_table_logical_size",
+          "recal_table_keys_fact_entry_level",
+          "update_schema_logical_info"
+        ],
         "aclOnReplacingObjects": "use_existing",
         "aclOnNewObjects": ["keep_acl_as_source_object"],
         "validateDependencies": true,
@@ -430,7 +438,11 @@ Copy the response body from step 4 and change `"replicated": false"`, to `true`.
     "existing": true,
     "tocView": {
       "settings": {
-        "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level", "update_schema_logical_info"],
+        "updateSchema": [
+          "recal_table_logical_size",
+          "recal_table_keys_fact_entry_level",
+          "update_schema_logical_info"
+        ],
         "aclOnReplacingObjects": "use_existing",
         "aclOnNewObjects": ["keep_acl_as_source_object"],
         "validateDependencies": true,
@@ -548,7 +560,11 @@ The value of `packageInfo.status` could be `creating`, and you should keep pulli
     "existing": true,
     "tocView": {
       "settings": {
-        "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level", "update_schema_logical_info"],
+        "updateSchema": [
+          "recal_table_logical_size",
+          "recal_table_keys_fact_entry_level",
+          "update_schema_logical_info"
+        ],
         "aclOnReplacingObjects": "use_existing",
         "aclOnNewObjects": ["keep_acl_as_source_object"],
         "validateDependencies": true,

@@ -137,6 +137,7 @@ const sidebars = {
             },
           ],
         },
+        "common-workflows/changesets",
         {
           type: "category",
           link: {
@@ -342,6 +343,12 @@ const sidebars = {
             "common-workflows/manage-consolidation-objects/update-a-consolidation-object",
           ],
         },
+        "common-workflows/manage-languages",
+        {
+          type: "doc",
+          id: "common-workflows/manage-caches",
+          label: "Purge object and element caches",
+        },
         {
           type: "category",
           link: {
@@ -417,7 +424,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-runtime-objects/manage-runtimes",
           },
-          label: "Manage Runtimes",
+          label: "Manage runtimes",
           items: [
             "common-workflows/manage-runtime-objects/create-a-runtime",
             "common-workflows/manage-runtime-objects/update-a-runtime",
@@ -440,6 +447,7 @@ const sidebars = {
             "common-workflows/manage-incremental-refresh-report/retrieve-an-irr-definition-with-advanced-properties",
             "common-workflows/manage-incremental-refresh-report/create-an-irr-with-advanced-properties",
             "common-workflows/manage-incremental-refresh-report/update-irr-advanced-properties",
+            "common-workflows/manage-incremental-refresh-report/retrieve-applicable-properties-of-an-incremental-refresh-report",
           ],
         },
         {
@@ -479,7 +487,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-calendar-objects/manage-calendar-objects",
           },
-          label: "Manage Calendar Objects",
+          label: "Manage calendar objects",
           items: [
             "common-workflows/manage-calendar-objects/retrieve-a-list-of-calendars-definitions",
             "common-workflows/manage-calendar-objects/retrieve-a-calendar-definition",
@@ -675,6 +683,10 @@ const sidebars = {
             "common-workflows/datasource-management/add-and-remove-datasource-from-project",
             "common-workflows/datasource-management/update-job-priorities-for-datasource",
             "common-workflows/datasource-management/delete-a-datasource",
+            "common-workflows/datasource-management/get-datasource-applicable-advanced-properties",
+            "common-workflows/datasource-management/get-datasource-with-advanced-properties",
+            "common-workflows/datasource-management/update-datasoure-advanced-property",
+            "common-workflows/datasource-management/convert-connection-string-from-dsn-to-dsnless-for-a-datasource",
           ],
         },
         {
@@ -696,12 +708,13 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-datamart-objects/manage-datamart-objects",
           },
-          label: "Manage Datamart Objects",
+          label: "Manage datamart objects",
           items: [
             "common-workflows/manage-datamart-objects/create-a-datamart-from-a-source-report",
             "common-workflows/manage-datamart-objects/create-a-datamart-from-scratch",
             "common-workflows/manage-datamart-objects/retrieve-a-datamart-definition",
             "common-workflows/manage-datamart-objects/update-a-datamart-definition",
+            "common-workflows/manage-datamart-objects/retrieve-applicable-properties-of-a-datamart",
           ],
         },
         {
@@ -710,7 +723,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/manage-report-objects/manage-report-objects",
           },
-          label: "Manage Report Objects",
+          label: "Manage report objects",
           items: [
             "common-workflows/manage-report-objects/retrieve-a-reports-definition",
             "common-workflows/manage-report-objects/create-a-new-report",
@@ -721,6 +734,47 @@ const sidebars = {
             "common-workflows/manage-report-objects/execute-report",
             "common-workflows/manage-report-objects/put-a-derived-element-in-report",
             "common-workflows/manage-report-objects/retrieve-applicable-properties-of-a-report",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
+            id: "common-workflows/manage-content-group-objects/manage-content-group-objects",
+          },
+          label: "Manage content group objects",
+          items: [
+            "common-workflows/manage-content-group-objects/retrieve-a-content-group",
+            "common-workflows/manage-content-group-objects/retrieve-all-content-groups",
+            "common-workflows/manage-content-group-objects/create-a-content-group",
+            "common-workflows/manage-content-group-objects/update-a-content-group",
+            "common-workflows/manage-content-group-objects/retrieve-contents-of-an-existing-content-group",
+            "common-workflows/manage-content-group-objects/update-contents-of-an-existing-content-group",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
+            id: "common-workflows/project-advanced-properties-management/project-advanced-properties-management",
+          },
+          label: "Manage project advanced properties",
+          items: [
+            "common-workflows/project-advanced-properties-management/get-project-applicable-advanced-properties",
+            "common-workflows/project-advanced-properties-management/get-project-with-advanced-properties",
+            "common-workflows/project-advanced-properties-management/update-project-advanced-property",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
+            id: "common-workflows/manage-application-objects/manage-application-objects",
+          },
+          label: "Manage application objects",
+          items: [
+            "common-workflows/manage-application-objects/manage-application-general-settings",
+            "common-workflows/manage-application-objects/manage-application-customized-emails",
           ],
         },
       ],

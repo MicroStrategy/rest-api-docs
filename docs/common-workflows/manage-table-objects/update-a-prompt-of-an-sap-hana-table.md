@@ -30,7 +30,7 @@ You want to update the prompt of a table. The object ID of the table is `84AF251
 
 :::info
 
-A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
 
 `schemaEdit` is required to be `true` if this changeset ID is used to create or update schema objects through the corresponding APIs (tables, facts, attributes, hierarchies, transformation, partitions, and functions).
 
@@ -38,52 +38,7 @@ A changeset is required for creating and updating objects (such as filters, fact
 
 ## Workflow
 
-### Step 1: Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "sidv53fj5kagqnl544j8krdl05"
-"X-MSTR-ProjectID": "6AB8DFFE4B99B7F6FB0E94AD176C4A28"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST 'http://10.23.38.62:8080/MicroStrategyLibrary/api/model/changesets?schemaEdit=true' \
--H 'Content-Type: application/json' \
--H 'X-MSTR-ProjectID: 6AB8DFFE4B99B7F6FB0E94AD176C4A28' \
--H 'X-MSTR-AuthToken: sidv53fj5kagqnl544j8krdl05' \
--H 'Cookie: JSESSIONID=1D94C2B7A595054194E6342EED4B2E29; iSession=sidv53fj5kagqnl544j8krdl05' \
---data-raw ''
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "EC74E082B9A4428BACB5A33970312311",
-  "type": "metadata",
-  "dateCreated": "2022-06-08T05:33:36.613900Z",
-  "dateModified": "2022-06-08T05:33:36.613918Z",
-  "status": "Ready",
-  "schemaEdit": true,
-  "mstrUserId": "54F3D26011D2896560009A8E67019608",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userDisplayLocale": "en-US",
-  "mstrProjectId": "6AB8DFFE4B99B7F6FB0E94AD176C4A28",
-  "userName": "Administrator"
-}
-```
-
-Sample Response Code: 201 (A new changeset is created successfully.)
-
-### Step 2: Update a table prompt with [PUT /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-putTablePrompt)
+### Update a table prompt with [PUT /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-putTablePrompt)
 
 The prompt you are updating must already be in the prompt list of the current table.
 
@@ -158,65 +113,3 @@ You can view the new prompt definition in the body of the response.
 ```
 
 Response Code: 201 (The prompt of the table is updated successfully in the changeset.)
-
-### Step 3: Commit a changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "sidv53fj5kagqnl544j8krdl05"
-```
-
-Sample Curl:
-
-```bash
-curl -X POST 'http://10.23.38.62:8080/MicroStrategyLibrary/api/model/changesets/EC74E082B9A4428BACB5A33970312311/commit' \
--H 'X-MSTR-AuthToken: sidv53fj5kagqnl544j8krdl05' \
--H 'Cookie: JSESSIONID=1D94C2B7A595054194E6342EED4B2E29; iSession=sidv53fj5kagqnl544j8krdl05'
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "EC74E082B9A4428BACB5A33970312311",
-  "type": "metadata",
-  "dateCreated": "2022-06-08T05:33:36.613900Z",
-  "dateModified": "2022-06-08T05:41:58.543362Z",
-  "status": "Ready",
-  "schemaEdit": true,
-  "mstrUserId": "54F3D26011D2896560009A8E67019608",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userDisplayLocale": "en-US",
-  "mstrProjectId": "6AB8DFFE4B99B7F6FB0E94AD176C4A28",
-  "userName": "Administrator"
-}
-```
-
-Sample Response Code: 201 (The changeset is committed successfully.)
-
-### Step 4: Delete a changeset using [DELETE /api/model/changeset/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "sidv53fj5kagqnl544j8krdl05"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X DELETE 'http://10.23.38.62:8080/MicroStrategyLibrary/api/model/changesets/EC74E082B9A4428BACB5A33970312311' \
--H 'X-MSTR-AuthToken: sidv53fj5kagqnl544j8krdl05' \
--H 'Cookie: JSESSIONID=1D94C2B7A595054194E6342EED4B2E29; iSession=sidv53fj5kagqnl544j8krdl05'
-```
-
-Sample Response Body: Empty
-
-Sample Response Code: 204 (The changeset has been deleted successfully.)

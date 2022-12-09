@@ -22,7 +22,11 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-1. [Create a changeset](./retrieve-a-user-hierarchys-definition.md) using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset).
+:::tip
+
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
+
+:::
 
 1. Get the list of available user hierarchies within the changeset using [GET /api/model/hierarchies](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Hierarchies/ms-getHierarchies).
 

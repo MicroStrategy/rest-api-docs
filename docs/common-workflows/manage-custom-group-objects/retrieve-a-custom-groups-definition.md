@@ -348,7 +348,13 @@ You can view the custom group's definition in the body of the response.
               "name": "Running Revenue Contribution to All Customers Abs."
             },
             "bandMetricFunction": "value",
-            "bandNames": ["Top Quintile", "Second Quintile", "Third Quintile", "Fourth Quintile", "Bottom Quintile"],
+            "bandNames": [
+              "Top Quintile",
+              "Second Quintile",
+              "Third Quintile",
+              "Fourth Quintile",
+              "Bottom Quintile"
+            ],
             "start": {
               "type": "double",
               "value": "0.0"

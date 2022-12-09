@@ -14,10 +14,10 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow sample demonstrates how to update an attribute's relationship through the Modeling service.
 
-1. [Create a changeset.](#create-a-changeset)
+1. Create a changeset.
 1. [Update the attribute's relationship.](#update-the-attributes-relationship)
-1. [Commit the changeset.](#commit-a-changeset)
-1. [Delete the changeset.](#delete-the-changeset)
+1. Commit the changeset.
+1. Delete the changeset.
 
 You want to update the relationship for the `“Subcategory“` attribute object with ID `E8C034036E4EE6404513A6B12FAE9481` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
@@ -31,55 +31,13 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::tip
 
-A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
 
 :::
 
-`"schemaEdit"` is required to be `true` if this changeset ID is used to create or update schema objects through the corresponding APIs (tables, facts, attributes, hierarchies, transformation, partitions, and functions).
-
-## Create a changeset
-
-Use [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "o0ak9privdo27nfo798j40m8aa"
-"X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets?schemaEdit=true" -H "accept: application/json" -H "X-MSTR-AuthToken: o0ak9privdo27nfo798j40m8aa" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "F768352DC66E40F2BCD9A3F050ECDE9B",
-  "dateCreated": "2021-03-22T20:29:39.253573Z",
-  "dateModified": "2021-03-22T20:29:39.253608Z",
-  "status": "Ready",
-  "schemaEdit": true,
-  "mstrProjectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-  "mstrUserId": "7FC05A65473CE2FD845CE6A1D3F13233",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userName": "MSTR User"
-}
-```
-
-Sample Response Code: 201 (A new changeset is created successfully.)
-
 ## Update the attribute's relationship
 
-Use [PUT /api/model/systemHierarchy/attributes/{attributeId}/relationships](<https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System> Hierarchy/ms-putAttributeRelationships).
+Use [PUT /api/model/systemHierarchy/attributes/{attributeId}/relationships](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/System%20Hierarchy/ms-putAttributeRelationships).
 
 You want to update the relationship of the "Subcategory" attribute object by adding relationships between "Category" and "Subcategory", and "Subcategory" and "Item". The object ID of the "Subcategory" attribute is `E8C034036E4EE6404513A6B12FAE9481` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
@@ -194,68 +152,6 @@ You can view the new attribute relationships in the body of the response.
 ```
 
 Response Code: 200 (The attribute's relationships are updated successfully in the changeset.)
-
-## Commit a changeset
-
-Use [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "t1ldkqth8vt0k64vkoajmoqrs4"
-"X-MSTR-MS-Changeset": "F768352DC66E40F2BCD9A3F050ECDE9B"
-```
-
-Sample Curl:
-
-```http
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/F768352DC66E40F2BCD9A3F050ECDE9B/commit" -H "accept: application/json" -H "X-MSTR-AuthToken: t1ldkqth8vt0k64vkoajmoqrs4" -H "X-MSTR-MS-Changeset: F768352DC66E40F2BCD9A3F050ECDE9B"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "F768352DC66E40F2BCD9A3F050ECDE9B",
-  "dateCreated": "2021-03-22T20:29:39.253573Z",
-  "dateModified": "2021-03-22T20:41:38.286927Z",
-  "status": "Ready",
-  "schemaEdit": true,
-  "mstrProjectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-  "mstrUserId": "7FC05A65473CE2FD845CE6A1D3F13233",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userName": "MSTR User"
-}
-```
-
-Sample Response Code: 201 (The changeset is committed successfully.)
-
-## Delete the changeset
-
-Use [`DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)`
-
-Sample Request Header:
-
-```http
-"accept": "applications/json"
-"X-MSTR-AuthToken: t1ldkqth8vt0k64vkoajmoqrs4"
-"X-MSTR-MS-Changeset: F768352DC66E40F2BCD9A3F050ECDE9B"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/F768352DC66E40F2BCD9A3F050ECDE9B" -H "accept: \*/\*" -H "X-MSTR-AuthToken: t1ldkqth8vt0k64vkoajmoqrs4" -H "X-MSTR-MS-Changeset: F768352DC66E40F2BCD9A3F050ECDE9B"
-```
-
-Sample Request Body: Empty
-
-Sample Response Code: 204 (The changeset has been deleted successfully.)
 
 ## Example
 

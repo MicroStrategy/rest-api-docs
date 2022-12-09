@@ -88,7 +88,10 @@ Sample Request Body:
 {
   "type": "project",
   "settings": {
-    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
+    "updateSchema": [
+      "recal_table_logical_size",
+      "recal_table_keys_fact_entry_level"
+    ],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"
@@ -169,7 +172,10 @@ Sample Response Body:
   "id": "QjE5REVEQ0MxMUQ0RTBFRkMwMDBFQjk0OTVEMEY0NEY6MzY3NDRCQjUxQjRDMTRDOENERTBDQUE4MTRGQUEzOTE=",
   "status": "READY",
   "settings": {
-    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
+    "updateSchema": [
+      "recal_table_logical_size",
+      "recal_table_keys_fact_entry_level"
+    ],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"

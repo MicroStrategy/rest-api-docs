@@ -38,13 +38,9 @@ Obtain the user hierarchy ID from [GET /api/model/hierarchies](https://demo.micr
 
 :::tip
 
-A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
 
 :::
-
-## [Create a changeset](./retrieve-a-user-hierarchys-definition.md)
-
-Endpoint: [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
 
 ## Update the user hierarchy's definition
 
@@ -275,11 +271,3 @@ Sample Response Body: You can view the updated user hierarchy's definition in th
 ```
 
 Response Code: 200 (The user hierarchy's definition is updated successfully in the changeset.)
-
-## Commit the changeset
-
-Endpoint: [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
-
-## Delete the changeset
-
-EndPoint: [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)

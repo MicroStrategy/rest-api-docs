@@ -22,9 +22,9 @@ More information about `markdownlint` could be found [here](https://github.com/D
 
 ## Front matter
 
-- `title` is the `h1` heading that shows on the HTML page.
-- `sidebar_label` is the title you want to show in the sidebar navigation.
-- `description` is the summary for this page. It provides better text snippet in the search result. This is only for SEO purpose.
+- (Required) `title` is the `h1` heading that shows on the HTML page.
+- (Optional) `sidebar_label` is the title you want to show in the sidebar navigation. It is only needed if you want to display something different from the `title`.
+- (Required) `description` is the summary for this page. It provides better text snippet in the search result. This is only for SEO purpose.
 
 Note: Do not use backticks in front matter since they won't be rendered the same as markdown content.
 
@@ -45,6 +45,8 @@ For headers that need an ordered list, e.g., "1. Do something in this step", it 
 
   ```json
   JSON code
+
+  Note: If the json is from the response, please simplify it by only keeping two objects in the list.
   ```
 
   ```js
@@ -213,6 +215,18 @@ For the workflow page, please use the template below:
 You can try out this workflow at [REST API Playground]().
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+
+:::
+```
+
+## Duplicated content
+
+Try to reduce repeating the same content or description for a workflow or api unless it offers new information or provides clarity. Choose rather to reference the content if it exist already. For instance, workflows, involving changesets, should not describe changesets on the page, but rather reference it like:
+
+```text
+:::tip
+
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
 
 :::
 ```

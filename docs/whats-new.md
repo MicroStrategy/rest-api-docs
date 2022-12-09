@@ -4,6 +4,16 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## 2021 Update 8
+
+- [Purge object and element caches.](./common-workflows/manage-caches.md)
+- [Delete a project in the project administration workflow.](./common-workflows/project-administration.md#delete-project)
+- [Retrieve, create, and update transaction report objects.](./common-workflows/manage-transaction-report-objects/manage-transaction-report-objects.md)
+- [Manage application customized emails.](./common-workflows/manage-application-objects/manage-application-customized-emails.md)
+- [Advanced properties for database instances.](./common-workflows/datasource-management/datasource-management.md)
+- [Advanced properties for projects.](./common-workflows/project-advanced-properties-management/project-advanced-properties-management.md)
+- [Convert connection string from data source name(DSN) to DSN-less for a datasource.](./common-workflows/datasource-management/convert-connection-string-from-dsn-to-dsnless-for-a-datasource.md)
+
 ## 2021 Update 7
 
 - [Object migration groups between environments.](./common-workflows/migrations-in-workstation/object-migration-groups-between-environments.md)
@@ -14,10 +24,8 @@ Description: What's New in the REST API.
 - [Retrieve, create, and update report objects.](./common-workflows/manage-report-objects/manage-report-objects.md)
 - Ability to duplicate users.
 - Configure and manage dynamic recipients lists for subscriptions.
-- Create and edit freeform SQL reports.
-- Create and modify reports and their advanced properties.
 - [Ability to translate metadata objects.](./common-workflows/manage-object-translations/manage-object-translations.md)
-- Retrieve, create, and update language objects.
+- [Retrieve, create, and update language objects.](./common-workflows/manage-languages.md)
 
 ## 2021 Update 6
 
@@ -36,6 +44,11 @@ Description: What's New in the REST API.
 - [Retrieve, create, and update subtotal objects.](./common-workflows/manage-subtotal-objects/manage-subtotal-objects.md)
 - [Retrieve, create, and update cube objects.](./common-workflows/manage-cube-objects/manage-cube-objects.md)
 - Create, edit, and delete history list subscriptions.
+
+## 2021 Update 4
+
+- [Retrieve, create, and update content group objects.](./common-workflows/manage-content-group-objects/manage-content-group-objects.md)
+- [Retrieve, create, and update application objects.](common-workflows/manage-application-objects/manage-application-general-settings.md)
 
 ## 2021 Update 3
 

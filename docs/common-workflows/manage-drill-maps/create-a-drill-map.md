@@ -26,51 +26,13 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::info
 
-A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
 
 :::
 
 ## Workflow
 
-### Step 1: Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
-"X-MSTR-ProjectID": "091B51154B22036C53CFBB9958B2E8FC"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets?schemaEdit=false" -H "accept: application/json" -H "X-MSTR-AuthToken: agei7vi3q4nn0i6r547r495vaf" -H "X-MSTR-ProjectID: 091B51154B22036C53CFBB9958B2E8FC"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "0E9F01172ECF4BA2BB510F7B9FB4F6E8",
-  "dateCreated": "2020-11-17T16:38:09.825650Z",
-  "dateModified": "2020-11-17T16:38:09.825665Z",
-  "status": "Ready",
-  "schemaEdit": false,
-  "userName": "MSTR User",
-  "mstrProjectId": "091B51154B22036C53CFBB9958B2E8FC",
-  "mstrUserId": "7FC05A65473CE2FD845CE6A1D3F13233",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US"
-}
-```
-
-Sample Response Code: 201 (A new changeset is created successfully.)
-
-### Step 2: Create a new drill map using [POST /api/model/drillMaps](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/DrillMaps/ms-postDrillMap)
+### Create a new drill map using [POST /api/model/drillMaps](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/DrillMaps/ms-postDrillMap)
 
 In this step, you are creating a new drill map with a drill path based on the `Year` attribute in the `Up` field and setting the drill path to a `high` priority, along with some other properties. You can find more examples in the following sections on this page. You can find [More examples](#more-examples) at the bottom of this page.
 
@@ -162,68 +124,6 @@ You can view the new drill map definition in the body of the response.
 ```
 
 Sample Response Code: 201 (A new drill map is created successfully in the changeset.)
-
-### Step 3: Commit a changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
-"X-MSTR-MS-Changeset": "0E9F01172ECF4BA2BB510F7B9FB4F6E8"
-```
-
-Sample Curl:
-
-```bash
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/8DF1659E9D74484D9D47B9478D4C7D00/commit" \
--H "accept: application/json" \
--H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" \
--H "X-MSTR-MS-Changeset: 0E9F01172ECF4BA2BB510F7B9FB4F6E8"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "0E9F01172ECF4BA2BB510F7B9FB4F6E8",
-  "dateCreated": "2020-11-17T17:42:13.312629Z",
-  "dateModified": "2020-11-17T17:44:30.814816Z",
-  "status": "Ready",
-  "schemaEdit": false,
-  "userName": "MSTR User",
-  "mstrProjectId": "091B51154B22036C53CFBB9958B2E8FC",
-  "mstrUserId": "7FC05A65473CE2FD845CE6A1D3F13233",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US"
-}
-```
-
-Sample Response Code: 201 (The changeset is committed successfully.)
-
-### Step 4: Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch"
-"X-MSTR-MS-Changeset: 0E9F01172ECF4BA2BB510F7B9FB4F6E8"
-```
-
-Sample Curl:
-
-```bash
-curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/8DF1659E9D74484D9D47B9478D4C7D00" \
--H "accept: */*" \
--H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" \
--H "X-MSTR-MS-Changeset: 0E9F01172ECF4BA2BB510F7B9FB4F6E8"
-```
-
-Sample Response Body: Empty
-
-Sample Response Code: 204 (The changeset is deleted successfully.)
 
 ## More examples
 

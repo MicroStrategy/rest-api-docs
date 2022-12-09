@@ -1,5 +1,5 @@
 ---
-title: Workflow sample - retrieve object's translations
+title: Workflow sample - Retrieve object's translations
 sidebar_label: Retrieve object's translations
 description: This topic covers workflow for retrieving object's translations.
 ---

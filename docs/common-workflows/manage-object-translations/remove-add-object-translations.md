@@ -1,5 +1,5 @@
 ---
-title: Workflow sample - remove and add object's translations
+title: Workflow sample - Remove and add object's translations
 sidebar_label: Remove and add object's translations
 description: This topic covers workflow for removing and adding object's translations.
 ---

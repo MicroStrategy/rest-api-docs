@@ -26,51 +26,9 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::tip
 
-A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
-
-`"schemaEdit"` is required to be `true` if this changeset ID is used to create or update schema objects through the corresponding APIs (tables, facts, attributes, hierarchies, transformation, partitions, and functions).
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
 
 :::
-
-## Create a changeset
-
-Use [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset).
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "t1ldkqth8vt0k64vkoajmoqrs4"
-"X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets?schemaEdit=true" -H "accept: application/json" -H "X-MSTR-AuthToken: o0ak9privdo27nfo798j40m8aa" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "F768352DC66E40F2BCD9A3F050ECDE9B",
-  "dateCreated": "2021-03-22T20:29:39.253573Z",
-  "dateModified": "2021-03-22T20:29:39.253608Z",
-  "status": "Ready",
-  "schemaEdit": true,
-  "mstrProjectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-  "mstrUserId": "7FC05A65473CE2FD845CE6A1D3F13233",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userName": "MSTR User"
-}
-```
-
-Sample Response Code: 201 (A new changeset is created successfully.)
 
 ## Update the attribute's definition
 
@@ -628,65 +586,3 @@ You can view the attribute's new definition in the body of the response.
 ```
 
 Response Code: 200 (The attribute's definition is updated successfully in the changeset.)
-
-## Commit a changeset
-
-Use [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "t1ldkqth8vt0k64vkoajmoqrs4"
-"X-MSTR-MS-Changeset": "F768352DC66E40F2BCD9A3F050ECDE9B"
-```
-
-Sample Curl:
-
-```bash
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/F768352DC66E40F2BCD9A3F050ECDE9B/commit" -H "accept: application/json" -H "X-MSTR-AuthToken: t1ldkqth8vt0k64vkoajmoqrs4" -H "X-MSTR-MS-Changeset: F768352DC66E40F2BCD9A3F050ECDE9B"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "F768352DC66E40F2BCD9A3F050ECDE9B",
-  "dateCreated": "2021-03-22T20:29:39.253573Z",
-  "dateModified": "2021-03-22T20:41:38.286927Z",
-  "status": "Ready",
-  "schemaEdit": true,
-  "mstrProjectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-  "mstrUserId": "7FC05A65473CE2FD845CE6A1D3F13233",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userName": "MSTR User"
-}
-```
-
-Sample Response Code: 201 (The changeset is committed successfully.)
-
-## Delete the changeset
-
-Use [`DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)`
-
-Sample Request Header:
-
-```http
-"accept": "applications/json"
-"X-MSTR-AuthToken: t1ldkqth8vt0k64vkoajmoqrs4"
-"X-MSTR-MS-Changeset: F768352DC66E40F2BCD9A3F050ECDE9B"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/F768352DC66E40F2BCD9A3F050ECDE9B" -H "accept: \*/\*" -H "X-MSTR-AuthToken: t1ldkqth8vt0k64vkoajmoqrs4" -H "X-MSTR-MS-Changeset: F768352DC66E40F2BCD9A3F050ECDE9B"
-```
-
-Sample Request Body: Empty
-
-Sample Response Code: 204 (The changeset has been deleted successfully.)

@@ -64,7 +64,7 @@ Sample Request Body:
 
 :::info
 
-For more details on how to set format properties, please refer to [Format Samples](../manage-derived-element-objects/format-samples.md).
+For more details on how to set format properties, please refer to [Format samples](../manage-derived-element-objects/format-samples.md).
 
 :::
 

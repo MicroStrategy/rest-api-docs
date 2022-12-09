@@ -43,7 +43,10 @@ Sample Request Body:
     {
       "op": "removeElements",
       "path": "/members",
-      "value": ["D09773F94699124B4D75B48F1B358327", "54F3D26011D2896560009A8E67019608"]
+      "value": [
+        "D09773F94699124B4D75B48F1B358327",
+        "54F3D26011D2896560009A8E67019608"
+      ]
     }
   ]
 }
@@ -77,7 +80,10 @@ Sample Request Body:
     {
       "op": "addElements",
       "path": "/members",
-      "value": ["D09773F94699124B4D75B48F1B358327", "54F3D26011D2896560009A8E67019608"]
+      "value": [
+        "D09773F94699124B4D75B48F1B358327",
+        "54F3D26011D2896560009A8E67019608"
+      ]
     }
   ]
 }

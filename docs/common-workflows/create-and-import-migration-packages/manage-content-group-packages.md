@@ -78,7 +78,10 @@ Sample request of the project package:
 {
   "type": "project",
   "settings": {
-    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
+    "updateSchema": [
+      "recal_table_logical_size",
+      "recal_table_keys_fact_entry_level"
+    ],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"
@@ -128,7 +131,10 @@ Sample request of the project package:
 {
   "type": "project",
   "settings": {
-    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
+    "updateSchema": [
+      "recal_table_logical_size",
+      "recal_table_keys_fact_entry_level"
+    ],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"

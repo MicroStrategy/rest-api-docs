@@ -104,7 +104,7 @@ def convert_word_to_proper_case(words, i, word, should_capitalize=True):
   if not word[:2].isupper():
     # First letter in the sentence use capitalized case
 
-    if i == 0 or words[i - 1][-1:] in {':', '-', '.', '?', '!'}:
+    if i == 0 or words[i - 1][-1:] in {':', '-', '.', '?', '!', '–'}:
       if should_capitalize:
         return prefix + word.capitalize()
       else:

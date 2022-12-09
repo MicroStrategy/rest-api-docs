@@ -36,49 +36,11 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::tip
 
-A changeset is required for creating and updating objects (such as filters, facts, attributes, etc...) through the modeling APIs. A changeset maintains an indivisible group of creations or modifications on modeling objects. Eventually, the changes in the changeset should be either committed as one transaction or abandoned altogether.
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
 
 :::
 
-## 1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "4bb7n1dhjo860e7tlpchg57hl"
-"X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets" -H "accept: application/json" -H "X-MSTR-AuthToken: 4bb7n1dhjo860e7tlpchg57hl" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "2A131744C91B4915B54A61FFDC528F62",
-  "dateCreated": "2021-06-15T03:04:56.613866Z",
-  "dateModified": "2021-06-15T03:04:56.613916Z",
-  "status": "Ready",
-  "schemaEdit": false,
-  "mstrProjectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-  "mstrUserId": "54F3D26011D2896560009A8E67019608",
-  "userDateNumberLocale": "en-US",
-  "userMetadataLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userName": "Administrator"
-}
-```
-
-Sample Response Code: 200 (A new changeset is created successfully.)
-
-## 2. Update the metric's definition using [PUT /api/model/subtotals/{subtotalId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subtotals/ms-putSubtotal)
+## Update the metric's definition using [PUT /api/model/subtotals/{subtotalId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subtotals/ms-putSubtotal)
 
 Sample Request Header:
 
@@ -236,64 +198,6 @@ You can view the updated subtotal's definition in the body of the response.
 ```
 
 Response Code: 200 (The subtotal's definition is updated successfully in the changeset.)
-
-## 3. Commit a changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "bbjpsjos3b7ebokq9jdfvknska"
-"X-MSTR-MS-Changeset": "4E830DF576A24E4B9120455EE576EB51"
-```
-
-Sample Curl:
-
-```bash
-curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/8DF1659E9D74484D9D47B9478D4C7D00/commit" -H "accept: application/json" -H "X-MSTR-AuthToken: bbjpsjos3b7ebokq9jdfvknska" -H "X-MSTR-MS-Changeset: 4E830DF576A24E4B9120455EE576EB51"
-```
-
-Sample Response Body:
-
-```json
-{
-  "id": "4E830DF576A24E4B9120455EE576EB51",
-  "dateCreated": "2021-02-23T10:51:04.336913300Z",
-  "dateModified": "2021-02-23T10:51:18.780285700Z",
-  "status": "Ready",
-  "schemaEdit": false,
-  "mstrProjectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-  "mstrUserId": "CFC4E856492FEF1A2BB6F1BC37ABFD06",
-  "userMetadataLocale": "en-US",
-  "userDateNumberLocale": "en-US",
-  "userWarehouseLocale": "en-US",
-  "userName": "MS"
-}
-```
-
-Sample Response: 201 (The changeset is committed successfully.)
-
-## 4. Delete a changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
-
-Sample Request Header:
-
-```http
-"accept": "application/json"
-"X-MSTR-AuthToken": "frbicqfk7btoggg5bnu450hrqt"
-"X-MSTR-MS-Changeset": "4E830DF576A24E4B9120455EE576EB51"
-```
-
-Sample Request Body: Empty
-
-Sample Curl:
-
-```bash
-curl -X DELETE "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/changesets/8DF1659E9D74484D9D47B9478D4C7D00" -H "accept: */*" -H "X-MSTR-AuthToken: frbicqfk7btoggg5bnu450hrqt" -H "X-MSTR-MS-Changeset: 4E830DF576A24E4B9120455EE576EB51"
-```
-
-Sample Response Body: Empty
-
-Sample Response Code: 204 (The changeset has been deleted successfully.)
 
 The model for the definition of a subtotal can be updated with the following fields:
 
