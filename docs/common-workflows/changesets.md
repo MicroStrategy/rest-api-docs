@@ -14,7 +14,7 @@ Some modeling APIs requires either a `X-MSTR-ProjectID` (project ID) or `X-MSTR-
 
 :::
 
-## General Workflow
+## General workflow
 
 The general workflow for using [changesets APIs](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets) involves:
 
@@ -479,7 +479,12 @@ Sample Request Body:
 
 ```json
 {
-  "updateTypes": ["table_key", "entry_level", "logical_size", "clear_element_cache"]
+  "updateTypes": [
+    "table_key",
+    "entry_level",
+    "logical_size",
+    "clear_element_cache"
+  ]
 }
 ```
 

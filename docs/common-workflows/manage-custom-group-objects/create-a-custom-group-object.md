@@ -560,7 +560,13 @@ Sample Request Body:
               "name": "Running Revenue Contribution to All Customers Abs."
             },
             "bandMetricFunction": "value",
-            "bandNames": ["Top Quintile", "Second Quintile", "Third Quintile", "Fourth Quintile", "Bottom Quintile"],
+            "bandNames": [
+              "Top Quintile",
+              "Second Quintile",
+              "Third Quintile",
+              "Fourth Quintile",
+              "Bottom Quintile"
+            ],
             "start": {
               "type": "double",
               "value": "0.0"
@@ -626,7 +632,13 @@ Sample Request Body:
               "name": "Running Revenue Contribution to All Customers Abs."
             },
             "bandMetricFunction": "value",
-            "bandNames": ["Top Quintile", "Second Quintile", "Third Quintile", "Fourth Quintile", "Bottom Quintile"],
+            "bandNames": [
+              "Top Quintile",
+              "Second Quintile",
+              "Third Quintile",
+              "Fourth Quintile",
+              "Bottom Quintile"
+            ],
             "start": {
               "type": "double",
               "value": "0.0"
@@ -688,7 +700,13 @@ Create a custom group with a banding points element.
               "name": "Running Revenue Contribution to All Customers Abs."
             },
             "bandMetricFunction": "value",
-            "bandNames": ["bottom 20%", "20%-40%", "40%-60%", "60%-80%", "Top 20%"],
+            "bandNames": [
+              "bottom 20%",
+              "20%-40%",
+              "40%-60%",
+              "60%-80%",
+              "Top 20%"
+            ],
             "points": [0, 0.2, 0.4, 0.6, 0.8, 1]
           }
         }

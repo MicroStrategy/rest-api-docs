@@ -79,7 +79,13 @@ Sample Request Body:
               "name": "Running Revenue Contribution to All Customers Abs."
             },
             "bandMetricFunction": "value",
-            "bandNames": ["bottom 20%", "20%-40%", "40%-60%", "60%-80%", "Top 20%"],
+            "bandNames": [
+              "bottom 20%",
+              "20%-40%",
+              "40%-60%",
+              "60%-80%",
+              "Top 20%"
+            ],
             "points": [0, 0.2, 0.4, 0.6, 0.8, 1]
           }
         }
@@ -139,7 +145,13 @@ Sample Response Body: You can view the custom group's new definition in the body
               "name": "Running Revenue Contribution to All Customers Abs."
             },
             "bandMetricFunction": "value",
-            "bandNames": ["bottom 20%", "20%-40%", "40%-60%", "60%-80%", "Top 20%"],
+            "bandNames": [
+              "bottom 20%",
+              "20%-40%",
+              "40%-60%",
+              "60%-80%",
+              "Top 20%"
+            ],
             "points": [0, 0.2, 0.4, 0.6, 0.8, 1]
           }
         }

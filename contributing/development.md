@@ -71,7 +71,12 @@ There are three main ways to add your new doc into the sidebar:
     "id": "support-for-different-authentication-environments/support-for-different-authentication-environments"
   },
   "label": "Support for different authentication environments",
-  "items": ["support-for-different-authentication-environments/guest-authentication-mode-only", "support-for-different-authentication-environments/multiple-modes", "support-for-different-authentication-environments/authentication-saml", "support-for-different-authentication-environments/authentication-custom"]
+  "items": [
+    "support-for-different-authentication-environments/guest-authentication-mode-only",
+    "support-for-different-authentication-environments/multiple-modes",
+    "support-for-different-authentication-environments/authentication-saml",
+    "support-for-different-authentication-environments/authentication-custom"
+  ]
 }
 ```
 
@@ -94,11 +99,17 @@ Detailed information can be found on [Docusaurus Docs](https://docusaurus.io/doc
 
 You can run `yarn start` to test your local changes. Make sure everything looks okay before creating a Pull Request.
 
-You can also run `yarn lint` before committing to make sure no errors exist.
+You can also run `yarn lint` before committing to make sure no errors exist. If errors exist, try to run `yarn lint:fix` to auto fix some of the errors for you. If the errors cannot be auto fixed, please fix the error manually based on the terminal logs.
 
 ## Committing your changes
 
-When you try to commit your changes, `yarn lint:eslint`, `yarn lint:prettier`, and `yarn lint:markdownlint` will be run in sequence. If any error is detected, the commit will fail. You need to follow the error messages and suggestions of changes to fix all the errors before committing them.
+When you try to commit your changes, `yarn eslint --quiet`, `yarn prettier --list-different`, and `yarn markdownlint` will be run in sequence for the staged files only. If any error is detected, the commit will fail. You need to follow the error messages and suggestions of changes to fix all the errors before committing them.
+
+Some helpful commands are available to help you auto fix some of the errors:
+
+- `yarn lint:eslint:fix` can auto fix eslint related errors.
+- `yarn lint:prettier:fix` can auto fix prettier related errors.
+- `yarn lint:markdownlint:fix` can auto fix markdownlint related errors.
 
 ## Creating pull request
 

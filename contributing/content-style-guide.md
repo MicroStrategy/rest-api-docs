@@ -45,6 +45,8 @@ For headers that need an ordered list, e.g., "1. Do something in this step", it 
 
   ```json
   JSON code
+
+  Note: If the json is from the response, please simplify it by only keeping two objects in the list.
   ```
 
   ```js
