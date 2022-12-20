@@ -622,6 +622,7 @@ const sidebars = {
           label: "Server-level privileges",
           items: [
             "common-workflows/server-level-privileges/manage-server-level-privileges",
+            "common-workflows/server-level-privileges/watch-kpi-insight-service-privileges",
           ],
         },
         "common-workflows/manage-server-settings",

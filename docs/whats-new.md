@@ -13,6 +13,7 @@ Description: What's New in the REST API.
 - [Advanced properties for database instances.](./common-workflows/datasource-management/datasource-management.md)
 - [Advanced properties for projects.](./common-workflows/project-advanced-properties-management/project-advanced-properties-management.md)
 - [Convert connection string from data source name(DSN) to DSN-less for a datasource.](./common-workflows/datasource-management/convert-connection-string-from-dsn-to-dsnless-for-a-datasource.md)
+- [Manage Watch KPI and Insight service privileges.](./common-workflows/server-level-privileges/watch-kpi-insight-service-privileges.md)
 
 ## 2021 Update 7
 
