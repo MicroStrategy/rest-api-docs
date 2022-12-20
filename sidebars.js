@@ -622,6 +622,7 @@ const sidebars = {
           label: "Server-level privileges",
           items: [
             "common-workflows/server-level-privileges/manage-server-level-privileges",
+            "common-workflows/server-level-privileges/watch-kpi-insight-service-privileges",
           ],
         },
         "common-workflows/manage-server-settings",
@@ -734,6 +735,19 @@ const sidebars = {
             "common-workflows/manage-report-objects/execute-report",
             "common-workflows/manage-report-objects/put-a-derived-element-in-report",
             "common-workflows/manage-report-objects/retrieve-applicable-properties-of-a-report",
+          ],
+        },
+        {
+          type: "category",
+          link: {
+            type: "doc",
+            id: "common-workflows/manage-transaction-report-objects/manage-transaction-report-objects",
+          },
+          label: "Manage transaction report objects",
+          items: [
+            "common-workflows/manage-transaction-report-objects/create-a-transaction-report",
+            "common-workflows/manage-transaction-report-objects/retrieve-transaction-report-definition",
+            "common-workflows/manage-transaction-report-objects/update-transaction-report-definition",
           ],
         },
         {
