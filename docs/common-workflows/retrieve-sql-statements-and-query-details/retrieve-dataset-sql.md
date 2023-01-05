@@ -4,6 +4,8 @@ sidebar_label: Retrieve the SQL statement of datasets in a document or dossier i
 description: You can retrieve the SQL statements of all datasets in a document or dossier instance. In this workflow sample, a dossier instance is used. However, the same workflow applies to a document instance.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5d5e523d-6a02-45a1-9537-bc0d37f9c10c).

@@ -3,6 +3,16 @@ title: Manage datamart objects
 description: You can use REST API requests retrieve, create, and update the datamart objects through the Modeling Service
 ---
 
+<Available since="2021 Update 7" />
+
+:::tip
+
+You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-1f302e4e-e863-4247-a360-802794a8d8a5?ctx=documentation).
+
+Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+
+:::
+
 Starting in MicroStrategy 2021 Update 7, you can use REST API requests retrieve, create, and update the datamart objects through the Modeling service.
 
 - [Create a datamart from a source report](./create-a-datamart-from-a-source-report.md)

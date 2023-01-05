@@ -3,13 +3,7 @@ title: Manage content group objects
 description: You can use REST API requests to retrieve, create, and update content group objects and their contents.
 ---
 
-:::tip
-
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7da971db-438e-488f-9ccd-1ae19947db4d?ctx=documentation).
-
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
-
-:::
+<Available since="2021 Update 4" />
 
 Content groups allow organizations to send a collection of content to specific users or user groups, providing easier management of content distribution. You can use REST API requests to retrieve, create, and update content group objects and their contents.
 

@@ -4,6 +4,8 @@ sidebar_label: Create a subtotal within a changeset
 description: This workflow sample demonstrates how to create a subtotal object through the Modeling service.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-0054ca44-40a6-4387-b766-35fc5f00e428?ctx=documentation).

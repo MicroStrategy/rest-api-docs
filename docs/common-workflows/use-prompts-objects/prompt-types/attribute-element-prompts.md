@@ -3,6 +3,8 @@ title: Attribute element prompts
 description: The attribute element prompt is one of the most commonly used prompt types. It allows the caller to provide a list of attribute elements from which a selection is made. For example, you can define a prompt as - 'Choose from a list of elements in Month'.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5eeb2bce-6951-41c6-aba0-97565505eaa5?ctx=documentation).

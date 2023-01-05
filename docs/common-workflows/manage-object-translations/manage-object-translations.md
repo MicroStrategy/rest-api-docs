@@ -3,6 +3,8 @@ title: Manage object's translations
 description: You can use REST API requests to retrieve, remove, add and update object's translations.
 ---
 
+<Available since="2021 Update 7" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d83e2ec3-5b5b-4fb3-8c30-4338db4c0f51?ctx=documentation).

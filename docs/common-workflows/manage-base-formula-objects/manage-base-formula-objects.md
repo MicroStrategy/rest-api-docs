@@ -3,6 +3,8 @@ title: Manage base formula objects
 description: Base formulas are mathematical expressions created using existing facts. They can be re-used to build any number of metrics. You can use REST API requests to retrieve, create, and update the base formula objects through the Modeling service.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-cf953972-3d9d-4347-b253-5d89e40c088c?ctx=documentation).

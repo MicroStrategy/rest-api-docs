@@ -4,6 +4,8 @@ sidebar_label: Retrieve a security filter's member
 description: This workflow sample demonstrates how to get the users and user groups that the specified security filter is applied to.
 ---
 
+<Available since="2021 Update 1" />
+
 This workflow sample demonstrates how to get the users and user groups that the specified security filter is applied to. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1`.
 
 :::info

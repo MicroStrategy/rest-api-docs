@@ -3,6 +3,8 @@ title: Create a content group
 description: You can use REST APIs to create a new content group.
 ---
 
+<Available since="2021 Update 4" />
+
 You can use REST APIs to create a new content group which includes name, color, opacity, emailEnabled, recipients.
 
 In this sample workflow, we want to create a new content group object with the name "Finance", the color black, the opacity 50, enabled email, and the recipient with id `54F3D26011D2896560009A8E67019608` .

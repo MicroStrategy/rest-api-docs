@@ -3,6 +3,8 @@ title: Create a new report
 description: You can use REST APIs to create a new report through Modeling service.
 ---
 
+<Available since="2021 Update 7" />
+
 You can use REST APIs to create a new report through Modeling service. There are mainly three kinds of reports we can create: normal report, FFSQL (Free Form SQL) report, and subset report. We will provide detailed steps for creating a normal report first, so if you need to create an FFSQL report or a subset report, please refer to "more examples".
 
 ## Create a new normal report within an instance

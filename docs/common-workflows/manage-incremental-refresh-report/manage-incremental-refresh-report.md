@@ -3,6 +3,8 @@ title: Manage incremental refresh reports
 description: You can use REST API requests retrieve, create, and update the Incremental Refresh Report (IRR) objects through the Modeling service.
 ---
 
+<Available since="2021 Update 6" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-bc4cbadd-29e6-4426-85ff-30bcc0f20d60?ctx=documentation).
@@ -12,6 +14,14 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 :::
 
 Starting in MicroStrategy 2021 Update 6, you can use REST API requests retrieve, create, and update the Incremental Refresh Report (IRR) objects through the Modeling service.
+
+- [Retrieve an IRR definition](./retrieve-an-irr-definition.md)
+- [Create an IRR](./create-an-irr.md)
+- [Update an IRR definition](./update-an-irr-definition.md)
+- [Retrieve an IRR definition with advanced properties](./retrieve-an-irr-definition-with-advanced-properties.md)
+- [Create an IRR with advanced properties](./create-an-irr-with-advanced-properties.md)
+- [Update IRR advanced properties](./update-irr-advanced-properties.md)
+- [Retrieve an IRR's applicable properties](./retrieve-applicable-properties-of-an-incremental-refresh-report.md)
 
 ## Important fields
 

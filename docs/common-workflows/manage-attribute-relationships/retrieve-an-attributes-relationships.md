@@ -4,6 +4,8 @@ sidebar_label: Retrieve an attribute's relationships
 description: This workflow sample demonstrates how to retrieve the relationships related to an attribute through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-063edda6-63ad-4938-ab4c-a4eb8f13d65e?ctx=documentation).

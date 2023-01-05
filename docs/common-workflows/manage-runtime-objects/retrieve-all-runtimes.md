@@ -4,6 +4,8 @@ sidebar_label: Retrieve all runtimes
 description: This workflow sample demonstrates how to list all the runtime objects.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to list all the runtime objects.
 
 :::tip

@@ -4,6 +4,8 @@ sidebar_label: Update a consolidation object
 description: This workflow sample demonstrates how to replace an existing consolidation object through the Modeling service.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-cd93cd32-2391-4f2f-9308-9f47783540bf?ctx=documentation).

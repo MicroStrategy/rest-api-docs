@@ -3,6 +3,8 @@ title: Modify value of an advanced property
 description: The workflow involves modifying datasource's advanced properties values
 ---
 
+<Available since="2021 Update 8" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ef4e5e88-1bc6-4c9a-a15a-6fef6d399bb8?ctx=documentation).

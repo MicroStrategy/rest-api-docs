@@ -3,17 +3,11 @@ title: Manage Watch KPI and Insight service privileges
 description: A high-level workflow sample for managing Watch KPI and Insight service privileges is shown below. The sequence of REST API requests in the following procedure allows an administrative user to assign server-level privilege for a specific user or user group to use Watch KPI and Insight service.
 ---
 
-:::tip
-
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-27dd7275-e91a-4fe8-900b-0590e0de37b6?ctx=documentation).
-
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
-
-:::
+<Available since="2021 Update 8" />
 
 A high-level workflow sample for managing Watch KPI and Insight service privileges is shown below. The sequence of REST API requests in the following procedure allows an administrative user to assign server-level privilege for a specific user or user group to use Watch KPI and Insight service.
 
-For the privileges to use Watch KPI and Insight service, please refer to [Assign privileges to MicroStrategy Insight](https://doc-dev.microstrategy.com/producthelp/2021/Library/en-us/Content/insights_privileges.htm).
+For the privileges to use Watch KPI and Insight service, please refer to [Assign privileges to MicroStrategy Insight](https://www2.microstrategy.com/producthelp/2021/Library/en-us/Content/insights_privileges.htm).
 
 A detailed explanation of each step is provided below:
 
@@ -24,6 +18,8 @@ Endpoints:
 - `POST /api/iserver/metadata/commands`
 
 These endpoints allow administrative users to submit commands to manipulate metadata on IServer. First, you obtain the authorization token needed to execute the request using `POST /api/auth/login`. Then, you pass the authorization token in the request header. You provide the information in the parameters of the request.
+
+To auto-grant Watch KPI privileges ("Use Library Watchlist" and "Use Library Insight") for Library users (who has "Use Library Web" privilege), you need to call this API with query parameter `commandId` set to `1`.
 
 The example below demonstrates how to assign privilege to use Watch KPI and Insight service to users.
 

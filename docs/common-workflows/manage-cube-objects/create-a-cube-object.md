@@ -4,6 +4,8 @@ sidebar_label: Create a cube object
 description: This workflow sample demonstrates how to create a new cube object through the Modeling service and publish it through Library server.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ef6003b3-abe9-40ee-abf7-ff72de088f22?ctx=documentation).
@@ -26,7 +28,9 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 ## Create a cube object
 
-### Create a cube object using [POST /api/model/cubes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-createCube) (new in 2021 Update 4)
+### Create a cube object using [POST /api/model/cubes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-createCube)
+
+<Available since="2021 Update 5" />
 
 Sample Request Header:
 
@@ -293,7 +297,9 @@ Sample Response Body:
 
 Sample Response Code: 201 (A cube is created successfully.)
 
-### Create a cube object using [POST /api/model/cubes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-createCube) using `showAdvancedProperties=true` (New in 2021 Update 6)
+### Create a cube object using [POST /api/model/cubes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-createCube) using `showAdvancedProperties=true`
+
+<Available since="2021 Update 6" />
 
 You want to create a new `Actual vs Forecast Performance Cube` cube object under the `Public Objects` folder in the `MicroStrategy Tutorial` project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
@@ -442,7 +448,9 @@ Sample Response Code: 201 (A cube is created successfully.)
 
 ## Publish the cube
 
-### Publish the cube using [POST /api/v2/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2) (new in 2021 Update 4)
+### Publish the cube using [POST /api/v2/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2)
+
+<Available since="2021 Update 5" />
 
 Sample Request Header:
 

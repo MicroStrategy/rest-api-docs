@@ -23,14 +23,7 @@ fs.readdir(".", (e, files) => {
   } else {
     files.forEach((f) => {
       if (
-        ![
-          ".git",
-          "node_modules",
-          "build",
-          ".docusaurus",
-          ".cache-loader",
-          ".DS_Store",
-        ].includes(f)
+        ![".git", "node_modules", "build", ".docusaurus", ".cache-loader", ".DS_Store"].includes(f)
       ) {
         fs.cp(f, target + f, { recursive: true }, (err) => {
           if (err) {

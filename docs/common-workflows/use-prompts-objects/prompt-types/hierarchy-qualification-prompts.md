@@ -3,6 +3,8 @@ title: Hierarchy qualification prompts
 description: A hierarchy qualification prompt allows users to filter data in a report or document based on the qualification of multiple attributes from the hierarchies. For example, you can determine a single hierarchy or list of hierarchies from which users can select attributes and make qualifications on these attributes to define their filters.
 ---
 
+<Available since="2021 Update 1" />
+
 A hierarchy qualification prompt allows users to filter data in a report or document based on the qualification of multiple attributes from the hierarchies. For example, you can determine a single hierarchy or list of hierarchies from which users can select attributes and make qualifications on these attributes to define their filters.
 
 Use REST APIs to perform the following actions on hierarchy qualification prompts:

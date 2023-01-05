@@ -3,6 +3,16 @@ title: Manage report objects
 description: You can use REST API requests to retrieve, create, and update report objects through the Modeling service.
 ---
 
+<Available since="2021 Update 7" />
+
+:::tip
+
+You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-37579918-50ac-4383-8187-52d886b82d4b?ctx=documentation).
+
+Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+
+:::
+
 You can use REST API requests to retrieve, create, and update report objects through the Modeling service.
 
 - [Retrieve a report's definition](./retrieve-a-reports-definition.md)

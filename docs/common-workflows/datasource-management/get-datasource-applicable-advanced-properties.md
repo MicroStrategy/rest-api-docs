@@ -4,6 +4,8 @@ sidebar_label: Get applicable properties for a datasource
 description: Get applicable properties for a datasource.
 ---
 
+<Available since="2021 Update 8" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-585d42d1-fbdc-4d1d-afbb-c4e872753709?ctx=documentation).

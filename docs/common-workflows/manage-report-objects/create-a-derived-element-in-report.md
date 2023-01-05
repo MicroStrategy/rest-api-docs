@@ -3,6 +3,8 @@ title: Create a derived element in report
 description: This workflow sample demonstrates how to create a derived element in report using REST APIs.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to create a new derived element in report.
 
 ## Create a derived element in report

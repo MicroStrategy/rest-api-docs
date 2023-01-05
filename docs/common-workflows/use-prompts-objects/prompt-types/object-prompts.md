@@ -3,6 +3,8 @@ title: Object prompts
 description: An object prompt allows the caller to supply a list of objects, such as attributes, metrics, hierarchies, and so on from which a selection is made.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-763d27e2-3d03-47ab-9e7b-6b3b4db736b4?ctx=documentation).

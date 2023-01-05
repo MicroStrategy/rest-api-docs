@@ -3,6 +3,8 @@ title: Data lineage analysis via REST APIs
 description: The metadata is used in object management use cases, such as editing a metric to use a different fact object. In such a use case, the user needs to understand how an object is used and where it comes from. To do so, the user can use a data lineage or data traceability function. Here, we can use search API to perform data lineage analysis on the metadata.
 ---
 
+<Available since="2021" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-e42edf07-9e68-4cc2-9eb9-a16ad920bb49?ctx=documentation).

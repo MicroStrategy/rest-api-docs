@@ -3,6 +3,8 @@ title: Create a datamart from a source report
 description: This workflow sample demonstrates how to create a new Datamart object from a source report through the Modeling service.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to create a new datamart object from a source report through the Modeling service.
 
 You want to create a datamart from a source report with the object ID of 0D0E80754CC1987C52F9BCB317E6941D and put the newly created datamart into the destination folder of 8A1831FF494F528D02A4A8BF5FB73459. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.

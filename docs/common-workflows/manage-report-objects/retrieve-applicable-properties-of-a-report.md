@@ -3,6 +3,8 @@ title: Retrieve applicable properties of a report
 description: This workflow sample demonstrates how to retrieve applicable properties of a report using REST APIs.
 ---
 
+<Available since="2021 Update 7" />
+
 You can use REST APIs to retrieve all the applicable properties of a report through the Modeling service. The workflow includes the following REST APIs requests.
 
 The report object ID is `E472644E4239AD7EFDBD869600C93E4D`. The report is in the project "MicroStrategy Tutorial", and the project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.

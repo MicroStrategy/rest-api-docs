@@ -4,6 +4,8 @@ sidebar_label: Retrieve an IRR definition
 description: This topic covers several workflows to retrieve an Incremental Refresh Report definition.
 ---
 
+<Available since="2021 Update 6" />
+
 This topic covers several workflows to retrieve an Incremental Refresh Report definition.
 
 You want to get the definition of the `YearInList_Insert` Incremental Refresh Report object as shown in the below screenshot. The object ID of the Incremental Refresh Report is  `B5905F5C4565159A5AEAF78E71DC8BF6` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.

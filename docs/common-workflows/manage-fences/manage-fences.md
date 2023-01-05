@@ -3,6 +3,8 @@ title: Manage user and workload fences
 description: Within a cluster, fences allows an administrator or a user with DssXmlPrivilegesConfigureServerBasic and DssXmlPrivilegesUseClusterMonitor privileges to reserve specific nodes for use by certain users or certain workloads during normal operations.
 ---
 
+<Available since="2021 Update 6" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2564e447-4b77-42c9-99a4-97d7979b348c?ctx=documentation).

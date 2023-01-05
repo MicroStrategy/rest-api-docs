@@ -4,6 +4,8 @@ sidebar_label: Retrieve an IRR's applicable properties
 description: This workflow sample demonstrates how to retrieve applicable properties of an incremental refresh report using REST APIs.
 ---
 
+<Available since="2021 Update 6" />
+
 You can use REST APIs to retrieve all the applicable properties of an incremental refresh report through the Modeling service. The workflow includes the following REST APIs requests.
 
 The incremental refresh report object ID is 01234567890123456789012345678912. The incremental refresh report is in the project "MicroStrategy Tutorial", and the project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.

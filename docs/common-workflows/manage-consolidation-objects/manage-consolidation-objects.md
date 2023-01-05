@@ -3,6 +3,8 @@ title: Manage consolidation objects
 description: You can use REST API requests to retrieve, create, and replace consolidation objects through the Modeling service.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7cc97135-4b16-4910-a32f-5463f39519cf?ctx=documentation).

@@ -3,6 +3,8 @@ title: Delete a specific fence
 description: This workflow sample demonstrates how to delete a specific user or workload fence.
 ---
 
+<Available since="2021 Update 6" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-977138df-2f06-40ae-87f3-8af880b7a336?ctx=documentation).

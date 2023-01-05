@@ -4,6 +4,8 @@ sidebar_label: Retrieve a runtime definition
 description: This workflow sample demonstrates how to retrieve an existing runtime object through the REST API.
 ---
 
+<Available since="2021 Update 7" />
+
 You can use REST APIs to retrieve the definition of a runtime object.
 
 ## Retrieve a runtime definition

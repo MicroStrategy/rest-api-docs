@@ -4,6 +4,8 @@ sidebar_label: Retrieve a list of objects
 description: This workflow sample demonstrates how to get the list of objects associated with a specific drill map.
 ---
 
+<Available since="2021 Update 6" />
+
 This workflow sample demonstrates how to get the list of objects associated with a specific drill map.
 
 You want to get the list of objects associated with the `Drill Map for Demo` drill map object in the MicroStrategy Tutorial project. The project ID is `091B51154B22036C53CFBB9958B2E8FC`. The drill map ID is `CC2E6AA3421EFF5C41C2D0939750BB24`.

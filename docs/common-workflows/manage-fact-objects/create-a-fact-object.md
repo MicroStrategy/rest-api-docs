@@ -4,6 +4,8 @@ sidebar_label: Create a fact object
 description: This workflow sample demonstrates how to create a fact object through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-11d116e7-cf31-451a-848e-0d2be6fa3041?ctx=documentation).

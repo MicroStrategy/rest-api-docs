@@ -3,6 +3,8 @@ title: Metric expression prompts
 description: can define a prompt as "Get data when Avg Revenue per Customer is greater than 10".
 ---
 
+<Available since="2021 Update 1" />
+
 The metric expression element prompt is one of the most commonly used prompt types. It allows the caller to provide an expression to filter the date in a report or dossier. For example, you can define a prompt as _Get data when Avg Revenue per Customer is greater than 10_.
 
 Use REST APIs to perform the following actions on metric expression prompts:

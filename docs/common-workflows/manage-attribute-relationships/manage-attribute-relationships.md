@@ -3,6 +3,8 @@ title: Manage attribute relationships
 description: You can use REST API requests to retrieve, create and update an attribute's relationship through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-697327d8-4eaa-48ef-9e75-3daa23d4860f?ctx=documentation).

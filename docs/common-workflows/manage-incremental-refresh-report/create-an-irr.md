@@ -4,6 +4,8 @@ sidebar_label: Create an IRR
 description: This workflow sample demonstrates how to create a new Incremental Refresh Report object through the Modeling service.
 ---
 
+<Available since="2021 Update 6" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-54f5b582-05ac-4f2d-88f9-98f36dd8373c?ctx=documentation).

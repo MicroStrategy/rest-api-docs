@@ -4,6 +4,8 @@ sidebar_label: Update SAP HANA parameters
 description: You can use REST APIs to update a prompt of a table through the Modeling service.
 ---
 
+<Available since="2021 Update 6" />
+
 Similar to [Workflow sample: Update a prompt of an SAP HANA table with input parameters](./update-a-prompt-of-an-sap-hana-table.md), you can use REST APIs to update the table definition through the Modeling service starting in MicroStrategy 2021 Update 6.
 
 :::info

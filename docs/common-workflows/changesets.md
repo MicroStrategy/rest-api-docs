@@ -479,12 +479,7 @@ Sample Request Body:
 
 ```json
 {
-  "updateTypes": [
-    "table_key",
-    "entry_level",
-    "logical_size",
-    "clear_element_cache"
-  ]
+  "updateTypes": ["table_key", "entry_level", "logical_size", "clear_element_cache"]
 }
 ```
 

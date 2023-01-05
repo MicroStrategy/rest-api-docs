@@ -3,6 +3,8 @@ title: Update contents of a content group
 description: You can use REST APIs to update contents of a content group.
 ---
 
+<Available since="2021 Update 4" />
+
 You can use REST APIs to update contents of a content group by id.
 
 In this sample workflow, we want to add a dossier as the contents to an existing content group with id `D35FC0B04BD79E95612DDB907C4CCDF6`. The dossier id is `1182F0264D49467A43D9198D6E1331F2`, and it's in the project `235853DC4B79DABCE8C6FFB26B7D8DC3`.

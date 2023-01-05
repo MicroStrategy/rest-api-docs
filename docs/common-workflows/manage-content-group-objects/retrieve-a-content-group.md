@@ -3,6 +3,8 @@ title: Retrieve a content group
 description: You can use REST APIs to retrieve a content group.
 ---
 
+<Available since="2021 Update 4" />
+
 You can use REST APIs to retrieve a content group definition by id.
 
 In this sample workflow, we want to retrieve an existing content group with id `D35FC0B04BD79E95612DDB907C4CCDF6`.

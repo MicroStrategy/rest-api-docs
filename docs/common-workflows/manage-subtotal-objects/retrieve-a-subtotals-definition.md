@@ -4,6 +4,8 @@ sidebar_label: Retrieve a subtotal's definition
 description: This topic covers several workflows for retrieving a metric's definition.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d1504a52-db9a-4d71-99d2-0ffbd82ee91a?ctx=documentation).

@@ -3,6 +3,8 @@ title: Manage application general settings
 description: You can use REST APIs to manage application general settings.
 ---
 
+<Available since="2021 Update 4" />
+
 You can use REST APIs to manage application general settings.
 
 :::info
@@ -56,14 +58,7 @@ Sample Request Body:
     "mode": 0,
     "homeDocument": {
       "url": "",
-      "icons": [
-        "table_of_contents",
-        "bookmarks",
-        "reset",
-        "filters",
-        "comments",
-        "share"
-      ],
+      "icons": ["table_of_contents", "bookmarks", "reset", "filters", "comments", "share"],
       "toolbarMode": 0,
       "toolbarEnabled": true
     },
@@ -89,14 +84,7 @@ Sample Request Body:
         "undo_and_redo": true
       },
       "toolbarMode": 0,
-      "sidebars": [
-        "all",
-        "favorites",
-        "recents",
-        "default_groups",
-        "my_groups",
-        "options"
-      ],
+      "sidebars": ["all", "favorites", "recents", "default_groups", "my_groups", "options"],
       "toolbarEnabled": true,
       "defaultGroupsName": "Default Groups"
     }
@@ -316,14 +304,7 @@ Sample Response Body
     "mode": 0,
     "homeDocument": {
       "url": "",
-      "icons": [
-        "table_of_contents",
-        "bookmarks",
-        "reset",
-        "filters",
-        "comments",
-        "share"
-      ],
+      "icons": ["table_of_contents", "bookmarks", "reset", "filters", "comments", "share"],
       "toolbarMode": 0,
       "toolbarEnabled": true
     },
@@ -349,14 +330,7 @@ Sample Response Body
         "undo_and_redo": true
       },
       "toolbarMode": 0,
-      "sidebars": [
-        "all",
-        "favorites",
-        "recents",
-        "default_groups",
-        "my_groups",
-        "options"
-      ],
+      "sidebars": ["all", "favorites", "recents", "default_groups", "my_groups", "options"],
       "toolbarEnabled": true,
       "defaultGroupsName": "Default Groups"
     }
@@ -464,14 +438,7 @@ Sample Request Body:
     "mode": 0,
     "homeDocument": {
       "url": "",
-      "icons": [
-        "table_of_contents",
-        "bookmarks",
-        "reset",
-        "filters",
-        "comments",
-        "share"
-      ],
+      "icons": ["table_of_contents", "bookmarks", "reset", "filters", "comments", "share"],
       "toolbarMode": 0,
       "toolbarEnabled": true
     },
@@ -497,14 +464,7 @@ Sample Request Body:
         "undo_and_redo": true
       },
       "toolbarMode": 0,
-      "sidebars": [
-        "all",
-        "favorites",
-        "recents",
-        "default_groups",
-        "my_groups",
-        "options"
-      ],
+      "sidebars": ["all", "favorites", "recents", "default_groups", "my_groups", "options"],
       "toolbarEnabled": true,
       "defaultGroupsName": "Default Groups"
     }
@@ -738,14 +698,7 @@ Sample Response Body:
         "mode": 0,
         "homeDocument": {
           "url": "",
-          "icons": [
-            "table_of_contents",
-            "bookmarks",
-            "reset",
-            "filters",
-            "comments",
-            "share"
-          ],
+          "icons": ["table_of_contents", "bookmarks", "reset", "filters", "comments", "share"],
           "toolbarMode": 0,
           "toolbarEnabled": true
         },
@@ -771,14 +724,7 @@ Sample Response Body:
             "undo_and_redo": true
           },
           "toolbarMode": 0,
-          "sidebars": [
-            "all",
-            "favorites",
-            "recents",
-            "default_groups",
-            "my_groups",
-            "options"
-          ],
+          "sidebars": ["all", "favorites", "recents", "default_groups", "my_groups", "options"],
           "toolbarEnabled": true,
           "defaultGroupsName": "Default Groups"
         }
@@ -824,14 +770,7 @@ Sample Response Body:
         "mode": 0,
         "homeDocument": {
           "url": "",
-          "icons": [
-            "table_of_contents",
-            "bookmarks",
-            "reset",
-            "filters",
-            "comments",
-            "share"
-          ],
+          "icons": ["table_of_contents", "bookmarks", "reset", "filters", "comments", "share"],
           "toolbarMode": 0,
           "toolbarEnabled": true
         },
@@ -858,14 +797,7 @@ Sample Response Body:
             "insights": true
           },
           "toolbarMode": 0,
-          "sidebars": [
-            "all",
-            "favorites",
-            "recents",
-            "default_groups",
-            "my_groups",
-            "options"
-          ],
+          "sidebars": ["all", "favorites", "recents", "default_groups", "my_groups", "options"],
           "toolbarEnabled": true,
           "defaultGroupsName": "Default Groups"
         }
@@ -910,14 +842,7 @@ Sample Response Body:
         "mode": 0,
         "homeDocument": {
           "url": "",
-          "icons": [
-            "table_of_contents",
-            "bookmarks",
-            "reset",
-            "filters",
-            "comments",
-            "share"
-          ],
+          "icons": ["table_of_contents", "bookmarks", "reset", "filters", "comments", "share"],
           "toolbarMode": 0,
           "toolbarEnabled": true
         },
@@ -944,14 +869,7 @@ Sample Response Body:
             "insights": true
           },
           "toolbarMode": 0,
-          "sidebars": [
-            "all",
-            "favorites",
-            "recents",
-            "default_groups",
-            "my_groups",
-            "options"
-          ],
+          "sidebars": ["all", "favorites", "recents", "default_groups", "my_groups", "options"],
           "toolbarEnabled": true,
           "defaultGroupsName": "Default Groups"
         }

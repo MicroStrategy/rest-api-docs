@@ -3,6 +3,16 @@ title: Use prompts objects
 description: Prompts are a platform capability of MicroStrategy that refine the data displayed in reports, documents, and dossiers. The system poses the prompt as a question during execution of a dossier, document, or report, and the answer determines the data that is returned. A prompt is similar to a filter; both are applied at runtime and customize the results of data that is returned from a data source. The actual prompt definition cannot be changed at runtime, but the answers to the prompt can be changed dynamically. Together with filtering, prompts allow you to build feature-rich applications by leveraging core MicroStrategy platform capabilities.
 ---
 
+<Available since="2021 Update 1" />
+
+:::tip
+
+You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c22a4c1c-85a3-4f3b-8b34-ffeebd05e795?ctx=documentation).
+
+Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+
+:::
+
 Prompts are a platform capability of MicroStrategy that refine the data displayed in reports, documents, and dossiers. The system poses the prompt as a question during execution of a dossier, document, or report, and the answer determines the data that is returned. A prompt is similar to a [filter](../filter-data/filter-data.md); both are applied at runtime and customize the results of data that is returned from a data source. The actual prompt definition cannot be changed at runtime, but the answers to the prompt can be changed dynamically. Together with filtering, prompts allow you to build feature-rich applications by leveraging core MicroStrategy platform capabilities.
 
 Prompts are applied directly to reports and stored with the dataset for the report. Prompts are applied to dossiers and documents more indirectly. When you use a prompted report as a dataset for a dossier or document, the prompts stored with the dataset are automatically applied to the document or dossier.

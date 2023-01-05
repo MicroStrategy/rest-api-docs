@@ -4,6 +4,8 @@ sidebar_label: Manage fact objects
 description: You can use REST API requests to retrieve, create and update fact objects through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d9b59a86-7b75-4cea-be1c-941dae6f4b08?ctx=documentation).

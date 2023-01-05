@@ -3,6 +3,8 @@ title: Manage derived element objects
 description: You can use REST API requests to retrieve, create, and replace derived element objects through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-45044f1d-938d-4f1a-872d-6b3577c73416?ctx=documentation).

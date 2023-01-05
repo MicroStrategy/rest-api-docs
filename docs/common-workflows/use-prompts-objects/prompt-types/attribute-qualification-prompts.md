@@ -3,6 +3,8 @@ title: Attribute qualification prompts
 description: The attribute qualification prompt is a restrictive type prompt that allows you to filter the data of a report or document based on the qualification of multiple attributes. For example, you determine a single attribute or a list of attributes from which each user that executes the report can select elements to define their report filter.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-6fe150ae-169d-441e-8d1d-311c78db3663?ctx=documentation).

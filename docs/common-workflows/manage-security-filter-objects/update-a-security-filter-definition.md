@@ -4,6 +4,8 @@ sidebar_label: Update a security filter definition
 description: This workflow sample demonstrates how to update a security filter definition through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 This workflow sample demonstrates how to update a security filter definition through the Modeling service.
 
 - 1. Create a changeset using `POST /api/model/changesets`

@@ -4,6 +4,8 @@ sidebar_label: Retrieve a security filter definition
 description: This topic covers several workflows for retrieving a security filter's definition through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 This topic covers several workflows for retrieving a security filter's definition through the Modeling service:
 
 - [Retrieve a security filter's definition](#retrieve-a-security-filters-definition)

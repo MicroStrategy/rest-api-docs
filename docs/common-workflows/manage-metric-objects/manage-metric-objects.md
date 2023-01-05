@@ -3,6 +3,8 @@ title: Manage metric objects
 description: You can use REST API requests to retrieve, create, and update metric objects through the Modeling service.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-e7563dc0-b691-44bd-bba9-a7ff60faeb19?ctx=documentation).
@@ -19,13 +21,10 @@ Training metrics, extreme metric, reference line metrics, and relationship metri
 
 :::
 
-[Retrieve a Metric's Definition](./retrieve-a-metrics-definition.md)
-
-[Retrieve a Metric's Definition within a Changeset](./retrieve-a-metrics-definition-within-a-changeset.md)
-
-[Create a Metric within a Changset](./create-a-metric-within-a-changeset.md)
-
-[Update a Metric's Definition within a Changeset](./update-a-metrics-definition-within-a-changeset.md)
+- [Retrieve a Metric's Definition](./retrieve-a-metrics-definition.md)
+- [Retrieve a Metric's Definition within a Changeset](./retrieve-a-metrics-definition-within-a-changeset.md)
+- [Create a Metric within a Changset](./create-a-metric-within-a-changeset.md)
+- [Update a Metric's Definition within a Changeset](./update-a-metrics-definition-within-a-changeset.md)
 
 The following table lists important fields in the API response body defined for a metric:
 

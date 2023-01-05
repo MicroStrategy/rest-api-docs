@@ -4,6 +4,8 @@ sidebar_label: Retrieve an attribute's relationships within a changeset
 description: This workflow sample demonstrates how to retrieve an attribute's relationships within a changeset.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-8b42c446-de96-4899-b3c1-005f25702596?ctx=documentation).

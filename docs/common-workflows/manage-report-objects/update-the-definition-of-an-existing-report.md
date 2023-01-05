@@ -3,6 +3,8 @@ title: Update the definition of an existing report
 description: You can use REST APIs to update an existing report object through Modeling service.
 ---
 
+<Available since="2021 Update 7" />
+
 You can use REST APIs to update an existing report object through Modeling service.
 
 ## Update the definition of an existing report

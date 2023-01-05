@@ -240,10 +240,7 @@ Two examples are provided below. In the first example to make security role assi
         "path": "/members",
         "value": {
           "projectId": "22B97E444CEF8A6B58CF468BC190CC6E",
-          "memberIds": [
-            "D09773F94699124B4D75B48F1B358327",
-            "54F3D26011D2896560009A8E67019608"
-          ]
+          "memberIds": ["D09773F94699124B4D75B48F1B358327", "54F3D26011D2896560009A8E67019608"]
         }
       }
     ]

@@ -3,6 +3,8 @@ title: Put a derived element in report
 description: This workflow sample demonstrates how to put a derived element in report using REST APIs.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to replace an existing derived element in report. Please be noted that standalone derived element referred in report cannot be updated using this API. Please use `PUT /api/model/derivedElements/{derivedElementId}` instead.
 
 ## Put a derived element in report

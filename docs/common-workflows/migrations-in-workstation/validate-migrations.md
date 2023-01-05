@@ -3,6 +3,8 @@ title: Validate migrations
 description: You can validate migrations between environments within Workstation. When you validate a migration, you are performing all merges without committing any changes to the metadata. If a migration fails to be validated in a target environment, the migration also fails when being migrated to the same target. Administrator users can only validate migrations prior to migration.
 ---
 
+<Available since="2021 Update 6" />
+
 Starting in MicroStrategy 2021 Update 6, you can validate migrations between environments within Workstation. When you validate a migration, you are performing all merges without committing any changes to the metadata. If a migration fails to be validated in a target environment, the migration also fails when being migrated to the same target. Administrator users can only validate migrations prior to migration.
 
 You must [configure the package storage location in Workstation](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service_config_workstation.htm) to use this feature.

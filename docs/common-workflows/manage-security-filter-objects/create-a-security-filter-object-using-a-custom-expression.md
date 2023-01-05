@@ -4,6 +4,8 @@ sidebar_label: Create a security filter object using a custom expression
 description: This workflow sample demonstrates how to create a security filter definition through the Modeling service using a custom expression.
 ---
 
+<Available since="2021 Update 1" />
+
 This workflow sample demonstrates how to create a security filter definition through the Modeling service using a custom expression.
 
 - 1. Create a changeset using `POST /api/model/changesets`

@@ -3,6 +3,8 @@ title: Retrieve contents of a content group
 description: You can use REST APIs to retrieve contents of a content group.
 ---
 
+<Available since="2021 Update 4" />
+
 You can use REST APIs to retrieve contents of a content group by id.
 
 In this sample workflow, we want to retrieve contents in two projects of an existing content group. The content group id is `D35FC0B04BD79E95612DDB907C4CCDF6`, and two project ids are `D9FC7C9240F680D0CCDD92945440138B`, `235853DC4B79DABCE8C6FFB26B7D8DC3`.

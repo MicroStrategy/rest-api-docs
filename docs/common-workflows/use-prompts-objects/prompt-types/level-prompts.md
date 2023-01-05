@@ -3,6 +3,8 @@ title: Level prompts
 description: The level prompt is one of the most popular prompt types. It allows callers to specify the calculation level of a metric. For example, users can define a level prompt at the country level and apply it to a cost fact, as shown below, to generate a new **Cost_Level_Prompt** metric that aggregates the sum of **Cost** at the country level.
 ---
 
+<Available since="2021 Update 1" />
+
 The level prompt is one of the most popular prompt types. It allows callers to specify the calculation level of a metric. For example, users can define a level prompt at the country level and apply it to a cost fact, as shown below, to generate a new **Cost_Level_Prompt** metric that aggregates the sum of **Cost** at the country level.
 
 ![level_prompt](../../../images/level_prompt.png)

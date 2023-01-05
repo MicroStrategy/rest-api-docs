@@ -4,6 +4,8 @@ sidebar_label: Create a custom group object
 description: This workflow sample demonstrates how to create a new custom group object through the Modeling service.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-3c57732e-0689-406a-a6ad-c73ece5960c2?ctx=documentation).
@@ -700,13 +702,7 @@ Create a custom group with a banding points element.
               "name": "Running Revenue Contribution to All Customers Abs."
             },
             "bandMetricFunction": "value",
-            "bandNames": [
-              "bottom 20%",
-              "20%-40%",
-              "40%-60%",
-              "60%-80%",
-              "Top 20%"
-            ],
+            "bandNames": ["bottom 20%", "20%-40%", "40%-60%", "60%-80%", "Top 20%"],
             "points": [0, 0.2, 0.4, 0.6, 0.8, 1]
           }
         }

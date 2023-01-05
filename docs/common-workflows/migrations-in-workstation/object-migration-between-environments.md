@@ -3,6 +3,8 @@ title: Object migration between environments
 description: You can move packages of objects between environments within Workstation.
 ---
 
+<Available since="2021 Update 6" />
+
 Starting in MicroStrategy 2021 Update 6, you can move packages of objects between environments within Workstation. These packages are all maintained by the [MicroStrategy Storage Service](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service.htm), instead of you having to manage the packages yourself.
 
 You must [configure the package storage location in Workstation](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service_config_workstation.htm) to use this feature.

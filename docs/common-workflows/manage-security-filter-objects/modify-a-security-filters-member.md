@@ -4,6 +4,8 @@ sidebar_label: Modify a security filter's member
 description: This workflow sample demonstrates how to modify the users and user groups that a specified security filter is applied to.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-b39c86ac-1a16-4100-a96d-b1a6d2f74b9c?ctx=documentation).
@@ -43,10 +45,7 @@ Sample Request Body:
     {
       "op": "removeElements",
       "path": "/members",
-      "value": [
-        "D09773F94699124B4D75B48F1B358327",
-        "54F3D26011D2896560009A8E67019608"
-      ]
+      "value": ["D09773F94699124B4D75B48F1B358327", "54F3D26011D2896560009A8E67019608"]
     }
   ]
 }
@@ -80,10 +79,7 @@ Sample Request Body:
     {
       "op": "addElements",
       "path": "/members",
-      "value": [
-        "D09773F94699124B4D75B48F1B358327",
-        "54F3D26011D2896560009A8E67019608"
-      ]
+      "value": ["D09773F94699124B4D75B48F1B358327", "54F3D26011D2896560009A8E67019608"]
     }
   ]
 }

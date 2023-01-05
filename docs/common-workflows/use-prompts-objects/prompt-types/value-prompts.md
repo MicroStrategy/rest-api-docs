@@ -3,6 +3,8 @@ title: Value prompts
 description: A value prompt allows the results to be filtered based on a specific value, such as a specific date, number, or word/phrase.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-30ed13b7-880a-4b38-bdf7-363d868bf70c?ctx=documentation).

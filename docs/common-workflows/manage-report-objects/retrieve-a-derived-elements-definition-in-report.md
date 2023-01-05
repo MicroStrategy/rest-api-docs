@@ -3,6 +3,8 @@ title: Retrieve a derived element's definition in report
 description: You can use REST APIs to retrieve the a derived element’s definition in report through the Modeling service.
 ---
 
+<Available since="2021 Update 7" />
+
 You can use REST APIs to retrieve a derived element’s definition in report through the Modeling service. The workflow includes the following REST APIs requests.
 
 ## Retrieve a derived element’s definition within a report instance

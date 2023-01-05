@@ -49,7 +49,7 @@ Description: What's New in the REST API.
 ## 2021 Update 4
 
 - [Retrieve, create, and update content group objects.](./common-workflows/manage-content-group-objects/manage-content-group-objects.md)
-- [Retrieve, create, and update application objects.](common-workflows/manage-application-objects/manage-application-general-settings.md)
+- [Retrieve, create, and update application objects.](common-workflows/manage-application-objects/manage-application-objects.md)
 
 ## 2021 Update 3
 
@@ -72,7 +72,7 @@ Description: What's New in the REST API.
 - [Create and manage table objects through the Modeling service](./common-workflows/manage-table-objects/manage-table-objects.md), including user free-form SQL to create logic tables.
 - [Create and manage security filters through the Modeling service](./common-workflows/manage-security-filter-objects/manage-security-filter-objects.md), including filter definition and user assignment.
 - [Create and manage derived elements through the Modeling service](./common-workflows/manage-derived-element-objects/manage-derived-element-objects.md).
-- [Create and manage prompt objects through the Modeling service](./common-workflows/use-prompts-objects/use-prompts-objects.md), including [expression, object, attribute element, and value prompts](./common-workflows/use-prompts-objects/prompt-types).
+- [Create and manage prompt objects through the Modeling service](./common-workflows/use-prompts-objects/use-prompts-objects.md), including [expression, object, attribute element, and value prompts](./common-workflows/use-prompts-objects/prompt-types/prompt-types.md).
 - Dossier API enhancements to enable interaction with filters and selectors.
 - Create, update, and delete Distribution Services devices, events, transmitters, and contacts via APIs.
 - Create, update, list, and delete devices for email and FTP device types.

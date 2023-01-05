@@ -3,6 +3,8 @@ title: Manage server settings
 description: A high-level workflow sample for managing server settings is shown below. The sequence of REST API requests in the following procedure allows an administrative user to manage the Intelligence Server settings.
 ---
 
+<Available since="2021" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-f79f1c3f-2313-4f26-8c5c-7b38a686c921?ctx=documentation).

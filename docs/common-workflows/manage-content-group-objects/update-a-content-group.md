@@ -3,6 +3,8 @@ title: Update a content group
 description: You can use REST APIs to update a content group.
 ---
 
+<Available since="2021 Update 4" />
+
 You can use REST APIs to update a content group definition by id.
 
 In this sample workflow, we want to update an existing content group with id `D35FC0B04BD79E95612DDB907C4CCDF6`.

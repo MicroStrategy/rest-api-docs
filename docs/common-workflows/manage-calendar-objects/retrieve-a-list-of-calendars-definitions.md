@@ -3,6 +3,8 @@ title: Retrieve a list of calendars' definitions
 description: You can use REST APIs to retrieve definitions for a list of available calendars through the Modeling service. This topic includes the following workflows.
 ---
 
+<Available since="2021 Update 7" />
+
 You can use REST APIs to retrieve definitions for a list of available calendars through the Modeling service. This topic includes the following workflows.
 
 ## 1. Retrieve a list of calendars' definitions

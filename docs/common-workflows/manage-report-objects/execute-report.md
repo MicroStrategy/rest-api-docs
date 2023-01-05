@@ -3,6 +3,8 @@ title: Execute report
 description: This workflow sample demonstrates how to execute report using REST APIs.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to execute a report through modeling service.
 
 The report object ID is `9B9ADA7F464E63CE0D0B709B03BD9370`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
