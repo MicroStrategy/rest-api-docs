@@ -4,6 +4,8 @@ sidebar_label: Retrieve a list of available user hierarchies
 description: This workflow sample demonstrates how to retrieve the list of available user hierarchies in one project within a changeset.
 ---
 
+<Available since="2021 Update 2" />
+
 This workflow sample demonstrates how to retrieve the list of available user hierarchies in one project within a changeset.
 
 You want to get all available user hierarchies in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.

@@ -4,6 +4,8 @@ sidebar_label: Retrieve an attribute's definition within a changeset
 description: This workflow sample demonstrates how to retrieve an attribute's definition within a changeset.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5038d0d2-f112-47fc-b602-e01c58fd8aec?ctx=documentation).

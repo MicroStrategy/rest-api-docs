@@ -4,6 +4,8 @@ sidebar_label: Update a cube definition
 description: This workflow sample demonstrates how to update a cube’s definition through the Modeling service and Publish it through Library Server.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ef6003b3-abe9-40ee-abf7-ff72de088f22?ctx=documentation).
@@ -26,7 +28,9 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 ## Update a cube definition
 
-### Update a cube object using [PUT /api/model/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube) (new in 2021 Update 4)
+### Update a cube object using [PUT /api/model/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube)
+
+<Available since="2021 Update 5" />
 
 Sample Request Header:
 
@@ -294,7 +298,9 @@ Sample Response Body:
 
 Sample Response Code: 200 (The cube's definition is updated successfully.)
 
-### Update the cube's advanced properties using [PUT /api/model/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube) with `showAdvancedProperties=true` (New in 2021 Update 6)
+### Update the cube's advanced properties using [PUT /api/model/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube) with `showAdvancedProperties=true`
+
+<Available since="2021 Update 6" />
 
 You want to update the value of advanced properties of the `Actual vs Forecast Performance Cube` cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the `MicroStrategy Tutorial` project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
@@ -458,7 +464,9 @@ Sample Response Code: 200 (The cube definition is updated successfully.)
 
 ## Publish the cube
 
-### Publish the cube using [POST /api/v2/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2) (new in 2021 Update 4)
+### Publish the cube using [POST /api/v2/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2)
+
+<Available since="2021 Update 5" />
 
 Sample Request Header:
 

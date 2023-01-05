@@ -4,6 +4,8 @@ sidebar_label: Update a drill map
 description: This workflow sample demonstrates how to update an existing drill map object through the Modeling service.
 ---
 
+<Available since="2021 Update 6" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2b7a0f0c-2172-418a-93ec-e0f0a13fa741?ctx=documentation).

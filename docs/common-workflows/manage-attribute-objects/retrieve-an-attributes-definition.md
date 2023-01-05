@@ -4,6 +4,8 @@ sidebar_label: Retrieve an attribute's definition
 description: This workflow sample demonstrates how to retrieve the definition of an attribute through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-9a89680f-6695-47d0-b939-4cb8dee003dd?ctx=documentation).

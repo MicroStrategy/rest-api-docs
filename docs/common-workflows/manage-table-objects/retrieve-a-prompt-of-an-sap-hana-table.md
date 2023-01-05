@@ -4,6 +4,8 @@ sidebar_label: Retrieve a prompt of an SAP HANA table
 description: You can use REST APIs to retrieve a prompt of a table through the Modeling service, if you have read access to the table.
 ---
 
+<Available since="2021 Update 6" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-6ddc138b-b2ab-4c53-8172-b2af26f4586d?ctx=documentation).

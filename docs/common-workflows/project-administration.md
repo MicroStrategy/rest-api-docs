@@ -5,7 +5,7 @@ description: The workflow below allows an administrator to manage project distri
 
 :::tip
 
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-881c9159-4449-4dd4-8684-63407683d17e?ctx=documentation).
+You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-b8adf359-7841-499a-8197-bcbe15c06add?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 
@@ -304,6 +304,8 @@ In the example above, the project status of `"MicroStrategy Tutorial"` was chang
   ```
 
 ## Delete project
+
+<Available since="2021 Update 8" />
 
 There are several use cases in which it is required to delete a project from an environment. A dedicated end point `DELETE /api/projects/{projectId}` was implemented to address these use cases. The end point call requires to provide an identifier of the project in the path and `X-MSTR-AuthToken` in the header. The exemplary call is listed below:
 

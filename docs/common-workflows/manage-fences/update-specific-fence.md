@@ -3,6 +3,8 @@ title: Update specific fence
 description: This workflow sample demonstrates how to update a specific fence.
 ---
 
+<Available since="2021 Update 6" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2b48c198-0938-4578-ae8c-9ab957f046f2?ctx=documentation).

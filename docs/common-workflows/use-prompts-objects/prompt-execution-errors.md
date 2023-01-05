@@ -3,6 +3,8 @@ title: Prompt execution errors
 description: Various errors can occur during prompt execution. Some errors can happen with all types of prompts, and others occur only for specific types of prompts.
 ---
 
+<Available since="2021 Update 1" />
+
 Various errors can occur during prompt execution. Some errors can happen with [all types of prompts](#errors-that-apply-to-all-prompt-types), and others occur only for [specific types of prompts](#prompt-specific-errors). Some causes of errors during prompt execution include:
 
 - Incorrect input:

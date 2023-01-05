@@ -4,6 +4,8 @@ sidebar_label: Retrieve an IRR definition with advanced properties
 description: This topic covers several workflows to retrieve the definition for an Incremental Refresh Report with an advanced property value.
 ---
 
+<Available since="2021 Update 6" />
+
 This topic covers several workflows to retrieve the definition for an Incremental Refresh Report with an advanced property value.
 
 The object ID of the Incremental Refresh Report is  `B17F066940FA684A00C1D9AC5FC95754` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.

@@ -4,6 +4,8 @@ sidebar_label: Update a metric's definition within a changeset
 description: This workflow sample demonstrates how to update a base formula's definition through the Modeling service.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-cd346c9a-019b-401a-9470-6097a5d9b24a?ctx=documentation).

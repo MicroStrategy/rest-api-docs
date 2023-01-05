@@ -4,6 +4,8 @@ sidebar_label: Create an IRR with advanced properties
 description: This topic covers several workflows for creating a new Incremental Refresh Report with advanced properties through the Modeling service.
 ---
 
+<Available since="2021 Update 6" />
+
 This topic covers several workflows for creating a new Incremental Refresh Report with advanced properties through the Modeling service.
 
 You want to create a new Incremental Refresh Report and name it “Original Test" in the destination folder of `8A1831FF494F528D02A4A8BF5FB73459`. The target cube of the Incremental Refresh Report is called `IC01` with the object ID of `946C0C0142C5210D01FEA1AA6B83F202`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.

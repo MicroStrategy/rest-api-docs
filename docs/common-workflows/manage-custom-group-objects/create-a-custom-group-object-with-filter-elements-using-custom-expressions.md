@@ -4,6 +4,8 @@ sidebar_label: Create a custom group object with filter elements using custom ex
 description: This workflow sample demonstrates how to create a new custom group object with filter elements using custom expressions through the Modeling service.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-595a6492-e685-41a9-bdc2-5c0b9c571315?ctx=documentation).

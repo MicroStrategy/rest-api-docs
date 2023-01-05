@@ -3,6 +3,8 @@ title: Manage transformation objects
 description: You can use REST API requests to retrieve, create, and update table objects through the Modeling service.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-f3672b04-f9fa-4eab-8077-903d754d1797?ctx=documentation).

@@ -3,6 +3,8 @@ title: Convert connection string from data source name(DSN) to DSN-less for a da
 description: This workflow sample demonstrates how to convert connection string from DSN to DSN-less for a database source, or a datasource connection.
 ---
 
+<Available since="2021 Update 8" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7156ab5b-01e7-45ce-9b6f-4f394a59a775?ctx=documentation).

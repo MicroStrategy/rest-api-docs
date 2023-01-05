@@ -4,6 +4,8 @@ sidebar_label: Retrieve grid or graph query details
 description: This workflow sample demonstrates how to retrieve the query details of grids and graphs in a document instance.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-b0ee6146-bd68-4aae-adfb-ef186d9e26ee?ctx=documentation).

@@ -3,6 +3,8 @@ title: Retrieve all content groups
 description: You can use REST APIs to retrieve all content groups.
 ---
 
+<Available since="2021 Update 4" />
+
 You can use REST APIs to retrieve all content groups.
 
 In this sample workflow, we want to retrieve all existing content groups.

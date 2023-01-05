@@ -4,6 +4,8 @@ sidebar_label: Create a custom calendar object
 description: This workflow demonstrates how to create a new custom calendar object through the Modeling service.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to create a new Custom Calendar object through the Modeling service.
 
 You want to create a new Custom Calendar called "European Calendar" based on system calendar of Gregorian Calendar with Object ID 2AD679C54C569506AADE6596A1A479ED. You want to set Sunday as the week start day. The Calendar would start from Year 2022 and end after 5 years.

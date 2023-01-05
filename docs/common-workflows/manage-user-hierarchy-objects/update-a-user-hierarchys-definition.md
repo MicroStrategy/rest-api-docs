@@ -4,6 +4,8 @@ sidebar_label: Update a user hierarchy's definition
 description: This workflow sample demonstrates how to update an user hierarchy's definition through the Modeling service.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c257416e-ee2c-46fc-9a71-f2ea390c8452?ctx=documentation).

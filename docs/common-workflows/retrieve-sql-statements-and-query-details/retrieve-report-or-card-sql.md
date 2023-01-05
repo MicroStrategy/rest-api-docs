@@ -4,6 +4,8 @@ sidebar_label: Retrieve report or card SQL
 description: You can retrieve a report or card instance’s SQL statement. In this workflow sample, a document with a report object is used. However, the same workflow applies to card objects.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c962ed90-f4e6-4934-8b65-4480bf45746e?ctx=documentation).

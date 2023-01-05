@@ -3,6 +3,8 @@ title: Retrieve a specific fence
 description: This workflow sample demonstrates how to retrieve a specific user or workload fence.
 ---
 
+<Available since="2021 Update 6" />
+
 You want to get the detailed information of `administrator_user_fence` user fence based on the fence name, which reserves `env-296739laio1use1` node and configured for `Administrator` user/usergroups.
 
 The user ID is `54F3D26011D2896560009A8E67019608`. The usergroup ID is `E96685CD4E60068559F7DFAC7C2AA851`.

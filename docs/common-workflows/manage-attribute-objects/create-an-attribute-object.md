@@ -4,6 +4,8 @@ sidebar_label: Create an attribute object
 description: This workflow sample demonstrates how to create an attribute object through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-fc30f1d1-7f8e-4bbb-8f27-7b66c67e6db6?ctx=documentation).

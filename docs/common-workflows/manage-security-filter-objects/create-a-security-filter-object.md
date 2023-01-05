@@ -4,7 +4,9 @@ sidebar_label: Create a security filter object
 description: This workflow sample demonstrates how to create a new security filter object through the Modeling service.
 ---
 
-::tip
+<Available since="2021 Update 1" />
+
+:::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-bcd7feb9-e96b-45db-aa51-a206d7842524?ctx=documentation).
 

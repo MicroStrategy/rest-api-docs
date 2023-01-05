@@ -4,6 +4,8 @@ sidebar_label: Retrieve a derived element's definition
 description: You can use REST APIs to retrieve the definition for a derived element through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d4a5b7c7-3dba-46fc-acce-0683a23bb1fe?ctx=documentation).

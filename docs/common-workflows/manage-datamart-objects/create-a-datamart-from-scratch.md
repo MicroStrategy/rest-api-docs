@@ -3,6 +3,8 @@ title: Create a datamart from scratch
 description: This workflow sample demonstrates how to create a new Datamart object from scratch through the Modeling service.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to create a new datamart object through the Modeling service.
 
 You want to create a new datamart and name it as “Customer in Region Northeast" in the destination folder of 8A1831FF494F528D02A4A8BF5FB73459. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.

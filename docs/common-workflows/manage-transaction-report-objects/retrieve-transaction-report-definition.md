@@ -3,6 +3,8 @@ title: Retrieve a transaction report's definition
 description: This workflow sample demonstrates how to retrieve a transaction report's definition.
 ---
 
+<Available since="2021 Update 8" />
+
 This workflow sample demonstrates how to retrieve an existing transaction report's definition.
 
 You want to get the definition of the "Insert Sales Opportunity Action" transaction report. The object ID of the transaction report is `34D6AC79420AF8365B176480D411C3A9` in the "MicroStrategy Tutorial" project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. You also need to fetch authorization token to send correct request.

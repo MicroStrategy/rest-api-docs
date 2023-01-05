@@ -100,8 +100,7 @@ const sidebars = {
                     type: "doc",
                     id: "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-requested-objects/filter-report-and-cube-instances-using-requested-objects",
                   },
-                  label:
-                    "Filter report and cube instances using requestedObjects",
+                  label: "Filter report and cube instances using requestedObjects",
                   items: [
                     "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-requested-objects/general-guidelines",
                     "common-workflows/filter-data/filter-report-and-cube-instances/filter-report-and-cube-instances-using-requested-objects/code-sample",
@@ -116,9 +115,7 @@ const sidebars = {
                 id: "common-workflows/filter-data/filter-dossier-instances/filter-dossier-instances",
               },
               label: "Filter dossier instances",
-              items: [
-                "common-workflows/filter-data/filter-dossier-instances/workflow-sample",
-              ],
+              items: ["common-workflows/filter-data/filter-dossier-instances/workflow-sample"],
             },
             "common-workflows/filter-data/retrieve-filters-applied-to-dossier-chapters",
             {
@@ -601,8 +598,7 @@ const sidebars = {
             type: "doc",
             id: "common-workflows/retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server",
           },
-          label:
-            "Retrieve data from the Intelligence Server using the JSON Data API",
+          label: "Retrieve data from the Intelligence Server using the JSON Data API",
           items: [
             "common-workflows/retrieve-data-from-the-intelligence-server/workflow-retrieve-data-from-the-intelligence-server",
             "common-workflows/retrieve-data-from-the-intelligence-server/supported-features-and-considerations",

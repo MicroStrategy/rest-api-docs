@@ -3,6 +3,8 @@ title: Manage application customized emails
 description: You can use REST APIs to manage the customized emails in application.
 ---
 
+<Available since="2021 Update 8" />
+
 You can use REST APIs to manage the customized emails in application.
 
 In this sample workflow, we want to create an application with customized email and then change the email setting.
@@ -58,14 +60,7 @@ Sample Request Body:
     "mode": 0,
     "homeDocument": {
       "url": "",
-      "icons": [
-        "table_of_contents",
-        "bookmarks",
-        "reset",
-        "filters",
-        "comments",
-        "share"
-      ],
+      "icons": ["table_of_contents", "bookmarks", "reset", "filters", "comments", "share"],
       "toolbarMode": 0,
       "toolbarEnabled": true
     },
@@ -91,14 +86,7 @@ Sample Request Body:
         "undo_and_redo": true
       },
       "toolbarMode": 0,
-      "sidebars": [
-        "all",
-        "favorites",
-        "recents",
-        "default_groups",
-        "my_groups",
-        "options"
-      ],
+      "sidebars": ["all", "favorites", "recents", "default_groups", "my_groups", "options"],
       "toolbarEnabled": true,
       "defaultGroupsName": "Default Groups"
     }
@@ -400,14 +388,7 @@ Sample Request Body:
     "mode": 0,
     "homeDocument": {
       "url": "",
-      "icons": [
-        "table_of_contents",
-        "bookmarks",
-        "reset",
-        "filters",
-        "comments",
-        "share"
-      ],
+      "icons": ["table_of_contents", "bookmarks", "reset", "filters", "comments", "share"],
       "toolbarMode": 0,
       "toolbarEnabled": true
     },
@@ -433,14 +414,7 @@ Sample Request Body:
         "undo_and_redo": true
       },
       "toolbarMode": 0,
-      "sidebars": [
-        "all",
-        "favorites",
-        "recents",
-        "default_groups",
-        "my_groups",
-        "options"
-      ],
+      "sidebars": ["all", "favorites", "recents", "default_groups", "my_groups", "options"],
       "toolbarEnabled": true,
       "defaultGroupsName": "Default Groups"
     }

@@ -4,6 +4,8 @@ sidebar_label: Retrieve a table's definition
 description: You can use REST APIs to retrieve the definition for a table through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-95d4124f-c4e5-48ce-986e-a05c6d47069f?ctx=documentation).

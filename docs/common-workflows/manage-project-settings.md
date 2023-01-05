@@ -3,9 +3,11 @@ title: Manage project settings
 description: A high-level workflow sample for managing project settings is shown below. The sequence of REST API requests in the following procedure allows an administrative user to manage the project settings.
 ---
 
+<Available since="2021" />
+
 :::tip
 
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-bbbf9a34-1826-47a0-a924-9e9f4e1947f0?ctx=documentation).
+You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d30bab86-7c75-4b05-88d2-35ca2091e983?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

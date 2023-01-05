@@ -4,6 +4,8 @@ sidebar_label: Retrieve visualization query details
 description: This workflow sample demonstrates how to retrieve the query details of visualizations in a dossier instance.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5d5e523d-6a02-45a1-9537-bc0d37f9c10c).

@@ -3,6 +3,8 @@ title: Manage project load settings on Intelligence Server startup
 description: A high-level workflow sample for loading project settings at the startup of the Intelligence Server is shown below.
 ---
 
+<Available since="2021" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-a5485e49-f3a6-4f14-bc79-b5c0d716f6db?ctx=documentation).

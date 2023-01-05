@@ -4,6 +4,8 @@ sidebar_label: Update a prompt of an SAP HANA table
 description: You can use REST APIs to update a prompt of a table through the Modeling service.
 ---
 
+<Available since="2021 Update 6" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-e3e4974a-dc93-4f79-9ea6-259a1693dc0d?ctx=documentation).

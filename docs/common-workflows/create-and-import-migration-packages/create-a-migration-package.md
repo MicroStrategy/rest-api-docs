@@ -4,6 +4,8 @@ sidebar_label: Create a migration package
 description: This workflow sample demonstrates how to create a migration package using REST APIs.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c4f8860a-cb20-4e14-a7c8-16d450c167c5?ctx=documentation).
@@ -98,10 +100,7 @@ Sample Request Body:
 {
   "type": "project",
   "settings": {
-    "updateSchema": [
-      "recal_table_logical_size",
-      "recal_table_keys_fact_entry_level"
-    ],
+    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"
@@ -187,10 +186,7 @@ Sample Response Body:
   "id": "QjE5REVEQ0MxMUQ0RTBFRkMwMDBFQjk0OTVEMEY0NEY6MzY3NDRCQjUxQjRDMTRDOENERTBDQUE4MTRGQUEzOTE=",
   "status": "READY",
   "settings": {
-    "updateSchema": [
-      "recal_table_logical_size",
-      "recal_table_keys_fact_entry_level"
-    ],
+    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"
@@ -290,10 +286,7 @@ Sample Request Body:
 {
   "type": "project",
   "settings": {
-    "updateSchema": [
-      "recal_table_logical_size",
-      "recal_table_keys_fact_entry_level"
-    ],
+    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"

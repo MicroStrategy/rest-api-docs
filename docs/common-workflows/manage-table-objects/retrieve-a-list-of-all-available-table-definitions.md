@@ -4,6 +4,8 @@ sidebar_label: Retrieve a list of all available table definitions
 description: You can use REST APIs to retrieve the definitions for a list of all available tables through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 You can use REST APIs to retrieve the definitions for a list of all available tables through the Modeling service.
 
 ## Retrieve a list of all available tables' definitions

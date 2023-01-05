@@ -3,6 +3,8 @@ title: Manage language objects
 description: This section covers creating, updating and deleting language objects
 ---
 
+<Available since="2021 Update 7" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d97007d2-a5be-4748-913d-c243b1b21663?ctx=documentation).

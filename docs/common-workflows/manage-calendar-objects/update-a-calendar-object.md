@@ -4,6 +4,8 @@ sidebar_label: Update a custom calendar object
 description: This workflow sample demonstrates how to update an existing custom calendar object through the Modeling service.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to update an existing custom calendar object through the Modeling service.
 
 You want to update the existing Custom Calendar with object ID 66FBD8D81F254B63B3C74B599EC7BB47 with the following changes:

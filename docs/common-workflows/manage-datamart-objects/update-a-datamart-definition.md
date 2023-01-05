@@ -3,6 +3,8 @@ title: Update the datamart definition
 description: This workflow sample demonstrates how to update a Datamart definition through the Modeling service.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to update a datamart definition through the Modeling service.
 
 You want to update the definition of the "Customer in Region Northeast" datamart with following changes:

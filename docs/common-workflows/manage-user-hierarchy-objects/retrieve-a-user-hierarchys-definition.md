@@ -4,6 +4,8 @@ sidebar_label: Retrieve a user hierarchy's definition
 description: This workflow sample demonstrates how to retrieve an user hierarchy's definition within a changeset.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-6403c6f8-0173-4b2c-826c-029742877689?ctx=documentation).

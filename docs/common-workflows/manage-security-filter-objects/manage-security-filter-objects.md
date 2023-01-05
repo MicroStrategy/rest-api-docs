@@ -3,6 +3,8 @@ title: Manage security filter objects
 description: You can use REST API requests to retrieve, create and update security filter objects through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-add85127-d706-4f6d-b202-16368325e40e?ctx=documentation).

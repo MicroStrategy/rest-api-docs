@@ -3,6 +3,8 @@ title: Create a transaction report
 description: This workflow sample demonstrates how to create a new transaction report object from scratch.
 ---
 
+<Available since="2021 Update 8" />
+
 This workflow sample demonstrates how to create a new transaction report object. Before following this workflow, you need to obtain authorization token and project ID.
 
 :::info

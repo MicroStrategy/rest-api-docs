@@ -4,6 +4,8 @@ sidebar_label: Retrieve a cube's definition
 description: This topic cover several workflows for retrieving a cube's definition. Retrieve a Cube's Definition, Retrieve a Cube Definition with a Filter in Tokens Format, Retrieve a Cube Definition with a Filter Custom Expression in Tree and Tokens Formats, Retrieve a Cube Definition with a Filter that Contains Inline Custom Expressions Returned in Tree and Tokens Formats, Retrieve a Cube Definition with Advanced Properties and Retrieve Applicable Properties of a Cube.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-585d42d1-fbdc-4d1d-afbb-c4e872753709?ctx=documentation).
@@ -14,7 +16,9 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This topic cover several workflows for retrieving a cube's definition.
 
-## Retrieve a cube's definition (new in 2021 Update 4)
+## Retrieve a cube's definition
+
+<Available since="2021 Update 5" />
 
 This workflow sample demonstrates how to retrieve the definition of a cube through the Modeling service.
 
@@ -178,7 +182,9 @@ You can view the cube’s definition in the body of the response.
 
 Response Code: 200 (The cube’s definition was returned successfully.)
 
-## Retrieve a cube’s definition with filter in tokens format (new in 2021 Update 4)
+## Retrieve a cube’s definition with filter in tokens format
+
+<Available since="2021 Update 5" />
 
 This workflow sample demonstrates how to retrieve the definition of a cube with its filter in tokens format through the Modeling service. Unlike the first workflow, you want to enable the `showFilterTokens` parameter to retrieve the filter's definition in tokens format as well.
 
@@ -366,7 +372,9 @@ You can view the cube’s definition in the body of the response.
 
 Response Code: 200 (The cube’s definition was returned successfully.)
 
-## Retrieve a cube’s definition with filter’s custom expressions in tree and tokens formats (new in 2021 Update 4)
+## Retrieve a cube’s definition with filter’s custom expressions in tree and tokens formats
+
+<Available since="2021 Update 5" />
 
 In this workflow sample, you want to get the definition cube when its filter contains the custom expression, `Year, Category Analysis with Custom Expression in Filter`, with the expression returned in tree and tokens formats. The object ID of the cube is `864F3B2D40D0C83EB229D8AA7005CE93`.
 
@@ -579,7 +587,9 @@ You can view the cube’s definition in the body of the response. Notice that`['
 
 Sample Response Code: 200 (Cube’s definition is returned successfully.)
 
-## Retrieve a cube’s definition with filter that contains inline custom expressions returned in tree and tokens formats (new in 2021 Update 4)
+## Retrieve a cube’s definition with filter that contains inline custom expressions returned in tree and tokens formats
+
+<Available since="2021 Update 5" />
 
 In this workflow sample, you want to get the cube's definition when its filter contains an inline custom expression, `Year, Category Analysis with Inline Custom Expression in Filter`, with the expression returned in tree and tokens formats. The object ID of the cube is `57EB0BAB4BC2C8ACB91F0C9845ECF431`.
 
@@ -734,7 +744,9 @@ You can view the cube’s definition in the body of the response. Notice that `[
 
 Sample Response Code: 200 (Cube’s definition is returned successfully.)
 
-## Retrieve a cube definition with advanced properties (new in 2021 Update 6)
+## Retrieve a cube definition with advanced properties
+
+<Available since="2021 Update 6" />
 
 This workflow sample demonstrates how to retrieve the definition of a cube with advanced properties through the Modeling service.
 
@@ -873,7 +885,9 @@ You can view the cube definition in the body of the response. The example below 
 
 Response Code: 200 (The cube definition is returned successfully.)
 
-## Retrieve applicable properties of a cube (new in 2021 Update 6)
+## Retrieve applicable properties of a cube
+
+<Available since="2021 Update 6" />
 
 This workflow sample demonstrates how to retrieve all the applicable properties of a cube through the Modeling service.
 

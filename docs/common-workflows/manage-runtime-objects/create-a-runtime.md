@@ -4,6 +4,8 @@ sidebar_label: Create a runtime
 description: This workflow sample demonstrates how to create a new runtime object through the REST API.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to create a new runtime object through the REST API.
 
 The runtime is a configuration level object.

@@ -4,6 +4,8 @@ sidebar_label: Delete a runtime
 description: This workflow sample demonstrates how to delete an existing runtime object through the REST API.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to delete an existing runtime object through the REST API.
 
 You want to delete the runtime with ID `E6C5BF4C483FF06313BEE19EAD39978B`.

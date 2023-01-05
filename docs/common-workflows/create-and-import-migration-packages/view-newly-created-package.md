@@ -4,6 +4,8 @@ sidebar_label: View content from a newly created package
 description: This workflow sample demonstrates how to view a newly created migration package using REST APIs.
 ---
 
+<Available since="2021 Update 3" />
+
 This workflow sample demonstrates how to view a newly created migration package using REST APIs.
 
 1. [Create an empty package](#create-an-empty-package)
@@ -88,10 +90,7 @@ Sample Request Body:
 {
   "type": "project",
   "settings": {
-    "updateSchema": [
-      "recal_table_logical_size",
-      "recal_table_keys_fact_entry_level"
-    ],
+    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"
@@ -172,10 +171,7 @@ Sample Response Body:
   "id": "QjE5REVEQ0MxMUQ0RTBFRkMwMDBFQjk0OTVEMEY0NEY6MzY3NDRCQjUxQjRDMTRDOENERTBDQUE4MTRGQUEzOTE=",
   "status": "READY",
   "settings": {
-    "updateSchema": [
-      "recal_table_logical_size",
-      "recal_table_keys_fact_entry_level"
-    ],
+    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"

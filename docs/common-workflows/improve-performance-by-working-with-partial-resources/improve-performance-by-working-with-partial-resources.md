@@ -3,6 +3,14 @@ title: Improve performance by working with partial resources
 description: While API endpoints define full response models, you may only need a subset of the available data. You can ask the server to only send the fields you need and get a partial response instead. This helps improve performance, since extra resources are not devoted transferring, parsing, and storing unnecessary fields.
 ---
 
+:::tip
+
+You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ea1451c1-67fc-44c2-9f08-427b6cd60393?ctx=documentation).
+
+Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+
+:::
+
 While API endpoints define full response models, you may only need a subset of the available data. You can ask the server to only send the fields you need and get a partial response instead. This helps improve performance, since extra resources are not devoted transferring, parsing, and storing unnecessary fields.
 
 MicroStrategy supports top-level field selection on most endpoints.

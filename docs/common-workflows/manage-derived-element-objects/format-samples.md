@@ -4,6 +4,8 @@ sidebar_label: Format samples for derived elements
 description: In a derived element, you can set header and values formats for each element in the POST and PUT REST APIs.
 ---
 
+<Available since="2021 Update 1" />
+
 In a derived element, you can set header and values formats for each element in the POST and PUT REST APIs.
 
 Let's say you want to set the following font properties for all values:

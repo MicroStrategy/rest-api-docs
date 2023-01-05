@@ -4,6 +4,8 @@ sidebar_label: Create a filter object with a custom expression
 description: This workflow sample demonstrates how to create a new filter object using a custom expression through the Modeling service.
 ---
 
+<Available since="2021" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-b6421792-16ec-4d68-9af9-8fc38eb35b7e?ctx=documentation).

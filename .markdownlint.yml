@@ -171,7 +171,7 @@ MD032: true
 # MD033/no-inline-html - Inline HTML
 MD033:
   # Allowed elements
-  allowed_elements: ["br", "pre", "a", "iframe", "blockquote", "ul", "li", "details", "summary"]
+  allowed_elements: ["br", "pre", "a", "iframe", "blockquote", "ul", "li", "details", "summary", "Available", "Deprecated"]
 
 # MD034/no-bare-urls - Bare URL used
 MD034: true

@@ -3,6 +3,8 @@ title: Manage runtimes
 description: You can use REST API requests to retrieve, create, update, and delete runtime objects through the REST API.
 ---
 
+<Available since="2021 Update 7" />
+
 Starting in MicroStrategy 2021 Update 7, you can use REST API requests to retrieve, create, update, and delete runtime objects through the REST API.
 
 The runtime object defines the detailed configuration for the virtual runtime, the virtual runtime is used for Python scripts remote execution.

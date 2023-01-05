@@ -3,6 +3,8 @@ title: Manage content group packages
 description: How to manage content group packages in different cases.
 ---
 
+<Available since="2021 Update 2" />
+
 ## Migrate content group objects, recipient list, and content
 
 See [Create and import migration packages](../create-and-import-migration-packages/create-and-import-migration-packages.md) to manage object migration.
@@ -78,10 +80,7 @@ Sample request of the project package:
 {
   "type": "project",
   "settings": {
-    "updateSchema": [
-      "recal_table_logical_size",
-      "recal_table_keys_fact_entry_level"
-    ],
+    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"
@@ -131,10 +130,7 @@ Sample request of the project package:
 {
   "type": "project",
   "settings": {
-    "updateSchema": [
-      "recal_table_logical_size",
-      "recal_table_keys_fact_entry_level"
-    ],
+    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"

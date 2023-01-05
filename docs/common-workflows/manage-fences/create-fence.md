@@ -3,6 +3,8 @@ title: Create a new fence
 description: This workflow sample demonstrates how to create a new user or workload fence.
 ---
 
+<Available since="2021 Update 6" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5aef5846-6a6a-4d65-a91d-b3ebf5d96520?ctx=documentation).

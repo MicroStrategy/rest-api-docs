@@ -3,6 +3,8 @@ title: Retrieve a calendar's definition
 description: You can use REST APIs to retrieve the definition for a calendar through the Modeling service. This topic includes the following workflows.
 ---
 
+<Available since="2021 Update 7" />
+
 You can use REST APIs to retrieve the definition for a calendar through the Modeling service. This topic includes the following workflows.
 
 ## Retrieve a calendar's definition

@@ -4,6 +4,8 @@ sidebar_label: Update a transformation's definition
 description: This workflow sample demonstrates how to update an existing transformation through the Modeling service.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ad947705-6f6c-433c-ae10-cfe90ba9a364?ctx=documentation).

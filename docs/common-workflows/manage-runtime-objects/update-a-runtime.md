@@ -4,6 +4,8 @@ sidebar_label: Update a runtime
 description: This workflow sample demonstrates how to update an existing runtime object through the REST API.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to update an existing runtime object through the REST API.
 
 You want to update the existing `Test Runtime` runtime object. The runtime ID is `E6C5BF4C483FF06313BEE19EAD39978B`.

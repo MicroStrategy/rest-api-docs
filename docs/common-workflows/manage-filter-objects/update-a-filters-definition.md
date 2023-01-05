@@ -4,6 +4,8 @@ sidebar_label: Update a filter's definition
 description: This workflow sample demonstrates how to update a filter's definition through the Modeling service.
 ---
 
+<Available since="2021" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5bb60de6-52e2-43c4-87bc-b404125f96ad?ctx=documentation).

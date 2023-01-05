@@ -4,6 +4,8 @@ sidebar_label: Retrieve a fact's definition
 description: This topic covers two workflows for retrieving a fact’s definition.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-3b137a26-4cf4-4902-8f11-9d7a7cffc5f0?ctx=documentation).

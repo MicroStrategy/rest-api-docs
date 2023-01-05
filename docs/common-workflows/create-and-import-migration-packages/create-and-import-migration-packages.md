@@ -3,9 +3,11 @@ title: Create and import migration packages
 description: You can use REST API requests to create and import migration packages.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7a6ff268-6e87-449b-a51f-30f134ab54d4?ctx=documentation).
+You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-e4a2caff-1aef-4724-be48-4635fff1133f?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

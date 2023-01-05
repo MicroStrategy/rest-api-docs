@@ -4,6 +4,8 @@ sidebar_label: Retrieve a consolidation's definition
 description: You can use REST APIs to retrieve the definition for a consolidation through the Modeling service.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d0ad5e63-76a5-47c8-b185-1f5781a443f6?ctx=documentation).

@@ -4,6 +4,8 @@ sidebar_label: Retrieve a transformation's definition
 description: This topic covers the following workflows for retrieving an transformation’s definition.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-3fa0dd24-d717-46ba-831c-29cbfe75c3ba?ctx=documentation).

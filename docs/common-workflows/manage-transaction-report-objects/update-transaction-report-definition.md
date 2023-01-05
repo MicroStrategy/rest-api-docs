@@ -3,6 +3,8 @@ title: Update a transaction report's definition
 description: This workflow sample demonstrates how to update a transaction report's definition.
 ---
 
+<Available since="2021 Update 8" />
+
 This workflow sample demonstrates how to update an existing transaction report's definition. You are allowed to modify the following parts:
 
 - `description` in the `information` field;

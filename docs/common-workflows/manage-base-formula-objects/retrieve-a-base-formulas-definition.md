@@ -4,6 +4,8 @@ sidebar_label: Retrieve a base formula's definition
 description: This topic covers several workflows for retrieving a filter's definition.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7bcc16b2-2864-4980-b2b1-77681174827a?ctx=documentation).

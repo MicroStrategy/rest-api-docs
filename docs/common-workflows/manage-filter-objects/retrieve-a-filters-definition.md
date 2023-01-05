@@ -4,6 +4,8 @@ sidebar_label: Retrieve a filter's definition
 description: This topic covers several workflows for retrieving a filter's definition.
 ---
 
+<Available since="2021" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c532ccd7-317b-4f18-9a37-1388740cbab5?ctx=documentation).

@@ -4,6 +4,8 @@ sidebar_label: Retrieve a metric's definition
 description: This topic covers several workflows for retrieving a metric's definition.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c9639bc3-853f-4746-94b6-528b5aed21a5?ctx=documentation).

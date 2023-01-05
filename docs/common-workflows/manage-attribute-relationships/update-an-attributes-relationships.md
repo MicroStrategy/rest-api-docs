@@ -4,6 +4,8 @@ sidebar_label: Update an attribute's relationships
 description: This workflow sample demonstrates how to update an attribute's relationship through the Modeling service.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-a1ebd204-40ea-42e0-9ccc-21f391c797fb?ctx=documentation).

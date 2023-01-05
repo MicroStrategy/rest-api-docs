@@ -3,6 +3,8 @@ title: Delete a derived element in report
 description: This workflow sample demonstrates how to delete a derived element in report using REST APIs.
 ---
 
+<Available since="2021 Update 7" />
+
 This workflow sample demonstrates how to delete an existing derived element in report. Please be noted that if standalone derived element is referred in report, this API will not delete the standalone derived element, but clear its reference on report.
 
 ## Delete a derived element in report

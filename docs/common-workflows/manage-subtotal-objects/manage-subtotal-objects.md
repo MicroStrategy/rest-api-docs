@@ -3,6 +3,8 @@ title: Manage subtotal objects
 description: Subtotals allow you to dynamically control the computation and display of report data within desired groupings. Subtotals are applied to report metrics to calculate totals and for dynamic aggregation.
 ---
 
+<Available since="2021 Update 5" />
+
 :::tip
 
 You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-0e8e2533-03d6-4235-8aa0-6aef1cc2e723?ctx=documentation).
@@ -15,13 +17,10 @@ Subtotals allow you to dynamically control the computation and display of report
 
 You can use REST API requests retrieve, create, and update the subtotal objects through the Modeling service:
 
-[Retrieve a Subtotal's Definition](./retrieve-a-subtotals-definition.md)
-
-[Retrieve a Subtotal's Definition within a Changeset](./retrieve-a-subtotals-definition-within-a-changeset.md)
-
-[Create a Subtotal within a Changeset](./create-a-subtotal-within-a-changeset.md)
-
-[Update a Subtotal within a Changeset](./update-a-subtotal-within-a-changeset.md)
+- [Retrieve a Subtotal's Definition](./retrieve-a-subtotals-definition.md)
+- [Retrieve a Subtotal's Definition within a Changeset](./retrieve-a-subtotals-definition-within-a-changeset.md)
+- [Create a Subtotal within a Changeset](./create-a-subtotal-within-a-changeset.md)
+- [Update a Subtotal within a Changeset](./update-a-subtotal-within-a-changeset.md)
 
 There are three important fields in the API response body defined for a subtotal:
 

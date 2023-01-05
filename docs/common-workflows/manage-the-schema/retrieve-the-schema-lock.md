@@ -3,6 +3,8 @@ title: Retrieve the schema lock
 description: This workflow sample demonstrates how to retrieve the schema lock.
 ---
 
+<Available since="2021 Update 1" />
+
 This workflow sample demonstrates how to retrieve the schema lock.
 
 You want to get the schema lock status of the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.

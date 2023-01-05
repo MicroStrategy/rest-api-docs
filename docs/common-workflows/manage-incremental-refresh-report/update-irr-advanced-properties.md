@@ -4,6 +4,8 @@ sidebar_label: Update IRR advanced properties
 description: This topic covers several workflows for updating an Incremental Refresh Report advanced properties through the Modeling service.
 ---
 
+<Available since="2021 Update 6" />
+
 This topic covers several workflows for updating an Incremental Refresh Report advanced properties through the Modeling service.
 
 You want to create a new Incremental Refresh Report and name it `YearInList_Insert` in the destination folder of `8A1831FF494F528D02A4A8BF5FB73459`. The target cube of Incremental Refresh Report is called `Year_Country_Category_3` with the object ID of `F71F4C0E4B8F73B143B0DD83EEB47F43`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. You also want to set some advanced properties of **Metric Join Type** and **Attribute Join Type**.

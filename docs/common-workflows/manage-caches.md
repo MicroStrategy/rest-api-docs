@@ -4,6 +4,16 @@ description: This workflow sample demonstrates how to purge object or element ca
 sidebar_label: Purge object and element caches
 ---
 
+<Available since="2021 Update 8" />
+
+:::tip
+
+You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7238f434-a209-45b1-a227-cba9887c20b4?ctx=documentation).
+
+Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+
+:::
+
 When a user works with MicroStrategy, cache data is created. The data stored in the cache allows to increase system performance and improve user’s experience. Instead of loading the data required by system from some database, i.e., meta-data database, the data is retrieved from a cache memory. However, Platform Administrator or Analytics Architect may decide to purge the caches periodically. Currently, the REST API allows to delete cache data for objects and elements using a following endpoint:
 
 - `DELETE /api/monitors/projects/{projectId}/cache/{cacheType}`

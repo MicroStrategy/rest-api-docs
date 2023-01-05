@@ -3,6 +3,8 @@ title: Retrieve the list of fences
 description: This workflow sample demonstrates how to retrieve the list of all existing user and workload fences.
 ---
 
+<Available since="2021 Update 6" />
+
 You want to get the details of all existing user and workload fences.
 
 [DssXmlPrivilegesConfigureServerBasic](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesConfigureServerBasic) and [DssXmlPrivilegesUseClusterMonitor](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesUseClusterMonitor) privileges are required to retrieve the list of all existing fences.

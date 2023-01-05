@@ -3,6 +3,8 @@ title: Reload the schema asynchronously
 description: This workflow sample demonstrates how to reload (update) the schema asynchronously.
 ---
 
+<Available since="2021 Update 1" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-edc29ca6-4db8-4a8b-988e-11d9583ed993?ctx=documentation).

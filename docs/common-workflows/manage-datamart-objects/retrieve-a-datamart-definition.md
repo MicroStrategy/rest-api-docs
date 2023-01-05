@@ -3,6 +3,8 @@ title: Retrieve a datamart definition
 description: This topic covers several workflows to retrieve an Datamart definition.
 ---
 
+<Available since="2021 Update 7" />
+
 This topic covers several workflows to retrieve a datamart definition:
 
 - [Retrieve a datamart definition](#retrieve-a-datamart-definition)

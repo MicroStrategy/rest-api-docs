@@ -3,6 +3,8 @@ title: Answer prompts
 description: The workflow to answer prompts.
 ---
 
+<Available since="2021 Update 1" />
+
 ## Workflow sample: Answer prompts
 
 Here is a workflow sample for using REST APIs to answer prompts:

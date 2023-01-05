@@ -4,6 +4,8 @@ sidebar_label: Import a migration package
 description: This workflow sample demonstrates how to import a migration package using REST APIs.
 ---
 
+<Available since="2021 Update 2" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7a6ff268-6e87-449b-a51f-30f134ab54d4?ctx=documentation).
@@ -133,10 +135,7 @@ Sample Response Body:
   "id": "QjE5REVEQ0MxMUQ0RTBFRkMwMDBFQjk0OTVEMEY0NEY6MDk2NjgxM0VBNzQ5Q0Y3MjZEMzI2NEJEMTg1Qjk4RDM=",
   "status": "READY",
   "settings": {
-    "updateSchema": [
-      "recal_table_logical_size",
-      "recal_table_keys_fact_entry_level"
-    ],
+    "updateSchema": ["recal_table_logical_size", "recal_table_keys_fact_entry_level"],
     "aclOnReplacingObjects": "use_existing",
     "aclOnNewObjects": ["keep_acl_as_source_object"],
     "defaultAction": "replace"

@@ -3,6 +3,8 @@ title: Retrieve a report's definition
 description: You can use REST APIs to retrieve the definition of a report through Modeling service.
 ---
 
+<Available since="2021 Update 7" />
+
 You can use REST APIs to retrieve the definition of a report through Modeling service. This topic includes the following workflows:
 
 - [Retrieve a report's definition directly](#retrieve-a-reports-definition-directly)

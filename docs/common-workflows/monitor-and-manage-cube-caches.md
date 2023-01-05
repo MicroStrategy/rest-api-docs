@@ -4,6 +4,8 @@ sidebar_label: Monitor and manage cube caches
 description: The status of a cube tells you how the cube is currently being used and whether reports/dossiers can access the cube. For example, if a cube is deactivated, reports that access that cube fail to execute. Cube status is accessed through the System Monitors in Developer. All published cubes have an entry in the cube monitor. Deleting an entry from the cube monitor unpublishes the cube.
 ---
 
+<Available since="2021" />
+
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-736d23cb-1247-49fc-99dc-83365a1502e6?ctx=documentation).
