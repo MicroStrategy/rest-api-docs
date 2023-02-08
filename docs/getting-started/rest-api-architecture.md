@@ -5,10 +5,10 @@ description: The MicroStrategy REST framework follows REST conventions to provid
 
 The MicroStrategy REST framework follows REST conventions to provide a simplified interface for utilizing platform capabilities through JSON data via HTTP(s) protocol. You can use the REST framework to perform actions such as:
 
-- [Authentication](../common-workflows/authentication.md)
-- [Retrieve data](../common-workflows/retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server.md)
-- [Configuring a clustered environment](./configure-clustered-environments.md)
-- [User management](../common-workflows/manage-user-and-user-groups/)
+- [Authentication](authentication.md)
+- [Retrieve data](../common-workflows/analytics/retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server.md)
+- [Configuring a clustered environment](configure-clustered-environments.md)
+- [User management](../common-workflows/administration/user-management/manage-user-and-user-groups.md)
 
 The REST framework is scalable, allowing you to configure a clustered environment that supports multiple instances of REST servers communicating with an Intelligence Server cluster.
 

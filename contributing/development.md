@@ -16,16 +16,16 @@
 
 ## Content styling guidelines
 
-We want to keep our documentation consistent in styling. More details could be found [here](./content-style-guide.md).
+We want to keep our documentation consistent in styling. More details could be found [here](content-style-guide.md).
 
 ## Adding new content
 
-- All documentation markdown files are located within `./docs/`.
+- All documentation markdown files are located within `docs`.
 - Every documentation markdown file should have the front matter. You should have required `title`, `description`, and an optional `sidebar_label`. Please see the example below:
 
   ```text
   ---
-  title: Workflow Sample - Authentication
+  title: Authentication
   sidebar_label: Authentication
   description: a summary of the page to provide better text snippet in the search result. This is for SEO purpose.
   ---
@@ -80,7 +80,7 @@ There are three main ways to add your new doc into the sidebar:
 }
 ```
 
-1. If you want to update an existing doc, the versioned docs locate in `/versioned_doc`, the current docs locate in `/docs`.
+1. If you want to update an existing doc, the versioned docs is located in `versioned_doc`, the current docs is located in `docs`.
 
 1. If you want to delete an existing version, you need to perform three steps:
    1. Remove the version from `versions.json`.
