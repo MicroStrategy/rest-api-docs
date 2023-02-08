@@ -22,9 +22,9 @@ More information about `markdownlint` could be found [here](https://github.com/D
 
 ## Front matter
 
-- (Required) `title` is the `h1` heading that shows on the HTML page.
-- (Optional) `sidebar_label` is the title you want to show in the sidebar navigation. It is only needed if you want to display something different from the `title`.
-- (Required) `description` is the summary for this page. It provides better text snippet in the search result. This is only for SEO purpose.
+- (Required) `title` is the `h1` heading that shows as the title of your documentation.
+- (Optional) `sidebar_label` is the title you want to show in the sidebar navigation. If the sidebar label is the same as `title`, you can omit this field.
+- (Required) `description` is the summary for this page. It provides better text snippet in the search result. This is only for SEO purpose and it won't show up in the documentation. Therefore, If you want the reader see the description, you may want to have the same content of this description in your documentation as well.
 
 Note: Do not use backticks in front matter since they won't be rendered the same as markdown content.
 
@@ -88,6 +88,10 @@ Supported languages are listed [here](https://prismjs.com/#languages-list).
 
 It is enforced to use `1.` only for all ordered lists for ease of maintenance.
 
+## Unordered list
+
+It is suggested to use `-` instead of `*`.
+
 ## Emojis
 
 Our docs site supports all [Github-supported emojis](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md). Please use it as needed.
@@ -100,7 +104,7 @@ The list below shows the usage of emojis in our Docs site:
 
 - Make sure you check that all links and images are still functional after adding them into Markdown. Some of the REST API links have spaces in them, which don’t work in Markdown and should be replaced by a `%20` or the appropriate generated characters (you can use inspect on the page to identify the id/anchor link).
 
-- Images in the `/images` folder are linked relatively. The pathway back can be found by looking at the permalink for the page and backing out until the root folder is reached. For example, if you want to access the images from `whats-new.md`, you need to access the images like this: `![ALT TEXT](./images/IMAGE-NAME.png)`, and if you want to access the images from `common-workflows/authentication.md`, you need to access the images like this: `![ALT TEXT](../images/IMAGE-NAME.png)`.
+- Images in the `/images` folder are linked relatively. The pathway back can be found by looking at the permalink for the page and backing out until the root folder is reached. For example, if you want to access the images from `whats-new.md`, you need to access the images like this: `![ALT TEXT](images/IMAGE-NAME.png)`, and if you want to access the images from `getting-started/authentication.md`, you need to access the images like this: `![ALT TEXT](../images/IMAGE-NAME.png)`.
 
 - Endpoints for REST API should have links if possible.
 
@@ -109,13 +113,13 @@ The list below shows the usage of emojis in our Docs site:
   - If the description of the link is related to the title of some page, use sentence case. For example:
 
     ```md
-    - [Retrieve, create, and update runtime objects.](./common-workflows/manage-runtime-objects/manage-runtimes.md)
+    - [Retrieve, create, and update runtime objects.](common-workflows/manage-runtime-objects/manage-runtimes.md)
     ```
 
   - If the description of the link is in the middle of the sentence and it is a brief explanation of what the link is, use proper cases as needed. For example:
 
     ```md
-    You can use the following REST APIs to [filter the data that is returned when you create or update an instance of a dossier](./filter-dossier-instances/filter-dossier-instances.md), including clearing the filter selections.
+    You can use the following REST APIs to [filter the data that is returned when you create or update an instance of a dossier](filter-dossier-instances/filter-dossier-instances.md), including clearing the filter selections.
     ```
 
 ## Naming conventions
@@ -123,8 +127,11 @@ The list below shows the usage of emojis in our Docs site:
 - Folders and files
 
   - All folder and file names should have **dashes** (`-`) between **lowercase** letters. There should be no spaces in folder or file names.
-  - Permalinks for nested files or folders should recognize the nesting; that is, the permalink should be an relative path from the current folder. For instance, to access `common-workflows/authentication.md` from `common-workflows/common-workflows.md` you would use the link `./authentication.md`.
-  - Markdown links should have a `.md` ending to them like `./add-functionality/add-functionality.md`.
+  - Permalinks for files and folders should use:
+    - relative paths from the current folder. For instance, to access `/docs/common-workflows/common-workflows.md` from `/docs/common-workflows/administration/datasource-management/datasource-management.md` you would use the link `../../common-workflows.md`.
+    - or absolute paths from `docs` for files or folders can be used instead for repeated or commonly used pages like `/docs/getting-started/authentication.md` or `/docs/common-workflows/modeling/changesets.md`.
+  - It is preferred to use `common-workflows.md` over `./common-workflows.md` when possible for links.
+  - Markdown links should have a `.md` ending to them like `add-functionality/add-functionality.md`.
 
 - Titles, sidebar labels, and headers
 
@@ -226,7 +233,7 @@ Try to reduce repeating the same content or description for a workflow or api un
 ```text
 :::tip
 
-Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/changesets.md).
+Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/modeling/changesets.md).
 
 :::
 ```
@@ -256,9 +263,16 @@ description: This is a demo of the usage of the available since tag.
 ---
 
 <Available since="2021 Update 8" />
+
 The summary of the newly available doc.
 
 - `GET /api/available/since` <Available since="2021 Update 8" inline />
+
+## Some section title
+
+<Available since="2021 Update 8" />
+
+The summary of the section.
 ```
 
 and it will look like this:
@@ -288,9 +302,16 @@ description: This is a demo of the usage of the deprecated since tag.
 ---
 
 <Deprecated since="2021 Update 8" />
+
 The summary of the deprecated doc.
 
 - `GET /api/deprecated/since` <Deprecated since="2021 Update 8" inline />
+
+## Some section title
+
+<Deprecated since="2021 Update 8" />
+
+The summary of the section.
 ```
 
 and it will look like this:

@@ -5,7 +5,7 @@
 <!-- Please mark the relevant options with 'X' like [X] -->
 
 - [ ] New content for the documentation
-- [ ] Typo in documentation
+- [ ] Modification in the existing documentation
 - [ ] Infrastructure changes (not related to documentation content)
 
 ## Checklist

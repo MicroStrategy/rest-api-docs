@@ -2,5 +2,5 @@
 
 # Contributing guidelines
 
-- [Content style guidelines](./content-style-guide.md)
-- [Development guidelines](./development.md)
+- [Content style guidelines](content-style-guide.md)
+- [Development guidelines](development.md)
