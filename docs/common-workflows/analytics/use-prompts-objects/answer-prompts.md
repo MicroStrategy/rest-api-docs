@@ -52,9 +52,7 @@ The response body when you create an instance of a prompted document or dossier 
 ```json
 {
   "id": "0034EC8011E70F1600000080EFD5150B",
-
   "status": 2,
-
   "mid": "F160BAF211E8C0372DBC0080EFE59EDF"
 }
 ```
@@ -64,9 +62,7 @@ The response body when you create an instance of a prompted report would look li
 ```json
 {
   "id": "0034EC8011E70F1600000080EFD5150B",
-
   "instanceId": "F160BAF211E8C0372DBC0080EFE59EDF",
-
   "status": 2
 }
 ```
@@ -86,27 +82,21 @@ You can provide prompt answers for three separate prompt types: attribute elemen
   "answers": [
     {
       "key": "W34D600FCA9CE481F89859762AED04C69",
-
       "type": "OBJECTS", // object prompts
-
       "answers": [
         {
           "id": "8D679D4111D3E4981000E787EC6DE8A4",
-
           "type": 12
         },
         {
           "id": "8D679D4111D3E4981000E787EC6DE8A4",
-
           "type": 12
         }
       ]
     },
     {
       "key": "W34D600FCA9CE481F89859762AED04C69",
-
       "type": "ELEMENTS", // attribute element prompts
-
       "answers": [
         {
           "id": "h4;8D679D4111D3E4981000E787EC6DE8A4;40K-50K"
@@ -115,9 +105,7 @@ You can provide prompt answers for three separate prompt types: attribute elemen
     },
     {
       "key": "W34D600FCA9CE481F89859762AED04C68",
-
       "type": "VALUE", // value prompts
-
       "answers": ["abc", "dfg"]
     }
   ]
@@ -175,17 +163,17 @@ Sample code for answering several types of prompts with the default answer, with
   "prompts": [
     {
       "id": "055A4B7241396EB7FC27E3A5D2A9FB2F", // element prompt
-
+      "type": "ELEMENTS",
       "useDefault": true
     },
     {
       "id": "0B524DB54440D0280747C1A3058ED474", // object prompt
-
+      "type": "OBJECTS",
       "useDefault": true
     },
     {
       "id": "0CE45CA4483E29FFB0AF969D68588E95", // value prompt
-
+      "type": "VALUE",
       "useDefault": true
     }
   ]
