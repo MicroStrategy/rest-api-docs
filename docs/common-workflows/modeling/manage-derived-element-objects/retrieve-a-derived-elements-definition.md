@@ -31,7 +31,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-Get the derived element's definition using [GET /api/model/derivedElements/{DerivedElementId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/DerivedElements/ms-getDerivedElement).
+Get the derived element's definition using [GET /api/model/derivedElements/{DerivedElementId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Derived%20Elements/ms-getDerivedElement).
 
 Sample Request Header:
 

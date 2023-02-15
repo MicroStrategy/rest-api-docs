@@ -35,7 +35,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Create a security filter
 
-Use [POST /api/model/securityFilters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/postSecurityFilter) with `"tree"` format for the `"qualifications"`. [More examples](#more-samples) of creating a new security filter are listed further below
+Use [POST /api/model/securityFilters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/ms-postSecurityFilter) with `"tree"` format for the `"qualifications"`. [More examples](#more-samples) of creating a new security filter are listed further below
 
 To create a security filter, in the request body, the security filter’s "qualification" needs to be in either "tree" or "tokens" format. If both are provided, only "tree" is used.
 

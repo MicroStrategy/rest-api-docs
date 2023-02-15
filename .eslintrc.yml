@@ -4,7 +4,7 @@ env:
   es2022: true
   node: true
 extends:
-  - 'eslint:recommended'
+  - "airbnb-base"
   - 'plugin:markdown/recommended'
   - 'prettier'
 plugins:

@@ -38,7 +38,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-## Create a new base formula using [POST /api/model/formulas](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Formulas/ms-postFormula)
+## Create a new base formula using [POST /api/model/formulas](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Base%20Formulas/ms-postFormula)
 
 In `"Information"`, you must provide `name` and `destinationFolderID` for the base formula you want to create.
 

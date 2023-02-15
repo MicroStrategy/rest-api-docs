@@ -30,6 +30,7 @@
     "lint:markdownlint": "yarn markdownlint docs/",
     "lint:markdownlint:fix": "yarn markdownlint docs/ --fix",
     "lint:sidebar": "node scripts/lint_sidebars.js",
+    "lint:extlinks": "node scripts/lint_external_links.js",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -50,9 +51,12 @@
     "chalk": "^4.1.2",
     "dotenv-cli": "^6.0.0",
     "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-markdown": "^2.2.1",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",

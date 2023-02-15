@@ -26,7 +26,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/modeling/changesets.md).
 
-Create a new table by defining its physical table with a normal warehouse table using [POST /api/model/tables](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/tables/ms-ms-posttable).
+Create a new table by defining its physical table with a normal warehouse table using [POST /api/model/tables](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-addTable).
 
 Here are some other approaches to creating a table:
 

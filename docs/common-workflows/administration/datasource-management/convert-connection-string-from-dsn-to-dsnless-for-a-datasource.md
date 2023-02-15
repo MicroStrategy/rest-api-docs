@@ -7,7 +7,7 @@ description: This workflow sample demonstrates how to convert connection string 
 
 :::tip
 
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7156ab5b-01e7-45ce-9b6f-4f394a59a775?ctx=documentation).
+You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-737e03ad-a41a-46d5-bf7a-00e68963b08b?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

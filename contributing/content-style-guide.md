@@ -81,7 +81,7 @@ Supported languages are listed [here](https://prismjs.com/#languages-list).
 - Inline code that is also a link should not have a backtick so that it still appears blue. Like the following:
 
   ```text
-  [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin)
+  [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
   ```
 
 ## Ordered list

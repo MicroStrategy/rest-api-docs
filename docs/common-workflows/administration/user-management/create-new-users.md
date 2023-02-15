@@ -33,7 +33,7 @@ This endpoint allows the caller to authenticate with the MicroStrategy REST Serv
 
 ![swagger_POST_auth_login_1003x508](../../../images/swagger_POST_auth_login_1003x508.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 Sample Request
 
@@ -93,7 +93,7 @@ This endpoint allows the caller to create a new user. You obtain the authorizati
 
 ![swagger_POST_users](../../../images/swagger_POST_users.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/createUser](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/createUser)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createUser](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createUser)
 
 Sample Request
 
@@ -198,7 +198,7 @@ In this example, you make the new user a member of an additional user group call
 
 ![swagger_PATCH_users](../../../images/swagger_PATCH_users.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/updatePartialUser](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/updateUserGroup)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updatePartialUser](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updateUserGroup)
 
 Sample Request
 
@@ -283,7 +283,7 @@ This endpoint allows the caller to create an email address for a user. You obtai
 
 ![swagger_POST_users_addresses](../../../images/swagger_POST_users_addresses.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/createNewAddress](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/createNewAddress)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createNewAddress](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createNewAddress)
 
 Sample Request
 
@@ -352,7 +352,7 @@ This endpoint allows the caller to send an email to specified recipients. You ob
 
 ![swagger_POST_emails_1002x486](../../../images/swagger_POST_emails_1002x486.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/Object_Management/getObject](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/Object_Management/getObject)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Emails/sendEmails](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Emails/sendEmails)
 
 Sample Request
 
@@ -412,7 +412,7 @@ This endpoint allows the caller to log out for the authenticated user with the M
 
 ![swagger_POST_auth_logout_1010x223](../../../images/swagger_POST_auth_logout_1010x223.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogout)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 Sample Request
 

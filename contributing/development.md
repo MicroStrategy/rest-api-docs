@@ -110,6 +110,8 @@ Some helpful commands are available to help you auto fix some of the errors:
 - `yarn lint:eslint:fix` can auto fix eslint related errors.
 - `yarn lint:prettier:fix` can auto fix prettier related errors.
 - `yarn lint:markdownlint:fix` can auto fix markdownlint related errors.
+- `yarn lint:sidebar` can find all the markdown files that are in the `./docs` folder but not in sidebars.js.
+- `yarn lint:extlinks` can find all the wrong links to [API Explorer](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs) page.
 
 ## Creating pull request
 

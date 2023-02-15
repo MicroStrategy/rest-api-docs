@@ -34,7 +34,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Workflow
 
-### Create a new drill map using [POST /api/model/drillMaps](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/DrillMaps/ms-postDrillMap)
+### Create a new drill map using [POST /api/model/drillMaps](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drill%20Maps/ms-postDrillMap)
 
 In this step, you are creating a new drill map with a drill path based on the `Year` attribute in the `Up` field and setting the drill path to a `high` priority, along with some other properties. You can find more examples in the following sections on this page. You can find [More examples](#more-examples) at the bottom of this page.
 

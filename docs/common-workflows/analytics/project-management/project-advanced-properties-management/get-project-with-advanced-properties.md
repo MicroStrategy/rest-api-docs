@@ -7,7 +7,7 @@ description: The workflow involves getting project definition along with its adv
 
 :::tip
 
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ef4e5e88-1bc6-4c9a-a15a-6fef6d399bb8?ctx=documentation).
+You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c3c3e563-696d-45b8-8f65-b02cb1cb394e?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

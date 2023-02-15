@@ -41,7 +41,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/modeling/changesets.md).
 
-## Create a new filter using a custom expression with [POST /api/model/filters.](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters/ms-ms-postFilter)
+## Create a new filter using a custom expression with [POST /api/model/filters.](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters/ms-postFilter)
 
 Sample Request Header:
 

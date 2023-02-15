@@ -112,7 +112,7 @@ Sample Response
 
 :::tip
 
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d70fe450-32f0-44a2-b648-6fdc04ff4eb3?ctx=documentation).
+You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2d0b3eac-9704-42a7-9481-fec12557b752?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 
@@ -240,7 +240,7 @@ Sample Response Code: 200 (Add datasource to project.)
 
 :::tip
 
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-3bf7d98a-eaac-44bc-8a0d-71894ff2bcc0?ctx=documentation).
+You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-577baae8-f1b6-4ed2-8819-bc3aed5ec5c7?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

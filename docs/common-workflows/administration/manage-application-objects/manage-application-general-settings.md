@@ -206,7 +206,7 @@ Sample Response Code: 204 (The application has been created successfully.)
 
 Next, we want to get the application created above whose id is `856F5276290944F48FCF34DF4AC9737C`. The result will include `objectVersion`, `objectNames`, and `objectAcl` if requested with the parameter `outputFlag=INCLUDE_LOCALE&outputFlag=INCLUDE_ACL`. They are essential for updating applications.
 
-Endpoint: [GET /api/v2/applications/{id}](http://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/getApplication_1)
+Endpoint: [GET /api/v2/applications/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/getApplication_1)
 
 Sample Request Header:
 
@@ -623,7 +623,7 @@ Sample Response Code: 204 (The application has been updated successfully.)
 
 We can also delete the application created above whose id is `856F5276290944F48FCF34DF4AC9737C`.
 
-Endpoint: [DELETE /api/v2/applications/{id}](http://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/removeApplication)
+Endpoint: [DELETE /api/v2/applications/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/removeApplication)
 
 Sample Request Header:
 
@@ -649,7 +649,7 @@ Sample Response Code: 204 (The application has been deleted successfully.)
 
 We can get all existing applications.
 
-Endpoint: [GET /api/v2/applications](http://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/getApplications)
+Endpoint: [GET /api/v2/applications](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/getApplications)
 
 Sample Request Header:
 

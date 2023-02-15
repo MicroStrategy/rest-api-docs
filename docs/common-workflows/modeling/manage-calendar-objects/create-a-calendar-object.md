@@ -26,7 +26,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Create a new custom calendar
 
-Endpoint: [`POST /api/model/calendars`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/calendars)
+Endpoint: [`POST /api/model/calendars`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars/ms-createCalendar)
 
 To create the new custome calendar , you can submit the request body with the correct information.
 

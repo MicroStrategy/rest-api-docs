@@ -34,7 +34,7 @@ In this example, you will use Standard authentication and log in as "administrat
 
 ![swagger_POST_auth_login_938x476](../../../images/swagger_POST_auth_login_938x476.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 Sample Request
 
@@ -98,7 +98,7 @@ In this example, you create a new user group called "Developers". You make it a 
 
 ![swagger_POST_UserGroups](../../../images/swagger_POST_UserGroups.jpg)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/createUserGroup](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/createUserGroup)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createUserGroup](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createUserGroup)
 
 Sample Request
 
@@ -175,7 +175,7 @@ In this example, you update the new user group called "Developers". You change t
 
 ![swagger_PATCH_UserGroups](../../../images/swagger_PATCH_UserGroups.jpg)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/updatePartialUser](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/updateUserGroup)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updatePartialUser](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updateUserGroup)
 
 Sample Request
 
@@ -292,7 +292,7 @@ In this example, you get information for the user group you created and updated,
 
 ![swagger_GET_UserGroups_id_940x590](../../../images/swagger_GET_UserGroups_id_940x590.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/getUserGroups](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/getUserGroups)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/getUserGroups](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/getUserGroups)
 
 Sample Request
 
@@ -358,7 +358,7 @@ This endpoint allows the caller to log out for the authenticated user with the M
 
 ![swagger_POST_auth_logout_940x208](../../../images/swagger_POST_auth_logout_940x208.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogout)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 Sample Request
 

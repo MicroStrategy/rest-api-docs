@@ -32,7 +32,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-Retrieve the definition of the specified metric within a changeset using [GET /api/model/Subtotals/{SubtotalId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Formulas/ms-getFormulaDetails).
+Retrieve the definition of the specified metric within a changeset using [GET /api/model/Subtotals/{SubtotalId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subtotals/ms-getSubtotalDetails).
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 

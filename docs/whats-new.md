@@ -14,6 +14,7 @@ Description: What's New in the REST API.
 - [Advanced properties for projects.](common-workflows/analytics/project-management/project-advanced-properties-management/project-advanced-properties-management.md)
 - [Convert connection string from data source name(DSN) to DSN-less for a datasource.](common-workflows/administration/datasource-management/convert-connection-string-from-dsn-to-dsnless-for-a-datasource.md)
 - [Manage Watch KPI and Insight service privileges.](common-workflows/administration/server-management/server-level-privileges/watch-kpi-insight-service-privileges.md)
+- [Manage quick search indices.](common-workflows/administration/server-management/manage-quick-search-indices.md)
 
 ## 2021 Update 7
 
@@ -172,7 +173,7 @@ The [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligen
 ## 10.10
 
 - The REST API supports [sorting for cubes and reports](common-workflows/analytics/sort-data.md).
-- The JSON Data API supports [fetching data from a visualization inside an existing dossier](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Dossiers-and-Documents/getVisualizationResult) which can leverage advanced capabilities, such as the data blending engine and other complex analytics.
+- The JSON Data API supports [fetching data from a visualization inside an existing dossier](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationResult) which can leverage advanced capabilities, such as the data blending engine and other complex analytics.
 - The Cube API [supports DDA cubes and MDX cubes](getting-started/rest-api-families.md#CubeAPI), in addition to Intelligent cubes.
 
 ## 10.9
@@ -215,7 +216,7 @@ There were no significant changes from the previous version.
 REST SDK content was included in the Web SDK, under the JSON Data API section, until 10.7.
 
 - A new RESTful Dataset API lets you [upload external data directly to the Intelligence Server](common-workflows/analytics/manage-datasets/make-external-data-available/make-external-data-available.md).
-- A new endpoint was added to the [Cube API to get the cube definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Cubes/getDefinition) and to the [Report API to get the report definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Reports/getDefinition).
+- A new endpoint was added to the [Cube API to get the cube definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getDefinition) and to the [Report API to get the report definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getDefinition_1).
 
 ## 10.5
 
