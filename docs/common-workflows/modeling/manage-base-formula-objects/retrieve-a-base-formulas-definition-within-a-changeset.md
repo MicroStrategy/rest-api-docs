@@ -34,7 +34,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-## Get the definition of the specified base formula ID within a changeset using [GET /api/model/formulas/{formulaId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Formulas/getFormulaDetails)
+## Get the definition of the specified base formula ID within a changeset using [GET /api/model/formulas/{formulaId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Base%20Formulas/ms-getFormulaDetails)
 
 Sample Request Header:
 

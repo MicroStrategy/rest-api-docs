@@ -34,7 +34,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Update the filter's definition
 
-Endpoint: [PUT /api/model/customGroups/{CustomGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups/ms-putFilter).
+Endpoint: [PUT /api/model/customGroups/{CustomGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups/ms-putCustomGroup).
 
 Sample Request Header:
 

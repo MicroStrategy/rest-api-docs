@@ -7,7 +7,7 @@ description: The workflow involves getting datasource definition along with its 
 
 :::tip
 
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ef4e5e88-1bc6-4c9a-a15a-6fef6d399bb8?ctx=documentation).
+You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c8ec1165-e5d3-4b9a-bc68-df3d71d493f7?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

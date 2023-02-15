@@ -30,7 +30,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-## Create a new custom timezone using [POST /api/model/timezones](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/timezones)
+## Create a new custom timezone using [POST /api/model/timezones](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Timezones/ms-postTimezone)
 
 You want to create the timezone by providing its name and base timezone.
 

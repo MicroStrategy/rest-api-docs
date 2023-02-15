@@ -262,7 +262,7 @@ Sample Response Code: 200 (The undo package was downloaded successfully.)
 
 ## Delete the import process
 
-Use [DELETE /api/packages/imports/{importId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#//Packages/delete) to delete the import process.
+Use [DELETE /api/packages/imports/{importId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/delete) to delete the import process.
 
 Sample Request Header:
 

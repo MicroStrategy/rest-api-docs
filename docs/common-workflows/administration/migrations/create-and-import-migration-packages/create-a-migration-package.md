@@ -215,7 +215,7 @@ Sample Response Code: 200 (The full definition of the package was retrieved succ
 
 ### Download the package and save it as a binary file
 
-Use [GET /api/packages/{packageId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/downloadPackageBinary) to download the package and save it as a binary file.
+Use [GET /api/packages/{packageId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/downloadPackageBinary_1) to download the package and save it as a binary file.
 
 Sample Request Header:
 

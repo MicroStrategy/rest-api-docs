@@ -299,7 +299,7 @@ Sample Response Code: 204 (The application has been created successfully.)
 
 ## Update the customized email setting for an existing application
 
-Next, we want to update the application with id `EAF29916C4E147CCAD976C6AB6F12632` to hide the branding info in the distribution email. Specifically, we will hide the branding image, send by section, and the social media area. Note that all other fields in the application should be sent, otherwise they will be set to empty. You could use the endpoint [GET /api/v2/applications/{id}](http://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/getApplication_1) with the output flag for the whole definition of this application. Refer to [update an existing application](manage-application-general-settings.md#update-an-existing-application) for details.
+Next, we want to update the application with id `EAF29916C4E147CCAD976C6AB6F12632` to hide the branding info in the distribution email. Specifically, we will hide the branding image, send by section, and the social media area. Note that all other fields in the application should be sent, otherwise they will be set to empty. You could use the endpoint [GET /api/v2/applications/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/getApplication_1) with the output flag for the whole definition of this application. Refer to [update an existing application](manage-application-general-settings.md#update-an-existing-application) for details.
 
 Endpoint: [PUT /api/v2/applications/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/updateApplication)
 

@@ -28,7 +28,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-Retrieve the drill map’s definition using [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/DrillMaps/ms-getDrillMap).
+Retrieve the drill map’s definition using [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drill%20Maps/ms-getDrillMap).
 
 ### Sample request header
 
@@ -197,7 +197,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 :::
 
-### Get the drill map definition within the changeset using [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/DrillMaps/ms-getDrillMap)
+### Get the drill map definition within the changeset using [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drill%20Maps/ms-getDrillMap)
 
 Sample Request Header:
 

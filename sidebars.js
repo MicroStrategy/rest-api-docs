@@ -732,6 +732,7 @@ const sidebars = {
                   ],
                 },
                 "common-workflows/administration/server-management/manage-languages",
+                "common-workflows/administration/server-management/manage-quick-search-indices",
               ],
             },
             {

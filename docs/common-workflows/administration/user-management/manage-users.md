@@ -32,7 +32,7 @@ This endpoint allows the caller to authenticate with the MicroStrategy REST Serv
 
 ![swagger_POST_auth_login](../../../images/swagger_POST_auth_login.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 Sample Request
 
@@ -94,7 +94,7 @@ In this example, you are going to search for the user "John Smith". To do this, 
 
 ![swagger_GET_users](../../../images/swagger_GET_users.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/getUsers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/createUserGroup)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/getUsers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createUserGroup)
 
 Sample Request
 
@@ -164,7 +164,7 @@ In this example, you are going to update the description for the user "John Smit
 
 ![swagger_PATCH_users_id](../../../images/swagger_PATCH_users_id.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/updatePartialUser](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/updateUserGroup)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updatePartialUser](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updateUserGroup)
 
 Sample Request
 
@@ -248,7 +248,7 @@ This endpoint allows the caller to get information for a specific user. You obta
 
 ![swagger_GET_users_id](../../../images/swagger_GET_users_id.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/getUsers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/User_Management/getUserGroups)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/getUsers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/getUserGroups)
 
 Sample Request
 
@@ -312,7 +312,7 @@ This endpoint allows the caller to log out for the authenticated user with the M
 
 ![swagger_POST_auth_logout](../../../images/swagger_POST_auth_logout.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogout)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 Sample Request
 

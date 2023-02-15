@@ -16,3 +16,6 @@ __pycache__/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# used by `scripts/lint_external_links.js` to lint external links
+openapi.json

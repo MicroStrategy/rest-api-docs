@@ -2,7 +2,8 @@
   "*.md": [
     "yarn eslint --quiet",
     "yarn prettier --list-different --config ./.prettiermarkdownrc",
-    "yarn markdownlint"
+    "yarn markdownlint",
+    "yarn lint:sidebar"
   ],
   "*.js": [
     "yarn eslint --quiet",

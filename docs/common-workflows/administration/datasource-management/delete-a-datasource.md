@@ -9,6 +9,14 @@ The workflow for deleting and cleaning up a datasource includes the following se
 1. [Delete a datasource connection](#delete-a-datasource-connection) `DELETE /api/datasources/connections/{connectionId}`
 1. [Delete a datasource login](#delete-a-datasource-login) `DELETE /api/datasources/logins/{loginId}`
 
+:::tip
+
+You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2da893be-a6e9-449a-95ae-749b5906bb27?ctx=documentation).
+
+Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+
+:::
+
 ## Delete a datasource
 
 :::info
@@ -41,14 +49,6 @@ Sample Response Body: Empty
 Sample Response Code: 204 (A database source is deleted successfully.)
 
 ## Delete a datasource connection
-
-:::tip
-
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-3bf7d98a-eaac-44bc-8a0d-71894ff2bcc0?ctx=documentation).
-
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
-
-:::
 
 :::info
 

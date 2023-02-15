@@ -10,7 +10,7 @@ if (!target) {
   console.error("Need a destination");
   exit(1);
 }
-console.log("copying to:" + target);
+console.log(`copying to:${target}`);
 
 if (!target.endsWith("/")) {
   target += "/";
@@ -29,7 +29,7 @@ fs.readdir(".", (e, files) => {
           if (err) {
             console.log("Error Found:", err);
           } else {
-            console.log(f + " copied.");
+            console.log(`${f} copied.`);
           }
         });
       }

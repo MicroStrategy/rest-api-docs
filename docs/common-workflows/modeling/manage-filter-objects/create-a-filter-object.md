@@ -35,7 +35,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Create a new filter
 
-Endpoint: [POST /api/model/filters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters/ms-ms-postFilter).
+Endpoint: [POST /api/model/filters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters/ms-postFilter).
 
 You want to create the filter using the “tree” format for the "qualifications”. More examples of creating a new filter are listed below.
 

@@ -29,7 +29,7 @@ This endpoint allows the caller to authenticate with the MicroStrategy REST Serv
 
 ![swagger_POST_auth_login](../../../images/swagger_POST_auth_login.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogin)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 Sample Request
 
@@ -88,7 +88,7 @@ This endpoint allows the caller to get the list of projects with the MicroStrate
 
 ![swagger_GET_projects](../../../images/swagger_GET_projects.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/Projects/getProjects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#!/Projects/getProjects)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1)
 
 Sample Request
 
@@ -142,7 +142,7 @@ This endpoint allows the caller to get the objects under a predefined folder wit
 
 ![swagger_GET_folders_preDefined](../../../images/swagger_GET_folders_preDefined.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Browsing/getPreDefinedFolder](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Browsing/getPreDefinedFolder)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolder](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolder)
 
 Sample Request
 
@@ -273,7 +273,7 @@ This endpoint allows the caller to log out for the authenticated user with the M
 
 ![swagger_POST_auth_logout](../../../images/swagger_POST_auth_logout.png)
 
-REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/#!/Authentication/postLogout)
+REST API Explorer: [https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 Sample Request
 

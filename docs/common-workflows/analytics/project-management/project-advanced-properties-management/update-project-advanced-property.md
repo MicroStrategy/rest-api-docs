@@ -7,7 +7,7 @@ description: The workflow involves modifying project's advanced properties value
 
 :::tip
 
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ef4e5e88-1bc6-4c9a-a15a-6fef6d399bb8?ctx=documentation).
+You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-804b24e1-dccb-48c1-bfde-0a132163e409?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

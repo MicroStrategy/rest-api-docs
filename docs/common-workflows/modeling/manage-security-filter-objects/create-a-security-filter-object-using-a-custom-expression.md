@@ -32,7 +32,7 @@ Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/Mi
 
 ## 1. Create a changeset using [POST /api/model/changesets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-createChangeset)
 
-## 2. Create a security filter using a custom expression with [POST /api/model/securityFilters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/postSecurityFilter)
+## 2. Create a security filter using a custom expression with [POST /api/model/securityFilters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/ms-postSecurityFilter)
 
 Sample Request Header:
 
