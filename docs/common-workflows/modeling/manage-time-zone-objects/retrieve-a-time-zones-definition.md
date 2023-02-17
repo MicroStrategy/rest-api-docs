@@ -19,7 +19,7 @@ You want to get the definition of a system timezone. The object ID of the timezo
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Since timezone objects are configuration objects, you must set the project ID as an empty string.
 
@@ -71,7 +71,7 @@ You want the definition of a custom timezone object. That object ID of the timez
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Since timezone objects are configuration objects, you must set the project ID as an empty string.
 
@@ -79,7 +79,7 @@ Since timezone objects are configuration objects, you must set the project ID as
 
 :::tip
 
-Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of `GET /api/model/timezones` to create a new timezone or update the custom timezone's definitions, it is recommended to associate all requests to one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of `GET /api/model/timezones` to create a new timezone or update the custom timezone's definitions, it is recommended to associate all requests to one changeset.
 
 :::
 

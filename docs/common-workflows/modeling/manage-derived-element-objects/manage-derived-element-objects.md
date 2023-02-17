@@ -7,7 +7,7 @@ description: You can use REST API requests to retrieve, create, and replace deri
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-45044f1d-938d-4f1a-872d-6b3577c73416?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-45044f1d-938d-4f1a-872d-6b3577c73416?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

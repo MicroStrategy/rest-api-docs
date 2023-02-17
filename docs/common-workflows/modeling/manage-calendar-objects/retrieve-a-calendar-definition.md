@@ -91,7 +91,7 @@ Since calendar objects are configuration objects, you must set the project ID as
 
 :::tip
 
-Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of GET /api/model/calendars to create a new calendar or update the custom calendar's definitions, it is recommended to associate all requests to one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of GET /api/model/calendars to create a new calendar or update the custom calendar's definitions, it is recommended to associate all requests to one changeset.
 
 :::
 

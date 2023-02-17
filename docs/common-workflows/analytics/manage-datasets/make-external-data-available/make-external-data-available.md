@@ -5,7 +5,7 @@ description: The Push Data API, which belongs to the Dataset API family, lets yo
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-724e8a71-2d94-4887-af80-f57d62503f46?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-724e8a71-2d94-4887-af80-f57d62503f46?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

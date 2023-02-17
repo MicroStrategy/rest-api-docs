@@ -79,7 +79,7 @@ All available parameters for getting the level prompt's available answers are sh
 | Location | Name             | Description                                                                                                                                  | Data Type |
 | -------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
 | header   | X-MSTR-AuthToken | The authorization token.                                                                                                                     | string    |
-| header   | project id       | The ID of the project.                                                                                                                       | string    |
+| header   | project id       | The project ID.                                                                                                                              | string    |
 | query    | report id        | The ID of the report.                                                                                                                        | string    |
 | query    | instance id      | The ID of the instance.                                                                                                                      | string    |
 | query    | prompt id        | The ID of the prompt.                                                                                                                        | string    |
@@ -128,7 +128,7 @@ All available parameters for getting the level prompt's definition are shown bel
 | Location | Name             | Description                                                                               | Data Type | Required? |
 | -------- | ---------------- | ----------------------------------------------------------------------------------------- | --------- | --------- |
 | header   | X-MSTR-AuthToken | The authorization token.                                                                  | string    | yes       |
-| header   | project id       | The ID of the project.                                                                    | string    | yes       |
+| header   | project id       | The project ID.                                                                           | string    | yes       |
 | query    | id               | The ID of the report, document, or dossier.                                               | string    | yes       |
 | query    | instance id      | The ID of the instance.                                                                   | string    | yes       |
 | query    | closed           | Filter the closed field by this parameter. If this value is null the filter does nothing. | boolean   |           |

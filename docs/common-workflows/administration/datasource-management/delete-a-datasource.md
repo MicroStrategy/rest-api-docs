@@ -21,7 +21,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 You can obtain the datasource ID from searching for the datasource by name with the endpoint `GET /api/datasources`.
 
@@ -52,7 +52,7 @@ Sample Response Code: 204 (A database source is deleted successfully.)
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 You can obtain the connection ID from searching for datasource connections with the endpoint `GET /api/datasources/connections`.
 
@@ -83,7 +83,7 @@ Sample Response Code: 204 (Datasource connection is deleted successfully.)
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 You can obtain the login ID from viewing datasource logins with the endpoint `GET /api/datasources/logins`.
 

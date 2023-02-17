@@ -5,7 +5,7 @@ description: While API endpoints define full response models, you may only need 
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ea1451c1-67fc-44c2-9f08-427b6cd60393?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ea1451c1-67fc-44c2-9f08-427b6cd60393?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

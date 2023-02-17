@@ -7,7 +7,7 @@ description: You can use REST API requests to retrieve the schema lock, lock and
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-8f48dce2-e826-4f45-98fb-c3ceed64b670?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-8f48dce2-e826-4f45-98fb-c3ceed64b670?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

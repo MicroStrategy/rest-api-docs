@@ -7,7 +7,7 @@ description: You can use REST API requests to create and import migration packag
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-e4a2caff-1aef-4724-be48-4635fff1133f?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-e4a2caff-1aef-4724-be48-4635fff1133f?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

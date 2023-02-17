@@ -7,7 +7,7 @@ description: You can use REST API requests to retrieve, create and update securi
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-add85127-d706-4f6d-b202-16368325e40e?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-add85127-d706-4f6d-b202-16368325e40e?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

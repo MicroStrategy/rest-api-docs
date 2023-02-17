@@ -5,7 +5,7 @@ description: The first step in a typical MicroStrategy REST API workflow is auth
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/collection/16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/collection/16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

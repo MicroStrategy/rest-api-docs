@@ -5,7 +5,7 @@ description: Administrators can make REST API calls to manage users and user gro
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-dc9e5266-db8c-4842-9c44-16b5dd614f47).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-dc9e5266-db8c-4842-9c44-16b5dd614f47).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

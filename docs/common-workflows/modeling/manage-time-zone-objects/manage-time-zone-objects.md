@@ -5,7 +5,7 @@ description: You can use REST API requests to retrieve, create, and replace time
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-dcd45e43-c8f8-4198-9fa6-c0e3a22c0aaf?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-dcd45e43-c8f8-4198-9fa6-c0e3a22c0aaf?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

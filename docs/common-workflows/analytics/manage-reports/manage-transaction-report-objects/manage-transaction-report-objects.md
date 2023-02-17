@@ -7,7 +7,7 @@ description: You can use REST API requests to retrieve, create, and update the
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-f0b4a18d-227b-4f84-b000-92d56e8fcf9b?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-f0b4a18d-227b-4f84-b000-92d56e8fcf9b?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

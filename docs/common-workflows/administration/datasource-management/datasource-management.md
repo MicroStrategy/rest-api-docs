@@ -5,7 +5,7 @@ description: You can use REST API requests to manage datasources.
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-fe63e329-ca17-40e6-9263-8f451b95e06e?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-fe63e329-ca17-40e6-9263-8f451b95e06e?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

@@ -17,7 +17,7 @@ End Point: [POST /api/datasources/logins](https://demo.microstrategy.com/MicroSt
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 :::
 
@@ -75,7 +75,7 @@ End Point: [POST /api/datasources/connections](https://demo.microstrategy.com/Mi
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Obtain the datasource login id from the response body of the previous call. From our example, it is `"34B407AA6B43C17B8286A3AEEA775DB3"`
 
@@ -195,7 +195,7 @@ End Point: [POST /api/datasources](https://demo.microstrategy.com/MicroStrategyL
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Obtain the datasource connection id from the response body of the previous call. From our example, it is `"CDCBE48C1342CBC68FCE4393AF33A1CC"`
 

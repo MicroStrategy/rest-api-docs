@@ -5,7 +5,7 @@ description: You can use the Reports API, the Cubes API and the Dossiers API to 
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7b08f07c-89d2-4c61-8bc1-83cee2eb2eaf?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7b08f07c-89d2-4c61-8bc1-83cee2eb2eaf?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

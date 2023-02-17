@@ -28,9 +28,9 @@ For different formats of base formula expressions, please refer to [Retrieve a b
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
@@ -59,7 +59,7 @@ You can view the base formula's definition in the body of the response, includin
 | Location | Name                | Description                                                                                                                                                                                                                                            |
 | -------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | header   | X-MSTR-authToken    | The authorization token                                                                                                                                                                                                                                |
-| header   | X-MSTR-MS-Changeset | The ID of the changeset.                                                                                                                                                                                                                               |
+| header   | X-MSTR-MS-Changeset | The changeset ID.                                                                                                                                                                                                                                      |
 | params   | showExpressionAs    | Omitted, tree, or tokens:<br/>- If omitted, the expression is returned in only “text“ formats.<br/>- If `tree`, the expression is returned in "text" and "tree" formats.<br/>- If `tokens`, the expression is returned in "text" and "tokens" formats. |
 
 Sample Request Header:
