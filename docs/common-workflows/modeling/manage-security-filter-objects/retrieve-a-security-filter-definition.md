@@ -20,9 +20,9 @@ In this workflow sample, you want to get the definition of the "Year > 2015" sec
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
@@ -100,7 +100,7 @@ Response Code: 200 (The security filter's definition was returned successfully.)
 
 :::tip
 
-Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of `GET /api/model/securityFilters/{securityFilterId}` to create a new security filter or update the security filter's definition, it is recommended to associate all requests to one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of `GET /api/model/securityFilters/{securityFilterId}` to create a new security filter or update the security filter's definition, it is recommended to associate all requests to one changeset.
 
 :::
 
@@ -108,11 +108,11 @@ In this workflow sample, you want to get the definition of the "Year > 2015" sec
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 :::
 
-Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 ### Create a changeset
 

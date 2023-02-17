@@ -20,7 +20,7 @@ Since Calendar objects are configuration objects, you must set the project ID as
 
 :::tip
 
-Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/modeling/changesets.md).
+Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md).
 
 :::
 

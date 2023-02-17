@@ -207,7 +207,7 @@ For the root of a collection of workflows, please use the template below:
 ```text
 :::tip
 
-You can try out these workflows at [REST API Playground]().
+You can try these workflows with [REST API Playground]().
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 
@@ -233,7 +233,7 @@ Try to reduce repeating the same content or description for a workflow or api un
 ```text
 :::tip
 
-Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/modeling/changesets.md).
+Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md).
 
 :::
 ```

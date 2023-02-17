@@ -20,9 +20,9 @@ The target datamart ID is D9DD010946CAFA3B1E2F6684F2D940B1 in the project of B7C
 
 An authorization token allows the API layer to hide internal session-related implementations such as managing different project-specific sessions. Once the REST API layer has validated the user's credentials using the specified authentication mode, it initiates a session with the Intelligence Server and creates a unique authorization token for the client.
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
@@ -31,7 +31,7 @@ The response can change based on the request parameters provided by the caller. 
 | Location | Name                   | Description                                                                                                                                                                                                  |
 | -------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | header   | X-MSTR-authToken       | The authorization token.                                                                                                                                                                                     |
-| header   | X-MSTR-ProjectID       | The ID of the project.                                                                                                                                                                                       |
+| header   | X-MSTR-ProjectID       | The project ID.                                                                                                                                                                                              |
 | params   | datamartId             | The object ID of target datamart that you want to modify.                                                                                                                                                    |
 | params   | showFilterTokens       | Specify whether the Datamart’s "filter" is returned in "tokens" format, along with "text" and "tree" formats.                                                                                                |
 | params   | showExpressionAs       | Specify the format in which the expressions are returned in response, applied to the expressions in a fact or attribute and custom expressions used in a filter, prompt, security filter, custom group, etc. |

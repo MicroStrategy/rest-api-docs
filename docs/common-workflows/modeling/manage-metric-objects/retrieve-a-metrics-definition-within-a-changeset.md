@@ -22,19 +22,19 @@ An authorization token allows the API layer to hide internal session-related imp
 
 :::
 
-You want to get the definition of the `“Cost Comparison”` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+Get the definition of the `“Cost Comparison”` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 For different formats of metric expressions, see [Retrieve a metric's definition](../manage-metric-objects/retrieve-a-metrics-definition.md).
 
 :::info
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
-Changesets are used in this workflow. For information on how to create and use changesets see [Changesets](/docs/common-workflows/modeling/changesets.md).
+Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md).
 
 ## Get the definition of the specified metric ID within a changeset using [GET /api/model/metrics/{metricId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Metrics/ms-getMetricDetails)
 
@@ -51,7 +51,7 @@ Sample Request Body: Empty
 | Location | Name                | Description                                                                                                                                                                                                                                            |
 | -------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | header   | X-MSTR-authToken    | The authorization token                                                                                                                                                                                                                                |
-| header   | X-MSTR-MS-Changeset | The ID of the changeset.                                                                                                                                                                                                                               |
+| header   | X-MSTR-MS-Changeset | The changeset ID.                                                                                                                                                                                                                                      |
 | params   | showExpressionAs    | Omitted, tree, or tokens:<br/>- If omitted, the expression is returned in only “text“ formats.<br/>- If `tree`, the expression is returned in "text" and "tree" formats.<br/>- If `tokens`, the expression is returned in "text" and "tokens" formats. |
 
 Sample Curl:

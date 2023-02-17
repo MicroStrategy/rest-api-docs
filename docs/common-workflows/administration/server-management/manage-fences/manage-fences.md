@@ -7,7 +7,7 @@ description: Within a cluster, fences allows an administrator or a user with Dss
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2564e447-4b77-42c9-99a4-97d7979b348c?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2564e447-4b77-42c9-99a4-97d7979b348c?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

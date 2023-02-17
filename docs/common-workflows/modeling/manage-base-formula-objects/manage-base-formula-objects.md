@@ -7,7 +7,7 @@ description: Base formulas are mathematical expressions created using existing f
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-cf953972-3d9d-4347-b253-5d89e40c088c?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-cf953972-3d9d-4347-b253-5d89e40c088c?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

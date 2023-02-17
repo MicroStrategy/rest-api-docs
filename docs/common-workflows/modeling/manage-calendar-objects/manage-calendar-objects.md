@@ -7,7 +7,7 @@ description: You can use REST API requests to retrieve, create, and replace cale
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-b40233c5-3269-43b2-bc9e-e44f6ad8d432?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-b40233c5-3269-43b2-bc9e-e44f6ad8d432?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

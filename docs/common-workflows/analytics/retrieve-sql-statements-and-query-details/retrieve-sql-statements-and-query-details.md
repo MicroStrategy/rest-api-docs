@@ -7,7 +7,7 @@ description: You can use REST API requests to retrieve SQL statements and query 
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-fae624de-293e-4c55-9a26-a9ff10d17b3f?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-fae624de-293e-4c55-9a26-a9ff10d17b3f?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 

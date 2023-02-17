@@ -11,9 +11,9 @@ The datamart object ID is 0DC7208C43B65E0DA10B26A6273F5067. The datamart is in t
 
 An authorization token allows the API layer to hide internal session-related implementations such as managing different project-specific sessions. Once the REST API layer has validated the user's credentials using the specified authentication mode, it initiates a session with the Intelligence Server and creates a unique authorization token for the client.
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Obtain the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
@@ -22,7 +22,7 @@ The response can change based on the request parameters provided by the caller. 
 | Location | Name             | Description              |
 | -------- | ---------------- | ------------------------ |
 | header   | X-MSTR-authToken | The authorization token. |
-| header   | X-MSTR-ProjectID | The ID of the project.   |
+| header   | X-MSTR-ProjectID | The project ID.          |
 
 ## Retrieve applicable properties of a datamart
 

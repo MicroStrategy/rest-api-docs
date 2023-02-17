@@ -7,7 +7,7 @@ description: You can use REST API requests to retrieve, create, and update custo
 
 :::tip
 
-You can try out these workflows at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-897727c2-1954-4b12-8d51-ddf79968e22c?ctx=documentation).
+You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-897727c2-1954-4b12-8d51-ddf79968e22c?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 
