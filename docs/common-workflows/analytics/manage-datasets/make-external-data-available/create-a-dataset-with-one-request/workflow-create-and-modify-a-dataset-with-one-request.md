@@ -35,7 +35,7 @@ A detailed explanation of each step is provided below.
 
 ## Log in
 
-End Point: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
+Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 This endpoint allows the caller to authenticate with the MicroStrategy REST server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing X-MSTR-AuthToken, the authorization token that will be used in subsequent requests.
 
@@ -88,7 +88,7 @@ Response Body: Empty
 
 ## Create a dataset
 
-End Point: [POST /api/datasets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/createDICube)
+Endpoint: [POST /api/datasets](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/createDICube)
 
 This endpoint allows the caller to create a dataset with the MicroStrategy REST server. You use the authorization token returned in step 1 as the value for `X-MSTR-AuthToken` and a project ID for `X-MSTR-ProjectID`.
 
@@ -356,7 +356,7 @@ A dataset named SALES_TABLE is created under the My Reports folder. The dataset 
 
 ## Update a dataset
 
-End Point: [PATCH /api/datasets/{datasetId}/tables/{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/updateDICube)
+Endpoint: [PATCH /api/datasets/{datasetId}/tables/{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/updateDICube)
 
 This endpoint allows the caller to update and republish a dataset that was created by the MicroStrategy REST server (using `POST /api/datasets`). To update and republish a specific dataset, you provide the authorization token, `X-MSTR-AuthToken`, generated in step 1, the dataset ID and table ID to identify the dataset to be updated, the type of update action that should be performed, and the data to be applied. If successful, the resulting HTTP response returns an HTTP status 200.
 
@@ -445,7 +445,7 @@ The dataset named SALES_TABLE, under the My Reports folder, is updated and repub
 
 ## Log out
 
-End Point: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
+Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST server. In this example, you close the active user session by providing the authorization token, X-MSTR-AuthToken, generated in step 1. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 

@@ -15,7 +15,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 This workflow sample demonstrates how to create a new prompt object through the Modeling service.
 
 1. Create a changeset using `POST /api/model/changesets`
-1. [Create a prompt using POST/api/model/prompts](#create-a-prompt-using-postapimodelprompts)
+1. [Create a prompt using POST /api/model/prompts](#create-a-prompt-using-postapimodelprompts)
 1. Commit a changeset using `POST /api/model/changesets/{changesetId}/commit`
 1. Delete a changeset using `DELETE /api/model/changesets/{changesetId}`
 
@@ -37,7 +37,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-## Create a prompt using [POST/api/model/prompts](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-postPrompt)
+## Create a prompt using [POST /api/model/prompts](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-postPrompt)
 
 You want to create a `"Call Center in USA"` prompt of an attribute element prompt under a specific folder in the MicroStrategy Tutorial project. To create the prompt, you must submit the request body with the correct information. In `"information"`, provide the `"subType"`, `"name"`, and `"destinationFolderId"` for the prompt you want to create.
 

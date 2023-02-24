@@ -240,7 +240,7 @@ Sample Response Code: 201 (A new derived element is created successfully in repo
 
 The derived element will be saved together with report using save report instance API.
 
-Endpoint: [POST /model/reports/{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/post_api_model_reports__reportId__instances_save)
+Endpoint: [POST /api/model/reports/{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/post_api_model_reports__reportId__instances_save)
 
 Sample Request Header:
 

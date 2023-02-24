@@ -31,6 +31,7 @@
     "lint:markdownlint:fix": "yarn markdownlint docs/ --fix",
     "lint:sidebar": "node scripts/lint_sidebars.js",
     "lint:extlinks": "node scripts/lint_external_links.js",
+    "lint:endpoints": "node scripts/lint_endpoint.js",
     "prepare": "husky install"
   },
   "dependencies": {

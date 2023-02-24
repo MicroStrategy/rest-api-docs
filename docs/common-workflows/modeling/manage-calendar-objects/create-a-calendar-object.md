@@ -12,7 +12,7 @@ You want to create a new Custom Calendar called "European Calendar" based on sys
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Since Calendar objects are configuration objects, you must set the project ID as an empty string.
 
@@ -26,7 +26,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Create a new custom calendar
 
-Endpoint: [`POST /api/model/calendars`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars/ms-createCalendar)
+Endpoint: [POST /api/model/calendars](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars/ms-createCalendar)
 
 To create the new custome calendar , you can submit the request body with the correct information.
 

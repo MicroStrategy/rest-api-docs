@@ -15,9 +15,9 @@ The following sequence of REST API requests allows an administrator to manage pr
 
 ## Log in
 
-End Point: `POST /api/auth/login`
+Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
-This end point allows the caller to authenticate with the MicroStrategy REST Server. Provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting response returns a status code of 204 and a response header containing X-MSTR-AuthToken, the authorization token that will be used by subsequent requests.
+This endpoint allows the caller to authenticate with the MicroStrategy REST Server. Provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting response returns a status code of 204 and a response header containing X-MSTR-AuthToken, the authorization token that will be used by subsequent requests.
 
 ### Sample request
 
@@ -51,9 +51,9 @@ This end point allows the caller to authenticate with the MicroStrategy REST Ser
 
 ## Get information about nodes and projects with current status
 
-End Point: `GET /api/monitors/iServer/nodes`
+Endpoint: [GET /api/monitors/iServer/nodes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getClusterNodes)
 
-This end point includes basic information, run time state, and information for the projects on each node. You specify an authorization token in the request header which you will get from `POST /api/auth/login` used during [Log in](#log-in).
+This endpoint includes basic information, run time state, and information for the projects on each node. You specify an authorization token in the request header which you will get from `POST /api/auth/login` used during [Log in](#log-in).
 
 You can also use filter option either on project id or node name or both to get specific information in response. This filed is optional.
 
@@ -158,7 +158,7 @@ To apply a filter on project id and node name, you can use the filter option of 
 
 ## Update properties for a specific project
 
-End Point: `PATCH /api/monitors/iServer/nodes/{nodeName}/projects/{projectId}`
+Endpoint: [PATCH /api/monitors/iServer/nodes/{nodeName}/projects/{projectId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/updateProjectStatus)
 
 :::info
 
@@ -270,7 +270,7 @@ This operation requires the "Load and Unload project" and "Idle and Resume proje
 
 ## Get update information about projects for a node
 
-End Point: `GET /api/monitors/iServer/nodes`
+Endpoint: [GET /api/monitors/iServer/nodes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getClusterNodes)
 
 In the example above, the project status of `"MicroStrategy Tutorial"` was changed from unloaded to loaded on the cluster node named env-160560laio1use1. You can view the updated status through this API. Here, you can use the filter option on project id "B7CA92F04B9FAE8D941C3E9B7E0CD754" and/or on node name `"env-160560laio1use1"` to get information about the node.
 
@@ -307,13 +307,13 @@ In the example above, the project status of `"MicroStrategy Tutorial"` was chang
 
 <Available since="2021 Update 8" />
 
-There are several use cases in which it is required to delete a project from an environment. A dedicated end point `DELETE /api/projects/{projectId}` was implemented to address these use cases. The end point call requires to provide an identifier of the project in the path and `X-MSTR-AuthToken` in the header. The exemplary call is listed below:
+There are several use cases in which it is required to delete a project from an environment. A dedicated endpoint `DELETE /api/projects/{projectId}` was implemented to address these use cases. The endpoint call requires to provide an identifier of the project in the path and `X-MSTR-AuthToken` in the header. The exemplary call is listed below:
 
 ```bash
 curl -X 'DELETE' 'https://demo.microstrategy.com/MicroStrategyLibrary/api/projects/A435ED1A4CF916B9A0A0729F9C93C9B9' -H 'accept: */*' -H 'X-MSTR-AuthToken: tp43crmdrkf54avoo9jbgj4a3q'
 ```
 
-The response code is either `202 Accepted` or `204 No Content`. The code depends on the deletion execution status. If the end point manages to delete the project in a given timeout, it sends `204` code. If the deletion takes longer than the timeout, the end point sends `202` code. The status of the operation can be checked using `GET /api/monitors/iServer/nodes` end point. If the deletion is successful, the end point stops reporting the project. The end point will delete a project only if the project has unloaded status on every node. If the project is not unloaded a following error will be provided to a client.
+The response code is either `202 Accepted` or `204 No Content`. The code depends on the deletion execution status. If the endpoint manages to delete the project in a given timeout, it sends `204` code. If the deletion takes longer than the timeout, the endpoint sends `202` code. The status of the operation can be checked using `GET /api/monitors/iServer/nodes` endpoint. If the deletion is successful, the endpoint stops reporting the project. The endpoint will delete a project only if the project has unloaded status on every node. If the project is not unloaded a following error will be provided to a client.
 
 ```json
 {
@@ -323,13 +323,13 @@ The response code is either `202 Accepted` or `204 No Content`. The code depends
 }
 ```
 
-The project status can be changed using the `PATCH /api/monitors/iServer/nodes/{nodeName}/projects/{projectId}` end point. The client can delete the project if it is administrator or owner of the project.
+The project status can be changed using the `PATCH /api/monitors/iServer/nodes/{nodeName}/projects/{projectId}` endpoint. The client can delete the project if it is administrator or owner of the project.
 
 ## Log out
 
-End Point: `POST /api/auth/logout`
+Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
-This end point allows the caller to log out for the authenticated user with the MicroStrategy REST Server. In this example, you close the active user session by providing the authorization token, X-MSTR-AuthToken, generated by `POST /api/auth/login`. If the call is successful, the resulting response returns the status code 204.
+This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST Server. In this example, you close the active user session by providing the authorization token, X-MSTR-AuthToken, generated by `POST /api/auth/login`. If the call is successful, the resulting response returns the status code 204.
 
 - Curl:
 

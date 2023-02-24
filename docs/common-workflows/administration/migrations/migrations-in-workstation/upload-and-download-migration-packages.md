@@ -21,7 +21,7 @@ You must [configure the package storage location in Workstation](https://www2.mi
 - [POST /api/mstrServices/library/storage/sharedFileStore/files](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Shared%20File%20Store/createSharedFileMeta)
 - [PUT /api/mstrServices/library/storage/sharedFileStore/files/{fileId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Shared%20File%20Store/uploadSharedFileBinary)
 - [POST /api/migrations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/createMigration)
-- [GET /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/getMigration)
+- [GET /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/getMigration)
 - [GET /api/migrations/packages/{packageId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/downloadPackageBinary)
 - [GET /api/mstrServices/library/storage/sharedFileStore/files/{fileId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Shared%20File%20Store/downloadSharedFileBinary)
 - [GET /api/mstrServices/library/storage/sharedFileStore/files?type=migrations.packages&&offset={offset}&&limit={limit}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Shared%20File%20Store/getMigrationList_1)

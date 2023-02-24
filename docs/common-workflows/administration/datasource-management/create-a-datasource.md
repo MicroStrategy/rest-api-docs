@@ -13,7 +13,7 @@ A detailed description of each step of this request is listed down below.
 
 ## Create datasource login
 
-End Point: [POST /api/datasources/logins](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/createDatasourceLogin)
+Endpoint: [POST /api/datasources/logins](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/createDatasourceLogin)
 
 :::info
 
@@ -71,7 +71,7 @@ Sample Response Code: 201 (Datasource login is created successfully.)
 
 ## Create a datasource connection
 
-End Point: [POST /api/datasources/connections](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Datasource%20Management/createDatabaseConnection)
+Endpoint: [POST /api/datasources/connections](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/createDatabaseConnection)
 
 :::info
 
@@ -191,7 +191,7 @@ Sample Response Code: 201 (Datasource connection is created successfully.)
 
 ## Create a database source
 
-End Point: [POST /api/datasources](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Datasource%20Management/createDatasource)
+Endpoint: [POST /api/datasources](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/createDatasource)
 
 :::info
 
@@ -201,7 +201,7 @@ Obtain the datasource connection id from the response body of the previous call.
 
 :::
 
-End Point: `POST /api/datasources`
+Endpoint: [POST /api/datasources](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/createDatasource)
 
 Sample Request Header:
 

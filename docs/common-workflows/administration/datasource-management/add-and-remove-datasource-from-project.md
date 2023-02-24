@@ -12,7 +12,7 @@ A detailed description of each step of this request is listed down below. For th
 
 ## Get list of datasources based on project
 
-End Point: `GET /api/projects/{projectId}/datasources`
+Endpoint: [GET /api/projects/{projectId}/datasources](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/getProjectDatasources)
 
 This endpoint allows the caller to get the datasources associated with a specific project with the MicroStrategy REST Server. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing the datasources for a project.
 
@@ -118,7 +118,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-End Point: `PATCH /api/projects/{projectId}/datasources`
+Endpoint: [PATCH /api/projects/{projectId}/datasources](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/updateProjectDatasources)
 
 This endpoint allows the caller to add and remove a datasource to a specific project with the MicroStrategy REST Server. In this request we will add a datasource. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. For this sample we will be adding the Act! Essentials datasource to the MicroStrategy Tutorial project. You can find the datasourceId using the endpoint `GET /api/datasources` and the projectId using `GET /api/projects`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a list of the project's datasources.
 
@@ -246,7 +246,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-End Point: `PATCH /api/projects/{projectId}/datasources`
+Endpoint: [PATCH /api/projects/{projectId}/datasources](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/updateProjectDatasources)
 
 This endpoint allows the caller to add and remove a datasource to a specific project with the MicroStrategy REST Server. In this request we will remove a datasource. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. For this sample we will be removing the Act! Essentials datasource from the MicroStrategy Tutorial project. You can find the datasourceId using the endpoint `GET /api/datasources` and the projectId using `GET /api/projects`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a list of the project's datasources.
 

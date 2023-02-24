@@ -58,7 +58,7 @@ Response Code: 204 (Success: No Content)
 
 ## Get the Intelligence Server setting configurations
 
-Endpoint: `GET /api/v2/iserver/settings/config`
+Endpoint: [GET /api/v2/iserver/settings/config](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getIserverSettingsProperties)
 
 This endpoint allows the user to retrieve information on all Intelligence Server settings that are available in MicroStrategy REST API. The information includes the setting description, type, options, unit, minimum value, maximum value, and reboot rule. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
@@ -129,7 +129,7 @@ Response Code: 200 (Success: OK)
 
 ## Get the Intelligence Server setting values
 
-Endpoint: `GET /api/v2/iserver/settings`
+Endpoint: [GET /api/v2/iserver/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getIserverSettings)
 
 This endpoint allows you to retrieve all Intelligence Server setting values that are available in MicroStrategy REST API. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
@@ -180,7 +180,7 @@ Response Code: 200 (Success: OK)
 
 ## Update a part of the Intelligence Server setting values
 
-Endpoint: `PATCH /api/v2/iserver/settings`
+Endpoint: [PATCH /api/v2/iserver/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/setIserverSettings)
 
 This endpoint allows you to modify part of the project settings exposed in REST API via `GET /api/v2/iserver/settings/config`. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
@@ -247,7 +247,7 @@ Response Code: 200 (Success: OK)
 
 ## Update all Intelligence Server setting values
 
-Endpoint: `PUT /api/v2/iserver/settings`
+Endpoint: [PUT /api/v2/iserver/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/setAllIserverSettings)
 
 This endpoint allows you to access all of the Intelligence Server setting values that are available in MicroStrategy REST API. In this endpoint, you must provide a complete list of Intelligence Server settings, which is the different from the `PATCH /api/v2/iserver/settings` endpoint. You can find a list of Intelligence Server settings exposed in REST API via `GET /api/v2/iserver/settings/config`. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 

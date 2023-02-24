@@ -202,7 +202,7 @@ Sample Response Body:
 | (existed old metric selector json input)<br/><br/>Invalid operator input                                  | Invalid operator - {input operator}                                                                                                                                                                 | 400                | Only metric expression selector. Existed old metric selector json input.                                                                             |
 | (existed old metric selector json input)<br/><br/>Invalid constant counts                                 | Constants count is not right                                                                                                                                                                        | 400                | Only metric expression selector.<br/><br/>Similar error in view filter functionality. Existed old metric selector json input.                        |
 
-## API: [`PUT/dossiers/{dossierId}/instances/{instancesId}/filters`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/setFilters)
+## API: [PUT /api/dossiers/{dossierId}/instances/{instancesId}/filters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/setFilters)
 
 This endpoint is used to execute a dossier with specific filtering criteria applied in the current chapter. You can set the following selector types:
 

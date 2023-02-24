@@ -15,12 +15,12 @@ See [KB485558: Troubleshoot Project Merge Issues When Using Migration Packages](
 
 When you merge projects, you use the same set of REST APIs as when [migrating objects](object-migration-between-environments.md). You choose whether you want to create an object migration process or merge projects by passing different request bodies in these APIs.
 
-- [POST /api/migrations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/createMigration)
-- [PUT /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/triggerImport)
-- [PATCH /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/updateMigration)
-- [GET /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/getMigration)
-- [GET /api/migrations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/getMigrationList)
-- [DELETE /api/migrations?packageId={{packageId}}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/deletePackage)
+- [POST /api/migrations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/createMigration)
+- [PUT /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/triggerImport_1)
+- [PATCH /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/updateMigration_1)
+- [GET /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/getMigration)
+- [GET /api/migrations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/getMigrationList)
+- [DELETE /api/migrations?packageId={{packageId}}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/deletePackage_1)
 
 ## Privileges and authorization
 

@@ -37,7 +37,7 @@ A detailed explanation of each step, with code samples, is provided below:
 
 ## Log in
 
-End Point: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
+Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 This endpoint allows the caller to authenticate with the MicroStrategy REST server. You provide the information used to create the session in the body of the request; in this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing the authorization token that will be used in subsequent requests.
 
@@ -89,7 +89,7 @@ Response Code: 204
 
 ## Create the definition of the dataset
 
-End Point: [POST /api/datasets/models](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/createTable)
+Endpoint: [POST /api/datasets/models](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/createTable)
 
 This endpoint allows the caller to create the definition of a dataset containing one or more tables. The definition includes the name and description of the dataset and the name and description of each table, attribute, and metric within the dataset.
 
@@ -768,7 +768,7 @@ This endpoint allows the caller to delete the upload session after the dataset i
 
 ## Log out
 
-End Point: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
+Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 This endpoint allows the caller to log out for the authenticated user, using the MicroStrategy REST server. You close the active user session by providing the authorization token generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 

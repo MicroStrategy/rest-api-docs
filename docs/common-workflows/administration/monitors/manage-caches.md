@@ -48,7 +48,7 @@ There are two steps which you need to take to delete cache for objects and eleme
 
 The purpose of the first step is to determine project `id`. The `id` identifies the project for which we want to clear the cache. We can use a following endpoint to list all loaded projects with their ids.
 
-`GET /projects`
+Endpoint: [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1)
 
 You can call the endpoint using for example curl command:
 
@@ -102,9 +102,9 @@ Please find the `id` for the desired project. For example, `id` of the project: 
 
 You need to invoke a following endpoint to delete the cache:
 
-`DELETE api/monitors/projects/{projectId}/cache/{cacheType}`
+Endpoint: [DELETE /api/monitors/projects/{projectId}/cache/{cacheType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/deleteCache)
 
-The endpoint path consists of `projectId` parameter, so you need to replace the placeholder by the `id` value. The last placeholder determines cache type which will be purged. The allowable values are following `element` or `cache`. The example below demonstrates how to call the end point using curl command:
+The endpoint path consists of `projectId` parameter, so you need to replace the placeholder by the `id` value. The last placeholder determines cache type which will be purged. The allowable values are following `element` or `cache`. The example below demonstrates how to call the endpoint using curl command:
 
 ```bash
 curl -X 'DELETE' \

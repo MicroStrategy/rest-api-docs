@@ -25,7 +25,7 @@ A detailed explanation of each step is provided below:
 
 ## Log in
 
-End Point: `POST /api/auth/login`
+Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 This endpoint allows the caller to authenticate with the MicroStrategy REST Server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing `X-MSTR-AuthToken`, the authorization token that will be used in subsequent requests.
 
@@ -85,7 +85,7 @@ The authorization token "`x-mstr-authtoken`" is returned in the response header.
 
 ## Get project list
 
-End Point: `GET /api/projects`
+Endpoint: [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1)
 
 This endpoint allows the caller to get the list of projects with the MicroStrategy REST Server. In this example, you get the list of projects in the MicroStrategy Tutorial metadata. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
 
@@ -139,7 +139,7 @@ The response body contains information for each project that is returned, includ
 
 ## Perform a quick search
 
-End Point: `GET /api/searches/results`
+Endpoint: [GET /api/searches/results](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/doQuickSearch)
 
 This endpoint allows the caller to perform a quick search for specific objects. In this example, you search in the "MicroStrategy Tutorial" project for reports that include "Customer" in the title and then return all results without pagination. You use two different types of parameters—header and query.
 
@@ -256,7 +256,7 @@ Sample Response
 
 ## Log out
 
-End Point: `POST /api/auth/logout`
+Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST server. In this example, you close the active user session by providing the authorization token, X-MSTR-AuthToken, generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 

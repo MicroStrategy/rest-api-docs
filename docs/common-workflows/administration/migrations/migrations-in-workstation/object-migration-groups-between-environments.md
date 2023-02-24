@@ -11,12 +11,12 @@ You must [configure the package storage location in Workstation](https://www2.mi
 
 ## APIs
 
-- [POST api/migrationGroups](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/MigrationGroups/createMigrationGroup)
-- [PUT api/migrationGroups/{migrationGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/MigrationGroups/triggerImport)
-- [PATCH /api/migrationGroups/{migrationGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/MigrationGroups/updateMigration)
-- [GET /api/migrationGroups/{migrationGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/MigrationGroups/getMigrationGroup)
-- [GET /api/migrationGroups](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/MigrationGroups/getMigrationGroupList)
-- [DELETE /api/migrationGroups?packageGroupId={{packageGroupId}}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/MigrationGroups/deletePackage)
+- [POST /api/migrationGroups](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/createMigrationGroup)
+- [PUT /api/migrationGroups/{migrationGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/triggerImport)
+- [PATCH /api/migrationGroups/{migrationGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/updateMigration)
+- [GET /api/migrationGroups/{migrationGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?visibility=all#/Migration%20Groups/getMigrationGroup)
+- [GET /api/migrationGroups](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?visibility=all#/Migration%20Groups/getMigrationGroupList)
+- [DELETE /api/migrationGroups?packageGroupId={{packageGroupId}}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/deletePackage)
 
 ## Privileges and authorization
 

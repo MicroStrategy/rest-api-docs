@@ -13,13 +13,13 @@ You want to view the definition of a specific custom calendar with the ObjectId 
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Since calendar objects are configuration objects, you must set the project ID as an empty string.
 
 :::
 
-Get the calendar's definition using [`GET /api/model/calendars/{calendarId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars).
+Get the calendar's definition using [GET /api/model/calendars/{calendarId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars).
 
 Sample Request Header:
 
@@ -83,7 +83,7 @@ You want to view the definition of a specific custom calendar with the ObjectId 
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Since calendar objects are configuration objects, you must set the project ID as an empty string.
 
@@ -97,7 +97,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ### Get the calendar's definition within a changeset
 
-Endpoint: [`GET /api/model/calendars/{calendarId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars)
+Endpoint: [GET /api/model/calendars/{calendarId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars)
 
 Sample Request Header
 

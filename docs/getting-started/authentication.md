@@ -1,10 +1,10 @@
 ---
 sidebar_label: Authentication
 title: Authentication
-description: The REST API provides authentication end points to initiate a session with the Intelligence Server. It supports multiple authentication modes such as Standard, LDAP, SAML, and so on.
+description: The REST API provides authentication endpoints to initiate a session with the Intelligence Server. It supports multiple authentication modes such as Standard, LDAP, SAML, and so on.
 ---
 
-The REST API provides authentication end points to initiate a session with the Intelligence Server. It supports multiple authentication modes such as Standard, LDAP, SAML, and so on.
+The REST API provides authentication endpoints to initiate a session with the Intelligence Server. It supports multiple authentication modes such as Standard, LDAP, SAML, and so on.
 
 The diagram below shows the workflow when the MicroStrategy REST API is used to authenticate a user.
 
