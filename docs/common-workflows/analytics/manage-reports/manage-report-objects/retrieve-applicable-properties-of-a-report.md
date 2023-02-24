@@ -11,7 +11,7 @@ The report object ID is `E472644E4239AD7EFDBD869600C93E4D`. The report is in the
 
 ## Retrieve applicable properties of a report directly
 
-Endpoint: [GET/api/model/reports/{reportId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/get_api_model_reports__reportId__applicableVldbProperties)
+Endpoint: [GET /api/model/reports/{reportId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/get_api_model_reports__reportId__applicableVldbProperties)
 
 Sample Request Header:
 
@@ -177,7 +177,7 @@ Sample Response Code: 201 (A new report instance is created successfully.)
 
 ### 2. Get applicable properties
 
-Endpoint: [Get /api/model/reports/{reportId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/get_api_model_reports__reportId__applicableVldbProperties)
+Endpoint: [GET /api/model/reports/{reportId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/get_api_model_reports__reportId__applicableVldbProperties)
 
 Sample Request Header:
 

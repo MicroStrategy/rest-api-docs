@@ -30,37 +30,37 @@ A workflow sample for creating a new security role in the metadata is provided b
 
 1. [Log in](#log-in)
 
-   The REST API endpoint `POST/auth/login` is called by a user to authenticate an environment.
+   The REST API endpoint `POST /api/auth/login` is called by a user to authenticate an environment.
 
 1. [Create a security role](#create-a-security-role)
 
-   The REST API endpoint `POST/securityRoles` is called by an admin user to create new security roles.
+   The REST API endpoint `POST /api/securityRoles` is called by an admin user to create new security roles.
 
 1. [Modify a security role](#modify-a-security-role)
 
-   The REST API endpoint `PATCH/securityRoles/{id}` is called by an admin user to add, remove, replace privileges of the security role with the mentioned security role id. Also, add/remove members of a security role.
+   The REST API endpoint `PATCH /api/securityRoles/{id}` is called by an admin user to add, remove, replace privileges of the security role with the mentioned security role id. Also, add/remove members of a security role.
 
 1. [Get information about a specific security role](#get-information-about-a-specific-security-role)
 
-   The REST API endpoint `GET/securityRoles/{id}` is called by an admin user to view information about the security role with the mentioned id.
+   The REST API endpoint `GET /api/securityRoles/{id}` is called by an admin user to view information about the security role with the mentioned id.
 
 1. [Delete a security role](#delete-a-security-role)
 
-   The REST API endpoint `DELETE/securityRoles/{id}` is called by an admin user to delete the security role with the mentioned id.
+   The REST API endpoint `DELETE /api/securityRoles/{id}` is called by an admin user to delete the security role with the mentioned id.
 
 1. [Get information about all security roles](#get-information-about-all-security-roles)
 
-   The REST API endpoint `GET/securityRoles` is called by an admin user to view information about all security roles.
+   The REST API endpoint `/api/securityRoles` is called by an admin user to view information about all security roles.
 
 1. [Log out](#log-out)
 
-   A user calls the REST API endpoint `GET/auth/logout` to end the current session.
+   A user calls the REST API endpoint `GET /api/auth/logout` to end the current session.
 
 To make it easy for you to test this workflow in your environment, [download the zipped Postman script](https://www2.microstrategy.com/producthelp/2021/downloads/RESTSDK/PostmanScripts/SecurityRoles_postman_collection.zip) provided for you, extract the JSON file, and configure it to point to your Web server.
 
 ## Log in
 
-End Point: `POST/auth/login`
+Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 This endpoint allows the caller to authenticate with the MicroStrategy REST Server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication, so you need to provide `username`, `password`, and `loginMode` (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns a status code 204 and a response header containing `X-MSTR-AuthToken`, the authorization token that will be used by subsequent requests.
 
@@ -115,7 +115,7 @@ In this example, standard authentication and log in credentials "administrator" 
 
 ## Create a security role
 
-End Point: `POST /api/securityRoles`
+Endpoint: [POST /api/securityRoles](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/createSecurityRole)
 
 This endpoint is for administrative user to create a new security role and specify name, description, privileges. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You provide the information to create the security role in the body parameter of the request.
 
@@ -180,7 +180,7 @@ In this example, you create a new security role called "NewSecurityRole". You mu
 
 ## Modify a security role
 
-End Point: `PATCH/securityRoles/{id}`
+Endpoint: [PATCH /api/securityRoles/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/updatePartialSecurityRole)
 
 - Functionalities are defined in operations.
 - Any invocation of this API is either to perform security role assignments using path "/members", OR privilege update using path "/privileges". It is not allowed to mix two types of operation together.
@@ -506,7 +506,7 @@ Two examples are provided below. In the first example to make security role assi
 
 ## Get information about a specific security role
 
-End Point: `GET/securityRoles/{id}`
+Endpoint: [GET /api/securityRoles/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/getSecurityRole)
 
 Get information for a specific security role using the security role id. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You specify security role ID in the path of the request, then you can obtain the security role information about its base info(such as name, id and type), assigned privileges and assigned <project, members> relations info about assigning this created security role to user/userGroup in specified project.
 
@@ -516,7 +516,7 @@ Get information for a specific security role using the security role id. You obt
 
   - `X-MSTR-AuthToken` - Authorization token generated by `POST /api/auth/login`.
 
-  - `id` - id of the security role to be updated. You generated this id when you created the new security role using `POST/securityRoles` API.
+  - `id` - id of the security role to be updated. You generated this id when you created the new security role using `POST /api/securityRoles` API.
 
 - Request header:
 
@@ -635,7 +635,7 @@ Get information for a specific security role using the security role id. You obt
 
 ## Delete a security role
 
-End Point: `DELETE/securityRoles/{id}`
+Endpoint: [DELETE /api/securityRoles/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/deleteSecurityRole)
 
 Delete info for a security role with given Id. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You delete the security role using `Delete /api/securityRoles/{id}`.
 
@@ -645,7 +645,7 @@ Delete info for a security role with given Id. You obtain the authorization toke
 
   - `X-MSTR-AuthToken` - Authorization token generated by `POST /api/auth/login`.
 
-  - `id` - id of the security role to be updated. You generated this id when you created the new security role using `POST/securityRoles` API.
+  - `id` - id of the security role to be updated. You generated this id when you created the new security role using `POST /api/securityRoles` API.
 
 - Request header:
 
@@ -674,7 +674,7 @@ Delete info for a security role with given Id. You obtain the authorization toke
 
 ## Get information about all security roles
 
-End Point: `GET/securityRoles`
+Endpoint: [GET /api/securityRoles](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/getSecurityRoles)
 
 This API endpoint is used to get information for all security roles. A security role describes the ability to do something, such as create, edit, add, delete, view, manage, save, search, share, export, and so on. A security role has a name, a description, and a privilege. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. The response includes the security role ID, which other endpoints use as a request parameter to specify the security role to perform an action on.
 
@@ -750,7 +750,7 @@ This API endpoint is used to get information for all security roles. A security 
 
 ## Log out
 
-End Point: `POST/auth/logout`
+Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST Server. In this example, you close the active user session by providing the authorization token, X-MSTR-AuthToken, generated by `POST /api/auth/login`. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 

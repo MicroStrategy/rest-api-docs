@@ -17,7 +17,7 @@ A detailed explanation of each step is provided below:
 
 ## Log in
 
-Endpoint: [POST/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
+Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 This endpoint allows the caller to authenticate with the MicroStrategy REST server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication, so you need to provide the username, password, and loginMode. The loginMode specifies the authentication mode to use. If you omit an optional field, the REST server uses the default value. If the call is successful, the resulting HTTP response returns a status code of 204 and a response header containing X-MSTR-AuthToken. This authorization token is used by all subsequent requests.
 

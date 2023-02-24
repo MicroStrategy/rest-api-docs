@@ -39,7 +39,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Update the attribute's relationship
 
-Use [PUT /api/model/systemHierarchy/attributes/{attributeId}/relationships](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/System%20Hierarchy/ms-putAttributeRelationships).
+Use [PUT /api/model/systemHierarchy/attributes/{attributeId}/relationships](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Hierarchy/ms-putAttributeRelationships).
 
 You want to update the relationship of the "Subcategory" attribute object by adding relationships between "Category" and "Subcategory", and "Subcategory" and "Item". The object ID of the "Subcategory" attribute is `E8C034036E4EE6404513A6B12FAE9481` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 

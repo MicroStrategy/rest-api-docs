@@ -23,7 +23,7 @@ A detailed explanation of each step is provided below:
 
 ## Log in
 
-End Point: `POST /api/auth/login`
+Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 This endpoint allows the caller to authenticate with the MicroStrategy REST Server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing X-MSTR-AuthToken, the authorization token that will be used in subsequent requests.
 
@@ -82,7 +82,7 @@ Sample Response
 
 ## Get project list
 
-End Point: `GET /api/projects`
+Endpoint: [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1)
 
 This endpoint allows the caller to get the list of projects with the MicroStrategy REST Server. In this example, you get the list of projects in the MicroStrategy Tutorial metadata. You use the authorization token returned during login as the value for the header parameter, X-MSTR-AuthToken. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
 
@@ -136,7 +136,7 @@ The response body contains information for each project that is returned, includ
 
 ## Browse to the Shared Reports folder
 
-End Point: `GET /api/folders/preDefined/{folderType}`
+Endpoint: [GET /api/folders/preDefined/{folderType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolder)
 
 This endpoint allows the caller to get the objects under a predefined folder with the MicroStrategy REST Server. In this example, you get the objects under Shared Reports in the "MicroStrategy Tutorial". You use the authorization token returned by `POST /api/auth/login` as the value for X-MSTR-AuthToken and a project ID returned by `GET /api/projects` as the value for X-MSTR-ProjectID. You provide a value for folderType from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. In this example, you use the value "7" , which specifies the predefined "Shared Reports" folder under the "Public Objects" folder. If the call is successful, the resulting HTTP response returns an HTTP status 200 and a list of metadata objects under the Shared Reports folder.
 
@@ -267,7 +267,7 @@ Sample Response
 
 ## Log out
 
-End Point: `POST /api/auth/logout`
+Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST Server. In this example, you close the active user session by providing the authorization token, X-MSTR-AuthToken, generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 

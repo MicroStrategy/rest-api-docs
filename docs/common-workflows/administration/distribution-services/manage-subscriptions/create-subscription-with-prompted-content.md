@@ -28,7 +28,7 @@ A detailed description of each step of this workflow is listed down below.
 
 ## Log in
 
-End Point: `POST /api/auth/login`
+Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 This endpoint allows the caller to authenticate with the MicroStrategy REST Server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing `X-MSTR-AuthToken`, the authorization token that will be used in subsequent requests.
 
@@ -84,7 +84,7 @@ The authorization token "`x-mstr-authtoken`" is returned in the response header.
 
 ## Get a list of available projects
 
-End Point: `GET /api/projects`
+Endpoint: [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1)
 
 This endpoint allows the caller to get the list of projects with the MicroStrategy REST Server. In this example, you get the list of projects in the MicroStrategy Tutorial metadata. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
 
@@ -140,7 +140,7 @@ Save the report id and instance id for use with the subscription.
 
 ## Get info for user
 
-End Point: `GET /api/users`
+Endpoint: [GET /api/users](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/getUsers)
 
 This endpoint allows you to retrieve information for a specific set of users. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the set of users to be returned with query parameters that specify the characters that the user name or abbreviation must begin with. You can use other query parameters to limit the results that are returned by specifying a starting point within the results and the maximum number of results that should be returned. If the call is successful, the resulting HTTP response returns an HTTP status code of 200 and a response body containing all users that meet the query parameters.
 
@@ -177,7 +177,7 @@ Sample Response
 
 ## Create a user email address
 
-End Point: `POST /api/users/{id}/addresses`
+Endpoint: [POST /api/users/{id}/addresses](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createNewAddress)
 
 This endpoint allows you to create a new address for a specific user. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the user by specifying the user ID in the path of the request. You provide the information used to create the new user address in the body parameter of the request - including the name and actual value for the address, whether it is the default address, and the type of delivery and content style. If the call is successful, the resulting HTTP response returns an HTTP status code of 200 and a response body containing all the information on the newly created address.
 
@@ -245,7 +245,7 @@ Sample Response
 
 ## Create a new subscription
 
-End Point: `POST /api/subscriptions`
+Endpoint: [POST /api/subscriptions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/createSubscription)
 
 This endpoint allows you to create a new subscription for a given project. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you obtain the project ID using `GET /api/projects`. You provide the information used to create a subscription in the body parameter of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 201 and a response body containing all the information on the newly created subscription.
 
@@ -414,7 +414,7 @@ Sample Response
 
 ## Send the specified subscription immediately
 
-End Point: `POST /api/subscriptions/{id}/send`
+Endpoint: [POST /api/subscriptions/{id}/send](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/sendSubscription)
 
 This endpoint sends the specified subscription immediately. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you obtain the project ID using `GET /api/projects`. You identify the subscription by specifying the subscription ID in the request, you provide the information to send the subscription ID in the path parameter of the request. If the content is prompted and the user wants to update the answers, the user can answer the prompts and then provide content id and instance id as the request body of the call. If the call is successful, the resulting HTTP response returns an HTTP status code of 202 and an empty response body.
 
@@ -511,7 +511,7 @@ Sample Response
 
 ## Delete the subscription
 
-End Point: `DELETE /api/subscriptions/{id}`
+Endpoint: [DELETE /api/subscriptions/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/removeSubscription)
 
 This endpoint allows you to delete/unsubscribe from the specified subscription. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you obtain the project ID using `GET /api/projects`. You delete the subscription by specifying the subscription ID in the path of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 204 and an empty response body.
 
@@ -547,7 +547,7 @@ Sample Response
 
 ## Delete the user address
 
-End Point: `DELETE /api/users/{userId}/addresses/{addressId}`
+Endpoint: [DELETE /api/users/{userID}/addresses/{addressID}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/deleteUserAddress)
 
 This endpoint allows you to delete the specified user address. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you obtain the project ID using `GET /api/projects`. You delete the address by specifying the user ID and address ID in the path of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 204 and an empty response body.
 
@@ -583,7 +583,7 @@ Sample Response
 
 ## Close existing session and logout
 
-End Point: `POST /api/auth/logout`
+Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 This endpoint closes all existing sessions for the authenticated user and logs them out. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. If the call is successful, the resulting HTTP response returns an HTTP status code of 204 and an empty response body and the authorization token is no longer valid.
 

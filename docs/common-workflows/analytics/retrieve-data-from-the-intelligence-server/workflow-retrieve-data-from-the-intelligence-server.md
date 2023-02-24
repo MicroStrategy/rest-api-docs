@@ -34,7 +34,7 @@ To make it easy for you to try out this workflow in your environment, we have pr
 
 ## Log in
 
-Endpoint: [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
+Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
 This endpoint allows the caller to authenticate with the MicroStrategy REST Server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing X-MSTR-AuthToken, the authorization token that will be used in subsequent requests.
 
@@ -104,7 +104,7 @@ A detailed explanation of how to retrieve the definition of a report, cube, or d
 
 ### Retrieve the definition of a report
 
-Endpoint: [`GET /api/reports/{reportId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getDefinition_1)
+Endpoint: [GET /api/reports/{reportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getDefinition_1)
 
 This endpoint returns the definition for a specific report in a specific project from the MicroStrategy Intelligence Server. The body of the response contains the name and ID for the report and all the attributes and metrics included in the report.
 
@@ -215,7 +215,7 @@ Response Code: 204 (Success: No Content)
 
 ### Retrieve the definition of a cube
 
-Endpoint: [`GET /api/cubes/{cubeId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getDefinition)
+Endpoint: [GET /api/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getDefinition)
 
 This endpoint returns the definition for a specific cube in a specific project from the MicroStrategy Intelligence Server. The body of the response contains the name and ID for the cube and all the attributes and metrics included in the cube definition.
 
@@ -309,7 +309,7 @@ Response Code: 204 (Success: No Content)
 
 ### Retrieve the hierarchy of a dossier
 
-Endpoint: [`GET /api/dossiers/{dossierId}/definition`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList)
+Endpoint: [GET /api/dossiers/{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList)
 
 This endpoint returns the hierarchy for a specific dossier in a specific project from the MicroStrategy Intelligence Server. The body of the response contains the chapters, pages, and visualizations in the dossier.
 
@@ -392,7 +392,7 @@ When you create a report or cube instance using a POST request, the instance ID 
 
 ### Create a report instance
 
-Endpoint: [`POST /api/reports/{reportId}/instances`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance)
+Endpoint: [POST /api/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance)
 
 This endpoint creates a new instance of a specific report in a specific project on the MicroStrategy Intelligence Server and returns the results if processing has finished. You can refine the amount of data that is returned using offset and limit parameters in the request and specifying filtering parameters in the body of the request. You can check whether processing has finished by checking the value of status in the body of the request.
 
@@ -407,7 +407,7 @@ In the sample that was provided, you create an instance of the report “01 Basi
 
 - Identity the start and end position of the data as offset and limit request parameters
   - `offset` is the start point of your response. For example, if offset=2, it will return the report data beginning with the second record. The default value is 0.
-  - `limit` is the end point of your response. For example, if limit =500, it will return only 500 records of the report. The default value is 1000.
+  - `limit` is the endpoint of your response. For example, if limit =500, it will return only 500 records of the report. The default value is 1000.
 - Specify how to filter the results that are returned in the body of the request:
   - `requestObjects` lets you choose the attributes and metrics to include.
 
@@ -659,7 +659,7 @@ Response Code: 204 (Success: OK)
 
 ### Create a cube instance
 
-Endpoint: [`POST /api/cubes/{cubeId}/instances`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/createCubeInstance)
+Endpoint: [POST /api/cubes/{cubeId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/createCubeInstance)
 
 This endpoint creates a new instance of a specific cube in a specific project on the MicroStrategy Intelligence Server and returns the results if processing has finished. You can refine the amount of data that is returned using offset and limit parameters in the request and specifying filtering parameters in the body of the request. You can check whether processing has finished by checking the value of status in the body of the request.
 
@@ -674,7 +674,7 @@ This endpoint creates a new instance of a specific cube in a specific project on
 
     In the sample that is provided, the default value("0") is used.
 
-  - limit is the end point of your response. For example, if limit =500, it will return only 500 records of the report. The default value is 1000.
+  - limit is the endpoint of your response. For example, if limit =500, it will return only 500 records of the report. The default value is 1000.
 
     In the sample that is provided, the default value("1000") is used.
 
@@ -857,7 +857,7 @@ Response Code: 204 (Success: OK)
 
 ### Create a dossier instance
 
-Endpoint: [`POST /api/dossiers/{dossierId}/instances`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_1)
+Endpoint: [POST /api/dossiers/{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_1)
 
 This endpoint allows the caller to create a new instance of a specific dossier in a specific project from the MicroStrategy Intelligence Server. The request body contains linking and bookmark information for the dossier. The body of the response contains the instance ID for the dossier and the status.
 
@@ -904,7 +904,7 @@ For dossiers, you can retrieve only data for a specific visualization in the dos
 
 ### Get report data
 
-Endpoint: [`GET /api/reports/{reportId}/instances/{instanceId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/executeReport)
+Endpoint: [GET /api/reports/{reportId}/instances/{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/executeReport)
 
 This endpoint gets the data for a specific report instance in a specific project from the MicroStrategy Intelligence Server. The results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
 
@@ -915,7 +915,7 @@ This endpoint gets the data for a specific report instance in a specific project
 
 - Identity the start and end position as offset and limit request parameters
   - offset is the start point of your response. For example, if offset=2, it will return the report data beginning with the second record. The default value is 0.
-  - limit is the end point of your response. For example, if limit =500, it will return only 500 records of the report. The default value is 1000.
+  - limit is the endpoint of your response. For example, if limit =500, it will return only 500 records of the report. The default value is 1000.
 
 ![GET_report_instance](../../../images/GET_report_instance.png)
 
@@ -1043,7 +1043,7 @@ Response Code: 204 (Success: OK)
 
 ### Get cube data
 
-Endpoint: [`GET /api/cubes/{cubeId}/instances/{instanceId}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getReport)
+Endpoint: [GET /api/cubes/{cubeId}/instances/{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getReport)
 
 This endpoint gets the data for a specific cube instance in a specific project from the MicroStrategy Intelligence Server. The response body contains the cube data; the results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
 
@@ -1052,7 +1052,7 @@ This endpoint gets the data for a specific cube instance in a specific project f
 
 - Identity the start and end position as offset and limit request parameters
   - offset is the start point of your response. For example, if offset=2, it will return the cube data beginning with the second record. The default value is 0.
-  - limit is the end point of your response. For example, if limit =500, it will return only 500 records of the cube. The default value is 1000.
+  - limit is the endpoint of your response. For example, if limit =500, it will return only 500 records of the cube. The default value is 1000.
 
 ![GET_cube_instance](../../../images/GET_cube_instance.png)
 
@@ -1243,9 +1243,9 @@ This endpoint gets dossier data by visualization for a specific dossier instance
 
 - Identity the start and end position as offset and limit request parameters
   - offset is the start point of your response. For example, if offset=2, it will return the report data beginning with the second record. The default value is 0.
-  - limit is the end point of your response. For example, if limit =500, it will return only 500 records of the report. The default value is 1000.
+  - limit is the endpoint of your response. For example, if limit =500, it will return only 500 records of the report. The default value is 1000.
 
-Endpoint: [`GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizaitonKey}`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationResult)
+Endpoint: [GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizaitonKey}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationResult)
 
 ![GET_dossier_vis_instance](../../../images/GET_dossier_vis_instance.png)
 
@@ -1388,7 +1388,7 @@ Response Code: 204 (Success: OK)
 
 ## Log out
 
-Endpoint: [`POST /api/auth/logout`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
+Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
 This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST Server. In this example, you close the active user session by providing the authorization token, `X-MSTR-AuthToken`, generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 

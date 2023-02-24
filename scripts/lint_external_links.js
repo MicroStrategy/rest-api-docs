@@ -199,8 +199,12 @@ const lintMarkdown = (linkSet, filePath) => {
           console.log(`Should not link to IP address: "${link}" in file "${filePath}".`);
           hasWrongLink = true;
         } else if (link.startsWith(swaggerBaseUrlNoIndex) || link.startsWith(postmanBaseUrl)) {
-          // Ignore query parameters.
-          if (!linkSet.has(link.split("?")[0])) {
+          // Check if the link is in the linkSet
+          let trimmedLink = link;
+          if (link.startsWith(postmanBaseUrl)) {
+            [trimmedLink] = link.split("?");
+          }
+          if (!linkSet.has(trimmedLink)) {
             // If the link is not in the link set, it is incorrect.
             console.log(`The link "${link}" is incorrect in file "${filePath}".`);
             hasWrongLink = true;

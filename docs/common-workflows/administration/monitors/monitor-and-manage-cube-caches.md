@@ -53,7 +53,7 @@ The workflow sample below demonstrates how to:
 
 ## Fetch the cube cache list
 
-Endpoint: `GET /api/monitors/caches/cubes`
+Endpoint: [GET /api/monitors/caches/cubes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getAllCubeCaches)
 
 This endpoint fetches the cube cache list on a specific Intelligence server node.
 
@@ -183,7 +183,7 @@ Fill in the sample below to design your own output.
 
 ## Get cache information for a single cube
 
-Endpoint: `GET /api/monitors/caches/cubes/{cacheId}`
+Endpoint: [GET /api/monitors/caches/cubes/{cacheId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getSingleCubeProperties)
 
 This endpoint gets cache information for a single cube.
 
@@ -349,7 +349,7 @@ Fill in the sample below to design your own output.
 
 ## Fetch aggregated cube cache capacity usage information
 
-Endpoint: `GET /api/monitors/caches/cubes/aggregatedUsages`
+Endpoint: [GET /api/monitors/caches/cubes/aggregatedUsages](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getCacheAggregatedUsages)
 
 This endpoint fetches aggregated cube cache capacity usage information by project or user.
 
@@ -433,7 +433,7 @@ Fill in the sample below to design your own output. We recommend you specify all
 
 ## Alter cube cache status for a specific cube
 
-Endpoint: `PATCH /api/monitors/caches/cubes/{cacheId}`
+Endpoint: [PATCH /api/monitors/caches/cubes/{cacheId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/alterCubeAction)
 
 This endpoint alters cube cache status for a specific cube, on a specific node.
 
@@ -520,7 +520,7 @@ An invalid action input, which is the code validation logic on the REST-API side
 
 ## Get cube cache manipulation status information
 
-Endpoint: `GET /api/monitors/caches/cubes/manipulations/{id}/status`
+Endpoint: [GET /api/monitors/caches/cubes/manipulations/{id}/status](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getManipulationStatus)
 
 This endpoint get cube cache manipulation status information.
 
@@ -567,7 +567,7 @@ This example is for a response status code of 200.
 
 ## Delete a cube cache
 
-Endpoint: `DELETE /api/monitors/caches/cubes/{cacheId}`
+Endpoint: [DELETE /api/monitors/caches/cubes/{cacheId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/deleteCubeCache)
 
 This endpoint deletes a cube cache.
 

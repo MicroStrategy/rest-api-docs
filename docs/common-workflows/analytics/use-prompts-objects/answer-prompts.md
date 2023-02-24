@@ -114,7 +114,7 @@ You can provide prompt answers for three separate prompt types: attribute elemen
 
 ## Export results to PDF
 
-Endpoint: POST `/api/documents/{id}/instances/{instanceId}/pdf`
+Endpoint: [POST /api/documents/{id}/instances/{instanceId}/pdf](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/exportDashboardToPdf)
 
 This endpoint allows the caller to export the document to a PDF file (in the form of binary data with Base64 encoding) using the instance ID and object ID of the document. Exporting to PDF is not a required part of the prompt workflow, but it is useful for confirming that the prompts have been applied correctly.
 

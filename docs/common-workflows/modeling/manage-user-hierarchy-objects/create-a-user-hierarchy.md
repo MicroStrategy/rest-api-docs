@@ -40,7 +40,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Create a user hierarchy
 
-Endpoint: [POST /api/model/hierarchies](<https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User> Hierarchies/ms-createHierarchy). You must enter the required fields with the correct information.
+Endpoint: [POST /api/model/hierarchies](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Hierarchies/ms-createHierarchy). You must enter the required fields with the correct information.
 
 The response can change based on the request parameters provided by the caller. Use the following parameters.
 

@@ -11,12 +11,12 @@ You must [configure the package storage location in Workstation](https://www2.mi
 
 ## APIs
 
-- [POST /api/migrations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/createMigration)
-- [PUT /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/triggerImport)
-- [PATCH /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/updateMigration)
-- [GET /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/getMigration)
-- [GET /api/migrations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/getMigrationList)
-- [DELETE /api/migrations?packageId={{packageId}}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/deletePackage)
+- [POST /api/migrations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/createMigration)
+- [PUT /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/triggerImport_1)
+- [PATCH /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/updateMigration_1)
+- [GET /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/getMigration)
+- [GET /api/migrations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/getMigrationList)
+- [DELETE /api/migrations?packageId={{packageId}}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/deletePackage_1)
 
 ## Privileges and authorization
 

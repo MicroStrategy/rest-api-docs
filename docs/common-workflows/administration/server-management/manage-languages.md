@@ -15,7 +15,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 ## 1. Get server supported langauges
 
-Endpoint: `GET /api/iserver/baseLanguages`
+Endpoint: [GET /api/iserver/baseLanguages](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getSupportedLanguages)
 
 This call is necessary to obtain a list of base languages supported by the server. You will need the LCID of a base language to proceed with creating a language object.
 
@@ -73,7 +73,7 @@ Response Code: 200
 
 ## 2. Get a list of existing language objects
 
-Endpoint: `GET /api/languages`
+Endpoint: [GET /api/languages](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getAvailableLanguages)
 
 This call allows you to check existing language objects. Make sure you don't already have an existing object you are planning to create.
 
@@ -135,7 +135,7 @@ Response code: 200
 
 ## 3. Create language object
 
-Endpoint: `POST /api/languages`
+Endpoint: [POST /api/languages](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/createLanguage)
 
 This call allows you to create new language based on existing one. Call `GET /api/languages` for languages' LCIDs.
 
@@ -188,7 +188,7 @@ Response Code: 200
 
 ## 4. Delete language object
 
-Endpoint: `DELETE /api/objects/{id}`
+Endpoint: [DELETE /api/objects/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/deleteObject)
 
 This call allows you to delete an object. Object type for language is 45. Call `GET /api/languages` for languages' IDs.
 
@@ -229,7 +229,7 @@ Response Code: 204 (No Content)
 
 ## 5. Get language object
 
-Endpoint: `GET /api/languages/{id}`
+Endpoint: [GET /api/languages/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getLanguageDetails)
 
 This call allows you to get information about language object. Call `GET /api/languages` for languages' IDs.
 
@@ -277,7 +277,7 @@ Response Code: 200
 
 This call allows you to update information about language object. Call `GET /api/languages` for languages' IDs.
 
-Endpoint: `PATCH /api/languages/{id}`
+Endpoint: [PATCH /api/languages/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/updateLanguage)
 
 Header parameters:
 
@@ -331,7 +331,7 @@ Response Code: 200
 
 ## 7. Get language formatting settings
 
-Endpoint: `GET /api/languages/{id}/formattingSettings`
+Endpoint: [GET /api/languages/{id}/formattingSettings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getFormattingSettings)
 
 This call allows you to get information about formatting settings for language object. Call `GET /api/languages` for languages' IDs.
 
@@ -386,7 +386,7 @@ Response Code: 200
 
 ## 8. Update language's formatting settings
 
-Endpoint: `PATCH /api/languages/{id}/formattingSettings`
+Endpoint: [PATCH /api/languages/{id}/formattingSettings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/updateFormattingSettings)
 
 This call allows you to update information about formatting settings for language object. Call `GET /api/languages` for languages' IDs.
 
@@ -465,7 +465,7 @@ Response Code: 200
 
 ## 9. Get base locale default formatting settings
 
-Endpoint: `GET /api/baseLocaleDefaultFormats/{lcid}`
+Endpoint: [GET /api/baseLocaleDefaultFormats/{lcid}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getBaseLocaleDefaultFormats)
 
 This call allows you to get default information about formatting settings for language object. Call `GET /api/languages` for languages' LCIDs.
 

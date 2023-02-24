@@ -28,7 +28,7 @@ Intelligence Server provides you the functionality to cluster a group of Intelli
 
 ## List nodes
 
-`GET /api/monitors/iServer/nodes`
+Endpoint: [GET /api/monitors/iServer/nodes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getClusterNodes)
 
 Get information about nodes in the connected Intelligence Server cluster, including:
 
@@ -75,7 +75,7 @@ This operation requires the "Monitor cluster" privilege.
 
 ## Add a node
 
-`PUT /api/monitors/iServer/nodes/{name}`
+Endpoint: [PUT /api/monitors/iServer/nodes/{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/addServerClusterMember)
 
 Add a node to the connected Intelligence Server cluster.
 
@@ -103,7 +103,7 @@ In case of complicated network configuration, it's recommended to provide a host
 
 ## Remove a node
 
-`DELETE /api/monitors/iServer/nodes/{name}`
+Endpoint: [DELETE /api/monitors/iServer/nodes/{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/removeServerClusterMember)
 
 Remove a node from the connected Intelligence Server cluster.
 

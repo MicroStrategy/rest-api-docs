@@ -13,13 +13,13 @@ You want to get the definitions of all available calendars in the configuration 
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Since calendar objects are configuration objects, you must set the project ID as an empty string.
 
 :::
 
-Get the calendars' definitions within a changeset using [`GET /api/model/calendars`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars).
+Get the calendars' definitions within a changeset using [GET /api/model/calendars](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars).
 
 The response can change based on the request parameters provided by the caller. Use the following request parameters:
 
@@ -115,7 +115,7 @@ You want the definitions of all available calendars in the configuration project
 
 :::info
 
-Obtain the authorization token needed to execute the request using [`POST /api/auth/login`](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Since calendar objects are configuration objects, you must set the project ID as an empty string.
 
@@ -129,7 +129,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ### Get the calendars' definitions within a changeset
 
-Endpoint: [`GET /api/model/calendars`](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/calendars)
+Endpoint: [GET /api/model/calendars](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars/ms-getCalendars)
 
 Sample Request Header
 

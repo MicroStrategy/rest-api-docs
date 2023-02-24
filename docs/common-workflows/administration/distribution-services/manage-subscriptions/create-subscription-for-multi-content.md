@@ -22,7 +22,7 @@ A detailed description of the critical steps in this workflow are listed down be
 
 ## Get a list of available schedules
 
-End Point: `GET /api/schedules`
+Endpoint: [GET /api/schedules](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Schedules/listSchedules)
 
 This endpoint allows the user to retrieve a list of all schedules that they have access to. This endpoint returns the name, ID, and other information about schedules. You obtain the authorization token needed to execute the request using `POST /api/auth/login`. You pass the authorization token in the request header. If the call is successful, the resulting HTTP response returns an HTTP status code of 200 and a response body containing all schedules the user has access to.
 
@@ -81,7 +81,7 @@ Sample Response
 
 ## Create a user email
 
-End Point: `POST /api/v2/users/{id}/addresses`
+Endpoint: [POST /api/v2/users/{id}/addresses](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createAddress)
 
 This endpoint allows you to create a new address for a specific user. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the user by specifying the user ID in the path of the request; the user ID can be obtained by using `GET /api/users`. You provide the information used to create the new user address in the body parameter of the request - including the name and actual value for the address, whether it is the default address, and the type of delivery and content style. If the call is successful, the resulting HTTP response returns an HTTP status code of 200 and a response body containing all the information on the newly created address.
 
@@ -158,7 +158,7 @@ Sample Response
 
 ## Create a multi-content subscription
 
-End Point: `POST /api/subscriptions`
+Endpoint: [POST /api/subscriptions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/createSubscription)
 
 This endpoint allows you to create a subscription containing multiple pieces of content. You obtain the authorization token needed to execute the request using `POST /api/auth/login` and you obtain the project ID using `GET /api/projects`; you pass these values in the request headers. If the call is successful, the resulting HTTP response returns an HTTP status code of 201 and a response body containing all the information on the newly created multi-content subscription.
 
@@ -383,7 +383,7 @@ Sample Response
 
 ## Delete the subscription
 
-End Point: `DELETE /api/subscriptions`
+Endpoint: [DELETE /api/subscriptions/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/removeSubscription)
 
 This endpoint allows you to delete/unsubscribe from the specified subscription. You obtain the authorization token needed to execute the request using `POST /api/auth/login`, you obtain the project ID using `GET /api/projects`, and you obtain the subscription ID through `GET /api/subscriptions`. You delete the subscription by specifying the subscription ID in the path of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 204 and an empty response body.
 

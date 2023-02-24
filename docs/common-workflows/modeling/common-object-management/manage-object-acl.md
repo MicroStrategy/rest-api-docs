@@ -36,7 +36,7 @@ The workflow sample below demonstrates how to get and update an object's ACL.
 
 ## Get a folder's ACL
 
-Endpoint: `GET /api/objects/{id}`
+Endpoint: [GET /api/objects/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/getObject)
 
 In this workflow sample, we created a MicroStrategy Test Folder under the Public Objects folder. Use the `GET /api/objects/{id}` endpoint to get complete information about the MicroStrategy Test Folder and view its ACL. The object ID of the folder is 0017E12B4DB60EE4BF7D56946ED60A7E. Based on [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html), the object type is 8.
 
@@ -157,7 +157,7 @@ In Workstation, you can view the permissions for the MicroStrategy Test Folder.
 
 ## Get an attribute's ACL
 
-Endpoint: `GET /api/objects/{id}`
+Endpoint: [GET /api/objects/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/getObject)
 
 Under the MicroStrategy Test Folder, there is a Total Sales attribute. Use the `GET /api/objects/{id}` endpoint to fetch all the attribute’s details, as well as the ACL. This attribute has an object ID of 5C258DC54E035C48145A2DA5C791E1D5 and an object type of 12.
 
@@ -296,7 +296,7 @@ In Workstation, you can view the permissions for the Total Sales attribute.
 
 ## Update a folder's ACL
 
-Endpoint: `PUT /api/objects/{id}`
+Endpoint: [PUT /api/objects/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/updateObject)
 
 Let's use the `PUT` operation to update the ACL value for the MicroStrategy Test Folder, previously mentioned in step 1. Update the ACL value for Developer from Full Control (255) to View (199). Then, add a trustee called Mobile User, with an ID of 0AA72D6042B938FF3FBED3AAC39349F5 and an ACL value of View (199).
 
@@ -441,7 +441,7 @@ Response Body:
 
 ## Attribute inherits ACL of parent folder
 
-Endpoint: `GET /api/objects/{id}`
+Endpoint: [GET /api/objects/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/getObject)
 
 In step 3, the Total Sales attribute inherited the same updated ACL as the parent MicroStrategy Test Folder. Any objects placed in this folder inherit the folder's entry in the ACL. The ACL for Developer is updated from Full Control (255) to View (199). A new trustee called Mobile User is added with a View (199) permission.
 

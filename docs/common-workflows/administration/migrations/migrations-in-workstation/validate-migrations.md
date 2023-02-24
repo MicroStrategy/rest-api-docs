@@ -11,9 +11,9 @@ You must [configure the package storage location in Workstation](https://www2.mi
 
 ## APIs
 
-- [PATCH /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/updateMigration)
-- [GET /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/getMigration)
-- [PUT /api/migrations/{migrationId}/validation](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migrations/triggerValidate)
+- [PATCH /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/updateMigration_1)
+- [GET /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/getMigration)
+- [PUT /api/migrations/{migrationId}/validation](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/triggerValidate)
 
 ## Privileges and authorization
 

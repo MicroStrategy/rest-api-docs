@@ -88,7 +88,7 @@ Response Code: 200 (Successfully list search indices information for all loaded 
 
 ## 2. Get search index status for a specific project
 
-Endpoint: [GET /mstrServices/searchEngine/indices/{projectId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getSearchIndex)
+Endpoint: [GET /api/mstrServices/searchEngine/indices/{projectId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getSearchIndex)
 
 To view your search index status, you need the project ID. E.g.,0DDDDEC8C94B320B4E93498C1EE98D18
 
@@ -129,7 +129,7 @@ Response code: 200 (The index status of the project is returned successfully)
 
 ## 3. Change the search index status for a project
 
-Endpoint: [PATCH /mstrServices/searchEngine/indices/{projectId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/updateSearchIndex)
+Endpoint: [PATCH /api/mstrServices/searchEngine/indices/{projectId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/updateSearchIndex)
 
 To update the search index, you need the project ID. Eg. 0DDDDEC8C94B320B4E93498C1EE98D18
 
@@ -167,7 +167,7 @@ Response Code: 202 (The change search index status request is triggered successf
 
 ## 4. Obtain quick search engine properties
 
-Endpoint: [GET /mstrServices/searchEngine](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getSearchEngine)
+Endpoint: [GET /api/mstrServices/searchEngine](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getSearchEngine)
 
 Sample Request Header:
 
@@ -206,7 +206,7 @@ Response Code: 200 (Successfully list properties for the quick search engine)
 
 ## 5. Update quick search engine properties
 
-Endpoint: [PUT /mstrServices/searchEngine](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/updateSearchEngine)
+Endpoint: [PUT /api/mstrServices/searchEngine](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/updateSearchEngine)
 
 Sample Request Header:
 

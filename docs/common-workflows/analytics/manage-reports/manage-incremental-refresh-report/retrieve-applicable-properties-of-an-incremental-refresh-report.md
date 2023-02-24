@@ -29,7 +29,7 @@ The response can change based on the request parameters provided by the caller. 
 
 ## Retrieve applicable properties of an incremental refresh report
 
-Endpoint: [GET/api/model/incrementalRefresh/{irrId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/get_api_model_incrementalRefresh__incrementalRefreshReportId__applicableVldbProperties)
+Endpoint: [GET /api/model/incrementalRefresh/{irrId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/get_api_model_incrementalRefresh__incrementalRefreshReportId__applicableVldbProperties)
 
 Sample Curl:
 
