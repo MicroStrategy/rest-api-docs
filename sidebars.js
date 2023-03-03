@@ -427,6 +427,9 @@ const sidebars = {
                 "common-workflows/modeling/manage-attribute-objects/retrieve-an-attributes-definition-within-a-changeset",
                 "common-workflows/modeling/manage-attribute-objects/create-an-attribute-object",
                 "common-workflows/modeling/manage-attribute-objects/update-an-attributes-definition",
+                "common-workflows/modeling/manage-attribute-objects/get-attribute-applicable-advanced-properties",
+                "common-workflows/modeling/manage-attribute-objects/get-attribute-with-advanced-properties",
+                "common-workflows/modeling/manage-attribute-objects/update-attribute-advanced-property",
               ],
             },
             {
@@ -511,6 +514,7 @@ const sidebars = {
                 "common-workflows/modeling/manage-datamart-objects/create-a-datamart-from-scratch",
                 "common-workflows/modeling/manage-datamart-objects/update-a-datamart-definition",
                 "common-workflows/modeling/manage-datamart-objects/retrieve-applicable-properties-of-a-datamart",
+                "common-workflows/modeling/manage-datamart-objects/execute-a-datamart",
               ],
             },
             {
@@ -582,6 +586,7 @@ const sidebars = {
                 "common-workflows/modeling/manage-metric-objects/retrieve-a-metrics-definition-within-a-changeset",
                 "common-workflows/modeling/manage-metric-objects/create-a-metric-within-a-changeset",
                 "common-workflows/modeling/manage-metric-objects/update-a-metrics-definition-within-a-changeset",
+                "common-workflows/modeling/manage-metric-objects/retrieve-a-metrics-applicable-properties",
               ],
             },
             {
@@ -658,6 +663,9 @@ const sidebars = {
                 "common-workflows/modeling/manage-table-objects/retrieve-a-prompt-of-an-sap-hana-table",
                 "common-workflows/modeling/manage-table-objects/update-a-prompt-of-an-sap-hana-table",
                 "common-workflows/modeling/manage-table-objects/update-sap-hana-parameters",
+                "common-workflows/modeling/manage-table-objects/retrieve-a-partition-mapping-tables-definition",
+                "common-workflows/modeling/manage-table-objects/create-a-new-partition-mapping-table-object",
+                "common-workflows/modeling/manage-table-objects/update-a-partition-mapping-tables-definition",
               ],
             },
             {
@@ -775,7 +783,17 @@ const sidebars = {
                   },
                   label: "Manage subscriptions",
                   items: [
-                    "common-workflows/administration/distribution-services/manage-subscriptions/create-and-get-a-subscription",
+                    {
+                      type: "category",
+                      link: {
+                        type: "doc",
+                        id: "common-workflows/administration/distribution-services/manage-subscriptions/create-and-get-a-subscription",
+                      },
+                      label: "Create and get a subscription",
+                      items: [
+                        "common-workflows/administration/distribution-services/manage-subscriptions/mobile-subscriptions",
+                      ],
+                    },
                     "common-workflows/administration/distribution-services/manage-subscriptions/create-subscription-for-multi-content",
                     "common-workflows/administration/distribution-services/manage-subscriptions/create-subscription-with-prompted-content",
                   ],
@@ -805,6 +823,31 @@ const sidebars = {
               type: "category",
               link: {
                 type: "doc",
+                id: "common-workflows/administration/manage-gateways/manage-gateways",
+              },
+              label: "Manage Gateways",
+              items: [
+                "common-workflows/administration/manage-gateways/retrieve-gateways",
+                "common-workflows/administration/manage-gateways/retrieve-a-gateway-definition",
+              ],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/administration/manage-drivers/manage-drivers",
+              },
+              label: "Manage Drivers",
+              items: [
+                "common-workflows/administration/manage-drivers/retrieve-drivers",
+                "common-workflows/administration/manage-drivers/retrieve-a-driver-definition",
+                "common-workflows/administration/manage-drivers/update-a-driver-definition",
+              ],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
                 id: "common-workflows/administration/manage-runtime-objects/manage-runtimes",
               },
               label: "Manage runtimes",
@@ -826,6 +869,7 @@ const sidebars = {
               items: [
                 "common-workflows/administration/manage-application-objects/manage-application-general-settings",
                 "common-workflows/administration/manage-application-objects/manage-application-customized-emails",
+                "common-workflows/administration/manage-application-objects/manage-application-themes",
               ],
             },
             {

@@ -62,6 +62,10 @@ The Derived Elements API family allows developers to obtain a derived element's 
 
 The Dossiers and Documents API family exposes functionality that allows the execution and exporting of dossiers and documents to a variety of export formats.
 
+## [Drivers API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drivers)
+
+The Drivers API family allows developers to obtain drivers' definition and update a driver's definition.
+
 ## [Emails API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Emails)
 
 The Emails API family allows administrators and developers to send emails using MicroStrategy Distribution Services email transmitters.
@@ -73,6 +77,10 @@ The Facts API family allows developers to obtain a fact's definition, create a f
 ## [Filters API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters)
 
 The Filters API family allows developers to obtain a filter's definition, create a filter object, and update the definition of an existing filter.
+
+## [Gateways API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Gateways)
+
+The Gateways API family allows developers to obtain gateways' definitions.
 
 ## [Library API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Library)
 

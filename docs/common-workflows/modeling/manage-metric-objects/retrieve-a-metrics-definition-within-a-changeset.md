@@ -48,11 +48,14 @@ Sample Request Header:
 
 Sample Request Body: Empty
 
-| Location | Name                | Description                                                                                                                                                                                                                                            |
-| -------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| header   | X-MSTR-authToken    | The authorization token                                                                                                                                                                                                                                |
-| header   | X-MSTR-MS-Changeset | The changeset ID.                                                                                                                                                                                                                                      |
-| params   | showExpressionAs    | Omitted, tree, or tokens:<br/>- If omitted, the expression is returned in only “text“ formats.<br/>- If `tree`, the expression is returned in "text" and "tree" formats.<br/>- If `tokens`, the expression is returned in "text" and "tokens" formats. |
+| Location | Name                   | Description                                                                                                                                                                                                                                            |
+| -------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| header   | X-MSTR-authToken       | The authorization token.                                                                                                                                                                                                                               |
+| header   | X-MSTR-ProjectID       | The Project ID.                                                                                                                                                                                                                                        |
+| header   | X-MSTR-MS-Changeset    | The changeset ID.                                                                                                                                                                                                                                      |
+| params   | showFilterTokens       | Specify whether the "filter" in Metric is returned in "tokens", "text", and "tree" formats.                                                                                                                                                            |
+| params   | showExpressionAs       | Omitted, tree, or tokens:<br/>- If omitted, the expression is returned in only “text“ formats.<br/>- If `tree`, the expression is returned in "text" and "tree" formats.<br/>- If `tokens`, the expression is returned in "text" and "tokens" formats. |
+| params   | showAdvancedProperties | Specify whether the metric’s definition is returned with advanced properties.<br/>- If omitted or false, the advanced properties are not returned.<br/>- If true, the advanced properties are are returned.                                            |
 
 Sample Curl:
 
