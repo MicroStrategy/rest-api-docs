@@ -8,7 +8,7 @@ description: This workflow sample demonstrates how to create a new table object 
 
 :::tip
 
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-69df2b48-9b7c-4f35-9b80-15c9066d48b0?ctx=documentation).
+You can try this workflow with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-69df2b48-9b7c-4f35-9b80-15c9066d48b0?ctx=documentation).
 
 Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
 
@@ -20,7 +20,7 @@ This workflow sample demonstrates how to create a new table object through the M
 
 In this workflow sample, you create a new `"CITY_CTR_SLS"` table object in the MicroStrategy Tutorial project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`. All schema tables are created under the objects/tables folder schema.
 
-Obtain the authorization token needed to execute the request using [POST /api/auth/login](<https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin>.
+Get the authorization token needed to execute the request with [POST /api/auth/login](<https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin>.
 
 Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
@@ -28,7 +28,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 Create a new table by defining its physical table with a normal warehouse table using [POST /api/model/tables](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-addTable).
 
-Here are some other approaches to creating a table:
+The following are alternate methods to create a table:
 
 - You can create a table by defining the physical table with either a normal warehouse table or freeform SQL statement and columns information. The former is called a normal table, while the latter is called a freeform SQL table. When [creating a freeform SQL table](#create-a-freeform-sql-table), the type in the `physicalTable` field must be specified as `'sql'`.
 - If the `checkSecondaryDataSourceTable` query parameter is set to `true`, the API finds compatible tables in the project. If a compatible table is found, the compatible table object information is returned. Use [PATCH /api/model/tables/{tableID}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-patchTableDetails) to set the `secondaryDatasource` to the compatible table. If no compatible table is found, a new table is created.
@@ -37,13 +37,13 @@ If this parameter is set to `"false"`, a new table is created.
 
 This parameter has no effect on creating a freeform SQL table.
 
-- The `columnMergeOption` query parameter is used to define column merge options. For example, let's say a project includes a table named Table1 with a C1 column, whose data type is char(1). When adding a new table named Table2 with a C1 column and a data type of char(4), columns' data types are modified in the following ways to keep things consistent:
+- The `columnMergeOption` query parameter is used to define column merge options. For example, a project includes a table named Table1 with a C1 column and a char(1) data type. When you add a new table named Table2 with a C1 column and char(4) data type, the column data types are modified in the following ways for consistency:
 
-- `reuse_any`: Updates the column data type to use the most recent column definition. In the example above, the column data type for C1 is changed to char(4) since Table2 was added after Table1.
+- `reuse_any`: Updates the column data type to use the most recent column definition. In the example above, the column data type for C1 is updated to char(4) because Table2 was added after Table1.
 
-- `reuse_compatible_data_type`: Updates the column data type to use the data type with the largest precision or scale. In the example above, the column data type for C1 is changed to char(4), as defined in Table2.
+- `reuse_compatible_data_type`: Updates the column data type to use the data type with the largest precision or scale. In the example above, the column data type for C1 is updated to char(4), as defined in Table2.
 
-- `reuse_matched_data_type`: Renames the column in the newly added table to allow it to have different data types. In the example above, column C1 uses char(1) for Table1. Column C1 in Table2 is defined as a separate copy of C1 and uses char(4). This option can cause unwanted schema changes and should be used only when necessary. If this value is not set, use the option that is set on the warehouse catalog setting.
+- `reuse_matched_data_type`: Renames the column in the newly added table to allow it to have different data types. In the example above, column C1 uses char(1) for Table1. Column C1 in Table2 is defined as a separate copy of C1 and uses char(4). This option can cause unwanted schema changes and should only be used when necessary. If this value is not set, use the option that is applied on the warehouse catalog setting.
 
 - The `tablePrefixOption` query parameter defines the table prefix. This parameter has no effect on a freeform SQL table. Otherwise, use one of the following options:
 
@@ -235,7 +235,7 @@ Response Code: 201 (A new table is created successfully in the changeset.)
 
 ### Create a freeform SQL table
 
-Besides defining the physical table field via a warehouse table, using the table name and namespace, you can also define the physical table field using a freeform SQL statement and column information. This is called a freeform SQL table. The type must be specified in the `"physicalTable"` field as `"type": "sql"`.
+You can also define a physical table field using a freeform SQL statement and column information. This is called a freeform SQL table. The type must be `"type": "sql"` in the `"physicalTable"` field.
 
 Sample Request Body:
 

@@ -9,5 +9,6 @@ Applications allow organizations to design and create unique viewing experiences
 
 - [Manage application general settings](manage-application-general-settings.md)
 - [Manage application customized emails](manage-application-customized-emails.md)
+- [Apply custom logos and colors to library](manage-application-themes.md) <Available since="2021 Update 9" inline />
 
 For more information about the application, see [Manage Application](https://www2.microstrategy.com/producthelp/Current/MicroStrategy/en-us/Content/custom_application.htm?tocpath=Create%20an%20Application%7C_____0#general).

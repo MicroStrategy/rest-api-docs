@@ -19,5 +19,8 @@ You can use REST API requests to retrieve, create and update attribute objects t
 - [Retrieve an attribute's definition within a changeset](retrieve-an-attributes-definition-within-a-changeset.md)
 - [Create an attribute object](create-an-attribute-object.md)
 - [Update an attribute's definition](update-an-attributes-definition.md)
+- [Get attribute's applicable advanced properties](get-attribute-applicable-advanced-properties.md) <Available since="2021 Update 9" inline />
+- [Get attribute's definition and advanced properties](get-attribute-with-advanced-properties.md) <Available since="2021 Update 9" inline />
+- [Update attribute's advanced property](update-attribute-advanced-property.md) <Available since="2021 Update 9" inline />
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

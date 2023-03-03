@@ -4,6 +4,17 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## 2021 Update 9
+
+- [Retrieve gateway objects.](common-workflows/administration/manage-gateways/manage-gateways.md)
+- [Retrieve and update driver objects.](common-workflows/administration/manage-drivers/manage-drivers.md)
+- [Retrieve applicable properties for metrics.](common-workflows/modeling/manage-metric-objects/retrieve-a-metrics-applicable-properties.md)
+- [Execute a datamart.](common-workflows/modeling/manage-datamart-objects/execute-a-datamart.md)
+- [Advanced properties for attributes.](common-workflows/modeling/manage-attribute-objects/manage-attribute-objects.md)
+- [Retrieve, create, and update warehouse / metadata partition mapping tables.](common-workflows/modeling/manage-table-objects/manage-table-objects.md)
+- [Apply custom logos and colors to library.](common-workflows/administration/manage-application-objects/manage-application-themes.md)
+- [Manage mobile subscriptions.](common-workflows/administration/distribution-services/manage-subscriptions/mobile-subscriptions.md)
+
 ## 2021 Update 8
 
 - [Purge object and element caches.](common-workflows/administration/monitors/manage-caches.md)
