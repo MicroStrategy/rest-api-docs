@@ -21,7 +21,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 ## Create a new datamart
 
-Endpoint: [POST /api/model/datamarts](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/post_api_model_datamarts)
+Endpoint: [POST /api/model/datamarts](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-createDatamart)
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 

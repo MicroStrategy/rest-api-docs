@@ -294,7 +294,7 @@ Sample response
 
 Call `POST /api/dossiers/{dossierId}/instances` to create an instance of a specific dossier with the existing filter applied.
 
-Endpoint: [POST /api/dossiers/{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_1)
+Endpoint: [POST /api/dossiers/{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
 
 This endpoint allows the caller to execute a specific dossier in a specific project and create an instance of that dossier. The existing filter for the dossier will be applied when the dossier instance is created; this is the filter that was returned in the previous step. To execute this API, you need to provide values for the following request parameters:
 
@@ -482,7 +482,7 @@ Call `POST /api/dossiers/{dossierId}/instances` or `PUT /api/dossiers/{dossierId
 
 To clear all of the current filter selections for an individual filter, you call one of the following APIs and provide nothing but the filter name or ID:
 
-Endpoint: [POST /api/dossiers/{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_1)
+Endpoint: [POST /api/dossiers/{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
 
 Sample code for clearing filter selections using the filter ID:
 

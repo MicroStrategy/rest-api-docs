@@ -34,7 +34,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 ## Create a dossier instance
 
-Use [POST /api/dossiers/{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_1).
+Use [POST /api/dossiers/{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2).
 
 Sample Request Header:
 

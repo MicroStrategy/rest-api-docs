@@ -20,7 +20,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-## Get the definition of the specified incremental refresh report with advanced properties using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/get_api_model_incrementalRefresh__incrementalRefreshReportId_)
+## Get the definition of the specified incremental refresh report with advanced properties using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-getIncrementalRefreshReport)
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 

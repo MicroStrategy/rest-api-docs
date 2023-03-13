@@ -5,7 +5,7 @@ description: You can set the different types of selector using the following req
 
 You can set the different types of selector using the following requests.
 
-## API: [POST /api/dossiers/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_1)
+## API: [POST /api/dossiers/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
 
 This endpoint is used to execute a dossier with specific filtering criteria applied in the current chapter. You can set the following selector types:
 

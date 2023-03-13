@@ -857,7 +857,7 @@ Response Code: 204 (Success: OK)
 
 ### Create a dossier instance
 
-Endpoint: [POST /api/dossiers/{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_1)
+Endpoint: [POST /api/dossiers/{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
 
 This endpoint allows the caller to create a new instance of a specific dossier in a specific project from the MicroStrategy Intelligence Server. The request body contains linking and bookmark information for the dossier. The body of the response contains the instance ID for the dossier and the status.
 
