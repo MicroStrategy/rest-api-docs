@@ -1145,7 +1145,7 @@ Sample Response Code: 200 (The report’s definition is updated successfully in 
 
 ### 3. Save the report instance
 
-Endpoint: [POST /api/model/reports/{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/post_api_model_reports__reportId__instances_save)
+Endpoint: [POST /api/model/reports/{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveReportInstance)
 
 Sample Request Header:
 

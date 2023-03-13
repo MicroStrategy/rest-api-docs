@@ -33,7 +33,7 @@ The response can change based on the request parameters provided by the caller. 
 
 ## Retrieve an incremental refresh report definition
 
-Retrieve the Incremental Refresh Report definition using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/get_api_model_incrementalRefresh__incrementalRefreshReportId_).
+Retrieve the Incremental Refresh Report definition using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-getIncrementalRefreshReport).
 
 Sample Curl:
 
@@ -98,7 +98,7 @@ Response Code: 200 (Incremental Refresh Report's definition is returned successf
 
 ## Retrieve an incremental refresh report definition with filter using tokens
 
-Retrieve the Incremental Refresh Report definition using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/get_api_model_incrementalRefresh__incrementalRefreshReportId_).
+Retrieve the Incremental Refresh Report definition using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-getIncrementalRefreshReport).
 
 Sample Curl:
 

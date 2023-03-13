@@ -30,7 +30,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-## Create a new incremental refresh report using [POST /api/model/incrementalRefresh](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/post_api_model_incrementalRefresh)
+## Create a new incremental refresh report using [POST /api/model/incrementalRefresh](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-createIncrementalRefreshReport)
 
 To create the new Incremental Refresh Report, you must submit the request body with the correct information.
 

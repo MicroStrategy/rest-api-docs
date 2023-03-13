@@ -31,7 +31,7 @@ The response can change based on the request parameters provided by the caller. 
 
 ## Create a new datamart
 
-Endpoint: [POST /api/model/datamarts](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/post_api_model_datamarts)
+Endpoint: [POST /api/model/datamarts](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-createDatamart)
 
 To create the new datamart , you need to submit the request body with the correct information for each field.
 

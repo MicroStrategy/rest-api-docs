@@ -234,7 +234,7 @@ const main = async () => {
   const linkSet = new Set();
 
   // collect links for openapi.json
-  const openAPIjson = loadOpenAPIJson();
+  const openAPIjson = await loadOpenAPIJson();
   collectSwaggerLinks(linkSet, JSON.parse(openAPIjson));
 
   // collect links for postman.com

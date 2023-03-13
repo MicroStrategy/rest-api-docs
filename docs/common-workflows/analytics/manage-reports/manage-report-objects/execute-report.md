@@ -91,7 +91,7 @@ Sample Response Code: 204 (Prompt has been answered.)
 
 ### 3. Get the SQL view
 
-Endpoint: [GET /api/v2/reports/{reportId}/instances/{reportInstance}/sqlView](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getReportSqlView)
+Endpoint: [GET /api/v2/reports/{reportId}/instances/{reportInstance}/sqlView](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getReportSqlView_1)
 
 Sample Request Header:
 

@@ -20,7 +20,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-## Update the incremental refresh report using [PUT /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/put_api_model_incrementalRefresh__incrementalRefreshReportId_)
+## Update the incremental refresh report using [PUT /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-putIncrementalRefreshReport)
 
 To update the Incremental Refresh Report, you must submit the request body with the correct information.
 

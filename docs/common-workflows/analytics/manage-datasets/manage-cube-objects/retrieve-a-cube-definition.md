@@ -893,7 +893,7 @@ This workflow sample demonstrates how to retrieve all the applicable properties 
 
 You want to get the applicable properties of the Actual vs Forecast Performance Cube cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD75`4.
 
-Retrieve the applicable properties of a cube using [GET /api/model/cubes/{cubeId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/get_api_model_cubes__cubeId__applicableVldbProperties).
+Retrieve the applicable properties of a cube using [GET /api/model/cubes/{cubeId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-getCubeApplicableVldbProperties).
 
 Sample Curl:
 

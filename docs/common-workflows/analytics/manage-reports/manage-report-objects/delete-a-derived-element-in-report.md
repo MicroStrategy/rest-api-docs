@@ -77,7 +77,7 @@ Response Code: 204 (The derived element is deleted from report.)
 
 The delete operation will take effect on metadata once the report instance is saved..
 
-Endpoint: [POST /api/model/reports/{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/post_api_model_reports__reportId__instances_save)
+Endpoint: [POST /api/model/reports/{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveReportInstance)
 
 Sample Request Header:
 
