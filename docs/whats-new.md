@@ -14,6 +14,7 @@ Description: What's New in the REST API.
 - [Retrieve, create, and update warehouse / metadata partition mapping tables.](common-workflows/modeling/manage-table-objects/manage-table-objects.md)
 - [Apply custom logos and colors to library.](common-workflows/administration/manage-application-objects/manage-application-themes.md)
 - [Manage mobile subscriptions.](common-workflows/administration/distribution-services/manage-subscriptions/mobile-subscriptions.md)
+- [Edit migrations and migration groups](common-workflows/administration/migrations/migrations-in-workstation/edit-migrations-and-migration-groups.md)
 
 ## 2021 Update 8
 

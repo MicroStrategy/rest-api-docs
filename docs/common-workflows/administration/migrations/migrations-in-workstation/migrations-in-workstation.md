@@ -12,3 +12,4 @@ You can use REST API requests to create and import migration packages just as th
 - [Validate a migration](validate-migrations.md)
 - [Object migration groups between environments](object-migration-groups-between-environments.md)
 - [Upload and download migration packages](upload-and-download-migration-packages.md)
+- [Edit migrations and migration groups](edit-migrations-and-migration-groups.md) <Available since="2021 Update 9" inline />
