@@ -905,6 +905,7 @@ const sidebars = {
                     "common-workflows/administration/migrations/migrations-in-workstation/validate-migrations",
                     "common-workflows/administration/migrations/migrations-in-workstation/object-migration-groups-between-environments",
                     "common-workflows/administration/migrations/migrations-in-workstation/upload-and-download-migration-packages",
+                    "common-workflows/administration/migrations/migrations-in-workstation/edit-migrations-and-migration-groups",
                   ],
                 },
                 {
