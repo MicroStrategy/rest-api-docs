@@ -144,7 +144,7 @@ Sample Response
 
 Call `GET /api/dossiers` to obtain a list of dossiers that meet specific search criteria.
 
-Endpoint: [GET /api/dossiers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?visibility=all#/Dossiers%20and%20Documents/searchForDossiers)
+Endpoint: [GET /api/dossiers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/searchForDossiers)
 
 This endpoint allows the caller to get a list of dossiers in a specific project that meet specific search criteria. You use the authorization token returned during login as the value for **X-MSTR-AuthToken**. You use a project ID returned by GET /api/projects as the value for **X-MSTR-ProjectID**. You specify the search criteria using query parameters in the request; criteria can include the root folder ID, a search searchPattern such as Begins With or Exactly, and the certified status of the dossier.
 

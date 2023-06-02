@@ -352,8 +352,7 @@ The result will include `objectVersion`, `objectNames`, and `objectAcl` if reque
 parameter `outputFlag=INCLUDE_LOCALE&outputFlag=INCLUDE_ACL`. They are essential for updating
 applications.
 
-Endpoint:
-[GET /api/v2/applications/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/getApplication_1)
+Endpoint: [GET /api/v2/applications/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/getApplication_1)
 
 Sample Request Header:
 
@@ -533,8 +532,7 @@ for details.
 As mentioned previously, we do not need to include the `formatting` property as part of the `color`
 object if updating with a predefined color theme.
 
-Endpoint:
-[PUT /api/v2/applications/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/updateApplication)
+Endpoint: [PUT /api/v2/applications/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Applications/updateApplication)
 
 Sample Request Header:
 

@@ -159,6 +159,37 @@ const sidebars = {
               type: "category",
               link: {
                 type: "doc",
+                id: "common-workflows/analytics/manage-documents/manage-documents",
+              },
+              label: "Manage documents",
+              items: [
+                "common-workflows/analytics/manage-documents/get-document-list/get-document-list",
+              ],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/analytics/manage-documents/manage-documents",
+              },
+              label: "Manage documents",
+              items: [
+                "common-workflows/analytics/manage-documents/retrieve-document/retrieve-the-hierarchy-of-a-document",
+              ],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/analytics/manage-dossiers/manage-dossiers",
+              },
+              label: "Manage dossiers",
+              items: ["common-workflows/analytics/manage-dossiers/create-instance/create-instance"],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
                 id: "common-workflows/analytics/manage-datasets/manage-datasets",
               },
               label: "Manage datasets",
@@ -369,6 +400,25 @@ const sidebars = {
                 "common-workflows/analytics/retrieve-sql-statements-and-query-details/retrieve-grid-or-graph-query-details",
               ],
             },
+            {
+              type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/analytics/manage-insights/manage-kpi-and-insights",
+              },
+              label: "Manage insights",
+              items: [
+                "common-workflows/analytics/manage-insights/create-kpi",
+                "common-workflows/analytics/manage-insights/get-kpi",
+                "common-workflows/analytics/manage-insights/modify-kpi",
+                "common-workflows/analytics/manage-insights/delete-kpi",
+                "common-workflows/analytics/manage-insights/retrieve-an-insight",
+                "common-workflows/analytics/manage-insights/retrieve-all-insights",
+                "common-workflows/analytics/manage-insights/retrieve-insight-preferences",
+                "common-workflows/analytics/manage-insights/update-insight-preferences",
+                "common-workflows/analytics/manage-insights/update-insight-status",
+              ],
+            },
           ],
         },
         {
@@ -384,6 +434,7 @@ const sidebars = {
               label: "Common object management",
               items: [
                 "common-workflows/modeling/common-object-management/manage-object-acl",
+                "common-workflows/modeling/common-object-management/change-ownership",
                 {
                   type: "category",
                   link: {

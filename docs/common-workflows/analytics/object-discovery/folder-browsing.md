@@ -14,10 +14,12 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 The workflow for browsing folders in the metadata includes the following sequence of REST API requests.
 
-1. [Log in](#log-in) User authenticates into the environment with `POST /api/auth/login` and standard authentication
-1. [Get project list](#get-project-list) User obtains the project list from `GET /api/projects`
-1. [Browse to the Shared Reports folder](#browse-to-the-shared-reports-folder) User calls `GET /api/folders/preDefined` to perform folder browsing to the Shared Reports folder (may be multiple requests)
-1. [Log out](#log-out) User calls `POST /api/logout` to close the session
+1. [Log in](#log-in) Authenticate into the environment with `POST /api/auth/login` and standard authentication.
+1. [Get project list](#get-project-list) Obtain the project list from `GET /api/projects`.
+1. [Browse to the Shared Reports folder](#browse-to-the-shared-reports-folder) Call `GET /api/folders/preDefined` to perform folder browsing to the Shared Reports folder (may be multiple requests).
+   1. [Get the Shared Reports and My Reports folder objects (optional)](#get-the-shared-reports-and-my-reports-folder-objects-optional) <Available since="2021 Update 10" inline />
+1. [Browse to a folder by ID](#browse-to-a-folder-by-id) Call `GET /api/folders/{id}` to perform folder browsing to a child folder under Shared Reports.
+1. [Log out](#log-out) Call `POST /api/logout` to close the session.
 
 A detailed explanation of each step is provided below:
 
@@ -25,7 +27,7 @@ A detailed explanation of each step is provided below:
 
 Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
-This endpoint allows the caller to authenticate with the MicroStrategy REST Server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing X-MSTR-AuthToken, the authorization token that will be used in subsequent requests.
+This endpoint allows the caller to authenticate with the MicroStrategy REST server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing `X-MSTR-AuthToken`, the authorization token that will be used in subsequent requests.
 
 ![swagger_POST_auth_login](../../../images/swagger_POST_auth_login.png)
 
@@ -84,7 +86,7 @@ Sample Response
 
 Endpoint: [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1)
 
-This endpoint allows the caller to get the list of projects with the MicroStrategy REST Server. In this example, you get the list of projects in the MicroStrategy Tutorial metadata. You use the authorization token returned during login as the value for the header parameter, X-MSTR-AuthToken. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
+This endpoint allows the caller to get the list of projects with the MicroStrategy REST server. In this example, you get the list of projects in the MicroStrategy Tutorial metadata. You use the authorization token returned during login as the value for the header parameter, `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
 
 ![swagger_GET_projects](../../../images/swagger_GET_projects.png)
 
@@ -138,7 +140,7 @@ The response body contains information for each project that is returned, includ
 
 Endpoint: [GET /api/folders/preDefined/{folderType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolder)
 
-This endpoint allows the caller to get the objects under a predefined folder with the MicroStrategy REST Server. In this example, you get the objects under Shared Reports in the "MicroStrategy Tutorial". You use the authorization token returned by `POST /api/auth/login` as the value for X-MSTR-AuthToken and a project ID returned by `GET /api/projects` as the value for X-MSTR-ProjectID. You provide a value for folderType from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. In this example, you use the value "7" , which specifies the predefined "Shared Reports" folder under the "Public Objects" folder. If the call is successful, the resulting HTTP response returns an HTTP status 200 and a list of metadata objects under the Shared Reports folder.
+This endpoint allows the caller to get the objects under a predefined folder with the MicroStrategy REST server. In this example, you get the objects under "Shared Reports" in the "MicroStrategy Tutorial" project. You use the authorization token returned by `POST /api/auth/login` as the value for `X-MSTR-AuthToken` and a project ID returned by `GET /api/projects` as the value for `X-MSTR-ProjectID`. You provide a value for `folderType` from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. In this example, you use the value "7" , which specifies the predefined "Shared Reports" folder under the "Public Objects" folder. If the call is successful, the resulting HTTP response returns an HTTP status 200 and a list of metadata objects under the "Shared Reports" folder.
 
 ![swagger_GET_folders_preDefined](../../../images/swagger_GET_folders_preDefined.png)
 
@@ -265,11 +267,278 @@ Sample Response
 
   The REST server returns all the object information under "Shared Reports".
 
+### Get the Shared Reports and My Reports folder objects (optional)
+
+ <Available since="2021 Update 10" />
+
+Endpoint: [GET /api/folders/preDefined?folderType={folderType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolders)
+
+This endpoint allows the caller to get the folder object of one or more predefined folders with the MicroStrategy REST server. In this example, you get the "Shared Reports" and "My Reports" folder objects in the "MicroStrategy Tutorial" project. You use the authorization token returned by `POST /api/auth/login` as the value for `X-MSTR-AuthToken` and a project ID returned by `GET /api/projects` as the value for `X-MSTR-ProjectID`. You provide a value for `folderType` from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. You may specify multiple folder types as a comma separated list. In this example, you use the value "7,20", where "7" specifies the predefined "Shared Reports" folder under the "Public Objects" folder, and "20" specifies the "My Reports" folder under the profile folder of the active user. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a list of the folder objects requested.
+
+Sample Request
+
+- Request Parameters
+
+  - `X-MSTR-AuthToken`
+
+    The authorization token generated by `POST /api/auth/login`.
+
+  - `X-MSTR-ProjectID`
+
+    The ID of the project that the folders being requested belong to.
+
+  - `folderType`
+
+    The pre-defined folder type, from [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html). You may specify multiple folder types as a comma separated list.
+
+- Request Headers
+
+  ```http
+  'Accept: application/json'
+  'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c'
+  'X-MSTR-ProjectID: B19DEDCC11D4E0EFC000EB9495D0F44F'
+  ```
+
+- Curl
+
+  ```bash
+  curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/folders/preDefined?folderType=7,20" --header 'Accept: application/json' --header 'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c' --header 'X-MSTR-ProjectID: B19DEDCC11D4E0EFC000EB9495D0F44F'
+  ```
+
+Sample Response
+
+- Response Body
+
+  The REST server returns a list containing the object information of the requested folders. Note that the folder with the name "Reports" is the Shared Reports folder.
+
+  ```json
+  {
+    "preDefined": [
+      {
+        "name": "Reports",
+        "id": "D3C7D461F69C4610AA6BAA5EF51F4125",
+        "type": 8,
+        "subtype": 2048,
+        "dateCreated": "2010-06-11T18:38:55.000+0000",
+        "dateModified": "2023-02-10T18:07:21.000+0000",
+        "version": "C4849006E34EA7DA6D811F8CBD319C50",
+        "acg": 255,
+        "owner": {
+          "name": "Administrator",
+          "id": "54F3D26011D2896560009A8E67019608"
+        },
+        "extType": 0,
+        "folderType": 7
+      },
+      {
+        "name": "My Reports",
+        "id": "E287FE0E11E5B55F03C70080EF555BA1",
+        "type": 8,
+        "subtype": 2048,
+        "dateCreated": "2016-01-07T16:58:33.000+0000",
+        "dateModified": "2023-03-08T21:32:18.000+0000",
+        "version": "784CAF8370496D2510CF91A7AD72941B",
+        "acg": 255,
+        "owner": {
+          "name": "Administrator",
+          "id": "54F3D26011D2896560009A8E67019608"
+        },
+        "extType": 0,
+        "folderType": 20
+      }
+    ]
+  }
+  ```
+
+## Browse to a folder by ID
+
+Endpoint: [GET /api/folders/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getFolder)
+
+This endpoint allows the caller to get the objects under a folder with the MicroStrategy REST server using the folder ID. You use the authorization token returned by `POST /api/auth/login` as the value for `X-MSTR-AuthToken` and a project ID returned by `GET /api/projects` as the value for `X-MSTR-ProjectID`. You provide a value for the `id` path parameter with the ID of the folder you want to browse to. In this example, the value "032A5E114A59D28267BDD8B6D9E58B22" is used, which is the ID of the "Business Roles" folder under "Shared Reports" that was returned by [GET /api/folders/preDefined/7](#browse-to-the-shared-reports-folder). If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a list of metadata objects under the folder.
+
+Sample Request
+
+- Request Parameters
+
+  - `X-MSTR-AuthToken`
+
+    The authorization token generated by `POST /api/auth/login`.
+
+  - `X-MSTR-ProjectID`
+
+    The ID of the project that the folder being requested belongs to.
+
+  - `id`
+
+    The folder ID.
+
+- Request Headers
+
+  ```http
+  'Accept: application/json'
+  'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c'
+  'X-MSTR-ProjectID: B19DEDCC11D4E0EFC000EB9495D0F44F'
+  ```
+
+- Curl
+
+  ```bash
+  curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/folders/032A5E114A59D28267BDD8B6D9E58B22" --header 'Accept: application/json' --header 'X-MSTR-AuthToken: nllmm5lpmkjdsj4d4etgdikc6c' --header 'X-MSTR-ProjectID: B19DEDCC11D4E0EFC000EB9495D0F44F'
+  ```
+
+Sample Response
+
+- Response Body
+
+  The REST server returns all the object information under the "Business Roles" folder.
+
+  ```json
+  [
+    {
+      "name": "Billing Managers",
+      "id": "7A83FC5245C894A2FD0B0BA20801E3F8",
+      "type": 8,
+      "description": "This folder contains reports that are appropriate for Billing Managers, including a customer invoice and a customer transaction report.",
+      "subtype": 2048,
+      "dateCreated": "2005-05-06T21:49:08.000+0000",
+      "dateModified": "2016-08-12T19:32:56.000+0000",
+      "version": "ECEBEF8448F5E57B189AD6A19C839133",
+      "acg": 255,
+      "owner": {
+        "name": "Administrator",
+        "id": "54F3D26011D2896560009A8E67019608"
+      },
+      "extType": 0
+    },
+    {
+      "name": "Brand Managers",
+      "id": "8B1A934F46393111029F40A9CB4FE0C6",
+      "type": 8,
+      "description": "This folder contains brand sales and profitability analyses.",
+      "subtype": 2048,
+      "dateCreated": "2005-05-06T21:49:14.000+0000",
+      "dateModified": "2016-08-12T19:32:56.000+0000",
+      "version": "ECEBEF8448F5E57B189AD6A19C839133",
+      "acg": 255,
+      "owner": {
+        "name": "Administrator",
+        "id": "54F3D26011D2896560009A8E67019608"
+      },
+      "extType": 0
+    },
+    {
+      "name": "Category Managers",
+      "id": "9B6F439640C1BEDB30EF74939A43F286",
+      "type": 8,
+      "description": "This folder contains category sales and profitability analyses.",
+      "subtype": 2048,
+      "dateCreated": "2005-05-06T21:49:24.000+0000",
+      "dateModified": "2016-08-12T19:32:56.000+0000",
+      "version": "ECEBEF8448F5E57B189AD6A19C839133",
+      "acg": 255,
+      "owner": {
+        "name": "Administrator",
+        "id": "54F3D26011D2896560009A8E67019608"
+      },
+      "extType": 0
+    },
+    {
+      "name": "Company Executives",
+      "id": "0065ED414DC05BC9E4E7E6AC2C6AA81F",
+      "type": 8,
+      "description": "This folder contains executive dashboards that summarize corporate and regional performance.",
+      "subtype": 2048,
+      "dateCreated": "2006-05-23T08:56:12.000+0000",
+      "dateModified": "2016-08-12T19:32:56.000+0000",
+      "version": "ECEBEF8448F5E57B189AD6A19C839133",
+      "acg": 255,
+      "owner": {
+        "name": "Administrator",
+        "id": "54F3D26011D2896560009A8E67019608"
+      },
+      "extType": 0
+    },
+    {
+      "name": "District Sales Managers",
+      "id": "5105902A4446ACC07467C79BF19FC47C",
+      "type": 8,
+      "description": "This folder contains analyzes of store-level performance.",
+      "subtype": 2048,
+      "dateCreated": "2005-05-06T21:49:36.000+0000",
+      "dateModified": "2016-08-12T19:32:56.000+0000",
+      "version": "ECEBEF8448F5E57B189AD6A19C839133",
+      "acg": 255,
+      "owner": {
+        "name": "Administrator",
+        "id": "54F3D26011D2896560009A8E67019608"
+      },
+      "extType": 0
+    },
+    {
+      "name": "Operations Managers",
+      "id": "A81BEFB44F7EE6F522AC85814B3BDCC6",
+      "type": 8,
+      "description": "This folder contains documents analyzing sales transactions at the city and state levels, as well as an analysis of the timeliness of outbound shipments.",
+      "subtype": 2048,
+      "dateCreated": "2006-07-20T13:20:01.000+0000",
+      "dateModified": "2016-08-12T19:32:56.000+0000",
+      "version": "ECEBEF8448F5E57B189AD6A19C839133",
+      "acg": 255,
+      "owner": {
+        "name": "Administrator",
+        "id": "54F3D26011D2896560009A8E67019608"
+      },
+      "extType": 0
+    },
+    {
+      "name": "Regional Sales Managers",
+      "id": "E62347FB419BF6C847A712AB40148E6A",
+      "type": 8,
+      "description": "This folder contains analyses of customer income, sales by employee, and revenue trends.",
+      "subtype": 2048,
+      "dateCreated": "2005-05-06T21:49:46.000+0000",
+      "dateModified": "2016-08-12T19:32:56.000+0000",
+      "version": "ECEBEF8448F5E57B189AD6A19C839133",
+      "acg": 255,
+      "owner": {
+        "name": "Administrator",
+        "id": "54F3D26011D2896560009A8E67019608"
+      },
+      "extType": 0
+    },
+    {
+      "name": "Suppliers",
+      "id": "AD0985064D8912292E0D07AE1F86866F",
+      "type": 8,
+      "description": "This folder contains a report analyzing sales by supplier by customer region, item, and month.",
+      "subtype": 2048,
+      "dateCreated": "2006-05-23T08:56:48.000+0000",
+      "dateModified": "2016-08-12T19:32:56.000+0000",
+      "version": "ECEBEF8448F5E57B189AD6A19C839133",
+      "acg": 255,
+      "owner": {
+        "name": "Administrator",
+        "id": "54F3D26011D2896560009A8E67019608"
+      },
+      "extType": 0
+    }
+  ]
+  ```
+
+### Filter the folder contents
+
+<Available since="2021 Update 10" />
+
+When calling `GET /api/folders/{id}`, you can use the optional query parameters `type` and `hidden` to filter the objects that are included in the response.
+
+- `type`: Filter the folder contents based on the `type` property of objects. If this query parameter is passed, then only objects of the type(s) specified are included in the response. If not passed, no filtering is applied. You may specify multiple values as a comma separated list. Possible values are defined in [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html). For example, `type=3,8,55` only includes objects in the folder that have a type of `3` (reports), `8` (folders), or `55` (dossiers and documents).
+- `hidden`: Filter the result based on the `hidden` property of objects. If this query parameter is not passed, then no filtering is applied (both hidden and unhidden objects are returned). If you pass `hidden=false` then only objects that are _not_ hidden are returned. If you pass `hidden=true` then only objects that are hidden are returned.
+
 ## Log out
 
 Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
-This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST Server. In this example, you close the active user session by providing the authorization token, X-MSTR-AuthToken, generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
+This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST server. In this example, you close the active user session by providing the `X-MSTR-AuthToken` authorization token generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 
 ![swagger_POST_auth_logout](../../../images/swagger_POST_auth_logout.png)
 
