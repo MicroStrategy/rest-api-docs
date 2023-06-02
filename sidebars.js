@@ -164,16 +164,6 @@ const sidebars = {
               label: "Manage documents",
               items: [
                 "common-workflows/analytics/manage-documents/get-document-list/get-document-list",
-              ],
-            },
-            {
-              type: "category",
-              link: {
-                type: "doc",
-                id: "common-workflows/analytics/manage-documents/manage-documents",
-              },
-              label: "Manage documents",
-              items: [
                 "common-workflows/analytics/manage-documents/retrieve-document/retrieve-the-hierarchy-of-a-document",
               ],
             },
