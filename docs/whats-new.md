@@ -4,6 +4,15 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## 2021 Update 10
+
+- [Retrieve, create, and update KPI objects and insights](common-workflows/analytics/manage-insights/manage-kpi-and-insights.md)
+- [Change the owner of an object.](common-workflows/modeling/common-object-management/change-ownership.md)
+- [Create a dossier in memory based on a list of objects](common-workflows/analytics/manage-dossiers/manage-dossiers.md)
+- [Retrieve a list of documents](common-workflows/analytics/manage-documents/manage-documents.md)
+- [Retrieve the hierarchy of a document](common-workflows/analytics/manage-documents/retrieve-document/retrieve-the-hierarchy-of-a-document.md)
+- [Enhancements for folder browsing](common-workflows/analytics/object-discovery/folder-browsing.md)
+
 ## 2021 Update 9
 
 - [Retrieve gateway objects.](common-workflows/administration/manage-gateways/manage-gateways.md)

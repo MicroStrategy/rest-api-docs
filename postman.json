@@ -10,6 +10,7 @@
         "4bb145c0-ca19-4f14-b574-cf937f16eb43",
         "4899b999-4c1f-461a-bdcf-7fac95e292dc",
         "0f9c90db-ccf6-41db-870f-810839382073",
+        "489420bd-5855-4b7d-8b56-242880d88b94",
         "fc15e1eb-4a6b-4a70-8fe8-fb315c993d3c",
         "57ec14f0-281a-4c67-b6c4-7d24bb8e0a33",
         "2005578e-675e-4dd1-938a-76ed575d81f5",
@@ -25,10 +26,12 @@
         "70ab11b0-c4d2-4340-895d-accb64d41a49",
         "7f976167-1ec4-4214-82b6-216fe771fe7a",
         "9859cd77-5dc0-46b7-9575-200baa3a24f9",
+        "9a8b842b-cbec-4968-b646-4725c2517a33",
         "3d0fcf37-13ba-4612-921d-feac4c39e38f",
         "a2fcf19c-6dac-4c94-82d4-bde322f353e6",
         "1a88435f-8728-47cf-8a45-b9acdfba20eb",
         "6e9e6a71-16be-4fda-b8b9-b53e6dc4553e",
+        "ff376d9d-df1c-4759-aaa6-c123935a7922",
         "dbf23633-0d72-4d88-8662-c045e822223c",
         "636226f9-f98b-4c10-95d5-63641fc163ca",
         "5ca9e2f2-44bb-4e59-ba19-65560f968ef4",
@@ -38,6 +41,7 @@
         "04ef436e-f8d7-43fd-bddc-5dc11a11157f",
         "726afcc3-32e3-4b89-a95f-c49fff352385",
         "70e85518-b11c-4af0-8a25-030e9080a16b",
+        "226e66df-d7eb-4d16-9588-eb1ca3912659",
         "d1129000-d09d-489a-8740-7a5cea63f202",
         "a6a8558f-6246-44d7-8a37-7eaa2f516dc0",
         "a36076c0-193a-497c-a8e9-0dd40d0b9482",
@@ -47,6 +51,7 @@
         "96ee9aaa-e5a8-4d0d-aa58-e489216f5546",
         "cf0f7d3c-572d-498a-823a-31b0ee918f1c",
         "8234ad84-1a96-4006-ac55-76dad87e3aa5",
+        "297838c4-3656-4074-85c6-4d79439782fd",
         "f1b5e4a8-3eaa-43a3-b86c-48e9a297965d",
         "a19965c4-ef64-42be-8351-5f0d6a5e1ef4",
         "c75abd47-feaf-44cb-ae44-59232bbfe566",
@@ -67,7 +72,6 @@
           "userCanShare": false,
           "userCanCreateMock": false,
           "userCanCreateMonitor": false,
-          "anybodyCanView": true,
           "teamCanView": true
         },
         "fork": null,
@@ -859,6 +863,94 @@
           ]
         },
         {
+          "id": "16131298-226e66df-d7eb-4d16-9588-eb1ca3912659",
+          "name": "Palettes",
+          "folder": null,
+          "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+          "folders_order": [],
+          "order": [
+            "a3a6a408-9db3-4a75-a721-8bd8de2ca999",
+            "6af08d5a-7fb1-4cd6-82a9-09e2209f12aa",
+            "fdda21fa-c036-4bdf-b2ad-9b76e16b84cd",
+            "742f72e8-1410-471d-92d7-58d7e73e8d62"
+          ],
+          "folders": [],
+          "requests": [
+            {
+              "id": "16131298-6af08d5a-7fb1-4cd6-82a9-09e2209f12aa",
+              "name": "Create a palette",
+              "method": "POST",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-226e66df-d7eb-4d16-9588-eb1ca3912659",
+              "responses_order": [
+                "16131298-9945f59e-b0ae-4a07-8b25-ead43dd7ba47"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-9945f59e-b0ae-4a07-8b25-ead43dd7ba47",
+                  "name": "201 Created",
+                  "request": "16131298-6af08d5a-7fb1-4cd6-82a9-09e2209f12aa"
+                }
+              ]
+            },
+            {
+              "id": "16131298-742f72e8-1410-471d-92d7-58d7e73e8d62",
+              "name": "Update a palette",
+              "method": "PUT",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-226e66df-d7eb-4d16-9588-eb1ca3912659",
+              "responses_order": [
+                "16131298-782cfc63-04ad-4567-9bed-9e5cff3df779"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-782cfc63-04ad-4567-9bed-9e5cff3df779",
+                  "name": "201 Created",
+                  "request": "16131298-742f72e8-1410-471d-92d7-58d7e73e8d62"
+                }
+              ]
+            },
+            {
+              "id": "16131298-a3a6a408-9db3-4a75-a721-8bd8de2ca999",
+              "name": "Get all palettes",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-226e66df-d7eb-4d16-9588-eb1ca3912659",
+              "responses_order": [
+                "16131298-24f6f4f2-111c-4636-b9ca-3629791b3659"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-24f6f4f2-111c-4636-b9ca-3629791b3659",
+                  "name": "200 OK",
+                  "request": "16131298-a3a6a408-9db3-4a75-a721-8bd8de2ca999"
+                }
+              ]
+            },
+            {
+              "id": "16131298-fdda21fa-c036-4bdf-b2ad-9b76e16b84cd",
+              "name": "Get palette specified by id",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-226e66df-d7eb-4d16-9588-eb1ca3912659",
+              "responses_order": [
+                "16131298-4704feb9-f099-469b-a47e-4174cb91dbf3"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-4704feb9-f099-469b-a47e-4174cb91dbf3",
+                  "name": "200 OK",
+                  "request": "16131298-fdda21fa-c036-4bdf-b2ad-9b76e16b84cd"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "16131298-2404a9b9-6643-41e4-950b-687268f59655",
           "name": "Transformations",
           "folder": null,
@@ -924,6 +1016,68 @@
                   "request": "16131298-723319b7-d13f-4d98-b4ad-f06a10b7a134"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "16131298-297838c4-3656-4074-85c6-4d79439782fd",
+          "name": "Shared File Store",
+          "folder": null,
+          "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+          "folders_order": [],
+          "order": [
+            "71729b8b-57f4-4aac-b556-8f3e7f3e6596",
+            "31c008a7-56f8-4ee5-87c2-1f6eadad5a06",
+            "d3e82dc6-7f8c-4c4b-8e91-617496f1d432",
+            "ef14693e-eb72-4c0a-a656-3233937232d4",
+            "b2775a30-ed83-431e-b80c-fbb74e6a52a3"
+          ],
+          "folders": [],
+          "requests": [
+            {
+              "id": "16131298-31c008a7-56f8-4ee5-87c2-1f6eadad5a06",
+              "name": "Create a file metadata",
+              "method": "POST",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-297838c4-3656-4074-85c6-4d79439782fd",
+              "responses_order": [],
+              "responses": []
+            },
+            {
+              "id": "16131298-71729b8b-57f4-4aac-b556-8f3e7f3e6596",
+              "name": "Query all shared files of a certain type ",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-297838c4-3656-4074-85c6-4d79439782fd",
+              "responses_order": [],
+              "responses": []
+            },
+            {
+              "id": "16131298-b2775a30-ed83-431e-b80c-fbb74e6a52a3",
+              "name": "Delete shared file.",
+              "method": "DELETE",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-297838c4-3656-4074-85c6-4d79439782fd",
+              "responses_order": [],
+              "responses": []
+            },
+            {
+              "id": "16131298-d3e82dc6-7f8c-4c4b-8e91-617496f1d432",
+              "name": "Download a package binary",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-297838c4-3656-4074-85c6-4d79439782fd",
+              "responses_order": [],
+              "responses": []
+            },
+            {
+              "id": "16131298-ef14693e-eb72-4c0a-a656-3233937232d4",
+              "name": "Upload a file binary to storage service directly.",
+              "method": "PUT",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-297838c4-3656-4074-85c6-4d79439782fd",
+              "responses_order": [],
+              "responses": []
             }
           ]
         },
@@ -1159,6 +1313,57 @@
                   "request": "16131298-92ddb451-b070-427c-9d6a-b1a4465d7231"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "16131298-489420bd-5855-4b7d-8b56-242880d88b94",
+          "name": "Change Journal",
+          "folder": null,
+          "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+          "folders_order": [],
+          "order": [
+            "bad11c2b-251e-4116-827c-b0c735d96212",
+            "2b94f6cc-c19b-4eb1-8b43-b41bcda4c3a1",
+            "6341e348-9d7c-4f76-b497-06c4a9ba0c3e"
+          ],
+          "folders": [],
+          "requests": [
+            {
+              "id": "16131298-2b94f6cc-c19b-4eb1-8b43-b41bcda4c3a1",
+              "name": "Purge Change Journal entries for specific project (list of projects)",
+              "method": "DELETE",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-489420bd-5855-4b7d-8b56-242880d88b94",
+              "responses_order": [],
+              "responses": []
+            },
+            {
+              "id": "16131298-6341e348-9d7c-4f76-b497-06c4a9ba0c3e",
+              "name": "Get Change Journal search result",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-489420bd-5855-4b7d-8b56-242880d88b94",
+              "responses_order": [
+                "16131298-174a1210-3383-46dc-a111-e1d988263355"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-174a1210-3383-46dc-a111-e1d988263355",
+                  "name": "200 OK",
+                  "request": "16131298-6341e348-9d7c-4f76-b497-06c4a9ba0c3e"
+                }
+              ]
+            },
+            {
+              "id": "16131298-bad11c2b-251e-4116-827c-b0c735d96212",
+              "name": "Create and store a Change Journal search instance",
+              "method": "POST",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-489420bd-5855-4b7d-8b56-242880d88b94",
+              "responses_order": [],
+              "responses": []
             }
           ]
         },
@@ -1856,6 +2061,7 @@
           "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
           "folders_order": [],
           "order": [
+            "83f33594-3c76-4f0e-9b2d-572763141252",
             "97187bad-3c5a-47bb-bc7b-f50cf2a035fe",
             "c584d923-2508-4ebf-a441-a4ba799bd02f",
             "5d243d64-3687-48fd-a81f-6c193c856a49",
@@ -1956,6 +2162,15 @@
                   "request": "16131298-5d243d64-3687-48fd-a81f-6c193c856a49"
                 }
               ]
+            },
+            {
+              "id": "16131298-83f33594-3c76-4f0e-9b2d-572763141252",
+              "name": "Get the list of interface language objects",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-5ca9e2f2-44bb-4e59-ba19-65560f968ef4",
+              "responses_order": [],
+              "responses": []
             },
             {
               "id": "16131298-89dbb277-da55-42be-b460-cb11ceec5d20",
@@ -2372,10 +2587,29 @@
           "order": [
             "3e383db0-2023-4f61-a837-bac53bf9c495",
             "597a372a-8512-436c-9ce1-79ddbfeb684d",
-            "929ddcbb-2611-44cd-9ae4-b53248e35652"
+            "929ddcbb-2611-44cd-9ae4-b53248e35652",
+            "082678a7-b106-4606-9a41-0cef7a38cdbf"
           ],
           "folders": [],
           "requests": [
+            {
+              "id": "16131298-082678a7-b106-4606-9a41-0cef7a38cdbf",
+              "name": "Get the list of applicable properties for a given metric",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-65babb68-9eff-4d05-b497-875689a4e93b",
+              "responses_order": [
+                "16131298-4dc0dfaf-e2eb-4471-b4af-febff2b66b76"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-4dc0dfaf-e2eb-4471-b4af-febff2b66b76",
+                  "name": "200 OK",
+                  "request": "16131298-082678a7-b106-4606-9a41-0cef7a38cdbf"
+                }
+              ]
+            },
             {
               "id": "16131298-3e383db0-2023-4f61-a837-bac53bf9c495",
               "name": "Create a metric",
@@ -2383,9 +2617,16 @@
               "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
               "folder": "16131298-65babb68-9eff-4d05-b497-875689a4e93b",
               "responses_order": [
-                "16131298-57d5fcbf-b1d1-4776-a3b5-0698c4757983"
+                "16131298-57d5fcbf-b1d1-4776-a3b5-0698c4757983",
+                "16131298-56fd31f0-1717-4a6d-94a8-f727f50df6fa"
               ],
               "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-56fd31f0-1717-4a6d-94a8-f727f50df6fa",
+                  "name": "201 Created",
+                  "request": "16131298-3e383db0-2023-4f61-a837-bac53bf9c495"
+                },
                 {
                   "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
                   "id": "16131298-57d5fcbf-b1d1-4776-a3b5-0698c4757983",
@@ -2401,12 +2642,19 @@
               "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
               "folder": "16131298-65babb68-9eff-4d05-b497-875689a4e93b",
               "responses_order": [
-                "16131298-b0a01ec8-ce88-4585-862a-296d04581db4"
+                "16131298-b0a01ec8-ce88-4585-862a-296d04581db4",
+                "16131298-c068e815-e54e-48eb-936a-fd2fa40710ff"
               ],
               "responses": [
                 {
                   "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
                   "id": "16131298-b0a01ec8-ce88-4585-862a-296d04581db4",
+                  "name": "200 OK",
+                  "request": "16131298-597a372a-8512-436c-9ce1-79ddbfeb684d"
+                },
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-c068e815-e54e-48eb-936a-fd2fa40710ff",
                   "name": "200 OK",
                   "request": "16131298-597a372a-8512-436c-9ce1-79ddbfeb684d"
                 }
@@ -2419,12 +2667,19 @@
               "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
               "folder": "16131298-65babb68-9eff-4d05-b497-875689a4e93b",
               "responses_order": [
-                "16131298-2ebbe852-f7f3-4027-b080-6a75f63f7aaa"
+                "16131298-2ebbe852-f7f3-4027-b080-6a75f63f7aaa",
+                "16131298-55555e3f-43c5-4dfe-a6a0-febdbafdc04e"
               ],
               "responses": [
                 {
                   "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
                   "id": "16131298-2ebbe852-f7f3-4027-b080-6a75f63f7aaa",
+                  "name": "200 OK",
+                  "request": "16131298-929ddcbb-2611-44cd-9ae4-b53248e35652"
+                },
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-55555e3f-43c5-4dfe-a6a0-febdbafdc04e",
                   "name": "200 OK",
                   "request": "16131298-929ddcbb-2611-44cd-9ae4-b53248e35652"
                 }
@@ -3335,19 +3590,8 @@
               "method": "PATCH",
               "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
               "folder": "16131298-7da971db-438e-488f-9ccd-1ae19947db4d",
-              "responses_order": [
-                "16131298-81de1dc6-17e8-483e-a87d-a60dd111fe8b",
-                "16131298-bcbd12a3-638d-44c8-931f-7e0dab496c10",
-                "16131298-add61e0e-72a2-43fd-a7a2-84f7b03b6266"
-              ],
-              "responses": [
-                {
-                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
-                  "id": "16131298-81de1dc6-17e8-483e-a87d-a60dd111fe8b",
-                  "name": "204 No Content",
-                  "request": "16131298-e53fbb77-87a9-4c49-9072-c0bc459265bd"
-                }
-              ]
+              "responses_order": [],
+              "responses": []
             }
           ]
         },
@@ -4553,6 +4797,48 @@
                   "request": "16131298-b6001ff9-e697-4547-bc00-64d6e50de27a"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "16131298-9a8b842b-cbec-4968-b646-4725c2517a33",
+          "name": "Drivers",
+          "folder": null,
+          "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+          "folders_order": [],
+          "order": [
+            "5256e3be-fa22-4163-8660-d1af2f4d56ba",
+            "70c5af95-9bc1-4b5a-aa4a-6add7306a799",
+            "37ed8ce6-6499-4a95-bb48-d7afb8e31a9a"
+          ],
+          "folders": [],
+          "requests": [
+            {
+              "id": "16131298-37ed8ce6-6499-4a95-bb48-d7afb8e31a9a",
+              "name": "Update a driver's definition",
+              "method": "PATCH",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-9a8b842b-cbec-4968-b646-4725c2517a33",
+              "responses_order": [],
+              "responses": []
+            },
+            {
+              "id": "16131298-5256e3be-fa22-4163-8660-d1af2f4d56ba",
+              "name": "Retrieve all drivers' definitions",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-9a8b842b-cbec-4968-b646-4725c2517a33",
+              "responses_order": [],
+              "responses": []
+            },
+            {
+              "id": "16131298-70c5af95-9bc1-4b5a-aa4a-6add7306a799",
+              "name": "Retrieve a driver's definition",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-9a8b842b-cbec-4968-b646-4725c2517a33",
+              "responses_order": [],
+              "responses": []
             }
           ]
         },
@@ -6643,19 +6929,26 @@
               "folder": "16131298-bb5982cf-3384-4a79-97f1-b2d4b56b1366",
               "responses_order": [
                 "16131298-f267da57-14c7-46a5-a420-24cacdb1407b",
-                "16131298-c4a399d3-2305-4650-8b43-58bb4366a5bb"
+                "16131298-c4a399d3-2305-4650-8b43-58bb4366a5bb",
+                "16131298-fc4e1785-bfde-4c91-a379-13da504fc392"
               ],
               "responses": [
                 {
                   "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
                   "id": "16131298-c4a399d3-2305-4650-8b43-58bb4366a5bb",
-                  "name": "Update SAP HANA Parameters for an SAP HANA Table with Input Parameters",
+                  "name": "200 Update SAP HANA Parameters for an SAP HANA Table with Input Parameters",
                   "request": "16131298-55ab3700-0c8d-4ef7-a883-d6570ae0cb8e"
                 },
                 {
                   "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
                   "id": "16131298-f267da57-14c7-46a5-a420-24cacdb1407b",
-                  "name": "200 OK",
+                  "name": "200 Update a normal logical table",
+                  "request": "16131298-55ab3700-0c8d-4ef7-a883-d6570ae0cb8e"
+                },
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-fc4e1785-bfde-4c91-a379-13da504fc392",
+                  "name": "200 Update a metadata partition mapping table",
                   "request": "16131298-55ab3700-0c8d-4ef7-a883-d6570ae0cb8e"
                 }
               ]
@@ -6668,13 +6961,26 @@
               "folder": "16131298-bb5982cf-3384-4a79-97f1-b2d4b56b1366",
               "responses_order": [
                 "16131298-23a3fe15-13a2-4671-a993-7e92508224b3",
-                "16131298-e2dc2dd1-2195-4f7f-b041-bb634e163084"
+                "16131298-e4cb1cd2-abef-4f78-a3b7-efe7f6c93da7",
+                "16131298-deedfd99-12a7-4568-ba79-e976617c2abd"
               ],
               "responses": [
                 {
                   "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
                   "id": "16131298-23a3fe15-13a2-4671-a993-7e92508224b3",
-                  "name": "201 Created",
+                  "name": "201 Create a normal logical table",
+                  "request": "16131298-aac8ec8d-4b94-4d7d-81ec-863ab14b0c53"
+                },
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-deedfd99-12a7-4568-ba79-e976617c2abd",
+                  "name": "201 Create a metadata partition mapping table",
+                  "request": "16131298-aac8ec8d-4b94-4d7d-81ec-863ab14b0c53"
+                },
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-e4cb1cd2-abef-4f78-a3b7-efe7f6c93da7",
+                  "name": "201 Create a warehouse partition mapping table",
                   "request": "16131298-aac8ec8d-4b94-4d7d-81ec-863ab14b0c53"
                 }
               ]
@@ -6687,13 +6993,26 @@
               "folder": "16131298-bb5982cf-3384-4a79-97f1-b2d4b56b1366",
               "responses_order": [
                 "16131298-1e722e98-b7ca-49fa-98c3-2aeb8bba2243",
-                "16131298-72e41253-7a72-472b-bd6d-f43c5dc0bf6c"
+                "16131298-f729a108-b0b8-4cb2-b1ca-a4a93a752a82",
+                "16131298-8f479d07-249b-4ac8-967a-c68261aa007a"
               ],
               "responses": [
                 {
                   "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
                   "id": "16131298-1e722e98-b7ca-49fa-98c3-2aeb8bba2243",
-                  "name": "200 OK",
+                  "name": "200 Read a normal logical table",
+                  "request": "16131298-b561bfba-db8d-4f76-96a4-50a1bce3f201"
+                },
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-8f479d07-249b-4ac8-967a-c68261aa007a",
+                  "name": "200 Read a metadata partition mapping table",
+                  "request": "16131298-b561bfba-db8d-4f76-96a4-50a1bce3f201"
+                },
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-f729a108-b0b8-4cb2-b1ca-a4a93a752a82",
+                  "name": "200 Read a warehouse partition mapping table",
                   "request": "16131298-b561bfba-db8d-4f76-96a4-50a1bce3f201"
                 }
               ]
@@ -6920,7 +7239,12 @@
             "2f04e050-5481-41f6-91ca-bacaa369aada",
             "c0507107-c189-4b83-b8e7-71ec04de93d3",
             "a79d6366-2720-4049-982d-5765fd8a6a47",
-            "2d3dbfb9-fef3-4ffc-9db1-f8750da6e2b1"
+            "2d3dbfb9-fef3-4ffc-9db1-f8750da6e2b1",
+            "465a4302-bf19-4e36-ae1c-eafeb1ccce7d",
+            "f1ea55a8-2b7b-4522-b13b-22c5cf7d1541",
+            "22feaa19-95fa-432b-8c0c-d6249a6b6a6e",
+            "6b3b4927-96ed-4b50-920f-6518f1a56a6d",
+            "8d1df86b-92ec-4b69-bc8a-4472308b71bf"
           ],
           "folders": [],
           "requests": [
@@ -7034,6 +7358,24 @@
                   "id": "16131298-d8760264-a262-476c-8831-4c4263e0bdc5",
                   "name": "200 OK",
                   "request": "16131298-22d9f202-a56d-4a47-8123-0b42f5a45a00"
+                }
+              ]
+            },
+            {
+              "id": "16131298-22feaa19-95fa-432b-8c0c-d6249a6b6a6e",
+              "name": "Change the status of the search index for a specific project",
+              "method": "PATCH",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-c75abd47-feaf-44cb-ae44-59232bbfe566",
+              "responses_order": [
+                "16131298-68afc053-8811-404a-81cf-5aef8b82a2d2"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-68afc053-8811-404a-81cf-5aef8b82a2d2",
+                  "name": "202 Accepted",
+                  "request": "16131298-22feaa19-95fa-432b-8c0c-d6249a6b6a6e"
                 }
               ]
             },
@@ -7181,6 +7523,24 @@
               ]
             },
             {
+              "id": "16131298-465a4302-bf19-4e36-ae1c-eafeb1ccce7d",
+              "name": "Get the search index properties for all projects",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-c75abd47-feaf-44cb-ae44-59232bbfe566",
+              "responses_order": [
+                "16131298-200c80a5-d72a-4557-b3fa-fc5fcc7119f5"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-200c80a5-d72a-4557-b3fa-fc5fcc7119f5",
+                  "name": "200 OK",
+                  "request": "16131298-465a4302-bf19-4e36-ae1c-eafeb1ccce7d"
+                }
+              ]
+            },
+            {
               "id": "16131298-56b36558-fc40-406d-833a-418d01ad545d",
               "name": "Get the iServer diagnostic and performance config settings for current instance",
               "method": "GET",
@@ -7314,6 +7674,24 @@
                   "id": "16131298-4d8ea1d3-686e-4787-a7ed-850189c420f2",
                   "name": "201 Created",
                   "request": "16131298-6b382521-1578-401e-a0d8-5642b84e6b3d"
+                }
+              ]
+            },
+            {
+              "id": "16131298-6b3b4927-96ed-4b50-920f-6518f1a56a6d",
+              "name": "Get the search engine properties",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-c75abd47-feaf-44cb-ae44-59232bbfe566",
+              "responses_order": [
+                "16131298-1347e8c8-9bb2-4b58-b4e4-69e0ec60172c"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-1347e8c8-9bb2-4b58-b4e4-69e0ec60172c",
+                  "name": "200 OK",
+                  "request": "16131298-6b3b4927-96ed-4b50-920f-6518f1a56a6d"
                 }
               ]
             },
@@ -7454,6 +7832,24 @@
                   "id": "16131298-a401f8c6-ff59-484e-a7c1-e11d25511063",
                   "name": "204 No Content",
                   "request": "16131298-8d111979-8e48-4931-9dc2-a344477cada7"
+                }
+              ]
+            },
+            {
+              "id": "16131298-8d1df86b-92ec-4b69-bc8a-4472308b71bf",
+              "name": "Update the search engine properties",
+              "method": "PUT",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-c75abd47-feaf-44cb-ae44-59232bbfe566",
+              "responses_order": [
+                "16131298-feb2e63b-19bd-4db5-a831-56fb016ee84d"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-feb2e63b-19bd-4db5-a831-56fb016ee84d",
+                  "name": "200 OK",
+                  "request": "16131298-8d1df86b-92ec-4b69-bc8a-4472308b71bf"
                 }
               ]
             },
@@ -7884,6 +8280,24 @@
                 "16131298-90d06406-bcce-418c-b8d5-f715cda4b023"
               ],
               "responses": []
+            },
+            {
+              "id": "16131298-f1ea55a8-2b7b-4522-b13b-22c5cf7d1541",
+              "name": "Get  the search index properties for a project",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-c75abd47-feaf-44cb-ae44-59232bbfe566",
+              "responses_order": [
+                "16131298-f2ccfa7c-a4a0-4f43-81f7-217c2283fbb7"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-f2ccfa7c-a4a0-4f43-81f7-217c2283fbb7",
+                  "name": "200 OK",
+                  "request": "16131298-f1ea55a8-2b7b-4522-b13b-22c5cf7d1541"
+                }
+              ]
             },
             {
               "id": "16131298-f44c257d-a179-44fe-b2d1-35827596d940",
@@ -9508,10 +9922,17 @@
           "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
           "folders_order": [],
           "order": [
+            "b1166a09-b21c-412f-aaa9-9dbc37f35e02",
+            "cd49d2ff-8458-4bd4-8382-30d693858941",
+            "8cddbf3c-0c78-43e1-b5e0-48f965068081",
             "d5e51a86-909c-487f-8018-64f4e8336413",
             "3df4e777-5f85-4bb1-9520-ddaba4e95f03",
             "ff27519b-2a81-4f7f-8aa8-b3dd777118cb",
-            "03ecf9e2-0bcc-444c-8693-a850d2a5def2"
+            "03ecf9e2-0bcc-444c-8693-a850d2a5def2",
+            "834e915c-a972-4a88-a742-cbe9a3bd49f2",
+            "1eed3b72-4d11-4193-affe-f732a67259f1",
+            "1548513a-6870-4d04-99be-afd995e0704e",
+            "34938ccc-ab9a-4e70-8914-609162657043"
           ],
           "folders": [],
           "requests": [
@@ -9534,6 +9955,60 @@
               ]
             },
             {
+              "id": "16131298-1548513a-6870-4d04-99be-afd995e0704e",
+              "name": "Save datamart through an instance by Modelling Service",
+              "method": "POST",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-d7889c3f-6651-4f39-9728-93a83d74703e",
+              "responses_order": [
+                "16131298-3837063e-5b06-4234-806f-6e286707b131"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-3837063e-5b06-4234-806f-6e286707b131",
+                  "name": "200 OK",
+                  "request": "16131298-1548513a-6870-4d04-99be-afd995e0704e"
+                }
+              ]
+            },
+            {
+              "id": "16131298-1eed3b72-4d11-4193-affe-f732a67259f1",
+              "name": "Delete a datamart instance through Modelling Service",
+              "method": "DELETE",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-d7889c3f-6651-4f39-9728-93a83d74703e",
+              "responses_order": [
+                "16131298-463e5ad7-c211-4790-b123-e6f0a299ad8b"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-463e5ad7-c211-4790-b123-e6f0a299ad8b",
+                  "name": "204 No Content",
+                  "request": "16131298-1eed3b72-4d11-4193-affe-f732a67259f1"
+                }
+              ]
+            },
+            {
+              "id": "16131298-34938ccc-ab9a-4e70-8914-609162657043",
+              "name": "Save a datamart definition to a specific folder, with a specific name, though an instance, by Modelling Service",
+              "method": "POST",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-d7889c3f-6651-4f39-9728-93a83d74703e",
+              "responses_order": [
+                "16131298-2a48f2cf-97dc-45df-9858-9b4d830cc9a8"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-2a48f2cf-97dc-45df-9858-9b4d830cc9a8",
+                  "name": "200 OK",
+                  "request": "16131298-34938ccc-ab9a-4e70-8914-609162657043"
+                }
+              ]
+            },
+            {
               "id": "16131298-3df4e777-5f85-4bb1-9520-ddaba4e95f03",
               "name": "Get a specific datamart definition through Modeling service",
               "method": "GET",
@@ -9548,6 +10023,85 @@
                   "id": "16131298-545fe878-cc95-4356-a0d0-4f7ea2b00392",
                   "name": "200 OK",
                   "request": "16131298-3df4e777-5f85-4bb1-9520-ddaba4e95f03"
+                }
+              ]
+            },
+            {
+              "id": "16131298-834e915c-a972-4a88-a742-cbe9a3bd49f2",
+              "name": "Create a datamart instance through Modelling Service",
+              "method": "POST",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-d7889c3f-6651-4f39-9728-93a83d74703e",
+              "responses_order": [
+                "16131298-e58576cc-5821-47e1-b09f-1be3cd0ff98c",
+                "16131298-e27f4fe8-ff77-4bcb-8c82-416514f6de0a"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-e27f4fe8-ff77-4bcb-8c82-416514f6de0a",
+                  "name": "201 Created",
+                  "request": "16131298-834e915c-a972-4a88-a742-cbe9a3bd49f2"
+                },
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-e58576cc-5821-47e1-b09f-1be3cd0ff98c",
+                  "name": "201 Created",
+                  "request": "16131298-834e915c-a972-4a88-a742-cbe9a3bd49f2"
+                }
+              ]
+            },
+            {
+              "id": "16131298-8cddbf3c-0c78-43e1-b5e0-48f965068081",
+              "name": "Execute a data mart to update the corresponding cube.",
+              "method": "POST",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-d7889c3f-6651-4f39-9728-93a83d74703e",
+              "responses_order": [
+                "16131298-459744af-0ef2-4d75-9146-34eb5c88c8f7"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-459744af-0ef2-4d75-9146-34eb5c88c8f7",
+                  "name": "200 OK",
+                  "request": "16131298-8cddbf3c-0c78-43e1-b5e0-48f965068081"
+                }
+              ]
+            },
+            {
+              "id": "16131298-b1166a09-b21c-412f-aaa9-9dbc37f35e02",
+              "name": "Delete a data mart instance",
+              "method": "DELETE",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-d7889c3f-6651-4f39-9728-93a83d74703e",
+              "responses_order": [
+                "16131298-1965a0a7-a712-453e-9c9a-d1141bc84282"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-1965a0a7-a712-453e-9c9a-d1141bc84282",
+                  "name": "204 No Content",
+                  "request": "16131298-b1166a09-b21c-412f-aaa9-9dbc37f35e02"
+                }
+              ]
+            },
+            {
+              "id": "16131298-cd49d2ff-8458-4bd4-8382-30d693858941",
+              "name": "Get the execution status of a data mart instance.",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-d7889c3f-6651-4f39-9728-93a83d74703e",
+              "responses_order": [
+                "16131298-3698abae-e5f8-4024-8e27-53f7c2541465"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-3698abae-e5f8-4024-8e27-53f7c2541465",
+                  "name": "200 OK",
+                  "request": "16131298-cd49d2ff-8458-4bd4-8382-30d693858941"
                 }
               ]
             },
@@ -9898,7 +10452,11 @@
           "order": [
             "4903457a-bc6b-4b08-b885-8177e01e0e8e",
             "2f6ff59e-37d3-48c9-9ebf-c7307201124d",
-            "c7b64b3a-3160-4df5-8f67-6a8e4fbaea9c"
+            "c7b64b3a-3160-4df5-8f67-6a8e4fbaea9c",
+            "dfb9c28b-1305-4c74-a651-19cd3b31e02c",
+            "9ece18f7-155d-4ddf-9239-0554f816a3a0",
+            "3ea3f713-3c9d-4b35-87a8-efaa9249f22a",
+            "6e7d922e-16b6-4b11-b24b-c891a33443b4"
           ],
           "folders": [],
           "requests": [
@@ -9923,6 +10481,15 @@
               ]
             },
             {
+              "id": "16131298-3ea3f713-3c9d-4b35-87a8-efaa9249f22a",
+              "name": "Modify existing smart attributes or create new if objectId is omitted.",
+              "method": "PUT",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-e1477e3c-37b0-4778-8729-1dd86275ee70",
+              "responses_order": [],
+              "responses": []
+            },
+            {
               "id": "16131298-4903457a-bc6b-4b08-b885-8177e01e0e8e",
               "name": "Create a new attribute",
               "method": "POST",
@@ -9943,6 +10510,42 @@
               ]
             },
             {
+              "id": "16131298-6e7d922e-16b6-4b11-b24b-c891a33443b4",
+              "name": "Get list of smart attributes templates.",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-e1477e3c-37b0-4778-8729-1dd86275ee70",
+              "responses_order": [
+                "16131298-091f3cc7-3bd6-466d-9932-cfe6310fea52"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-091f3cc7-3bd6-466d-9932-cfe6310fea52",
+                  "name": "200 OK",
+                  "request": "16131298-6e7d922e-16b6-4b11-b24b-c891a33443b4"
+                }
+              ]
+            },
+            {
+              "id": "16131298-9ece18f7-155d-4ddf-9239-0554f816a3a0",
+              "name": "Get list of smart attributes.",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-e1477e3c-37b0-4778-8729-1dd86275ee70",
+              "responses_order": [
+                "16131298-0788a623-18c5-4ad8-a155-42d729b8edf4"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-0788a623-18c5-4ad8-a155-42d729b8edf4",
+                  "name": "200 OK",
+                  "request": "16131298-9ece18f7-155d-4ddf-9239-0554f816a3a0"
+                }
+              ]
+            },
+            {
               "id": "16131298-c7b64b3a-3160-4df5-8f67-6a8e4fbaea9c",
               "name": "Update an attribute",
               "method": "PATCH",
@@ -9959,6 +10562,24 @@
                   "id": "16131298-f7a5155b-e51a-4757-836a-7c72f50c27cb",
                   "name": "200 OK",
                   "request": "16131298-c7b64b3a-3160-4df5-8f67-6a8e4fbaea9c"
+                }
+              ]
+            },
+            {
+              "id": "16131298-dfb9c28b-1305-4c74-a651-19cd3b31e02c",
+              "name": "Get the list of applicable properties for a given attribute.",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-e1477e3c-37b0-4778-8729-1dd86275ee70",
+              "responses_order": [
+                "16131298-273cd8d8-33fd-4e2b-b555-09912455d894"
+              ],
+              "responses": [
+                {
+                  "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+                  "id": "16131298-273cd8d8-33fd-4e2b-b555-09912455d894",
+                  "name": "200 OK",
+                  "request": "16131298-dfb9c28b-1305-4c74-a651-19cd3b31e02c"
                 }
               ]
             }
@@ -10891,6 +11512,38 @@
               ]
             }
           ]
+        },
+        {
+          "id": "16131298-ff376d9d-df1c-4759-aaa6-c123935a7922",
+          "name": "Gateways",
+          "folder": null,
+          "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+          "folders_order": [],
+          "order": [
+            "8a8fb8b3-2011-43b9-8e86-3c187c16f7c4",
+            "0fc42741-4a99-44df-ba1f-a810a9072e0b"
+          ],
+          "folders": [],
+          "requests": [
+            {
+              "id": "16131298-0fc42741-4a99-44df-ba1f-a810a9072e0b",
+              "name": "Retrieve all gateways' definitions",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-ff376d9d-df1c-4759-aaa6-c123935a7922",
+              "responses_order": [],
+              "responses": []
+            },
+            {
+              "id": "16131298-8a8fb8b3-2011-43b9-8e86-3c187c16f7c4",
+              "name": "Retrieve a gateway's definition",
+              "method": "GET",
+              "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
+              "folder": "16131298-ff376d9d-df1c-4759-aaa6-c123935a7922",
+              "responses_order": [],
+              "responses": []
+            }
+          ]
         }
       ],
       "requests": []
@@ -10911,7 +11564,6 @@
           "userCanShare": false,
           "userCanCreateMock": false,
           "userCanCreateMonitor": false,
-          "anybodyCanView": true,
           "teamCanView": true
         },
         "fork": null,
@@ -10952,16 +11604,26 @@
                 "d095e867-b69d-4d92-b539-22e89783d0ae",
                 "4d18f4f8-c471-4059-858b-f34f430b78d2",
                 "dc11690c-de57-4692-9d56-8e76b1ff40c9",
-                "a873631f-3734-4ab0-bdf9-98cf69b5c121",
+                "789115ad-33a8-4d48-a241-a8efeeccc519",
                 "945cd61e-57dd-4b14-bb4f-f504dd9a38b5",
                 "c4ea6f55-358d-48b1-b13d-57557430c8ee",
                 "e076d557-f027-4cc8-bc7d-7d00bc286ce0",
                 "d9b09847-5ef5-42f2-8ab3-3a384c45b8da",
+                "02d32ddb-8027-47a2-9803-29dccd742777",
                 "30c5966a-8fb3-4f5a-b4aa-4c0832e2cc9b",
                 "5f563f4a-bd0a-46ee-ad01-62bd13f0088c"
               ],
               "folders": [],
               "requests": [
+                {
+                  "id": "16131298-02d32ddb-8027-47a2-9803-29dccd742777",
+                  "name": "Create an instance of a dossier with bookmark id",
+                  "method": "POST",
+                  "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                  "folder": "16131298-049bae71-c414-4b69-b093-93445fffc06b",
+                  "responses_order": [],
+                  "responses": []
+                },
                 {
                   "id": "16131298-30c5966a-8fb3-4f5a-b4aa-4c0832e2cc9b",
                   "name": "Delete a bookmark",
@@ -10990,8 +11652,8 @@
                   "responses": []
                 },
                 {
-                  "id": "16131298-945cd61e-57dd-4b14-bb4f-f504dd9a38b5",
-                  "name": "Get a list of bookmarks from a shortcut object",
+                  "id": "16131298-789115ad-33a8-4d48-a241-a8efeeccc519",
+                  "name": "Retrieve a published shortcut for the dossier",
                   "method": "GET",
                   "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
                   "folder": "16131298-049bae71-c414-4b69-b093-93445fffc06b",
@@ -10999,8 +11661,8 @@
                   "responses": []
                 },
                 {
-                  "id": "16131298-a873631f-3734-4ab0-bdf9-98cf69b5c121",
-                  "name": "Get Instance info with shortcuts",
+                  "id": "16131298-945cd61e-57dd-4b14-bb4f-f504dd9a38b5",
+                  "name": "Get a list of bookmarks from a shortcut object",
                   "method": "GET",
                   "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
                   "folder": "16131298-049bae71-c414-4b69-b093-93445fffc06b",
@@ -14439,10 +15101,302 @@
               "folder": "16131298-27568a66-e09f-45dc-a612-f8f1859d5c14",
               "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
               "folders_order": [
+                "96420cd2-89d0-43a3-8613-40d92f54d6c5",
                 "e4a2caff-1aef-4724-be48-4635fff1133f"
               ],
               "order": [],
               "folders": [
+                {
+                  "id": "16131298-96420cd2-89d0-43a3-8613-40d92f54d6c5",
+                  "name": "Object Migration and Storage service setting",
+                  "folder": "16131298-c0ac4e47-73a1-49bb-8930-51c6f3de5e8e",
+                  "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                  "folders_order": [
+                    "938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                    "393f504b-63bf-4c68-ae37-7be32ee30f85",
+                    "1d7316ac-4d5f-4a73-a9a9-589e7ac073bc"
+                  ],
+                  "order": [],
+                  "folders": [
+                    {
+                      "id": "16131298-1d7316ac-4d5f-4a73-a9a9-589e7ac073bc",
+                      "name": "Upload and Download Package",
+                      "folder": "16131298-96420cd2-89d0-43a3-8613-40d92f54d6c5",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folders_order": [],
+                      "order": [
+                        "02c0328d-8838-4250-8602-efd12097ac67",
+                        "20802ef7-7d47-47eb-9cfd-29ff49efaf86",
+                        "a74858ab-2870-4db4-ae19-69e9205ae096",
+                        "f1593f8e-31a1-4608-a377-6a468ecb9007",
+                        "9e9dc82d-f1ac-4208-a7f7-3a586242c2ea",
+                        "23a7be33-7a21-4716-bc25-49181f248c9e"
+                      ],
+                      "folders": [],
+                      "requests": [
+                        {
+                          "id": "16131298-02c0328d-8838-4250-8602-efd12097ac67",
+                          "name": "Login",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-1d7316ac-4d5f-4a73-a9a9-589e7ac073bc",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-20802ef7-7d47-47eb-9cfd-29ff49efaf86",
+                          "name": "trigger package uploading",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-1d7316ac-4d5f-4a73-a9a9-589e7ac073bc",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-23a7be33-7a21-4716-bc25-49181f248c9e",
+                          "name": "Delete an uploaded package",
+                          "method": "DELETE",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-1d7316ac-4d5f-4a73-a9a9-589e7ac073bc",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-9e9dc82d-f1ac-4208-a7f7-3a586242c2ea",
+                          "name": "Download package file",
+                          "method": "GET",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-1d7316ac-4d5f-4a73-a9a9-589e7ac073bc",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-a74858ab-2870-4db4-ae19-69e9205ae096",
+                          "name": "Upload a binary package",
+                          "method": "PUT",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-1d7316ac-4d5f-4a73-a9a9-589e7ac073bc",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-f1593f8e-31a1-4608-a377-6a468ecb9007",
+                          "name": "Get package list",
+                          "method": "GET",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-1d7316ac-4d5f-4a73-a9a9-589e7ac073bc",
+                          "responses_order": [],
+                          "responses": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "16131298-393f504b-63bf-4c68-ae37-7be32ee30f85",
+                      "name": "Migration Group API",
+                      "folder": "16131298-96420cd2-89d0-43a3-8613-40d92f54d6c5",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folders_order": [],
+                      "order": [
+                        "667ccf3c-da7a-4870-8719-744424306aac",
+                        "eb636b69-73ce-4308-b672-a04a5b1ccffb",
+                        "4a356e86-61a4-445d-9d52-59f75709e323",
+                        "7d9f6527-b080-4c50-991d-bf36d4f82658",
+                        "5cc875d1-f2bb-423a-8445-d66d314406b8",
+                        "cbc33588-220b-4063-935d-995f30daf43a",
+                        "19cf636b-1e1f-49df-bfff-66e6901d2d9f",
+                        "dea75784-1714-4ba2-a0e1-5b6e5e56e645"
+                      ],
+                      "folders": [],
+                      "requests": [
+                        {
+                          "id": "16131298-19cf636b-1e1f-49df-bfff-66e6901d2d9f",
+                          "name": "Get import status",
+                          "method": "GET",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-393f504b-63bf-4c68-ae37-7be32ee30f85",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-4a356e86-61a4-445d-9d52-59f75709e323",
+                          "name": "Get a specific migration group information",
+                          "method": "GET",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-393f504b-63bf-4c68-ae37-7be32ee30f85",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-5cc875d1-f2bb-423a-8445-d66d314406b8",
+                          "name": "Approve migration for migration group",
+                          "method": "PATCH",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-393f504b-63bf-4c68-ae37-7be32ee30f85",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-667ccf3c-da7a-4870-8719-744424306aac",
+                          "name": "Login",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-393f504b-63bf-4c68-ae37-7be32ee30f85",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-7d9f6527-b080-4c50-991d-bf36d4f82658",
+                          "name": "Request migration for migration group",
+                          "method": "PATCH",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-393f504b-63bf-4c68-ae37-7be32ee30f85",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-cbc33588-220b-4063-935d-995f30daf43a",
+                          "name": "Import Migration Group",
+                          "method": "PUT",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-393f504b-63bf-4c68-ae37-7be32ee30f85",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-dea75784-1714-4ba2-a0e1-5b6e5e56e645",
+                          "name": "Delete migration group",
+                          "method": "DELETE",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-393f504b-63bf-4c68-ae37-7be32ee30f85",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-eb636b69-73ce-4308-b672-a04a5b1ccffb",
+                          "name": "Create a new migration group",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-393f504b-63bf-4c68-ae37-7be32ee30f85",
+                          "responses_order": [],
+                          "responses": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                      "name": "Import Migration",
+                      "folder": "16131298-96420cd2-89d0-43a3-8613-40d92f54d6c5",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folders_order": [],
+                      "order": [
+                        "56427f2f-b594-4fc7-a02e-29ea2a02400e",
+                        "e1480e46-3612-4967-a7ed-9ffea9e300ab",
+                        "87e59f96-a46d-4f04-bf88-dd5e43ef9e27",
+                        "84b21f38-718e-49fd-8ca0-62ea8854b1e6",
+                        "195fd2a7-eddf-49f3-ae1f-0ed164a5355a",
+                        "2d815c16-4374-448c-8bdc-3a6c456734c2",
+                        "da072dd7-73ec-4812-8067-b595e100ec7e",
+                        "41613587-cda2-4a97-8674-931e8c78832d",
+                        "2277f076-4549-4db5-ad5a-d39711c7b3d5",
+                        "14452bef-8c2b-431e-a55d-0c921e827e9d"
+                      ],
+                      "folders": [],
+                      "requests": [
+                        {
+                          "id": "16131298-14452bef-8c2b-431e-a55d-0c921e827e9d",
+                          "name": "Delete migration packages",
+                          "method": "DELETE",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-195fd2a7-eddf-49f3-ae1f-0ed164a5355a",
+                          "name": "Validation migration reqeust",
+                          "method": "PUT",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-2277f076-4549-4db5-ad5a-d39711c7b3d5",
+                          "name": "Get migration import status",
+                          "method": "GET",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-2d815c16-4374-448c-8bdc-3a6c456734c2",
+                          "name": "Approve migration",
+                          "method": "PATCH",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-41613587-cda2-4a97-8674-931e8c78832d",
+                          "name": "Import Migration",
+                          "method": "PUT",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-56427f2f-b594-4fc7-a02e-29ea2a02400e",
+                          "name": "Login",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-84b21f38-718e-49fd-8ca0-62ea8854b1e6",
+                          "name": "Request migration",
+                          "method": "PATCH",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-87e59f96-a46d-4f04-bf88-dd5e43ef9e27",
+                          "name": "Get a specific migration information",
+                          "method": "GET",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-da072dd7-73ec-4812-8067-b595e100ec7e",
+                          "name": "Get the migration information after approved",
+                          "method": "GET",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-e1480e46-3612-4967-a7ed-9ffea9e300ab",
+                          "name": "Create a new migration",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-938ce02a-6811-4fb6-af40-9cff3c66fe2e",
+                          "responses_order": [],
+                          "responses": []
+                        }
+                      ]
+                    }
+                  ],
+                  "requests": []
+                },
                 {
                   "id": "16131298-e4a2caff-1aef-4724-be48-4635fff1133f",
                   "name": "Packages Migration",
@@ -16906,7 +17860,9 @@
                 "95d4124f-c4e5-48ce-986e-a05c6d47069f",
                 "69df2b48-9b7c-4f35-9b80-15c9066d48b0",
                 "6ddc138b-b2ab-4c53-8172-b2af26f4586d",
-                "e3e4974a-dc93-4f79-9ea6-259a1693dc0d"
+                "e3e4974a-dc93-4f79-9ea6-259a1693dc0d",
+                "bb973455-9cf9-4384-867d-65d48158c7c8",
+                "824885b3-4b84-4674-9583-1e754256d88d"
               ],
               "order": [],
               "folders": [
@@ -17155,6 +18111,98 @@
                   ]
                 },
                 {
+                  "id": "16131298-824885b3-4b84-4674-9583-1e754256d88d",
+                  "name": "Create, Retrieve, and Update a Metadata Partition Mapping Table",
+                  "folder": "16131298-43769ee1-7480-4413-990a-13b50119b384",
+                  "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                  "folders_order": [],
+                  "order": [
+                    "0ce78906-4130-4fc6-b316-db25128f4734",
+                    "e0df5a48-aff3-42b7-b029-83ec8178cdd2",
+                    "4defc9b2-7c67-494d-be68-b3f58efb6cfb",
+                    "3a85a160-e225-4b02-a550-63aea76afff0",
+                    "34d222a6-f84f-45d3-954d-c4412267d941",
+                    "b11471e4-b4e1-4d61-8f34-24b8b686b822",
+                    "42b5933c-9226-4307-b9c7-f8cf12f48597",
+                    "0f33c524-0455-41c5-a0c3-030a09b8ade2"
+                  ],
+                  "folders": [],
+                  "requests": [
+                    {
+                      "id": "16131298-0ce78906-4130-4fc6-b316-db25128f4734",
+                      "name": "Login",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-824885b3-4b84-4674-9583-1e754256d88d",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-0f33c524-0455-41c5-a0c3-030a09b8ade2",
+                      "name": "Logout",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-824885b3-4b84-4674-9583-1e754256d88d",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-34d222a6-f84f-45d3-954d-c4412267d941",
+                      "name": "Commit changeset",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-824885b3-4b84-4674-9583-1e754256d88d",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-3a85a160-e225-4b02-a550-63aea76afff0",
+                      "name": "Update a MDPM table",
+                      "method": "PATCH",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-824885b3-4b84-4674-9583-1e754256d88d",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-42b5933c-9226-4307-b9c7-f8cf12f48597",
+                      "name": "Delete changeset",
+                      "method": "DELETE",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-824885b3-4b84-4674-9583-1e754256d88d",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-4defc9b2-7c67-494d-be68-b3f58efb6cfb",
+                      "name": "Create a MDPM table",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-824885b3-4b84-4674-9583-1e754256d88d",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-b11471e4-b4e1-4d61-8f34-24b8b686b822",
+                      "name": "Retrieve a MDPM table",
+                      "method": "GET",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-824885b3-4b84-4674-9583-1e754256d88d",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-e0df5a48-aff3-42b7-b029-83ec8178cdd2",
+                      "name": "Create a changeset",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-824885b3-4b84-4674-9583-1e754256d88d",
+                      "responses_order": [],
+                      "responses": []
+                    }
+                  ]
+                },
+                {
                   "id": "16131298-95d4124f-c4e5-48ce-986e-a05c6d47069f",
                   "name": "Retrieve and Update a Table's Definiton",
                   "folder": "16131298-43769ee1-7480-4413-990a-13b50119b384",
@@ -17281,6 +18329,98 @@
                       "method": "POST",
                       "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
                       "folder": "16131298-95d4124f-c4e5-48ce-986e-a05c6d47069f",
+                      "responses_order": [],
+                      "responses": []
+                    }
+                  ]
+                },
+                {
+                  "id": "16131298-bb973455-9cf9-4384-867d-65d48158c7c8",
+                  "name": "Create, Retrieve, and Update a Warehouse Partition Mapping Table",
+                  "folder": "16131298-43769ee1-7480-4413-990a-13b50119b384",
+                  "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                  "folders_order": [],
+                  "order": [
+                    "4676c905-af78-47a0-b514-e57ec09abcb2",
+                    "c42e337b-6ea7-4f69-953c-677f20b22758",
+                    "350e74dd-a94c-4ec3-8219-8f91257131c2",
+                    "4b43403d-06a5-4f58-bf9e-55bf907ae2c1",
+                    "e85b16b7-a271-4dd7-93d3-5e010a3319c0",
+                    "8616ac2d-bedd-4661-a467-7af11157aa7f",
+                    "fed973ef-8a5d-4efc-9c6a-c290b8e1322b",
+                    "df0777c1-9343-41c8-a5ca-5039fe492809"
+                  ],
+                  "folders": [],
+                  "requests": [
+                    {
+                      "id": "16131298-350e74dd-a94c-4ec3-8219-8f91257131c2",
+                      "name": "Create a WHPM table",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-bb973455-9cf9-4384-867d-65d48158c7c8",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-4676c905-af78-47a0-b514-e57ec09abcb2",
+                      "name": "Login",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-bb973455-9cf9-4384-867d-65d48158c7c8",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-4b43403d-06a5-4f58-bf9e-55bf907ae2c1",
+                      "name": "Update a WHPM table",
+                      "method": "PATCH",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-bb973455-9cf9-4384-867d-65d48158c7c8",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-8616ac2d-bedd-4661-a467-7af11157aa7f",
+                      "name": "Retrieve a WHPM table",
+                      "method": "GET",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-bb973455-9cf9-4384-867d-65d48158c7c8",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-c42e337b-6ea7-4f69-953c-677f20b22758",
+                      "name": "Create a changeset",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-bb973455-9cf9-4384-867d-65d48158c7c8",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-df0777c1-9343-41c8-a5ca-5039fe492809",
+                      "name": "Logout",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-bb973455-9cf9-4384-867d-65d48158c7c8",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-e85b16b7-a271-4dd7-93d3-5e010a3319c0",
+                      "name": "Commit changeset",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-bb973455-9cf9-4384-867d-65d48158c7c8",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-fed973ef-8a5d-4efc-9c6a-c290b8e1322b",
+                      "name": "Delete changeset",
+                      "method": "DELETE",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-bb973455-9cf9-4384-867d-65d48158c7c8",
                       "responses_order": [],
                       "responses": []
                     }
@@ -21091,7 +22231,10 @@
                 "9a89680f-6695-47d0-b939-4cb8dee003dd",
                 "5038d0d2-f112-47fc-b602-e01c58fd8aec",
                 "fc30f1d1-7f8e-4bbb-8f27-7b66c67e6db6",
-                "0c9c449c-883d-4112-af6d-f14656ed5d30"
+                "0c9c449c-883d-4112-af6d-f14656ed5d30",
+                "de3ae6fc-9439-4989-b2dd-5ac1e6d6af03",
+                "9e42c6dc-dc9e-4f3e-b970-14b015296441",
+                "25d8cb39-ca5e-4dd3-8dfa-e30a3fe187e1"
               ],
               "order": [],
               "folders": [
@@ -21196,6 +22339,184 @@
                       "responses": []
                     }
                   ]
+                },
+                {
+                  "id": "16131298-25d8cb39-ca5e-4dd3-8dfa-e30a3fe187e1",
+                  "name": "Update Attribute's advanced properties",
+                  "folder": "16131298-df3dd3da-b225-4637-93dd-c41579ce1074",
+                  "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                  "folders_order": [
+                    "5610090b-1247-4611-a6cc-7dfc8e638d2a",
+                    "713308c0-5760-4a1d-92bc-49d2b1541c6a"
+                  ],
+                  "order": [],
+                  "folders": [
+                    {
+                      "id": "16131298-5610090b-1247-4611-a6cc-7dfc8e638d2a",
+                      "name": "Update property value on object level",
+                      "folder": "16131298-25d8cb39-ca5e-4dd3-8dfa-e30a3fe187e1",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folders_order": [],
+                      "order": [
+                        "fcd12cd3-efd2-4c36-b18e-b03d8f67a9be",
+                        "82ab420f-db7c-4515-9251-74704a8f330d",
+                        "b6f924fc-44a2-436f-a9da-43eb06971050",
+                        "54bef44c-218d-4bf6-8e10-50c41df40e9b",
+                        "b9cae671-0d69-4ad0-a627-96160803ccef",
+                        "4b642dda-94a8-414f-878d-5367411053da",
+                        "20d7fad5-c146-4615-a2dc-d5fc77065bf8"
+                      ],
+                      "folders": [],
+                      "requests": [
+                        {
+                          "id": "16131298-20d7fad5-c146-4615-a2dc-d5fc77065bf8",
+                          "name": "Logout",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-5610090b-1247-4611-a6cc-7dfc8e638d2a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-4b642dda-94a8-414f-878d-5367411053da",
+                          "name": "Delete the changeset",
+                          "method": "DELETE",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-5610090b-1247-4611-a6cc-7dfc8e638d2a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-54bef44c-218d-4bf6-8e10-50c41df40e9b",
+                          "name": "Commit the changeset changes to the metadata",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-5610090b-1247-4611-a6cc-7dfc8e638d2a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-82ab420f-db7c-4515-9251-74704a8f330d",
+                          "name": "Create a changeset",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-5610090b-1247-4611-a6cc-7dfc8e638d2a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-b6f924fc-44a2-436f-a9da-43eb06971050",
+                          "name": "Update property value on object level",
+                          "method": "PATCH",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-5610090b-1247-4611-a6cc-7dfc8e638d2a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-b9cae671-0d69-4ad0-a627-96160803ccef",
+                          "name": "Reload (update) the schema",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-5610090b-1247-4611-a6cc-7dfc8e638d2a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-fcd12cd3-efd2-4c36-b18e-b03d8f67a9be",
+                          "name": "Login",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-5610090b-1247-4611-a6cc-7dfc8e638d2a",
+                          "responses_order": [],
+                          "responses": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "16131298-713308c0-5760-4a1d-92bc-49d2b1541c6a",
+                      "name": "Update property value with null (set value back to default)",
+                      "folder": "16131298-25d8cb39-ca5e-4dd3-8dfa-e30a3fe187e1",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folders_order": [],
+                      "order": [
+                        "a239e541-b0ed-46d2-9e15-32ca1a796796",
+                        "587f1d3a-9fa8-4779-9468-a8115bcc2bb3",
+                        "552df826-49ba-42b1-bc3c-79f6791f0e43",
+                        "0280ea43-4d44-4aa0-b6b7-e520733556a5",
+                        "0cdefb13-c448-4788-88de-9fa6bcf759a1",
+                        "063efc7e-9619-48df-9d01-1b5e99440442",
+                        "0bcdef75-bde0-469f-833c-5c5eacbbd535"
+                      ],
+                      "folders": [],
+                      "requests": [
+                        {
+                          "id": "16131298-0280ea43-4d44-4aa0-b6b7-e520733556a5",
+                          "name": "Commit the changeset changes to the metadata",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-713308c0-5760-4a1d-92bc-49d2b1541c6a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-063efc7e-9619-48df-9d01-1b5e99440442",
+                          "name": "Delete the changeset",
+                          "method": "DELETE",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-713308c0-5760-4a1d-92bc-49d2b1541c6a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-0bcdef75-bde0-469f-833c-5c5eacbbd535",
+                          "name": "Logout",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-713308c0-5760-4a1d-92bc-49d2b1541c6a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-0cdefb13-c448-4788-88de-9fa6bcf759a1",
+                          "name": "Reload (update) the schema",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-713308c0-5760-4a1d-92bc-49d2b1541c6a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-552df826-49ba-42b1-bc3c-79f6791f0e43",
+                          "name": "Update property value with null (set value back to default)",
+                          "method": "PATCH",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-713308c0-5760-4a1d-92bc-49d2b1541c6a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-587f1d3a-9fa8-4779-9468-a8115bcc2bb3",
+                          "name": "Create a changeset",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-713308c0-5760-4a1d-92bc-49d2b1541c6a",
+                          "responses_order": [],
+                          "responses": []
+                        },
+                        {
+                          "id": "16131298-a239e541-b0ed-46d2-9e15-32ca1a796796",
+                          "name": "Login",
+                          "method": "POST",
+                          "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                          "folder": "16131298-713308c0-5760-4a1d-92bc-49d2b1541c6a",
+                          "responses_order": [],
+                          "responses": []
+                        }
+                      ]
+                    }
+                  ],
+                  "requests": []
                 },
                 {
                   "id": "16131298-5038d0d2-f112-47fc-b602-e01c58fd8aec",
@@ -21322,6 +22643,90 @@
                   ]
                 },
                 {
+                  "id": "16131298-9e42c6dc-dc9e-4f3e-b970-14b015296441",
+                  "name": "Get Attribute's definition and advanced properties",
+                  "folder": "16131298-df3dd3da-b225-4637-93dd-c41579ce1074",
+                  "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                  "folders_order": [],
+                  "order": [
+                    "c6cf4abe-82d9-44ed-9bf6-ad4a624aaf1f",
+                    "f736c3ba-b5d2-47af-80a0-fbe184587ae5",
+                    "c523523e-ca97-47f9-9dde-9476d00bc116"
+                  ],
+                  "folders": [],
+                  "requests": [
+                    {
+                      "id": "16131298-c523523e-ca97-47f9-9dde-9476d00bc116",
+                      "name": "Logout",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-9e42c6dc-dc9e-4f3e-b970-14b015296441",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-c6cf4abe-82d9-44ed-9bf6-ad4a624aaf1f",
+                      "name": "Login",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-9e42c6dc-dc9e-4f3e-b970-14b015296441",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-f736c3ba-b5d2-47af-80a0-fbe184587ae5",
+                      "name": "Read attrribute's definition with advanced properties",
+                      "method": "GET",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-9e42c6dc-dc9e-4f3e-b970-14b015296441",
+                      "responses_order": [],
+                      "responses": []
+                    }
+                  ]
+                },
+                {
+                  "id": "16131298-de3ae6fc-9439-4989-b2dd-5ac1e6d6af03",
+                  "name": "Get Attribute's applicable advanced properties",
+                  "folder": "16131298-df3dd3da-b225-4637-93dd-c41579ce1074",
+                  "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                  "folders_order": [],
+                  "order": [
+                    "7a9b3123-3489-4f4b-9362-a9c68698d5c1",
+                    "34cdd919-6f6a-4dc8-b03e-843923f0470f",
+                    "8a6b5399-e636-453b-adbd-01b3e53af38b"
+                  ],
+                  "folders": [],
+                  "requests": [
+                    {
+                      "id": "16131298-34cdd919-6f6a-4dc8-b03e-843923f0470f",
+                      "name": "Read Attributes's applicable advanced properties",
+                      "method": "GET",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-de3ae6fc-9439-4989-b2dd-5ac1e6d6af03",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-7a9b3123-3489-4f4b-9362-a9c68698d5c1",
+                      "name": "Login",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-de3ae6fc-9439-4989-b2dd-5ac1e6d6af03",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-8a6b5399-e636-453b-adbd-01b3e53af38b",
+                      "name": "Logout",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-de3ae6fc-9439-4989-b2dd-5ac1e6d6af03",
+                      "responses_order": [],
+                      "responses": []
+                    }
+                  ]
+                },
+                {
                   "id": "16131298-fc30f1d1-7f8e-4bbb-8f27-7b66c67e6db6",
                   "name": "Create Attribute",
                   "folder": "16131298-df3dd3da-b225-4637-93dd-c41579ce1074",
@@ -21423,10 +22828,176 @@
               "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
               "folders_order": [
                 "c9639bc3-853f-4746-94b6-528b5aed21a5",
-                "cd346c9a-019b-401a-9470-6097a5d9b24a"
+                "cd346c9a-019b-401a-9470-6097a5d9b24a",
+                "6fc753fc-67a1-4b0a-837d-ad15b4e7b564",
+                "2814e35b-71c8-41f5-bd23-a39c517aca0e"
               ],
               "order": [],
               "folders": [
+                {
+                  "id": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                  "name": "Create, Update, and Delete a Metric with Advanced Properties",
+                  "folder": "16131298-e7563dc0-b691-44bd-bba9-a7ff60faeb19",
+                  "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                  "folders_order": [],
+                  "order": [
+                    "12ecebee-9eb5-4c8a-b2c7-6e325879e6c6",
+                    "2ab05c43-f280-4dc3-834e-c9cdc15706e0",
+                    "5e6a2df7-76cb-44b2-af98-67e300b0c9d4",
+                    "eac15c93-b029-4013-802c-a177dcfa7375",
+                    "f806e6a0-70f8-446b-a203-7a2368b47bf0",
+                    "a4f26904-c9bc-44a9-bfc7-cbe4504b8793",
+                    "127e6195-2fb5-4b10-add7-b58b9dd844e1",
+                    "8f9c27fa-12d4-4bc6-8fbb-e31b46562265",
+                    "abb6703b-32b7-4461-807d-417bcb29efe5",
+                    "1af2ae07-49d2-4bf2-8249-2b71a2038ff5"
+                  ],
+                  "folders": [],
+                  "requests": [
+                    {
+                      "id": "16131298-127e6195-2fb5-4b10-add7-b58b9dd844e1",
+                      "name": "Get the list of applicable properties for metric",
+                      "method": "GET",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-12ecebee-9eb5-4c8a-b2c7-6e325879e6c6",
+                      "name": "Login",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-1af2ae07-49d2-4bf2-8249-2b71a2038ff5",
+                      "name": "Logout",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-2ab05c43-f280-4dc3-834e-c9cdc15706e0",
+                      "name": "Create a changeset",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-5e6a2df7-76cb-44b2-af98-67e300b0c9d4",
+                      "name": "Create a metric with advanced properties",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-8f9c27fa-12d4-4bc6-8fbb-e31b46562265",
+                      "name": "Delete the metric",
+                      "method": "DELETE",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-a4f26904-c9bc-44a9-bfc7-cbe4504b8793",
+                      "name": "Get metric definition with advanced properties from changeset",
+                      "method": "GET",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-abb6703b-32b7-4461-807d-417bcb29efe5",
+                      "name": "Delete the changeset",
+                      "method": "DELETE",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-eac15c93-b029-4013-802c-a177dcfa7375",
+                      "name": "Update a metric with advanced properties",
+                      "method": "PUT",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-f806e6a0-70f8-446b-a203-7a2368b47bf0",
+                      "name": "Commit the changeset changes to the metadata",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-2814e35b-71c8-41f5-bd23-a39c517aca0e",
+                      "responses_order": [],
+                      "responses": []
+                    }
+                  ]
+                },
+                {
+                  "id": "16131298-6fc753fc-67a1-4b0a-837d-ad15b4e7b564",
+                  "name": "Retrieve a Metric's Definition with Advanced Properties",
+                  "folder": "16131298-e7563dc0-b691-44bd-bba9-a7ff60faeb19",
+                  "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                  "folders_order": [],
+                  "order": [
+                    "1ff3c6f7-61e5-40db-8deb-b4abeab2fdb7",
+                    "9d5c8e29-fbcb-4220-a167-7088830ee0ec",
+                    "07af5353-b1cf-4dff-9575-4294330da072",
+                    "038b7991-9353-4a40-b958-c69e7e2c9e03"
+                  ],
+                  "folders": [],
+                  "requests": [
+                    {
+                      "id": "16131298-038b7991-9353-4a40-b958-c69e7e2c9e03",
+                      "name": "Logout",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-6fc753fc-67a1-4b0a-837d-ad15b4e7b564",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-07af5353-b1cf-4dff-9575-4294330da072",
+                      "name": "Get metric definition with advanced properties",
+                      "method": "GET",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-6fc753fc-67a1-4b0a-837d-ad15b4e7b564",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-1ff3c6f7-61e5-40db-8deb-b4abeab2fdb7",
+                      "name": "Login",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-6fc753fc-67a1-4b0a-837d-ad15b4e7b564",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-9d5c8e29-fbcb-4220-a167-7088830ee0ec",
+                      "name": "Get quick search results in a list format",
+                      "method": "GET",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-6fc753fc-67a1-4b0a-837d-ad15b4e7b564",
+                      "responses_order": [],
+                      "responses": []
+                    }
+                  ]
+                },
                 {
                   "id": "16131298-c9639bc3-853f-4746-94b6-528b5aed21a5",
                   "name": "Retrieve a Metric's Definition",
@@ -21846,7 +23417,8 @@
             "7b08f07c-89d2-4c61-8bc1-83cee2eb2eaf",
             "fae624de-293e-4c55-9a26-a9ff10d17b3f",
             "ea1451c1-67fc-44c2-9f08-427b6cd60393",
-            "a3fef252-f9bf-4d11-b351-72ef75e0204c"
+            "a3fef252-f9bf-4d11-b351-72ef75e0204c",
+            "6fcd0773-c76c-40df-be96-f09cd1121b9a"
           ],
           "order": [],
           "folders": [
@@ -21911,6 +23483,81 @@
                   "responses": []
                 }
               ]
+            },
+            {
+              "id": "16131298-6fcd0773-c76c-40df-be96-f09cd1121b9a",
+              "name": "Manage Dossiers",
+              "folder": "16131298-b999a521-d7c7-45b6-9da8-41e22b5491ec",
+              "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+              "folders_order": [
+                "938c2858-82d7-4ac7-960f-3ff0243b3fa3"
+              ],
+              "order": [],
+              "folders": [
+                {
+                  "id": "16131298-938c2858-82d7-4ac7-960f-3ff0243b3fa3",
+                  "name": "Retrieve Dossier Definition",
+                  "folder": "16131298-6fcd0773-c76c-40df-be96-f09cd1121b9a",
+                  "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                  "folders_order": [],
+                  "order": [
+                    "9496396b-5476-4991-b649-ae01e0948d5c",
+                    "3439c87b-d041-46d3-a113-e120f6b813ca",
+                    "c530c47a-845f-4231-b071-2247bd846c66",
+                    "26fccc1a-2992-421b-8579-9cd87a85e6ea",
+                    "91a52a7f-11c1-4f56-af10-0c432fc04792"
+                  ],
+                  "folders": [],
+                  "requests": [
+                    {
+                      "id": "16131298-26fccc1a-2992-421b-8579-9cd87a85e6ea",
+                      "name": "Get dossier definition from dossier instance",
+                      "method": "GET",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-938c2858-82d7-4ac7-960f-3ff0243b3fa3",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-3439c87b-d041-46d3-a113-e120f6b813ca",
+                      "name": "Get dossier definition",
+                      "method": "GET",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-938c2858-82d7-4ac7-960f-3ff0243b3fa3",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-91a52a7f-11c1-4f56-af10-0c432fc04792",
+                      "name": "Logout",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-938c2858-82d7-4ac7-960f-3ff0243b3fa3",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-9496396b-5476-4991-b649-ae01e0948d5c",
+                      "name": "Login",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-938c2858-82d7-4ac7-960f-3ff0243b3fa3",
+                      "responses_order": [],
+                      "responses": []
+                    },
+                    {
+                      "id": "16131298-c530c47a-845f-4231-b071-2247bd846c66",
+                      "name": "Create dossier instance",
+                      "method": "POST",
+                      "collection": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
+                      "folder": "16131298-938c2858-82d7-4ac7-960f-3ff0243b3fa3",
+                      "responses_order": [],
+                      "responses": []
+                    }
+                  ]
+                }
+              ],
+              "requests": []
             },
             {
               "id": "16131298-78826260-a273-46fe-9eb1-401402b8d9f7",

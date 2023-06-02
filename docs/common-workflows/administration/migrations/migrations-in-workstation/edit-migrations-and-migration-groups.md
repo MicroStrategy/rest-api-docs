@@ -418,7 +418,7 @@ Sample Response Body:
 
 ### 1. Get migration group content
 
-Endpoint: [GET /api/migrationGroups/{{migrationGroupId}}?showContent=all](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migration%20Groups/getMigrationGroup)
+Endpoint: [GET /api/migrationGroups/{{migrationGroupId}}?showContent=all](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/getMigrationGroup)
 
 This call gets the full content of the migration groups to prepare the import call.
 
@@ -725,7 +725,7 @@ Use the response body you saved in step 1 and change `name`, `treeView`, and `mi
 
 ### Step 3: Get the edit status of the migration group
 
-Endpoint: [GET /api/migrationGroups/{{migrationGroupId}}?showContent=all](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html?#/Migration%20Groups/getMigrationGroup)
+Endpoint: [GET /api/migrationGroups/{{migrationGroupId}}?showContent=all](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/getMigrationGroup)
 
 Since package group editing is an asynchronous process, this call checks the creation status, which is usually `empty`, `locked`, `creating`, `created`, or `create_failed`. Apply a 'fail fast' strategy in handling package group creation. This means that if the creation of a package fails, the entire package group creation fails.
 
