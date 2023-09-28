@@ -17,6 +17,12 @@ Get the authorization token needed to execute the request with
 
 :::
 
+:::info
+
+The [DssXmlPrivilegesManageApplication](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesManageApplication) privilege is required to manage application themes.
+
+:::
+
 ## Create an application with customized theme
 
 The following table lists important fields in the theme object.

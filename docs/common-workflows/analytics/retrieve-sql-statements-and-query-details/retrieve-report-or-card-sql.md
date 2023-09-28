@@ -32,6 +32,12 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
+:::info
+
+The [DssXmlPrivilegesWebReportSQL](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesWebReportSQL) privilege is required to get the SQL view of a report instance.
+
+:::
+
 ## Create a report instance
 
 Use [POST /api/v2/reports/{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance_1)

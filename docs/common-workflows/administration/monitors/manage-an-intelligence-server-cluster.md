@@ -26,6 +26,12 @@ Intelligence Server provides you the functionality to cluster a group of Intelli
   - Make sure no other user is connected to Library Server and Intelligence Server nodes. Editing cluster membership is an administrative action and should be performed exclusively.
   - Make sure all Intelligence Server nodes are running during the life-time of Library Server. If some Intelligence Server nodes are/were down, you can start them first and then restart Library Server. This ensures changes are synchronized in a timely manner.
 
+:::info
+
+The [DssXmlPrivilegesUseClusterMonitor](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesUseClusterMonitor) and [DssXmlPrivilegesClusterAdministration](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesClusterAdministration) privileges are required to manage nodes from the connected Intelligence Server cluster.
+
+:::
+
 ## List nodes
 
 Endpoint: [GET /api/monitors/iServer/nodes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getClusterNodes)
@@ -128,3 +134,61 @@ Use the exact name returned by `GET /api/monitors/iServer/nodes`
   - **Success**: 204 No Content
   - **Timeout, still in-progress**: 202 Accepted
   - **Node not a member**: 404 Not Found
+
+## Cluster startup membership
+
+The endpoints: [PUT /api/monitors/iServer/nodes/{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/addServerClusterMember) and [DELETE /api/monitors/iServer/nodes/{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/removeServerClusterMember) allow to add or remove a node from a working cluster. The changes introduced by the endpoints aren't permanent. When a cluster is being restarted the cluster setup will be restored to the cluster startup membership configuration from metadata. In order to display the configuration, you can use a following endpoint: [GET /api/iserver/clusterStartupMembership](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getClusterStartupMembership)
+
+This operation requires "Cluster Administration" privilege.
+
+| Parameter        | Description         | Parameter Type | Data Type | Required |
+| ---------------- | ------------------- | -------------- | --------- | -------- |
+| X-MSTR-AuthToken | Authorization token | Header         | String    | Yes      |
+
+- Response: 200 (Success : OK)
+
+### Sample response body
+
+```json
+{
+  "clusterStartupMembership": [
+    "i-server-hostname-1",
+    "i-server-hostname-2",
+    "i-server-hostname-3",
+    "i-server-hostname-4"
+  ]
+}
+```
+
+## Cluster startup membership update
+
+There is also a dedicated [PUT /api/iserver/clusterStartupMembership](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getClusterStartupMembership) endpoint to update cluster startup membership configuration.
+
+This operation requires the "Cluster Administration" privilege.
+
+| Parameter        | Description         | Parameter Type | Data Type | Required |
+| ---------------- | ------------------- | -------------- | --------- | -------- |
+| X-MSTR-AuthToken | Authorization token | Header         | String    | Yes      |
+
+- Response:
+  - **Success**: 200 OK
+  - **Incorrect list of host names**: 400 Bad Request
+
+### Sample request body
+
+```json
+{
+  "clusterStartupMembership": [
+    "i-server-hostname-A",
+    "i-server-hostname-B",
+    "i-server-hostname-C",
+    "i-server-hostname-D"
+  ]
+}
+```
+
+:::tip
+
+The `PUT` endpoint return updated startup configuration of the cluster in the response.
+
+:::

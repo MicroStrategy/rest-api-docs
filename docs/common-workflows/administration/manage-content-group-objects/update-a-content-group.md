@@ -15,6 +15,12 @@ Get the authorization token needed to execute the request with [POST /api/auth/l
 
 :::
 
+:::info
+
+The [DssXmlPrivilegesManageContentBundle](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesManageContentBundle) privilege is required to update a content group.
+
+:::
+
 Endpoint: [PATCH /api/contentGroups/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/updateContentGroup)
 
 Sample Request Header:

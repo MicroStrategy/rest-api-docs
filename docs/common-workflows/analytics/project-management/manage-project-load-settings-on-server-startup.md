@@ -13,6 +13,12 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
+:::info
+
+The [DssXmlPrivilegesConfigureServerBasic](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesConfigureServerBasic) privilege is required to manage project load settings on Intelligence Server startup.
+
+:::
+
 A high-level workflow sample for loading project settings at the startup of the Intelligence Server is shown below.
 
 - [Log in](#log-in)

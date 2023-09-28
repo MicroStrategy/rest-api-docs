@@ -17,6 +17,12 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
+:::info
+
+The [DssXmlPrivilegesManageContentBundle](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesManageContentBundle) privilege is required to update the contents of a content group.
+
+:::
+
 Endpoint: [PATCH /api/contentGroups/{id}/contents](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/updateContentGroupContent)
 
 Sample Request Header:

@@ -707,6 +707,7 @@ const sidebars = {
                 "common-workflows/modeling/manage-table-objects/retrieve-a-partition-mapping-tables-definition",
                 "common-workflows/modeling/manage-table-objects/create-a-new-partition-mapping-table-object",
                 "common-workflows/modeling/manage-table-objects/update-a-partition-mapping-tables-definition",
+                "common-workflows/modeling/manage-table-objects/update-a-tables-physical-table-structure",
               ],
             },
             {

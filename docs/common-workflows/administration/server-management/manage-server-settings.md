@@ -15,6 +15,12 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 A high-level workflow sample for managing server settings is shown below. The sequence of REST API requests in the following procedure allows an administrative user to manage the Intelligence Server settings.
 
+:::info
+
+The [DssXmlPrivilegesConfigureGoverning](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesConfigureGoverning) and [DssXmlPrivilegesConfigureServerBasic](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesConfigureServerBasic) privileges are required to manage server settings.
+
+:::
+
 A detailed explanation of each step is provided below.
 
 ## Log in

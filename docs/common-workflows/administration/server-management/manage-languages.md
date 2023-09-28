@@ -13,6 +13,12 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
+:::info
+
+The [DssXmlPrivilegesCreateConfigObj](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesCreateConfigObj) privilege is required to create a new language object.
+
+:::
+
 ## 1. Get server supported langauges
 
 Endpoint: [GET /api/iserver/baseLanguages](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getSupportedLanguages)

@@ -24,6 +24,12 @@ Administrators can make REST API calls to perform a full set of operations on th
 
 To avoid security vulnerabilities, administrators should have a clear understanding of the privileges and security requirements of their system before assigning privileges which provide access to application functionality.
 
+:::info
+
+The [DssXmlPrivilegesUseSecurityRoleManager](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesUseSecurityRoleManager) privilege is required to manage the security role object.
+
+:::
+
 ## Creating a security role and managing privileges of a security role
 
 A workflow sample for creating a new security role in the metadata is provided below. The following sequence of REST API requests allows an administrator to create a new security role, and optionally get information about the security role to confirm the creation and updates.

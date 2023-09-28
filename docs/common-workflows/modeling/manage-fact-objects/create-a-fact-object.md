@@ -49,9 +49,9 @@ To create a fact, in the request body, "expressions" contains a list of fact exp
 
   Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a fact expression is "Revenue - Cost". When the fact expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), ("-", Minus_ID), ("Cost", Cost_ID).
 
-- "tables": A list of tables that the "expression" applies to.
+- "tables": A list of tables that the "expression" applies to. Warehouse partition base tables and metadata partition mapping tables are not allowed here.
 
-  "dataType" is optional. If omitted, it calculates based on the first fact expression.
+- "dataType" is optional. If omitted, it calculates based on the first fact expression.
 
   Sample Request Header:
 
@@ -337,6 +337,99 @@ Sample Request Body:
           "objectId": "54D82D5B4BD115DA313C03A5742900AE",
           "subType": "logical_table",
           "name": "CUSTOMER_SLS"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Use warehouse partition mapping tables or metadata partition base tables in expressions
+
+In this sample, you want to create a fact named `"Time"` that references `"month_id"` column of the warehouse partition mapping table `"pmt_tc86967_02"` and `"pmt_tc86967_01"`, and `"YEAR_ID"` column of the metadata partition base table `"LU_MONTH"` and `"LU_YEAR"`.
+
+Sample Request Body:
+
+```json
+{
+  "information": {
+    "subType": "fact",
+    "name": "Time"
+  },
+  "dataType": {
+    "type": "double",
+    "precision": 0,
+    "scale": -2147483648
+  },
+  "expressions": [
+    {
+      "expression": {
+        "tokens": [
+          {
+            "type": "column_reference",
+            "value": "YEAR_ID",
+            "target": {
+              "objectId": "8D6791E111D3E4981000E787EC6DE8A4",
+              "subType": "column",
+              "name": "YEAR_ID"
+            }
+          },
+          {
+            "level": "resolved",
+            "state": "initial",
+            "value": "",
+            "type": "end_of_text"
+          }
+        ]
+      },
+      "tables": [
+        {
+          "objectId": "8D6793C211D3E4981000E787EC6DE8A4",
+          "subType": "logical_table",
+          "name": "LU_YEAR"
+        },
+        {
+          "objectId": "8D67938011D3E4981000E787EC6DE8A4",
+          "subType": "logical_table",
+          "name": "LU_MONTH"
+        }
+      ]
+    },
+    {
+      "expression": {
+        "text": "month_id",
+        "tokens": [
+          {
+            "level": "resolved",
+            "state": "initial",
+            "value": "month_id",
+            "type": "column_reference",
+            "target": {
+              "acg": 255,
+              "primaryLocale": "en-US",
+              "objectId": "8D6791E011D3E4981000E787EC6DE8A4",
+              "subType": "column",
+              "name": "month_id"
+            }
+          },
+          {
+            "level": "resolved",
+            "state": "initial",
+            "value": "",
+            "type": "end_of_text"
+          }
+        ]
+      },
+      "tables": [
+        {
+          "objectId": "012666511FB24FD18860322376581891",
+          "subType": "table_partition_wh",
+          "name": "pmt_tc86967_02"
+        },
+        {
+          "objectId": "A05E98A407DD407DAA076FC06C6E464F",
+          "subType": "table_partition_wh",
+          "name": "pmt_tc86967_01"
         }
       ]
     }

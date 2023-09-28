@@ -4,6 +4,11 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## 2021 Update 11
+
+- [Managing cluster startup membership configuration](common-workflows/administration/monitors/manage-an-intelligence-server-cluster#cluster-startup-membership)
+- [Update a table's physical table structure](common-workflows/modeling/manage-table-objects/update-a-tables-physical-table-structure.md)
+
 ## 2021 Update 10
 
 - [Retrieve, create, and update KPI objects and insights](common-workflows/analytics/manage-insights/manage-kpi-and-insights.md)

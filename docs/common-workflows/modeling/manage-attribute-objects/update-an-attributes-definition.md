@@ -48,12 +48,12 @@ To update an attribute, in the request body, "forms" contains the detailed defin
 
     Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say an attribute form expression is "Year - 10". When the attribute form expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Year_ID", Year_column_ID), ("-", Minus_ID), ("10", Constant).
 
-  - "tables": A list of tables that the "expression" applies to.
+  - "tables": A list of tables that the "expression" applies to. Warehouse partition base tables and metadata partition mapping tables are not allowed here.
 
 - "dataType" and "alias" are optional. If omitted, they can be calculated based on the first attribute form expression.
 - "childForms" is specific to a form group, which contains the reference for child forms.
 
-Provide a lookup table on either the attribute level or attribute form level, as it is required for the object to be committed to the metadata. A lookup table can be defined on the attribute level using "attributeLookupTable", or the attribute form level using "lookupTable". If "LookupTable" is defined at the attribute form level, it is used, or it falls back to "attributeLookupTable".
+Provide a lookup table on either the attribute level or attribute form level, as it is required for the object to be committed to the metadata. A lookup table can be defined on the attribute level using "attributeLookupTable", or the attribute form level using "lookupTable". If "LookupTable" is defined at the attribute form level, it is used, or it falls back to "attributeLookupTable". Warehouse partition base tables and metadata partition mapping tables are not allowed to use in the lookup table.
 
 Provide "keyForm" and "displays", as they are required for the attribute to be committed to the metadata.
 

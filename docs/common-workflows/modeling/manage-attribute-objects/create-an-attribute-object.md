@@ -46,12 +46,13 @@ To create an attribute, in the request body, "forms" contains the detailed defin
 
   Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a fact expression is "Revenue - Cost". When the fact expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), ("-", Minus_ID), ("Cost", Cost_ID).
 
-- "tables": A list of tables that the "expression" applies to.
+- "tables": A list of tables that the "expression" applies to. Warehouse partition base tables and metadata partition mapping tables are not allowed here.
 
 - "dataType" and "alias" are optional. If omitted, they can be calculated based on the first attribute form expression.
+
 - "childForms" is specific to a form group, which contains the reference for child forms.
 
-  Provide a lookup table on either the attribute level or attribute form level, as it is required for the object to be committed to the metadata. A lookup table can be defined on the attribute level using "attributeLookupTable", or the attribute form level using "lookupTable". If "LookupTable" is defined at the attribute form level, it is used, or it falls back to "attributeLookupTable".
+  Provide a lookup table on either the attribute level or attribute form level, as it is required for the object to be committed to the metadata. A lookup table can be defined on the attribute level using "attributeLookupTable", or the attribute form level using "lookupTable". If "LookupTable" is defined at the attribute form level, it is used, or it falls back to "attributeLookupTable". Warehouse partition base tables and metadata partition mapping tables are not allowed to use in the lookup table.
 
   Provide "keyForm" and "displays", as they are required for the attribute to be committed to the metadata.
 
@@ -838,7 +839,7 @@ You can create a compound attribute. In this sample, you want to create an attri
 }
 ```
 
-### Expressions in "tree" format"
+### Expressions in "tree" format
 
 You can create an attribute with expressions in "tree" format.
 
@@ -957,6 +958,96 @@ You can create an attribute with expressions in "tree" format.
           "name": "DESC"
         },
         "ascending": true
+      }
+    ]
+  }
+}
+```
+
+### Use warehouse partition mapping tables or metadata partition base tables in expressions
+
+In this sample, you want to create an attribute named `"Item"` that references `"item_id"` column of the warehouse partition mapping table `"whpmt"`, and `"year_id"` column of the metadata partition base table `"LU_MONTH"`.
+
+Sample Request Body:
+
+```json
+{
+  "information": {
+    "name": "Item"
+  },
+  "forms": [
+    {
+      "name": "ID",
+      "description": "Item",
+      "displayFormat": "number",
+      "dataType": {
+        "type": "integer",
+        "precision": 2,
+        "scale": -2147483648
+      },
+      "expressions": [
+        {
+          "expression": {
+            "text": "item_id",
+            "tree": {
+              "type": "column_reference",
+              "dependenceType": "default",
+              "columnName": "item_id",
+              "objectId": "8D67915C11D3E4981000E787EC6DE8A4"
+            }
+          },
+          "tables": [
+            {
+              "objectId": "A05E98A407DD407DAA076FC06C6E464F",
+              "subType": "table_partition_wh",
+              "name": "whpmt"
+            }
+          ]
+        },
+        {
+          "expression": {
+            "text": "year_id",
+            "tree": {
+              "type": "column_reference",
+              "dependenceType": "default",
+              "columnName": "year_id",
+              "objectId": "8D6791E111D3E4981000E787EC6DE8A4"
+            }
+          },
+          "tables": [
+            {
+              "objectId": "8D67938011D3E4981000E787EC6DE8A4",
+              "subType": "logical_table",
+              "name": "LU_MONTH"
+            }
+          ]
+        }
+      ],
+      "alias": "item_id",
+      "lookupTable": {
+        "objectId": "A05E98A407DD407DAA076FC06C6E464F",
+        "subType": "table_partition_wh",
+        "name": "pmt_tc86967_01"
+      }
+    }
+  ],
+  "attributeLookupTable": {
+    "objectId": "A05E98A407DD407DAA076FC06C6E464F",
+    "subType": "table_partition_wh",
+    "name": "pmt_tc86967_01"
+  },
+  "keyForm": {
+    "name": "ID"
+  },
+  "displays": {
+    "reportDisplays": [
+      {
+        "name": "ID"
+      }
+    ],
+    "browseDisplays": [
+      {
+        "name": "ID"
       }
     ]
   }
