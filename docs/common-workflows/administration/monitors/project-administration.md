@@ -11,6 +11,12 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
+:::info
+
+The [DssXmlPrivilegesUseClusterMonitor](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesUseClusterMonitor) privilege is required to fetch information about nodes in the connected Intelligence Server cluster.
+
+:::
+
 The following sequence of REST API requests allows an administrator to manage project distribution and configuration:
 
 ## Log in

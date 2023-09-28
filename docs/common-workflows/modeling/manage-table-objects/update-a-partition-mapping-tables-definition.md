@@ -30,7 +30,7 @@ Updating a WHPM table is the same as updating a normal table, you cannot update 
 
 ## Update a MDPM table
 
-For a metadata partition mapping tables, you can update the logical table name in the information field, logicalSize, isLogicalSizeLocked, and partition base tables. You can also update their partition filters in partitionTables field.
+For a metadata partition mapping tables, you can update the logical table name in the information field, logicalSize, isLogicalSizeLocked, and partition base tables. You can also update their partition filters in partitionTables field. Desitination folder can also be updated.
 
 Update an MDPM table with [PATCH /api/model/tables/{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-patchTableDetails).
 

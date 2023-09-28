@@ -25,6 +25,13 @@ Only Administrator users can validate migrations. Administrators must have the f
 
 To execute the API, you must get the authorization token by executing the `POST /api/auth/login` request, and get a token as `"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"` in the response body. Keep the token value. It is required to execute the REST API. See [Authentication](/docs/getting-started/authentication.md) for more information.
 
+:::info
+
+The [DssXmlPrivilegesCreatePackage](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesCreatePackage) or [DssXmlPrivilegesApplyPackage](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesApplyPackage) privilege is required
+to get the details of a migration record or update a migration.
+
+:::
+
 ## Use scenarios
 
 The best practice scenario is when Workstation uses one Library server as a source and another Library server as a target. The source and target environments can be the same.

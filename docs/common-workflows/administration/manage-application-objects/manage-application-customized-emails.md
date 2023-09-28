@@ -15,6 +15,12 @@ Get the authorization token needed to execute the request with [POST /api/auth/l
 
 :::
 
+:::info
+
+The [DssXmlPrivilegesManageApplication](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesManageApplication) privilege is required to manage application customized emails.
+
+:::
+
 ## Create an application with customized email
 
 The following table lists important fields in the email settings.

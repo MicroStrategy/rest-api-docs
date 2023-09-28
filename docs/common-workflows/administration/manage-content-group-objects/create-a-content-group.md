@@ -15,6 +15,12 @@ Get the authorization token needed to execute the request with [POST /api/auth/l
 
 :::
 
+:::info
+
+The [DssXmlPrivilegesManageContentBundle](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesManageContentBundle) privilege is required to create a content group.
+
+:::
+
 Endpoint: [POST /api/contentGroups](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/createContentGroup)
 
 Sample Request Header:

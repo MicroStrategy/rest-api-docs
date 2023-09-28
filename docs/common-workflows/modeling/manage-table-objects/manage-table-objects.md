@@ -25,5 +25,6 @@ You can use REST API requests to retrieve, create, and update table objects thro
 - [Retrieve a partition mapping table's definition](retrieve-a-partition-mapping-tables-definition.md) <Available since="2021 Update 9" inline />
 - [Create a new partition mapping table object](create-a-new-partition-mapping-table-object.md) <Available since="2021 Update 9" inline />
 - [Update a partition mapping table's definition](update-a-partition-mapping-tables-definition.md) <Available since="2021 Update 9" inline />
+- [Update a table's physical table structure](update-a-tables-physical-table-structure.md) <Available since="2021 Update 11" inline />
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

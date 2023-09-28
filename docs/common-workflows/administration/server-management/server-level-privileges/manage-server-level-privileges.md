@@ -13,6 +13,12 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 A high-level workflow sample for managing server-level privileges is shown below. The sequence of REST API requests in the following procedure allows an administrative user to get server-level privilege information for a specific user or user group, grant new server-level privileges to the user, and revoke granted server-level privileges.
 
+:::info
+
+The [DssXmlPrivilegesUseUserManager](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesUseUserManager) privilege is required to retrieve user privileges.
+
+:::
+
 A detailed explanation of each step is provided below:
 
 ## Log in

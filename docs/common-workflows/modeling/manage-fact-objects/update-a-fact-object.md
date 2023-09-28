@@ -47,7 +47,7 @@ To update a fact, in the request body, "expressions" contains a list of fact exp
 
   Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a fact expression is "Revenue - Cost". When the fact expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), ("-", Minus_ID), ("Cost", Cost_ID).
 
-- "tables": A list of tables that the "expression" applies to.
+- "tables": A list of tables that the "expression" applies to. Warehouse partition base tables and metadata partition mapping tables are not allowed here.
 - "dataType" is optional. If omitted, it calculates based on the first fact expression.
 
 Sample Request Header:

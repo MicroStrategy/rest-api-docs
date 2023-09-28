@@ -265,6 +265,8 @@ Response Code: 201 (A new WHPM table is created successfully in the changeset.)
 
 In this workflow sample, create a new MDPM table called "my_pmt" and add two PBTs. Their IDs are 16F7047017563FD9541179744D001250 and 16F7047017563FD957E139264D1C2686. For the former PBT, qualify on the ID form of the "Country" attribute. For the latter PBT, qualify on the ID form of the "Category" attribute.
 
+In the "information" field, you can use "destinationFolderId" to locate the table as you wish. You can update it later or if you just leave it blank, the table will fallback to _Schema Objects\Tables_ folder.
+
 For MDPM, you can use any logical table as one of the PBTs, and any standalone attribute to construct your partition filter. You can only use attribute form qualifications and element list qualifications with the partition filter. Refer to [Metadata partition mapping](https://www2.microstrategy.com/producthelp/Current/ProjectDesignGuide/WebHelp/Lang_1033/Content/Metadata_partition_mapping.htm) for details if you are not familiar with metadata partitioning.
 
 Create the new table with [POST /api/model/tables](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-addTable).

@@ -15,6 +15,12 @@ Obtain the authorization token needed to execute the request using `POST /api/au
 
 You want to get the SQL view of a report with prompts. You can create a report instance and set the executionStage to resolve_prompts. Then after answering the prompts, the SQL view will be available.
 
+:::info
+
+The [DssXmlPrivilegesWebReportSQL](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesWebReportSQL) privilege is required to get the SQL view of a report instance.
+
+:::
+
 ### 1. Create a report instance with execution stage
 
 Endpoint: [POST /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance) with executionStage=resolve_prompts

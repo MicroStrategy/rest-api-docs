@@ -22,6 +22,12 @@ A workflow sample for managing user groups in the metadata is provided below. Th
 
 To make it easy for you to test this workflow in your environment, [download the zipped Postman script](https://www2.microstrategy.com/producthelp/2021/downloads/RESTSDK/PostmanScripts/ManagingUserGroups_postman_collection.zip) provided for you, extract the JSON file, and configure it to point to your Web server.
 
+:::info
+
+The [DssXmlPrivilegesUseUserManager](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesUseUserManager) privilege is required to create a new language object.
+
+:::
+
 A detailed explanation of each step is provided below:
 
 ## Log in
