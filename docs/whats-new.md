@@ -6,7 +6,7 @@ Description: What's New in the REST API.
 
 ## 2021 Update 11
 
-- [Managing cluster startup membership configuration](common-workflows/administration/monitors/manage-an-intelligence-server-cluster#cluster-startup-membership)
+- [Managing cluster startup membership configuration](common-workflows/administration/monitors/manage-an-intelligence-server-cluster.md#cluster-startup-membership)
 - [Update a table's physical table structure](common-workflows/modeling/manage-table-objects/update-a-tables-physical-table-structure.md)
 
 ## 2021 Update 10
