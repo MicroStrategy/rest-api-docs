@@ -27,7 +27,7 @@ Obtain the authorization token needed to execute the request using [POST /api/a
 
 ## Create a new fence
 
-Endpoint: [POST /api/iserver/fences](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/createFence).
+Endpoint: [POST /api/v2/iserver/fences](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/createFence_1).
 
 Sample Request Header:
 
@@ -75,7 +75,7 @@ Sample Curl:
 
 ```bash
 curl -X POST \
-'https://demo.microstrategy.com/MicroStrategyLibrary/api/iserver/fences' \
+'https://demo.microstrategy.com/MicroStrategyLibrary/api/v2/iserver/fences' \
 -H 'accept: application/json' \
 -H 'X-MSTR-AuthToken: g97nfc2l7icgsb37vjdh4b6gcu' \
 -H 'Content-Type: application/json' \
@@ -138,7 +138,8 @@ You can view the detailed information of new created `administrator_user_fence` 
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
       "name": "MicroStrategy Tutorial"
     }
-  ]
+  ],
+  "id": "YWRtaW5pc3RyYXRvcl91c2VyX2ZlbmNl"
 }
 ```
 

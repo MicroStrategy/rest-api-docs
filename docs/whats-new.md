@@ -11,6 +11,7 @@ Description: What's New in the REST API.
 
 ## 2021 Update 10
 
+- [Manage Dossier themes](common-workflows/modeling/manage-dossier-themes/manage-dossier-themes.md)
 - [Retrieve, create, and update KPI objects and insights](common-workflows/analytics/manage-insights/manage-kpi-and-insights.md)
 - [Change the owner of an object.](common-workflows/modeling/common-object-management/change-ownership.md)
 - [Create a dossier in memory based on a list of objects](common-workflows/analytics/manage-dossiers/manage-dossiers.md)
@@ -41,6 +42,7 @@ Description: What's New in the REST API.
 - [Convert connection string from data source name(DSN) to DSN-less for a datasource.](common-workflows/administration/datasource-management/convert-connection-string-from-dsn-to-dsnless-for-a-datasource.md)
 - [Manage Watch KPI and Insight service privileges.](common-workflows/administration/server-management/server-level-privileges/watch-kpi-insight-service-privileges.md)
 - [Manage quick search indices.](common-workflows/administration/server-management/manage-quick-search-indices.md)
+- [Retrieve history lists.](common-workflows/administration/manage-history-lists/manage-history-lists.md)
 
 ## 2021 Update 7
 

@@ -134,7 +134,7 @@ Sample Response
 
 This workflow is covered in detail under /Common-Workflows/Manage-Prompt-Objects/Prompt-Types/. We will find a prompted report, instantiate it, and answer its prompts for use in a subscription. We use the Auth Token, obtained from `POST /api/auth/login` along with the project id of the tutorial project obtained from `GET /api/projects` to search for a report.
 
-Find a report: `GET /api/searches/results?name=Actual%20vs.%20Forecast&type=3` Create report instance: `POST /api/reports/{reportId}/instances` Get prompts associated with report instance: `GET /api/reports/{reportId}/instances/{instanceId}/prompts` Get available answers for first prompt: `GET /api/reports/{reportId}/instances/{instanceId}/prompts/{promptKey}/elements` Get available answers for second prompt: `GET /api/reports/{reportId}/instances/{instanceId}/prompts/{promptKey}/elements` Answer the prompts: `POST /api/reports/{reportId}/instances`
+Find a report: `GET /api/searches/results?name=Actual%20vs.%20Forecast&type=3` Create report instance: `POST /api/reports/{reportId}/instances` Get prompts associated with report instance: `GET /api/reports/{reportId}/instances/{instanceId}/prompts` Get available answers for first prompt: `GET /api/reports/{reportId}/instances/{instanceId}/prompts/{promptKey}/elements` Get available answers for second prompt: `GET /api/reports/{reportId}/instances/{instanceId}/prompts/{promptKey}/elements` Answer the prompts: `PUT /api/reports/{reportId}/instances/{instanceId}/prompts/answers`
 
 Save the report id and instance id for use with the subscription.
 
