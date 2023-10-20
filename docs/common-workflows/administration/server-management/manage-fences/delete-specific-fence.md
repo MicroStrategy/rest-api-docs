@@ -13,7 +13,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-You want to delete an `administrator_user_fence` user fence by fence name, which reserves `env-296739laio1use1` node and configured for `Administrator` user/usergroups.
+You want to delete the user fence `administrator_user_fence` having id YWRtaW5pc3RyYXRvcl91c2VyX2ZlbmNl, which reserves `env-296739laio1use1` node and configured for `Administrator` user/usergroups.
 
 The user ID is `54F3D26011D2896560009A8E67019608`. The usergroup ID is `E96685CD4E60068559F7DFAC7C2AA851`.
 
@@ -27,7 +27,7 @@ Obtain the authorization token needed to execute the request using [POST /api/a
 
 ## Delete an existing fence
 
-Endpoint: [DELETE /api/iserver/fences/{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/deleteFence).
+Endpoint: [DELETE /api/v2/iserver/fences/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/deleteFence_1).
 
 Sample Request Header:
 
@@ -42,7 +42,7 @@ Sample Curl:
 
 ```bash
 curl -X DELETE \
-'demo.microstrategy.com/MicroStrategyLibrary/api/iserver/fences/administrator_user_fence' \
+'demo.microstrategy.com/MicroStrategyLibrary/api/v2/iserver/fences/YWRtaW5pc3RyYXRvcl91c2VyX2ZlbmNl' \
 -H 'accept: */*' \
 -H 'X-MSTR-AuthToken: 27tm0ok3pno1qb9nd4opt7qq07'
 ```

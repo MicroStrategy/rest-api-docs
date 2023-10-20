@@ -13,7 +13,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-You want to update the `nodes` reserved by `administrator_user_fence` user fence, which is configured for `Administrator` user/usergroups.
+You want to update the `nodes` reserved by user fence name `administrator_user_fence` having id YWRtaW5pc3RyYXRvcl91c2VyX2ZlbmNl, which is configured for `Administrator` user/usergroups.
 
 The updated node is `296739laio3use1`.
 
@@ -27,7 +27,7 @@ Obtain the authorization token needed to execute the request using [POST /api/a
 
 ## Update a specific fence
 
-Endpoint: [PATCH /api/iserver/fences/{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/updateFence).
+Endpoint: [PATCH /api/v2/iserver/fences/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/updateFence_1).
 
 Sample Request Header:
 
@@ -72,7 +72,7 @@ Sample Curl:
 
 ```bash
 curl -X PATCH \
-'https://demo.microstrategy.com/MicroStrategyLibrary/api/iserver/fences/administrator_user_fence' \
+'https://demo.microstrategy.com/MicroStrategyLibrary/api/v2/iserver/fences/YWRtaW5pc3RyYXRvcl91c2VyX2ZlbmNl' \
 -H 'accept: application/json' \
 -H 'X-MSTR-AuthToken: g97nfc2l7icgsb37vjdh4b6gcu' \
 -H 'Content-Type: application/json' \
@@ -120,7 +120,8 @@ You can view the detailed information of updated `administrator_user_fence` user
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
       "name": "MicroStrategy Tutorials"
     }
-  ]
+  ],
+  "id": "YWRtaW5pc3RyYXRvcl91c2VyX2ZlbmNl"
 }
 ```
 

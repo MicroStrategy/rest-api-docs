@@ -79,7 +79,7 @@ You can provide prompt answers for three separate prompt types: attribute elemen
 
 ```json
 {
-  "answers": [
+  "prompts": [
     {
       "key": "W34D600FCA9CE481F89859762AED04C69",
       "type": "OBJECTS", // object prompts

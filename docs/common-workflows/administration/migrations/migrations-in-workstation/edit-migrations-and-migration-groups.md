@@ -414,6 +414,125 @@ Sample Response Body:
 }
 ```
 
+### 4. Modify the certifications state in the source and target environment
+
+Endpoint: [PATCH /api/migrations/{migrationId}/packageInfo/certification](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/certifyMigrationPackage)
+
+This endpoint can modify the certifications state in the source environment. This API can only be called when packaged is "created". Architect can request/rervers request with this API. Administrator can certify/decerfiy packages or groups, approve/reject request with this API. Normal requests just require states in the request body, but the sync action requires the modified user and modified date additionally. To maintain consistency between the source and target operations, the request body sent to the target must contain the operator and update date information.
+
+### Request Headers
+
+| Name               | Type   | Description         |
+| ------------------ | ------ | ------------------- |
+| `X-MSTR-AuthToken` | Header | Authorization token |
+
+### Request Parameters
+
+| Name        | Located in | Description                 | Required | Type    |
+| ----------- | ---------- | --------------------------- | -------- | ------- |
+| migrationId | Path       | Migration ID                | Yes      | string  |
+| autoSync    | query      | Trigger certification state | No       | boolean |
+
+Sample Request Header:
+
+```http
+"Content-Type": "application/json"
+"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"  // auth token from Authorization response.
+"prefer": "respond-async"
+```
+
+### Request Body
+
+Sample Request Body for requesting certification:
+
+```json
+{
+  "packageInfo": {
+    "certification": {
+      "status": "requested"
+    }
+  }
+}
+```
+
+Sample Request Body for reverting certification:
+
+```json
+{
+  "packageInfo": {
+    "certification": {
+      "status": "uncertified"
+    }
+  }
+}
+```
+
+Sample Request Body for approving certification:
+
+```json
+{
+  "packageInfo": {
+    "certification": {
+      "status": "certified"
+    }
+  }
+}
+```
+
+Sample Request Body for rejecting certification:
+
+```json
+{
+  "packageInfo": {
+    "certification": {
+      "status": "rejected"
+    }
+  }
+}
+```
+
+Sample Request Body to decertify package:
+
+```json
+{
+  "packageInfo": {
+    "certification": {
+      "status": "uncertified"
+    }
+  }
+}
+```
+
+Sample Request Body to modify certification status on target environment:
+
+```json
+{
+  "packageInfo": {
+    "certification": {
+      "status": "certified",
+      "operator": {
+        "id": "xxx",
+        "name": "xx",
+        "fullName": "xxx"
+      },
+      "lastUpdatedDate": "2022-03-30T19:54:27.205+0000"
+    }
+  }
+}
+```
+
+Sample Request to trigger a certification state sync process in the backend
+
+```json
+{}
+```
+
+Query parameter : autosync=true
+
+### Response
+
+When the API call is successful, it returns response code `204` with no response body.
+
 ## Edit migration groups
 
 ### 1. Get migration group content
@@ -915,6 +1034,103 @@ Sample Response Body:
   "version": "1"
 }
 ```
+
+### Step 4: Modify the certifications state in the source and target environment
+
+Endpoint: [PATCH /api/migrationGroups/{migrationGroupId}/certification](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/certifyMigrationGroup)
+
+This endpoint can be used to update a migration group's certification status or trigger a process to syncronize the status. If query parameter 'autoSync' is true, the migration group's certification status is synchronized with shared environment via storage service. The request body is ignored. Otherwise, the certification status is updated with the definition of request body.
+
+#### Request Headers
+
+| Name               | Type   | Description         |
+| ------------------ | ------ | ------------------- |
+| `X-MSTR-AuthToken` | Header | Authorization token |
+
+#### Request Parameters
+
+| Name             | Located in | Description                 | Required | Type    |
+| ---------------- | ---------- | --------------------------- | -------- | ------- |
+| migrationGroupId | Path       | Migration Group ID          | Yes      | string  |
+| autoSync         | query      | Trigger certification state | No       | boolean |
+
+Sample Request Header:
+
+```http
+"Content-Type": "application/json"
+"X-MSTR-AuthToken": "ns42kvi9lb36ae7g3scphn0ga9"  // auth token from Authentication response.
+"prefer": "respond-async"
+```
+
+### Request Body
+
+Sample Request Body for requesting certification:
+
+```json
+{
+  "status": "requested"
+}
+```
+
+Sample Request Body for reverting certification:
+
+```json
+{
+  "status": "uncertified"
+}
+```
+
+Sample Request Body for approving certification:
+
+```json
+{
+  "status": "certified"
+}
+```
+
+Sample Request Body for rejecting certification:
+
+```json
+{
+  "status": "rejected"
+}
+```
+
+Sample Request Body to decertify package:
+
+```json
+{
+  "status": "uncertified"
+}
+```
+
+Sample Request Body to modify certification status on target environment:
+
+```json
+{
+    "certification":{
+        "status": "certifed",
+        "operator": {
+          "id":"xxx",
+          "name":"xx",
+          "fullName":"xxx"
+        }
+        "lastUpdatedDate":"2022-03-30T19:54:27.205+0000"
+    }
+}
+```
+
+Sample Request to trigger a certification state sync process in the backend
+
+```json
+{}
+```
+
+Query parameter : autosync=true
+
+### Response
+
+When the API call is successful, it returns response code `204` with no response body.
 
 ## Performance
 
