@@ -576,6 +576,20 @@ const sidebars = {
               type: "category",
               link: {
                 type: "doc",
+                id: "common-workflows/modeling/manage-dossier-themes/manage-dossier-themes",
+              },
+              label: "Manage dossier themes",
+              items: [
+                "common-workflows/modeling/manage-dossier-themes/dossier-theme-instance-creation",
+                "common-workflows/modeling/manage-dossier-themes/save-dossier-themes",
+                "common-workflows/modeling/manage-dossier-themes/get-dossier-theme-json",
+                "common-workflows/modeling/manage-dossier-themes/apply-dossier-theme",
+              ],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
                 id: "common-workflows/modeling/manage-drill-maps/manage-drill-maps",
               },
               label: "Manage drill maps",
@@ -811,6 +825,23 @@ const sidebars = {
                 },
                 "common-workflows/administration/monitors/monitor-and-manage-cube-caches",
                 "common-workflows/administration/monitors/project-administration",
+              ],
+            },
+            {
+              type: "category",
+              label: "History list",
+              items: [
+                {
+                  type: "category",
+                  link: {
+                    type: "doc",
+                    id: "common-workflows/administration/manage-history-lists/manage-history-lists",
+                  },
+                  label: "Manage History Lists",
+                  items: [
+                    "common-workflows/administration/manage-history-lists/get-history-list/get-history-list",
+                  ],
+                },
               ],
             },
             {

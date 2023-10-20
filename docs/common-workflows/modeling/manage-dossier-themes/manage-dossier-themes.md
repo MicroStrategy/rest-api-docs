@@ -16,4 +16,4 @@ Dossier theme is used to define dossier presentation styles. Once a theme is app
 - [Create a dossier theme instance](dossier-theme-instance-creation.md)
 - [Save dossier themes](save-dossier-themes)
 - [Get dossier theme json](get-dossier-theme-json)
-- [Apply dossier theme](apply-dossier-themes)
+- [Apply dossier theme](apply-dossier-theme)
