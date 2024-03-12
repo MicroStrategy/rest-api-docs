@@ -34,10 +34,13 @@ Sample Curl:
 
 ```bash
 curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/bots/6C6D314E4C881C01BFD79084DD5B2D42/instances/5B1EB48585F04384A97F3D831D7C7416/suggestions' \
-  -X 'POST'
-  -H 'accept: */*' \
-  -H 'X-MSTR-AuthToken: evvk84kcucn8abon6c1qfbud7' \
-  -H 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754'
+-X 'POST'
+--header 'X-MSTR-AuthToken: t40ltbk411923ipk85r8r0tace' \
+--header 'X-MSTR-ProjectID: FCC1924411EAABC39C6C0080EFA54501' \
+--header 'Content-Type: application/json' \
+--data '{
+    "count": 4
+}'
 ```
 
 Sample Response:

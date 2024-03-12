@@ -45,7 +45,8 @@ Sample Response:
 
 | Response Code | Status                                      |
 | ------------- | ------------------------------------------- |
-| 200           | Successfully return the bot question        |
+| 200           | Successfully return the bot question that has been answered          |
+| 202           | Successfully return the bot question this is still being processed   |
 | 400           | Error in getting the bot question           |
 | 401           | Authorization failed                        |
 | 404           | Bot or bot question does not exist          |
@@ -54,7 +55,7 @@ Sample Response Body on success:
 
 The response is the question in a chat bot.
 
-If the question is being process, the answers list is empty:
+If the question is being process, the answers list is empty and the response HTTP status is 202 Accepted. You should keep calling this API to check the status of the question.
 
 ```json
 {

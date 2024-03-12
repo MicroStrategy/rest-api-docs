@@ -37,9 +37,10 @@ curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/bots/6C6D314E4C881
 -X 'POST' \
 --header 'X-MSTR-AuthToken: t40ltbk411923ipk85r8r0tace' \
 --header 'X-MSTR-ProjectID: FCC1924411EAABC39C6C0080EFA54501' \
+--header 'Prefer: respond-async' \
 --header 'Content-Type: application/json' \
 --data '{
-    "count": 4
+    "text": "What is the average revenue for year 2023"
 }'
 ```
 
