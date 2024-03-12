@@ -7,6 +7,7 @@ Description: What's New in the REST API.
 ## 2024 Update 3
 
 - Rename 'dossier' into 'dashboard'.
+- [Use MicroStrategy Bot APIs](common-workflows/analytics/use-bot-api/use-bot-api.md)
 
 ## 2021 Update 11
 
