@@ -375,12 +375,12 @@ You can create an instance of a report, cube, or dashboard and retrieve the data
 - [Create an instance](#create-an-instance)
   - [Create report instance](#create-a-report-instance) `POST /api/reports/{reportId}/instances`
   - [Create cube instance](#create-a-cube-instance) `POST /api/cubes/{cubeId}/instances`
-  - [Create dossier instance](#create-a-dossier-instance) `POST /api/dossiers/{dossierId}/instances`
+  - [Create dossier instance](#create-a-dashboard-instance) `POST /api/dossiers/{dossierId}/instances`
 - [Get the data](#get-the-data)
 
   - [Get report data](#get-report-data) `GET /api/reports/{reportId}/instances/{instanceId}`
   - [Get cube data](#get-cube-data) `GET /api/cubes/{cubeId}/instances/{instanceId}`
-  - [Get dossier data (specific visualization)](#get-dossier-data-specific-visualization) `GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizationKey}`
+  - [Get dossier data (specific visualization)](#get-dashboard-data-specific-visualization) `GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizationKey}`
 
   The workflow for retrieving the definition and results is not sequential; they are two unrelated actions. It is not necessary to retrieve the definition in order to get the results.
 

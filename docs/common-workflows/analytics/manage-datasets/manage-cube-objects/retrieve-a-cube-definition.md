@@ -200,7 +200,7 @@ If `showFilterTokens` is omitted or false, only `text` and `tree` formats are re
 
 If `showFilterTokens` is true, all `text`, `tree`, and `tokens` formats are returned.
 
-This workflow sample is similar to [Retrieve a cube’s definition](#retrieve-a-cubes-definition-new-in-2021-update-4), except with `showFilterTokens=true`.
+This workflow sample is similar to [Retrieve a cube’s definition](#retrieve-a-cubes-definition), except with `showFilterTokens=true`.
 
 Sample Request Header:
 
@@ -392,7 +392,7 @@ If `showFilterTokens` is omitted or false, only `text` and `tree` formats are re
 
 If `showFilterTokens` is true, all `text`, `tree`, and `tokens` formats are returned.
 
-This workflow is similar to [Retrieve a cube's definition](#retrieve-a-cubes-definition-new-in-2021-update-4), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
+This workflow is similar to [Retrieve a cube's definition](#retrieve-a-cubes-definition), except with `showExpressionAs=tree` and `showExpressionAs=tokens`.
 
 Sample Curl:
 
@@ -752,7 +752,7 @@ This workflow sample demonstrates how to retrieve the definition of a cube with 
 
 You want to get the definition of the Actual vs Forecast Performance Cube cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
-This workflow is similar to [Retrieve a cube definition](#retrieve-a-cubes-definition-new-in-2021-update-4), except with `showAdvancedProperties=true`.
+This workflow is similar to [Retrieve a cube definition](#retrieve-a-cubes-definition), except with `showAdvancedProperties=true`.
 
 Retrieve a cube’s definition using [GET /api/model/cubes/\{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-getCube) with `showAdvancedProperties=true`.
 

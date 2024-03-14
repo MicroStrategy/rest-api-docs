@@ -15,7 +15,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 This workflow demonstrates how to update a prompt's definition through the Modeling service.
 
 1. Create a changeset.
-1. [Update a prompt's definition.](#update-the-prompts-definition-using-put-apimodelpromptspromptid)
+1. [Update a prompt's definition.](#update-the-prompts-definition)
 1. Commit a changeset.
 1. Delete a changeset.
 

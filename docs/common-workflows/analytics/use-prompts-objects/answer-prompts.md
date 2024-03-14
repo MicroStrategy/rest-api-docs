@@ -9,7 +9,7 @@ description: The workflow to answer prompts.
 
 Here is a workflow sample for using REST APIs to answer prompts:
 
-1. [Create an instance of a dossier, document or report](#create-an-instance-of-a-dossier-document-or-report)
+1. [Create an instance of a dossier, document or report](#create-an-instance-of-a-dashboard-document-or-report)
 
    Only the prompt ID, instance ID and prompt status are returned when an instance of a prompted dashboard or document is created; data is not returned. This is different from prompted reports. When an instance of a prompted report is created, the prompt ID, instance ID, prompt status, and data are all returned.
 
