@@ -48,6 +48,8 @@ Make a copy of the template below and modify the `<filter_name>`, `<destination_
 
 <a name="template_file"></a>
 
+## Template file
+
 ```json
 {
   "information": {
@@ -462,7 +464,7 @@ Response Code: 201 (A new security filter is created successfully in the changes
 
 ## More samples
 
-Here are more samples you can use to replace `<custom expression>` in the [template file](#template_file).
+Here are more samples you can use to replace `<custom expression>` in the [template file](#template-file).
 
 ### Escape sequences for full paths
 

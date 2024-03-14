@@ -207,7 +207,7 @@ The [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligen
 
 - The REST API supports [sorting for cubes and reports](common-workflows/analytics/sort-data.md).
 - The JSON Data API supports [fetching data from a visualization inside an existing dashboard](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationResult) which can leverage advanced capabilities, such as the data blending engine and other complex analytics.
-- The Cube API [supports DDA cubes and MDX cubes](getting-started/rest-api-families.md#CubeAPI), in addition to Intelligent cubes.
+- The Cube API [supports DDA cubes and MDX cubes](getting-started/rest-api-families.md), in addition to Intelligent cubes.
 
 ## 10.9
 

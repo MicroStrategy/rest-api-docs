@@ -7,5 +7,5 @@ Description: Manage dashboards using the MicroStrategy REST API.
 
 You can use REST API request to retrieve dashboards and create instances:
 
-- [Fetch a list of dashboards](../filter-data/filter-dossier-instances/apply-filters-to-a-dossier.md#get-a-list-of-dossiers)
+- [Fetch a list of dashboards](../filter-data/filter-dossier-instances/apply-filters-to-a-dossier.md#get-a-list-of-dashboards)
 - [Create dashboard instances](create-instance/create-instance.md)

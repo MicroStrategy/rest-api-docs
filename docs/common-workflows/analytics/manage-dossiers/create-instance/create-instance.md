@@ -23,7 +23,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 ## POST /api/dossiers/instances
 
-Creates a new instances for dashboards. It is similar to [POST /api/dossiers/\{dossierId}/instances](../../filter-data/filter-dossier-instances/apply-filters-to-a-dossier.md#create-a-dossier-instance-with-the-existing-filter-applied) but it does not require a dashboard ID. Instead, it uses the `DashboardCreationInfo` object in the request body to create a new dashboard instance.
+Creates a new instances for dashboards. It is similar to [POST /api/dossiers/\{dossierId}/instances](../../filter-data/filter-dossier-instances/apply-filters-to-a-dossier.md#create-a-dashboard-instance-with-the-existing-filter-applied) but it does not require a dashboard ID. Instead, it uses the `DashboardCreationInfo` object in the request body to create a new dashboard instance.
 
 ### Request URL
 

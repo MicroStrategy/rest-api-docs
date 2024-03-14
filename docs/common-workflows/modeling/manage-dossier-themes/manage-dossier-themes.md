@@ -16,4 +16,4 @@ Dashboard theme is used to define dashboard presentation styles. Once a theme is
 - [Create a dashboard theme instance](dossier-theme-instance-creation.md)
 - [Save dashboard themes](save-dossier-themes)
 - [Get dashboard theme json](get-dossier-theme-json)
-- [Apply dashboard theme](apply-dossier-themes)
+- [Apply dashboard theme](apply-dossier-theme.md)
