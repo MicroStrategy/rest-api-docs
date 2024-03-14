@@ -30,7 +30,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-Update the `"CITY_CTR_SLS"` table's physical table structure using [POST /api/model/tables/{tableId}/physicalTable/refresh](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-refreshPhysicalTable). The object ID of the table is `862780DC499A14D74FEC7EB2EF317DA2`.
+Update the `"CITY_CTR_SLS"` table's physical table structure using [POST /api/model/tables/\{tableId}/physicalTable/refresh](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-refreshPhysicalTable). The object ID of the table is `862780DC499A14D74FEC7EB2EF317DA2`.
 
 If table is missing, table cannot be updated. If the physical table is a free form sql table，it will do nothing. If column is changed, consider following 3 cases.
 

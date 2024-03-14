@@ -18,7 +18,7 @@ This workflow sample demonstrates how to create a new partition mapping table ob
 
 :::info
 
-Get the authorization token needed to execute the request with [POST /api/auth/login](<https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin>.
+Get the authorization token needed to execute the request with [POST /api/auth/login]([https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md).
 

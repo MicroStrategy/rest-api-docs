@@ -186,7 +186,7 @@ In this example, you create a new security role called "NewSecurityRole". You mu
 
 ## Modify a security role
 
-Endpoint: [PATCH /api/securityRoles/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/updatePartialSecurityRole)
+Endpoint: [PATCH /api/securityRoles/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/updatePartialSecurityRole)
 
 - Functionalities are defined in operations.
 - Any invocation of this API is either to perform security role assignments using path "/members", OR privilege update using path "/privileges". It is not allowed to mix two types of operation together.
@@ -512,9 +512,9 @@ Two examples are provided below. In the first example to make security role assi
 
 ## Get information about a specific security role
 
-Endpoint: [GET /api/securityRoles/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/getSecurityRole)
+Endpoint: [GET /api/securityRoles/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/getSecurityRole)
 
-Get information for a specific security role using the security role id. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You specify security role ID in the path of the request, then you can obtain the security role information about its base info(such as name, id and type), assigned privileges and assigned <project, members> relations info about assigning this created security role to user/userGroup in specified project.
+Get information for a specific security role using the security role id. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You specify security role ID in the path of the request, then you can obtain the security role information about its base info(such as name, id and type), assigned privileges and assigned \<project, members> relations info about assigning this created security role to user/userGroup in specified project.
 
 ### Sample request
 
@@ -641,7 +641,7 @@ Get information for a specific security role using the security role id. You obt
 
 ## Delete a security role
 
-Endpoint: [DELETE /api/securityRoles/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/deleteSecurityRole)
+Endpoint: [DELETE /api/securityRoles/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Roles/deleteSecurityRole)
 
 Delete info for a security role with given Id. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You delete the security role using `Delete /api/securityRoles/{id}`.
 

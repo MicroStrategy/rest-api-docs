@@ -190,7 +190,7 @@ Sample Response
 
 ## Assign the user to a user group
 
-Endpoint: [PATCH /api/users/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updatePartialUser)
+Endpoint: [PATCH /api/users/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updatePartialUser)
 
 This endpoint allows the caller to update specific information for a specific user. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the user by specifying the user ID in the path of the request; you obtain the user ID while creating a new user using `POST /api/users` (as you did in the previous step) or using `GET /api/users` for previously created users. You specify the type of update operation (add, replace or remove), provide the value to be used in the update operation, and specify the path to the target where the update operation will be performed, in the body parameter of the request.
 
@@ -277,7 +277,7 @@ Sample Response
 
 ## Create an email address for the new user
 
-Endpoint: [POST /api/users/{id}/addresses](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createNewAddress)
+Endpoint: [POST /api/users/\{id}/addresses](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createNewAddress)
 
 This endpoint allows the caller to create an email address for a user. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the user by specifying the user ID in the path of the request; you obtain the user ID while creating a new user using `POST /api/users` (as you did in a previous step) or using `GET /api/users` for previously created users. You provide the information used to create an email address for the new user in the body parameter of the request—including the email address, the user-specified name for the address, the type of email, and whether this is the default email address for the user.
 

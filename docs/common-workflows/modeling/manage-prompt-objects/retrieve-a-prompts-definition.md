@@ -34,7 +34,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 ## Get the prompt's definition within the changeset
 
-Use [GET /api/model/prompts/{PromptID}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-getPromptDetails).
+Use [GET /api/model/prompts/\{PromptID}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-getPromptDetails).
 
 Sample Request Header:
 

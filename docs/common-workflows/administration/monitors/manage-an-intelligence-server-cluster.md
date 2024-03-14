@@ -81,7 +81,7 @@ This operation requires the "Monitor cluster" privilege.
 
 ## Add a node
 
-Endpoint: [PUT /api/monitors/iServer/nodes/{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/addServerClusterMember)
+Endpoint: [PUT /api/monitors/iServer/nodes/\{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/addServerClusterMember)
 
 Add a node to the connected Intelligence Server cluster.
 
@@ -109,7 +109,7 @@ In case of complicated network configuration, it's recommended to provide a host
 
 ## Remove a node
 
-Endpoint: [DELETE /api/monitors/iServer/nodes/{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/removeServerClusterMember)
+Endpoint: [DELETE /api/monitors/iServer/nodes/\{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/removeServerClusterMember)
 
 Remove a node from the connected Intelligence Server cluster.
 
@@ -137,7 +137,7 @@ Use the exact name returned by `GET /api/monitors/iServer/nodes`
 
 ## Cluster startup membership
 
-The endpoints: [PUT /api/monitors/iServer/nodes/{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/addServerClusterMember) and [DELETE /api/monitors/iServer/nodes/{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/removeServerClusterMember) allow to add or remove a node from a working cluster. The changes introduced by the endpoints aren't permanent. When a cluster is being restarted the cluster setup will be restored to the cluster startup membership configuration from metadata. In order to display the configuration, you can use a following endpoint: [GET /api/iserver/clusterStartupMembership](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getClusterStartupMembership)
+The endpoints: [PUT /api/monitors/iServer/nodes/\{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/addServerClusterMember) and [DELETE /api/monitors/iServer/nodes/\{name}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/removeServerClusterMember) allow to add or remove a node from a working cluster. The changes introduced by the endpoints aren't permanent. When a cluster is being restarted the cluster setup will be restored to the cluster startup membership configuration from metadata. In order to display the configuration, you can use a following endpoint: [GET /api/iserver/clusterStartupMembership](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getClusterStartupMembership)
 
 This operation requires "Cluster Administration" privilege.
 

@@ -16,7 +16,7 @@ Obtain the gateway ID needed to execute the request using [GET /api/gateways](ht
 
 :::
 
-## Retrieve a gateway's definition [GET /api/gateways/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Gateways/getGatewayById)
+## Retrieve a gateway's definition [GET /api/gateways/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Gateways/getGatewayById)
 
 Sample Request Header:
 

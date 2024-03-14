@@ -15,7 +15,7 @@ Get the authorization token needed to execute the request with [POST /api/auth/l
 
 :::
 
-Endpoint: [GET /api/contentGroups/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/getContentGroup)
+Endpoint: [GET /api/contentGroups/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/getContentGroup)
 
 Sample Request Header:
 

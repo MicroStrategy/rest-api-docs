@@ -40,7 +40,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Get a filter definition within a changeset
 
-Endpoint: [GET /api/model/filters/{filterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters/ms-getFilterDetails)
+Endpoint: [GET /api/model/filters/\{filterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters/ms-getFilterDetails)
 
 Sample Request Header:
 

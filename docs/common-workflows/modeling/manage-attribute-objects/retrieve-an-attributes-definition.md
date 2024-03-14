@@ -28,7 +28,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the attribute's definition using [GET /api/model/attributes/{attributeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Attributes/ms-getAttributeDetails).
+Retrieve the attribute's definition using [GET /api/model/attributes/\{attributeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Attributes/ms-getAttributeDetails).
 
 Sample Request Header:
 

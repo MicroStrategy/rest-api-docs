@@ -42,7 +42,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-## Update the metric's definition using [PUT /api/model/subtotals/{subtotalId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subtotals/ms-putSubtotal)
+## Update the metric's definition using [PUT /api/model/subtotals/\{subtotalId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subtotals/ms-putSubtotal)
 
 Sample Request Header:
 

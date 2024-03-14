@@ -27,7 +27,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 By using this workflow, you can quickly get the report’s definition, but you still need to create a report instance to do any further modification.
 
-Endpoint: [GET /api/model/reports/{reportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-getReport)
+Endpoint: [GET /api/model/reports/\{reportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-getReport)
 
 Sample Request Header:
 
@@ -206,7 +206,7 @@ A report instance is required for getting, creating, updating, deleting derived 
 
 ### 1. Create a report instance
 
-Endpoint: [POST /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
+Endpoint: [POST /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
 
 Sample Request Header:
 
@@ -236,7 +236,7 @@ Sample Response Code: 201 (A new report instance is created successfully.)
 
 ### 2. Get a report's definition within the instance
 
-Endpoint: [GET /api/model/reports/{reportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-getReport)
+Endpoint: [GET /api/model/reports/\{reportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-getReport)
 
 Sample Request Header:
 
@@ -417,7 +417,7 @@ Response Code: 200 (The report's definition is returned successfully.)
 
 ### 3. Delete report instance
 
-Endpoint: [DELETE /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
+Endpoint: [DELETE /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
 
 Sample Request Header:
 

@@ -36,7 +36,7 @@ The response can change based on the request parameters provided by the caller. 
 
 ## Retrieve a datamart definition
 
-Retrieve the datamart definition using [GET /api/model/datamarts/{datamartId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-getDatamart).
+Retrieve the datamart definition using [GET /api/model/datamarts/\{datamartId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-getDatamart).
 
 Sample Curl:
 
@@ -444,7 +444,7 @@ If `showExpressionAs` is `tree`, the expression is returned in "text" and "tree"
 
 If `showExpressionAs` is `tokens`, the expression is returned in "text" and "tokens" formats.
 
-Get the datamart filter definition with its inline custom expression in tree and tokens format. This workflow is similar to Retrieve a Datamart's Definition, except with showExpressionAs=tokens using GET /api/model/datamarts/{datamartId}.
+Get the datamart filter definition with its inline custom expression in tree and tokens format. This workflow is similar to Retrieve a Datamart's Definition, except with showExpressionAs=tokens using GET /api/model/datamarts/\{datamartId}.
 
 Sample Curl:
 
@@ -685,7 +685,7 @@ Response Code: 200 (The datamart definition is returned successfully.)
 
 This workflow sample demonstrates how to retrieve the definition of a datamart with advanced properties through the Modeling service.
 
-This workflow is similar to Retrieve a Datamart Definition, except with showAdvancedProperties=true using GET /api/model/datamarts/{datamartId}.
+This workflow is similar to Retrieve a Datamart Definition, except with showAdvancedProperties=true using GET /api/model/datamarts/\{datamartId}.
 
 If `showAdvancedProperties` is omitted or false, the advanced properties are not returned.
 

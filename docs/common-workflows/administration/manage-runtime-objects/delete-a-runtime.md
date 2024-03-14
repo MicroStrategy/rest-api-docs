@@ -18,7 +18,7 @@ Get the authorization token needed to execute the request with [POST /api/auth/l
 
 ## Workflow
 
-### Delete an existing runtime using [DELETE /api/runtimes/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Runtimes/deleteScriptRuntime)
+### Delete an existing runtime using [DELETE /api/runtimes/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Runtimes/deleteScriptRuntime)
 
 In this step, you are deleting the runtime with ID `E6C5BF4C483FF06313BEE19EAD39978B`.
 

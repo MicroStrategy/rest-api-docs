@@ -40,7 +40,7 @@ The [DssXmlPrivilegesWebReportSQL](https://www2.microstrategy.com/producthelp/Cu
 
 ## Create a report instance
 
-Use [POST /api/v2/reports/{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance_1)
+Use [POST /api/v2/reports/\{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance_1)
 
 To retrieve the SQL statement of a report or card, it is _not_ necessary to execute the report to retrieve data. If you don’t want to execute the report, thereby reducing the wait time for report instance creation, pass the `“resolve_prompts”` value for the `“executionStage”` query parameter.
 

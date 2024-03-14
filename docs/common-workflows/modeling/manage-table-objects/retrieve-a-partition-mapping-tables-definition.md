@@ -36,7 +36,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 Use this workflow sample to get the definition of a WHPM table. The object ID of the table is `569A89E78FA1455687F4E327B259B3FB`. The table is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
-Get the table's definition with [GET /api/model/tables/{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
+Get the table's definition with [GET /api/model/tables/\{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
 
 Sample Request Header
 
@@ -247,7 +247,7 @@ Response Code: 200 (The WHPM table's definition is returned successfully.)
 
 Use this workflow sample to get the definition of an MDPM table. The object ID of the table is `473718A30DA84A9A814424537879778F`. The table is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`. The API usage is the same as retrieving a WHPM table. Unlike all other tables, you can use "showExpressionAs" and "showFilterTokens" to customize partition filter representation.
 
-Get the table's definition with [GET /api/model/tables/{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
+Get the table's definition with [GET /api/model/tables/\{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
 
 Sample Request Header
 

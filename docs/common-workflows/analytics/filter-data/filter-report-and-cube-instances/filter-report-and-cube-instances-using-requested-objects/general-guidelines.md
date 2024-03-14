@@ -7,6 +7,6 @@ When you use `requestedObjects` to limit the data returned in a report or cube i
 
 - If the body specifies valid attributes and metrics, they are returned and they are aggregated.
 - If the body is null or {}, all attributes and metrics are added to the template.
-- If the body is {"requestedObjects":{}}, no attributes or metrics are added to the template.
+- If the body is \{"requestedObjects":{}}, no attributes or metrics are added to the template.
 - If the attributes array is null or empty, no attributes are added.
 - If the metrics array is null or empty, no metrics are added.

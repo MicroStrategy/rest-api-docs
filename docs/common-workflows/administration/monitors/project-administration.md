@@ -164,7 +164,7 @@ To apply a filter on project id and node name, you can use the filter option of 
 
 ## Update properties for a specific project
 
-Endpoint: [PATCH /api/monitors/iServer/nodes/{nodeName}/projects/{projectId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/updateProjectStatus)
+Endpoint: [PATCH /api/monitors/iServer/nodes/\{nodeName}/projects/\{projectId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/updateProjectStatus)
 
 :::info
 

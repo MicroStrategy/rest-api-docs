@@ -26,7 +26,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the attribute's relationships using [GET /api/model/systemHierarchy/attributes/{attributeId}/relationships](<https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System> Hierarchy/ms-getAttributeRelationships).
+Retrieve the attribute's relationships using [GET /api/model/systemHierarchy/attributes/\{attributeId}/relationships]([https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System) Hierarchy/ms-getAttributeRelationships).
 
 Sample Request Header:
 

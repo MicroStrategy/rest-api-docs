@@ -19,7 +19,7 @@ Obtain the authorization token needed to execute the request using [POST /api/a
 
 ## Get the detailed information of a specific fence
 
-Endpoint: [GET /api/v2/iserver/fences/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getFence_1).
+Endpoint: [GET /api/v2/iserver/fences/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/getFence_1).
 
 Sample Request Header:
 

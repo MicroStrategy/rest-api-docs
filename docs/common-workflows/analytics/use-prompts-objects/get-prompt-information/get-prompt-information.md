@@ -4,7 +4,7 @@ title: Get prompt information
 
 <Available since="2021 Update 1" />
 
-You can use REST APIs to get information about five supported types of prompts applied to dossiers, documents, and reports. You can get a list of the prompts that have been applied to a dossier, document or report, together with the definition of each prompt.
+You can use REST APIs to get information about five supported types of prompts applied to dashboards, documents, and reports. You can get a list of the prompts that have been applied to a dashboard, document or report, together with the definition of each prompt.
 
 The prompts supported in the MicroStrategy platform are defined in EnumDSSXMLPromptType.
 

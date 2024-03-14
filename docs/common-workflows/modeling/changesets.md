@@ -423,7 +423,7 @@ Response Code: 201 (A new attribute is created successfully in the changeset.)
 
 ### Commit a changeset
 
-Use [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
+Use [POST /api/model/changesets/\{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset).
 
 Sample Request Header:
 
@@ -499,7 +499,7 @@ Sample Response Code: 200 (The schema reload (synchronous call) executes success
 
 ### Delete the changeset
 
-Use [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
+Use [DELETE /api/model/changesets/\{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset).
 
 Sample Request Header
 

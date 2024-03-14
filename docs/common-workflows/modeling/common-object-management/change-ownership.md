@@ -16,7 +16,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow sample demonstrates how to retrieve the list of objects owned by a specific user and transfer the specific object's ownership along with the access rights to a new user.
 
-You want to get a list of dossier objects owned by "MSTR User" with ID "7FC05A65473CE2FD845CE6A1D3F13233" and transfer the ownership along with the access rights over the Landing Page dossier with ID "66366F0E11EA112A1A9C0080EF8568D5" to the user "Allister Lewandowski" with ID "E96A7B9311D4BBCE10004694316DE8A4".
+You want to get a list of dashboard objects owned by "MSTR User" with ID "7FC05A65473CE2FD845CE6A1D3F13233" and transfer the ownership along with the access rights over the Landing Page dashboard with ID "66366F0E11EA112A1A9C0080EF8568D5" to the user "Allister Lewandowski" with ID "E96A7B9311D4BBCE10004694316DE8A4".
 
 :::info
 

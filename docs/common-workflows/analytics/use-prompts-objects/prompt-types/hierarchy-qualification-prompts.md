@@ -17,24 +17,24 @@ Use REST APIs to perform the following actions on hierarchy qualification prompt
 
 ## Get information about a hierarchy qualification prompt
 
-Use the following REST API endpoints to get information about hierarchy qualification prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
+Use the following REST API endpoints to get information about hierarchy qualification prompts applied to dashboard, document, and report objects in the metadata, as well as instances of those objects:
 
 - GET `/api/documents/{id}/prompts`
 - GET `/api/documents/{id}/instances/{instanceId}/prompts`
 - GET `/api/reports/{reportId}/prompts`
 - GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
 
-Provide the ID of the document, dossier, or report in the path of the request. In addition, you need to supply the instance ID if you are getting information about a prompt applied to an instance of a document, dossier, or report. The response contains the prompt information. All available parameters for the prompt definition are shown below.
+Provide the ID of the document, dashboard, or report in the path of the request. In addition, you need to supply the instance ID if you are getting information about a prompt applied to an instance of a document, dashboard, or report. The response contains the prompt information. All available parameters for the prompt definition are shown below.
 
-| Name     | Description                                                                                                                                          | Data Type |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| id       | The ID of the prompt                                                                                                                                 | string    |
-| key      | The unique key of the prompt. Including the key helps avoid issues when the same prompt is present multiple times on a dossier, document, or report. | string    |
-| name     | The name of the prompt                                                                                                                               | string    |
-| title    | The title of the prompt                                                                                                                              | string    |
-| type     | The type of prompt; Enum: [ VALUE, ELEMENTS, EXPRESSION, OBJECTS, LEVEL ]                                                                            | string    |
-| required | An indicator that specifies if a prompt is required                                                                                                  | boolean   |
-| closed   | An indicator that specifies if a prompt is closed                                                                                                    | boolean   |
+| Name     | Description                                                                                                                                            | Data Type |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
+| id       | The ID of the prompt                                                                                                                                   | string    |
+| key      | The unique key of the prompt. Including the key helps avoid issues when the same prompt is present multiple times on a dashboard, document, or report. | string    |
+| name     | The name of the prompt                                                                                                                                 | string    |
+| title    | The title of the prompt                                                                                                                                | string    |
+| type     | The type of prompt; Enum: [ VALUE, ELEMENTS, EXPRESSION, OBJECTS, LEVEL ]                                                                              | string    |
+| required | An indicator that specifies if a prompt is required                                                                                                    | boolean   |
+| closed   | An indicator that specifies if a prompt is closed                                                                                                      | boolean   |
 
 The sample code below contains a hierarchy qualification prompt definition.
 
@@ -173,7 +173,7 @@ The sample code below contains the definition of the attributes of a hierarchy.
 
 ## Answer a hierarchy qualification prompt
 
-Use the following REST API endpoints to answer a hierarchy qualification prompt applied to a dossier, document, or report:
+Use the following REST API endpoints to answer a hierarchy qualification prompt applied to a dashboard, document, or report:
 
 - PUT `/api/reports/{id}/instances/{instanceId}/prompts/answers`
 - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
@@ -184,13 +184,13 @@ You provide answers to a hierarchy qualification prompt in the body parameter of
 
 All available parameters for the prompt answer are shown below.
 
-| Name       | Description                                                                                                                                          | Data Type | Required? |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------- |
-| key        | The unique key of the prompt. Including the key helps avoid issues when the same prompt is present multiple times on a dossier, document, or report. | string    |           |
-| id         | The object ID of the prompt                                                                                                                          | string    |           |
-| name       | The name of the prompt                                                                                                                               | string    |           |
-| type       | The type of prompt; Enum: [ VALUE, ELEMENTS, EXPRESSION, OBJECTS, LEVEL ]                                                                            | string    | yes       |
-| useDefault | An indicator that specifies if the default answer should be used. If this is set to true, the values are ignored.                                    | boolean   |           |
+| Name       | Description                                                                                                                                            | Data Type | Required? |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | --------- |
+| key        | The unique key of the prompt. Including the key helps avoid issues when the same prompt is present multiple times on a dashboard, document, or report. | string    |           |
+| id         | The object ID of the prompt                                                                                                                            | string    |           |
+| name       | The name of the prompt                                                                                                                                 | string    |           |
+| type       | The type of prompt; Enum: [ VALUE, ELEMENTS, EXPRESSION, OBJECTS, LEVEL ]                                                                              | string    | yes       |
+| useDefault | An indicator that specifies if the default answer should be used. If this is set to true, the values are ignored.                                      | boolean   |           |
 
 The sample code below answers an attribute qualification prompt.
 

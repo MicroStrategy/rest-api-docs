@@ -27,7 +27,7 @@ You can obtain the datasource ID from searching for the datasource by name with 
 
 :::
 
-Endpoint: [DELETE /api/datasources/{datasourceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/deleteDatasource)
+Endpoint: [DELETE /api/datasources/\{datasourceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/deleteDatasource)
 
 Sample Request Header:
 
@@ -58,7 +58,7 @@ You can obtain the connection ID from searching for datasource connections with 
 
 :::
 
-Endpoint: [DELETE /api/datasources/connections/{connectionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/deleteDatabaseConnectionById)
+Endpoint: [DELETE /api/datasources/connections/\{connectionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/deleteDatabaseConnectionById)
 
 Sample Request Header:
 
@@ -89,7 +89,7 @@ You can obtain the login ID from viewing datasource logins with the endpoint `GE
 
 :::
 
-Endpoint: [DELETE /api/datasources/{datasourceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/deleteDatasource)
+Endpoint: [DELETE /api/datasources/\{datasourceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/deleteDatasource)
 
 Sample Request Header:
 

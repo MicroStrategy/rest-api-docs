@@ -35,7 +35,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the filter's definition using [GET /api/model/filters/{filterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters/ms-getFilterDetails).
+Retrieve the filter's definition using [GET /api/model/filters/\{filterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Filters/ms-getFilterDetails).
 
 Sample Request Header:
 

@@ -326,7 +326,7 @@ Sample code for creating a long prompt's definition is shown below.
 
 ## Update an existing prompt
 
-1. Update the definition of an object prompt using [PUT /api/model/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
+1. Update the definition of an object prompt using [PUT /api/model/prompts/\{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
 1. Provide the following headers in the request:
 
    | Location | Name                | Description             |

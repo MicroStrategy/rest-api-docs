@@ -28,7 +28,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the drill map’s definition using [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drill%20Maps/ms-getDrillMap).
+Retrieve the drill map’s definition using [GET /api/model/drillMaps/\{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drill%20Maps/ms-getDrillMap).
 
 ### Sample request header
 
@@ -183,7 +183,7 @@ You can view the drill map definition in the body of the response.
 
 :::info
 
-Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableList) to create a new drill map or update a drill map definition, you should associate all requests with one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of [GET /api/model/drillMaps/\{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableList) to create a new drill map or update a drill map definition, you should associate all requests with one changeset.
 
 :::
 
@@ -197,7 +197,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-### Get the drill map definition within the changeset using [GET /api/model/drillMaps/{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drill%20Maps/ms-getDrillMap)
+### Get the drill map definition within the changeset using [GET /api/model/drillMaps/\{drillMapId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drill%20Maps/ms-getDrillMap)
 
 Sample Request Header:
 

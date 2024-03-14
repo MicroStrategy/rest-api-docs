@@ -85,7 +85,7 @@ A 201 status code means a new resource was created as a result. You typically ca
 
 A 202 status code means the request has been received but not yet acted upon. It is used for asynchronous execution requests. You typically will get an ID that you can use a different API to fetch the result or check the status of the execution. We only support asynchronous execution on requests that might take a long time to execute. When it is supported, a request header "Prefer" with the value "respond-async" can be used. Please check the [REST API docs](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html) for examples.
 
-- For creating an instance of report, document, cube, and dossier, you can use the instance ID to fetch the status and get the result.
+- For creating an instance of report, document, cube, and dashboard, you can use the instance ID to fetch the status and get the result.
 - For reloading schema, you will get a task ID.
 - For exporting to PDF, you will get a result ID.
 

@@ -17,24 +17,24 @@ Use REST APIs to perform the following actions on level prompts:
 
 ## Answer a level prompt
 
-Use the following REST APIs to answer a level prompt for a report, document, or dossier:
+Use the following REST APIs to answer a level prompt for a report, document, or dashboard:
 
 - Reports
 
   PUT `/api/reports/{id}/instances/{instanceId}/prompts/answers`
 
-- Documents or Dossiers
+- Documents or Dashboards
 
   PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
 All available parameters for the prompt definition are shown below.
 
-| Location | Name             | Description                                | Data Type | Required? |
-| -------- | ---------------- | ------------------------------------------ | --------- | --------- |
-| header   | X-MSTR-AuthToken | The authorization token                    | string    | yes       |
-| header   | project id       | The ID of the project                      | string    | yes       |
-| query    | id               | The ID of the report, document, or dossier | string    | yes       |
-| query    | instance id      | The ID of the instance                     | string    | yes       |
+| Location | Name             | Description                                  | Data Type | Required? |
+| -------- | ---------------- | -------------------------------------------- | --------- | --------- |
+| header   | X-MSTR-AuthToken | The authorization token                      | string    | yes       |
+| header   | project id       | The ID of the project                        | string    | yes       |
+| query    | id               | The ID of the report, document, or dashboard | string    | yes       |
+| query    | instance id      | The ID of the instance                       | string    | yes       |
 
 The sample code below answers a level prompt.
 
@@ -64,13 +64,13 @@ The sample code below answers a level prompt.
 
 ## Get the level prompt's available answers
 
-Use the following REST APIs to get a level prompt's available answers for a report, document, or dossier:
+Use the following REST APIs to get a level prompt's available answers for a report, document, or dashboard:
 
 - Reports
 
   GET `/api/reports/{id}/instances/{instanceId}/prompts/{id}/objects`
 
-- Documents or Dossiers
+- Documents or Dashboards
 
   GET `/api/documents/{id}/instances/{instanceId}/prompts/{id}/objects`
 
@@ -109,7 +109,7 @@ The sample code below gets the level prompt's available answers.
 
 ## Get the level prompt's definition
 
-Use the following REST APIs to get a the level prompt's definition for a report, document, or dossier:
+Use the following REST APIs to get a the level prompt's definition for a report, document, or dashboard:
 
 - Reports
 
@@ -117,7 +117,7 @@ Use the following REST APIs to get a the level prompt's definition for a report,
 
   GET `/api/reports/{id}/instances/{instanceId}/prompts`
 
-- Documents or Dossiers
+- Documents or Dashboards
 
   GET `/api/documents/{id}/prompts`
 
@@ -129,7 +129,7 @@ All available parameters for getting the level prompt's definition are shown bel
 | -------- | ---------------- | ----------------------------------------------------------------------------------------- | --------- | --------- |
 | header   | X-MSTR-AuthToken | The authorization token.                                                                  | string    | yes       |
 | header   | project id       | The project ID.                                                                           | string    | yes       |
-| query    | id               | The ID of the report, document, or dossier.                                               | string    | yes       |
+| query    | id               | The ID of the report, document, or dashboard.                                             | string    | yes       |
 | query    | instance id      | The ID of the instance.                                                                   | string    | yes       |
 | query    | closed           | Filter the closed field by this parameter. If this value is null the filter does nothing. | boolean   |           |
 

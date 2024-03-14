@@ -18,7 +18,7 @@ Get the authorization token needed to execute the request with [POST /api/auth/l
 
 ## Workflow
 
-### Update an existing runtime using [PATCH /api/runtimes/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Runtimes/modifyScriptRuntime)
+### Update an existing runtime using [PATCH /api/runtimes/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Runtimes/modifyScriptRuntime)
 
 In this step, you are modifying the existing runtime's name to `Test Runtime Modified` and modifying the runtime's minCachedInstances to `2`.
 

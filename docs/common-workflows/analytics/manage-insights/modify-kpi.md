@@ -21,7 +21,7 @@ From the response body, get the KPI ID and project ID of the KPI object that you
 
 ## 2. Modify KPI
 
-Endpoint: [PATCH /api/insight/KPIs/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Insight%20Engine%20-%20KPIs/modifyKPI)
+Endpoint: [PATCH /api/insight/KPIs/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Insight%20Engine%20-%20KPIs/modifyKPI)
 
 Sample Request Header:
 

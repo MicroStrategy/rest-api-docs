@@ -25,7 +25,7 @@ Since timezone objects are configuration objects, you must set the project ID as
 
 :::
 
-Get the timezone's definition using [GET /api/model/timezones/{timezoneId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Timezones).
+Get the timezone's definition using [GET /api/model/timezones/\{timezoneId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Timezones).
 
 Sample Request Header:
 
@@ -83,7 +83,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-Get the timezone's definition within a changeset using [GET /api/model/timezones/{timezoneId}](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timezones/862780DC499A14D74FEC7EB2EF317DA2).
+Get the timezone's definition within a changeset using [GET /api/model/timezones/\{timezoneId}](https://demo.microstrategy.com/MicroStrategyLibrary/api/model/timezones/862780DC499A14D74FEC7EB2EF317DA2).
 
 Sample Request Header
 

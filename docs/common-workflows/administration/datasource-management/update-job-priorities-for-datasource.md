@@ -12,7 +12,7 @@ A detailed description of each step of this request is listed down below.
 
 ## Get job prioritization info for a database source
 
-Endpoint: [GET /api/datasources/{datasourceId}/jobPriorities](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/getJobPrioritization)
+Endpoint: [GET /api/datasources/\{datasourceId}/jobPriorities](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/getJobPrioritization)
 
 This endpoint allows the caller to get job prioritization info for a specific database source with the MicroStrategy REST Server. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. You can find the datasourceId using the endpoint `GET /api/datasources`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing info regarding the job priorities for the datasource.
 
@@ -97,7 +97,7 @@ Sample Response
 
 ## Update job prioritization info for a database source
 
-Endpoint: [PATCH /api/datasources/{datasourceId}/jobPriorities](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/updateJobPrioritization)
+Endpoint: [PATCH /api/datasources/\{datasourceId}/jobPriorities](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/updateJobPrioritization)
 
 This endpoint allows the caller to update job prioritization info for a specific database source with the MicroStrategy REST Server. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. You can find the datasourceId using the endpoint `GET /api/datasources`. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a empty response body.
 

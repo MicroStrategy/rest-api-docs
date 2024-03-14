@@ -79,7 +79,7 @@ Response Code: 202 (The schema reload (asynchronous) request is accepted.)
 
 ## Check the status of the schema reload (update)
 
-Use [GET /api/model/tasks/{taskId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Schema/ms-getTask)
+Use [GET /api/model/tasks/\{taskId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Schema/ms-getTask)
 
 Sample Request Header:
 

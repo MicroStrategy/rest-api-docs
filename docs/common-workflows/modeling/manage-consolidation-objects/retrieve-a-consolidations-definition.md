@@ -31,7 +31,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Get the consolidation's definition using [GET /api/model/consolidations/{consolidationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Consolidations/ms-getConsolidation).
+Get the consolidation's definition using [GET /api/model/consolidations/\{consolidationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Consolidations/ms-getConsolidation).
 
 Sample Request Header:
 
@@ -477,7 +477,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-Get the consolidation's definition within a changeset using [GET /api/model/consolidations/{consolidationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Consolidations/ms-getConsolidation).
+Get the consolidation's definition within a changeset using [GET /api/model/consolidations/\{consolidationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Consolidations/ms-getConsolidation).
 
 Sample Request Header
 

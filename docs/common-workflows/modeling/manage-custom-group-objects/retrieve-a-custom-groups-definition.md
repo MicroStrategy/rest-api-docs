@@ -30,7 +30,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the custom group's definition using [GET /api/model/customGroups/{customGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups/ms-getCustomGroupDetails).
+Retrieve the custom group's definition using [GET /api/model/customGroups/\{customGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups/ms-getCustomGroupDetails).
 
 Sample Request Header:
 
@@ -286,7 +286,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the custom group’s definition using [GET /api/model/customGroups/{customGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups/ms-getCustomGroupDetails).
+Retrieve the custom group’s definition using [GET /api/model/customGroups/\{customGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups/ms-getCustomGroupDetails).
 
 Sample Request Header:
 

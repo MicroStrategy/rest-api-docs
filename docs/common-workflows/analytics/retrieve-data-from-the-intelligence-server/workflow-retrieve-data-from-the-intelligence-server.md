@@ -1,7 +1,7 @@
 ---
 title: Retrieve data from the Intelligence Server
 sidebar_label: Retrieve data from the Intelligence Server
-description: You can use REST APIs to retrieve both the definition and data for a report, cube, or dossier from the Intelligence Server (IServer). The workflow for retrieving the definition or the data for a report, cube, or dossier includes the following REST API requests. In this workflow, retrieving the data is not dependent on getting the definition; they are separate actions that can be performed independently.
+description: You can use REST APIs to retrieve both the definition and data for a report, cube, or dashboard from the Intelligence Server (IServer). The workflow for retrieving the definition or the data for a report, cube, or dashboard includes the following REST API requests. In this workflow, retrieving the data is not dependent on getting the definition; they are separate actions that can be performed independently.
 ---
 
 :::tip
@@ -12,22 +12,22 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-You can use REST APIs to retrieve both the definition and data for a report, cube, or dossier from the Intelligence Server (IServer). The workflow for retrieving the definition or the data for a report, cube, or dossier includes the following REST API requests. In this workflow, retrieving the data is not dependent on getting the definition; they are separate actions that can be performed independently.
+You can use REST APIs to retrieve both the definition and data for a report, cube, or dashboard from the Intelligence Server (IServer). The workflow for retrieving the definition or the data for a report, cube, or dashboard includes the following REST API requests. In this workflow, retrieving the data is not dependent on getting the definition; they are separate actions that can be performed independently.
 
 1. [Log in](#log-in) `POST /api/auth/login`
-1. [Retrieve definition from the Intelligence Server](#retrieve-definition-from-the-intelligence-server) You can retrieve the definition of a report or cube—including the metrics and attributes—and the hierarchy of a dossier—including the chapters, pages and visualizations
+1. [Retrieve definition from the Intelligence Server](#retrieve-definition-from-the-intelligence-server) You can retrieve the definition of a report or cube—including the metrics and attributes—and the hierarchy of a dashboard—including the chapters, pages and visualizations
    - Get report definition `GET /api/reports/{reportId}`
    - Get cube definition `GET /api/cubes/{cubeId}`
-   - Get dossier definition `GET /api/dossiers/{dossierId}/definition`
+   - Get dashboard definition `GET /api/dossiers/{dossierId}/definition`
 1. [Retrieve data from the Intelligence Server](#retrieve-data-from-the-intelligence-server) You can create an instance of a report, cube, or dossier and return the results of that instance. You can return all the results of a report or cube instance, but you can return only the results of a specific visualization in a dossier instance.
    1. Create instance
       - Create report instance `POST /api/reports/{reportId}/instances`
       - Create cube instance `POST /api/cubes/{cubeId}/instances`
-      - Create dossier instance `POST /api/dossiers/{dossierId}/instances`
+      - Create dashboard instance `POST /api/dossiers/{dossierId}/instances`
    1. Retrieve data
       - Get report data `GET /api/reports/{reportId}/instances/{instanceId}`
       - Get cube data `GET /api/cubes/{cubeId}/instances/{instanceId}`
-      - Get dossier data (specific visualization) `GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizationKey}`
+      - Get dashboard data (specific visualization) `GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizationKey}`
 1. [Log out](#log-out) `POST /api/auth/logout`
 
 To make it easy for you to try out this workflow in your environment, we have provided [sample code](https://github.com/MicroStrategy/rest-api-samples/tree/master/data-api) that you can download. This sample code is for v1 endpoints. It uses Java and Node.js to retrieve definitions and data, but you can use any language you want. The code shown for each step in the workflow reflects the values used in the sample.
@@ -92,19 +92,19 @@ Response Code: 204 (Success: No Content)
 
 ## Retrieve definition from the Intelligence Server
 
-You can retrieve the definition of a report or cube—including the metrics and attributes—and the hierarchy of a dossier—including the chapters, pages and visualizations.
+You can retrieve the definition of a report or cube—including the metrics and attributes—and the hierarchy of a dashboard—including the chapters, pages and visualizations.
 
 - [Retrieve the definition of a report](#retrieve-the-definition-of-a-report) `GET /api/reports/{reportId}`
 - [Retrieve the definition of a cube](#retrieve-the-definition-of-a-cube) `GET /api/cubes/{cubeId}`
-- [Retrieve the hierarchy of a dossier](#retrieve-the-hierarchy-of-a-dossier) `GET /api/dossiers/{dossierId}/definition`
+- [Retrieve the hierarchy of a dashboard](#retrieve-the-hierarchy-of-a-dashboard) `GET /api/dossiers/{dossierId}/definition`
 
 The workflow for retrieving the definition and results is not sequential; they are two unrelated actions. It is not necessary to retrieve the definition in order to get the results.
 
-A detailed explanation of how to retrieve the definition of a report, cube, or dossier is provided below. The code shown for each endpoint reflects the values used in the [sample code](https://github.com/MicroStrategy/rest-api-samples/tree/master/data-api) that is provided.
+A detailed explanation of how to retrieve the definition of a report, cube, or dashboard is provided below. The code shown for each endpoint reflects the values used in the [sample code](https://github.com/MicroStrategy/rest-api-samples/tree/master/data-api) that is provided.
 
 ### Retrieve the definition of a report
 
-Endpoint: [GET /api/reports/{reportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getDefinition_1)
+Endpoint: [GET /api/reports/\{reportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getDefinition_1)
 
 This endpoint returns the definition for a specific report in a specific project from the MicroStrategy Intelligence Server. The body of the response contains the name and ID for the report and all the attributes and metrics included in the report.
 
@@ -215,7 +215,7 @@ Response Code: 204 (Success: No Content)
 
 ### Retrieve the definition of a cube
 
-Endpoint: [GET /api/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getDefinition)
+Endpoint: [GET /api/cubes/\{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getDefinition)
 
 This endpoint returns the definition for a specific cube in a specific project from the MicroStrategy Intelligence Server. The body of the response contains the name and ID for the cube and all the attributes and metrics included in the cube definition.
 
@@ -307,16 +307,16 @@ You can view all the attributes and metrics in the cube definition in the body o
 
 Response Code: 204 (Success: No Content)
 
-### Retrieve the hierarchy of a dossier
+### Retrieve the hierarchy of a dashboard
 
-Endpoint: [GET /api/dossiers/{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList)
+Endpoint: [GET /api/dossiers/\{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList)
 
-This endpoint returns the hierarchy for a specific dossier in a specific project from the MicroStrategy Intelligence Server. The body of the response contains the chapters, pages, and visualizations in the dossier.
+This endpoint returns the hierarchy for a specific dashboard in a specific project from the MicroStrategy Intelligence Server. The body of the response contains the chapters, pages, and visualizations in the dashboard.
 
 - Identify the project by passing the project ID in the request header.
-- Identify the dossier by passing the dossier ID in the path of the request.
+- Identify the dashboard by passing the dashboard ID in the path of the request.
 
-In the sample provided, you get the hierarchy for the dossier “Dossier of Advanced sort" in the “MicroStrategy Tutorial” project. This dossier has one chapter, one page, and one visualization.
+In the sample provided, you get the hierarchy for the dashboard “Dossier of Advanced sort" in the “MicroStrategy Tutorial” project. This dashboard has one chapter, one page, and one visualization.
 
 ![GET_dossier_hierarchy](../../../images/GET_dossier_hierarchy.png)
 
@@ -338,7 +338,7 @@ curl -X GET --header 'Accept: application/json' --header 'X-MSTR-AuthToken: 66kh
 
 Sample Response Body:
 
-The response body contains information about the hierarchy of the dossier. The results include the chapters, pages in each chapter, and visualizations on each page, as well as the key and name for each chapter, page and visualization. In a subsequent request, you use the chapter key and the visualization key to identify the data that you want to [retrieve from the dossier](#get-dossier-data-specific-visualization).
+The response body contains information about the hierarchy of the dashboard. The results include the chapters, pages in each chapter, and visualizations on each page, as well as the key and name for each chapter, page and visualization. In a subsequent request, you use the chapter key and the visualization key to identify the data that you want to [retrieve from the dashboard](#get-dashboard-data-specific-visualization).
 
 ```json
 {
@@ -370,7 +370,7 @@ Response Code: 204 (Success: No Content)
 
 ## Retrieve data from the Intelligence Server
 
-You can create an instance of a report, cube, or dossier and retrieve the data for that instance. You can get all the data for a report or cube instance, but you can only get the data for a specific visualization in a dossier instance.
+You can create an instance of a report, cube, or dashboard and retrieve the data for that instance. You can get all the data for a report or cube instance, but you can only get the data for a specific visualization in a dashboard instance.
 
 - [Create an instance](#create-an-instance)
   - [Create report instance](#create-a-report-instance) `POST /api/reports/{reportId}/instances`
@@ -384,15 +384,15 @@ You can create an instance of a report, cube, or dossier and retrieve the data f
 
   The workflow for retrieving the definition and results is not sequential; they are two unrelated actions. It is not necessary to retrieve the definition in order to get the results.
 
-  A detailed explanation of how to retrieve the data for a report, cube, or dossier instance that you create is provided below. The code shown for each endpoint reflects the values used in the [sample code](https://github.com/MicroStrategy/rest-api-samples/tree/master/data-api) that is provided.
+  A detailed explanation of how to retrieve the data for a report, cube, or dashboard instance that you create is provided below. The code shown for each endpoint reflects the values used in the [sample code](https://github.com/MicroStrategy/rest-api-samples/tree/master/data-api) that is provided.
 
 ### Create an instance
 
-When you create a report or cube instance using a POST request, the instance ID and the results are returned; you can also use that instance ID in a subsequent GET request to return the results of the execution. When you create a dossier using a POST request, the instance ID is returned, but no results; you must use that instance ID in a GET request to return the data for a specific visualization in that dossier.
+When you create a report or cube instance using a POST request, the instance ID and the results are returned; you can also use that instance ID in a subsequent GET request to return the results of the execution. When you create a dashboard using a POST request, the instance ID is returned, but no results; you must use that instance ID in a GET request to return the data for a specific visualization in that dashboard.
 
 ### Create a report instance
 
-Endpoint: [POST /api/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance)
+Endpoint: [POST /api/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance)
 
 This endpoint creates a new instance of a specific report in a specific project on the MicroStrategy Intelligence Server and returns the results if processing has finished. You can refine the amount of data that is returned using offset and limit parameters in the request and specifying filtering parameters in the body of the request. You can check whether processing has finished by checking the value of status in the body of the request.
 
@@ -659,7 +659,7 @@ Response Code: 204 (Success: OK)
 
 ### Create a cube instance
 
-Endpoint: [POST /api/cubes/{cubeId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/createCubeInstance)
+Endpoint: [POST /api/cubes/\{cubeId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/createCubeInstance)
 
 This endpoint creates a new instance of a specific cube in a specific project on the MicroStrategy Intelligence Server and returns the results if processing has finished. You can refine the amount of data that is returned using offset and limit parameters in the request and specifying filtering parameters in the body of the request. You can check whether processing has finished by checking the value of status in the body of the request.
 
@@ -855,13 +855,13 @@ Sample Response Body:
 
 Response Code: 204 (Success: OK)
 
-### Create a dossier instance
+### Create a dashboard instance
 
-Endpoint: [POST /api/dossiers/{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
+Endpoint: [POST /api/dossiers/\{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
 
-This endpoint allows the caller to create a new instance of a specific dossier in a specific project from the MicroStrategy Intelligence Server. The request body contains linking and bookmark information for the dossier. The body of the response contains the instance ID for the dossier and the status.
+This endpoint allows the caller to create a new instance of a specific dashboard in a specific project from the MicroStrategy Intelligence Server. The request body contains linking and bookmark information for the dashboard. The body of the response contains the instance ID for the dashboard and the status.
 
-In the sample that was provided, you create an instance of the dossier “Dossier for Advanced sort” in the “MicroStrategy Tutorial” project. This dossier has two attributes and two metrics.
+In the sample that was provided, you create an instance of the dashboard “Dossier for Advanced sort” in the “MicroStrategy Tutorial” project. This dashboard has two attributes and two metrics.
 
 ![POST_dossier_instance](../../../images/POST_dossier_instance.png)
 
@@ -898,13 +898,13 @@ To retrieve the results for a report or cube instance, you can use either a POST
 
 Results are returned only if the status indicates that execution is complete. If the status indicates that the execution is not complete, only the instance ID and status are returned.
 
-When you retrieve the results of a report or cube instance using a GET request, all the specified data for the report or cube are returned. (You specify the data to be returned using filters and limit the amount of data the is returned by setting start and end locations for the data.) When you use a GET request to retrieve results from a dossier, you specify a particular visualization in the dossier and only the results of that visualization are returned.
+When you retrieve the results of a report or cube instance using a GET request, all the specified data for the report or cube are returned. (You specify the data to be returned using filters and limit the amount of data the is returned by setting start and end locations for the data.) When you use a GET request to retrieve results from a dashboard, you specify a particular visualization in the dashboard and only the results of that visualization are returned.
 
-For dossiers, you can retrieve only data for a specific visualization in the dossier. To retrieve the data, you must first create an instance of the dossier and then use the keys for the chapter and visualization (found in the results of the instance) to retrieve data for the specified visualization.
+For dashboards, you can retrieve only data for a specific visualization in the dashboard. To retrieve the data, you must first create an instance of the dashboard and then use the keys for the chapter and visualization (found in the results of the instance) to retrieve data for the specified visualization.
 
 ### Get report data
 
-Endpoint: [GET /api/reports/{reportId}/instances/{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/executeReport)
+Endpoint: [GET /api/reports/\{reportId}/instances/\{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/executeReport)
 
 This endpoint gets the data for a specific report instance in a specific project from the MicroStrategy Intelligence Server. The results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
 
@@ -1043,7 +1043,7 @@ Response Code: 204 (Success: OK)
 
 ### Get cube data
 
-Endpoint: [GET /api/cubes/{cubeId}/instances/{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getReport)
+Endpoint: [GET /api/cubes/\{cubeId}/instances/\{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getReport)
 
 This endpoint gets the data for a specific cube instance in a specific project from the MicroStrategy Intelligence Server. The response body contains the cube data; the results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
 
@@ -1231,21 +1231,21 @@ The response body returns the cube data; the results are determined by the condi
 
 Response Code: 204 (Success: OK)
 
-### Get dossier data (specific visualization)
+### Get dashboard data (specific visualization)
 
-This endpoint gets dossier data by visualization for a specific dossier instance in a specific project from the MicroStrategy Intelligence Server. The response body contains the cube data; the results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
+This endpoint gets dashboard data by visualization for a specific dashboard instance in a specific project from the MicroStrategy Intelligence Server. The response body contains the cube data; the results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
 
 - Identify the project by passing the project ID in the request header.
-- Identify the dossier instance by passing the dossier ID and the dossier instance ID in the path of the request.
+- Identify the dashboard instance by passing the dashboard ID and the dashboard instance ID in the path of the request.
 - Identify the chapter and visualization by passing the chapter key and visualization key in the path of the request.
 
-  In the sample that was provided, you get the data for a visualization in an instance of the dossier “Year Cost” in the “MicroStrategy Tutorial” project.
+  In the sample that was provided, you get the data for a visualization in an instance of the dashboard “Year Cost” in the “MicroStrategy Tutorial” project.
 
 - Identity the start and end position as offset and limit request parameters
   - offset is the start point of your response. For example, if offset=2, it will return the report data beginning with the second record. The default value is 0.
   - limit is the endpoint of your response. For example, if limit =500, it will return only 500 records of the report. The default value is 1000.
 
-Endpoint: [GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizaitonKey}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationResult)
+Endpoint: [GET /api/dossiers/\{dossierId}/instances/\{instanceId}/chapters/\{chapterKey}/visualizations/\{visualizaitonKey}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationResult)
 
 ![GET_dossier_vis_instance](../../../images/GET_dossier_vis_instance.png)
 

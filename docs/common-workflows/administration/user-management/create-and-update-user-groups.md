@@ -173,7 +173,7 @@ Sample Response
 
 ## Update a user group
 
-Endpoint: [PATCH /api/usergroups/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updatePartialUser_1)
+Endpoint: [PATCH /api/usergroups/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updatePartialUser_1)
 
 This endpoint allows a caller with administrative rights to update specific information for a specific user group, including the name, description, parent user group, and child users or user groups. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the user group by specifying the usergroup ID in the path of the request, as the value of `{id}`; you obtain the usergroup ID using `GET /api/usergroups`. You specify the type of update operation (add, replace or remove), provide the value to be used in the update operation, and specify the path to the target where the update operation will be performed, in the body parameter of the request.
 
@@ -290,7 +290,7 @@ Sample Response
 
 ## Get information about a user group
 
-Endpoint: [GET /api/usergroups/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/getUserGroup)
+Endpoint: [GET /api/usergroups/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/getUserGroup)
 
 This endpoint allows a caller with administrative rights to get information for a specific user group. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the user group by specifying the usergroup ID in the path of the request, as the value of `{id}`; you obtain the usergroup ID using `GET /api/usergroups`.
 

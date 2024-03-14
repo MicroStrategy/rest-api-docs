@@ -33,17 +33,17 @@ To answer an attribute element prompt, the user must know which attribute elemen
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 
-| Location | Name                  | Description                                                                                                                                                                                                                                     |
-| -------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| header   | x-mstr-authToken      | The authorization token                                                                                                                                                                                                                         |
-| header   | x-mstr-projectID      | The ID of the project                                                                                                                                                                                                                           |
-| path     | reportId or dossierId | The ID of the report or dossier                                                                                                                                                                                                                 |
-| path     | instanceId            | The instance ID of the report or dossier                                                                                                                                                                                                        |
-| path     | promptIdentifier      | The key or ID of the prompt. Either one can be used to identify the prompt. Only the key is unique, since some prompts can be present multiple times in the dataset. Both of these fields can be obtained from the `GET /api/prompts` API call. |
-| query    | offset                | The starting point with the collection of returned results. The default is zero.                                                                                                                                                                |
-| query    | limit                 | The maximum number of items returned for a single request. The default value is 100. The maximum value is 200.                                                                                                                                  |
-| query    | searchPattern         | The search pattern                                                                                                                                                                                                                              |
-|          |                       |                                                                                                                                                                                                                                                 |
+| Location | Name                    | Description                                                                                                                                                                                                                                     |
+| -------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| header   | x-mstr-authToken        | The authorization token                                                                                                                                                                                                                         |
+| header   | x-mstr-projectID        | The ID of the project                                                                                                                                                                                                                           |
+| path     | reportId or dashboardId | The ID of the report or dashboard                                                                                                                                                                                                               |
+| path     | instanceId              | The instance ID of the report or dashboard                                                                                                                                                                                                      |
+| path     | promptIdentifier        | The key or ID of the prompt. Either one can be used to identify the prompt. Only the key is unique, since some prompts can be present multiple times in the dataset. Both of these fields can be obtained from the `GET /api/prompts` API call. |
+| query    | offset                  | The starting point with the collection of returned results. The default is zero.                                                                                                                                                                |
+| query    | limit                   | The maximum number of items returned for a single request. The default value is 100. The maximum value is 200.                                                                                                                                  |
+| query    | searchPattern           | The search pattern                                                                                                                                                                                                                              |
+|          |                         |                                                                                                                                                                                                                                                 |
 
 Sample code for obtaining the available attribute elements is provided below:
 
@@ -68,7 +68,7 @@ Sample code for obtaining the available attribute elements is provided below:
 
 ## Answer an attribute element prompt
 
-You use the following REST API endpoints to answer an attribute element prompt applied to a dossier, document, or report:
+You use the following REST API endpoints to answer an attribute element prompt applied to a dashboard, document, or report:
 
 - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
@@ -102,7 +102,7 @@ Sample code for answering an attribute element prompt is provided below:
 
 ## Get information about an attribute element prompt
 
-You use the following REST API endpoints to get information about attribute element prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
+You use the following REST API endpoints to get information about attribute element prompts applied to dashboard, document, and report objects in the metadata, as well as instances of those objects:
 
 - GET `/api/documents/{id}/prompts`
 
@@ -112,7 +112,7 @@ You use the following REST API endpoints to get information about attribute elem
 
 - GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
 
-You provide the ID of the document, dossier, or report in the path of the request, as well as the instance ID if you are getting information about a prompt applied to an instance of a document, dossier, or report. The response contains the prompt information.
+You provide the ID of the document, dashboard, or report in the path of the request, as well as the instance ID if you are getting information about a prompt applied to an instance of a document, dashboard, or report. The response contains the prompt information.
 
 ![Prompt Answer Model Response](../../../../images/swagger_promptAnswerModel_response.png)
 
@@ -122,7 +122,7 @@ The model for the definition of an attribute element prompt can be represented w
 
 - `id` GUID of the prompt.
 - `name` Name of the prompt. This is the most user-friendly value that can be used to identify the prompt.
-- `key` Unique identifier of the prompt. It is important to use this to identify the prompt if the same prompt is used more than once in the report, document or dossier.
+- `key` Unique identifier of the prompt. It is important to use this to identify the prompt if the same prompt is used more than once in the report, document or dashboard.
 - `title` Title of the prompt.
 - `required` Specifies whether this prompt is required or optional.
 - `type` Prompt type. For attribute element prompts, the value is "ELEMENTS".

@@ -62,7 +62,7 @@ Sample Response Code: 201 (A new empty package is created successfully.)
 
 ## Update the package definition
 
-Use [PUT /api/packages/{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/updatePackagePerSpec) to update the package definition. You want to create a `"project"` migration package type.
+Use [PUT /api/packages/\{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/updatePackagePerSpec) to update the package definition. You want to create a `"project"` migration package type.
 
 :::tip
 
@@ -146,7 +146,7 @@ Sample Response Code: 202 (The package is being created.)
 
 ## Get the package definition
 
-Use [GET /api/packages/{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/get) to get the package definition.
+Use [GET /api/packages/\{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/get) to get the package definition.
 
 Sample Request Header:
 
@@ -200,7 +200,7 @@ Sample Response Code: 200 (The full definition of the package was retrieved succ
 
 ## Get the package detailed definition
 
-Use [GET /api/packages/{packageId}/objects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/getPackageObjectDetail) to get the objects' detailed definition in a package.
+Use [GET /api/packages/\{packageId}/objects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/getPackageObjectDetail) to get the objects' detailed definition in a package.
 
 :::tip
 
@@ -301,7 +301,7 @@ Sample Response Code: 200 (The detailed readable definition of the objects was r
 
 ## Download the package and save it as a binary file
 
-Use [GET /api/packages/{packageId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/downloadPackageBinary_1) to download the package and save it as a binary file.
+Use [GET /api/packages/\{packageId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/downloadPackageBinary_1) to download the package and save it as a binary file.
 
 Sample Request Header:
 
@@ -324,7 +324,7 @@ Sample Response Code: 200 (The packaged binary file was retrieved successfully.)
 
 ## Delete the package
 
-Use [DELETE /api/packages/{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/deletePackageAsync) to delete the package.
+Use [DELETE /api/packages/\{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/deletePackageAsync) to delete the package.
 
 Sample Request Header:
 

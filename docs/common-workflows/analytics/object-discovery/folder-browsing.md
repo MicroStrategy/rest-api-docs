@@ -138,7 +138,7 @@ The response body contains information for each project that is returned, includ
 
 ## Browse to the Shared Reports folder
 
-Endpoint: [GET /api/folders/preDefined/{folderType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolder)
+Endpoint: [GET /api/folders/preDefined/\{folderType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolder)
 
 This endpoint allows the caller to get the objects under a predefined folder with the MicroStrategy REST server. In this example, you get the objects under "Shared Reports" in the "MicroStrategy Tutorial" project. You use the authorization token returned by `POST /api/auth/login` as the value for `X-MSTR-AuthToken` and a project ID returned by `GET /api/projects` as the value for `X-MSTR-ProjectID`. You provide a value for `folderType` from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. In this example, you use the value "7" , which specifies the predefined "Shared Reports" folder under the "Public Objects" folder. If the call is successful, the resulting HTTP response returns an HTTP status 200 and a list of metadata objects under the "Shared Reports" folder.
 
@@ -271,7 +271,7 @@ Sample Response
 
  <Available since="2021 Update 10" />
 
-Endpoint: [GET /api/folders/preDefined?folderType={folderType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolders)
+Endpoint: [GET /api/folders/preDefined?folderType=\{folderType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolders)
 
 This endpoint allows the caller to get the folder object of one or more predefined folders with the MicroStrategy REST server. In this example, you get the "Shared Reports" and "My Reports" folder objects in the "MicroStrategy Tutorial" project. You use the authorization token returned by `POST /api/auth/login` as the value for `X-MSTR-AuthToken` and a project ID returned by `GET /api/projects` as the value for `X-MSTR-ProjectID`. You provide a value for `folderType` from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. You may specify multiple folder types as a comma separated list. In this example, you use the value "7,20", where "7" specifies the predefined "Shared Reports" folder under the "Public Objects" folder, and "20" specifies the "My Reports" folder under the profile folder of the active user. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a list of the folder objects requested.
 
@@ -352,7 +352,7 @@ Sample Response
 
 ## Browse to a folder by ID
 
-Endpoint: [GET /api/folders/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getFolder)
+Endpoint: [GET /api/folders/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getFolder)
 
 This endpoint allows the caller to get the objects under a folder with the MicroStrategy REST server using the folder ID. You use the authorization token returned by `POST /api/auth/login` as the value for `X-MSTR-AuthToken` and a project ID returned by `GET /api/projects` as the value for `X-MSTR-ProjectID`. You provide a value for the `id` path parameter with the ID of the folder you want to browse to. In this example, the value "032A5E114A59D28267BDD8B6D9E58B22" is used, which is the ID of the "Business Roles" folder under "Shared Reports" that was returned by [GET /api/folders/preDefined/7](#browse-to-the-shared-reports-folder). If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a list of metadata objects under the folder.
 
@@ -531,7 +531,7 @@ Sample Response
 
 When calling `GET /api/folders/{id}`, you can use the optional query parameters `type` and `hidden` to filter the objects that are included in the response.
 
-- `type`: Filter the folder contents based on the `type` property of objects. If this query parameter is passed, then only objects of the type(s) specified are included in the response. If not passed, no filtering is applied. You may specify multiple values as a comma separated list. Possible values are defined in [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html). For example, `type=3,8,55` only includes objects in the folder that have a type of `3` (reports), `8` (folders), or `55` (dossiers and documents).
+- `type`: Filter the folder contents based on the `type` property of objects. If this query parameter is passed, then only objects of the type(s) specified are included in the response. If not passed, no filtering is applied. You may specify multiple values as a comma separated list. Possible values are defined in [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html). For example, `type=3,8,55` only includes objects in the folder that have a type of `3` (reports), `8` (folders), or `55` (dashboards and documents).
 - `hidden`: Filter the result based on the `hidden` property of objects. If this query parameter is not passed, then no filtering is applied (both hidden and unhidden objects are returned). If you pass `hidden=false` then only objects that are _not_ hidden are returned. If you pass `hidden=true` then only objects that are hidden are returned.
 
 ## Log out

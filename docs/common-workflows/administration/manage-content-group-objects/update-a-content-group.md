@@ -21,7 +21,7 @@ The [DssXmlPrivilegesManageContentBundle](https://www2.microstrategy.com/product
 
 :::
 
-Endpoint: [PATCH /api/contentGroups/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/updateContentGroup)
+Endpoint: [PATCH /api/contentGroups/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/updateContentGroup)
 
 Sample Request Header:
 

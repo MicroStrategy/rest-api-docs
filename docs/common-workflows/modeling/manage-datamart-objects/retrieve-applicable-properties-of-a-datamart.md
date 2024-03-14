@@ -26,7 +26,7 @@ The response can change based on the request parameters provided by the caller. 
 
 ## Retrieve applicable properties of a datamart
 
-Endpoint: [GET /api/model/datamarts/{datamartId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-getDatamartVldbProperties)
+Endpoint: [GET /api/model/datamarts/\{datamartId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-getDatamartVldbProperties)
 
 Sample Curl:
 

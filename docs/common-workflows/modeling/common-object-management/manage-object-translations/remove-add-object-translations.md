@@ -6,7 +6,7 @@ description: This topic covers workflow for removing and adding object's transla
 
 This topic covers workflow for removing and adding object's translations.
 
-Endpoint [PATCH /api/objects/{type}/{id}/translation](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/updateObjectsTranslation).
+Endpoint [PATCH /api/objects/\{type}/\{id}/translation](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/updateObjectsTranslation).
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 
@@ -20,12 +20,12 @@ The response can change based on the request parameters provided by the caller. 
 
 The following table lists important fields in the API request body:
 
-| Field         | Description                                                                                                                                                                                                                                              |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| operationList | List of operations to be performed                                                                                                                                                                                                                       |
-| op            | Operation to be performed for a translation. Available values: "add", "replace", "remove"                                                                                                                                                                |
-| path          | Path within a body structure to place of modification. available value for: <br/> add operation: "/localesAndTranslations/{targetNameId}/translationValues",<br/> remove operation:"/localesAndTranslations/{targetNameId}/translationValues/{localeId}" |
-| value         | New value - used only for "replace" and "add" operations                                                                                                                                                                                                 |
+| Field         | Description                                                                                                                                                                                                                                                 |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| operationList | List of operations to be performed                                                                                                                                                                                                                          |
+| op            | Operation to be performed for a translation. Available values: "add", "replace", "remove"                                                                                                                                                                   |
+| path          | Path within a body structure to place of modification. available value for: <br/> add operation: "/localesAndTranslations/\{targetNameId}/translationValues",<br/> remove operation:"/localesAndTranslations/\{targetNameId}/translationValues/\{localeId}" |
+| value         | New value - used only for "replace" and "add" operations                                                                                                                                                                                                    |
 
 Prepare necessary info in order to perform PATCH operation
 
@@ -38,7 +38,7 @@ All params, but the request body are common for both 'add' and 'replace' operati
 1. Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 1. Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 1. Identify the object type from [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html).
-1. Prepare request body. For this purpose, call [GET /api/objects/{type}/{id}/translations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/getObjectsTranslation).
+1. Prepare request body. For this purpose, call [GET /api/objects/\{type}/\{id}/translations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/getObjectsTranslation).
 
 In this demo following parameter values will be used:
 

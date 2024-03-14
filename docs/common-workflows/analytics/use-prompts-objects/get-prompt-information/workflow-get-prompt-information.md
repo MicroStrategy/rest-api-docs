@@ -5,21 +5,21 @@ sidebar_label: Get prompt information
 
 <Available since="2021 Update 1" />
 
-You can use REST APIs to get a list of the prompts that have been applied to a dossier, document or report, together with the definition of each prompt. A workflow sample for using REST APIs to obtain information about prompts:
+You can use REST APIs to get a list of the prompts that have been applied to a dashboard, document or report, together with the definition of each prompt. A workflow sample for using REST APIs to obtain information about prompts:
 
-1. [Create an instance of a dossier, document or report](#create-an-instance-of-a-dossier-document-or-report)
+1. [Create an instance of a dashboard, document or report](#create-an-instance-of-a-dashboard-document-or-report)
 
-   For a prompted dossier or document, the data is not returned when the instance is created. Only the instance ID and the prompt status are returned. For a prompted report, the instance ID, prompts status, and data are currently returned.
+   For a prompted dashboard or document, the data is not returned when the instance is created. Only the instance ID and the prompt status are returned. For a prompted report, the instance ID, prompts status, and data are currently returned.
 
-   For unprompted dossiers, documents, and reports ,the data is returned.
+   For unprompted dashboards, documents, and reports ,the data is returned.
 
 1. [Get prompt information](#get-prompt-information)
 
-   You can get information about prompts applied to dossier, document, and report objects in the metadata as well as prompts applied to instances of those objects.
+   You can get information about prompts applied to dashboard, document, and report objects in the metadata as well as prompts applied to instances of those objects.
 
 Detailed explanations for each step are provided below:
 
-## Create an instance of a dossier, document or report
+## Create an instance of a dashboard, document or report
 
 Endpoints:
 
@@ -29,9 +29,9 @@ Endpoints:
 
 - `POST /api/reports/{reportId}/instances`
 
-  When an instance of a prompted report is created, the status is checked. If the status is "1" or "2", only the status and the instance ID are returned. Status "1" indicates that the instance has been created, and status "2" indicates that the dossier, document or report is waiting for a prompt answer.
+  When an instance of a prompted report is created, the status is checked. If the status is "1" or "2", only the status and the instance ID are returned. Status "1" indicates that the instance has been created, and status "2" indicates that the dashboard, document or report is waiting for a prompt answer.
 
-  Sample code for a response body when you create an instance of a prompted document or dossier:
+  Sample code for a response body when you create an instance of a prompted document or dashboard:
 
   ```json
   {
@@ -69,7 +69,7 @@ Endpoints:
 
 - `GET /api/reports/{reportId}/instances/{instanceId}/prompts`
 
-  You can get information about prompts applied to dossier, document, and report objects in the metadata as well as prompts applied to instances of those objects. You can get prompt definitions for three separate prompt types: attribute element prompts, object prompts, and value prompts. Sample JSON for each prompt definition is provided below.
+  You can get information about prompts applied to dashboard, document, and report objects in the metadata as well as prompts applied to instances of those objects. You can get prompt definitions for three separate prompt types: attribute element prompts, object prompts, and value prompts. Sample JSON for each prompt definition is provided below.
 
   ```json
   [

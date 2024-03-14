@@ -10,6 +10,7 @@ if (!target) {
   console.error("Need a destination");
   exit(1);
 }
+console.log(`copying to:${target}`);
 
 if (!target.endsWith("/")) {
   target += "/";

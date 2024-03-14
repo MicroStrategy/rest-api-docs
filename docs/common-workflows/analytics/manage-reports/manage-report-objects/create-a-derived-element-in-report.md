@@ -21,7 +21,7 @@ A report instance is required for getting, creating, updating, deleting derived 
 
 ### 1. Create a report instance
 
-Endpoint: [POST /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
+Endpoint: [POST /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
 
 Sample Request Header:
 
@@ -53,7 +53,7 @@ Sample Response Code: 201 (A new report instance is created successfully.)
 
 The embedded elements in derived element can be "list", "filter", "calculation" or "all_other". In this example, you are creating a derived element which has an embedded "list" element. You can find more examples in following sections on this page.
 
-Endpoint: [POST /api/model/reports/{reportId}/derivedElements](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-postReportDerivedElement)
+Endpoint: [POST /api/model/reports/\{reportId}/derivedElements](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-postReportDerivedElement)
 
 Sample Request Header:
 
@@ -240,7 +240,7 @@ Sample Response Code: 201 (A new derived element is created successfully in repo
 
 The derived element will be saved together with report using save report instance API.
 
-Endpoint: [POST /api/model/reports/{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveReportInstance)
+Endpoint: [POST /api/model/reports/\{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveReportInstance)
 
 Sample Request Header:
 
@@ -268,7 +268,7 @@ Sample Response Code: 201 (The report is saved successfully.)
 
 ### 4. Delete the report instance
 
-Endpoint: [DELETE /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
+Endpoint: [DELETE /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
 
 Sample Request Header:
 

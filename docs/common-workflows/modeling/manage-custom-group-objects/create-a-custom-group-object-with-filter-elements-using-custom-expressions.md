@@ -18,8 +18,8 @@ This workflow sample demonstrates how to create a new custom group object with f
 
 You want to create a new `"Last 10 year"` custom group object with 2 filter elements:
 
-- last 5 year: "(Year(CurrentDate()) - 5)<= Year@ID"
-- last 10-5 years: "((Year(CurrentDate()) - 10)<= Year@ID)AND((Year(CurrentDate()) - 5)>Year@ID)"
+- last 5 year: "(Year(CurrentDate()) - 5)\<= Year@ID"
+- last 10-5 years: "((Year(CurrentDate()) - 10)\<= Year@ID)AND((Year(CurrentDate()) - 5)>Year@ID)"
 
 You want to save the object under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
@@ -51,7 +51,7 @@ Sample Request Header:
 
 Construct the Request Body:
 
-Make a copy of the input template and construct the request body. Update <custom_group_name> and <destination_folder_id> for the new custom group object. Update <custom_group_element_name> and <custom_expression> for each element. Update options and displayOptions, respectively. The template looks like the following:
+Make a copy of the input template and construct the request body. Update \<custom_group_name> and \<destination_folder_id> for the new custom group object. Update \<custom_group_element_name> and \<custom_expression> for each element. Update options and displayOptions, respectively. The template looks like the following:
 
 ```json
 {

@@ -39,7 +39,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Replace an existing derived element
 
-Use [PUT /api/model/derivedElements/{derivedElementId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Derived%20Elements/ms-putDerivedElement)
+Use [PUT /api/model/derivedElements/\{derivedElementId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Derived%20Elements/ms-putDerivedElement)
 
 The embedded elements in a derived element can be `"list"`, `"filter"`, `"calculation"` or `"all_other"`. In this example, you are replacing the existing `"Region DE"` derived element with an embedded `"list"` element and an `"all_other"` element.
 

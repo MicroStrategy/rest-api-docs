@@ -12,7 +12,7 @@ See [Create and import migration packages](../create-and-import-migration-packag
 Create a content group package using REST APIs:
 
 1. In the source metadata, create a configuration package where the input is the content group object. This package includes the content group object and recipient list.
-1. In the source metadata, create a project package, where the input is the content group object, for each project. This project package includes the configuration content bundle object as well as its contents (dossiers, documents, and reports that are included in the content group in this project).
+1. In the source metadata, create a project package, where the input is the content group object, for each project. This project package includes the configuration content bundle object as well as its contents (dashboards, documents, and reports that are included in the content group in this project).
 1. In the destination metadata, first import the configuration package and then the project package, one by one.
 1. In MicroStrategy Workstation, enable the content bundle feature. If the user in the destination metadata has the same GUID with the source metadata, then the recipient (user or user group) link will migrate over. However, if the user has the same name with a different GUID, then the recipient link will not migrate anymore.
 

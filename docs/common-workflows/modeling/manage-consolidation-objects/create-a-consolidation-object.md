@@ -23,7 +23,7 @@ This workflow sample demonstrates how to create a new consolidation object throu
 
 [More Example: Create a consolidation with two elements.](#example-create-a-consolidation-with-two-elements)
 
-You want to create a new consolidation with the expression "({Customer Age=20 AND Customer=Aaby:Alen} + {Customer City=Addison})" under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID is 98FE182C2A10427EACE0CD30B6768258. The project ID is 091B51154B22036C53CFBB9958B2E8FC.
+You want to create a new consolidation with the expression "(\{Customer Age=20 AND Customer=Aaby:Alen} + \{Customer City=Addison})" under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID is 98FE182C2A10427EACE0CD30B6768258. The project ID is 091B51154B22036C53CFBB9958B2E8FC.
 
 :::info
 

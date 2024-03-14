@@ -1,7 +1,7 @@
 ---
-title: Save dossier themes
-sidebar_label: Save dossier themes
-description: A workflow sample for saving a dossier theme instance to metadata is provided below.
+title: Save dashboard themes
+sidebar_label: Save dashboard themes
+description: A workflow sample for saving a dashboard theme instance to metadata is provided below.
 ---
 
 <Available since="2021 Update 10" />
@@ -14,7 +14,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-This workflow sample demonstrates how to save a dossier theme instance to metadata using `POST /api/themes/dossiers/{dossierId}/instances/{instanceId}/saveAs`.
+This workflow sample demonstrates how to save a dashboard theme instance to metadata using `POST /api/themes/dossiers/{dossierId}/instances/{instanceId}/saveAs`.
 
 :::tip
 
@@ -24,15 +24,15 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-## Create a new dossier theme instance
+## Create a new dashboard theme instance
 
-Endpoint: [POST /api/themes/dossiers/{dossierId}/instances/{instanceId}/saveAs](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Themes/saveThemes)
+Endpoint: [POST /api/themes/dossiers/\{dossierId}/instances/\{instanceId}/saveAs](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Themes/saveThemes)
 
-In this step, you are saving a dossier theme instance to metadata as a dossier object using `POST /api/themes/dossiers/{dossierId}/instances/{instanceId}/saveAs`. Dossier theme objects are applied to dossiers for their presentation style.
+In this step, you are saving a dashboard theme instance to metadata as a dashboard object using `POST /api/themes/dossiers/{dossierId}/instances/{instanceId}/saveAs`. Dashboard theme objects are applied to dashboards for their presentation style.
 
 :::tip
 
-In path parameter, instanceId is ID of dossier theme instance, which is created with `POST /api/themes`
+In path parameter, instanceId is ID of dashboard theme instance, which is created with `POST /api/themes`
 
 :::
 
@@ -74,7 +74,7 @@ curl -X 'POST' \
 
 Sample Response Body:
 
-You can view the new dossier theme object ID in the body of the response. The ID provides reference to the theme object, which can be used for further options, such as applying a theme to a dossier.
+You can view the new dashboard theme object ID in the body of the response. The ID provides reference to the theme object, which can be used for further options, such as applying a theme to a dashboard.
 
 ```json
 {
@@ -82,4 +82,4 @@ You can view the new dossier theme object ID in the body of the response. The ID
 }
 ```
 
-Sample Response Code: 201 (Dossier theme instance is saved to metadata.)
+Sample Response Code: 201 (Dashboard theme instance is saved to metadata.)

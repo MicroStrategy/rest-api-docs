@@ -74,7 +74,7 @@ Sample Response Code: 201 (A new empty package is created successfully.)
 
 ## Upload a package binary file
 
-Use [PUT /api/packages/{packageId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/uploadPackageBinary) to upload a package binary file.
+Use [PUT /api/packages/\{packageId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/uploadPackageBinary) to upload a package binary file.
 
 Sample Request Header:
 
@@ -107,7 +107,7 @@ Sample Response Code: 200 (The package is uploaded successfully).
 
 ## Get the package definition
 
-Use [GET /api/packages/{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/get) to get the package definition. This call is optional and is used to get the status or full definition of the package.
+Use [GET /api/packages/\{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/get) to get the package definition. This call is optional and is used to get the status or full definition of the package.
 
 Sample Request Header:
 
@@ -199,7 +199,7 @@ Sample Response Code: 202 (The package import process is running.)
 
 ## Query the import status
 
-Use [GET /api/packages/imports/{importId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/retrieve_2) to query the import status.
+Use [GET /api/packages/imports/\{importId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/retrieve_2) to query the import status.
 
 Sample Request Header:
 
@@ -235,7 +235,7 @@ Sample Response Code: 200 (The import process details were retrieved successfull
 
 ## Download an undo package binary file
 
-Use [GET /api/packages/imports/{importId}/undoPackage/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/downloadUndoPackageBinary) to download the undo package binary file.
+Use [GET /api/packages/imports/\{importId}/undoPackage/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/downloadUndoPackageBinary) to download the undo package binary file.
 
 Sample Request Header:
 
@@ -262,7 +262,7 @@ Sample Response Code: 200 (The undo package was downloaded successfully.)
 
 ## Delete the import process
 
-Use [DELETE /api/packages/imports/{importId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/delete) to delete the import process.
+Use [DELETE /api/packages/imports/\{importId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/delete) to delete the import process.
 
 Sample Request Header:
 
@@ -291,7 +291,7 @@ Sample Response Code: 202 (The package is being deleted.)
 
 ## Delete the package
 
-Use [DELETE /api/packages/{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/deletePackageAsync) to delete the package.
+Use [DELETE /api/packages/\{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/deletePackageAsync) to delete the package.
 
 Sample Request Header:
 

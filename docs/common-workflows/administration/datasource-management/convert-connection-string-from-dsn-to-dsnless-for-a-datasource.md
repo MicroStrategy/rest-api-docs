@@ -19,7 +19,7 @@ A detailed description of each step is listed down below.
 
 ## Convert for a database source
 
-Endpoint: [POST /api/datasources/{datasourceId}/conversion](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/datasourceConversion)
+Endpoint: [POST /api/datasources/\{datasourceId}/conversion](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/datasourceConversion)
 
 This endpoint allows the caller to convert for a database source with a embedded database connection. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. You can find the `datasourceId` using the endpoint `GET /api/datasources`. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 
@@ -232,7 +232,7 @@ Sample Response
 
 ## Convert for a datasource connection
 
-Endpoint: [POST /api/datasources/connections/{connectionId}/conversion](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/datasourceConnectionConversion)
+Endpoint: [POST /api/datasources/connections/\{connectionId}/conversion](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/datasourceConnectionConversion)
 
 This endpoint allows the caller to convert for a standalone datasource connection. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. You can find the `connectionId` using the endpoint `GET /api/datasources/connections`. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 

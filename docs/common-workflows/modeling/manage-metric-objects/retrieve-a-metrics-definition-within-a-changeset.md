@@ -36,7 +36,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md).
 
-## Get the definition of the specified metric ID within a changeset using [GET /api/model/metrics/{metricId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Metrics/ms-getMetricDetails)
+## Get the definition of the specified metric ID within a changeset using [GET /api/model/metrics/\{metricId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Metrics/ms-getMetricDetails)
 
 Sample Request Header:
 

@@ -58,9 +58,9 @@ The Datasource Management API family allows administrators to create, update, an
 
 The Derived Elements API family allows developers to obtain a derived element's definition, create a derived element object, and update the definition of an existing derived element.
 
-## [Dossiers and documents API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents)
+## [Dashboards and documents API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents)
 
-The Dossiers and Documents API family exposes functionality that allows the execution and exporting of dossiers and documents to a variety of export formats.
+The Dashboards and Documents API family exposes functionality that allows the execution and exporting of dashboards and documents to a variety of export formats.
 
 ## [Drivers API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drivers)
 
@@ -88,7 +88,7 @@ The Library API family exposes the publishing workflow, allowing requests to pub
 
 ## [Object management API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management)
 
-The Object Management API family exposes the ability to programmatically manage objects in the MicroStrategy metadata. Endpoints can be used to certify or de-certify a report or dossier, delete objects, and update object info for any object type.
+The Object Management API family exposes the ability to programmatically manage objects in the MicroStrategy metadata. Endpoints can be used to certify or de-certify a report or dashboard, delete objects, and update object info for any object type.
 
 ## [Packages API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages)
 

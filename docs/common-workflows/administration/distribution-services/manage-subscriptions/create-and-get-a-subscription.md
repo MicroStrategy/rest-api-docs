@@ -341,7 +341,7 @@ Sample Response
 
 ## Create a user email address
 
-Endpoint: [POST /api/v2/users/{id}/addresses](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createAddress)
+Endpoint: [POST /api/v2/users/\{id}/addresses](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createAddress)
 
 This endpoint allows you to create a new address for a specific user.
 
@@ -552,7 +552,7 @@ Sample Response
 
 ## Get information on a specific subscription
 
-Endpoint: [GET /api/subscriptions/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/getSubscriptionById)
+Endpoint: [GET /api/subscriptions/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/getSubscriptionById)
 
 This endpoint returns all of the information on a specific subscription for a given project. This endpoint returns the name, ID, and other information about the Subscription. You obtain the authorization token needed to execute the request using `POST /api/auth/login` and you obtain the project ID using `GET /api/projects`. You retrieve the subscription by specifying the subscription ID in the path of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 200 and a response body containing all the information on the specified subscription.
 
@@ -641,7 +641,7 @@ Sample Response
 
 ## Send the specified subscription immediately
 
-Endpoint: [POST /api/subscriptions/{id}/send](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/sendSubscription)
+Endpoint: [POST /api/subscriptions/\{id}/send](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/sendSubscription)
 
 This endpoint sends the specified subscription immediately. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you obtain the project ID using `GET /api/projects`. You identify the subscription by specifying the subscription ID in the request, you provide the information to send the subscription ID in the path parameter of the request. If the content is prompted and the user wants to update the answers, the user can answer the prompts and then provide content id and instance id as the request body of the call. If the call is successful, the resulting HTTP response returns an HTTP status code of 202 and an empty response body.
 
@@ -671,7 +671,7 @@ Sample Response
 
 ## Delete the subscription
 
-Endpoint: [DELETE /api/subscriptions/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/removeSubscription)
+Endpoint: [DELETE /api/subscriptions/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/removeSubscription)
 
 This endpoint allows you to delete/unsubscribe from the specified subscription. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you obtain the project ID using `GET /api/projects`. You delete the subscription by specifying the subscription ID in the path of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 204 and an empty response body.
 
@@ -701,7 +701,7 @@ Sample Response
 
 ## Delete user email
 
-Endpoint: [DELETE /api/users/{userID}/addresses/{addressID}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/deleteUserAddress)
+Endpoint: [DELETE /api/users/\{userID}/addresses/\{addressID}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/deleteUserAddress)
 
 This endpoint deletes a specific address for a specific user. You obtain the authorization token needed to execute the request using `POST /api/auth/login`. You identify the user and the address by specifying the user ID and address ID in the path of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 204 and an empty response body.
 

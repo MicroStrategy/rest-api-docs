@@ -1,6 +1,6 @@
 ---
 title: Retrieve filters applied to a visualization
-description: You can use the following REST API endpoint to return information about the individual filters that have been applied to the dataset available to a visualization in a dossier, called the visualization-level dataset. The filtering information that is returned can be used by other REST API endpoints.
+description: You can use the following REST API endpoint to return information about the individual filters that have been applied to the dataset available to a visualization in a dashboard, called the visualization-level dataset. The filtering information that is returned can be used by other REST API endpoints.
 ---
 
 :::tip
@@ -11,14 +11,14 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-You can use the following REST API endpoint to return information about the individual filters that have been applied to the dataset available to a visualization in a dossier, called the visualization-level dataset. The filtering information that is returned can be used by other REST API endpoints.
+You can use the following REST API endpoint to return information about the individual filters that have been applied to the dataset available to a visualization in a dashboard, called the visualization-level dataset. The filtering information that is returned can be used by other REST API endpoints.
 
 - `GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey/visualizations/{visualizationKey}`
 
-The dataset available to a visualization in a dossier is a subset of the data in the original data source, which has been filtered and refined at different levels.
+The dataset available to a visualization in a dashboard is a subset of the data in the original data source, which has been filtered and refined at different levels.
 
 1. First, when the data is initially extracted, it can be refined using a report filter, a report limit, prompts, and so on.
-1. The resulting dossier dataset can be further refined using the filter panel for the dossier to produce the specific dataset available for each chapter in the dossier.
+1. The resulting dashboard dataset can be further refined using the filter panel for the dashboard to produce the specific dataset available for each chapter in the dashboard.
 1. Finally, the dataset available to visualizations on the pages of each chapter—referred to here as the visualization-level dataset—can be filtered, both before and after metrics are aggregated.
 
 :::tip
@@ -27,7 +27,7 @@ One visualization can be used as a selector that targets another visualization, 
 
 :::
 
-The resulting data, after all these filters have been applied, is the data that is displayed in the visualizations on the pages of each chapter in the dossier. You can return the individual filter criteria for each of the filters applied to the visualization-level dataset.
+The resulting data, after all these filters have been applied, is the data that is displayed in the visualizations on the pages of each chapter in the dashboard. You can return the individual filter criteria for each of the filters applied to the visualization-level dataset.
 
 - The following filters are applied to the visualization-level dataset before data is aggregated.
   - [View filter (using a dataset-level metric)](return-metric-based-view-filters.md)

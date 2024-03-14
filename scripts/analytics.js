@@ -88,9 +88,8 @@ const generateLinkDict = (json) => {
       }
 
       // It is ok to not encode space. But we always encode.
-      linkDict[
-        `${baseUrl}#/${encodeURIComponent(tag)}/${operationId}`
-      ] = `${method.toUpperCase()} ${innerUrl}`;
+      linkDict[`${baseUrl}#/${encodeURIComponent(tag)}/${operationId}`] =
+        `${method.toUpperCase()} ${innerUrl}`;
     });
   });
   return linkDict;

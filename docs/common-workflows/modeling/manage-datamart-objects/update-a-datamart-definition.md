@@ -39,7 +39,7 @@ The response can change based on the request parameters provided by the caller. 
 
 ## Update the datamart
 
-Endpoint: [PUT /api/model/datamarts/{datamartId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-putDatamart)
+Endpoint: [PUT /api/model/datamarts/\{datamartId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-putDatamart)
 
 Sample Request Body:
 
@@ -343,7 +343,7 @@ Response Code: 200 (The datamart definition is updated successfully.)
 
 This workflow sample demonstrates how to retrieve the definition of a datamart with advanced properties through the Modeling service.
 
-This workflow is the same as Update the datamart using [PUT /api/model/datamarts/{datamartId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-putDatamart)
+This workflow is the same as Update the datamart using [PUT /api/model/datamarts/\{datamartId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-putDatamart)
 
 If `showAdvancedProperties` is omitted or false, the advanced properties are not returned.
 

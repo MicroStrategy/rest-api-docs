@@ -61,7 +61,7 @@ Sample Response Code: 201 (A new empty package is created successfully.)
 
 ## Upload a package binary file
 
-Use [PUT /api/packages/{packageId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/uploadPackageBinary) to upload a package binary file.
+Use [PUT /api/packages/\{packageId}/binary](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/uploadPackageBinary) to upload a package binary file.
 
 Sample Request Header:
 
@@ -92,7 +92,7 @@ Sample Response Code: 200 (The package is uploaded successfully).
 
 ## Get the package definition
 
-Use [GET /api/packages/{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/get) to get the package definition. This call is optional and is used to get the status or full definition of the package.
+Use [GET /api/packages/\{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/get) to get the package definition. This call is optional and is used to get the status or full definition of the package.
 
 Sample Request Header:
 
@@ -144,7 +144,7 @@ Sample Response Code: 200 (The package definition is uploaded successfully.)
 
 ## Get the package detailed definition
 
-Use [GET /api/packages/{packageId}/objects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/getPackageObjectDetail) to get the objects' detailed definition in a package.
+Use [GET /api/packages/\{packageId}/objects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/getPackageObjectDetail) to get the objects' detailed definition in a package.
 
 :::tip
 
@@ -245,7 +245,7 @@ Sample Response Code: 200 (The detailed readable definition of the objects was r
 
 ## Delete the package
 
-Use [DELETE /api/packages/{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/deletePackageAsync) to delete the package.
+Use [DELETE /api/packages/\{packageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages/deletePackageAsync) to delete the package.
 
 Sample Request Header:
 

@@ -25,7 +25,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md).
 
-## 2. Update the security filter's definition using [PUT /api/model/securityFilters/{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/ms-postSecurityFilter)
+## 2. Update the security filter's definition using [PUT /api/model/securityFilters/\{securityFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/ms-postSecurityFilter)
 
 Sample Request Header:
 

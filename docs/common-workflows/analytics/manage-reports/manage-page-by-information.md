@@ -35,7 +35,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Execute [GET /api/v2/reports/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getDefinition_3).
+Execute [GET /api/v2/reports/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getDefinition_3).
 
 Sample Request Header:
 
@@ -307,7 +307,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Execute [POST /api/v2/reports/{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance_1).
+Execute [POST /api/v2/reports/\{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance_1).
 
 Sample Request Header:
 
@@ -661,9 +661,9 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Obtain the report instance from [POST /api/v2/reports/{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance_1).
+Obtain the report instance from [POST /api/v2/reports/\{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance_1).
 
-1. Execute [GET /api/v2/reports/{id}/instances/{instanceId}/pageBy/elements](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getPageByElements).
+1. Execute [GET /api/v2/reports/\{id}/instances/\{instanceId}/pageBy/elements](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getPageByElements).
 
    Sample Request Header:
 

@@ -27,7 +27,7 @@ A report instance is required for getting, creating, updating the report as well
 
 :::
 
-Endpoint: [POST /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
+Endpoint: [POST /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
 
 Sample Request Header:
 
@@ -63,7 +63,7 @@ User can provide "information", "sourceType", "dataSource", "grid", "timezone" a
 
 For the report existed in the metadata, the information field can only change description part. The sourceType cannot be updated to another type.
 
-Endpoint: [POST /api/model/reports/{reportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-putReport)
+Endpoint: [POST /api/model/reports/\{reportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-putReport)
 
 Sample Request Header:
 
@@ -1145,7 +1145,7 @@ Sample Response Code: 200 (The report’s definition is updated successfully in 
 
 ### 3. Save the report instance
 
-Endpoint: [POST /api/model/reports/{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveReportInstance)
+Endpoint: [POST /api/model/reports/\{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveReportInstance)
 
 Sample Request Header:
 
@@ -1175,7 +1175,7 @@ Sample Response Code: 200 (The changes are saved in metadata successfully.)
 
 ### 4. Delete the report instance
 
-Endpoint: [DELETE /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
+Endpoint: [DELETE /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
 
 Sample Request Header:
 

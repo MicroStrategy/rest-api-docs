@@ -173,7 +173,7 @@ const sidebars = {
                 type: "doc",
                 id: "common-workflows/analytics/manage-dossiers/manage-dossiers",
               },
-              label: "Manage dossiers",
+              label: "Manage dashboards",
               items: ["common-workflows/analytics/manage-dossiers/create-instance/create-instance"],
             },
             {
@@ -301,7 +301,7 @@ const sidebars = {
                     type: "doc",
                     id: "common-workflows/analytics/filter-data/filter-dossier-instances/filter-dossier-instances",
                   },
-                  label: "Filter dossier instances",
+                  label: "Filter dashboard instances",
                   items: [
                     "common-workflows/analytics/filter-data/filter-dossier-instances/apply-filters-to-a-dossier",
                   ],
@@ -578,7 +578,7 @@ const sidebars = {
                 type: "doc",
                 id: "common-workflows/modeling/manage-dossier-themes/manage-dossier-themes",
               },
-              label: "Manage dossier themes",
+              label: "Manage dashboard themes",
               items: [
                 "common-workflows/modeling/manage-dossier-themes/dossier-theme-instance-creation",
                 "common-workflows/modeling/manage-dossier-themes/save-dossier-themes",
@@ -902,6 +902,18 @@ const sidebars = {
               items: [
                 "common-workflows/administration/manage-gateways/retrieve-gateways",
                 "common-workflows/administration/manage-gateways/retrieve-a-gateway-definition",
+              ],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/administration/manage-licensing/manage-licensing",
+              },
+              label: "Manage Licensing",
+              items: [
+                "common-workflows/administration/manage-licensing/license-manipulation",
+                "common-workflows/administration/manage-licensing/license-audit-compliance",
               ],
             },
             {

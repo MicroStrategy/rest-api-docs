@@ -108,7 +108,7 @@ Please find the `id` for the desired project. For example, `id` of the project: 
 
 You need to invoke a following endpoint to delete the cache:
 
-Endpoint: [DELETE /api/monitors/projects/{projectId}/caches/{cacheType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/deleteCache)
+Endpoint: [DELETE /api/monitors/projects/\{projectId}/caches/\{cacheType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/deleteCache)
 
 The endpoint path consists of the `projectId` parameter, so you must replace the placeholder with the `id` value. The last placeholder determines the cache type to be purged. The allowable values follow `element` or `cache`. The example below demonstrates how to call the endpoint using a curl command:
 

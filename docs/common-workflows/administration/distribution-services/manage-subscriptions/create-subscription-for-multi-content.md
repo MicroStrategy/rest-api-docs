@@ -81,7 +81,7 @@ Sample Response
 
 ## Create a user email
 
-Endpoint: [POST /api/v2/users/{id}/addresses](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createAddress)
+Endpoint: [POST /api/v2/users/\{id}/addresses](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/createAddress)
 
 This endpoint allows you to create a new address for a specific user. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the user by specifying the user ID in the path of the request; the user ID can be obtained by using `GET /api/users`. You provide the information used to create the new user address in the body parameter of the request - including the name and actual value for the address, whether it is the default address, and the type of delivery and content style. If the call is successful, the resulting HTTP response returns an HTTP status code of 200 and a response body containing all the information on the newly created address.
 
@@ -383,7 +383,7 @@ Sample Response
 
 ## Delete the subscription
 
-Endpoint: [DELETE /api/subscriptions/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/removeSubscription)
+Endpoint: [DELETE /api/subscriptions/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/removeSubscription)
 
 This endpoint allows you to delete/unsubscribe from the specified subscription. You obtain the authorization token needed to execute the request using `POST /api/auth/login`, you obtain the project ID using `GET /api/projects`, and you obtain the subscription ID through `GET /api/subscriptions`. You delete the subscription by specifying the subscription ID in the path of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 204 and an empty response body.
 

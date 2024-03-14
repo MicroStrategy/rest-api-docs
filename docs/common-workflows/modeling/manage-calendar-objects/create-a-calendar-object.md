@@ -134,13 +134,13 @@ The model for the definition of a custom calendar can be represented with the fo
 
 | Fields                            | Description                                                                                                                                        | Required? |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| `information.name`                | String. Name of the custom calendar. This is the most user-friendly value that can be used to identify the custom calendar.                        | ✔         |
+| `information.name`                | String. Name of the custom calendar. This is the most user-friendly value that can be used to identify the custom calendar.                        | ✔        |
 | `information.subType`             | String. For custom calendar, subType is calendar_custom.                                                                                           |           |
 | `information.destinationFolderId` | String. Folder Id where the new custom calendar is saved which couldn’t be modified by user.                                                       |           |
-| `baseCalendar.objectId`           | String. The object ID of the base calendar that the custom calendar is built on.                                                                   | ✔         |
+| `baseCalendar.objectId`           | String. The object ID of the base calendar that the custom calendar is built on.                                                                   | ✔        |
 | `baseCalendar.subType`            | String. The subtype of the base calendar should be calendar_system.                                                                                |           |
 | `baseCalendar.name`               | String. The name of the base calendar.                                                                                                             |           |
-| `tablePrefix`                     | String. It specifies the warehouse table prefix, which is used to create time tables for reporting.                                                | ✔         |
-| `calendarBegin`                   | The year that this custom calendar begins. Only one of dynamicYearOffset and staticYear can be valid.                                              | ✔         |
-| `calendarEnd`                     | The year that this custom calendar ends. Only one of dynamicYearOffset and staticYear can be valid.                                                | ✔         |
-| `weekStartDay`                    | String. The Day that a week starts for this custom calendar. It can only be of (Sunday, Monday, Tuesday, Wednesday, Thursday, Friday or Saturday). | ✔         |
+| `tablePrefix`                     | String. It specifies the warehouse table prefix, which is used to create time tables for reporting.                                                | ✔        |
+| `calendarBegin`                   | The year that this custom calendar begins. Only one of dynamicYearOffset and staticYear can be valid.                                              | ✔        |
+| `calendarEnd`                     | The year that this custom calendar ends. Only one of dynamicYearOffset and staticYear can be valid.                                                | ✔        |
+| `weekStartDay`                    | String. The Day that a week starts for this custom calendar. It can only be of (Sunday, Monday, Tuesday, Wednesday, Thursday, Friday or Saturday). | ✔        |

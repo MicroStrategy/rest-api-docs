@@ -18,7 +18,7 @@ Get the authorization token needed to execute the request with [POST /api/auth/l
 
 :::
 
-Retrieve the runtime’s definition using [GET /api/runtimes/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Runtimes/getScriptRuntime).
+Retrieve the runtime’s definition using [GET /api/runtimes/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Runtimes/getScriptRuntime).
 
 ### Sample request header
 

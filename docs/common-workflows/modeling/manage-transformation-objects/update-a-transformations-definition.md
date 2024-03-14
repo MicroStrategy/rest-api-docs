@@ -28,7 +28,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md).
 
-## Update the transformation’s definition using [PATCH /api/model/transformations/{transformationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-updateTransformation)
+## Update the transformation’s definition using [PATCH /api/model/transformations/\{transformationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transformations/ms-updateTransformation)
 
 You want to update the definition of the `"Last year’s"` transformation so that its attribute has a new `"PREV_YEAR_ID"` form expression. The transformation object ID is `49713ED26BC94DB3A68964A5A085E2FC`.
 

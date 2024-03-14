@@ -16,7 +16,7 @@ Obtain the driver's ID needed to execute the request using [GET /api/drivers](ht
 
 :::
 
-## Retrieve a driver's definition [GET /api/drivers/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drivers/getDriverById)
+## Retrieve a driver's definition [GET /api/drivers/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drivers/getDriverById)
 
 Sample Request Header:
 

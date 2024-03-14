@@ -1,6 +1,6 @@
 ---
-title: Manage dossier themes
-description: A dossier theme is used to define dossier presentation styles. Once a theme is applied to a dossier, then all predefined formatting in the theme is applied to the target dossier. To create a theme object, make REST API calls to create a dossier theme instance and save it to metadata as a dossier theme object. Then the created theme object can be applied to dossier instances using specific REST APIs. You can get the information of a theme object, in a lean json format that is also used in Report Services documents (RSD or RWD).
+title: Manage dashboard themes
+description: A dashboard theme is used to define dashboard presentation styles. Once a theme is applied to a dashboard, then all predefined formatting in the theme is applied to the target dashboard. To create a theme object, make REST API calls to create a dashboard theme instance and save it to metadata as a dashboard theme object. Then the created theme object can be applied to dashboard instances using specific REST APIs. You can get the information of a theme object, in a lean json format that is also used in Report Services documents (RSD or RWD).
 ---
 
 :::tip
@@ -11,9 +11,9 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-Dossier theme is used to define dossier presentation styles. Once a theme is applied to a dossier, then all predefined formattings in the theme are apply to the target dossier. To create a theme object, make REST API calls to create a dossier theme instance and save it to metadata as a dossier theme object. Then the created theme object can be applied to dossier instances using specific REST APIs. You can get information of a theme object, which is in the format of lean json used in Report Services Document(RSD or RWD):
+Dashboard theme is used to define dashboard presentation styles. Once a theme is applied to a dashboard, then all predefined formattings in the theme are apply to the target dashboard. To create a theme object, make REST API calls to create a dashboard theme instance and save it to metadata as a dashboard theme object. Then the created theme object can be applied to dashboard instances using specific REST APIs. You can get information of a theme object, which is in the format of lean json used in Report Services Document(RSD or RWD):
 
-- [Create a dossier theme instance](dossier-theme-instance-creation.md)
-- [Save dossier themes](save-dossier-themes)
-- [Get dossier theme json](get-dossier-theme-json)
-- [Apply dossier theme](apply-dossier-theme)
+- [Create a dashboard theme instance](dossier-theme-instance-creation.md)
+- [Save dashboard themes](save-dossier-themes)
+- [Get dashboard theme json](get-dossier-theme-json)
+- [Apply dashboard theme](apply-dossier-themes)

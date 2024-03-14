@@ -27,7 +27,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-## 1. Remove the users and user groups using [PATCH /api/securityFilters/{id}/members](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/updatePartialSecurityFilter)
+## 1. Remove the users and user groups using [PATCH /api/securityFilters/\{id}/members](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/updatePartialSecurityFilter)
 
 Sample Request Header:
 
@@ -61,7 +61,7 @@ Sample Response Body: Empty
 
 Response Code: 204 (The security filter's member is modified successfully.)
 
-## 2. Add the users and user groups using [PATCH /api/securityFilters/{id}/members](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/updatePartialSecurityFilter)
+## 2. Add the users and user groups using [PATCH /api/securityFilters/\{id}/members](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Security%20Filters/updatePartialSecurityFilter)
 
 Sample Request Header:
 

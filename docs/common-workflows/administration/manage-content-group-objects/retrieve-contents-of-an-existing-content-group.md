@@ -17,7 +17,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Endpoint: [GET /api/contentGroups/{id}/contents](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/getContentGroupContent)
+Endpoint: [GET /api/contentGroups/\{id}/contents](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/getContentGroupContent)
 
 Sample Request Header:
 

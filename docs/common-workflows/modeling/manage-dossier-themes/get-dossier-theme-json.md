@@ -1,12 +1,12 @@
 ---
-title: Get dossier theme json
-sidebar_label: Get dossier theme json
-description: A workflow sample for retrieving dossier theme instance in json.
+title: Get dashboard theme json
+sidebar_label: Get dashboard theme json
+description: A workflow sample for retrieving dashboard theme instance in json.
 ---
 
 <Available since="2021 Update 10" />
 
-This workflow sample demonstrates how to get a dossier theme instance in json through REST API `GET /api/themes/dossiers/{id}/themeInstances/{instanceId}`.
+This workflow sample demonstrates how to get a dashboard theme instance in json through REST API `GET /api/themes/dossiers/{id}/themeInstances/{instanceId}`.
 
 :::tip
 
@@ -16,15 +16,15 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-## get a dossier theme instance in json
+## get a dashboard theme instance in json
 
-Endpoint: [GET /api/themes/dossiers/{id}/themeInstances/{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Themes/getThemeInstance)
+Endpoint: [GET /api/themes/dossiers/\{id}/themeInstances/\{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Themes/getThemeInstance)
 
-In this step, you are retrieving information of a dossier theme instance. The theme object ID and theme instance ID are in request URL as path parameters. The response will be in json.
+In this step, you are retrieving information of a dashboard theme instance. The theme object ID and theme instance ID are in request URL as path parameters. The response will be in json.
 
 :::tip
 
-- In path parameter, the instanceId is ID of dossier theme instance;
+- In path parameter, the instanceId is ID of dashboard theme instance;
 - If the instance has not persisted yet, path parameter of ID can be any GUID
 
 :::
@@ -613,4 +613,4 @@ Sample Response Body:
 }
 ```
 
-Sample Response Code: 201 (Dossier theme instance is saved to metadata.)
+Sample Response Code: 201 (Dashboard theme instance is saved to metadata.)

@@ -356,7 +356,7 @@ A dataset named SALES_TABLE is created under the My Reports folder. The dataset 
 
 ## Update a dataset
 
-Endpoint: [PATCH /api/datasets/{datasetId}/tables/{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/updateDICube)
+Endpoint: [PATCH /api/datasets/\{datasetId}/tables/\{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/updateDICube)
 
 This endpoint allows the caller to update and republish a dataset that was created by the MicroStrategy REST server (using `POST /api/datasets`). To update and republish a specific dataset, you provide the authorization token, `X-MSTR-AuthToken`, generated in step 1, the dataset ID and table ID to identify the dataset to be updated, the type of update action that should be performed, and the data to be applied. If successful, the resulting HTTP response returns an HTTP status 200.
 

@@ -1,11 +1,11 @@
 ---
-title: Create dossier instances
-Description: Creating an instance of a dossier in memory on the intelligence server based on a set of reports, dashboards, cubes.
+title: Create dashboard instances
+Description: Creating an instance of a dashboard in memory on the intelligence server based on a set of reports, dashboards, cubes.
 ---
 
 <Available since="2021 Update 10" />
 
-This workflow sample demonstrates how to create an instance of a dossier in memory on the intelligence server. The dossier is based on a set of reports, dashboards, and cubes.
+This workflow sample demonstrates how to create an instance of a dashboard in memory on the intelligence server. The dashboard is based on a set of reports, dashboards, and cubes.
 
 :::tip
 
@@ -23,7 +23,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 ## POST /api/dossiers/instances
 
-Creates a new instances for dossiers. It is similar to [POST /api/dossiers/{dossierId}/instances](../../filter-data/filter-dossier-instances/apply-filters-to-a-dossier.md#create-a-dossier-instance-with-the-existing-filter-applied) but it does not require a dossier ID. Instead, it uses the `DashboardCreationInfo` object in the request body to create a new dossier instance.
+Creates a new instances for dashboards. It is similar to [POST /api/dossiers/\{dossierId}/instances](../../filter-data/filter-dossier-instances/apply-filters-to-a-dossier.md#create-a-dossier-instance-with-the-existing-filter-applied) but it does not require a dashboard ID. Instead, it uses the `DashboardCreationInfo` object in the request body to create a new dashboard instance.
 
 ### Request URL
 
@@ -41,7 +41,7 @@ POST /api/dossiers/instances
 
 ### Sample Request Body
 
-The request body should contain the information for creating a new dossier instance. Here's a sample using the `DashboardCreationInfo` schema:
+The request body should contain the information for creating a new dashboard instance. Here's a sample using the `DashboardCreationInfo` schema:
 
 ```json
 {
@@ -93,7 +93,7 @@ curl -X 'POST' 'http://demo.microstrategy.com/MicroStrategyLibrary/api/dossiers/
 
 ### Sample Response
 
-If successful, this API call returns a `201 Created` status code and the dossier instance object in the response body. The response body follows the `DocumentInstance` schema:
+If successful, this API call returns a `201 Created` status code and the dashboard instance object in the response body. The response body follows the `DocumentInstance` schema:
 
 ```json
 {
