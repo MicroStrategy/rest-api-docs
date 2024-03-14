@@ -4,7 +4,7 @@ title: Delete a bot instance
 description: This workflow sample demonstrates how to delete a bot instance
 ---
 
-<Available since="2024 Update 3" />
+<Available since="MicroStrategy ONE (March 2024)" />
 
 This workflow sample demonstrates how to delete a bot instance.
 
@@ -19,7 +19,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 Endpoint: [DELETE /api/bots/\{botId}/instances/\{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/AI%20Chatbot/deleteInstance)
 
 :::note
-Replace `{botId}` in `DELETE /api/bots/{botId}/instances/{instanceId}` with the chatbot ID and `{instanceId}` with your bot instance ID created with endpoint `POST /api/bots/{botId}/instances` in your environment.
+Replace `{botId}` in `DELETE /api/bots/{botId}/instances/{instanceId}` with the chatbot ID and `{instanceId}` with your bot instance ID created with `POST /api/bots/{botId}/instances` in your environment.
 :::
 
 Sample Request Header:

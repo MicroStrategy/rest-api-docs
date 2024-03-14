@@ -1,13 +1,13 @@
 ---
 title: Use Bot APIs
-description: This page contains a summary of REST APIs of "bots" endpoint. You can use REST API requests to consume the chat bots.
+description: This page contains a summary of REST APIs for the "bots" endpoint. You can use REST API requests to consume the chat bots.
 ---
 
-<Available since="2024 Update 3" />
+<Available since="MicroStrategy ONE (March 2024)" />
 
 Proficient in AI and analytics, our AI Expert chatbot revolutionizes how you find resources or learning materials. You can use the chat bot via REST APIs to ask the chatbot questions on a variety of topics and quickly receive personalized responses.
 
-You can use REST API requests to consume the chat bots, such getting bot's question list, asking a question and asking for suggested questions.
+You can use REST API requests to consume the chat bots, such getting a bot's question list, asking a question, and asking for suggested questions.
 The workflow for using bots includes the following sequence of REST API requests.
 
 - [Get a bot's configuration](./get-bot-configuration.md)

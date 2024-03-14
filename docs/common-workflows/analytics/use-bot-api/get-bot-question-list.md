@@ -4,7 +4,7 @@ title: Get a bot's question list
 description: This workflow sample demonstrates how to get a chat bot's question list.
 ---
 
-<Available since="2024 Update 3" />
+<Available since="MicroStrategy ONE (March 2024)" />
 
 This workflow sample demonstrates how to get a chat bot's question list.
 
@@ -52,7 +52,7 @@ Sample Response:
 
 Sample Response Body on success:
 
-The response is the question list in a chat bot. Please refer to [Get a question in chat bot](./get-a-bot-question.md) for more details for bot question's fields.
+The response is the question list in a chat bot. See [Get a question in chat bot](./get-a-bot-question.md) for more details about a bot question's fields.
 
 ```json
 {

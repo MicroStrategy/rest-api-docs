@@ -4,7 +4,7 @@ title: Create a bot instance
 description: This workflow sample demonstrates how to create a bot instance
 ---
 
-<Available since="2024 Update 3" />
+<Available since="MicroStrategy ONE (March 2024)" />
 
 This workflow sample demonstrates how to create a bot instance.
 

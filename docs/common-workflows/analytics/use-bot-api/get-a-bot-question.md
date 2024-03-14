@@ -4,7 +4,7 @@ title: Get a bot's question
 description: This workflow sample demonstrates how to get a chat bot's question.
 ---
 
-<Available since="2024 Update 3" />
+<Available since="MicroStrategy ONE (March 2024)" />
 
 This workflow sample demonstrates how to get a chat bot's question.
 
@@ -55,7 +55,7 @@ Sample Response Body on success:
 
 The response is the question in a chat bot.
 
-If the question is being process, the answers list is empty and the response HTTP status is 202 Accepted. You should keep calling this API to check the status of the question.
+If the question is being processed, the answers list is empty and the HTTP response status is 202 Accepted. Keep calling this API to check the status of the question.
 
 ```json
 {
@@ -66,7 +66,7 @@ If the question is being process, the answers list is empty and the response HTT
 }
 ```
 
-If the question's answer has been successfully generated, the response would be:
+If the question's answer is successfully generated, the response is:
 
 ```json
 {
@@ -85,7 +85,7 @@ If the question's answer has been successfully generated, the response would be:
 }
 ```
 
-If the question encounters error when generating the answer, the answer would be:
+If the question encounters an error when generating the answer, the answer is:
 
 ```json
 {

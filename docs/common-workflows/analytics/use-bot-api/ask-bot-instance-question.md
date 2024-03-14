@@ -1,12 +1,12 @@
 ---
-sidebar_label: Ask a question to a bot instance
-title: Ask a question to a bot instance
-description: This workflow sample demonstrates how to ask a question to a bot instance
+sidebar_label: Ask the bot instance a question
+title: Ask the bot instance a question
+description: This workflow sample demonstrates how to ask the bot instance a question.
 ---
 
-<Available since="2024 Update 3" />
+<Available since="MicroStrategy ONE (March 2024)" />
 
-This workflow sample demonstrates how to ask a question to a bot instance.
+This workflow sample demonstrates how to ask the bot instance a question.
 
 :::info
 
@@ -14,12 +14,12 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 :::
 
-## Ask a question to a bot instance
+## Ask the bot instance a question
 
 Endpoint: [POST /api/bots/\{botId}/instances/\{instanceId}/questions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/AI%20Chatbot/postQuestion)
 
 :::note
-Replace `{botId}` in `POST /api/bots/{botId}/instances/{instanceId}/questions` with the chatbot ID and `{instanceId}` with your bot instance ID created with endpoint `POST /api/bots/{botId}/instances` in your environment.
+Replace `{botId}` in `POST /api/bots/{botId}/instances/{instanceId}/questions` with the chatbot ID and `{instanceId}` with your bot instance ID created with `POST /api/bots/{botId}/instances` in your environment.
 :::
 
 Sample Request Body:

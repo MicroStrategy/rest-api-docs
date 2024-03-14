@@ -4,7 +4,7 @@ title: Ask a bot instance for suggested questions
 description: This workflow sample demonstrates how to ask a bot instance for suggested questions
 ---
 
-<Available since="2024 Update 3" />
+<Available since="MicroStrategy ONE (March 2024)" />
 
 This workflow sample demonstrates how to ask a bot instance for suggested questions.
 
@@ -19,14 +19,14 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 Endpoint: [POST /api/bots/\{botId}/instances/\{instanceId}/suggestions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/AI%20Chatbot/createSuggestions)
 
 :::note
-Replace `{botId}` in `POST /api/bots/{botId}/instances/{instanceId}/suggestions` with the chatbot ID and `{instanceId}` with your bot instance ID created with endpoint `POST /api/bots/{botId}/instances` in your environment.
+Replace `{botId}` in `POST /api/bots/{botId}/instances/{instanceId}/suggestions` with the chatbot ID and `{instanceId}` with your bot instance ID created with `POST /api/bots/{botId}/instances` in your environment.
 :::
 
 Sample Request Body:
 
 ```json
 {
-    "count": 4 // Range between 1 and 5
+    "count": 1
 }
 ```
 
