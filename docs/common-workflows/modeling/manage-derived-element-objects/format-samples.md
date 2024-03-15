@@ -720,7 +720,7 @@ Sample Body:
 
 `"value"` is an integer of `"0"` or `"90"`. The default value is `"0"`.
 
-See the image [below](#gradient_image) for an example of how a gradient appears with different combinations of angle, X offset, and Y offset.
+See the image for an example of how a gradient appears with different combinations of angle, X offset, and Y offset.
 
 ### Gradient X offset
 
@@ -737,7 +737,7 @@ Sample Body:
 
 `"value"` is an integer of `"0"`, `"50"`, or `"100"`. The default value is `"0"`.
 
-See the image [below](#gradient_image) for an example of how a gradient appears with different combinations of angle, X offset, and Y offset.
+See the image below for an example of how a gradient appears with different combinations of angle, X offset, and Y offset.
 
 ### Gradient Y offset
 
@@ -754,6 +754,6 @@ Sample Body:
 
 `"value"` is an integer of `"0"`, `"50"`, or `"100"`. The default value is `"0"`.
 
-See the image [below](#gradient_image) for an example of how a gradient appears with different combinations of angle, X offset, and Y offset.
+See the image below for an example of how a gradient appears with different combinations of angle, X offset, and Y offset.
 
 ![gradients](../../../images/gradients.png)<a name="gradient_image"></a>

@@ -30,7 +30,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Update an existing custom calendar
 
-Endpoint: [PUT /api/model/calendars/{calendarId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars)
+Endpoint: [PUT /api/model/calendars/\{calendarId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars)
 
 System calendars cannot be updated through API.
 

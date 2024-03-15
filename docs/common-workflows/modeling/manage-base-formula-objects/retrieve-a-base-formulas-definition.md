@@ -32,7 +32,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the base formula's definition using [GET /api/model/Formulas/{FormulaId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Base%20Formulas/ms-getFormulaDetails).
+Retrieve the base formula's definition using [GET /api/model/Formulas/\{FormulaId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Base%20Formulas/ms-getFormulaDetails).
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 

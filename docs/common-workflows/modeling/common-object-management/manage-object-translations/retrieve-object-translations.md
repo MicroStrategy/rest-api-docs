@@ -6,7 +6,7 @@ description: This topic covers workflow for retrieving object's translations.
 
 This topic covers workflow for retrieving object's translations.
 
-Endpoint: [GET /api/objects/{type}/{id}/translations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/getObjectsTranslation).
+Endpoint: [GET /api/objects/\{type}/\{id}/translations](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/getObjectsTranslation).
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 

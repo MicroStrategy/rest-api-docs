@@ -18,9 +18,9 @@ The following are the supported operators for attributes.
 | Attribute form [ID / DESC] | Equals        | =              | Exactly                  |
 |                            | NotEqual      | !=             | Different from           |
 |                            | Greater       | >              | Greater than             |
-|                            | Less          | <              | Less than                |
+|                            | Less          | \<             | Less than                |
 |                            | GreaterEqual  | >=             | Greater than or equal to |
-|                            | LessEqual     | <=             | Less than or equal to    |
+|                            | LessEqual     | \<=            | Less than or equal to    |
 |                            | Between       |                | Between                  |
 |                            | NotBetween    |                | Not between              |
 |                            | IsNull        | null           | Is null                  |
@@ -43,9 +43,9 @@ The following are the supported operators for metrics.
 | Basic function                 | Equals                | =              |
 |                                | NotEqual              | !=             |
 |                                | Greater               | >              |
-|                                | Less                  | <              |
+|                                | Less                  | \<             |
 |                                | GreaterEqual          | >=             |
-|                                | LessEqual             | <=             |
+|                                | LessEqual             | \<=            |
 |                                | Between               |                |
 |                                | NotBetween            |                |
 |                                | IsNull                | null           |

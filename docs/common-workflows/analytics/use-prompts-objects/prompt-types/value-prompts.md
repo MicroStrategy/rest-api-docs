@@ -25,7 +25,7 @@ You can use REST APIs to perform the following action on value prompts:
 
 ## Answer a value prompt
 
-You use the following REST API endpoints to answer a value prompt applied to a dossier, document, or report:
+You use the following REST API endpoints to answer a value prompt applied to a dashboard, document, or report:
 
 - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
@@ -97,7 +97,7 @@ Sample code for answering a value prompt for each data type is provided below:
 
 ## Get information about a value prompt
 
-You use the following REST API endpoints to get information about value prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
+You use the following REST API endpoints to get information about value prompts applied to dashboard, document, and report objects in the metadata, as well as instances of those objects:
 
 - GET `/api/documents/{id}/prompts`
 
@@ -107,7 +107,7 @@ You use the following REST API endpoints to get information about value prompts 
 
 - GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
 
-You provide the ID of the document, dossier, or report in the path of the request, as well as the instance ID if you are getting information about a prompt applied to an instance of a document, dossier, or report. The response contains the prompt information.
+You provide the ID of the document, dashboard, or report in the path of the request, as well as the instance ID if you are getting information about a prompt applied to an instance of a document, dashboard, or report. The response contains the prompt information.
 
 ![swagger_promptAnswerModel_response](../../../../images/swagger_promptAnswerModel_response.png)
 
@@ -117,7 +117,7 @@ The model for the definition of a value prompt can be represented with the follo
 
 - `id` GUID of the prompt.
 - `name` Name of the prompt. This is the most user-friendly value that can be used to identify the prompt.
-- `key` Unique identifier of the prompt. It is important to use this to identify the prompt if the same prompt is used more than once in the report, document or dossier.
+- `key` Unique identifier of the prompt. It is important to use this to identify the prompt if the same prompt is used more than once in the report, document or dashboard.
 - `title` Title of the prompt.
 - `required` Specifies whether this prompt is required or optional.
 - `type` Prompt type. For value prompts, the value is "VALUE".

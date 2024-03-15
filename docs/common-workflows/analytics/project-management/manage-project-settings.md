@@ -56,7 +56,7 @@ Response Code: 204 (Success: No Content)
 
 ## Get the project setting configurations
 
-Endpoint: [GET /api/v2/projects/{projectId}/settings/config](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getServerSettingProperties)
+Endpoint: [GET /api/v2/projects/\{projectId}/settings/config](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getServerSettingProperties)
 
 This endpoint allows the user to retrieve information on all project settings that are available in MicroStrategy REST API. The information includes the setting description, type, options, unit, minimum value, maximum value, and reboot rule. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
@@ -131,7 +131,7 @@ Response Code: 200 (Success: OK)
 
 ## Get the setting values for a specific project
 
-Endpoint: [GET /api/v2/projects/{projectId}/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getServerSettings_3)
+Endpoint: [GET /api/v2/projects/\{projectId}/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getServerSettings_3)
 
 This endpoint allows you to retrieve all project setting values that are available in MicroStrategy REST API. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
@@ -199,7 +199,7 @@ Response Code: 200 (Success: OK)
 
 ## Update a part of the setting values for a specific project
 
-Endpoint: [PATCH /api/v2/projects/{projectId}/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/setServerSettings_2)
+Endpoint: [PATCH /api/v2/projects/\{projectId}/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/setServerSettings_2)
 
 This endpoint allows you to modify part of the project settings exposed in REST API via `GET /api/v2/projects/{projectId}/settings/config`. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
@@ -283,7 +283,7 @@ Response Code: 200 (Success: OK)
 
 ## Update all project setting values
 
-Endpoint: [PUT /api/v2/projects/{projectId}/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/setAllServerSettings)
+Endpoint: [PUT /api/v2/projects/\{projectId}/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/setAllServerSettings)
 
 This endpoint allows you to access all of the setting values that are available in MicroStrategy REST API. In this endpoint, you must provide a complete list of project settings, which is the different from the `PATCH /api/v2/projects/{projectId}/settings` endpoint. You can find a list of project settings exposed in REST API via `GET /api/v2/projects/{projectId}/settings/config`. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 

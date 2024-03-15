@@ -31,29 +31,29 @@ Here is a workflow sample for using REST APIs to execute object prompts:
 
    - POST `/api/auth/login`
 
-1. Use the following endpoints to create a report or dossier/document instance:
+1. Use the following endpoints to create a report or dashboard/document instance:
 
 - POST `/api/reports/{reportId}/instances`
 - POST `/api/documents/{id}/instances`
 
-1. Use the following endpoints to get the collection of prompts and their respective definitions from a report, document, or dossier:
+1. Use the following endpoints to get the collection of prompts and their respective definitions from a report, document, or dashboard:
 
    - GET `/api/reports/{reportId}/prompts`
    - GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
    - GET `/api/documents/{id}/prompts`
    - GET `/api/documents/{id}/instances/{instanceId}/prompts`
 
-1. Use the following endpoints to get an available list of objects for answering the prompts for a report, document, or dossier instance:
+1. Use the following endpoints to get an available list of objects for answering the prompts for a report, document, or dashboard instance:
 
    - GET `/api/reports/{reportId}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
    - GET `/api/documents/{id}/instances/{instanceId}/prompts/{promptIdentifier}/objects`
 
-1. Use the following endpoints to answer a prompt applied to a dossier, document, or report instance:
+1. Use the following endpoints to answer a prompt applied to a dashboard, document, or report instance:
 
    - PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
    - POST `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
-1. Use the following endpoints to answer specified prompts on the document, dossier, or report instance:
+1. Use the following endpoints to answer specified prompts on the document, dashboard, or report instance:
 
    - PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
    - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
@@ -87,7 +87,7 @@ The response changes based on the request parameters provided by the caller. All
 
 ## Answer an object prompt
 
-You use the following REST API endpoints to answer an object prompt applied to a dossier, document, or report:
+You use the following REST API endpoints to answer an object prompt applied to a dashboard, document, or report:
 
 - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 - PUT `/api/reports/{reportId}/instances/{instanceId}/prompts/answers`
@@ -139,7 +139,7 @@ Sample code for answering multiple object prompts in a single request is provide
 
 ### Get information about an object prompt
 
-You use the following REST API endpoints to get information about object prompts applied to dossier, document, and report objects in the metadata, as well as instances of those objects:
+You use the following REST API endpoints to get information about object prompts applied to dashboard, document, and report objects in the metadata, as well as instances of those objects:
 
 - GET `/api/documents/{id}/prompts`
 
@@ -149,7 +149,7 @@ You use the following REST API endpoints to get information about object prompts
 
 - GET `/api/reports/{reportId}/instances/{instanceId}/prompts`
 
-You provide the ID of the document, dossier, or report in the path of the request, as well as the instance ID if you are getting information about a prompt applied to an instance of a document, dossier, or report. The response contains the prompt information.
+You provide the ID of the document, dashboard, or report in the path of the request, as well as the instance ID if you are getting information about a prompt applied to an instance of a document, dashboard, or report. The response contains the prompt information.
 
 ![swagger_promptAnswerModel_response](../../../../images/swagger_promptAnswerModel_response.png)
 
@@ -159,7 +159,7 @@ The model for the definition of an object prompt can be represented with the fol
 
 - `id` GUID of the prompt.
 - `name` Name of the prompt. This is the most user-friendly value that can be used to identify the prompt.
-- `key` Unique identifier of the prompt. It is important to use this to identify the prompt if the same prompt is used more than once in the report, document or dossier.
+- `key` Unique identifier of the prompt. It is important to use this to identify the prompt if the same prompt is used more than once in the report, document or dashboard.
 - `title` Title of the prompt.
 - `required` Specifies whether this prompt is required or optional.
 - `type` Prompt type. For object prompts, the value is "OBJECTS".

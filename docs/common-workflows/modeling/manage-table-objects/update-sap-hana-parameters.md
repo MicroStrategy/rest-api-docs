@@ -16,7 +16,7 @@ SAP HANA tables may have input parameters and one input parameter corresponds to
 
 ## Workflow
 
-### Update an existing table using [PATCH /api/model/tables/{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-patchTableDetails)
+### Update an existing table using [PATCH /api/model/tables/\{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-patchTableDetails)
 
 :::info
 

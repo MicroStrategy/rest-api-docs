@@ -1,9 +1,9 @@
 ---
 title: Return the metric limit criteria applied prior to aggregation
-description: A metric limit specifies a set of metric-based filtering criteria. In dossiers, a metric limit is applied to a visualization-level dataset after all pre-aggregation filters have first been applied and then metrics have been aggregated. Because metric limits are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
+description: A metric limit specifies a set of metric-based filtering criteria. In dashboards, a metric limit is applied to a visualization-level dataset after all pre-aggregation filters have first been applied and then metrics have been aggregated. Because metric limits are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
 ---
 
-A metric limit specifies a set of metric-based filtering criteria. In dossiers, a metric limit is applied to a visualization-level dataset after all pre-aggregation filters have first been applied and then metrics have been aggregated. Because metric limits are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
+A metric limit specifies a set of metric-based filtering criteria. In dashboards, a metric limit is applied to a visualization-level dataset after all pre-aggregation filters have first been applied and then metrics have been aggregated. Because metric limits are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
 
 You create a metric limit by defining the metric expression that you want to apply in the Filter Editor and specifying that you want to apply it at the visualization level. Metric limits are applied to a visualization-level dataset that has already been refined by applying all the pre-aggregation filters—[attribute-based view filters](return-attribute-based-view-filters.md), [metric-based view filters](return-metric-based-view-filters.md), and [template limits](return-template-limit-criteria.md).
 

@@ -7,7 +7,7 @@ description: MicroStrategy REST API Playground is a place you can see live demos
 
 MicroStrategy REST API Playground is a place you can see live demos of our REST API, API specifications, and code examples. You can also play with it without writing a single line of code.
 
-[This GitHub Page](https://github.com/MicroStrategy/rest-api-playground) provides the instructions for you to set up and start to use it. You can access the playground at <https://www.postman.com/microstrategysdk>. If you are not familiar Postman interface, be sure to check out [the documentation](https://learning.postman.com/docs/getting-started/introduction/) on Postman's learning center.
+[This GitHub Page](https://github.com/MicroStrategy/rest-api-playground) provides the instructions for you to set up and start to use it. You can access the playground at [https://www.postman.com/microstrategysdk](https://www.postman.com/microstrategysdk). If you are not familiar Postman interface, be sure to check out [the documentation](https://learning.postman.com/docs/getting-started/introduction/) on Postman's learning center.
 
 There are two collections in the workspace:
 
@@ -21,7 +21,7 @@ You need to pick an environment to run the requests. There are two environments 
 
 ## Other useful information
 
-- If you are interested in Embedded Analytics solutions, play with our Embedding SDK Playground at <https://playground.microstrategy.com>.
+- If you are interested in Embedded Analytics solutions, play with our Embedding SDK Playground at [https://playground.microstrategy.com](https://playground.microstrategy.com).
 - You can also visit our [Swagger API-Docs page](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html) or in your Library environment.
 - Check out more examples and demos [here](https://github.com/MicroStrategy).
 

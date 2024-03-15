@@ -19,7 +19,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Endpoint: [GET /api/model/transactionReports/{transactionReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transaction%20Reports/ms-getTransactionReport)
+Endpoint: [GET /api/model/transactionReports/\{transactionReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transaction%20Reports/ms-getTransactionReport)
 
 Sample Request Header:
 

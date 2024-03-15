@@ -1,7 +1,7 @@
 ---
 title: Retrieve visualization query details
 sidebar_label: Retrieve visualization query details
-description: This workflow sample demonstrates how to retrieve the query details of visualizations in a dossier instance.
+description: This workflow sample demonstrates how to retrieve the query details of visualizations in a dashboard instance.
 ---
 
 <Available since="2021 Update 2" />
@@ -14,9 +14,9 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-This workflow sample demonstrates how to retrieve the query details of visualizations in a dossier instance.
+This workflow sample demonstrates how to retrieve the query details of visualizations in a dashboard instance.
 
-You want to view the query details of visualizations in the Cost Analysis Dossier in the MicroStrategy Tutorial project. The object ID of the dossier is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to view the query details of visualizations in the Cost Analysis Dashboard in the MicroStrategy Tutorial project. The object ID of the dashboard is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 
@@ -38,9 +38,9 @@ The [DssXmlPrivilegesWebReportSQL](https://www2.microstrategy.com/producthelp/Cu
 
 :::
 
-## Create a dossier instance
+## Create a dashboard instance
 
-Use [POST /api/dossiers/{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
+Use [POST /api/dossiers/\{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
 
 Sample Request Header
 
@@ -58,7 +58,7 @@ Sample Curl:
 curl -X POST "http://hostname:8080/MicroStrategyLibrary/api/dossiers/D14F30994A4B97AD8EF6AEA5F589E30B/instances" -H "accept: application/json" -H "X-MSTR-AuthToken: 4bb7n1dhjo860e7tlpchg57hl" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
 ```
 
-Sample Response Code: 201 (A new dossier instance is created successfully.)
+Sample Response Code: 201 (A new dashboard instance is created successfully.)
 
 Sample Response Body:
 
@@ -69,7 +69,7 @@ Sample Response Body:
 }
 ```
 
-## Get the query details of visualizations in the dossier instance
+## Get the query details of visualizations in the dashboard instance
 
 Use `GET /api/dossiers/{id}/instances/{instanceId}/queryDetails`
 

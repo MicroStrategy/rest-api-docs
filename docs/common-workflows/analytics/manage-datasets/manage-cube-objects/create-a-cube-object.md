@@ -448,7 +448,7 @@ Sample Response Code: 201 (A cube is created successfully.)
 
 ## Publish the cube
 
-### Publish the cube using [POST /api/v2/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2)
+### Publish the cube using [POST /api/v2/cubes/\{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2)
 
 <Available since="2021 Update 5" />
 

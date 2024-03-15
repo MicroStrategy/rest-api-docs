@@ -1,6 +1,6 @@
 ---
 title: Metric expression prompts
-description: A metric expression element prompt is one of the most commonly used prompt types. It allows the caller to provide an expression to filter the data in a report or dossier. For example, you define a prompt as "Get data when Avg Revenue per Customer is greater than 10".
+description: A metric expression element prompt is one of the most commonly used prompt types. It allows the caller to provide an expression to filter the data in a report or dashboard. For example, you define a prompt as "Get data when Avg Revenue per Customer is greater than 10".
 ---
 
 :::tip
@@ -11,7 +11,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-A metric expression element prompt is one of the most commonly used prompt types. It allows the caller to provide an expression to filter the data in a report or dossier. For example, you define a prompt as `"Get data when Avg Revenue per Customer is greater than 10"`.
+A metric expression element prompt is one of the most commonly used prompt types. It allows the caller to provide an expression to filter the data in a report or dashboard. For example, you define a prompt as `"Get data when Avg Revenue per Customer is greater than 10"`.
 
 Use REST APIs to perform the following actions on metric expression prompts:
 
@@ -117,7 +117,7 @@ Use REST APIs to perform the following actions on metric expression prompts:
 
 ## Update an existing prompt
 
-1. Update the definition of a metric expression prompt using [PUT /api/model/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
+1. Update the definition of a metric expression prompt using [PUT /api/model/prompts/\{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
 1. Provide the following headers in the request:
 
    | Location | Name                | Description             |

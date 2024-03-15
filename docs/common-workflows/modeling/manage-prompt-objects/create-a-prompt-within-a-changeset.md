@@ -15,7 +15,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 This workflow sample demonstrates how to create a new prompt object through the Modeling service.
 
 1. Create a changeset using `POST /api/model/changesets`
-1. [Create a prompt using POST /api/model/prompts](#create-a-prompt-using-postapimodelprompts)
+1. [Create a prompt using POST /api/model/prompts](#create-a-prompt-using-post-apimodelprompts)
 1. Commit a changeset using `POST /api/model/changesets/{changesetId}/commit`
 1. Delete a changeset using `DELETE /api/model/changesets/{changesetId}`
 

@@ -32,7 +32,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Get the definition of the specified metric within a changeset, with [GET /api/model/metrics/{metricId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Metrics/ms-getMetricDetails).
+Get the definition of the specified metric within a changeset, with [GET /api/model/metrics/\{metricId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Metrics/ms-getMetricDetails).
 
 The response can change based on the request parameters provided by the caller. Use the following parameters:
 

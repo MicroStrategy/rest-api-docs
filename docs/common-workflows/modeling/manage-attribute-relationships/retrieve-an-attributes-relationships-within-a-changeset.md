@@ -38,7 +38,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 ## Get an attribute's relationships within a changeset
 
-Use [GET /api/model/systemHierarchy/attributes/{attributeId}/relationships](<https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System> Hierarchy/ms-getAttributeRelationships).
+Use [GET /api/model/systemHierarchy/attributes/\{attributeId}/relationships]([https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System) Hierarchy/ms-getAttributeRelationships).
 
 You want to get the relationship of the `"Month"` attribute object. The object ID of the attribute is `8D679D4411D3E4981000E787EC6DE8A4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 

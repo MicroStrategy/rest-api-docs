@@ -48,6 +48,8 @@ Make a copy of the template below and modify the `<filter_name>`, `<destination_
 
 <a name="template_file"></a>
 
+## Template file
+
 ```json
 {
   "information": {
@@ -456,13 +458,13 @@ You can view the new security filter's definition in the body of the response.
 
 Response Code: 201 (A new security filter is created successfully in the changeset.)
 
-## 3. Commit the changeset using [POST /api/model/changesets/{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
+## 3. Commit the changeset using [POST /api/model/changesets/\{changesetId}/commit](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-commitChangeset)
 
-## 4. Delete the changeset using [DELETE /api/model/changesets/{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
+## 4. Delete the changeset using [DELETE /api/model/changesets/\{changesetId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Changesets/ms-deleteChangeset)
 
 ## More samples
 
-Here are more samples you can use to replace `<custom expression>` in the [template file](#template_file).
+Here are more samples you can use to replace `<custom expression>` in the [template file](#template-file).
 
 ### Escape sequences for full paths
 

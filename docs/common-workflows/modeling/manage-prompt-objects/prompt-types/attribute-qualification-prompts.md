@@ -97,7 +97,7 @@ Use REST APIs to perform the following actions on attribute qualification prompt
 
 ## Update an existing prompt
 
-1. Update the definition of the attribute qualification prompt using [PUT /api/model/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
+1. Update the definition of the attribute qualification prompt using [PUT /api/model/prompts/\{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
 1. Provide the following headers in the request:
 
    | Location | Name                | Description             |

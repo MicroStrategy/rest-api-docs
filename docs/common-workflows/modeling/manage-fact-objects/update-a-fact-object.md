@@ -37,7 +37,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Update the fact's definition
 
-Use [PUT /api/model/facts/{factId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Facts/ms-putFact)
+Use [PUT /api/model/facts/\{factId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Facts/ms-putFact)
 
 You want to update the definition of the "Profit" fact so that it contains one expression `ORDER_AMT - ORDER_COST` used in table `ORDER_FACT`.
 

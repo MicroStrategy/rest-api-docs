@@ -27,7 +27,7 @@ Obtain the authorization token needed to execute the request using [POST /api/a
 
 ## Update a specific fence
 
-Endpoint: [PATCH /api/v2/iserver/fences/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/updateFence_1).
+Endpoint: [PATCH /api/v2/iserver/fences/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/updateFence_1).
 
 Sample Request Header:
 

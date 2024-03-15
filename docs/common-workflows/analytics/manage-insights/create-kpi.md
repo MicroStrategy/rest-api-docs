@@ -13,13 +13,13 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 :::
 
-## 1. Create a dossier instance
+## 1. Create a dashboard instance
 
 :::info
-You should have the dossier ID and the dossier project ID before performing the following steps.
+You should have the dashboard ID and the dashboard project ID before performing the following steps.
 :::
 
-Please refer to [Create a dossier instance](../retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server.md#create-a-dossier-instance) on how to create a dossier instance.
+Please refer to [Create a dashboard instance](../retrieve-data-from-the-intelligence-server/workflow-retrieve-data-from-the-intelligence-server.md#create-a-dashboard-instance) on how to create a dashboard instance.
 
 Retrieve the `mid` from the response and save it to use later.
 
@@ -33,7 +33,7 @@ This API only supports creating KPI objects based on KPI visualizations. Ensure 
 
 :::
 
-Endpoint: [GET /api/dossiers/{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList)
+Endpoint: [GET /api/dossiers/\{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList)
 
 Sample Request Header:
 
@@ -46,7 +46,7 @@ Sample Request Body: N/A
 
 Sample Curl:
 :::note
-Replace `{dossierId}` in `GET /api/dossiers/{dossierId}/definition` with the dossier ID.
+Replace `{dossierId}` in `GET /api/dossiers/{dossierId}/definition` with the dashboard ID.
 :::
 
 ```bash
@@ -252,7 +252,7 @@ For example, you want to create a KPI object on a `Latest Price` visualization, 
 
 ## 3. Get the metric id
 
-Endpoint: [GET /api/dossiers/{dossierId}/instances/{instanceId}/chapters/{chapterKey}/visualizations/{visualizationKey}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationResult)
+Endpoint: [GET /api/dossiers/\{dossierId}/instances/\{instanceId}/chapters/\{chapterKey}/visualizations/\{visualizationKey}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationResult)
 
 Sample Request Header:
 
@@ -266,7 +266,7 @@ Sample Request Body: N/A
 Sample Curl:
 
 :::note
-Replace `{dossierId}` with the dossier ID.
+Replace `{dossierId}` with the dashboard ID.
 
 Replace `{instanceId}` with the value of `mid` found in `step 1`.
 

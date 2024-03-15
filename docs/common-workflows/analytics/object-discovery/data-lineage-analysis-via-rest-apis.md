@@ -17,7 +17,7 @@ The metadata is used in object management use cases, such as editing a metric to
 
 There are two functions that MicroStrategy data lineage supports:
 
-- Given an object, for example a report, attribute, dossier, or database, list the direct and indirect components of that object
+- Given an object, for example a report, attribute, dashboard, or database, list the direct and indirect components of that object
 - Given an object, list the objects which directly and indirectly depend on that object
 
 The workflow sample below demonstrates how to perform data lineage analysis.

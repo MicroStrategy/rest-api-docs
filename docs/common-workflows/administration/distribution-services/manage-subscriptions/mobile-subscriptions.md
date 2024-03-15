@@ -155,7 +155,7 @@ Sample Response
 
 ## Update an existing mobile subscription
 
-Endpoint: [PUT /api/subscriptions/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/updateSubscription)
+Endpoint: [PUT /api/subscriptions/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/updateSubscription)
 
 This endpoint allows you to update all of the information for a specific subscription. Obtain the authorization token needed to execute the request using `POST /api/auth/login`. Obtain the project ID using `GET /api/projects`. Provide the information used to update a subscription in the body parameter of the request and provide the subscription ID in the request path. If the call is successful, the resulting HTTP response returns an HTTP status code of 200 and a response body containing all the information on the updated subscription.
 

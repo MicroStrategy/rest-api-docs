@@ -7,7 +7,7 @@ description: You can use REST APIs to update contents of a content group.
 
 You can use REST APIs to update contents of a content group by id.
 
-In this sample workflow, we want to add a dossier as the contents to an existing content group with id `D35FC0B04BD79E95612DDB907C4CCDF6`. The dossier id is `1182F0264D49467A43D9198D6E1331F2`, and it's in the project `235853DC4B79DABCE8C6FFB26B7D8DC3`.
+In this sample workflow, we want to add a dashboard as the contents to an existing content group with id `D35FC0B04BD79E95612DDB907C4CCDF6`. The dashboard id is `1182F0264D49467A43D9198D6E1331F2`, and it's in the project `235853DC4B79DABCE8C6FFB26B7D8DC3`.
 
 :::info
 
@@ -23,7 +23,7 @@ The [DssXmlPrivilegesManageContentBundle](https://www2.microstrategy.com/product
 
 :::
 
-Endpoint: [PATCH /api/contentGroups/{id}/contents](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/updateContentGroupContent)
+Endpoint: [PATCH /api/contentGroups/\{id}/contents](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Content%20Groups/updateContentGroupContent)
 
 Sample Request Header:
 

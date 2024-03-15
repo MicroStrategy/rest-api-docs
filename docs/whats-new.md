@@ -4,6 +4,10 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## 2024 Update 3
+
+- Rename 'dossier' into 'dashboard'.
+
 ## 2021 Update 11
 
 - [Managing cluster startup membership configuration](common-workflows/administration/monitors/manage-an-intelligence-server-cluster.md#cluster-startup-membership)
@@ -11,13 +15,14 @@ Description: What's New in the REST API.
 
 ## 2021 Update 10
 
-- [Manage Dossier themes](common-workflows/modeling/manage-dossier-themes/manage-dossier-themes.md)
+- [Manage Dashboard themes](common-workflows/modeling/manage-dossier-themes/manage-dossier-themes.md)
 - [Retrieve, create, and update KPI objects and insights](common-workflows/analytics/manage-insights/manage-kpi-and-insights.md)
 - [Change the owner of an object.](common-workflows/modeling/common-object-management/change-ownership.md)
-- [Create a dossier in memory based on a list of objects](common-workflows/analytics/manage-dossiers/manage-dossiers.md)
+- [Create a dashboard in memory based on a list of objects](common-workflows/analytics/manage-dossiers/manage-dossiers.md)
 - [Retrieve a list of documents](common-workflows/analytics/manage-documents/manage-documents.md)
 - [Retrieve the hierarchy of a document](common-workflows/analytics/manage-documents/retrieve-document/retrieve-the-hierarchy-of-a-document.md)
 - [Enhancements for folder browsing](common-workflows/analytics/object-discovery/folder-browsing.md)
+- [License manager](common-workflows/administration/manage-licensing/manage-licensing.md)
 
 ## 2021 Update 9
 
@@ -102,7 +107,7 @@ Description: What's New in the REST API.
 - [Create and manage security filters through the Modeling service](common-workflows/modeling/manage-security-filter-objects/manage-security-filter-objects.md), including filter definition and user assignment.
 - [Create and manage derived elements through the Modeling service](common-workflows/modeling/manage-derived-element-objects/manage-derived-element-objects.md).
 - [Create and manage prompt objects through the Modeling service](common-workflows/analytics/use-prompts-objects/use-prompts-objects.md), including [expression, object, attribute element, and value prompts](common-workflows/analytics/use-prompts-objects/prompt-types/prompt-types.md).
-- Dossier API enhancements to enable interaction with filters and selectors.
+- Dashboard API enhancements to enable interaction with filters and selectors.
 - Create, update, and delete Distribution Services devices, events, transmitters, and contacts via APIs.
 - Create, update, list, and delete devices for email and FTP device types.
 - Create, update, list, and delete events.
@@ -121,10 +126,10 @@ Description: What's New in the REST API.
 - Execute a single subscription on demand.
 - Create, update, and delete schedules.
 - Manage data sources with a complete set of REST APIs.
-- Ability to request DateTime data to be returned from reports, cubes, and dossiers in the ISO 8601 format.
+- Ability to request DateTime data to be returned from reports, cubes, and dashboards in the ISO 8601 format.
 - Ability to update page-by selections for reports.
 - Enhancement to APIs returning data from reports and cubes to allow the modification of attribute and metric template positioning.
-- Enhancement to APIs that execute reports, cubes, and dossiers to allow the request for asynchronous executions.
+- Enhancement to APIs that execute reports, cubes, and dashboards to allow the request for asynchronous executions.
 - [Monitor and manage cubes](common-workflows/administration/monitors/monitor-and-manage-cube-caches.md). This includes viewing and changing the status of a cube.
 - Additional [server](common-workflows/administration/server-management/manage-server-settings.md) and [application level settings](common-workflows/analytics/project-management/manage-project-settings.md) from MicroStrategy Developer are available in MicroStrategy Workstation.
 - Ability to [request object lineage information](common-workflows/analytics/object-discovery/data-lineage-analysis-via-rest-apis.md).
@@ -132,8 +137,8 @@ Description: What's New in the REST API.
 
 ## 2020 Update 2
 
-- [Asynchronously extract data from reports, cubes. and dossiers.](common-workflows/analytics/retrieve-data-from-the-intelligence-server/asynchronous-execution-of-reports-and-cubes.md)
-- [Exclude raw or formatted values](https://community.microstrategy.com/s/article/KB484350-Data-API-Filtering-Enhancement-to-Improve-Performance-in-MicroStrategy-2020-Update-2) to reduce the volume of data transferred when using report, cube, and dossier data APIs.
+- [Asynchronously extract data from reports, cubes. and dashboards.](common-workflows/analytics/retrieve-data-from-the-intelligence-server/asynchronous-execution-of-reports-and-cubes.md)
+- [Exclude raw or formatted values](https://community.microstrategy.com/s/article/KB484350-Data-API-Filtering-Enhancement-to-Improve-Performance-in-MicroStrategy-2020-Update-2) to reduce the volume of data transferred when using report, cube, and dashboard data APIs.
 - List available schedules and schedule metadata, such as schedule type and next delivery.
 - List subscriptions and their recipients, content, and delivery information.
 - Delete subscriptions.
@@ -178,7 +183,7 @@ The REST API has been enhanced to support the ability to pass filters into the R
 
 - [Support for prompts has been enhanced](common-workflows/analytics/use-prompts-objects/use-prompts-objects.md).
 
-The REST API has been enhanced to support the ability to programmatically view, answer (with specific values, no answers, or default answers), and reset prompts on reports, dossiers, and documents.
+The REST API has been enhanced to support the ability to programmatically view, answer (with specific values, no answers, or default answers), and reset prompts on reports, dashboards, and documents.
 
 - Exporting data has been enhanced.
 
@@ -201,8 +206,8 @@ The [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligen
 ## 10.10
 
 - The REST API supports [sorting for cubes and reports](common-workflows/analytics/sort-data.md).
-- The JSON Data API supports [fetching data from a visualization inside an existing dossier](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationResult) which can leverage advanced capabilities, such as the data blending engine and other complex analytics.
-- The Cube API [supports DDA cubes and MDX cubes](getting-started/rest-api-families.md#CubeAPI), in addition to Intelligent cubes.
+- The JSON Data API supports [fetching data from a visualization inside an existing dashboard](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationResult) which can leverage advanced capabilities, such as the data blending engine and other complex analytics.
+- The Cube API [supports DDA cubes and MDX cubes](getting-started/rest-api-families.md), in addition to Intelligent cubes.
 
 ## 10.9
 
@@ -212,7 +217,7 @@ The [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligen
   - Cubes API
   - Datasets API
   - Datasource Management API
-  - Dossiers and Documents API
+  - Dashboards and Documents API
   - Emails API
   - Library API
   - Object Management API

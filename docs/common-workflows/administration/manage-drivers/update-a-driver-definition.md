@@ -24,7 +24,7 @@ Currently, we only support updating a driver's "enabled" status.
 
 :::
 
-## Update a driver's definition [PATCH /api/drivers/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drivers/patchDriverById)
+## Update a driver's definition [PATCH /api/drivers/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Drivers/patchDriverById)
 
 Sample Request Header:
 

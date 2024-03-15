@@ -135,7 +135,7 @@ Sample Response
 
 ## Create a document instance
 
-Endpoint: [POST /api/documents/{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDocumentInstance)
+Endpoint: [POST /api/documents/\{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDocumentInstance)
 
 This endpoint allows the caller to execute a specific document in a specific project and create an instance of that document. In this example, you execute a document called "Casino Analysis" (located in MicroStrategy Tutorial>Shared Reports>MicroStrategy Platform Capabilities>MicroStrategy Report Services>Visual Insight). You use the authorization token returned in step 1 as the value for `X-MSTR-AuthToken` and provide the project ID and the document ID. In this example, you leave the request body empty. The resulting HTTP response returns an HTTP status 201 and a JSON object containing the instance ID ("mid") of the document.
 
@@ -184,7 +184,7 @@ Sample Response
 
 ## Export a document to PDF
 
-Endpoint: [POST /api/documents/{id}/instances/{instanceId}/pdf](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/exportDashboardToPdf)
+Endpoint: [POST /api/documents/\{id}/instances/\{instanceId}/pdf](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/exportDashboardToPdf)
 
 This endpoint allows the caller to export the document to a PDF file (in the form of binary data with Base64 encoding) using the instance ID and object ID of the document. In this example, you export the document to a PDF file using the instance ID you created in the previous step. You provide the authorization token generated during login and the project ID in the request header, and the document ID and the instance ID of the document in the request path. In the request body, you specify in JSON how to format the PDF file that you are exporting. If the call is successful, the resulting HTTP response returns a response body in either `application/json` or `application/octet-stream` format, depending on the Response Content Type you choose. If you choose `application/octet-stream` format, the data will be returned in PDF format; if you choose a`pplication/json`, the data will be returned as Base64-encoded binary data and you will have to decode it. You can [download sample Java code](https://www2.microstrategy.com/producthelp/2021/downloads/RESTSDK/ConvertToPDF.zip) that converts the output of the endpoint to a PDF file.
 

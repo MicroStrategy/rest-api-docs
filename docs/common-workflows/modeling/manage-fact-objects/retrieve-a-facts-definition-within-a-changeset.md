@@ -38,7 +38,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 ## Get a fact's definition within a changeset
 
-Endpoint: [GET /api/model/facts/{factId}.](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Facts/ms-getFactDetails)
+Endpoint: [GET /api/model/facts/\{factId}.](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Facts/ms-getFactDetails)
 
 Sample Request Header:
 

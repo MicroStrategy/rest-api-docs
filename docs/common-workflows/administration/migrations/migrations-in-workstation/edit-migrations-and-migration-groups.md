@@ -9,8 +9,8 @@ Starting in MicroStrategy 2021 Update 9, you can edit migrations and migration g
 
 ## APIs
 
-- [PUT /api/migrations/{migrationId}/packageInfo](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/editMigration)
-- [PUT /api/migrationGroups/{migrationGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/triggerImport)
+- [PUT /api/migrations/\{migrationId}/packageInfo](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/editMigration)
+- [PUT /api/migrationGroups/\{migrationGroupId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/triggerImport)
 
 ## Privileges and authorization
 
@@ -234,7 +234,7 @@ Sample Response Body:
 
 ### Step 2: Edit the migration package info
 
-Endpoint: [PUT /api/migrations/{migrationId}/packageInfo](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/editMigration)
+Endpoint: [PUT /api/migrations/\{migrationId}/packageInfo](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/editMigration)
 
 This call triggers migration editing in Library. This API can only be called by an Architect user when the package status of the migration is `created` or `created_failed` and the import status of the migration is `pending` or `rejected`.
 
@@ -344,7 +344,7 @@ Sample Response Body:
 
 ### 3. Get the edit status of the migration
 
-Endpoint: [GET /api/migrations/{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/getMigration)
+Endpoint: [GET /api/migrations/\{migrationId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/getMigration)
 
 Since package editing is an asynchronous process, this call checks the creation status, which is usually `creating`, `created`, or `create_failed`.
 
@@ -416,7 +416,7 @@ Sample Response Body:
 
 ### 4. Modify the certifications state in the source and target environment
 
-Endpoint: [PATCH /api/migrations/{migrationId}/packageInfo/certification](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/certifyMigrationPackage)
+Endpoint: [PATCH /api/migrations/\{migrationId}/packageInfo/certification](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migrations/certifyMigrationPackage)
 
 This endpoint can modify the certifications state in the source environment. This API can only be called when packaged is "created". Architect can request/rervers request with this API. Administrator can certify/decerfiy packages or groups, approve/reject request with this API. Normal requests just require states in the request body, but the sync action requires the modified user and modified date additionally. To maintain consistency between the source and target operations, the request body sent to the target must contain the operator and update date information.
 
@@ -537,7 +537,7 @@ When the API call is successful, it returns response code `204` with no response
 
 ### 1. Get migration group content
 
-Endpoint: [GET /api/migrationGroups/{{migrationGroupId}}?showContent=all](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/getMigrationGroup)
+Endpoint: [GET /api/migrationGroups/\{\{migrationGroupId}}?showContent=all](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/getMigrationGroup)
 
 This call gets the full content of the migration groups to prepare the import call.
 
@@ -721,7 +721,7 @@ Sample Response Body:
 
 ### Step 2: Edit the migration group
 
-Endpoint: [PUT /api/migrationGroups/{{migrationGroupId}}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/triggerImport)
+Endpoint: [PUT /api/migrationGroups/\{\{migrationGroupId}}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/triggerImport)
 
 This call triggers migration group editing in Library.
 
@@ -844,7 +844,7 @@ Use the response body you saved in step 1 and change `name`, `treeView`, and `mi
 
 ### Step 3: Get the edit status of the migration group
 
-Endpoint: [GET /api/migrationGroups/{{migrationGroupId}}?showContent=all](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/getMigrationGroup)
+Endpoint: [GET /api/migrationGroups/\{\{migrationGroupId}}?showContent=all](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/getMigrationGroup)
 
 Since package group editing is an asynchronous process, this call checks the creation status, which is usually `empty`, `locked`, `creating`, `created`, or `create_failed`. Apply a 'fail fast' strategy in handling package group creation. This means that if the creation of a package fails, the entire package group creation fails.
 
@@ -1037,7 +1037,7 @@ Sample Response Body:
 
 ### Step 4: Modify the certifications state in the source and target environment
 
-Endpoint: [PATCH /api/migrationGroups/{migrationGroupId}/certification](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/certifyMigrationGroup)
+Endpoint: [PATCH /api/migrationGroups/\{migrationGroupId}/certification](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Migration%20Groups/certifyMigrationGroup)
 
 This endpoint can be used to update a migration group's certification status or trigger a process to syncronize the status. If query parameter 'autoSync' is true, the migration group's certification status is synchronized with shared environment via storage service. The request body is ignored. Otherwise, the certification status is updated with the definition of request body.
 

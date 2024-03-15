@@ -27,7 +27,7 @@ A report instance maintains an indivisible group of creations or modifications o
 
 :::
 
-Endpoint: [POST /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
+Endpoint: [POST /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
 
 Sample Request Header:
 
@@ -55,7 +55,7 @@ Sample Response Body:
 
 ### 2. Get derived element's definition within the report instance
 
-Endpoint: [GET /api/model/reports/{reportId}/derivedElements/{derivedElementId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-getReportDerivedElement)
+Endpoint: [GET /api/model/reports/\{reportId}/derivedElements/\{derivedElementId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-getReportDerivedElement)
 
 Sample Request Header:
 
@@ -142,7 +142,7 @@ Response Code: 200 (Derived element's definition is returned successfully.)
 
 ### 3. Delete the report instance
 
-Endpoint: [DELETE /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
+Endpoint: [DELETE /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
 
 Sample Request Header:
 

@@ -31,7 +31,7 @@ When the Push Data API was introduced in MicroStrategy 10.11, it supported only 
 
 To improve performance, follow the recommendations below for chunking data:
 
-- If the data size <= 50MB, the recommended practice is to put data into one chunk.
+- If the data size \<= 50MB, the recommended practice is to put data into one chunk.
 - If the data size > 50MB, the recommended practice is to put data into separate chunks. The chunk size should range from 50-200MB, with an ideal chunk size of 100MB.
 
 :::

@@ -33,7 +33,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the fact's definition using [GET /api/model/facts/{factId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Facts/ms-getFactDetails).
+Retrieve the fact's definition using [GET /api/model/facts/\{factId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Facts/ms-getFactDetails).
 
 Sample Request Header:
 

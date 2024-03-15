@@ -23,7 +23,7 @@ The [DssXmlPrivilegesWebReportSQL](https://www2.microstrategy.com/producthelp/Cu
 
 ### 1. Create a report instance with execution stage
 
-Endpoint: [POST /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance) with executionStage=resolve_prompts
+Endpoint: [POST /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance) with executionStage=resolve_prompts
 
 Sample Request Header:
 
@@ -53,7 +53,7 @@ Sample Response Code: 201 (A new report instance is created successfully.)
 
 ### 2. Answer the prompt
 
-Endpoint: [PUT /api/reports/{reportId}/instances/{reportInstance}/prompts/answers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/answerPrompts_2)
+Endpoint: [PUT /api/reports/\{reportId}/instances/\{reportInstance}/prompts/answers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/answerPrompts_2)
 
 Sample Request Header:
 
@@ -97,7 +97,7 @@ Sample Response Code: 204 (Prompt has been answered.)
 
 ### 3. Get the SQL view
 
-Endpoint: [GET /api/v2/reports/{reportId}/instances/{reportInstance}/sqlView](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getReportSqlView_1)
+Endpoint: [GET /api/v2/reports/\{reportId}/instances/\{reportInstance}/sqlView](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getReportSqlView_1)
 
 Sample Request Header:
 
@@ -120,7 +120,7 @@ Sample Response Code: 200 (SQL has been returned.)
 
 ### 4. Delete the report instance
 
-Endpoint: [DELETE /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
+Endpoint: [DELETE /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
 
 Sample Request Header:
 
@@ -148,7 +148,7 @@ Sample Response Code: 204 (The report instance has been deleted successfully.)
 
 Execute report may take a while. You can set "prefer" to "respond-async" in header to run the report asynchronously.
 
-Endpoint: [POST /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance) with executionStage=execute_data
+Endpoint: [POST /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance) with executionStage=execute_data
 
 Sample Request Header:
 
@@ -183,7 +183,7 @@ Please refer to Workflow 1 Step 2.
 
 ### 3. Get report data
 
-Endpoint: [GET /api/v2/reports/{reportId}/instances/{reportInstance}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/executeReport_1)
+Endpoint: [GET /api/v2/reports/\{reportId}/instances/\{reportInstance}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/executeReport_1)
 
 Sample Request Header:
 
@@ -201,7 +201,7 @@ Sample Response Code: 200 (Report data has been returned.)
 
 ### 4. Delete the report instance
 
-Endpoint: [DELETE /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
+Endpoint: [DELETE /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
 
 Sample Request Header:
 

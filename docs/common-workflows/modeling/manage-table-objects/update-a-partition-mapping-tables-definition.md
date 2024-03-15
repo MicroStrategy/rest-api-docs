@@ -18,7 +18,7 @@ This workflow sample demonstrates how to update an existing partition mapping ta
 
 :::info
 
-Get the authorization token needed to execute the request with [POST /api/auth/login](<https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin>.
+Get the authorization token needed to execute the request with [POST /api/auth/login]([https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md).
 
@@ -32,7 +32,7 @@ Updating a WHPM table is the same as updating a normal table, you cannot update 
 
 For a metadata partition mapping tables, you can update the logical table name in the information field, logicalSize, isLogicalSizeLocked, and partition base tables. You can also update their partition filters in partitionTables field. Desitination folder can also be updated.
 
-Update an MDPM table with [PATCH /api/model/tables/{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-patchTableDetails).
+Update an MDPM table with [PATCH /api/model/tables/\{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-patchTableDetails).
 
 Sample Request Header:
 

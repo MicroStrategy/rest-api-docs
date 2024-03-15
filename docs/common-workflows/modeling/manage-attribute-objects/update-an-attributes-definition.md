@@ -34,7 +34,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Update the attribute's definition
 
-Use [PATCH /api/model/attributes/{attributeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Attributes/ms-updateAttribute).
+Use [PATCH /api/model/attributes/\{attributeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Attributes/ms-updateAttribute).
 
 You want to update the definition of the "Customer" attribute object under the Public Objects folder in the MicroStrategy Tutorial project by ungrouping the "Name" form group and adding a new form group "Email". The attribute object ID is `5D6C76C3A3F548A0B9ADE5F9D2AA65C6` in the MicroStrategy Tutorial project.
 

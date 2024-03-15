@@ -1,11 +1,11 @@
 ---
-title: Manage dossiers
-Description: Manage dossiers using the MicroStrategy REST API.
+title: Manage dashboards
+Description: Manage dashboards using the MicroStrategy REST API.
 ---
 
 <Available since="2021 Update 10" />
 
-You can use REST API request to retrieve dossiers and create instances:
+You can use REST API request to retrieve dashboards and create instances:
 
-- [Fetch a list of dossiers](../filter-data/filter-dossier-instances/apply-filters-to-a-dossier.md#get-a-list-of-dossiers)
-- [Create dossier instances](create-instance/create-instance.md)
+- [Fetch a list of dashboards](../filter-data/filter-dossier-instances/apply-filters-to-a-dossier.md#get-a-list-of-dashboards)
+- [Create dashboard instances](create-instance/create-instance.md)

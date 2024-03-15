@@ -21,7 +21,7 @@ From the response body, get the KPI ID and project ID of the KPI object that you
 
 ## 2. Delete KPI
 
-Endpoint: [DELETE /api/insight/KPIs/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Insight%20Engine%20-%20KPIs/deleteKPI)
+Endpoint: [DELETE /api/insight/KPIs/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Insight%20Engine%20-%20KPIs/deleteKPI)
 
 Sample Request Header:
 

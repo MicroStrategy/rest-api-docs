@@ -9,13 +9,13 @@ description: The workflow to answer prompts.
 
 Here is a workflow sample for using REST APIs to answer prompts:
 
-1. [Create an instance of a dossier, document or report](#create-an-instance-of-a-dossier-document-or-report)
+1. [Create an instance of a dossier, document or report](#create-an-instance-of-a-dashboard-document-or-report)
 
-   Only the prompt ID, instance ID and prompt status are returned when an instance of a prompted dossier or document is created; data is not returned. This is different from prompted reports. When an instance of a prompted report is created, the prompt ID, instance ID, prompt status, and data are all returned.
+   Only the prompt ID, instance ID and prompt status are returned when an instance of a prompted dashboard or document is created; data is not returned. This is different from prompted reports. When an instance of a prompted report is created, the prompt ID, instance ID, prompt status, and data are all returned.
 
    :::tip
 
-   Data is returned for unprompted dossiers, documents, and reports.
+   Data is returned for unprompted dashboards, documents, and reports.
 
    :::
 
@@ -27,11 +27,11 @@ Here is a workflow sample for using REST APIs to answer prompts:
 
 1. [Export results to PDF](#export-results-to-pdf)
 
-   You can confirm that the prompt answers were successfully applied by exporting the results of the report or document/dossier execution to PDF.
+   You can confirm that the prompt answers were successfully applied by exporting the results of the report or document/dashboard execution to PDF.
 
 Detailed explanations for each step are provided below:
 
-## Create an instance of a dossier, document or report
+## Create an instance of a dashboard, document or report
 
 Endpoints:
 
@@ -45,9 +45,9 @@ You can also use POST `/api/dossiers/{dossierId}/instances` to create an instanc
 
 :::
 
-You can execute a specific report, document, or dossier and create an instance of that report, document, or dossier. The information in the responses varies, but each response includes two important pieces of information—the instance ID and status. The instance ID is “mid” for a dossier or document and "instanceId" for a report. Status "1" indicates that the instance has been created, and status "2" indicates that the dossier, document or report is waiting for a prompt answer. If the status is "1", the response also returns the ID of the object.
+You can execute a specific report, document, or dashboard and create an instance of that report, document, or dashboard. The information in the responses varies, but each response includes two important pieces of information—the instance ID and status. The instance ID is “mid” for a dashboard or document and "instanceId" for a report. Status "1" indicates that the instance has been created, and status "2" indicates that the dashboard, document or report is waiting for a prompt answer. If the status is "1", the response also returns the ID of the object.
 
-The response body when you create an instance of a prompted document or dossier would look like the following sample code:
+The response body when you create an instance of a prompted document or dashboard would look like the following sample code:
 
 ```json
 {
@@ -114,17 +114,17 @@ You can provide prompt answers for three separate prompt types: attribute elemen
 
 ## Export results to PDF
 
-Endpoint: [POST /api/documents/{id}/instances/{instanceId}/pdf](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/exportDashboardToPdf)
+Endpoint: [POST /api/documents/\{id}/instances/\{instanceId}/pdf](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/exportDashboardToPdf)
 
 This endpoint allows the caller to export the document to a PDF file (in the form of binary data with Base64 encoding) using the instance ID and object ID of the document. Exporting to PDF is not a required part of the prompt workflow, but it is useful for confirming that the prompts have been applied correctly.
 
 ## Answer prompts with specific answers
 
-You can use REST APIs to provide prompt answers for three types of prompts applied to dossiers, documents, and reports. For these three prompt types, you can provide specific answers to prompts, choose to [use default prompt answers](#use-default-prompt-answers), or [close optional prompts without providing answers](#close-prompts-without-answers). You can also reset the status so that the dossier, document, or report will be re-prompted the next time it is run.
+You can use REST APIs to provide prompt answers for three types of prompts applied to dashboards, documents, and reports. For these three prompt types, you can provide specific answers to prompts, choose to [use default prompt answers](#use-default-prompt-answers), or [close optional prompts without providing answers](#close-prompts-without-answers). You can also reset the status so that the dashboard, document, or report will be re-prompted the next time it is run.
 
 The prompts supported in the MicroStrategy platform are defined in [EnumDSSXMLPromptType.](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPromptType.html)
 
-You use the following REST API endpoints to answer a prompt applied to a dossier, document, or report:
+You use the following REST API endpoints to answer a prompt applied to a dashboard, document, or report:
 
 - PUT `/api/documents/{id}/instances/{instanceId}/prompts/answers`
 
@@ -200,11 +200,11 @@ In the body parameter of the request, you use the `id`, `key`, or `name` paramet
 
 ## Re-prompt
 
-You can use a REST API to cause a prompted document or dossier to be re-prompted. You cannot currently use a REST API to specifically re-prompt a report.
+You can use a REST API to cause a prompted document or dashboard to be re-prompted. You cannot currently use a REST API to specifically re-prompt a report.
 
 ## Nested prompts
 
-It is possible that the report, dossier, or document contains nested prompts which need to be resolved prior to fetching data. These prompts can be nested _n_ levels deep, so this workflow may need to be iterated over.
+It is possible that the report, dashboard, or document contains nested prompts which need to be resolved prior to fetching data. These prompts can be nested _n_ levels deep, so this workflow may need to be iterated over.
 
 Let's see an example report with the following template:
 
@@ -272,13 +272,13 @@ To achieve this workflow via REST API, you simply need to loop through the follo
 
 There is a response of 200. The response body now contains the data, since all prompts have been answered.
 
-### Documents and dossiers
+### Documents and dashboards
 
-To re-prompt a document or dossier, use the following endpoint:
+To re-prompt a document or dashboard, use the following endpoint:
 
 - POST `/api/documents/{id}/instances/{instanceId}/rePrompt`
 
-This sets the status back to "1", indicating that the document or dossier is waiting for prompt answers.
+This sets the status back to "1", indicating that the document or dashboard is waiting for prompt answers.
 
 When you use this endpoint, a new instance ID is generated, different from the one passed in the request. Having separate instance IDs for before and after the re-prompting request is designed to allow users to go back if they decide they want to revert to the previous instance.
 

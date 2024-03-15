@@ -1,7 +1,7 @@
 ---
-title: Retrieve the SQL statement of datasets in a document or dossier instance
-sidebar_label: Retrieve the SQL statement of datasets in a document or dossier instance
-description: You can retrieve the SQL statements of all datasets in a document or dossier instance. In this workflow sample, a dossier instance is used. However, the same workflow applies to a document instance.
+title: Retrieve the SQL statement of datasets in a document or dashboard instance
+sidebar_label: Retrieve the SQL statement of datasets in a document or dashboard instance
+description: You can retrieve the SQL statements of all datasets in a document or dashboard instance. In this workflow sample, a dashboard instance is used. However, the same workflow applies to a document instance.
 ---
 
 <Available since="2021 Update 2" />
@@ -14,9 +14,9 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-You can retrieve the SQL statements of all datasets in a document or dossier instance. In this workflow sample, a dossier instance is used. However, the same workflow applies to a document instance.
+You can retrieve the SQL statements of all datasets in a document or dashboard instance. In this workflow sample, a dashboard instance is used. However, the same workflow applies to a document instance.
 
-You want to view the SQL statement of every dataset in the Cost Analysis Dossier in the MicroStrategy Tutorial project. The object ID of the dossier is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to view the SQL statement of every dataset in the Cost Analysis Dashboard in the MicroStrategy Tutorial project. The object ID of the dashboard is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 
@@ -38,9 +38,9 @@ The [DssXmlPrivilegesWebReportSQL](https://www2.microstrategy.com/producthelp/Cu
 
 :::
 
-## Create a dossier instance
+## Create a dashboard instance
 
-Use [POST /api/dossiers/{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2).
+Use [POST /api/dossiers/\{id}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2).
 
 Sample Request Header:
 
@@ -58,7 +58,7 @@ Sample Curl:
 curl -X POST "http://hostname:8080/MicroStrategyLibrary/api/dossiers/D14F30994A4B97AD8EF6AEA5F589E30B/instances" -H "accept: application/json" -H "X-MSTR-AuthToken: 4bb7n1dhjo860e7tlpchg57hl" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
 ```
 
-Sample Response Code: 201 (A new dossier instance is created successfully.)
+Sample Response Code: 201 (A new dashboard instance is created successfully.)
 
 Sample Response Body:
 
@@ -69,7 +69,7 @@ Sample Response Body:
 }
 ```
 
-## Get the SQL statements of datasets in document or dossier instances using `GET /api/dossiers/{id}/instances/{instanceId}/datasets/sqlView`
+## Get the SQL statements of datasets in document or dashboard instances using `GET /api/dossiers/{id}/instances/{instanceId}/datasets/sqlView`
 
 Sample Request Header:
 
@@ -108,4 +108,4 @@ You can view the SQL statement of every dataset in the body of the response.
 }
 ```
 
-Response Code: 200 (The SQL statement of the dossier instance's dataset is returned successfully.)
+Response Code: 200 (The SQL statement of the dashboard instance's dataset is returned successfully.)

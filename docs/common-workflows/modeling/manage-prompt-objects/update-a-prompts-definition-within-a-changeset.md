@@ -15,7 +15,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 This workflow demonstrates how to update a prompt's definition through the Modeling service.
 
 1. Create a changeset.
-1. [Update a prompt's definition.](#update-the-prompts-definition-using-put-apimodelpromptspromptid)
+1. [Update a prompt's definition.](#update-the-prompts-definition)
 1. Commit a changeset.
 1. Delete a changeset.
 
@@ -39,13 +39,13 @@ Get the authorization token needed to execute the request with [POST /api/auth/l
 
 Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
-Obtain the prompt ID from [GET /api/model/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-getPromptDetails).
+Obtain the prompt ID from [GET /api/model/prompts/\{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-getPromptDetails).
 
 :::
 
 ## Update the prompt's definition
 
-Use [PUT /api/model/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
+Use [PUT /api/model/prompts/\{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
 
 Sample Request Header:
 

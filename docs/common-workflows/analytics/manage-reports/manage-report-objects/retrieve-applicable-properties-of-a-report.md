@@ -11,7 +11,7 @@ The report object ID is `E472644E4239AD7EFDBD869600C93E4D`. The report is in the
 
 ## Retrieve applicable properties of a report directly
 
-Endpoint: [GET /api/model/reports/{reportId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-getReportVldbProperties)
+Endpoint: [GET /api/model/reports/\{reportId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-getReportVldbProperties)
 
 Sample Request Header:
 
@@ -147,7 +147,7 @@ Sample Response Code: 200 (The list of applicable properties for the given repor
 
 ### 1. Create a report instance
 
-Endpoint: [POST /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
+Endpoint: [POST /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
 
 Sample Request Header:
 
@@ -177,7 +177,7 @@ Sample Response Code: 201 (A new report instance is created successfully.)
 
 ### 2. Get applicable properties
 
-Endpoint: [GET /api/model/reports/{reportId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-getReportVldbProperties)
+Endpoint: [GET /api/model/reports/\{reportId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-getReportVldbProperties)
 
 Sample Request Header:
 
@@ -201,7 +201,7 @@ Response Code: 200 (The list of applicable properties for the given report is re
 
 ### 3. Delete the report instance
 
-Endpoint: [DELETE /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
+Endpoint: [DELETE /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
 
 Sample Request Header:
 

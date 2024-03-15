@@ -23,7 +23,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 ### Step 1: Create a datamart instance based on an existing datamart
 
-User can create an instance using [POST /api/model/datamarts/{datamartId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-createDatamartInstance).
+User can create an instance using [POST /api/model/datamarts/\{datamartId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-createDatamartInstance).
 
 Sample Request Body: Empty
 
@@ -61,7 +61,7 @@ Sample Response Code: 201 (The in-memory instance is created successfully.)
 
 ### Step 2: Execute the datamart
 
-User can execute the datamart using [POST /api/datamarts/{datamartId}/instances/{instanceID}/execution/jobs](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/execute).
+User can execute the datamart using [POST /api/datamarts/\{datamartId}/instances/\{instanceID}/execution/jobs](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/execute).
 
 Execute a datamart may take a long time.
 
@@ -92,7 +92,7 @@ Sample Response Code: 200 (OK).
 
 ### Step 3: Answer the prompts (skip this step if the datamart has no prompts)
 
-User needs to check whether the datamart contains prompt using: [GET /api/datamarts/{datamartId}/instances/{instanceId}/execution](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/getExecution)
+User needs to check whether the datamart contains prompt using: [GET /api/datamarts/\{datamartId}/instances/\{instanceId}/execution](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/getExecution)
 
 Sample Request Body: Empty
 
@@ -123,7 +123,7 @@ Sample Response Code: 200 (OK).
 
 You can refer to [Use prompt objects](https://microstrategy.github.io/rest-api-docs/common-workflows/analytics/use-prompts-objects/) to get the information about the contained prompts.
 
-Then if the datamart contains prompts, user can answer prompt using [PUT /api/reports/{reportId}/instances/{reportInstance}/prompts/answers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/answerPrompts_2).
+Then if the datamart contains prompts, user can answer prompt using [PUT /api/reports/\{reportId}/instances/\{reportInstance}/prompts/answers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/answerPrompts_2).
 
 Sample Request Body:
 
@@ -169,7 +169,7 @@ Sample Response Code: 204 (Prompt has been answered.)
 
 ### Step 4: Change the prompt option and save(skip this step if keeping the default option)
 
-You can change the prompt option using: [POST /api/model/datamarts/{datamartId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-saveDatamartInstance).
+You can change the prompt option using: [POST /api/model/datamarts/\{datamartId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-saveDatamartInstance).
 
 Sample Request Body:
 
@@ -211,7 +211,7 @@ Sample Response Body:
 
 Sample Response Code: 200 (The datamart definition is saved successfully.)
 
-If you want to change the datamart name or destination folder at the same time, you can use [POST /api/model/datamarts/{datamartId}/instances/saveAs](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-saveAsDatamartInstance).
+If you want to change the datamart name or destination folder at the same time, you can use [POST /api/model/datamarts/\{datamartId}/instances/saveAs](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-saveAsDatamartInstance).
 
 Sample Request Body:
 
@@ -247,11 +247,11 @@ curl -X 'POST' \
 }'
 ```
 
-Response is same with that of [POST /api/model/datamarts/{datamartId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-saveDatamartInstance).
+Response is same with that of [POST /api/model/datamarts/\{datamartId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-saveDatamartInstance).
 
 ### Step 5: Delete the datamart instance
 
-User can delete the created datamart instance using: [DELETE /api/model/datamarts/{datamartId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-deleteDatamartInstance).
+User can delete the created datamart instance using: [DELETE /api/model/datamarts/\{datamartId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datamarts/ms-deleteDatamartInstance).
 
 Sample Request Body: Empty
 

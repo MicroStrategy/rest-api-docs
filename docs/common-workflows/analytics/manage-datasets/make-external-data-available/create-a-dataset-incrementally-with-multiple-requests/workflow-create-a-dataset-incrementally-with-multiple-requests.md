@@ -444,7 +444,7 @@ Response
 
 ## Create an upload session on the IServer
 
-Endpoint: [POST /api/datasets/{datasetId}/uploadSessions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2CreateUploadSession)
+Endpoint: [POST /api/datasets/\{datasetId}/uploadSessions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2CreateUploadSession)
 
 This endpoint allows the caller to create a multi-table dataset upload session and provide formatting information for data that is to be uploaded to the Intelligence Server. Formatting information is used by the Intelligence Server to parse data from a subsequent `PUT /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}` request. You pass the authorization token and the project ID in the request header. You specify the dataset ID in the path of the request. You obtain the dataset ID from `POST /api/datasets/models`.
 
@@ -521,7 +521,7 @@ Response
 
 ## Add data to the upload session (with multiple calls)
 
-Endpoint: [PUT /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2AddData)
+Endpoint: [PUT /api/datasets/\{datasetId}/uploadSessions/\{uploadSessionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2AddData)
 
 This endpoint allows the caller to iteratively upload data to the Intelligence Server that matches formatting information provided by the previous (required) `POST /api/datasets/{datasetId}/uploadSessions` request. For large data volumes, the data should first be split into smaller chunks. This request should then be called until all chunks have been uploaded. Once all the data has been uploaded, call `POST /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}/publish` to update the dataset with the newly uploaded data according to the previously specified update policy. You pass the authorization token and the project ID in the request header. You specify the dataset ID and the upload session ID in the path of the request; you obtain the dataset ID from `POST /api/datasets/models`, and the upload session ID from `POST /api/datasets/{datasetId}/uploadSessions`.
 
@@ -531,7 +531,7 @@ You provide information about each table in the body parameter, including the ta
 
 To improve performance, follow the recommendations below for chunking data:
 
-- If the data size <= 50MB, the recommended practice is to put data into one chunk.
+- If the data size \<= 50MB, the recommended practice is to put data into one chunk.
 - If the data size > 50MB, the recommended practice is to put data into separate chunks. The chunk size should range from 50-200MB, with an ideal chunk size of 100MB.
 
 :::
@@ -628,7 +628,7 @@ The data is before base64 encoding is formatted in different ways depending on t
 
 ## Publish the dataset
 
-Endpoint: [POST /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}/publish](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2Publish)
+Endpoint: [POST /api/datasets/\{datasetId}/uploadSessions/\{uploadSessionId}/publish](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2Publish)
 
 This endpoint allows the caller to publish a specific multi-table dataset using data uploaded to the Intelligence Server. This request should be used after calling `PUT /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}` as many times as needed to upload all the data. You pass the authorization token and the project ID in the request header. You specify the dataset ID and the upload session ID in the path of the request; you obtain the dataset ID from `POST /api/datasets/models`, and the upload session ID from `POST /api/datasets/{datasetId}/uploadSessions`. If the call is successful, the resulting HTTP response returns an HTTP status code 200.
 
@@ -662,7 +662,7 @@ This endpoint allows the caller to publish a specific multi-table dataset using 
 
 ## Check to see if the dataset has been published
 
-Endpoint: [GET /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}/publishStatus](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2GetPublishStatus)
+Endpoint: [GET /api/datasets/\{datasetId}/uploadSessions/\{uploadSessionId}/publishStatus](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2GetPublishStatus)
 
 This endpoint allows the caller to get the status of a multi-table dataset update operation after new data was uploaded to the dataset and published. This request should be called after `POST /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}/publish`. You pass the authorization token and the project ID in the request header. You specify the dataset ID and the upload session ID in the path of the request; you obtain the dataset ID from `POST /api/datasets/models`, and the upload session ID from `POST /api/datasets/{datasetId}/uploadSessions`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a status value; when the value is '1', the update action has finished.
 
@@ -718,7 +718,7 @@ This endpoint allows the caller to get the status of a multi-table dataset updat
 
 ## Delete the upload session
 
-Endpoint: [DELETE /api/datasets/{datasetId}/uploadSessions/{uploadSessionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2Cancel)
+Endpoint: [DELETE /api/datasets/\{datasetId}/uploadSessions/\{uploadSessionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets/pushApiV2Cancel)
 
 This endpoint allows the caller to delete the upload session after the dataset is published or cancel the publishing process. The request includes the authorization token generated when the user was authenticated, a project ID that was generated when the list of projects was returned, the ID of the dataset, and the ID of the upload session. If the call is successful, the resulting HTTP response returns an HTTP status code 200.
 

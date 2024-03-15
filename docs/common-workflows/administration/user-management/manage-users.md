@@ -156,7 +156,7 @@ Sample Response
 
 ## Update a user
 
-Endpoint: [PATCH /api/users/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updatePartialUser)
+Endpoint: [PATCH /api/users/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/updatePartialUser)
 
 This endpoint allows the caller to update specific information for a specific user. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the user by specifying the user ID in the path of the request; you obtain the user ID using `GET /api/users` (as you did in a previous step). You specify the type of update operation (add, replace or remove), provide the value to be used in the update operation, and specify the path to the target where the update operation will be performed, in the body parameter of the request.
 
@@ -242,7 +242,7 @@ Sample Response
 
 ## Get information about a user
 
-Endpoint: [GET /api/users/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/getUser)
+Endpoint: [GET /api/users/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Management/getUser)
 
 This endpoint allows the caller to get information for a specific user. You obtain the authorization token needed to execute the request using `POST /api/auth/login`; you pass the authorization token in the request header. You identify the user by specifying the user ID in the path of the request; you obtain the user ID using `GET /api/users` (as you did in a previous step).
 

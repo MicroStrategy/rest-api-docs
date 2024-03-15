@@ -80,7 +80,7 @@ Use REST APIs to perform the following actions on attribute element prompts:
 
 ## Update an existing prompt
 
-1. Update the definition of the hierarchy qualification prompt using [PUT /api/model/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
+1. Update the definition of the hierarchy qualification prompt using [PUT /api/model/prompts/\{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Prompts/ms-putPrompt).
 1. Provide the following headers in the request:
 
    | Location | Name                | Description             |

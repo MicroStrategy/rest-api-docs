@@ -28,7 +28,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the table's definition using [GET /api/model/tables/{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
+Retrieve the table's definition using [GET /api/model/tables/\{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
 
 Sample Request Header
 
@@ -327,7 +327,7 @@ In this workflow sample, you want to get the definition of the same table object
 
 :::tip
 
-Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of [GET /api/model/tables/{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails) to create a new table or update the table’s definition, it is recommended to associate all requests to one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of [GET /api/model/tables/\{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails) to create a new table or update the table’s definition, it is recommended to associate all requests to one changeset.
 
 :::
 
@@ -339,7 +339,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Get a table's definition within a changeset using [GET /api/model/tables/{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
+Get a table's definition within a changeset using [GET /api/model/tables/\{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
 
 Sample Request Header:
 
@@ -636,7 +636,7 @@ Multiple field values are separated by a comma.
 
 :::
 
-Retrieve the table's definition using [GET /api/model/tables/{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails), along with `fields=information,physicalTable,attributes,facts`.
+Retrieve the table's definition using [GET /api/model/tables/\{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails), along with `fields=information,physicalTable,attributes,facts`.
 
 Sample Curl:
 

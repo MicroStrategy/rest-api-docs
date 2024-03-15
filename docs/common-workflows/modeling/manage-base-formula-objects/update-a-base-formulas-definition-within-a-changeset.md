@@ -42,7 +42,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-## Update the base formula's definition using [PUT /api/model/formulas/{formulaId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Base%20Formulas/ms-putFormula)
+## Update the base formula's definition using [PUT /api/model/formulas/\{formulaId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Base%20Formulas/ms-putFormula)
 
 Sample Request Header:
 

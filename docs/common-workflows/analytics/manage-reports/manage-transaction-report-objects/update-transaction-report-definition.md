@@ -25,7 +25,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Endpoint: [PUT /api/model/transactionReports/{transactionReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transaction%20Reports/ms-putTransactionReport)
+Endpoint: [PUT /api/model/transactionReports/\{transactionReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Transaction%20Reports/ms-putTransactionReport)
 
 Sample Request Header:
 

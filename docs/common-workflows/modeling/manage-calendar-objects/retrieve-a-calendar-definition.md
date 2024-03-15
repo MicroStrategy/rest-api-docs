@@ -19,7 +19,7 @@ Since calendar objects are configuration objects, you must set the project ID as
 
 :::
 
-Get the calendar's definition using [GET /api/model/calendars/{calendarId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars).
+Get the calendar's definition using [GET /api/model/calendars/\{calendarId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars).
 
 Sample Request Header:
 
@@ -97,7 +97,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ### Get the calendar's definition within a changeset
 
-Endpoint: [GET /api/model/calendars/{calendarId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars)
+Endpoint: [GET /api/model/calendars/\{calendarId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Calendars)
 
 Sample Request Header
 

@@ -30,7 +30,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 ## Get a custom group's definition within a changeset
 
-Endpoint: [GET /api/model/customGroups/{customGroupsId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups/ms-getCustomGroupDetails).
+Endpoint: [GET /api/model/customGroups/\{customGroupsId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Custom%20Groups/ms-getCustomGroupDetails).
 
 Sample Request Header:
 

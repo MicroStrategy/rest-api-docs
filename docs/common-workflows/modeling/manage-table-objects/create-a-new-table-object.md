@@ -20,7 +20,7 @@ This workflow sample demonstrates how to create a new table object through the M
 
 In this workflow sample, you create a new `"CITY_CTR_SLS"` table object in the MicroStrategy Tutorial project. Table name should be unique within the project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`. All schema tables are created under the objects/tables folder schema.
 
-Get the authorization token needed to execute the request with [POST /api/auth/login](<https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin>.
+Get the authorization token needed to execute the request with [POST /api/auth/login]([https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
@@ -31,7 +31,7 @@ Create a new table by defining its physical table with a normal warehouse table 
 The following are alternate methods to create a table:
 
 - You can create a table by defining the physical table with either a normal warehouse table or freeform SQL statement and columns information. The former is called a normal table, while the latter is called a freeform SQL table. When [creating a freeform SQL table](#create-a-freeform-sql-table), the type in the `physicalTable` field must be specified as `'sql'`.
-- If the `checkSecondaryDataSourceTable` query parameter is set to `true`, the API finds compatible tables in the project. If a compatible table is found, the compatible table object information is returned. Use [PATCH /api/model/tables/{tableID}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-patchTableDetails) to set the `secondaryDatasource` to the compatible table. If no compatible table is found, a new table is created.
+- If the `checkSecondaryDataSourceTable` query parameter is set to `true`, the API finds compatible tables in the project. If a compatible table is found, the compatible table object information is returned. Use [PATCH /api/model/tables/\{tableID}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-patchTableDetails) to set the `secondaryDatasource` to the compatible table. If no compatible table is found, a new table is created.
 
 If this parameter is set to `"false"`, a new table is created.
 

@@ -21,7 +21,7 @@ A report instance is required for getting, creating, updating, deleting derived 
 
 ### 1. Create a report instance
 
-Endpoint: [POST /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
+Endpoint: [POST /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-createReportInstance)
 
 Sample Request Header:
 
@@ -51,7 +51,7 @@ Sample Response Code: 201 (A new report instance is created successfully.)
 
 ### 2. Delete an existing derived element in report
 
-Endpoint: [DELETE /api/model/reports/{reportId}/derivedElements/{derivedElementId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportDerivedElement)
+Endpoint: [DELETE /api/model/reports/\{reportId}/derivedElements/\{derivedElementId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportDerivedElement)
 
 Sample Request Header:
 
@@ -77,7 +77,7 @@ Response Code: 204 (The derived element is deleted from report.)
 
 The delete operation will take effect on metadata once the report instance is saved..
 
-Endpoint: [POST /api/model/reports/{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveReportInstance)
+Endpoint: [POST /api/model/reports/\{reportId}/instances/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveReportInstance)
 
 Sample Request Header:
 
@@ -105,7 +105,7 @@ Sample Response Code: 201 (The report is saved successfully.)
 
 ### 4. Delete the report instance
 
-Endpoint: [DELETE /api/model/reports/{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
+Endpoint: [DELETE /api/model/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-deleteReportInstance)
 
 Sample Request Header:
 

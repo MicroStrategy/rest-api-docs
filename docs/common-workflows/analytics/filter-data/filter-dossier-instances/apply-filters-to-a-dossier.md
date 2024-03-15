@@ -1,7 +1,7 @@
 ---
-title: Apply filters to a dossier
-sidebar_label: Apply filters to a dossier
-description: In this workflow, you create an instance of a dossier using the filter selections originally defined for the dossier. You then change the values for the filter selections and re-execute the dossier instance with the new values. As a way to see the results of each filter, you export the dossier instance to PDF.
+title: Apply filters to a dashboard
+sidebar_label: Apply filters to a dashboard
+description: In this workflow, you create an instance of a dashboard using the filter selections originally defined for the dashboard. You then change the values for the filter selections and re-execute the dashboard instance with the new values. As a way to see the results of each filter, you export the dashboard instance to PDF.
 ---
 
 :::tip
@@ -12,11 +12,11 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-Use the following sequence of REST API requests to see the results when you change the values for the filter selections applied to a dossier instance. In this workflow, you create an instance of a dossier using the filter selections originally defined for the dossier. You then change the values for the filter selections and re-execute the dossier instance with the new values. As a way to see the results of each filter, you export the dossier instance to PDF.
+Use the following sequence of REST API requests to see the results when you change the values for the filter selections applied to a dashboard instance. In this workflow, you create an instance of a dashboard using the filter selections originally defined for the dashboard. You then change the values for the filter selections and re-execute the dashboard instance with the new values. As a way to see the results of each filter, you export the dashboard instance to PDF.
 
 :::tip
 
-In the workflow below, there are both dossier and document endpoints. A dossier and a document have the same base object so dossier actions can be executed with document endpoints. A dossier is simply a different view of a document.
+In the workflow below, there are both dashboard and document endpoints. A dashboard and a document have the same base object so dashboard actions can be executed with document endpoints. A dashboard is simply a different view of a document.
 
 :::
 
@@ -140,13 +140,13 @@ Sample Response
 
 - Response code: 200 (OK)
 
-## Get a list of dossiers
+## Get a list of dashboards
 
-Call `GET /api/dossiers` to obtain a list of dossiers that meet specific search criteria.
+Call `GET /api/dossiers` to obtain a list of dashboards that meet specific search criteria.
 
 Endpoint: [GET /api/dossiers](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/searchForDossiers)
 
-This endpoint allows the caller to get a list of dossiers in a specific project that meet specific search criteria. You use the authorization token returned during login as the value for **X-MSTR-AuthToken**. You use a project ID returned by GET /api/projects as the value for **X-MSTR-ProjectID**. You specify the search criteria using query parameters in the request; criteria can include the root folder ID, a search searchPattern such as Begins With or Exactly, and the certified status of the dossier.
+This endpoint allows the caller to get a list of dashboards in a specific project that meet specific search criteria. You use the authorization token returned during login as the value for **X-MSTR-AuthToken**. You use a project ID returned by GET /api/projects as the value for **X-MSTR-ProjectID**. You specify the search criteria using query parameters in the request; criteria can include the root folder ID, a search searchPattern such as Begins With or Exactly, and the certified status of the dashboard.
 
 To execute this API, you need to provide values for the following parameters in the request header:
 
@@ -194,17 +194,17 @@ Sample Response
   ]
   ```
 
-  The response body contains information for each dossier that is returned, including the dossier ID that is used by later endpoints.
+  The response body contains information for each dashboard that is returned, including the dashboard ID that is used by later endpoints.
 
 - Response code: 200 (OK)
 
-## Get definition of a dossier, including the filter applied
+## Get definition of a dashboard, including the filter applied
 
-Call `GET /api/dossiers/{dossierId}/definition` to obtain the definition of the filter applied to a specific dossier, including the key and name of the filter.
+Call `GET /api/dossiers/{dossierId}/definition` to obtain the definition of the filter applied to a specific dashboard, including the key and name of the filter.
 
-Endpoint: [GET /api/dossiers/{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList)
+Endpoint: [GET /api/dossiers/\{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList)
 
-This endpoint allows the caller to get the definition of the filter applied to a specific dossier in a specific project. You use the authorization token returned during login as the value for **X-MSTR-AuthToken**. You use a project ID returned by `GET /api/projects` as the value for **X-MSTR-ProjectID**. You use the dossier ID returned by `GET /api/dossiers` in the path of the request URL. The response contains the hierarchy of the dossier, which includes the key, name, and summary of the filter applied to the dossier. This is the filter that is applied to the dossier when it is executed. It is also the filter that you will update in a later step.
+This endpoint allows the caller to get the definition of the filter applied to a specific dashboard in a specific project. You use the authorization token returned during login as the value for **X-MSTR-AuthToken**. You use a project ID returned by `GET /api/projects` as the value for **X-MSTR-ProjectID**. You use the dashboard ID returned by `GET /api/dossiers` in the path of the request URL. The response contains the hierarchy of the dashboard, which includes the key, name, and summary of the filter applied to the dashboard. This is the filter that is applied to the dashboard when it is executed. It is also the filter that you will update in a later step.
 
 To execute this API, you need to provide values for the following parameters in the request header:
 
@@ -286,24 +286,24 @@ Sample response
   }
   ```
 
-  The response body contains information about the specified dossier, including the filter ID, name, and definition that is used to update the filter in a later endpoint.
+  The response body contains information about the specified dashboard, including the filter ID, name, and definition that is used to update the filter in a later endpoint.
 
 - Response code: 200 (OK)
 
-## Create a dossier instance with the existing filter applied
+## Create a dashboard instance with the existing filter applied
 
-Call `POST /api/dossiers/{dossierId}/instances` to create an instance of a specific dossier with the existing filter applied.
+Call `POST /api/dossiers/{dossierId}/instances` to create an instance of a specific dashboard with the existing filter applied.
 
-Endpoint: [POST /api/dossiers/{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
+Endpoint: [POST /api/dossiers/\{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
 
-This endpoint allows the caller to execute a specific dossier in a specific project and create an instance of that dossier. The existing filter for the dossier will be applied when the dossier instance is created; this is the filter that was returned in the previous step. To execute this API, you need to provide values for the following request parameters:
+This endpoint allows the caller to execute a specific dashboard in a specific project and create an instance of that dashboard. The existing filter for the dashboard will be applied when the dashboard instance is created; this is the filter that was returned in the previous step. To execute this API, you need to provide values for the following request parameters:
 
 - **X-MSTR-AuthToken** Authorization token generated by `POST /api/auth/login`
 - **X-MSTR-ProjectID** Project ID generated by `GET /api/projects`
-- **id** Dossier ID generated by `GET /api/dossiers dossiers/{dossierId}/definition` or other endpoints
+- **id** Dashboard ID generated by `GET /api/dossiers dossiers/{dossierId}/definition` or other endpoints
 - **body** Filter definition for the filter key/name generated by `GET /api/dossiers dossiers/{dossierId}/definition`
 
-In this example, you execute a dossier called "Filters" (located in MicroStrategy Tutorial>Shared Reports. You use the authorization token returned by `POST /api/auth/login` as the value for X-MSTR-AuthToken, a project ID returned by `GET /api/projects`, a dossier ID returned by `GET /api/dossiers`, and a filter definition. The request body contains the definition of the existing filter that was created for the dossier; it is applied when the dossier is executed. The resulting HTTP response returns an HTTP status 201, indicating that the dossier instance has been created, and a JSON object containing the instance ID ("mid") of the dossier.
+In this example, you execute a dashboard called "Filters" (located in MicroStrategy Tutorial>Shared Reports. You use the authorization token returned by `POST /api/auth/login` as the value for X-MSTR-AuthToken, a project ID returned by `GET /api/projects`, a dashboard ID returned by `GET /api/dossiers`, and a filter definition. The request body contains the definition of the existing filter that was created for the dashboard; it is applied when the dashboard is executed. The resulting HTTP response returns an HTTP status 201, indicating that the dashboard instance has been created, and a JSON object containing the instance ID ("mid") of the dashboard.
 
 Sample Request
 
@@ -331,7 +331,7 @@ Sample Response
 
 - Response Body
 
-  The REST server returns the instance ID of the dossier as the value of `"mid"`. This value will be used by a later endpoint when an updated filter definition is applied to the dossier instance. The HTTP response code 201 indicates that the dossier instance has been created and is ready for additional actions to be performed.
+  The REST server returns the instance ID of the dashboard as the value of `"mid"`. This value will be used by a later endpoint when an updated filter definition is applied to the dashboard instance. The HTTP response code 201 indicates that the dashboard instance has been created and is ready for additional actions to be performed.
 
   ```json
   {
@@ -342,13 +342,13 @@ Sample Response
 
 - Response Code: 201 (Success: Created)
 
-## Export the dossier instance to PDF
+## Export the dashboard instance to PDF
 
-Call `POST /api/documents/{id}/instances/{instanceId}/pdf` to export the dossier to a PDF file. This allows you to see the results when the existing filter was applied.
+Call `POST /api/documents/{id}/instances/{instanceId}/pdf` to export the dashboard to a PDF file. This allows you to see the results when the existing filter was applied.
 
-Endpoint: [POST /api/documents/{id}/instances/{instanceId}/pdf](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/exportDashboardToPdf)
+Endpoint: [POST /api/documents/\{id}/instances/\{instanceId}/pdf](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/exportDashboardToPdf)
 
-This endpoint allows the caller to export a dossier instance to a PDF file using the instance ID and object ID of the dossier. In this example, you export the dossier to a PDF file using the dossier ID and the instance ID you created in previous steps. You provide the authorization token generated during login and the project ID in the request header, and the dossier ID and the instance ID in the request path. In the request body, you specify in JSON how to format the PDF file that you are exporting. If the call is successful, the resulting HTTP response returns a response body in either application/json or application/octet-stream format.
+This endpoint allows the caller to export a dashboard instance to a PDF file using the instance ID and object ID of the dashboard. In this example, you export the dashboard to a PDF file using the dashboard ID and the instance ID you created in previous steps. You provide the authorization token generated during login and the project ID in the request header, and the dashboard ID and the instance ID in the request path. In the request body, you specify in JSON how to format the PDF file that you are exporting. If the call is successful, the resulting HTTP response returns a response body in either application/json or application/octet-stream format.
 
 :::tip
 
@@ -409,20 +409,20 @@ Sample Response
 
 - Response Code: 200 (Success: OK)
 
-## Update the dossier instance, with a revised filter definition applied
+## Update the dashboard instance, with a revised filter definition applied
 
 ### Update the filter definition
 
-Call `PUT /api/dossiers/{dossierId}/instances/{instanceId}/filters` to execute the dossier instance with a revised definition for the existing filter applied.
+Call `PUT /api/dossiers/{dossierId}/instances/{instanceId}/filters` to execute the dashboard instance with a revised definition for the existing filter applied.
 
-Endpoint: [PUT /api/dossiers/{dossierId}/instances/{instanceId}/filters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/setFilters)
+Endpoint: [PUT /api/dossiers/\{dossierId}/instances/\{instanceId}/filters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/setFilters)
 
-This endpoint allows the caller to execute a specific dossier instance with an updated filter definition. It updates the instance of the dossier with the new filter definition applied. To execute this API, you need to provide the following as values for the request parameters:
+This endpoint allows the caller to execute a specific dashboard instance with an updated filter definition. It updates the instance of the dashboard with the new filter definition applied. To execute this API, you need to provide the following as values for the request parameters:
 
 - Authorization token generated by `POST /api/auth/login`
 - Project ID generated by `GET /api/projects`
-- Dossier ID generated by `GET /api/dossiers dossiers/{dossierId}/definition` or other endpoints
-- Dossier instance ID generated by `POST /api/dossiers/{dossierId}/instances`
+- Dashboard ID generated by `GET /api/dossiers dossiers/{dossierId}/definition` or other endpoints
+- Dashboard instance ID generated by `POST /api/dossiers/{dossierId}/instances`
 - Filter definition in the body request parameter
 
 :::tip
@@ -431,7 +431,7 @@ This has to be the same filter that was originally applied, but with different v
 
 :::
 
-In this example, you execute a dossier called "Filters" (located in MicroStrategy Tutorial>Shared Reports. You use the authorization token returned during login as the value for `X-MSTR-AuthToken` and provide the project ID, dossier ID, dossier instance ID, and filter definition. In the request body, you modify the values for the filter to be applied to the dossier when it is executed. The resulting HTTP response returns an HTTP status 204.
+In this example, you execute a dashboard called "Filters" (located in MicroStrategy Tutorial>Shared Reports. You use the authorization token returned during login as the value for `X-MSTR-AuthToken` and provide the project ID, dashboard ID, dashboard instance ID, and filter definition. In the request body, you modify the values for the filter to be applied to the dashboard when it is executed. The resulting HTTP response returns an HTTP status 204.
 
 Sample Request
 
@@ -482,7 +482,7 @@ Call `POST /api/dossiers/{dossierId}/instances` or `PUT /api/dossiers/{dossierId
 
 To clear all of the current filter selections for an individual filter, you call one of the following APIs and provide nothing but the filter name or ID:
 
-Endpoint: [POST /api/dossiers/{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
+Endpoint: [POST /api/dossiers/\{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
 
 Sample code for clearing filter selections using the filter ID:
 
@@ -508,7 +508,7 @@ Sample code for clearing filter selections using the filter name:
 }
 ```
 
-Endpoint: [PUT /api/dossiers/{dossierId}/instances/{instanceId}/filters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/setFilters)
+Endpoint: [PUT /api/dossiers/\{dossierId}/instances/\{instanceId}/filters](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/setFilters)
 
 Sample code for clearing filter selections using the filter ID:
 
@@ -530,13 +530,13 @@ Sample code for clearing filter selections using the filter name:
 ]
 ```
 
-## Export the dossier instance to PDF again
+## Export the dashboard instance to PDF again
 
-Call `POST /api/documents/{id}/instances/{instanceId}/pdf` again to export the dossier to a PDF file. This allows you to see the results with a revised definition for the existing filter applied.
+Call `POST /api/documents/{id}/instances/{instanceId}/pdf` again to export the dashboard to a PDF file. This allows you to see the results with a revised definition for the existing filter applied.
 
-Endpoint: [POST /api/documents/{id}/instances/{instanceId}/pdf](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/exportDashboardToPdf)
+Endpoint: [POST /api/documents/\{id}/instances/\{instanceId}/pdf](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/exportDashboardToPdf)
 
-Just like step 6, this endpoint allows the caller to export the dossier instance to a PDF file using the instance ID and object ID of the dossier. However, the results are now different, based on the new filter definition that was applied when the dossier instance was executed in the previous step.
+Just like step 6, this endpoint allows the caller to export the dashboard instance to a PDF file using the instance ID and object ID of the dashboard. However, the results are now different, based on the new filter definition that was applied when the dashboard instance was executed in the previous step.
 
 ## Log out
 

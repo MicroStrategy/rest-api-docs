@@ -1,9 +1,9 @@
 ---
 title: Return the attribute-based view filter criteria applied prior to aggregation
-description: A view filter specifies a set of attribute or metric-based filtering criteria. In dossiers, a view filter is applied to a visualization-level dataset before metrics are aggregated. Because view filters are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
+description: A view filter specifies a set of attribute or metric-based filtering criteria. In dashboards, a view filter is applied to a visualization-level dataset before metrics are aggregated. Because view filters are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
 ---
 
-A view filter specifies a set of attribute or metric-based filtering criteria. In dossiers, a view filter is applied to a visualization-level dataset before metrics are aggregated. Because view filters are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
+A view filter specifies a set of attribute or metric-based filtering criteria. In dashboards, a view filter is applied to a visualization-level dataset before metrics are aggregated. Because view filters are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
 
 You create an attribute-based view filter by selecting the attributes that you want to use as filters in the Filter Editor. Attribute-based view filters are one of three kinds of filters that can be applied to visualizations before metrics are aggregated; the other two are [metric-based view filters](return-metric-based-view-filters.md) and [template limits](return-template-limit-criteria.md). There is one kind of filter that can be applied after metrics are aggregated—[metric limits](return-metric-limit-criteria.md).
 

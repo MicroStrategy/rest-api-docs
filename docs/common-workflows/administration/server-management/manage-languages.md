@@ -194,7 +194,7 @@ Response Code: 200
 
 ## 4. Delete language object
 
-Endpoint: [DELETE /api/objects/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/deleteObject)
+Endpoint: [DELETE /api/objects/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/deleteObject)
 
 This call allows you to delete an object. Object type for language is 45. Call `GET /api/languages` for languages' IDs.
 
@@ -235,7 +235,7 @@ Response Code: 204 (No Content)
 
 ## 5. Get language object
 
-Endpoint: [GET /api/languages/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getLanguageDetails)
+Endpoint: [GET /api/languages/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getLanguageDetails)
 
 This call allows you to get information about language object. Call `GET /api/languages` for languages' IDs.
 
@@ -283,7 +283,7 @@ Response Code: 200
 
 This call allows you to update information about language object. Call `GET /api/languages` for languages' IDs.
 
-Endpoint: [PATCH /api/languages/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/updateLanguage)
+Endpoint: [PATCH /api/languages/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/updateLanguage)
 
 Header parameters:
 
@@ -337,7 +337,7 @@ Response Code: 200
 
 ## 7. Get language formatting settings
 
-Endpoint: [GET /api/languages/{id}/formattingSettings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getFormattingSettings)
+Endpoint: [GET /api/languages/\{id}/formattingSettings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getFormattingSettings)
 
 This call allows you to get information about formatting settings for language object. Call `GET /api/languages` for languages' IDs.
 
@@ -392,7 +392,7 @@ Response Code: 200
 
 ## 8. Update language's formatting settings
 
-Endpoint: [PATCH /api/languages/{id}/formattingSettings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/updateFormattingSettings)
+Endpoint: [PATCH /api/languages/\{id}/formattingSettings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/updateFormattingSettings)
 
 This call allows you to update information about formatting settings for language object. Call `GET /api/languages` for languages' IDs.
 
@@ -471,7 +471,7 @@ Response Code: 200
 
 ## 9. Get base locale default formatting settings
 
-Endpoint: [GET /api/baseLocaleDefaultFormats/{lcid}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getBaseLocaleDefaultFormats)
+Endpoint: [GET /api/baseLocaleDefaultFormats/\{lcid}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Languages/getBaseLocaleDefaultFormats)
 
 This call allows you to get default information about formatting settings for language object. Call `GET /api/languages` for languages' LCIDs.
 

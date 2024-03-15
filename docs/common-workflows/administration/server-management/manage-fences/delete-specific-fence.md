@@ -27,7 +27,7 @@ Obtain the authorization token needed to execute the request using [POST /api/a
 
 ## Delete an existing fence
 
-Endpoint: [DELETE /api/v2/iserver/fences/{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/deleteFence_1).
+Endpoint: [DELETE /api/v2/iserver/fences/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration/deleteFence_1).
 
 Sample Request Header:
 

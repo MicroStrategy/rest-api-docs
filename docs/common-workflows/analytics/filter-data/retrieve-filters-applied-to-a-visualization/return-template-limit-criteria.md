@@ -1,9 +1,9 @@
 ---
 title: Return the template limit criteria applied prior to aggregation
-description: A template limit specifies a set of attribute or metric-based filtering criteria. In dossiers, a template limit is applied to a visualization-level dataset before metrics are aggregated. Because template limits are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
+description: A template limit specifies a set of attribute or metric-based filtering criteria. In dashboards, a template limit is applied to a visualization-level dataset before metrics are aggregated. Because template limits are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
 ---
 
-A template limit specifies a set of attribute or metric-based filtering criteria. In dossiers, a template limit is applied to a visualization-level dataset before metrics are aggregated. Because template limits are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
+A template limit specifies a set of attribute or metric-based filtering criteria. In dashboards, a template limit is applied to a visualization-level dataset before metrics are aggregated. Because template limits are applied at the visualization-level, they can dynamically restrict the data being displayed without re-executing the underlying dataset against the warehouse.
 
 You create a template limit by specifying the attributes or metrics that you want to keep or exclude. If you specify an attribute, you exclude or keep only that attribute element; if you specify a metric, you exclude or keep all of the conditions around that metric. Template limits are one of three kinds of filters that can be applied to visualizations before metrics are aggregated; the other two are [attribute-based view filters](return-attribute-based-view-filters.md) and [metric-based view filters](return-metric-based-view-filters.md). There is one kind of filter that can be applied after metrics are aggregated—[metric limits](return-metric-limit-criteria.md).
 

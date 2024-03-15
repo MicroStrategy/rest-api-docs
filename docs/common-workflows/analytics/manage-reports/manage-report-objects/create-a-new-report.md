@@ -999,7 +999,7 @@ Sample Response Code: 201 (A new normal report is created within an instance suc
 
 By finishing step 1, we can get the object ID of the new report from the information field of the response body, which is `FB7816D149C8AC0573CC55829E56F217`. We can also get the report instance ID named "X-MSTR-MS-Instance" from the response header, which is `E3420B88420E0A58606C268776553815`. Now we can save the report maintained by the report instance. There are two APIs that you can use to save the report instance to the metadata:
 
-#### Endpoint: [POST /api/model/reports/{reportId}/instance/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveReportInstance)
+#### Endpoint: [POST /api/model/reports/\{reportId}/instance/save](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveReportInstance)
 
 You may customize the report-saving process by setting "promptOptions". This field is optional, it can be set to control if filters and template of the report will be prompted next time you open the report, and if current answers to the prompts will be set as the default ones. The sample body of it is like:
 
@@ -1063,7 +1063,7 @@ Sample Response Body: you can view the object ID of the newly created normal rep
 
 Sample Response Code: 200 (The new normal report is saved successfully.)
 
-#### Endpoint: [POST /api/model/reports/{reportId}/instance/saveAs](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveAsReportInstance)
+#### Endpoint: [POST /api/model/reports/\{reportId}/instance/saveAs](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/ms-saveAsReportInstance)
 
 By using the saveAs API, you can not only set "promptOptions", but also customize "overwrite", "name", and "destinationFolderId":
 

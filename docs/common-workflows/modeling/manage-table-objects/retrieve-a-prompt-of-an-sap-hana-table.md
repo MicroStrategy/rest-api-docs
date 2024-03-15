@@ -32,13 +32,13 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the table prompt using [GET /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails).
+Retrieve the table prompt using [GET /api/model/tables/\{tableId}/prompts/\{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails).
 
 :::info
 
 The prompt you are retrieving must already be in the prompt list of the current table.
 
-You must use [GET /api/model/tables/{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails) and check the `sapHanaParameters` field to view the list of existing prompts.
+You must use [GET /api/model/tables/\{tableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails) and check the `sapHanaParameters` field to view the list of existing prompts.
 
 :::
 
@@ -105,11 +105,11 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::info
 
-Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of [GET /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails) to update the table’s prompts, it is recommended to associate all requests to one changeset.
+Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of [GET /api/model/tables/\{tableId}/prompts/\{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails) to update the table’s prompts, it is recommended to associate all requests to one changeset.
 
 :::
 
-### Get a table's prompt within a changeset using [GET /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails)
+### Get a table's prompt within a changeset using [GET /api/model/tables/\{tableId}/prompts/\{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTablePromptDetails)
 
 Sample Request Header:
 

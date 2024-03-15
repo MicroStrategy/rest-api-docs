@@ -40,7 +40,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Workflow
 
-### Update a table prompt with [PUT /api/model/tables/{tableId}/prompts/{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-putTablePrompt)
+### Update a table prompt with [PUT /api/model/tables/\{tableId}/prompts/\{promptId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-putTablePrompt)
 
 The prompt you are updating must already be in the prompt list of the current table.
 

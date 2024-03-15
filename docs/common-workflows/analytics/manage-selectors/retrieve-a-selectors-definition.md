@@ -5,16 +5,17 @@ description: The workflow to retrieve a selector's definition.
 
 You can retrieve a selector's definition using the following APIs.
 
-## API: [GET /api/v2/dossiers/{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList_1)
+## API: [GET /api/v2/dossiers/\{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList_1)
 
-This endpoint fetches a selector's definition and dataset information of a dossier (without executing it). The following details are returned:
+This endpoint fetches a selector's definition and dataset information of a dashboard (without executing it). The following details are returned:
 
 - Current chapter key
 - Dataset information:
 
   - Available object information
 
-    <details><summary>Output example for a dossier and dossier instance definition</summary>
+    <details>
+    <summary>Output example for a dashboard and dashboard instance definition</summary>
 
     ```json
     { "id": "D29DC6464099A518DE19FEA4C25D346B", "name": "temp Dossier", "hasPrompt": false, "chapters": [ { "key": "K36", "name": "Chapter 1", "pages": [ { "key": "K53", "name": "Page 1", "visualizations": [ { "key": "K52", "name": "Visualization 1", "filteredTargetVisualizations": [ { "key": "W65" } ] }, { "key": "W62", "name": "Visualization 2" }, { "key": "W65", "name": "Visualization 3" } ], "inCanvasSelectors": [] } ], "filters": [ { "key": "W134", "name": "Cost", "summary": "((Cost Between 5707743.0 And 21191039.0))", "source": { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "type": 4 }, "synchronizedAcrossChapter":false "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "expression": { "operator": "And", "operands": [ { "operator": "Between", "operands": [ { "type": "metric", "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost" }, { "type": "constant", "dataType": "Real", "value": "5707743" }, { "type": "constant", "dataType": "Real", "value": "21191039" } ] } ] }, "selections": [] }, { "key": "W138", "name": "Category", "summary": "Category In List Electronics", "source": { "id": "8D679D3711D3E4981000E787EC6DE8A4", "type": 12 }, "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "selections": [ { "id": "h2;8D679D3711D3E4981000E787EC6DE8A4", "name": "Electronics" } ] } ] } ], "datasets": [ { "name": "8DFA1ABC41C2F43530645FA90B80C745", "id": "New Dataset 1", "availableObjects": [ { "id": "8D679D3711D3E4981000E787EC6DE8A4", "name": "Category", "type": "attribute", "forms": [ { "id": "CCFBE2A5EADB4F50941FB879CCF1721C", "name": "DESC" } ] }, { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost", "type": "metric" } ] } ] }
@@ -26,7 +27,8 @@ This endpoint fetches a selector's definition and dataset information of a dossi
 
   - Element list selector (in chapter-level, in canvas)
 
-    <details><summary>Output examples for an element list selector definition</summary>
+    <details>
+    <summary>Output examples for an element list selector definition</summary>
 
     Common attribute element list:
 
@@ -89,7 +91,8 @@ This endpoint fetches a selector's definition and dataset information of a dossi
 
   - Attribute qualification selector (in chapter-level, in canvas)
 
-    <details><summary>Output example for an attribute qualification selector definition</summary>
+    <details>
+    <summary>Output example for an attribute qualification selector definition</summary>
 
     ```json
     {
@@ -140,7 +143,8 @@ This endpoint fetches a selector's definition and dataset information of a dossi
 
   - Metric qualification selector (in chapter-level, in canvas)
 
-    <details><summary>Output examples for a metric qualification selector definition</summary>
+    <details>
+    <summary>Output examples for a metric qualification selector definition</summary>
 
     "Greater than" case:
 
@@ -255,7 +259,8 @@ This endpoint fetches a selector's definition and dataset information of a dossi
 
   - Object replacement selector (in-canvas)
 
-    <details><summary>Output example for an object replacement selector definition</summary>
+    <details>
+    <summary>Output example for an object replacement selector definition</summary>
 
     ```json
     {
@@ -297,7 +302,8 @@ This endpoint fetches a selector's definition and dataset information of a dossi
 
   - Set visualization as filter
 
-    <details><summary>Output example for a visualization as filter definition</summary>
+    <details>
+    <summary>Output example for a visualization as filter definition</summary>
 
     ```json
     {
@@ -344,16 +350,17 @@ This endpoint fetches a selector's definition and dataset information of a dossi
 | X-MSTR-ProjectId | Project Id          | header         | string    | true      |
 | dossierId        | dossier id          | path           | string    | true      |
 
-## API: [GET /api/v2/dossiers/{dossierId}/instances/{instanceId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList_2)
+## API: [GET /api/v2/dossiers/\{dossierId}/instances/\{instanceId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList_2)
 
-This endpoint fetches a selector's definition and dataset information from an executed dossier. The following details are returned:
+This endpoint fetches a selector's definition and dataset information from an executed dashboard. The following details are returned:
 
 - Current chapter key
 - Dataset information:
 
   - Available object information
 
-    <details><summary>Output example for a dossier and dossier instance definition</summary>
+    <details>
+    <summary>Output example for a dashboard and dashboard instance definition</summary>
 
     ```json
     { "id": "D29DC6464099A518DE19FEA4C25D346B", "name": "temp Dossier", "hasPrompt": false, "chapters": [ { "key": "K36", "name": "Chapter 1", "pages": [ { "key": "K53", "name": "Page 1", "visualizations": [ { "key": "K52", "name": "Visualization 1", "filteredTargetVisualizations": [ { "key": "W65" } ] }, { "key": "W62", "name": "Visualization 2" }, { "key": "W65", "name": "Visualization 3" } ], "inCanvasSelectors": [] } ], "filters": [ { "key": "W134", "name": "Cost", "summary": "((Cost Between 5707743.0 And 21191039.0))", "source": { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "type": 4 }, "synchronizedAcrossChapter":false "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "expression": { "operator": "And", "operands": [ { "operator": "Between", "operands": [ { "type": "metric", "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost" }, { "type": "constant", "dataType": "Real", "value": "5707743" }, { "type": "constant", "dataType": "Real", "value": "21191039" } ] } ] }, "selections": [] }, { "key": "W138", "name": "Category", "summary": "Category In List Electronics", "source": { "id": "8D679D3711D3E4981000E787EC6DE8A4", "type": 12 }, "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "selections": [ { "id": "h2;8D679D3711D3E4981000E787EC6DE8A4", "name": "Electronics" } ] } ] } ], "datasets": [ { "name": "8DFA1ABC41C2F43530645FA90B80C745", "id": "New Dataset 1", "availableObjects": [ { "id": "8D679D3711D3E4981000E787EC6DE8A4", "name": "Category", "type": "attribute", "forms": [ { "id": "CCFBE2A5EADB4F50941FB879CCF1721C", "name": "DESC" } ] }, { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost", "type": "metric" } ] } ] }
@@ -365,7 +372,8 @@ This endpoint fetches a selector's definition and dataset information from an ex
 
   - Element list selector (in chapter-level, in canvas)
 
-    <details><summary>Output examples for an element list selector definition</summary>
+    <details>
+    <summary>Output examples for an element list selector definition</summary>
 
     Common attribute element list:
 
@@ -428,7 +436,8 @@ This endpoint fetches a selector's definition and dataset information from an ex
 
   - Attribute qualification selector (in chapter-level, in canvas)
 
-    <details><summary>Output example for an attribute qualification selector definition</summary>
+    <details>
+    <summary>Output example for an attribute qualification selector definition</summary>
 
     ```json
     {
@@ -479,7 +488,8 @@ This endpoint fetches a selector's definition and dataset information from an ex
 
   - Metric qualification selector (in chapter-level, in canvas)
 
-    <details><summary>Output examples for a metric qualification selector definition</summary>
+    <details>
+    <summary>Output examples for a metric qualification selector definition</summary>
 
     "Greater than" case:
 
@@ -594,7 +604,8 @@ This endpoint fetches a selector's definition and dataset information from an ex
 
   - Object replacement selector (in-canvas)
 
-    <details><summary>Output example for an object replacement selector definition</summary>
+    <details>
+    <summary>Output example for an object replacement selector definition</summary>
 
     ```json
     {
@@ -636,7 +647,8 @@ This endpoint fetches a selector's definition and dataset information from an ex
 
   - Set visualization as filter
 
-    <details><summary>Output example for a visualization as filter definition</summary>
+    <details>
+    <summary>Output example for a visualization as filter definition</summary>
 
     ```json
     {

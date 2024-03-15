@@ -46,7 +46,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 ## Update the user hierarchy's definition
 
-Endpoint: [PATCH /api/model/hierarchies/{hierarchyId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Hierarchies/ms-updateHiearchy).
+Endpoint: [PATCH /api/model/hierarchies/\{hierarchyId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/User%20Hierarchies/ms-updateHiearchy).
 
 1. Provide the following headers in the request.
 

@@ -28,7 +28,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 ## Update a cube definition
 
-### Update a cube object using [PUT /api/model/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube)
+### Update a cube object using [PUT /api/model/cubes/\{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube)
 
 <Available since="2021 Update 5" />
 
@@ -298,7 +298,7 @@ Sample Response Body:
 
 Sample Response Code: 200 (The cube's definition is updated successfully.)
 
-### Update the cube's advanced properties using [PUT /api/model/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube) with `showAdvancedProperties=true`
+### Update the cube's advanced properties using [PUT /api/model/cubes/\{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube) with `showAdvancedProperties=true`
 
 <Available since="2021 Update 6" />
 
@@ -464,7 +464,7 @@ Sample Response Code: 200 (The cube definition is updated successfully.)
 
 ## Publish the cube
 
-### Publish the cube using [POST /api/v2/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2)
+### Publish the cube using [POST /api/v2/cubes/\{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2)
 
 <Available since="2021 Update 5" />
 

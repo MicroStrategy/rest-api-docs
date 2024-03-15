@@ -1,7 +1,7 @@
 ---
 title: Monitor and manage cube caches
 sidebar_label: Monitor and manage cube caches
-description: The status of a cube tells you how the cube is currently being used and whether reports/dossiers can access the cube. For example, if a cube is deactivated, reports that access that cube fail to execute. Cube status is accessed through the System Monitors in Developer. All published cubes have an entry in the cube monitor. Deleting an entry from the cube monitor unpublishes the cube.
+description: The status of a cube tells you how the cube is currently being used and whether reports/dashboards can access the cube. For example, if a cube is deactivated, reports that access that cube fail to execute. Cube status is accessed through the System Monitors in Developer. All published cubes have an entry in the cube monitor. Deleting an entry from the cube monitor unpublishes the cube.
 ---
 
 <Available since="2021" />
@@ -14,7 +14,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 :::
 
-The status of a cube tells you how the cube is currently being used and whether reports/dossiers can access the cube. For example, if a cube is deactivated, reports that access that cube fail to execute. Cube status is accessed through the System Monitors in Developer. All published cubes have an entry in the cube monitor. Deleting an entry from the cube monitor unpublishes the cube.
+The status of a cube tells you how the cube is currently being used and whether reports/dashboards can access the cube. For example, if a cube is deactivated, reports that access that cube fail to execute. Cube status is accessed through the System Monitors in Developer. All published cubes have an entry in the cube monitor. Deleting an entry from the cube monitor unpublishes the cube.
 
 ## Instructions to access the cube cache monitor in Developer
 
@@ -172,18 +172,18 @@ Fill in the sample below to design your own output.
 
 ### Error handling
 
-| Invalid Input              | Error Message                                                                                                                                                     | HTTP Response Code |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| Cluster node doesn't exist | The cluster node ''{0}'' is not connected or canonical name, you should use the cluster node name from the `GET /api/monitors/iServer/nodes`                      | 503                |
-| offset is invalid          | The offset value {offset} is not valid, it must be greater than or equal to 0                                                                                     | 400                |
-| limit is invalid           | The limit value {limit} is not valid, it must be greater than or equal to 1, and less than or equal to 1000                                                       | 400                |
-| projectIds is invalid      | At least one of GUID provided in the list is not valid                                                                                                            | 400                |
-| status is invalid          | Invalid filter field state.loadedState input ''{0}'', it should like: 'loaded'                                                                                    | 400                |
-| sortBy is invalid          | Invalid sortBy input '{sortBy input}', it should like: ^[+ -]{0,1}(cubeName size &#124; hitCount &#124; lastUpdateTime &#124; status &#124; project &#124; owner) | 400                |
+| Invalid Input              | Error Message                                                                                                                                                       | HTTP Response Code |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| Cluster node doesn't exist | The cluster node ''{0}'' is not connected or canonical name, you should use the cluster node name from the `GET /api/monitors/iServer/nodes`                        | 503                |
+| offset is invalid          | The offset value \{offset} is not valid, it must be greater than or equal to 0                                                                                      | 400                |
+| limit is invalid           | The limit value \{limit} is not valid, it must be greater than or equal to 1, and less than or equal to 1000                                                        | 400                |
+| projectIds is invalid      | At least one of GUID provided in the list is not valid                                                                                                              | 400                |
+| status is invalid          | Invalid filter field state.loadedState input ''{0}'', it should like: 'loaded'                                                                                      | 400                |
+| sortBy is invalid          | Invalid sortBy input '\{sortBy input}', it should like: ^[+ -]\{0,1}(cubeName size &#124; hitCount &#124; lastUpdateTime &#124; status &#124; project &#124; owner) | 400                |
 
 ## Get cache information for a single cube
 
-Endpoint: [GET /api/monitors/caches/cubes/{cacheId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getSingleCubeProperties)
+Endpoint: [GET /api/monitors/caches/cubes/\{cacheId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getSingleCubeProperties)
 
 This endpoint gets cache information for a single cube.
 
@@ -341,11 +341,11 @@ Fill in the sample below to design your own output.
 
 ### Error handling
 
-| Invalid Input                                                            | Error Message                                                                                                                                | HTTP Response Code |
-| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| cacheId is invalid                                                       | Invalid cube cache Id '{cacheId}'                                                                                                            | 404                |
-| cacheId does not exist in Intelligence server                            | The cube cache '{cacheId}' is not found in Intelligence server                                                                               | 404                |
-| cacheId is invalid with an invalid cluster node (based on code 64) in it | The cluster node ''{0}'' is not connected or canonical name, you should use the cluster node name from the `GET /api/monitors/iServer/nodes` | 503                |
+| Invalid Input                                                            | Error Message                                                                                                                                 | HTTP Response Code |
+| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| cacheId is invalid                                                       | Invalid cube cache Id '\{cacheId}'                                                                                                            | 404                |
+| cacheId does not exist in Intelligence server                            | The cube cache '\{cacheId}' is not found in Intelligence server                                                                               | 404                |
+| cacheId is invalid with an invalid cluster node (based on code 64) in it | The cluster node ''\{0}'' is not connected or canonical name, you should use the cluster node name from the `GET /api/monitors/iServer/nodes` | 503                |
 
 ## Fetch aggregated cube cache capacity usage information
 
@@ -426,14 +426,14 @@ Fill in the sample below to design your own output. We recommend you specify all
 
 ### Error handling
 
-| Invalid Input              | Error Message                                                                                   | HTTP Response Code |
-| -------------------------- | ----------------------------------------------------------------------------------------------- | ------------------ |
-| Cluster node doesn't exist | Invalid cluster node name {clusterNode}                                                         | 400                |
-| groupByObject is invalid   | The group by object {groupByObject} is invalid, currently just support group by user or project | 400                |
+| Invalid Input              | Error Message                                                                                    | HTTP Response Code |
+| -------------------------- | ------------------------------------------------------------------------------------------------ | ------------------ |
+| Cluster node doesn't exist | Invalid cluster node name \{clusterNode}                                                         | 400                |
+| groupByObject is invalid   | The group by object \{groupByObject} is invalid, currently just support group by user or project | 400                |
 
 ## Alter cube cache status for a specific cube
 
-Endpoint: [PATCH /api/monitors/caches/cubes/{cacheId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/alterCubeAction)
+Endpoint: [PATCH /api/monitors/caches/cubes/\{cacheId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/alterCubeAction)
 
 This endpoint alters cube cache status for a specific cube, on a specific node.
 
@@ -512,15 +512,15 @@ An invalid action input, which is the code validation logic on the REST-API side
 
 ### Error handling
 
-| Invalid Input                                | Error Message                                                                                      | HTTP Response Code |
-| -------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------ |
-| Invalid cacheId                              | Invalid cube cache Id '{cacheId}'                                                                  | 400                |
-| cacheId doesn't exist in Intelligence server | The cube cache '{cacheId}' is not found in Intelligence server                                     | 404                |
-| Unsupported status input                     | unsupported statue input, currently just support formats: {"active":boolean} or {"loaded":boolean} | 400                |
+| Invalid Input                                | Error Message                                                                                        | HTTP Response Code |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------ |
+| Invalid cacheId                              | Invalid cube cache Id '\{cacheId}'                                                                   | 400                |
+| cacheId doesn't exist in Intelligence server | The cube cache '\{cacheId}' is not found in Intelligence server                                      | 404                |
+| Unsupported status input                     | unsupported statue input, currently just support formats: \{"active":boolean} or \{"loaded":boolean} | 400                |
 
 ## Get cube cache manipulation status information
 
-Endpoint: [GET /api/monitors/caches/cubes/manipulations/{id}/status](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getManipulationStatus)
+Endpoint: [GET /api/monitors/caches/cubes/manipulations/\{id}/status](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getManipulationStatus)
 
 This endpoint get cube cache manipulation status information.
 
@@ -567,7 +567,7 @@ This example is for a response status code of 200.
 
 ## Delete a cube cache
 
-Endpoint: [DELETE /api/monitors/caches/cubes/{cacheId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/deleteCubeCache)
+Endpoint: [DELETE /api/monitors/caches/cubes/\{cacheId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/deleteCubeCache)
 
 This endpoint deletes a cube cache.
 
@@ -584,7 +584,7 @@ Successful response code 204 (no content).
 
 ### Error handling
 
-| Invalid Input                                | Error Message                                                  | HTTP Response Code |
-| -------------------------------------------- | -------------------------------------------------------------- | ------------------ |
-| Invalid cacheId                              | Invalid cube cache Id '{cacheId}'                              | 400                |
-| cacheId doesn't exist in Intelligence server | The cube cache '{cacheId}' is not found in Intelligence server | 404                |
+| Invalid Input                                | Error Message                                                   | HTTP Response Code |
+| -------------------------------------------- | --------------------------------------------------------------- | ------------------ |
+| Invalid cacheId                              | Invalid cube cache Id '\{cacheId}'                              | 400                |
+| cacheId doesn't exist in Intelligence server | The cube cache '\{cacheId}' is not found in Intelligence server | 404                |
