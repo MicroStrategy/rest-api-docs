@@ -33,9 +33,9 @@ Sample Request Body:
 
 ```json
 {
-    "context": {
-        "type": "new"
-    }
+  "context": {
+    "type": "new"
+  }
 }
 ```
 
@@ -56,17 +56,17 @@ curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/bots/6C6D314E4C881
 
 Sample Response:
 
-| Response Code | Status                                      |
-| ------------- | ------------------------------------------- |
-| 200           | Successfully create the bot instance        |
-| 400           | Error in creating the bot isntance          |
-| 401           | Authorization failed                        |
-| 404           | Bot does not exist          |
+| Response Code | Status                               |
+| ------------- | ------------------------------------ |
+| 200           | Successfully create the bot instance |
+| 400           | Error in creating the bot isntance   |
+| 401           | Authorization failed                 |
+| 404           | Bot does not exist                   |
 
 Sample Response Body on success:
 
 ```json
 {
-    "id": "5B1EB48585F04384A97F3D831D7C7416"
+  "id": "5B1EB48585F04384A97F3D831D7C7416"
 }
 ```

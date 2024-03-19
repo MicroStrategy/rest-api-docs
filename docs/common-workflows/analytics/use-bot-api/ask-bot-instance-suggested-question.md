@@ -26,7 +26,7 @@ Sample Request Body:
 
 ```json
 {
-    "count": 1
+  "count": 1
 }
 ```
 
@@ -45,21 +45,21 @@ curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/bots/6C6D314E4C881
 
 Sample Response:
 
-| Response Code | Status                                      |
-| ------------- | ------------------------------------------- |
-| 200           | Successfully return the bot instance's suggested questions     |
-| 400           | Error in generating the bot instance's suggested questions     |
-| 401           | Authorization failed                        |
-| 404           | Bot or bot instance does not exist          |
+| Response Code | Status                                                     |
+| ------------- | ---------------------------------------------------------- |
+| 200           | Successfully return the bot instance's suggested questions |
+| 400           | Error in generating the bot instance's suggested questions |
+| 401           | Authorization failed                                       |
+| 404           | Bot or bot instance does not exist                         |
 
 Sample Response Body on success:
 
 ```json
 {
-    "suggestions": [
-        {
-            "text": "What is the revenue for year 2023"
-        }
-    ]
+  "suggestions": [
+    {
+      "text": "What is the revenue for year 2023"
+    }
+  ]
 }
 ```

@@ -43,13 +43,13 @@ curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/bots/6C6D314E4C881
 
 Sample Response:
 
-| Response Code | Status                                      |
-| ------------- | ------------------------------------------- |
-| 200           | Successfully return the bot question that has been answered          |
-| 202           | Successfully return the bot question this is still being processed   |
-| 400           | Error in getting the bot question           |
-| 401           | Authorization failed                        |
-| 404           | Bot or bot question does not exist          |
+| Response Code | Status                                                             |
+| ------------- | ------------------------------------------------------------------ |
+| 200           | Successfully return the bot question that has been answered        |
+| 202           | Successfully return the bot question this is still being processed |
+| 400           | Error in getting the bot question                                  |
+| 401           | Authorization failed                                               |
+| 404           | Bot or bot question does not exist                                 |
 
 Sample Response Body on success:
 
@@ -59,10 +59,10 @@ If the question is being processed, the answers list is empty and the HTTP respo
 
 ```json
 {
-    "id": "5B1EB48585F04384A97F3D831D7C7416",
-    "text": "Analyze the distribution of cooking times for recipes",
-    "answers": [],
-    "creationDate": "2024-03-08T09:01:43.154+0000"
+  "id": "5B1EB48585F04384A97F3D831D7C7416",
+  "text": "Analyze the distribution of cooking times for recipes",
+  "answers": [],
+  "creationDate": "2024-03-08T09:01:43.154+0000"
 }
 ```
 
@@ -70,18 +70,18 @@ If the question's answer is successfully generated, the response is:
 
 ```json
 {
-    "id": "5B1EB48585F04384A97F3D831D7C7416",
-    "text": "Analyze the distribution of cooking times for recipes",
-    "answers": [
-        {
-            "text": "The distribution of cooking times for recipes is as follows:\n- The shortest cooking time is -1 minute.\n- The majority of recipes have cooking times ranging from 2 to 60 minutes.\n- There are a few recipes with longer cooking times, such as 75, 90, 120, and 720 minutes.\n- The exact distribution of cooking times can be seen in the visualization result.",
-            "type": "visualization",
-            "data": {
-                "id": "583793FBA2394DD4A3154F2177982F9F"
-            }
-        }
-    ],
-    "creationDate": "2024-03-08T09:01:43.154+0000"
+  "id": "5B1EB48585F04384A97F3D831D7C7416",
+  "text": "Analyze the distribution of cooking times for recipes",
+  "answers": [
+    {
+      "text": "The distribution of cooking times for recipes is as follows:\n- The shortest cooking time is -1 minute.\n- The majority of recipes have cooking times ranging from 2 to 60 minutes.\n- There are a few recipes with longer cooking times, such as 75, 90, 120, and 720 minutes.\n- The exact distribution of cooking times can be seen in the visualization result.",
+      "type": "visualization",
+      "data": {
+        "id": "583793FBA2394DD4A3154F2177982F9F"
+      }
+    }
+  ],
+  "creationDate": "2024-03-08T09:01:43.154+0000"
 }
 ```
 
@@ -89,15 +89,15 @@ If the question encounters an error when generating the answer, the answer is:
 
 ```json
 {
-    "id": "5B1EB48585F04384A97F3D831D7C7416",
-    "text": "Analyze the distribution of cooking times for recipes",
-    "answers": [
-        {
-            "text": "Something is wrong. Please try again.",
-            "detailError": "Something is wrong. Please try again.",
-            "type": "error"
-        }
-    ],
-    "creationDate": "2024-03-08T09:01:43.154+0000"
+  "id": "5B1EB48585F04384A97F3D831D7C7416",
+  "text": "Analyze the distribution of cooking times for recipes",
+  "answers": [
+    {
+      "text": "Something is wrong. Please try again.",
+      "detailError": "Something is wrong. Please try again.",
+      "type": "error"
+    }
+  ],
+  "creationDate": "2024-03-08T09:01:43.154+0000"
 }
 ```

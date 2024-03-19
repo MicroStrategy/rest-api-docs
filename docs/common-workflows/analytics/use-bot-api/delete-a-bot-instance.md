@@ -44,12 +44,12 @@ curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/bots/6C6D314E4C881
 
 Sample Response:
 
-| Response Code | Status                                      |
-| ------------- | ------------------------------------------- |
-| 200           | Successfully delete the bot instance        |
-| 400           | Error in deleting the bot isntance          |
-| 401           | Authorization failed                        |
-| 404           | Bot or bot instance does not exist          |
+| Response Code | Status                               |
+| ------------- | ------------------------------------ |
+| 200           | Successfully delete the bot instance |
+| 400           | Error in deleting the bot isntance   |
+| 401           | Authorization failed                 |
+| 404           | Bot or bot instance does not exist   |
 
 Sample Response Body on success:
 No response body

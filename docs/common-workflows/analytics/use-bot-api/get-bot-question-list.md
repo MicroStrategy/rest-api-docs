@@ -56,21 +56,21 @@ The response is the question list in a chat bot. See [Get a question in chat bot
 
 ```json
 {
-    "questions": [
+  "questions": [
+    {
+      "id": "5B1EB48585F04384A97F3D831D7C7416",
+      "text": "Analyze the distribution of cooking times for recipes",
+      "answers": [
         {
-            "id": "5B1EB48585F04384A97F3D831D7C7416",
-            "text": "Analyze the distribution of cooking times for recipes",
-            "answers": [
-                {
-                    "text": "The distribution of cooking times for recipes is as follows:\n- The shortest cooking time is -1 minute.\n- The majority of recipes have cooking times ranging from 2 to 60 minutes.\n- There are a few recipes with longer cooking times, such as 75, 90, 120, and 720 minutes.\n- The exact distribution of cooking times can be seen in the visualization result.",
-                    "type": "visualization",
-                    "data": {
-                        "id": "583793FBA2394DD4A3154F2177982F9F"
-                    }
-                }
-            ],
-            "creationDate": "2024-03-08T09:01:43.154+0000"
+          "text": "The distribution of cooking times for recipes is as follows:\n- The shortest cooking time is -1 minute.\n- The majority of recipes have cooking times ranging from 2 to 60 minutes.\n- There are a few recipes with longer cooking times, such as 75, 90, 120, and 720 minutes.\n- The exact distribution of cooking times can be seen in the visualization result.",
+          "type": "visualization",
+          "data": {
+            "id": "583793FBA2394DD4A3154F2177982F9F"
+          }
         }
-    ]
+      ],
+      "creationDate": "2024-03-08T09:01:43.154+0000"
+    }
+  ]
 }
 ```

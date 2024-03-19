@@ -26,7 +26,7 @@ Sample Request Body:
 
 ```json
 {
-    "text": "What is the average revenue for year 2023"
+  "text": "What is the average revenue for year 2023"
 }
 ```
 
@@ -46,17 +46,17 @@ curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/bots/6C6D314E4C881
 
 Sample Response:
 
-| Response Code | Status                                      |
-| ------------- | ------------------------------------------- |
-| 201           | Successfully accept the bot question        |
-| 400           | Error in accepting the bot question         |
-| 401           | Authorization failed                        |
-| 404           | Bot or bot instance does not exist          |
+| Response Code | Status                               |
+| ------------- | ------------------------------------ |
+| 201           | Successfully accept the bot question |
+| 400           | Error in accepting the bot question  |
+| 401           | Authorization failed                 |
+| 404           | Bot or bot instance does not exist   |
 
 Sample Response Body on success:
 
 ```json
 {
-    "id": "5B1EB48585F04384A97F3D831D7C7416"
+  "id": "5B1EB48585F04384A97F3D831D7C7416"
 }
 ```
