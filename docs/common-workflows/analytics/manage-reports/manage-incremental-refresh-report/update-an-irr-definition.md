@@ -216,7 +216,7 @@ The model for the definition of the Incremental Refresh Report can be represente
   - `columns` (`List<Objects>`) - A list of objects on the column of IRR template.
   - `pageby` (`List<Objects>`) - A list of objects on the pageby of IRR template.
 
-## Update the FFSQL incremental refresh report using [PUT /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-putIncrementalRefreshReport)
+## Update the FFSQL incremental refresh report using [PUT /api/model/incrementalRefresh/\{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-putIncrementalRefreshReport)
 
 For FFSQL incremental refresh report, we can also update the `table` field.
 

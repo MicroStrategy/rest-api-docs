@@ -186,7 +186,7 @@ Response Code: 200 (Incremental Refresh Report's definition is returned successf
 
 ## Retrieve a FFSQL incremental refresh report definition
 
-Retrieve the FFSQL Incremental Refresh Report definition using [GET /api/model/incrementalRefresh/{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-getIncrementalRefreshReport).
+Retrieve the FFSQL Incremental Refresh Report definition using [GET /api/model/incrementalRefresh/\{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-getIncrementalRefreshReport).
 
 Sample Curl:
 

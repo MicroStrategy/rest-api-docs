@@ -462,7 +462,7 @@ Sample Response:
 
 Sample Response Code: 200 (The cube definition is updated successfully.)
 
-### Update a FFSQL cube object using [PUT /api/model/cubes/{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube)
+### Update a FFSQL cube object using [PUT /api/model/cubes/\{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-replaceCube)
 
 Compared to updating a normal table, you can't update the `filter` as it's not applicable to a FFSQL cube, but you can update the `table` field. The attributes and metrics on the template should be updated accordingly, they should be the same as the ones on the table.
 

@@ -32,7 +32,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the cube’s definition using `GET /api/model/cubes/{cubeId}`.
+Retrieve the cube’s definition using `GET /api/model/cubes/\{cubeId}`.
 
 Sample Request Header:
 
@@ -196,7 +196,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 :::
 
-Retrieve the FFSQL cube’s definition using `GET /api/model/cubes/{cubeId}`.
+Retrieve the FFSQL cube’s definition using `GET /api/model/cubes/\{cubeId}`.
 
 Sample Request Header:
 
