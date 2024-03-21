@@ -183,3 +183,196 @@ You can view the Incremental Refresh Report definition in the body of the respon
 ```
 
 Response Code: 200 (Incremental Refresh Report's definition is returned successfully.)
+
+## Retrieve a FFSQL incremental refresh report definition
+
+Retrieve the FFSQL Incremental Refresh Report definition using [GET /api/model/incrementalRefresh/\{incrementalRefreshReportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-getIncrementalRefreshReport).
+
+Sample Curl:
+
+```bash
+curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/incrementalRefresh/B5905F5C4565159A5AEAF78E71DC8BF6" \
+-H "accept: application/json" \
+-H "X-MSTR-AuthToken: 1etbm9r9i7ngvcbudaarg13m93" \
+-H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
+```
+
+Sample Response Body:
+
+You can view the Incremental Refresh Report definition in the body of the response.
+
+```json
+{
+  "information": {
+    "dateCreated": "2024-01-24T07:54:29.220Z",
+    "dateModified": "2024-01-24T07:54:29.220Z",
+    "versionId": "B2952C4248A99A4346B8CBBC4B2D4A71",
+    "acg": 255,
+    "primaryLocale": "en-US",
+    "objectId": "B5905F5C4565159A5AEAF78E71DC8BF6",
+    "subType": "report_increment_refresh",
+    "name": "ffsql_irr_06"
+  },
+  "targetCube": {
+    "objectId": "1B1CD04E4494F4FD9711FC8E162FE574",
+    "subType": "report_cube",
+    "name": "ffsql_cube"
+  },
+  "incrementType": "report",
+  "refreshType": "update",
+  "template": {
+    "rows": [
+      {
+        "id": "15FDC75E15FC48CFA0EE53D5E4F36742",
+        "name": "my_cust_city",
+        "type": "attribute",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID"
+          }
+        ]
+      },
+      {
+        "id": "0D7A725ACF3B41F8B6ACF0FFB5D29376",
+        "name": "my_call_ctr",
+        "type": "attribute",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID"
+          }
+        ]
+      }
+    ],
+    "columns": [
+      {
+        "type": "metrics",
+        "elements": [
+          {
+            "id": "59E6325B33BB4A5FAD057A8EB99A7CDB",
+            "name": "my_tot_cost",
+            "subType": "metric"
+          }
+        ]
+      }
+    ],
+    "pageBy": []
+  },
+  "table": {
+    "physicalTable": {
+      "columns": [
+        {
+          "id": "A30930BF8DB541F49384E3F9E40ACEC0",
+          "name": "aaa",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "id": "C85295213D7D43B5A6067BA4B14E3BE2",
+          "name": "bbb",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "id": "635EFD0ED49A4260880FB357812A24DB",
+          "name": "ccc",
+          "dataType": {
+            "type": "double",
+            "precision": 18,
+            "scale": 0
+          }
+        }
+      ],
+      "sqlExpression": {
+        "tree": {
+          "function": "concat_no_blank",
+          "children": [
+            {
+              "type": "constant",
+              "variant": {
+                "type": "string",
+                "value": "SELECT cust_city_id, call_ctr_id, tot_cost FROM tutorial.city_ctr_sls WHERE gross_dollar_sales > 0;"
+              }
+            }
+          ],
+          "type": "operator"
+        }
+      }
+    },
+    "attributes": [
+      {
+        "id": "15FDC75E15FC48CFA0EE53D5E4F36742",
+        "name": "my_cust_city",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "objectId": "635EFD0ED49A4260880FB357812A24DB",
+                "name": "ccc"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "0D7A725ACF3B41F8B6ACF0FFB5D29376",
+        "name": "my_call_ctr",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "objectId": "C85295213D7D43B5A6067BA4B14E3BE2",
+                "name": "bbb"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "id": "59E6325B33BB4A5FAD057A8EB99A7CDB",
+        "name": "my_tot_cost",
+        "dataType": {
+          "type": "numeric",
+          "precision": 0,
+          "scale": 0
+        },
+        "expression": {
+          "tree": {
+            "type": "column_reference",
+            "objectId": "A30930BF8DB541F49384E3F9E40ACEC0",
+            "name": "aaa"
+          }
+        }
+      }
+    ],
+    "dataSource": {
+      "objectId": "A528E3A1436D9C08318735BC915FCF13",
+      "subType": "db_role_import",
+      "name": "tutorial_wh"
+    }
+  }
+}
+```
+
+Response Code: 200 (Incremental Refresh Report's definition is returned successfully.)

@@ -69,4 +69,8 @@ Stores the information of the template used in the Incremental Refresh Report, w
 
 If the `incrementType` of the Incremental Refresh Report is `filter`, it’s not allowed to modify the template.
 
+### `table`
+
+This field is only available when the target cube is a FFSQL cube. It stores the information for the table used in the target cube.
+
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/2021/InstallConfig/en-us/Content/modeling_service.htm).

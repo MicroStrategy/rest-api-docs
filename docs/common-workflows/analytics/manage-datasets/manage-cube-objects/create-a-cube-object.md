@@ -446,6 +446,510 @@ Sample Response:
 
 Sample Response Code: 201 (A cube is created successfully.)
 
+### Create a FFSQL cube object using [POST /api/model/cubes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-createCube)
+
+We also support creating a FFSQL cube, which is a cube that is based on a custom SQL query, and map the columns to attributes and metrics. Compared to normal cubes, `filter` field is not applicable, and we have an extra `table` field. The attributes and metrics on the table should be put on the cube template. If we don't provide the template in the request body, the will be generated automatically based on the table.
+
+Sample Request Header:
+
+```http
+"accept": "application/json"
+"X-MSTR-AuthToken": "4jegqhpiulqarq0js6b0gt9lon"
+"X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
+```
+
+Sample Request Body:
+
+```json
+{
+  "information": {
+    "name": "Year, Category Analysis",
+    "destinationFolderId": "98FE182C2A10427EACE0CD30B6768258"
+  },
+  "sourceType": "custom_sql_free_form",
+  "table": {
+    "physicalTable": {
+      "columns": [
+        {
+          "name": "ffsqlIdV1",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "name": "ffsqlNameV1",
+          "dataType": {
+            "type": "fixed_length_string",
+            "precision": 255,
+            "scale": 0
+          }
+        },
+        {
+          "name": "ffsqlAgeV1",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "name": "ffsqlScoreV1",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        }
+      ],
+      "sqlExpression": {
+        "tree": {
+          "function": "concat_no_blank",
+          "children": [
+            {
+              "type": "constant",
+              "variant": {
+                "type": "string",
+                "value": "SELECT id, name, age, score FROM hackathon.mytest;"
+              }
+            }
+          ],
+          "type": "operator"
+        }
+      }
+    },
+    "attributes": [
+      {
+        "name": "ffsqlIdV1",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "name": "ffsqlIdV1"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "ffsqlNameV1",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "text",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "name": "ffsqlNameV1"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "name": "ffsqlAgeV1",
+        "dataType": {
+          "type": "numeric",
+          "precision": 0,
+          "scale": 0
+        },
+        "expression": {
+          "tree": {
+            "type": "column_reference",
+            "name": "ffsqlAgeV1"
+          }
+        }
+      },
+      {
+        "name": "ffsqlScoreV1",
+        "dataType": {
+          "type": "numeric",
+          "precision": 0,
+          "scale": 0
+        },
+        "expression": {
+          "tree": {
+            "type": "column_reference",
+            "name": "ffsqlScoreV1"
+          }
+        }
+      }
+    ],
+    "dataSource": {
+      "objectId": "A528E3A1436D9C08318735BC915FCF13",
+      "subType": "db_role_import",
+      "name": "tutorial_wh"
+    }
+  }
+}
+```
+
+Sample Curl:
+
+```bash
+curl --location 'https://demo.microstrategy.com/MicroStrategyLibrary/api/model/cubes' \
+--header 'X-MSTR-AuthToken: 4jegqhpiulqarq0js6b0gt9lon' \
+--header 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: JSESSIONID=9F0BCEF1DC1DC915565555F36AC0DEFA; iSession=4jegqhpiulqarq0js6b0gt9lon' \
+--data '{
+    "information": {
+        "name": "Year, Category Analysis",
+        "destinationFolderId": "98FE182C2A10427EACE0CD30B6768258"
+    },
+    "sourceType": "custom_sql_free_form",
+    "table": {
+        "physicalTable": {
+            "columns": [
+                {
+                    "name": "ffsqlIdV1",
+                    "dataType": {
+                        "type": "integer",
+                        "precision": 4,
+                        "scale": 0
+                    }
+                },
+                {
+                    "name": "ffsqlNameV1",
+                    "dataType": {
+                        "type": "fixed_length_string",
+                        "precision": 255,
+                        "scale": 0
+                    }
+                },
+                {
+                    "name": "ffsqlAgeV1",
+                    "dataType": {
+                        "type": "integer",
+                        "precision": 4,
+                        "scale": 0
+                    }
+                },
+                {
+                    "name": "ffsqlScoreV1",
+                    "dataType": {
+                        "type": "integer",
+                        "precision": 4,
+                        "scale": 0
+                    }
+                }
+            ],
+            "sqlExpression": {
+                "tree": {
+                    "function": "concat_no_blank",
+                    "children": [
+                        {
+                            "type": "constant",
+                            "variant": {
+                                "type": "string",
+                                "value": "SELECT id, name, age, score FROM hackathon.mytest;"
+                            }
+                        }
+                    ],
+                    "type": "operator"
+                }
+            }
+        },
+        "attributes": [
+            {
+                "name": "ffsqlIdV1",
+                "forms": [
+                    {
+                        "id": "45C11FA478E745FEA08D781CEA190FE5",
+                        "category": "ID",
+                        "type": "system",
+                        "displayFormat": "number",
+                        "expression": {
+                            "tree": {
+                                "type": "column_reference",
+                                "name": "ffsqlIdV1"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "ffsqlNameV1",
+                "forms": [
+                    {
+                        "id": "45C11FA478E745FEA08D781CEA190FE5",
+                        "category": "ID",
+                        "type": "system",
+                        "displayFormat": "text",
+                        "expression": {
+                            "tree": {
+                                "type": "column_reference",
+                                "name": "ffsqlNameV1"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "metrics": [
+            {
+                "name": "ffsqlAgeV1",
+                "dataType": {
+                    "type": "numeric",
+                    "precision": 0,
+                    "scale": 0
+                },
+                "expression": {
+                    "tree": {
+                        "type": "column_reference",
+                        "name": "ffsqlAgeV1"
+                    }
+                }
+            },
+            {
+                "name": "ffsqlScoreV1",
+                "dataType": {
+                    "type": "numeric",
+                    "precision": 0,
+                    "scale": 0
+                },
+                "expression": {
+                    "tree": {
+                        "type": "column_reference",
+                        "name": "ffsqlScoreV1"
+                    }
+                }
+            }
+        ],
+        "dataSource": {
+            "objectId": "A528E3A1436D9C08318735BC915FCF13",
+            "subType": "db_role_import",
+            "name": "tutorial_wh"
+        }
+    }
+}'
+```
+
+Sample Response Body:
+
+```json
+{
+  "information": {
+    "dateCreated": "2024-01-24T06:48:55.213Z",
+    "dateModified": "2024-01-24T06:48:55.213Z",
+    "versionId": "8669F17C45F02D454A409EA9FF77B9A4",
+    "acg": 255,
+    "primaryLocale": "en-US",
+    "objectId": "E2AD7C9E4954660D5A5BDBBFD751F6CC",
+    "subType": "report_cube",
+    "name": "Year, Category Analysis"
+  },
+  "template": {
+    "rows": [
+      {
+        "id": "FF816775FB784C75B3BA2B63BAECDE96",
+        "name": "ffsqlIdV1",
+        "type": "attribute",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID"
+          }
+        ]
+      },
+      {
+        "id": "FB045BB2C57D45488879EC303B76C129",
+        "name": "ffsqlNameV1",
+        "type": "attribute",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID"
+          }
+        ]
+      }
+    ],
+    "columns": [
+      {
+        "type": "metrics",
+        "elements": [
+          {
+            "id": "FA1A75DDC3BF4864932E8C20BF17801D",
+            "name": "ffsqlAgeV1",
+            "subType": "metric"
+          },
+          {
+            "id": "398954E92D7D4395894DAC4B18E7B453",
+            "name": "ffsqlScoreV1",
+            "subType": "metric"
+          }
+        ]
+      }
+    ],
+    "pageBy": []
+  },
+  "options": {
+    "dataRefresh": "replace",
+    "dataPartition": {
+      "partitionAttribute": {},
+      "numberOfPartitions": 0,
+      "fetchDataSlicesInParallel": false
+    }
+  },
+  "timeBased": {
+    "timezone": null,
+    "calendar": null,
+    "enableTimezoneAndCalendarReporting": true
+  },
+  "sourceType": "custom_sql_free_form",
+  "table": {
+    "physicalTable": {
+      "columns": [
+        {
+          "id": "186F0F9D63C94E12A129296F94970A7E",
+          "name": "ffsqlIdV1",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "id": "E8F67F57C68B463390209166D5679F79",
+          "name": "ffsqlNameV1",
+          "dataType": {
+            "type": "fixed_length_string",
+            "precision": 255,
+            "scale": 0
+          }
+        },
+        {
+          "id": "D7A48B699698415E9D9E816B7C8C9ABC",
+          "name": "ffsqlAgeV1",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "id": "6E3B8DBA172E4943BA1614ABB2AC5AC4",
+          "name": "ffsqlScoreV1",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        }
+      ],
+      "sqlExpression": {
+        "tree": {
+          "function": "concat_no_blank",
+          "children": [
+            {
+              "type": "constant",
+              "variant": {
+                "type": "string",
+                "value": "SELECT id, name, age, score FROM hackathon.mytest;"
+              }
+            }
+          ],
+          "type": "operator"
+        }
+      }
+    },
+    "attributes": [
+      {
+        "id": "FF816775FB784C75B3BA2B63BAECDE96",
+        "name": "ffsqlIdV1",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "objectId": "186F0F9D63C94E12A129296F94970A7E",
+                "name": "ffsqlIdV1"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "FB045BB2C57D45488879EC303B76C129",
+        "name": "ffsqlNameV1",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "text",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "objectId": "E8F67F57C68B463390209166D5679F79",
+                "name": "ffsqlNameV1"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "id": "FA1A75DDC3BF4864932E8C20BF17801D",
+        "name": "ffsqlAgeV1",
+        "dataType": {
+          "type": "numeric",
+          "precision": 0,
+          "scale": 0
+        },
+        "expression": {
+          "tree": {
+            "type": "column_reference",
+            "objectId": "D7A48B699698415E9D9E816B7C8C9ABC",
+            "name": "ffsqlAgeV1"
+          }
+        }
+      },
+      {
+        "id": "398954E92D7D4395894DAC4B18E7B453",
+        "name": "ffsqlScoreV1",
+        "dataType": {
+          "type": "numeric",
+          "precision": 0,
+          "scale": 0
+        },
+        "expression": {
+          "tree": {
+            "type": "column_reference",
+            "objectId": "6E3B8DBA172E4943BA1614ABB2AC5AC4",
+            "name": "ffsqlScoreV1"
+          }
+        }
+      }
+    ],
+    "dataSource": {
+      "objectId": "A528E3A1436D9C08318735BC915FCF13",
+      "subType": "db_role_import",
+      "name": "tutorial_wh"
+    }
+  }
+}
+```
+
+Sample Response Code: 201 (A cube is created successfully.)
+
 ## Publish the cube
 
 ### Publish the cube using [POST /api/v2/cubes/\{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/publishCube_2)
