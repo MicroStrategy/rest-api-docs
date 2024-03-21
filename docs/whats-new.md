@@ -8,6 +8,7 @@ Description: What's New in the REST API.
 
 - Rename 'dossier' into 'dashboard'.
 - [Use MicroStrategy Bot APIs](common-workflows/analytics/use-bot-api/use-bot-api.md)
+- Support [FFSQL cube](common-workflows/analytics/manage-datasets/manage-cube-objects/manage-cube-objects.md) and [FFSQL IRR](common-workflows/analytics/manage-reports/manage-incremental-refresh-report/manage-incremental-refresh-report.md).
 
 ## 2021 Update 11
 

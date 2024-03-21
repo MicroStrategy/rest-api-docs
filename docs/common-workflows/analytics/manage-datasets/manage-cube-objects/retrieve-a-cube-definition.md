@@ -182,6 +182,257 @@ You can view the cube’s definition in the body of the response.
 
 Response Code: 200 (The cube’s definition was returned successfully.)
 
+## Retrieve a FFSQL cube's definition
+
+This workflow sample demonstrates how to retrieve the definition of a FFSQL cube through the Modeling service.
+
+You want to get the definition of the `Year, Category Analysis` cube object. The object ID of the cube is `A7D792D54B58C6CB68F192A4A73E317F` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+
+:::info
+
+Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+
+Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+
+:::
+
+Retrieve the FFSQL cube’s definition using `GET /api/model/cubes/{cubeId}`.
+
+Sample Request Header:
+
+```http
+    "accept": "application/json"
+    "X-MSTR-AuthToken": "cs0intmf1fgij7ao0v2v0j48e5"
+    "X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
+```
+
+Sample Request Body: Empty
+
+Sample Curl:
+
+```bash
+curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/model/cubes/A7D792D54B58C6CB68F192A4A73E317F" \
+-H "accept: application/json" \
+-H "X-MSTR-AuthToken: cs0intmf1fgij7ao0v2v0j48e5" \
+-H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
+```
+
+Sample Response Body:
+
+You can view the cube’s definition in the body of the response.
+
+```json
+{
+  "information": {
+    "dateCreated": "2022-03-17T22:47:26.514Z",
+    "dateModified": "2022-03-18T20:13:47.091Z",
+    "versionId": "59EB912782474BDB5706F8A1E70480D5",
+    "primaryLocale": "en-US",
+    "objectId": "A7D792D54B58C6CB68F192A4A73E317F",
+    "subType": "report_cube",
+    "name": "Year, Category Analysis"
+  },
+  "template": {
+    "rows": [
+      {
+        "id": "FF816775FB784C75B3BA2B63BAECDE96",
+        "name": "ffsqlIdV1",
+        "type": "attribute",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID"
+          }
+        ]
+      },
+      {
+        "id": "FB045BB2C57D45488879EC303B76C129",
+        "name": "ffsqlNameV1",
+        "type": "attribute",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID"
+          }
+        ]
+      }
+    ],
+    "columns": [
+      {
+        "type": "metrics",
+        "elements": [
+          {
+            "id": "FA1A75DDC3BF4864932E8C20BF17801D",
+            "name": "ffsqlAgeV1",
+            "subType": "metric"
+          },
+          {
+            "id": "398954E92D7D4395894DAC4B18E7B453",
+            "name": "ffsqlScoreV1",
+            "subType": "metric"
+          }
+        ]
+      }
+    ],
+    "pageBy": []
+  },
+  "options": {
+    "dataRefresh": "replace",
+    "dataPartition": {
+      "partitionAttribute": {},
+      "numberOfPartitions": 0,
+      "fetchDataSlicesInParallel": false
+    }
+  },
+  "timeBased": {
+    "timezone": null,
+    "calendar": null,
+    "enableTimezoneAndCalendarReporting": true
+  },
+  "sourceType": "custom_sql_free_form",
+  "table": {
+    "physicalTable": {
+      "columns": [
+        {
+          "id": "186F0F9D63C94E12A129296F94970A7E",
+          "name": "ffsqlIdV1",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "id": "E8F67F57C68B463390209166D5679F79",
+          "name": "ffsqlNameV1",
+          "dataType": {
+            "type": "fixed_length_string",
+            "precision": 255,
+            "scale": 0
+          }
+        },
+        {
+          "id": "D7A48B699698415E9D9E816B7C8C9ABC",
+          "name": "ffsqlAgeV1",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "id": "6E3B8DBA172E4943BA1614ABB2AC5AC4",
+          "name": "ffsqlScoreV1",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        }
+      ],
+      "sqlExpression": {
+        "tree": {
+          "function": "concat_no_blank",
+          "children": [
+            {
+              "type": "constant",
+              "variant": {
+                "type": "string",
+                "value": "SELECT id, name, age, score FROM hackathon.mytest;"
+              }
+            }
+          ],
+          "type": "operator"
+        }
+      }
+    },
+    "attributes": [
+      {
+        "id": "FF816775FB784C75B3BA2B63BAECDE96",
+        "name": "ffsqlIdV1",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "objectId": "186F0F9D63C94E12A129296F94970A7E",
+                "name": "ffsqlIdV1"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "FB045BB2C57D45488879EC303B76C129",
+        "name": "ffsqlNameV1",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "text",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "objectId": "E8F67F57C68B463390209166D5679F79",
+                "name": "ffsqlNameV1"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "id": "FA1A75DDC3BF4864932E8C20BF17801D",
+        "name": "ffsqlAgeV1",
+        "dataType": {
+          "type": "numeric",
+          "precision": 0,
+          "scale": 0
+        },
+        "expression": {
+          "tree": {
+            "type": "column_reference",
+            "objectId": "D7A48B699698415E9D9E816B7C8C9ABC",
+            "name": "ffsqlAgeV1"
+          }
+        }
+      },
+      {
+        "id": "398954E92D7D4395894DAC4B18E7B453",
+        "name": "ffsqlScoreV1",
+        "dataType": {
+          "type": "numeric",
+          "precision": 0,
+          "scale": 0
+        },
+        "expression": {
+          "tree": {
+            "type": "column_reference",
+            "objectId": "6E3B8DBA172E4943BA1614ABB2AC5AC4",
+            "name": "ffsqlScoreV1"
+          }
+        }
+      }
+    ],
+    "dataSource": {
+      "objectId": "A528E3A1436D9C08318735BC915FCF13",
+      "subType": "db_role_import",
+      "name": "tutorial_wh"
+    }
+  }
+}
+```
+
+Response Code: 200 (The cube’s definition was returned successfully.)
+
 ## Retrieve a cube’s definition with filter in tokens format
 
 <Available since="2021 Update 5" />

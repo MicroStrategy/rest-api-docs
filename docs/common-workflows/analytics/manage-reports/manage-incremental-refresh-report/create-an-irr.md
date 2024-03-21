@@ -151,6 +151,447 @@ You can view the new Incremental Refresh Report definition in the body of the re
 
 Response Code: 201 (An Incremental Refresh Report is created successfully.)
 
+## Create a new FFSQL incremental refresh report using [POST /api/model/incrementalRefresh](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-createIncrementalRefreshReport)
+
+To create a new FFSQL Incremental Refresh Report, you must submit the request body with the correct information.
+
+In `information`, you must provide the `name`, `subtype`, and `destinationFolderID` for the Incremental Refresh Report you want to create. In `targetCube`, you must provide the information for the base FFSQL cube that the Incremental Refresh Report is built on. You may also provide `table` and `template` information. Attributes and metrics on the template should be the same as the `table`. `filter` is not applicable for FFSQL Incremental Refresh Report.
+
+Sample Request Header:
+
+```http
+"accept": "application/json"
+"X-MSTR-AuthToken": "bbjpsjos3b7ebokq9jdfvknska"
+"X-MSTR-ProjectID": "B7CA92F04B9FAE8D941C3E9B7E0CD754"
+"Content-Type": "application/json"
+```
+
+Sample Request Body:
+
+```json
+{
+  "information": {
+    "subType": "report_increment_refresh",
+    "name": "ffsql_irr_06"
+  },
+  "targetCube": {
+    "objectId": "1B1CD04E4494F4FD9711FC8E162FE574",
+    "subType": "report_cube",
+    "name": "ffsql"
+  },
+  "incrementType": "report",
+  "refreshType": "update",
+  "table": {
+    "physicalTable": {
+      "columns": [
+        {
+          "name": "aaa",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "name": "bbb",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "name": "ccc",
+          "dataType": {
+            "type": "double",
+            "precision": 18,
+            "scale": 0
+          }
+        }
+      ],
+      "sqlExpression": {
+        "tree": {
+          "function": "concat_no_blank",
+          "children": [
+            {
+              "type": "constant",
+              "variant": {
+                "type": "string",
+                "value": "SELECT cust_city_id, call_ctr_id, tot_cost FROM tutorial.city_ctr_sls WHERE gross_dollar_sales > 0;"
+              }
+            }
+          ],
+          "type": "operator"
+        }
+      }
+    },
+    "attributes": [
+      {
+        "name": "my_cust_city",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "name": "ccc"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "my_call_ctr",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "name": "bbb"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "name": "my_tot_cost",
+        "dataType": {
+          "type": "numeric",
+          "precision": 0,
+          "scale": 0
+        },
+        "expression": {
+          "tree": {
+            "type": "column_reference",
+            "name": "aaa"
+          }
+        }
+      }
+    ],
+    "dataSource": {
+      "objectId": "A528E3A1436D9C08318735BC915FCF13",
+      "subType": "db_role_import",
+      "name": "tutorial_wh"
+    }
+  }
+}
+```
+
+Sample Curl:
+
+```bash
+curl --location 'https://demo.microstrategy.com/MicroStrategyLibrary/api/model/incrementalRefresh' \
+--header 'X-MSTR-AuthToken: bbjpsjos3b7ebokq9jdfvknska' \
+--header 'X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: JSESSIONID=F7A455DE2F7CB7F1F8C7D377B7CFBE1D; iSession=56l4jqkr73dlj7o27n5uvlbd5b' \
+--data '{
+  "information": {
+    "subType": "report_increment_refresh",
+    "name": "ffsql_irr_06",
+    "destinationFolderId": "D3C7D461F69C4610AA6BAA5EF51F4125"
+  },
+  "targetCube": {
+    "objectId": "1B1CD04E4494F4FD9711FC8E162FE574",
+    "subType": "report_cube",
+    "name": "ffsql"
+  },
+  "incrementType": "report",
+  "refreshType": "update",
+  "table": {
+    "physicalTable": {
+      "columns": [
+        {
+          "name": "aaa",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "name": "bbb",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "name": "ccc",
+          "dataType": {
+            "type": "double",
+            "precision": 18,
+            "scale": 0
+          }
+        }
+      ],
+      "sqlExpression": {
+        "tree": {
+          "function": "concat_no_blank",
+          "children": [
+            {
+              "type": "constant",
+              "variant": {
+                "type": "string",
+                "value": "SELECT cust_city_id, call_ctr_id, tot_cost FROM tutorial.city_ctr_sls WHERE gross_dollar_sales > 0;"
+              }
+            }
+          ],
+          "type": "operator"
+        }
+      }
+    },
+    "attributes": [
+      {
+        "name": "my_cust_city",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "name": "ccc"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "my_call_ctr",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "name": "bbb"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "name": "my_tot_cost",
+        "dataType": {
+          "type": "numeric",
+          "precision": 0,
+          "scale": 0
+        },
+        "expression": {
+          "tree": {
+            "type": "column_reference",
+            "name": "aaa"
+          }
+        }
+      }
+    ],
+    "dataSource": {
+      "objectId": "A528E3A1436D9C08318735BC915FCF13",
+      "subType": "db_role_import",
+      "name": "tutorial_wh"
+    }
+  }
+}'
+```
+
+Sample Response Body:
+
+You can view the new Incremental Refresh Report definition in the body of the response.
+
+```json
+{
+  "information": {
+    "dateCreated": "2024-01-24T07:54:29.220Z",
+    "dateModified": "2024-01-24T07:54:29.220Z",
+    "versionId": "B2952C4248A99A4346B8CBBC4B2D4A71",
+    "acg": 255,
+    "primaryLocale": "en-US",
+    "objectId": "68FE304442768565D587EFA6C7F96DDA",
+    "subType": "report_increment_refresh",
+    "name": "ffsql_irr_06"
+  },
+  "targetCube": {
+    "objectId": "1B1CD04E4494F4FD9711FC8E162FE574",
+    "subType": "report_cube",
+    "name": "ffsql_cube"
+  },
+  "incrementType": "report",
+  "refreshType": "update",
+  "template": {
+    "rows": [
+      {
+        "id": "15FDC75E15FC48CFA0EE53D5E4F36742",
+        "name": "my_cust_city",
+        "type": "attribute",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID"
+          }
+        ]
+      },
+      {
+        "id": "0D7A725ACF3B41F8B6ACF0FFB5D29376",
+        "name": "my_call_ctr",
+        "type": "attribute",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID"
+          }
+        ]
+      }
+    ],
+    "columns": [
+      {
+        "type": "metrics",
+        "elements": [
+          {
+            "id": "59E6325B33BB4A5FAD057A8EB99A7CDB",
+            "name": "my_tot_cost",
+            "subType": "metric"
+          }
+        ]
+      }
+    ],
+    "pageBy": []
+  },
+  "table": {
+    "physicalTable": {
+      "columns": [
+        {
+          "id": "A30930BF8DB541F49384E3F9E40ACEC0",
+          "name": "aaa",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "id": "C85295213D7D43B5A6067BA4B14E3BE2",
+          "name": "bbb",
+          "dataType": {
+            "type": "integer",
+            "precision": 4,
+            "scale": 0
+          }
+        },
+        {
+          "id": "635EFD0ED49A4260880FB357812A24DB",
+          "name": "ccc",
+          "dataType": {
+            "type": "double",
+            "precision": 18,
+            "scale": 0
+          }
+        }
+      ],
+      "sqlExpression": {
+        "tree": {
+          "function": "concat_no_blank",
+          "children": [
+            {
+              "type": "constant",
+              "variant": {
+                "type": "string",
+                "value": "SELECT cust_city_id, call_ctr_id, tot_cost FROM tutorial.city_ctr_sls WHERE gross_dollar_sales > 0;"
+              }
+            }
+          ],
+          "type": "operator"
+        }
+      }
+    },
+    "attributes": [
+      {
+        "id": "15FDC75E15FC48CFA0EE53D5E4F36742",
+        "name": "my_cust_city",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "objectId": "635EFD0ED49A4260880FB357812A24DB",
+                "name": "ccc"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "0D7A725ACF3B41F8B6ACF0FFB5D29376",
+        "name": "my_call_ctr",
+        "forms": [
+          {
+            "id": "45C11FA478E745FEA08D781CEA190FE5",
+            "name": "ID",
+            "category": "ID",
+            "type": "system",
+            "displayFormat": "number",
+            "expression": {
+              "tree": {
+                "type": "column_reference",
+                "objectId": "C85295213D7D43B5A6067BA4B14E3BE2",
+                "name": "bbb"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "id": "59E6325B33BB4A5FAD057A8EB99A7CDB",
+        "name": "my_tot_cost",
+        "dataType": {
+          "type": "numeric",
+          "precision": 0,
+          "scale": 0
+        },
+        "expression": {
+          "tree": {
+            "type": "column_reference",
+            "objectId": "A30930BF8DB541F49384E3F9E40ACEC0",
+            "name": "aaa"
+          }
+        }
+      }
+    ],
+    "dataSource": {
+      "objectId": "A528E3A1436D9C08318735BC915FCF13",
+      "subType": "db_role_import",
+      "name": "tutorial_wh"
+    }
+  }
+}
+```
+
+Response Code: 201 (An Incremental Refresh Report is created successfully.)
+
 ## The model for the definition of the incremental refresh report
 
 The model for the definition of the Incremental Refresh Report can be represented with the following fields.
@@ -171,7 +612,7 @@ The model for the definition of the Incremental Refresh Report can be represente
   - `name` (`String`) - The name of the target cube.
 - `incrementType` (`String`) - The incremental type for IRR, which can only be a filter and report.
 - `refreshType` (`String`) - The refresh type for IRR, which can only be `update`, `insert`, `delete`, `update_only`, and `replace`.
-- `filter`
+- `filter` (Not applicable when the target cube is a FFSQL cube)
   - `text` (`String`) - The text of the filter name.
   - `tree` (`ExpressionNode`) - A tree data structure fully defining the filter.
   - `tokens` (`List<ExpressionToken>`) - A list of parsed tokens for the filter.
@@ -179,3 +620,8 @@ The model for the definition of the Incremental Refresh Report can be represente
   - `rows` (`List<Objects>`) - A list of objects on the row of IRR template.
   - `columns` (`List<Objects>`) - A list of objects on the column of IRR template.
   - `pageby` (`List<Objects>`) - A list of objects on the pageby of IRR template.
+- `table` (Only applicable when the target cube is a FFSQL cube)
+  - `physicalTable` (`Object`) - The physical table containing the columns information and FFSQL expression.
+  - `attributes` (`List<Objects>`) - The list of attributes of the table.
+  - `metrics` (`List<Objects>`) - The list of metrics of the table.
+  - `dataSource` (`ObjectInfoRefrence`) - The data source of the table.
