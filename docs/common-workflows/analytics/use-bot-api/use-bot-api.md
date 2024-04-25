@@ -5,10 +5,7 @@ description: This page contains a summary of REST APIs for the "bots" endpoint. 
 
 <Available since="MicroStrategy ONE (March 2024)" />
 
-Proficient in AI and analytics, our AI Expert chatbot revolutionizes how you find resources or learning materials. You can use the chat bot via REST APIs to ask the chatbot questions on a variety of topics and quickly receive personalized responses.
-
-You can use REST API requests to consume the chat bots, such getting a bot's question list, asking a question, and asking for suggested questions.
-The workflow for using bots includes the following sequence of REST API requests.
+For users interested in creating a custom chatbot experience utilizing the capabilities of MicroStrategy AI, a suite of bot-related APIs is available. These APIs are designed to facilitate seamless integration of MicroStrategy AI into nearly any application. By leveraging these tools, users can enhance their applications with advanced AI features quickly and efficiently. For further details on how to use these APIs, please refer to the following sections of this manual.
 
 - [Get a bot's configuration](./get-bot-configuration.md)
 - [Get a bot question list.](./get-bot-question-list.md)
