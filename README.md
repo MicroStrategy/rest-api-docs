@@ -4,32 +4,6 @@
 
 Documentation for REST API
 
-## Summary
-
-### Ownership
-
-<!-- Begin: Owner
-    If a repo belongs to several teams write down the team that owns the largest proportion.
-    This information can be found here:
-    https://microstrategy.atlassian.net/wiki/spaces/DevOps/pages/1070727930/CI+pipelines+Point+of+Contacts
-
-    There should also be a Contact (a member of the team) and a DevOps POC (a member of the DevOps team)
-
-    Example:
-        Team: TEC-CT-Web-Library-CTC
-        Team: TEC-SR-Gateways-Framework
-        Contact: Fred Bloggs (fbloggs)
-        DevOps POC: Joe Bloggs (jbloggs)
--->
-
-Team: ENG-AC-Embedded-Integrations-HQ
-
-Contact: Darren Holmblad (dholmblad)
-
-DevOps POC: Kewei Hu (khu)
-
-<!-- End: Owner -->
-
 ## Usage
 
 ### Requirements
