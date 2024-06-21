@@ -1,5 +1,5 @@
 ---
-title: Use Bot APIs
+title: Bot APIs
 description: This page contains a summary of REST APIs for the "bots" endpoint. You can use REST API requests to consume the chat bots.
 ---
 

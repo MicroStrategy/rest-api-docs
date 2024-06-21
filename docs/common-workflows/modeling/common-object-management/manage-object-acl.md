@@ -30,7 +30,7 @@ ACLs include the following information.
 | Execute     | All execution of the object                                                                                        | 128   |
 | Full        | Allow full control of the object                                                                                   | 255   |
 
-- Inheritable: Applies only to folders. If set, any objects placed in the folder inherits the folder's entry in the ACL.
+- Inheritable: Applies only to folders. If set to true, any objects placed in the folder inherit the folder's entry in the ACL. So for a folder, we should use false to set the folder its own ACL and use true to set its children's ACL.
 
 The workflow sample below demonstrates how to get and update an object's ACL.
 
@@ -38,19 +38,18 @@ The workflow sample below demonstrates how to get and update an object's ACL.
 
 Endpoint: [GET /api/objects/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/getObject)
 
-In this workflow sample, we created a MicroStrategy Test Folder under the Public Objects folder. Use the `GET /api/objects/{id}` endpoint to get complete information about the MicroStrategy Test Folder and view its ACL. The object ID of the folder is 0017E12B4DB60EE4BF7D56946ED60A7E. Based on [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html), the object type is 8.
+In this workflow sample, we created a ACL TEST under the Public Objects folder. Use the `GET /api/objects/{id}` endpoint to get complete information about the ACL TEST and view its ACL. The object ID of the folder is 0017E12B4DB60EE4BF7D56946ED60A7E. Based on [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html), the object type is 8.
 
 Pass the authorization token needed to execute the request using `POST /api/auth/login`. Obtain the project ID from `GET /api/projects`. Identify possible values of the object type from [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html).
 
-The MicroStrategy Test Folder has the following ACL for users and user groups:
+The ACL TEST has the following ACL for users and user groups:
 
 | Trustee Name  | ACL Rights   | ACL Value |
 | ------------- | ------------ | --------- |
 | Public/Guest  | Custom       | 5         |
 | Everyone      | Custom       | 5         |
 | Administrator | Full Control | 255       |
-| MSTR User     | Full Control | 255       |
-| Developer     | Full Control | 255       |
+| AdminPri      | Full Control | 255       |
 
 Parameters:
 
@@ -79,19 +78,60 @@ Response Body:
 
 ```json
 {
-  "name": "MicroStrategy Test Folder",
-  "id": "0017E12B4DB60EE4BF7D56946ED60A7E",
+  "name": "ACL TEST",
+  "id": "6B99F80E734EF8C75BAEF4B06253B577",
   "type": 8,
   "subtype": 2048,
-  "dateCreated": "2020-08-04T20:38:43.000+0000",
-  "dateModified": "2020-08-05T15:54:16.000+0000",
-  "version": "EA48B2AA11EAD73300000080EF158CC0",
+  "dateCreated": "2024-06-06T06:34:04.000+0000",
+  "dateModified": "2024-06-06T06:34:10.000+0000",
+  "version": "F636B63E8E42ABF84FB45ABD1DE5F5F8",
   "acg": 255,
   "owner": {
-    "name": "MSTR User",
-    "id": "7FC05A65473CE2FD845CE6A1D3F13233"
+    "name": "AdminPri",
+    "id": "6A55EA0D40CA6765381877A8136D91C9",
+    "expired": false
   },
   "acl": [
+    {
+      "deny": false,
+      "type": 1,
+      "rights": 255,
+      "trusteeId": "6A55EA0D40CA6765381877A8136D91C9",
+      "trusteeName": "AdminPri",
+      "trusteeType": 34,
+      "trusteeSubtype": 8704,
+      "inheritable": false
+    },
+    {
+      "deny": false,
+      "type": 1,
+      "rights": 5,
+      "trusteeId": "294DEDC011D2F1D56000D98E67019608",
+      "trusteeName": "Public / Guest",
+      "trusteeType": 34,
+      "trusteeSubtype": 8705,
+      "inheritable": false
+    },
+    {
+      "deny": false,
+      "type": 1,
+      "rights": 5,
+      "trusteeId": "C82C6B1011D2894CC0009D9F29718E4F",
+      "trusteeName": "Everyone",
+      "trusteeType": 34,
+      "trusteeSubtype": 8705,
+      "inheritable": false
+    },
+    {
+      "deny": false,
+      "type": 1,
+      "rights": 255,
+      "trusteeId": "54F3D26011D2896560009A8E67019608",
+      "trusteeName": "Administrator",
+      "trusteeType": 34,
+      "trusteeSubtype": 8704,
+      "inheritable": false
+    },
     {
       "deny": false,
       "type": 1,
@@ -116,20 +156,10 @@ Response Body:
       "deny": false,
       "type": 1,
       "rights": 255,
-      "trusteeId": "54F3D26011D2896560009A8E67019608",
-      "trusteeName": "Administrator",
+      "trusteeId": "6A55EA0D40CA6765381877A8136D91C9",
+      "trusteeName": "AdminPri",
       "trusteeType": 34,
       "trusteeSubtype": 8704,
-      "inheritable": true
-    },
-    {
-      "deny": false,
-      "type": 1,
-      "rights": 255,
-      "trusteeId": "C1E1419F11D603A2100086B3A5E8F8A4",
-      "trusteeName": "Developers",
-      "trusteeType": 34,
-      "trusteeSubtype": 8705,
       "inheritable": true
     }
   ],
@@ -149,9 +179,9 @@ Response Body:
 }
 ```
 
-In Workstation, you can view the permissions for the MicroStrategy Test Folder.
+In Workstation, you can view the permissions for the ACL TEST.
 
-1\. On the main Workstation window, locate the MicroStrategy Test Folder. 2\. Right-click the folder and choose **Properties** or **Get Info**. 3\. In the left pane, click **Security Access**.
+1\. On the main Workstation window, locate the ACL TEST. 2\. Right-click the folder and choose **Properties** or **Get Info**. 3\. In the left pane, click **Security Access**.
 
 ![manage_objects_workstation](../../../images/manage_objects_workstation.png)
 
@@ -159,17 +189,15 @@ In Workstation, you can view the permissions for the MicroStrategy Test Folder.
 
 Endpoint: [GET /api/objects/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/getObject)
 
-Under the MicroStrategy Test Folder, there is a Total Sales attribute. Use the `GET /api/objects/{id}` endpoint to fetch all the attribute’s details, as well as the ACL. This attribute has an object ID of 5C258DC54E035C48145A2DA5C791E1D5 and an object type of 12.
+Under the ACL TEST, there is a Total Sales attribute. Use the `GET /api/objects/{id}` endpoint to fetch all the attribute’s details, as well as the ACL. This attribute has an object ID of 5C258DC54E035C48145A2DA5C791E1D5 and an object type of 12.
 
 The Total Sales attribute has the following ACL for users and user groups:
 
-| Trustee Name  | ACL Rights   | ACL Value |
-| ------------- | ------------ | --------- |
-| Public/Guest  | View         | 199       |
-| Everyone      | View         | 199       |
-| Administrator | Full Control | 255       |
-| MSTR User     | Full Control | 255       |
-| Developer     | Full Control | 255       |
+| Trustee Name | ACL Rights   | ACL Value |
+| ------------ | ------------ | --------- |
+| Public/Guest | View         | 199       |
+| Everyone     | View         | 199       |
+| AdminPri     | Full Control | 255       |
 
 Parameters:
 
@@ -191,70 +219,19 @@ Response Body:
 ```json
 {
   "name": "Total Sales",
-  "id": "5C258DC54E035C48145A2DA5C791E1D5",
+  "id": "55244D9F87415B49879559ACA91A789E",
   "type": 12,
-  "abbreviation": "Testing",
-  "description": "Testing",
   "subtype": 3072,
-  "dateCreated": "2020-08-04T21:05:20.000+0000",
-  "dateModified": "2020-08-05T17:29:14.000+0000",
-  "version": "2E4C112E11EAD741285E0080EF6535D3",
+  "dateCreated": "2024-06-06T07:18:54.000+0000",
+  "dateModified": "2024-06-06T07:19:12.000+0000",
+  "version": "52ED876C8242B82079EE5B960FC8EC24",
   "acg": 255,
   "owner": {
-    "name": "MSTR User",
-    "id": "7FC05A65473CE2FD845CE6A1D3F13233"
+    "name": "AdminPri",
+    "id": "6A55EA0D40CA6765381877A8136D91C9",
+    "expired": false
   },
   "acl": [
-    {
-      "deny": false,
-      "type": 1,
-      "rights": 255,
-      "trusteeId": "54F3D26011D2896560009A8E67019608",
-      "trusteeName": "Administrator",
-      "trusteeType": 34,
-      "trusteeSubtype": 8704,
-      "inheritable": false
-    },
-    {
-      "deny": false,
-      "type": 1,
-      "rights": 255,
-      "trusteeId": "C1E1419F11D603A2100086B3A5E8F8A4",
-      "trusteeName": "Developers",
-      "trusteeType": 34,
-      "trusteeSubtype": 8705,
-      "inheritable": false
-    },
-    {
-      "deny": true,
-      "type": 0,
-      "rights": 199,
-      "trusteeId": "C82C6B1011D2894CC0009D9F29718E4F",
-      "trusteeName": "Everyone",
-      "trusteeType": 34,
-      "trusteeSubtype": 8705,
-      "inheritable": false
-    },
-    {
-      "deny": false,
-      "type": 1,
-      "rights": 255,
-      "trusteeId": "7FC05A65473CE2FD845CE6A1D3F13233",
-      "trusteeName": "MSTR User",
-      "trusteeType": 34,
-      "trusteeSubtype": 8704,
-      "inheritable": false
-    },
-    {
-      "deny": false,
-      "type": 1,
-      "rights": 199,
-      "trusteeId": "C82C6B1011D2894CC0009D9F29718E4F",
-      "trusteeName": "Everyone",
-      "trusteeType": 34,
-      "trusteeSubtype": 8705,
-      "inheritable": false
-    },
     {
       "deny": false,
       "type": 1,
@@ -264,10 +241,29 @@ Response Body:
       "trusteeType": 34,
       "trusteeSubtype": 8705,
       "inheritable": false
+    },
+    {
+      "deny": false,
+      "type": 1,
+      "rights": 199,
+      "trusteeId": "C82C6B1011D2894CC0009D9F29718E4F",
+      "trusteeName": "Everyone",
+      "trusteeType": 34,
+      "trusteeSubtype": 8705,
+      "inheritable": false
+    },
+    {
+      "deny": false,
+      "type": 1,
+      "rights": 255,
+      "trusteeId": "6A55EA0D40CA6765381877A8136D91C9",
+      "trusteeName": "AdminPri",
+      "trusteeType": 34,
+      "trusteeSubtype": 8704,
+      "inheritable": false
     }
   ],
   "extType": 0,
-  "iconPath": "string",
   "ancestors": [
     {
       "name": "MicroStrategy Tutorial",
@@ -280,8 +276,8 @@ Response Body:
       "level": 2
     },
     {
-      "name": "MicroStrategy Test Folder",
-      "id": "0017E12B4DB60EE4BF7D56946ED60A7E",
+      "name": "ACL TEST",
+      "id": "6B99F80E734EF8C75BAEF4B06253B577",
       "level": 1
     }
   ]
@@ -290,7 +286,7 @@ Response Body:
 
 In Workstation, you can view the permissions for the Total Sales attribute.
 
-1\. On the main Workstation window, locate the MicroStrategy Test Folder. 2\. Right-click the Total Sales attribute in the folder and choose **Properties** or **Get Info**. 3\. In the left pane, click **Security Access**.
+1\. On the main Workstation window, locate the ACL TEST. 2\. Right-click the Total Sales attribute in the folder and choose **Properties** or **Get Info**. 3\. In the left pane, click **Security Access**.
 
 ![manage_objects_attribute](../../../images/manage_objects_attribute.png)
 
@@ -298,7 +294,7 @@ In Workstation, you can view the permissions for the Total Sales attribute.
 
 Endpoint: [PUT /api/objects/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/updateObject)
 
-Let's use the `PUT` operation to update the ACL value for the MicroStrategy Test Folder, previously mentioned in step 1. Update the ACL value for Developer from Full Control (255) to View (199). Then, add a trustee called Mobile User, with an ID of 0AA72D6042B938FF3FBED3AAC39349F5 and an ACL value of View (199).
+Let's use the `PUT` operation to update the ACL value for the ACL TEST, previously mentioned in step 1. Update the ACL value for Administrator from Full Control (255) to View (199). Then, add a trustee called Mobile User, with an ID of 0AA72D6042B938FF3FBED3AAC39349F5 and an ACL value of View (199).
 
 The `PUT /api/objects/{id}` endpoint is used to update information for a specific object, in a specific project. Obtain the authorization token needed to execute the request using `POST /api/auth/login`. Obtain the project ID using `GET /api/projects`. Pass the authorization token and the project ID in the request header. Specify the object ID in the path of the request. Specify the object type as a query parameter; possible values for object type are provided in [EnumDSSXMLObjectTypes](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLObjectTypes.html).
 
@@ -315,10 +311,18 @@ Request Body:
 
 ```json
 {
-  "name": "MicroStrategy Test Folder",
+  "name": "ACL TEST",
   "description": "Test Folder",
   "folderId": "98FE182C2A10427EACE0CD30B6768258",
   "acl": [
+    {
+      "op": "ADD",
+      "trustee": "0AA72D6042B938FF3FBED3AAC39349F5",
+      "rights": 199,
+      "denied": false,
+      "inheritable": false,
+      "type": 1
+    },
     {
       "op": "ADD",
       "trustee": "0AA72D6042B938FF3FBED3AAC39349F5",
@@ -329,21 +333,15 @@ Request Body:
     },
     {
       "op": "REPLACE",
-      "trustee": "C1E1419F11D603A2100086B3A5E8F8A4",
+      "trustee": "54F3D26011D2896560009A8E67019608",
       "rights": 199,
       "denied": false,
-      "inheritable": true,
+      "inheritable": false,
       "type": 1
     }
   ],
   "propagateACLToChildren": true
 }
-```
-
-Curl:
-
-```bash
-curl -X PUT "https://demo.microstrategy.com/MicroStrategyLibrary/api/objects/0017E12B4DB60EE4BF7D56946ED60A7E?type=8" -H "accept: application/json" -H "X-MSTR-AuthToken: 3j1jbrrv4ese6qfr05kgl10lv5" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754" -H "Content-Type: application/json" -d "{\\"name\\":\\"MicroStrategy Test Folder\\",\\"description\\":\\"Test Folder\\",\\"folderId\\":\\"98FE182C2A10427EACE0CD30B6768258\\",\\"acl\\":[{\\"op\\":\\"ADD\\",\\"trustee\\":\\"0AA72D6042B938FF3FBED3AAC39349F5\\",\\"rights\\":199,\\"denied\\":false,\\"inheritable\\":true,\\"type\\":1},{\\"op\\":\\"REPLACE\\",\\"trustee\\":\\"C1E1419F11D603A2100086B3A5E8F8A4\\",\\"rights\\":199,\\"denied\\":false,\\"inheritable\\":true,\\"type\\":1}],\\"propagateACLToChildren\\":true}"
 ```
 
 Request URL:
@@ -358,20 +356,61 @@ Response Body:
 
 ```json
 {
-  "name": "MicroStrategy Test Folder",
-  "id": "0017E12B4DB60EE4BF7D56946ED60A7E",
+  "name": "ACL TEST",
+  "id": "6B99F80E734EF8C75BAEF4B06253B577",
   "type": 8,
   "description": "Test Folder",
   "subtype": 2048,
-  "dateCreated": "2020-08-04T20:38:43.000+0000",
-  "dateModified": "2020-08-05T18:51:59.000+0000",
-  "version": "BDFAEE5211EAD74C00000080EFF54DC2",
+  "dateCreated": "2024-06-06T06:34:04.000+0000",
+  "dateModified": "2024-06-06T06:52:37.000+0000",
+  "version": "5E8A1C40174D9D96A78045B784D77A0F",
   "acg": 255,
   "owner": {
-    "name": "MSTR User",
-    "id": "7FC05A65473CE2FD845CE6A1D3F13233"
+    "name": "AdminPri",
+    "id": "6A55EA0D40CA6765381877A8136D91C9",
+    "expired": false
   },
   "acl": [
+    {
+      "deny": false,
+      "type": 1,
+      "rights": 255,
+      "trusteeId": "6A55EA0D40CA6765381877A8136D91C9",
+      "trusteeName": "AdminPri",
+      "trusteeType": 34,
+      "trusteeSubtype": 8704,
+      "inheritable": false
+    },
+    {
+      "deny": false,
+      "type": 1,
+      "rights": 5,
+      "trusteeId": "294DEDC011D2F1D56000D98E67019608",
+      "trusteeName": "Public / Guest",
+      "trusteeType": 34,
+      "trusteeSubtype": 8705,
+      "inheritable": false
+    },
+    {
+      "deny": false,
+      "type": 1,
+      "rights": 5,
+      "trusteeId": "C82C6B1011D2894CC0009D9F29718E4F",
+      "trusteeName": "Everyone",
+      "trusteeType": 34,
+      "trusteeSubtype": 8705,
+      "inheritable": false
+    },
+    {
+      "deny": false,
+      "type": 1,
+      "rights": 199,
+      "trusteeId": "54F3D26011D2896560009A8E67019608",
+      "trusteeName": "Administrator",
+      "trusteeType": 34,
+      "trusteeSubtype": 8704,
+      "inheritable": false
+    },
     {
       "deny": false,
       "type": 1,
@@ -396,8 +435,8 @@ Response Body:
       "deny": false,
       "type": 1,
       "rights": 255,
-      "trusteeId": "54F3D26011D2896560009A8E67019608",
-      "trusteeName": "Administrator",
+      "trusteeId": "6A55EA0D40CA6765381877A8136D91C9",
+      "trusteeName": "AdminPri",
       "trusteeType": 34,
       "trusteeSubtype": 8704,
       "inheritable": true
@@ -406,11 +445,11 @@ Response Body:
       "deny": false,
       "type": 1,
       "rights": 199,
-      "trusteeId": "C1E1419F11D603A2100086B3A5E8F8A4",
-      "trusteeName": "Developers",
+      "trusteeId": "0AA72D6042B938FF3FBED3AAC39349F5",
+      "trusteeName": "Mobile Users",
       "trusteeType": 34,
       "trusteeSubtype": 8705,
-      "inheritable": true
+      "inheritable": false
     },
     {
       "deny": false,
@@ -443,7 +482,7 @@ Response Body:
 
 Endpoint: [GET /api/objects/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management/getObject)
 
-In step 3, the Total Sales attribute inherited the same updated ACL as the parent MicroStrategy Test Folder. Any objects placed in this folder inherit the folder's entry in the ACL. The ACL for Developer is updated from Full Control (255) to View (199). A new trustee called Mobile User is added with a View (199) permission.
+In step 3, the Total Sales attribute inherited the same updated ACL as the parent ACL TEST. Any objects placed in this folder inherit the folder's entry in the ACL. The ACL for Developer is updated from Full Control (255) to View (199). A new trustee called Mobile User is added with a View (199) permission.
 
 The Total Sales attribute has the following ACL for users and user groups:
 
@@ -453,7 +492,6 @@ The Total Sales attribute has the following ACL for users and user groups:
 | Everyone      | View         | 199       |
 | Administrator | Full Control | 255       |
 | Mobile User   | View         | 199       |
-| Developer     | View         | 199       |
 
 Parameters:
 
@@ -469,18 +507,17 @@ Response Body:
 ```json
 {
   "name": "Total Sales",
-  "id": "5C258DC54E035C48145A2DA5C791E1D5",
+  "id": "55244D9F87415B49879559ACA91A789E",
   "type": 12,
-  "abbreviation": "Testing",
-  "description": "Testing",
   "subtype": 3072,
-  "dateCreated": "2020-08-04T21:05:20.000+0000",
-  "dateModified": "2020-08-05T18:51:59.000+0000",
-  "version": "BE0D1F6E11EAD74CC1CC0080EFB54BF3",
+  "dateCreated": "2024-06-06T07:18:54.000+0000",
+  "dateModified": "2024-06-06T07:21:14.000+0000",
+  "version": "68A774A3274D55AA427F7EA47079A11B",
   "acg": 255,
   "owner": {
-    "name": "MSTR User",
-    "id": "7FC05A65473CE2FD845CE6A1D3F13233"
+    "name": "AdminPri",
+    "id": "6A55EA0D40CA6765381877A8136D91C9",
+    "expired": false
   },
   "acl": [
     {
@@ -507,20 +544,10 @@ Response Body:
       "deny": false,
       "type": 1,
       "rights": 255,
-      "trusteeId": "54F3D26011D2896560009A8E67019608",
-      "trusteeName": "Administrator",
+      "trusteeId": "6A55EA0D40CA6765381877A8136D91C9",
+      "trusteeName": "AdminPri",
       "trusteeType": 34,
       "trusteeSubtype": 8704,
-      "inheritable": false
-    },
-    {
-      "deny": false,
-      "type": 1,
-      "rights": 199,
-      "trusteeId": "C1E1419F11D603A2100086B3A5E8F8A4",
-      "trusteeName": "Developers",
-      "trusteeType": 34,
-      "trusteeSubtype": 8705,
       "inheritable": false
     },
     {
@@ -535,7 +562,6 @@ Response Body:
     }
   ],
   "extType": 0,
-  "iconPath": "string",
   "ancestors": [
     {
       "name": "MicroStrategy Tutorial",
@@ -548,8 +574,8 @@ Response Body:
       "level": 2
     },
     {
-      "name": "MicroStrategy Test Folder",
-      "id": "0017E12B4DB60EE4BF7D56946ED60A7E",
+      "name": "ACL TEST",
+      "id": "6B99F80E734EF8C75BAEF4B06253B577",
       "level": 1
     }
   ]
@@ -558,6 +584,6 @@ Response Body:
 
 In Workstation, you can view the updated security access for the Total Sales attribute.
 
-1\. On the main Workstation window, locate the MicroStrategy Test Folder. 2\. Right-click the Total Sales attribute in the folder and choose **Properties** or **Get Info**. 3\. In the left pane, click **Security Access**.
+1\. On the main Workstation window, locate the ACL TEST. 2\. Right-click the Total Sales attribute in the folder and choose **Properties** or **Get Info**. 3\. In the left pane, click **Security Access**.
 
 ![workstation_updated_ACL](../../../images/workstation_updated_ACL.png)

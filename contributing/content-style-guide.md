@@ -119,7 +119,7 @@ The list below shows the usage of emojis in our Docs site:
   - If the description of the link is in the middle of the sentence and it is a brief explanation of what the link is, use proper cases as needed. For example:
 
     ```md
-    You can use the following REST APIs to [filter the data that is returned when you create or update an instance of a dossier](filter-dossier-instances/filter-dossier-instances.md), including clearing the filter selections.
+    You can use the following REST APIs to [filter the data that is returned when you create or update an instance of a dashboard](filter-dossier-instances/filter-dossier-instances.md), including clearing the filter selections.
     ```
 
 ## Naming conventions
