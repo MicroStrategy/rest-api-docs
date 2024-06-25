@@ -411,9 +411,12 @@ const sidebars = {
             },
             {
               type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/analytics/use-bot-api/use-bot-api",
+              },
               label: "Bot APIs",
               items: [
-                "common-workflows/analytics/use-bot-api/use-bot-api",
                 "common-workflows/analytics/use-bot-api/get-bot-configuration",
                 "common-workflows/analytics/use-bot-api/get-bot-question-list",
                 "common-workflows/analytics/use-bot-api/create-a-bot-instance",
@@ -425,9 +428,12 @@ const sidebars = {
             },
             {
               type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/analytics/question-with-bot-routing-api/question-api",
+              },
               label: "Question with Bot Routing APIs",
               items: [
-                "common-workflows/analytics/question-with-bot-routing-api/question-api",
                 "common-workflows/analytics/question-with-bot-routing-api/ask-question-to-bots-in-the-application",
                 "common-workflows/analytics/question-with-bot-routing-api/get-question-from-bots-in-the-application",
                 "common-workflows/analytics/question-with-bot-routing-api/get-image-of-answer",
