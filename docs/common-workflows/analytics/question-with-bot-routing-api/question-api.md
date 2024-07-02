@@ -9,7 +9,7 @@ With our newly added question with bot routing APIs, you can inquire all bots wi
 
 The question with bot routing APIs enable bots to offer suggested questions, assisting you in discovering relevant queries and answers more efficiently. Additionally, we have enhanced the API to facilitate direct output of visualizations as PNG images, streamlining the process of viewing and interpreting visual data.
 
-- [Ask a question with bot routing](./ask-question-to-bots-in-the-application)
+- [Ask a question with bot routing](./ask-question-to-bots-in-the-application.md)
 - [Get a question with bot routing](./get-question-from-bots-in-the-application.md)
 - [Get image of an answer related to a question with bot routing](./get-image-of-answer.md)
 - [Ask for suggested questions with bot routing](./ask-suggested-question-to-bots-in-the-application.md)
