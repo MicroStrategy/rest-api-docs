@@ -1041,6 +1041,21 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/administration/manage-bookmarks/manage-bookmarks",
+              },
+              label: "Manage bookmarks",
+              items: [
+                "common-workflows/administration/manage-bookmarks/create-bookmark/create-bookmark",
+                "common-workflows/administration/manage-bookmarks/update-bookmark/update-bookmark",
+                "common-workflows/administration/manage-bookmarks/delete-bookmark/delete-bookmark",
+                "common-workflows/administration/manage-bookmarks/bulk-deletion/bulk-deletion",
+                "common-workflows/administration/manage-bookmarks/get-bookmarks/get-bookmarks",
+              ],
+            },
           ],
         },
       ],

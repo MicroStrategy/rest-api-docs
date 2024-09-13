@@ -37,10 +37,11 @@ Sample Request Query Strings:
 
 Sample Request Body:
 
-| Field          | Required | Description                                                                 | Sample Value                            |
-| -------------- | -------- | --------------------------------------------------------------------------- | --------------------------------------- |
-| text           | Yes      | The question text                                                           | Which customer has the highest revenue? |
-| answers.images | No       | Optional. If not specified, the image is not generated. Supports one image. | [\{"width": 200, "height": 300\}]       |
+| Field          | Required | Description                                                                               | Sample Value                                                                                                     |
+| -------------- | -------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| text           | Yes      | The question text                                                                         | Which customer has the highest revenue?                                                                          |
+| answers.images | No       | Optional. If not specified, the image is not generated. Supports one image.               | [\{"width": 200, "height": 300\}]                                                                                |
+| quotes         | No       | Optional. The content of the question quote. The type of quotes can be message or answer. | [\{"text":"There are 10000 distinct customers identified based on the purchasing behavior.", "type":"message"\}] |
 
 ```json
 {
@@ -49,6 +50,14 @@ Sample Request Body:
     {
       "width": 720,
       "height": 405
+    }
+  ],
+  "quotes": [
+    {
+      "id": "24EBB7209BA649B0BACF8DC4A12037E3",
+      "question": "How many distinct customers are identified based on the purchasing behavior?",
+      "text": "There are 10000 distinct customers identified based on the purchasing behavior.",
+      "type": "answer"
     }
   ]
 }
@@ -69,6 +78,14 @@ curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/questions' \
         {
             "width": 720,
             "height": 405
+        }
+    ],
+    "quotes": [
+        {
+          "id": "24EBB7209BA649B0BACF8DC4A12037E3",
+          "question": "How many distinct customers are identified based on the purchasing behavior?",
+          "text": "There are 10000 distinct customers identified based on the purchasing behavior.",
+          "type": "answer"
         }
     ]
 }'
