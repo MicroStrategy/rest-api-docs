@@ -4,6 +4,10 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## MicroStrategy ONE (September 2024)
+
+- [Managing bookmarks](common-workflows/administration/manage-bookmarks/manage-bookmarks.md). Retrieve, create, update, and delete bookmarks.
+
 ## MicroStrategy ONE (June 2024)
 
 - [Question with Bot Routing APIs](common-workflows/analytics/question-with-bot-routing-api/question-api.md). Leverage bot routing to ensure user questions are directed to the most appropriate bot with no need to manually switch bots.

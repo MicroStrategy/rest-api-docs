@@ -68,6 +68,9 @@
     "shelljs": "^0.8.5",
     "typescript": "~5.2.2"
   },
+  "resolutions": {
+    "braces": "3.0.3"
+  },
   "browserslist": {
     "production": [
       ">0.5%",
