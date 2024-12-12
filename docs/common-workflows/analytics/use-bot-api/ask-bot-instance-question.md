@@ -6,6 +6,18 @@ description: This workflow sample demonstrates how to ask the bot instance a que
 
 <Available since="MicroStrategy ONE (March 2024)" />
 
+:::caution
+
+This API is planned for future retirement. Therefore, MicroStrategy recommends that you transition to the [Ask Question to Bots in the Application API](../question-with-bot-routing-api/ask-question-to-bots-in-the-application) for bot-related workflows.
+
+Using Ask Question to Bots in the Application API:
+
+- Bot instances are managed automatically, eliminating the need for manual instance management.
+- The API automatically selects the most appropriate bot to answer a question, or you can specify a specific bot by including its ID in the query parameters.
+- It offers ongoing support and updates, ensuring compatibility with new bot-related features.
+
+:::
+
 This workflow sample demonstrates how to ask the bot instance a question.
 
 :::info
