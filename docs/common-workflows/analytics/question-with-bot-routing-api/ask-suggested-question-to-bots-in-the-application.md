@@ -16,7 +16,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 ## Ask suggested questions with bot routing
 
-Endpoint: [POST /api/question/suggestions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Question%20Suggestions/createSuggestions_1)
+Endpoint: [POST /api/questions/suggestions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Question%20Suggestions/createSuggestions_1)
 
 Sample Request Header:
 
@@ -45,7 +45,7 @@ Sample Request Body:
 Sample Curl:
 
 ```bash
-curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/question/suggestions' \
+curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/questions/suggestions' \
 -X 'POST' \
 --header 'X-MSTR-AuthToken: t40ltbk411923ipk85r8r0tace' \
 --header 'X-MSTR-ProjectID: FCC1924411EAABC39C6C0080EFA54501' \

@@ -6,6 +6,18 @@ description: This workflow sample demonstrates how to create a bot instance
 
 <Available since="MicroStrategy ONE (March 2024)" />
 
+:::caution
+
+This API is planned for future retirement. Therefore, MicroStrategy recommends that you transition to the [Question with Bot Routing API](../question-with-bot-routing-api/question-api.md) for bot-related workflows.
+
+Using the Question with Bot Routing API:
+
+- You do not need to manually create or manage bot instances. The API automatically creates and manages bot instances.
+- It offers ongoing support and updates, ensuring compatibility with new bot-related features.
+- It provides enhanced functionality, such as intelligent bot selection and flexible bot routing.
+
+:::
+
 This workflow sample demonstrates how to create a bot instance.
 
 :::info

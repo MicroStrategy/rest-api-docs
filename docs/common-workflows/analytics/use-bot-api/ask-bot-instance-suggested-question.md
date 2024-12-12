@@ -6,6 +6,18 @@ description: This workflow sample demonstrates how to ask a bot instance for sug
 
 <Available since="MicroStrategy ONE (March 2024)" />
 
+:::caution
+
+This API is planned for future retirement. Therefore, MicroStrategy recommends that you transition to the [Ask Suggested Question to Bots in the Application API](../question-with-bot-routing-api/ask-suggested-question-to-bots-in-the-application.md) for retrieving suggested questions from bots.
+
+Using Ask Suggested Question to Bots in the Application API:
+
+- You do not need to manually create or manage bot instances. The API automatically creates and manages bot instances.
+- The API automatically selects the most appropriate bot based on your previous questions to suggest relevant questions.
+- You can use query parameters to specify a bot to receive suggested questions.
+
+:::
+
 This workflow sample demonstrates how to ask a bot instance for suggested questions.
 
 :::info
