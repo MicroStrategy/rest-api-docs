@@ -332,7 +332,7 @@ Sample Response
   [
     {
       "id": "C1E141E611D603A2100086B3A5E8F8A4",
-      "name": "Strategy Web User"
+      "name": "MicroStrategy Web User"
     }
   ]
   ```

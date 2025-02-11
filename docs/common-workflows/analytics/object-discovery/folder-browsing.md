@@ -219,7 +219,7 @@ Sample Response
       }
     },
     {
-      "name": "Strategy Platform Capabilities",
+      "name": "MicroStrategy Platform Capabilities",
       "id": "D64C532E4E7FBA74D29A7CA3576F39CF",
       "type": 8,
       "description": "This folder contains examples of many of the sophisticated capabilities within the Strategy platform.",

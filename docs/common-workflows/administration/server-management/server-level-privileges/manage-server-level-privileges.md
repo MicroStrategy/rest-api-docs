@@ -344,7 +344,7 @@ The REST server returns a JSON object that contains the updated information for 
     },
     {
       "id": "C2E4DA4A411B972B063FE8A583989959",
-      "name": "Strategy Web Professional",
+      "name": "MicroStrategy Web Professional",
       "source": {
         "type": ["MSTR"]
       }

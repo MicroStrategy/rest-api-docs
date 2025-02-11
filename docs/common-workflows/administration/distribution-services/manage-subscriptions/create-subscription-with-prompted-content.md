@@ -159,7 +159,7 @@ Sample Request
 
   ```bash
   curl -X GET -b ~/cookie-jar.txt --header 'Accept: application/json'
-  --header 'X-MSTR-AuthToken: {AuthToken}' https://demo.microstrategy.com/MicroStrategyLibrary/api/users?nameBegins=Strategy Web User&fields=name,id
+  --header 'X-MSTR-AuthToken: {AuthToken}' https://demo.microstrategy.com/MicroStrategyLibrary/api/users?nameBegins=MicroStrategy Web User&fields=name,id
   ```
 
 Sample Response
@@ -170,7 +170,7 @@ Sample Response
   [
     {
       "id": "",
-      "name": "Strategy Web User"
+      "name": "MicroStrategy Web User"
     }
   ]
   ```
