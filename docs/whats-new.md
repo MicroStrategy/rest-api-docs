@@ -211,7 +211,7 @@ The REST API has been enhanced to support the ability to pass filters into the R
 
 - The stand-alone JSON Data API Server has been removed.
 
-The [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server.md) is made up of four different Strategy API families. All of these families are part of the Strategy REST Server, which is shipped inside the StrategyLibrary.war web application.
+The [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server.md) is made up of four different Strategy API families. All of these families are part of the Strategy REST Server, which is shipped inside the MicroStrategyLibrary.war web application.
 
 ## 10.10
 

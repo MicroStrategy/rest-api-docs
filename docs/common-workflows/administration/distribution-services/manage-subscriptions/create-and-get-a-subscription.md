@@ -321,7 +321,7 @@ Sample Request
 
   ```bash
   curl -X GET -b ~/cookie-jar.txt --header 'Accept: application/json'
-  --header 'X-MSTR-AuthToken: lb15fie86urdnsldk71a02gls2' https://demo.microstrategy.com/MicroStrategyLibrary/api/users?nameBegins=Strategy Web User&fields=name,id
+  --header 'X-MSTR-AuthToken: lb15fie86urdnsldk71a02gls2' https://demo.microstrategy.com/MicroStrategyLibrary/api/users?nameBegins=MicroStrategy Web User&fields=name,id
   ```
 
 Sample Response
