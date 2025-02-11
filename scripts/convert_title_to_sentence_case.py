@@ -6,7 +6,7 @@ import re
 
 # reserved phrases dictionary, key: all lowercase letters, value: correct format
 reserved_phrases = {
-  'microstrategy': 'Strategy',
+  'microstrategy': 'MicroStrategy',
   '.microstrategy.': '.microstrategy.',
   'microstrategy.': 'microstrategy.',
   'microstrategy-rest-api-samples': 'microstrategy-rest-api-samples',
