@@ -22,7 +22,7 @@ An authorization token allows the API layer to hide internal session-related imp
 
 :::
 
-You want to create a new base formula object, which is defined as `”Sum(Cost)”` and named as `“base_sum(Cost)“`. The destination folder ID is `31727EF14E35DAA437B716BA56466585`  in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to create a new base formula object, which is defined as `”Sum(Cost)”` and named as `“base_sum(Cost)“`. The destination folder ID is `31727EF14E35DAA437B716BA56466585`  in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

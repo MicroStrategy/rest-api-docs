@@ -22,7 +22,7 @@ An authorization token allows the API layer to hide internal session-related imp
 
 :::
 
-Get the definition of the `“Cost Comparison”` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+Get the definition of the `“Cost Comparison”` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 For different formats of metric expressions, see [Retrieve a metric's definition](../manage-metric-objects/retrieve-a-metrics-definition.md).
 

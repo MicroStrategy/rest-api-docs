@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to create a new custom group object through the Modeling service.
 
-You want to create a new `“Age Group“` custom group object under the Public Objects folder in the Strategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to create a new `“Age Group“` custom group object under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

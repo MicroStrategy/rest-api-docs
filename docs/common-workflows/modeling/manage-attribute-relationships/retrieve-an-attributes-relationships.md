@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to retrieve the relationships related to an attribute through the Modeling service.
 
-You want to get the relationships of the "Month" attribute object. The object ID of the attribute is 8D679D4411D3E4981000E787EC6DE8A4 in the Strategy Tutorial project. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.
+You want to get the relationships of the "Month" attribute object. The object ID of the attribute is 8D679D4411D3E4981000E787EC6DE8A4 in the MicroStrategy Tutorial project. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.
 
 :::info
 

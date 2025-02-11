@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to create a user hierarchy object through the Modeling service.
 
-You want to create a Time user hierarchy object, in the Strategy Tutorial project, which contains the relationship between the Year, Month of Year, Quarter, Month, and Day attributes. The folder object ID is `8A1831FF494F528D02A4A8BF5FB73459`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to create a Time user hierarchy object, in the MicroStrategy Tutorial project, which contains the relationship between the Year, Month of Year, Quarter, Month, and Day attributes. The folder object ID is `8A1831FF494F528D02A4A8BF5FB73459`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

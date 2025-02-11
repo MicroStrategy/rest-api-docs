@@ -15,7 +15,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to lock the schema.
 
-You want to lock the schema in the Strategy Tutorial project with an `“absolute_individual“` lock. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to lock the schema in the MicroStrategy Tutorial project with an `“absolute_individual“` lock. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

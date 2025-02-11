@@ -21,7 +21,7 @@ This workflow sample demonstrates how to create a new security filter object thr
 
 Additional samples are provided in [More samples](#more-samples).
 
-In this workflow sample, you want to create a "Year > 2015" security filter object under the Public Objects folder in the Strategy Tutorial project. The folder ID is `98FE182C2A10427EACE0CD30B6768258`. The Strategy Tutorial project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+In this workflow sample, you want to create a "Year > 2015" security filter object under the Public Objects folder in the MicroStrategy Tutorial project. The folder ID is `98FE182C2A10427EACE0CD30B6768258`. The MicroStrategy Tutorial project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

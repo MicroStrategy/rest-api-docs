@@ -147,7 +147,7 @@ Sample Response
         "name": "Shared Drive",
         "deliveryMode": "EMAIL",
         "deviceId": "18F9613B681E4E4FA671D1AED6B7B375",
-        "value": "C:\\Program Files\\Strategy\\Analytics Modules",
+        "value": "C:\\Program Files\\MicroStrategy\\Analytics Modules",
         "isDefault": true
       }
     ]

@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This topic covers several workflows for retrieving a metric's definition.
 
-You want to get the definition of the `“Cost Comparison"` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `“Cost Comparison"` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

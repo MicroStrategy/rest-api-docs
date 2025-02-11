@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This topic covers the workflow to retrieve a metric's applicable properties.
 
-Get the applicable properties of the `“Cost Comparison"` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+Get the applicable properties of the `“Cost Comparison"` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

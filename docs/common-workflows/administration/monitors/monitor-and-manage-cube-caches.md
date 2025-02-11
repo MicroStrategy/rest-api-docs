@@ -162,7 +162,7 @@ Fill in the sample below to design your own output.
       "openViewCount": 0,
       "creationTime": "2018-02-12 07:15:17",
       "historicHitCount": 121,
-      "fileName": "C:\\Program Files (x86)\\Strategy\\Intelligence Server\\Cube\\serverdefinition\\Server_tec-w-004832_PB19DEDCC11D4E0EFC000EB9495D0F44F\\363249D447A5EF245AD51AB916CA4904.cube",
+      "fileName": "C:\\Program Files (x86)\\MicroStrategy\\Intelligence Server\\Cube\\serverdefinition\\Server_tec-w-004832_PB19DEDCC11D4E0EFC000EB9495D0F44F\\363249D447A5EF245AD51AB916CA4904.cube",
       "rowCount": 39,
       "columnCount": 8
     }
@@ -290,7 +290,7 @@ Fill in the sample below to design your own output.
   "openViewCount": 0,
   "creationTime": "2018-02-12 07:15:17",
   "historicHitCount": 121,
-  "fileName": "C:\\Program Files (x86)\\Strategy\\Intelligence Server\\Cube\\serverdefinition\\Server_tec-w-004832_PB19DEDCC11D4E0EFC000EB9495D0F44F\\363249D447A5EF245AD51AB916CA4904.cube",
+  "fileName": "C:\\Program Files (x86)\\MicroStrategy\\Intelligence Server\\Cube\\serverdefinition\\Server_tec-w-004832_PB19DEDCC11D4E0EFC000EB9495D0F44F\\363249D447A5EF245AD51AB916CA4904.cube",
   "rowCount": 39,
   "columnCount": 8,
   "jobExecutionStatistics": {
@@ -385,7 +385,7 @@ Fill in the sample below to design your own output. We recommend you specify all
   "aggregatedCacheUsages": [
     {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "currentUsage": 178000,
       "capacity": 280000 // Capacity just for project level, not for user level
     },

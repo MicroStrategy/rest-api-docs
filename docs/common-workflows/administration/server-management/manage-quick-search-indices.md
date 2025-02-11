@@ -71,7 +71,7 @@ Sample Response Body:
       "machineName": "aws-amazonlinux-base-template"
     },
     {
-      "projectName": "Strategy Tutorial",
+      "projectName": "MicroStrategy Tutorial",
       "projectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
       "status": "completed_on",
       "percentComplete": 1.0,

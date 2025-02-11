@@ -73,10 +73,10 @@ The X-MSTR-AuthToken is an authentication token which you receive during authent
   {
     "acg": 255,
     "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-    "name": "Strategy Tutorial",
+    "name": "MicroStrategy Tutorial",
     "status": 0,
     "alias": "",
-    "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
+    "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
     "dateCreated": "2015-06-30T21:55:35.000+0000",
     "dateModified": "2022-06-25T12:48:15.000+0000",
     "owner": {
@@ -102,7 +102,7 @@ The X-MSTR-AuthToken is an authentication token which you receive during authent
 ]
 ```
 
-Please find the `id` for the desired project. For example, `id` of the project: “Strategy Tutorial” is `B7CA92F04B9FAE8D941C3E9B7E0CD75`. We will use it in the next step.
+Please find the `id` for the desired project. For example, `id` of the project: “MicroStrategy Tutorial” is `B7CA92F04B9FAE8D941C3E9B7E0CD75`. We will use it in the next step.
 
 ### Step 2 – Deleting the cache
 

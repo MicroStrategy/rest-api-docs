@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 You can retrieve the SQL statements of all datasets in a document or dashboard instance. In this workflow sample, a dashboard instance is used. However, the same workflow applies to a document instance.
 
-You want to view the SQL statement of every dataset in the Cost Analysis Dashboard in the Strategy Tutorial project. The object ID of the dashboard is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to view the SQL statement of every dataset in the Cost Analysis Dashboard in the MicroStrategy Tutorial project. The object ID of the dashboard is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

@@ -42,7 +42,7 @@ All params, but the request body are common for both 'add' and 'replace' operati
 
 In this demo following parameter values will be used:
 
-- Project: Strategy Tutorial
+- Project: MicroStrategy Tutorial
 - Project ID: `B7CA92F04B9FAE8D941C3E9B7E0CD754`
 - Object ID: `BEC722A6406320A3E67DBFBAB2F033CB`
 - Object type: `report_definition`

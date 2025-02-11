@@ -111,7 +111,7 @@ This endpoint returns the definition for a specific report in a specific project
 - Identify the project by passing the project ID in the request header.
 - Identify the report by passing the report ID in the path of the request.
 
-In the sample provided, you get the definition for the report “01 Basic Report” in the “Strategy Tutorial” project. This report has two attributes and three metrics.
+In the sample provided, you get the definition for the report “01 Basic Report” in the “MicroStrategy Tutorial” project. This report has two attributes and three metrics.
 
 ![GET_report_definition](../../../images/GET_report_definition.png)
 
@@ -222,7 +222,7 @@ This endpoint returns the definition for a specific cube in a specific project f
 - Identify the project by passing the project ID in the request header.
 - Identify the cube by passing the cube ID in the path of the request.
 
-In the sample provided, you get the definition for the cube “Advanced sort" in the “Strategy Tutorial” project. This cube has two attributes and two metrics.
+In the sample provided, you get the definition for the cube “Advanced sort" in the “MicroStrategy Tutorial” project. This cube has two attributes and two metrics.
 
 ![GET_cube_definition](../../../images/GET_cube_definition.png)
 
@@ -316,7 +316,7 @@ This endpoint returns the hierarchy for a specific dashboard in a specific proje
 - Identify the project by passing the project ID in the request header.
 - Identify the dashboard by passing the dashboard ID in the path of the request.
 
-In the sample provided, you get the hierarchy for the dashboard “Dossier of Advanced sort" in the “Strategy Tutorial” project. This dashboard has one chapter, one page, and one visualization.
+In the sample provided, you get the hierarchy for the dashboard “Dossier of Advanced sort" in the “MicroStrategy Tutorial” project. This dashboard has one chapter, one page, and one visualization.
 
 ![GET_dossier_hierarchy](../../../images/GET_dossier_hierarchy.png)
 
@@ -401,7 +401,7 @@ This endpoint creates a new instance of a specific report in a specific project 
 
 :::tip
 
-In the sample that was provided, you create an instance of the report “01 Basic Report” in the “Strategy Tutorial” project. This report has two attributes and three metrics.
+In the sample that was provided, you create an instance of the report “01 Basic Report” in the “MicroStrategy Tutorial” project. This report has two attributes and three metrics.
 
 :::
 
@@ -666,7 +666,7 @@ This endpoint creates a new instance of a specific cube in a specific project on
 - Identify the project by passing the project ID in the request header.
 - Identify the cube by passing the cube ID in the path of the request.
 
-  In sample that was provided, you create an instance of the cube “Advanced Sort” in the “Strategy Tutorial” project. This cube has two attributes and two metrics.
+  In sample that was provided, you create an instance of the cube “Advanced Sort” in the “MicroStrategy Tutorial” project. This cube has two attributes and two metrics.
 
 - Identity the start and end position as offset and limit request parameters
 
@@ -861,7 +861,7 @@ Endpoint: [POST /api/dossiers/\{dossierId}/instances](https://demo.microstrategy
 
 This endpoint allows the caller to create a new instance of a specific dashboard in a specific project from the Strategy Intelligence Server. The request body contains linking and bookmark information for the dashboard. The body of the response contains the instance ID for the dashboard and the status.
 
-In the sample that was provided, you create an instance of the dashboard “Dossier for Advanced sort” in the “Strategy Tutorial” project. This dashboard has two attributes and two metrics.
+In the sample that was provided, you create an instance of the dashboard “Dossier for Advanced sort” in the “MicroStrategy Tutorial” project. This dashboard has two attributes and two metrics.
 
 ![POST_dossier_instance](../../../images/POST_dossier_instance.png)
 
@@ -911,7 +911,7 @@ This endpoint gets the data for a specific report instance in a specific project
 - Identify the project by passing the project ID in the request header.
 - Identify the report instance by passing the report ID and the report instance ID in the path of the request.
 
-  In the downloadable sample that was provided, you get the data for an instance of the report “01 Basic Report” in the “Strategy Tutorial” project. This report has two attributes and three metrics.
+  In the downloadable sample that was provided, you get the data for an instance of the report “01 Basic Report” in the “MicroStrategy Tutorial” project. This report has two attributes and three metrics.
 
 - Identity the start and end position as offset and limit request parameters
   - offset is the start point of your response. For example, if offset=2, it will return the report data beginning with the second record. The default value is 0.
@@ -1048,7 +1048,7 @@ Endpoint: [GET /api/cubes/\{cubeId}/instances/\{instanceId}](https://demo.micros
 This endpoint gets the data for a specific cube instance in a specific project from the Strategy Intelligence Server. The response body contains the cube data; the results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
 
 - Identify the project by passing the project ID in the request header.
-- Identify the cube instance by passing the cube ID and the cube instance ID in the path of the request. In the sample that was provided, you get the data for an instance of the cube “Advanced sort” in the “Strategy Tutorial” project. This cube has two attributes and two metrics.
+- Identify the cube instance by passing the cube ID and the cube instance ID in the path of the request. In the sample that was provided, you get the data for an instance of the cube “Advanced sort” in the “MicroStrategy Tutorial” project. This cube has two attributes and two metrics.
 
 - Identity the start and end position as offset and limit request parameters
   - offset is the start point of your response. For example, if offset=2, it will return the cube data beginning with the second record. The default value is 0.
@@ -1239,7 +1239,7 @@ This endpoint gets dashboard data by visualization for a specific dashboard inst
 - Identify the dashboard instance by passing the dashboard ID and the dashboard instance ID in the path of the request.
 - Identify the chapter and visualization by passing the chapter key and visualization key in the path of the request.
 
-  In the sample that was provided, you get the data for a visualization in an instance of the dashboard “Year Cost” in the “Strategy Tutorial” project.
+  In the sample that was provided, you get the data for a visualization in an instance of the dashboard “Year Cost” in the “MicroStrategy Tutorial” project.
 
 - Identity the start and end position as offset and limit request parameters
   - offset is the start point of your response. For example, if offset=2, it will return the report data beginning with the second record. The default value is 0.

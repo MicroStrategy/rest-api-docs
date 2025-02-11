@@ -15,7 +15,7 @@ This workflow sample demonstrates how to view a newly created migration package 
 1. [Download the package and save it as a binary file](#download-the-package-and-save-it-as-a-binary-file)
 1. [Delete the package](#delete-the-package)
 
-In this workflow sample, you want to create a project package that contains a `"Year"` object with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4` and all its dependents in the Strategy Tutorial project. You also want to view the detailed definition of the `"Year"` object. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. Use `"replace"` as a conflict rule for all these objects.
+In this workflow sample, you want to create a project package that contains a `"Year"` object with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4` and all its dependents in the MicroStrategy Tutorial project. You also want to view the detailed definition of the `"Year"` object. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. Use `"replace"` as a conflict rule for all these objects.
 
 :::info
 

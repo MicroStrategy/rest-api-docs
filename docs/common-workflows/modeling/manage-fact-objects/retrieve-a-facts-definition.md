@@ -23,7 +23,7 @@ This topic covers two workflows for retrieving a fact’s definition:
 
 This workflow sample demonstrates how to retrieve the definition of a fact through the Modeling service.
 
-You want to get the definition of the "Profit" fact object. The object ID of the fact is `FDD652E7444ADD7AB6B25F9C1FA15F92` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the "Profit" fact object. The object ID of the fact is `FDD652E7444ADD7AB6B25F9C1FA15F92` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -99,7 +99,7 @@ Response Code: 200 (The fact's definition was returned successfully.)
 
 ## Retrieve a fact's definition with expressions in tree and tokens formats
 
-In this sample workflow, you want to get the definition of the "Profit" fact object, with its expressions returned in tree and tokens formats. The object ID of the fact is `FDD652E7444ADD7AB6B25F9C1FA15F92` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+In this sample workflow, you want to get the definition of the "Profit" fact object, with its expressions returned in tree and tokens formats. The object ID of the fact is `FDD652E7444ADD7AB6B25F9C1FA15F92` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

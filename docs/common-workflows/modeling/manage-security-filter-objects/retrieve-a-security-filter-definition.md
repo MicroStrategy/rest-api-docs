@@ -16,7 +16,7 @@ This topic covers several workflows for retrieving a security filter's definitio
 
 ## Retrieve a security filter's definition
 
-In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -104,7 +104,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -252,7 +252,7 @@ Sample Response Code: 204 (The changeset has been deleted successfully)
 
 ## Retrieve a security filter's definition in tokens format
 
-In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the Strategy Tutorial project. This procedure is similar to [Retrieve a security filter's definition](#retrieve-a-security-filters-definition), except you want to enable the `showFilterTokens` parameter to retrieve the security filter's definition in tokens format.
+In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the MicroStrategy Tutorial project. This procedure is similar to [Retrieve a security filter's definition](#retrieve-a-security-filters-definition), except you want to enable the `showFilterTokens` parameter to retrieve the security filter's definition in tokens format.
 
 :::tip
 

@@ -15,7 +15,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to retrieve project's definition and its advanced properties.
 
-You want to get the advanced properties of the `Strategy Tutorial` Project object. The object ID is `6851110C470AF40EB46B559D5098F309`.
+You want to get the advanced properties of the `MicroStrategy Tutorial` Project object. The object ID is `6851110C470AF40EB46B559D5098F309`.
 
 :::info
 
@@ -60,8 +60,8 @@ You can view project's definition and its advanced properties in the response.
     "primaryLocale": "en-US",
     "objectId": "6851110C470AF40EB46B559D5098F309",
     "subType": "project",
-    "name": "Strategy Tutorial",
-    "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed."
+    "name": "MicroStrategy Tutorial",
+    "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed."
   },
   "advancedProperties": {
     "vldbProperties": {

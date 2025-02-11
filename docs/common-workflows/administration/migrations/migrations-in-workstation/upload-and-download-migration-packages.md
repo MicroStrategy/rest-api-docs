@@ -212,7 +212,7 @@ Sample Request Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     }
   }
 }
@@ -300,7 +300,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "deleted": false
   },

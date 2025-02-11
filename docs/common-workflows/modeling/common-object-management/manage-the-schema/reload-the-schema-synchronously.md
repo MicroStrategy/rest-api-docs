@@ -15,7 +15,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to reload (update) the schema synchronously.
 
-You want to reload (update) the schema synchronously in the Strategy Tutorial project . The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to reload (update) the schema synchronously in the MicroStrategy Tutorial project . The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

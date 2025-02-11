@@ -22,7 +22,7 @@ This topic cover several workflows for retrieving a cube's definition.
 
 This workflow sample demonstrates how to retrieve the definition of a cube through the Modeling service.
 
-You want to get the definition of the `Year, Category Analysis` cube object. The object ID of the cube is `A7D792D54B58C6CB68F192A4A73E317F` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `Year, Category Analysis` cube object. The object ID of the cube is `A7D792D54B58C6CB68F192A4A73E317F` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -186,7 +186,7 @@ Response Code: 200 (The cube’s definition was returned successfully.)
 
 This workflow sample demonstrates how to retrieve the definition of a FFSQL cube through the Modeling service.
 
-You want to get the definition of the `Year, Category Analysis` cube object. The object ID of the cube is `A7D792D54B58C6CB68F192A4A73E317F` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `Year, Category Analysis` cube object. The object ID of the cube is `A7D792D54B58C6CB68F192A4A73E317F` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -1001,7 +1001,7 @@ Sample Response Code: 200 (Cube’s definition is returned successfully.)
 
 This workflow sample demonstrates how to retrieve the definition of a cube with advanced properties through the Modeling service.
 
-You want to get the definition of the Actual vs Forecast Performance Cube cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the Actual vs Forecast Performance Cube cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 This workflow is similar to [Retrieve a cube definition](#retrieve-a-cubes-definition), except with `showAdvancedProperties=true`.
 
@@ -1142,7 +1142,7 @@ Response Code: 200 (The cube definition is returned successfully.)
 
 This workflow sample demonstrates how to retrieve all the applicable properties of a cube through the Modeling service.
 
-You want to get the applicable properties of the Actual vs Forecast Performance Cube cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD75`4.
+You want to get the applicable properties of the Actual vs Forecast Performance Cube cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD75`4.
 
 Retrieve the applicable properties of a cube using [GET /api/model/cubes/\{cubeId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-getCubeApplicableVldbProperties).
 

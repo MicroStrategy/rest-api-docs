@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to retrieve the query details of grids and graphs in a document instance.
 
-You want to view query details of grids and graphs in the Cost Analysis Document in the Strategy Tutorial project. The object ID of the document is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to view query details of grids and graphs in the Cost Analysis Document in the MicroStrategy Tutorial project. The object ID of the document is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

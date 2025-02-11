@@ -21,7 +21,7 @@ This workflow sample demonstrates how to update an attribute's relationship thro
 1. Commit the changeset.
 1. Delete the changeset.
 
-You want to update the relationship for the `“Subcategory“` attribute object with ID `E8C034036E4EE6404513A6B12FAE9481` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to update the relationship for the `“Subcategory“` attribute object with ID `E8C034036E4EE6404513A6B12FAE9481` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -41,7 +41,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 Use [PUT /api/model/systemHierarchy/attributes/\{attributeId}/relationships](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Hierarchy/ms-putAttributeRelationships).
 
-You want to update the relationship of the "Subcategory" attribute object by adding relationships between "Category" and "Subcategory", and "Subcategory" and "Item". The object ID of the "Subcategory" attribute is `E8C034036E4EE6404513A6B12FAE9481` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to update the relationship of the "Subcategory" attribute object by adding relationships between "Category" and "Subcategory", and "Subcategory" and "Item". The object ID of the "Subcategory" attribute is `E8C034036E4EE6404513A6B12FAE9481` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 The following screenshot shows how these relationships are shown in the editor.
 

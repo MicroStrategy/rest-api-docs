@@ -65,7 +65,7 @@ The `name`, `rank` and `nodes` are mandatory fields for both types of fences. Th
   "projects": [
     {
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     }
   ]
 }
@@ -99,7 +99,7 @@ curl -X POST \
   "projects": [
     {
      "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-     "name": "Strategy Tutorial"
+     "name": "MicroStrategy Tutorial"
     }
   ]
 }'
@@ -136,7 +136,7 @@ You can view the detailed information of new created `administrator_user_fence` 
   "projects": [
     {
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     }
   ],
   "id": "YWRtaW5pc3RyYXRvcl91c2VyX2ZlbmNl"

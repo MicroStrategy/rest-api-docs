@@ -96,7 +96,7 @@ This operation requires the "Monitor cluster" privilege.
         "projects": [
           {
             "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-            "name": "Strategy Tutorial",
+            "name": "MicroStrategy Tutorial",
             "status": "unloaded"
           },
           {
@@ -115,7 +115,7 @@ This operation requires the "Monitor cluster" privilege.
         "projects": [
           {
             "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-            "name": "Strategy Tutorial",
+            "name": "MicroStrategy Tutorial",
             "status": "loaded"
           },
           {
@@ -152,7 +152,7 @@ To apply a filter on project id and node name, you can use the filter option of 
         "projects": [
           {
             "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-            "name": "Strategy Tutorial",
+            "name": "MicroStrategy Tutorial",
             "status": "unloaded"
           }
         ],
@@ -209,7 +209,7 @@ This operation requires the "Load and Unload project" and "Idle and Resume proje
   ```json
   {
     "project": {
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
       "status": "pending"
     }
@@ -278,7 +278,7 @@ This operation requires the "Load and Unload project" and "Idle and Resume proje
 
 Endpoint: [GET /api/monitors/iServer/nodes](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getClusterNodes)
 
-In the example above, the project status of `"Strategy Tutorial"` was changed from unloaded to loaded on the cluster node named env-160560laio1use1. You can view the updated status through this API. Here, you can use the filter option on project id "B7CA92F04B9FAE8D941C3E9B7E0CD754" and/or on node name `"env-160560laio1use1"` to get information about the node.
+In the example above, the project status of `"MicroStrategy Tutorial"` was changed from unloaded to loaded on the cluster node named env-160560laio1use1. You can view the updated status through this API. Here, you can use the filter option on project id "B7CA92F04B9FAE8D941C3E9B7E0CD754" and/or on node name `"env-160560laio1use1"` to get information about the node.
 
 - Curl:
 
@@ -299,7 +299,7 @@ In the example above, the project status of `"Strategy Tutorial"` was changed fr
         "projects": [
           {
             "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-            "name": "Strategy Tutorial",
+            "name": "MicroStrategy Tutorial",
             "status": "loaded"
           }
         ],

@@ -69,7 +69,7 @@ This operation requires the "Monitor cluster" privilege.
       "projects": [
         {
           "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-          "name": "Strategy Tutorial",
+          "name": "MicroStrategy Tutorial",
           "status": "loaded"
         }
       ],

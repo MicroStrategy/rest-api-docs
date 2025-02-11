@@ -9,7 +9,7 @@ You can use REST APIs to update an existing report object through Modeling servi
 
 ## Update the definition of an existing report
 
-In this sample workflow, we want to update an existing report object "New Normal Report" (report ID: `FB7816D149C8AC0573CC55829E56F217`) in project "Strategy Tutorial" (project ID: `B19DEDCC11D4E0EFC000EB9495D0F44F`), we have just created it in Workflow Sample: Create a New Report.
+In this sample workflow, we want to update an existing report object "New Normal Report" (report ID: `FB7816D149C8AC0573CC55829E56F217`) in project "MicroStrategy Tutorial" (project ID: `B19DEDCC11D4E0EFC000EB9495D0F44F`), we have just created it in Workflow Sample: Create a New Report.
 
 :::info
 

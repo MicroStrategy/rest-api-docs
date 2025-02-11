@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 ## Create a transformation object
 
-In this workflow sample, you want to create a `"Last year’s"` transformation object under the My Personal Objects/My Objects (MSTR User/My Objects) folder in the Strategy Tutorial project. The folder object ID is `9B25D45A4834A213A70C10B1703D4A77`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you want to create a `"Last year’s"` transformation object under the My Personal Objects/My Objects (MSTR User/My Objects) folder in the MicroStrategy Tutorial project. The folder object ID is `9B25D45A4834A213A70C10B1703D4A77`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

@@ -9,7 +9,7 @@ You can use REST APIs to create a new report through Modeling service. There are
 
 ## Create a new normal report within an instance
 
-In this sample workflow, we want to create a new normal report under the Public Objects/Report folder in the Strategy Tutorial" project. The folder object ID is `D3C7D461F69C4610AA6BAA5EF51F4125`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this sample workflow, we want to create a new normal report under the Public Objects/Report folder in the MicroStrategy Tutorial" project. The folder object ID is `D3C7D461F69C4610AA6BAA5EF51F4125`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

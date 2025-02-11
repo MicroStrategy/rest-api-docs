@@ -27,7 +27,7 @@ This workflow sample demonstrates how to create a new derived element object thr
 
 ## Create a derived element using a list element
 
-You want to create a new `"{Age Range} = 25 to 34, Under 24"` derived element object under the Public Objects folder in the Strategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `091B51154B22036C53CFBB9958B2E8FC`.
+You want to create a new `"{Age Range} = 25 to 34, Under 24"` derived element object under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `091B51154B22036C53CFBB9958B2E8FC`.
 
 :::info
 

@@ -18,7 +18,7 @@ This workflow sample demonstrates how to reload (update) the schema asynchronous
 1. [Reload (update) the schema asynchronously.](#reload-update-the-schema-asynchronously)
 1. [Check the status of the schema reload (update).](#check-the-status-of-the-schema-reload-update)
 
-You want to reload (update) the schema asynchronously in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to reload (update) the schema asynchronously in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 

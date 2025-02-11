@@ -86,7 +86,7 @@ Sample Response
 
 Endpoint: [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1)
 
-This endpoint allows the caller to get the list of projects with the Strategy REST server. In this example, you get the list of projects in the Strategy Tutorial metadata. You use the authorization token returned during login as the value for the header parameter, `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
+This endpoint allows the caller to get the list of projects with the Strategy REST server. In this example, you get the list of projects in the MicroStrategy Tutorial metadata. You use the authorization token returned during login as the value for the header parameter, `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
 
 ![swagger_GET_projects](../../../images/swagger_GET_projects.png)
 
@@ -117,9 +117,9 @@ Sample Response
   [
     {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "alias": "",
-      "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
+      "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
       "status": 0
     },
     {
@@ -140,7 +140,7 @@ The response body contains information for each project that is returned, includ
 
 Endpoint: [GET /api/folders/preDefined/\{folderType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolder)
 
-This endpoint allows the caller to get the objects under a predefined folder with the Strategy REST server. In this example, you get the objects under "Shared Reports" in the "Strategy Tutorial" project. You use the authorization token returned by `POST /api/auth/login` as the value for `X-MSTR-AuthToken` and a project ID returned by `GET /api/projects` as the value for `X-MSTR-ProjectID`. You provide a value for `folderType` from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. In this example, you use the value "7" , which specifies the predefined "Shared Reports" folder under the "Public Objects" folder. If the call is successful, the resulting HTTP response returns an HTTP status 200 and a list of metadata objects under the "Shared Reports" folder.
+This endpoint allows the caller to get the objects under a predefined folder with the Strategy REST server. In this example, you get the objects under "Shared Reports" in the "MicroStrategy Tutorial" project. You use the authorization token returned by `POST /api/auth/login` as the value for `X-MSTR-AuthToken` and a project ID returned by `GET /api/projects` as the value for `X-MSTR-ProjectID`. You provide a value for `folderType` from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. In this example, you use the value "7" , which specifies the predefined "Shared Reports" folder under the "Public Objects" folder. If the call is successful, the resulting HTTP response returns an HTTP status 200 and a list of metadata objects under the "Shared Reports" folder.
 
 ![swagger_GET_folders_preDefined](../../../images/swagger_GET_folders_preDefined.png)
 
@@ -273,7 +273,7 @@ Sample Response
 
 Endpoint: [GET /api/folders/preDefined?folderType=\{folderType}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/getPreDefinedFolders)
 
-This endpoint allows the caller to get the folder object of one or more predefined folders with the Strategy REST server. In this example, you get the "Shared Reports" and "My Reports" folder objects in the "Strategy Tutorial" project. You use the authorization token returned by `POST /api/auth/login` as the value for `X-MSTR-AuthToken` and a project ID returned by `GET /api/projects` as the value for `X-MSTR-ProjectID`. You provide a value for `folderType` from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. You may specify multiple folder types as a comma separated list. In this example, you use the value "7,20", where "7" specifies the predefined "Shared Reports" folder under the "Public Objects" folder, and "20" specifies the "My Reports" folder under the profile folder of the active user. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a list of the folder objects requested.
+This endpoint allows the caller to get the folder object of one or more predefined folders with the Strategy REST server. In this example, you get the "Shared Reports" and "My Reports" folder objects in the "MicroStrategy Tutorial" project. You use the authorization token returned by `POST /api/auth/login` as the value for `X-MSTR-AuthToken` and a project ID returned by `GET /api/projects` as the value for `X-MSTR-ProjectID`. You provide a value for `folderType` from the [EnumDSSXMLFolderNames](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLFolderNames.html) enumeration. You may specify multiple folder types as a comma separated list. In this example, you use the value "7,20", where "7" specifies the predefined "Shared Reports" folder under the "Public Objects" folder, and "20" specifies the "My Reports" folder under the profile folder of the active user. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a list of the folder objects requested.
 
 Sample Request
 

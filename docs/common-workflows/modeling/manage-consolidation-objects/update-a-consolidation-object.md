@@ -21,7 +21,7 @@ This workflow sample demonstrates how to replace an existing consolidation objec
 1. Commit the changeset.
 1. Delete the changeset.
 
-You want to replace the existing consolidation object Customer Geography in the Strategy Tutorial project. The consolidation object ID is `B9E7FD5911D3E936C000B3B2D86C964F`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+You want to replace the existing consolidation object Customer Geography in the MicroStrategy Tutorial project. The consolidation object ID is `B9E7FD5911D3E936C000B3B2D86C964F`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

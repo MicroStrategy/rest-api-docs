@@ -118,7 +118,7 @@ You can view the detailed information of updated `administrator_user_fence` user
   "projects": [
     {
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-      "name": "Strategy Tutorials"
+      "name": "MicroStrategy Tutorials"
     }
   ],
   "id": "YWRtaW5pc3RyYXRvcl91c2VyX2ZlbmNl"

@@ -67,7 +67,7 @@ Here is an example using `GET /api/projects/MicroStrategy%20Tutorial?fields=id,n
 ```json
 {
   "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-  "name": "Strategy Tutorial",
+  "name": "MicroStrategy Tutorial",
   "owner": {
     "name": "Administrator",
     "id": "54F3D26011D2896560009A8E67019608"
@@ -81,10 +81,10 @@ Here is an example of full representation without fields.
 {
   "acg": 255,
   "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-  "name": "Strategy Tutorial",
+  "name": "MicroStrategy Tutorial",
   "status": 0,
   "alias": "",
-  "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
+  "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
   "dateCreated": "2001-01-02T20:42:04.000+0000",
   "dateModified": "2019-06-28T03:32:24.000+0000",
   "owner": {
@@ -116,7 +116,7 @@ Here is an example using `GET /api/projects?fields=id,name`.
   },
   {
     "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-    "name": "Strategy Tutorial"
+    "name": "MicroStrategy Tutorial"
   }
 ]
 ```

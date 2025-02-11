@@ -108,7 +108,7 @@ Provide the correct `environment` and `project` in `packageInfo` of the request 
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     }
   }
 }
@@ -182,7 +182,7 @@ The value of `packageInfo.status` could be `creating`, and you should keep pulli
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "status": "created",
     "message": "",
@@ -207,7 +207,7 @@ The value of `packageInfo.status` could be `creating`, and you should keep pulli
     "undoStorage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "deleted": false
   },
@@ -323,7 +323,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "status": "locked",
     "message": "",
@@ -382,7 +382,7 @@ Sample Response Body:
     "undoStorage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "deleted": false
   },
@@ -431,7 +431,7 @@ Copy the response body from step 4 and change `"replicated": false"`, to `true`.
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "status": "locked",
     "message": "",
@@ -490,7 +490,7 @@ Copy the response body from step 4 and change `"replicated": false"`, to `true`.
     "undoStorage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "deleted": false
   },
@@ -553,7 +553,7 @@ The value of `packageInfo.status` could be `creating`, and you should keep pulli
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "status": "created",
     "message": "",
@@ -618,7 +618,7 @@ The value of `packageInfo.status` could be `creating`, and you should keep pulli
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "deleted": false
   },

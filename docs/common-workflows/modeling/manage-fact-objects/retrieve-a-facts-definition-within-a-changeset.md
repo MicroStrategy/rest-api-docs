@@ -26,7 +26,7 @@ Changesets are used in this workflow. For information on how to create and use c
 1. [Get a fact's definition within a changeset.](#get-a-facts-definition-within-a-changeset)
 1. Delete the changeset.
 
-You want to get the definition of the "Profit" fact object. The object ID of the fact is `FDD652E7444ADD7AB6B25F9C1FA15F92` in the "Strategy Tutorial" project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the "Profit" fact object. The object ID of the fact is `FDD652E7444ADD7AB6B25F9C1FA15F92` in the "MicroStrategy Tutorial" project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

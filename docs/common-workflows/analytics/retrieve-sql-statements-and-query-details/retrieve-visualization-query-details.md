@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to retrieve the query details of visualizations in a dashboard instance.
 
-You want to view the query details of visualizations in the Cost Analysis Dashboard in the Strategy Tutorial project. The object ID of the dashboard is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to view the query details of visualizations in the Cost Analysis Dashboard in the MicroStrategy Tutorial project. The object ID of the dashboard is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

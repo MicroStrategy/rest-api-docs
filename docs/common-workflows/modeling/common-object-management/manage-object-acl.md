@@ -166,7 +166,7 @@ Response Body:
   "extType": 0,
   "ancestors": [
     {
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "id": "D43364C684E34A5F9B2F9AD7108F7828",
       "level": 2
     },
@@ -266,7 +266,7 @@ Response Body:
   "extType": 0,
   "ancestors": [
     {
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "id": "D43364C684E34A5F9B2F9AD7108F7828",
       "level": 3
     },
@@ -465,7 +465,7 @@ Response Body:
   "extType": 0,
   "ancestors": [
     {
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "id": "D43364C684E34A5F9B2F9AD7108F7828",
       "level": 2
     },
@@ -564,7 +564,7 @@ Response Body:
   "extType": 0,
   "ancestors": [
     {
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "id": "D43364C684E34A5F9B2F9AD7108F7828",
       "level": 3
     },

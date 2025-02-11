@@ -20,7 +20,7 @@ This topic covers three workflows for retrieving a custom group’s definition.
 
 This workflow sample demonstrates how to retrieve the definition of a custom group with filter elements through the Modeling service.
 
-You want to get the definition of the `"Age Group"` custom group object. The object ID of the custom group is `085CBF314703A71E926EA187C2002969` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `"Age Group"` custom group object. The object ID of the custom group is `085CBF314703A71E926EA187C2002969` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -276,7 +276,7 @@ Response Code: 200 (The custom group's definition was returned successfully.)
 
 This workflow sample demonstrates how to retrieve the definition of a custom group with a banding element through the Modeling service.
 
-You want to get the definition of the `"Customers Value Banding"` custom group object. The object ID of the custom group is `F519146F4B0A6EC81ED3CFA30F1C90B4` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `"Customers Value Banding"` custom group object. The object ID of the custom group is `F519146F4B0A6EC81ED3CFA30F1C90B4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

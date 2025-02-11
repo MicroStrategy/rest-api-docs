@@ -28,7 +28,7 @@ You should at least have **read access** to the table to successfully complete t
 
 :::
 
-You want to update the prompt of a table. The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the Strategy Tutorial Advanced project and its ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`. The object ID of the current prompt is `339585B03F354D11AE8760C4489160F1` and you want to update fields of the prompt, for example, the name and default answers.
+You want to update the prompt of a table. The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the MicroStrategy Tutorial Advanced project and its ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`. The object ID of the current prompt is `339585B03F354D11AE8760C4489160F1` and you want to update fields of the prompt, for example, the name and default answers.
 
 :::info
 

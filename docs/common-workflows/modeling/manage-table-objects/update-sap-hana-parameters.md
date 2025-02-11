@@ -32,7 +32,7 @@ To replace the current prompt with a standalone prompt, the prompt must either b
 
 :::
 
-The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the Strategy Tutorial Advanced project and its ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`. Different operations on different SAP HANA parameters are done:
+The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the MicroStrategy Tutorial Advanced project and its ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`. Different operations on different SAP HANA parameters are done:
 
 - Keep `IP_Column_Hier_Value_Help` the same
 - Reset `IP_Static_List`

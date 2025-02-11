@@ -88,7 +88,7 @@ The authorization token "`x-mstr-authtoken`" is returned in the response header.
 
 Endpoint: [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1)
 
-This endpoint allows the caller to get the list of projects with the Strategy REST Server. In this example, you get the list of projects in the Strategy Tutorial metadata. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
+This endpoint allows the caller to get the list of projects with the Strategy REST Server. In this example, you get the list of projects in the MicroStrategy Tutorial metadata. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
 
 Sample Request
 
@@ -115,9 +115,9 @@ Sample Response
   [
     {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "alias": "",
-      "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
+      "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
       "status": 0
     },
     {

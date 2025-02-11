@@ -21,7 +21,7 @@ You can use REST APIs to retrieve the definition for a derived element through t
 
 ## Retrieve a derived element's definition
 
-You want to get the definition of a derived element that is defined by a list. The object ID of the derived element is `610B9CC14AD9DCB69F094C89D3B5480B` in the Strategy Tutorial project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+You want to get the definition of a derived element that is defined by a list. The object ID of the derived element is `610B9CC14AD9DCB69F094C89D3B5480B` in the MicroStrategy Tutorial project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 
@@ -170,7 +170,7 @@ Response Code: 200 (The derived element's definition is returned successfully.)
 
 ## Retrieve the definition of a derived element within a changeset
 
-You want to get the definition of the derived element object, `"groupDerivedElement"`. The object ID of the derived element is `610B9CC14AD9DCB69F094C89D3B5480B` in the Strategy Tutorial project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+You want to get the definition of the derived element object, `"groupDerivedElement"`. The object ID of the derived element is `610B9CC14AD9DCB69F094C89D3B5480B` in the MicroStrategy Tutorial project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

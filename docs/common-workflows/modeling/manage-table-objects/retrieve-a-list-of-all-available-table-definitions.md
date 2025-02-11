@@ -10,7 +10,7 @@ You can use REST APIs to retrieve the definitions for a list of all available ta
 
 ## Retrieve a list of all available tables' definitions
 
-In this workflow sample, you want to get the definitions of all available tables in the project schema. Use the Strategy Tutorial project. Its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you want to get the definitions of all available tables in the project schema. Use the MicroStrategy Tutorial project. Its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 
@@ -89,7 +89,7 @@ Response Code: 200 (The tables' definitions are returned successfully.)
 
 ### Retrieve a list of available tables' definitions within a changeset
 
-In this workflow sample, you want to get the definitions of all available tables in the project schema. Use the Strategy Tutorial project. Its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you want to get the definitions of all available tables in the project schema. Use the MicroStrategy Tutorial project. Its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::tip
 

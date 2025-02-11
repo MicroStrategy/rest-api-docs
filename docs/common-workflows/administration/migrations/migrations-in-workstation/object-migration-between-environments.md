@@ -87,7 +87,7 @@ Sample Request Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     }
   }
 }
@@ -152,7 +152,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "status": "created",
     "message": "",
@@ -177,7 +177,7 @@ Sample Response Body:
     "undoStorage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "deleted": false
   },
@@ -298,7 +298,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "status": "locked",
     "message": "",
@@ -356,7 +356,7 @@ Copy the response body from step 4 and change `"replicated": false`, to `true`.
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "status": "locked",
     "message": "",
@@ -417,7 +417,7 @@ Since the package import is asynchronously processing, this call checks the impo
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "deleted": false
   }

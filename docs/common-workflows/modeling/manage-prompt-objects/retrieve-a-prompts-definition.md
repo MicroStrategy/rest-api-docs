@@ -14,7 +14,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to retrieve a prompt's definition.
 
-You want to get the definition of the `"Call Center in USA"` prompt object. The object ID of the prompt is `2804B5284AFF95E8E0EEB4AC09B5B972` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `"Call Center in USA"` prompt object. The object ID of the prompt is `2804B5284AFF95E8E0EEB4AC09B5B972` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

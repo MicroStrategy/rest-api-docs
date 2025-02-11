@@ -18,7 +18,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to retrieve the definition of an attribute through the Modeling service.
 
-You want to get the definition of the `"Subcategory"` attribute object. The object ID of the attribute is `E8C034036E4EE6404513A6B12FAE9481` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `"Subcategory"` attribute object. The object ID of the attribute is `E8C034036E4EE6404513A6B12FAE9481` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -211,7 +211,7 @@ Response Code: 200 (The attribute's definition was returned successfully.)
 
 ## Retrieve an attribute's definition with expressions in tree and tokens formats
 
-In this workflow sample, you want to get the definition of the "`Subcategory`“ attribute object, with the expression returned in tree and tokens formats. The object ID of the attribute is `E8C034036E4EE6404513A6B12FAE9481` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+In this workflow sample, you want to get the definition of the "`Subcategory`“ attribute object, with the expression returned in tree and tokens formats. The object ID of the attribute is `E8C034036E4EE6404513A6B12FAE9481` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

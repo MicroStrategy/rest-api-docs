@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to update an attribute's definition through the Modeling service.
 
-You want to update the definition of the "Customer" attribute object under the Public Objects folder in the Strategy Tutorial project. The attribute object ID is `5D6C76C3A3F548A0B9ADE5F9D2AA65C6` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to update the definition of the "Customer" attribute object under the Public Objects folder in the MicroStrategy Tutorial project. The attribute object ID is `5D6C76C3A3F548A0B9ADE5F9D2AA65C6` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -36,7 +36,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 Use [PATCH /api/model/attributes/\{attributeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Attributes/ms-updateAttribute).
 
-You want to update the definition of the "Customer" attribute object under the Public Objects folder in the Strategy Tutorial project by ungrouping the "Name" form group and adding a new form group "Email". The attribute object ID is `5D6C76C3A3F548A0B9ADE5F9D2AA65C6` in the Strategy Tutorial project.
+You want to update the definition of the "Customer" attribute object under the Public Objects folder in the MicroStrategy Tutorial project by ungrouping the "Name" form group and adding a new form group "Email". The attribute object ID is `5D6C76C3A3F548A0B9ADE5F9D2AA65C6` in the MicroStrategy Tutorial project.
 
 :::tip
 

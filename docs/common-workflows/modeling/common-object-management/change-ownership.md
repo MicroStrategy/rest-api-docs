@@ -233,7 +233,7 @@ You can view the updated owner and access rights information in the body of the 
   "viewMedia": 1879072805,
   "ancestors": [
     {
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "id": "D43364C684E34A5F9B2F9AD7108F7828",
       "level": 3
     },

@@ -114,7 +114,7 @@ This is the response of a clustered Intelligence Server, and thus, contains many
 {
   "projects": {
     "B7CA92F04B9FAE8D941C3E9B7E0CD754": {
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
       "nodes": ["env-220285laio2use1"]
     },
@@ -207,7 +207,7 @@ Response Body:
 {
   "projects": {
     "B7CA92F04B9FAE8D941C3E9B7E0CD754": {
-      "name": "Strategy Tutorial",
+      "name": "MicroStrategy Tutorial",
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
       "nodes": ["env-220285laio2use1", "env-220285laio1use1"]
     },

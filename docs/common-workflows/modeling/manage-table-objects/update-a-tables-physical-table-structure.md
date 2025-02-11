@@ -14,7 +14,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to update an existing table's physical table structure through the Modeling service.
 
-In this workflow sample, you update an existing `"CITY_CTR_SLS"` table's physical table structure in the Strategy Tutorial project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you update an existing `"CITY_CTR_SLS"` table's physical table structure in the MicroStrategy Tutorial project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

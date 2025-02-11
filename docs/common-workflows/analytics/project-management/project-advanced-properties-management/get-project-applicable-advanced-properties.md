@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to retrieve the applicable properties of a project through Modeling Service.
 
-You want to get the applicable properties of the `Strategy Tutorial` Project object. The object ID is `6851110C470AF40EB46B559D5098F309`.
+You want to get the applicable properties of the `MicroStrategy Tutorial` Project object. The object ID is `6851110C470AF40EB46B559D5098F309`.
 
 :::info
 

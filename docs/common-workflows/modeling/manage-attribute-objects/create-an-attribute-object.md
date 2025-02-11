@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to create an attribute object through the Modeling service.
 
-You want to create a "Subcategory" attribute object under the Public Objects folder in the Strategy Tutorial project. The folder object ID of the attribute is `98FE182C2A10427EACE0CD30B6768258` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to create a "Subcategory" attribute object under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID of the attribute is `98FE182C2A10427EACE0CD30B6768258` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

@@ -9,7 +9,7 @@ You can use REST APIs to retrieve a derived element’s definition in report thr
 
 ## Retrieve a derived element’s definition within a report instance
 
-In this sample workflow, we want to get the definition of a derived element in report. The report ID is `9B9ADA7F464E63CE0D0B709B03BD9370`. The derived element ID is `EA18C4C1484F06FF47B603A7A0DCA8D6`. The report is in the project "Strategy Tutorial", and the project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this sample workflow, we want to get the definition of a derived element in report. The report ID is `9B9ADA7F464E63CE0D0B709B03BD9370`. The derived element ID is `EA18C4C1484F06FF47B603A7A0DCA8D6`. The report is in the project "MicroStrategy Tutorial", and the project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

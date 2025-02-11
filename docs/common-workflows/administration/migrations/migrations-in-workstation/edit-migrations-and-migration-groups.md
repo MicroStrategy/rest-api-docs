@@ -67,7 +67,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "status": "created",
     "message": "",
@@ -380,7 +380,7 @@ Sample Response Body:
     "storage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "Strategy Tutorial"
+      "name": "MicroStrategy Tutorial"
     },
     "status": "creating",
     "message": "",
@@ -748,7 +748,7 @@ Use the response body you saved in step 1 and change `name`, `treeView`, and `mi
         "purpose": "migration_group",
         "project": {
           "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-          "name": "Strategy Tutorial"
+          "name": "MicroStrategy Tutorial"
         },
         "tocView": {
           "settings": {
@@ -770,7 +770,7 @@ Use the response body you saved in step 1 and change `name`, `treeView`, and `mi
       "importInfo": {
         "project": {
           "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-          "name": "Strategy Tutorial"
+          "name": "MicroStrategy Tutorial"
         }
       }
     },
@@ -780,7 +780,7 @@ Use the response body you saved in step 1 and change `name`, `treeView`, and `mi
         "purpose": "migration_group",
         "project": {
           "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-          "name": "Strategy Tutorial"
+          "name": "MicroStrategy Tutorial"
         },
         "tocView": {
           "settings": {
@@ -802,7 +802,7 @@ Use the response body you saved in step 1 and change `name`, `treeView`, and `mi
       "importInfo": {
         "project": {
           "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-          "name": "Strategy Tutorial"
+          "name": "MicroStrategy Tutorial"
         }
       }
     },

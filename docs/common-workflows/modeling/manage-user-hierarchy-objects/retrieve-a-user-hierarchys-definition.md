@@ -16,7 +16,7 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 This workflow sample demonstrates how to retrieve an user hierarchy's definition within a changeset.
 
-You want to get the definition of the Time user hierarchy object, in the Strategy Tutorial project, which contains the relationship between the Year, Month of Year, Quarter, Month, and Day attributes. The object ID of the user hierarchy is `B793B55C11D3E4E51000E887EC6DE8A4`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the Time user hierarchy object, in the MicroStrategy Tutorial project, which contains the relationship between the Year, Month of Year, Quarter, Month, and Day attributes. The object ID of the user hierarchy is `B793B55C11D3E4E51000E887EC6DE8A4`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

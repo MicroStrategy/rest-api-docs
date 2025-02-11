@@ -87,7 +87,7 @@ The authorization token "`x-mstr-authtoken`" is returned in the response header.
 
 Endpoint: [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1)
 
-This endpoint allows the caller to get the list of projects with the Strategy REST Server. In this example, you get the list of projects in the Strategy Tutorial metadata. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
+This endpoint allows the caller to get the list of projects with the Strategy REST Server. In this example, you get the list of projects in the MicroStrategy Tutorial metadata. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
 
 ![swagger_GET_projects](../../../images/swagger_GET_projects.png)
 
@@ -118,9 +118,9 @@ Sample Response
        [
          {
            "id": "nllmm5lpmkjdsj4d4etgdikc6c",
-           "name": "Strategy Tutorial",
+           "name": "MicroStrategy Tutorial",
            "alias": "",
-           "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
+           "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
            "status": 0
          },
          {
@@ -141,7 +141,7 @@ The response body contains information for each project that is returned, includ
 
 Endpoint: [GET /api/searches/results](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Browsing/doQuickSearch)
 
-This endpoint allows the caller to perform a quick search for specific objects. In this example, you search in the "Strategy Tutorial" project for reports that include "Customer" in the title and then return all results without pagination. You use two different types of parameters—header and query.
+This endpoint allows the caller to perform a quick search for specific objects. In this example, you search in the "MicroStrategy Tutorial" project for reports that include "Customer" in the title and then return all results without pagination. You use two different types of parameters—header and query.
 
 - You identify the project by passing the project ID in the request header.
 - You set the following values using query parameters in the request:

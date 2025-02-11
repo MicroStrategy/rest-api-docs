@@ -500,7 +500,7 @@ Two examples are provided below. In the first example to make security role assi
         "members": []
       },
       {
-        "name": "Strategy Tutorial",
+        "name": "MicroStrategy Tutorial",
         "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
         "members": []
       }
@@ -629,7 +629,7 @@ Get information for a specific security role using the security role id. You obt
         "members": []
       },
       {
-        "name": "Strategy Tutorial",
+        "name": "MicroStrategy Tutorial",
         "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
         "members": []
       }
