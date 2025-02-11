@@ -10,13 +10,13 @@ description: You can use REST APIs to retrieve the definition for a partition ma
 
 You can try this workflow with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-43769ee1-7480-4413-990a-13b50119b384).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-You can use REST APIs to retrieve the definition for a partition mapping table through the Modeling service. A brief introduction of partition mapping is provided in this documentation. To learn more about partition mapping, refer to [Microstrategy Community](https://www2.microstrategy.com/producthelp/Current/ProjectDesignGuide/WebHelp/Lang_1033/Content/Dividing_tables_to_increase_performance__Partition.htm).
+You can use REST APIs to retrieve the definition for a partition mapping table through the Modeling service. A brief introduction of partition mapping is provided in this documentation. To learn more about partition mapping, refer to [Strategy Community](https://www2.microstrategy.com/producthelp/Current/ProjectDesignGuide/WebHelp/Lang_1033/Content/Dividing_tables_to_increase_performance__Partition.htm).
 
-The partitioning feature improves query performance when working with large data volumes. Partitioning "breaks" the data into different (ideally balanced) portions, and each portion is called a partition base table (PBT), or a partition table. In other words, a partition table is a warehouse table that contains one part of a larger set of data. To manage which partition table to use for a given query, partition mapping is introduced by MicroStrategy to identify and keep track of the partitioned base tables as part of a logical whole. MicroStrategy supports two types of partition mapping:
+The partitioning feature improves query performance when working with large data volumes. Partitioning "breaks" the data into different (ideally balanced) portions, and each portion is called a partition base table (PBT), or a partition table. In other words, a partition table is a warehouse table that contains one part of a larger set of data. To manage which partition table to use for a given query, partition mapping is introduced by Strategy to identify and keep track of the partitioned base tables as part of a logical whole. Strategy supports two types of partition mapping:
 
 **Warehouse partition mapping (WHPM)**: uses a specialized warehouse table (WHPM table) to determine which table to access
 
@@ -34,7 +34,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 ## Retrieve a WHPM table's definition
 
-Use this workflow sample to get the definition of a WHPM table. The object ID of the table is `569A89E78FA1455687F4E327B259B3FB`. The table is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+Use this workflow sample to get the definition of a WHPM table. The object ID of the table is `569A89E78FA1455687F4E327B259B3FB`. The table is in the Strategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 Get the table's definition with [GET /api/model/tables/\{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
 
@@ -245,7 +245,7 @@ Response Code: 200 (The WHPM table's definition is returned successfully.)
 
 ## Retrieve a MDPM table's definition
 
-Use this workflow sample to get the definition of an MDPM table. The object ID of the table is `473718A30DA84A9A814424537879778F`. The table is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`. The API usage is the same as retrieving a WHPM table. Unlike all other tables, you can use "showExpressionAs" and "showFilterTokens" to customize partition filter representation.
+Use this workflow sample to get the definition of an MDPM table. The object ID of the table is `473718A30DA84A9A814424537879778F`. The table is in the Strategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`. The API usage is the same as retrieving a WHPM table. Unlike all other tables, you can use "showExpressionAs" and "showFilterTokens" to customize partition filter representation.
 
 Get the table's definition with [GET /api/model/tables/\{TableId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Tables/ms-getTableDetails).
 

@@ -10,13 +10,13 @@ description: This workflow sample demonstrates how to update an attribute's defi
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-0c9c449c-883d-4112-af6d-f14656ed5d30?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This workflow sample demonstrates how to update an attribute's definition through the Modeling service.
 
-You want to update the definition of the "Customer" attribute object under the Public Objects folder in the MicroStrategy Tutorial project. The attribute object ID is `5D6C76C3A3F548A0B9ADE5F9D2AA65C6` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to update the definition of the "Customer" attribute object under the Public Objects folder in the Strategy Tutorial project. The attribute object ID is `5D6C76C3A3F548A0B9ADE5F9D2AA65C6` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -36,7 +36,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 Use [PATCH /api/model/attributes/\{attributeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Attributes/ms-updateAttribute).
 
-You want to update the definition of the "Customer" attribute object under the Public Objects folder in the MicroStrategy Tutorial project by ungrouping the "Name" form group and adding a new form group "Email". The attribute object ID is `5D6C76C3A3F548A0B9ADE5F9D2AA65C6` in the MicroStrategy Tutorial project.
+You want to update the definition of the "Customer" attribute object under the Public Objects folder in the Strategy Tutorial project by ungrouping the "Name" form group and adding a new form group "Email". The attribute object ID is `5D6C76C3A3F548A0B9ADE5F9D2AA65C6` in the Strategy Tutorial project.
 
 :::tip
 
@@ -46,7 +46,7 @@ To update an attribute, in the request body, "forms" contains the detailed defin
 
   - "expression": Must be in either "tree" or "tokens" format.
 
-    Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say an attribute form expression is "Year - 10". When the attribute form expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Year_ID", Year_column_ID), ("-", Minus_ID), ("10", Constant).
+    Tokens are a semi-structured representation of Strategy expression text that includes object references. For example, let’s say an attribute form expression is "Year - 10". When the attribute form expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Year_ID", Year_column_ID), ("-", Minus_ID), ("10", Constant).
 
   - "tables": A list of tables that the "expression" applies to. Warehouse partition base tables and metadata partition mapping tables are not allowed here.
 

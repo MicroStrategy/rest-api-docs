@@ -10,11 +10,11 @@ description: You can use REST APIs to retrieve a prompt of a table through the M
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-6ddc138b-b2ab-4c53-8172-b2af26f4586d?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-Starting in MicroStrategy 2021 Update 6, you can use REST APIs to retrieve a prompt of a table through the Modeling service, if you have read access to the table.
+Starting in Strategy 2021 Update 6, you can use REST APIs to retrieve a prompt of a table through the Modeling service, if you have read access to the table.
 
 This workflow applies only to SAP HANA tables with input parameters because only these tables have prompts, and one input parameters corresponds to one prompt. For more information, see [KB48437: Support for SAP HANA calculation views with input parameters](https://community.microstrategy.com/s/article/Support-for-SAP-HANA-calculation-views-with-input-parameters?language=en_US).
 
@@ -22,7 +22,7 @@ This workflow applies only to SAP HANA tables with input parameters because only
 
 This workflow sample demonstrates how to retrieve an existing prompt of an SAP HANA table.
 
-The object ID of the table is `84AF2517E662417D9924FD678B44591A` and the object ID of the prompt is `339585B03F354D11AE8760C4489160F1`. The table is in the MicroStrategy Tutorial Advanced project and its project ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`.
+The object ID of the table is `84AF2517E662417D9924FD678B44591A` and the object ID of the prompt is `339585B03F354D11AE8760C4489160F1`. The table is in the Strategy Tutorial Advanced project and its project ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`.
 
 :::tip
 
@@ -93,7 +93,7 @@ Response Code: 200 (Table's prompt is returned successfully.)
 
 ## Retrieve a table prompt within a changeset
 
-You want to get the prompt of the same table object mentioned in [Retrieve a prompt of a table](#retrieve-a-prompt-of-a-table), while within a changeset. The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the MicroStrategy Tutorial Advanced project and its project ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`.
+You want to get the prompt of the same table object mentioned in [Retrieve a prompt of a table](#retrieve-a-prompt-of-a-table), while within a changeset. The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the Strategy Tutorial Advanced project and its project ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`.
 
 :::tip
 

@@ -10,13 +10,13 @@ description: This topic covers several workflows for retrieving a metric's defin
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d1504a52-db9a-4d71-99d2-0ffbd82ee91a?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This topic covers several workflows for retrieving a metric's definition:
 
-You want to get the definition of an object with the ID of `514C2064DF754990AF60432A1C1E4A77` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of an object with the ID of `514C2064DF754990AF60432A1C1E4A77` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

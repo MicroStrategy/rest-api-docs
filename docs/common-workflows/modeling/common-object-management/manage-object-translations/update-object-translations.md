@@ -36,7 +36,7 @@ Prepare necessary info in order to perform PATCH operation
 
 In this demo, the following parameter values will be used:
 
-- Project: MicroStrategy Tutorial
+- Project: Strategy Tutorial
 - Project ID: `B7CA92F04B9FAE8D941C3E9B7E0CD754`
 - Object ID: `BEC722A6406320A3E67DBFBAB2F033CB`
 - Object type: `report_definition`

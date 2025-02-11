@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to create a new derived eleme
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d4a5b7c7-3dba-46fc-acce-0683a23bb1fe?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -27,7 +27,7 @@ This workflow sample demonstrates how to create a new derived element object thr
 
 ## Create a derived element using a list element
 
-You want to create a new `"{Age Range} = 25 to 34, Under 24"` derived element object under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `091B51154B22036C53CFBB9958B2E8FC`.
+You want to create a new `"{Age Range} = 25 to 34, Under 24"` derived element object under the Public Objects folder in the Strategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `091B51154B22036C53CFBB9958B2E8FC`.
 
 :::info
 

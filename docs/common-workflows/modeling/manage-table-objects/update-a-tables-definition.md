@@ -10,13 +10,13 @@ description: This workflow sample demonstrates how to update an existing table t
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-95d4124f-c4e5-48ce-986e-a05c6d47069f?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This workflow sample demonstrates how to update an existing table through the Modeling service.
 
-In this workflow sample, you update an existing `"CITY_CTR_SLS"` table object in the MicroStrategy Tutorial project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you update an existing `"CITY_CTR_SLS"` table object in the Strategy Tutorial project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

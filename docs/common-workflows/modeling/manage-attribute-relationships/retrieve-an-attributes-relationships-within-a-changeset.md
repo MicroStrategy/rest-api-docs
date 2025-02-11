@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to retrieve an attribute's re
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-8b42c446-de96-4899-b3c1-005f25702596?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -26,7 +26,7 @@ Changesets are used in this workflow. For information on how to create and use c
 1. [Get an attribute's relationships within a changeset.](#get-an-attributes-relationships-within-a-changeset)
 1. Delete the changeset.
 
-You want to get the relationships of the `"Month"` attribute object. The object ID of the attribute is `8D679D4411D3E4981000E787EC6DE8A4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the relationships of the `"Month"` attribute object. The object ID of the attribute is `8D679D4411D3E4981000E787EC6DE8A4` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -40,7 +40,7 @@ Get the project ID from [GET /api/projects](https://demo.microstrategy.com/Micro
 
 Use [GET /api/model/systemHierarchy/attributes/\{attributeId}/relationships]([https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System) Hierarchy/ms-getAttributeRelationships).
 
-You want to get the relationship of the `"Month"` attribute object. The object ID of the attribute is `8D679D4411D3E4981000E787EC6DE8A4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the relationship of the `"Month"` attribute object. The object ID of the attribute is `8D679D4411D3E4981000E787EC6DE8A4` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 Sample Request Header:
 

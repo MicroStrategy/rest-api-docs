@@ -10,7 +10,7 @@ description: The status of a cube tells you how the cube is currently being used
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-736d23cb-1247-49fc-99dc-83365a1502e6?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -18,7 +18,7 @@ The status of a cube tells you how the cube is currently being used and whether 
 
 ## Instructions to access the cube cache monitor in Developer
 
-1. Open MicroStrategy Developer.
+1. Open Strategy Developer.
 1. In the left pane, navigate to **Administration** > **System Monitors** > **Caches** > **Intelligent Cubes** to access the cube cache list.
 
    ![cube_cache_list](../../../images/cube_cache_list.png)
@@ -162,7 +162,7 @@ Fill in the sample below to design your own output.
       "openViewCount": 0,
       "creationTime": "2018-02-12 07:15:17",
       "historicHitCount": 121,
-      "fileName": "C:\\Program Files (x86)\\MicroStrategy\\Intelligence Server\\Cube\\serverdefinition\\Server_tec-w-004832_PB19DEDCC11D4E0EFC000EB9495D0F44F\\363249D447A5EF245AD51AB916CA4904.cube",
+      "fileName": "C:\\Program Files (x86)\\Strategy\\Intelligence Server\\Cube\\serverdefinition\\Server_tec-w-004832_PB19DEDCC11D4E0EFC000EB9495D0F44F\\363249D447A5EF245AD51AB916CA4904.cube",
       "rowCount": 39,
       "columnCount": 8
     }
@@ -290,7 +290,7 @@ Fill in the sample below to design your own output.
   "openViewCount": 0,
   "creationTime": "2018-02-12 07:15:17",
   "historicHitCount": 121,
-  "fileName": "C:\\Program Files (x86)\\MicroStrategy\\Intelligence Server\\Cube\\serverdefinition\\Server_tec-w-004832_PB19DEDCC11D4E0EFC000EB9495D0F44F\\363249D447A5EF245AD51AB916CA4904.cube",
+  "fileName": "C:\\Program Files (x86)\\Strategy\\Intelligence Server\\Cube\\serverdefinition\\Server_tec-w-004832_PB19DEDCC11D4E0EFC000EB9495D0F44F\\363249D447A5EF245AD51AB916CA4904.cube",
   "rowCount": 39,
   "columnCount": 8,
   "jobExecutionStatistics": {
@@ -385,7 +385,7 @@ Fill in the sample below to design your own output. We recommend you specify all
   "aggregatedCacheUsages": [
     {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial",
+      "name": "Strategy Tutorial",
       "currentUsage": 178000,
       "capacity": 280000 // Capacity just for project level, not for user level
     },

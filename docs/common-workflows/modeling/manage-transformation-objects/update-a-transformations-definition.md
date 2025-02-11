@@ -10,13 +10,13 @@ description: This workflow sample demonstrates how to update an existing transfo
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ad947705-6f6c-433c-ae10-cfe90ba9a364?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This workflow sample demonstrates how to update an existing transformation through the Modeling service.
 
-In this workflow sample, you update an existing `"Last year’s"` transformation object under the My Personal Objects/My Objects (MSTR User/My Objects) folder in the MicroStrategy Tutorial project. The folder object ID is `9B25D45A4834A213A70C10B1703D4A77`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you update an existing `"Last year’s"` transformation object under the My Personal Objects/My Objects (MSTR User/My Objects) folder in the Strategy Tutorial project. The folder object ID is `9B25D45A4834A213A70C10B1703D4A77`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

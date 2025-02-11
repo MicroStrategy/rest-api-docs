@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to retrieve a metric's defini
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c9639bc3-853f-4746-94b6-528b5aed21a5?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -22,7 +22,7 @@ An authorization token allows the API layer to hide internal session-related imp
 
 :::
 
-Get the definition of the `“Cost Comparison”` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+Get the definition of the `“Cost Comparison”` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 For different formats of metric expressions, see [Retrieve a metric's definition](../manage-metric-objects/retrieve-a-metrics-definition.md).
 

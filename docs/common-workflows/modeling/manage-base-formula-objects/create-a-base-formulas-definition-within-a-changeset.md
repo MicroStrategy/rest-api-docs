@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to create an attribute object
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-bfe3c7f0-372a-44ef-a687-0f694deda59b?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -22,7 +22,7 @@ An authorization token allows the API layer to hide internal session-related imp
 
 :::
 
-You want to create a new base formula object, which is defined as `”Sum(Cost)”` and named as `“base_sum(Cost)“`. The destination folder ID is `31727EF14E35DAA437B716BA56466585`  in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to create a new base formula object, which is defined as `”Sum(Cost)”` and named as `“base_sum(Cost)“`. The destination folder ID is `31727EF14E35DAA437B716BA56466585`  in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

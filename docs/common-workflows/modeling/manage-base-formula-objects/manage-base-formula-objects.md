@@ -9,7 +9,7 @@ description: Base formulas are mathematical expressions created using existing f
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-cf953972-3d9d-4347-b253-5d89e40c088c?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -34,7 +34,7 @@ There are two important fields in the API response body defined for a base formu
 
   :information_source: **Info**
 
-  Tokens are a semi-structured representation of a MicroStrategy expression text that includes object references. When the base formula’s expression is represented as tokens, the text is broken down into pieces, or tokens, with information about what these pieces represent in the metadata.
+  Tokens are a semi-structured representation of a Strategy expression text that includes object references. When the base formula’s expression is represented as tokens, the text is broken down into pieces, or tokens, with information about what these pieces represent in the metadata.
 
   :::
 

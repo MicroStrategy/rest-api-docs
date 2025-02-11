@@ -14,7 +14,7 @@ This workflow sample demonstrates how to view an uploaded migration package usin
 1. [Get the package detailed definition](#get-the-package-detailed-definition)
 1. [Delete the package](#delete-the-package)
 
-You have a project package that contains a `Year` object, with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4`, and all its dependents in the MicroStrategy Tutorial project. You want to view the readable definitions of objects from this package for this project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. You are also using the `"Demo Project"`, which has a project ID of `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+You have a project package that contains a `Year` object, with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4`, and all its dependents in the Strategy Tutorial project. You want to view the readable definitions of objects from this package for this project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. You are also using the `"Demo Project"`, which has a project ID of `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 
@@ -148,7 +148,7 @@ Use [GET /api/packages/\{packageId}/objects](https://demo.microstrategy.com/Micr
 
 :::tip
 
-In MicroStrategy 2021 Update 3, only the following types of objects are supported in the project package: "Attribute(12)", "Fact(13)", "Hierarchy(14)", and "Table(15)". The configuration package is not currently supported.
+In Strategy 2021 Update 3, only the following types of objects are supported in the project package: "Attribute(12)", "Fact(13)", "Hierarchy(14)", and "Table(15)". The configuration package is not currently supported.
 
 :::
 

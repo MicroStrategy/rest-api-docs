@@ -1,9 +1,9 @@
 ---
 title: Handle REST API errors
-description: This page provides a guidance on designing exception workflows when using MicroStrategy REST API.
+description: This page provides a guidance on designing exception workflows when using Strategy REST API.
 ---
 
-When developers use MicroStrategy REST APIs to build dynamic applications, they need to add code to handle error conditions. The instructions below are designed to provide a guidance on designing exception workflows when using MicroStrategy REST API.
+When developers use Strategy REST APIs to build dynamic applications, they need to add code to handle error conditions. The instructions below are designed to provide a guidance on designing exception workflows when using Strategy REST API.
 
 ## 1. Understand the status code
 
@@ -33,12 +33,12 @@ When you encounter REST API error, you may receive an error message that looks l
 ```json
 {
   "code": "ERR001",
-  "message": "MicroStrategy Intelligence Server is not configured to support LDAP authentication.",
+  "message": "Strategy Intelligence Server is not configured to support LDAP authentication.",
   "iServerCode": -214720549
 }
 ```
 
-The value of `code` is a MicroStrategy REST API Server code. The table below provides a general description of each error code. Use the error code to create meaningful text for the error message that will help users when they encounter errors.
+The value of `code` is a Strategy REST API Server code. The table below provides a general description of each error code. Use the error code to create meaningful text for the error message that will help users when they encounter errors.
 
 | Error code | Description                     |
 | :--------- | :------------------------------ |
@@ -65,7 +65,7 @@ The value of `code` is a MicroStrategy REST API Server code. The table below pro
 
 ## 4. IServer error code
 
-The MicroStrategy error message may also contain an integer value for `iServerCode`. This integer value maps to a constant value in the [WebAPIErrorCodes](https://www2.microstrategy.com/producthelp/Current/ReferenceFiles/reference/com/microstrategy/utils/localization/WebAPIErrorCodes.html) class. There are many error codes in this class. You should look at the `iServerCode` error and decide if you think it provides meaningful context. If so, you may want to handle it in your code.
+The Strategy error message may also contain an integer value for `iServerCode`. This integer value maps to a constant value in the [WebAPIErrorCodes](https://www2.microstrategy.com/producthelp/Current/ReferenceFiles/reference/com/microstrategy/utils/localization/WebAPIErrorCodes.html) class. There are many error codes in this class. You should look at the `iServerCode` error and decide if you think it provides meaningful context. If so, you may want to handle it in your code.
 
 If needed, you can also find more information in the Library Sever's error log, such as stack traces.
 
@@ -140,7 +140,7 @@ Example:
 
 #### 404 Not Found
 
-A 404 error means the requested endpoint doesn't exist, or the endpoint is valid but the resource does not exist. You might not always get a response JSON for this status code depending on your URL. MicroStrategy REST API also uses this status code for not supported HTTP methods.
+A 404 error means the requested endpoint doesn't exist, or the endpoint is valid but the resource does not exist. You might not always get a response JSON for this status code depending on your URL. Strategy REST API also uses this status code for not supported HTTP methods.
 
 Example:
 

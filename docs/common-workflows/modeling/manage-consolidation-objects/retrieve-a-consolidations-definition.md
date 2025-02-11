@@ -10,7 +10,7 @@ description: You can use REST APIs to retrieve the definition for a consolidatio
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d0ad5e63-76a5-47c8-b185-1f5781a443f6?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -21,7 +21,7 @@ You can use REST APIs to retrieve the definition for a consolidation through the
 
 ## Retrieve a consolidation's definition
 
-You want to get the definition of a consolidation object. The object ID of the consolidation is B9E7FD5911D3E936C000B3B2D86C964F in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of a consolidation object. The object ID of the consolidation is B9E7FD5911D3E936C000B3B2D86C964F in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -461,7 +461,7 @@ Response Code: 200 (The consolidation's definition is returned successfully.)
 
 ## Retrieve a consolidation's definition within a changeset
 
-You want the definition of the consolidation object "Customer Geography". The object ID of the consolidation is B9E7FD5911D3E936C000B3B2D86C964F in the MicroStrategy Tutorial project. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.
+You want the definition of the consolidation object "Customer Geography". The object ID of the consolidation is B9E7FD5911D3E936C000B3B2D86C964F in the Strategy Tutorial project. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.
 
 :::info
 

@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to create a migration package
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c4f8860a-cb20-4e14-a7c8-16d450c167c5?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -24,7 +24,7 @@ This workflow sample demonstrates how to create a migration package using REST A
 
 ## Creating a project package
 
-In this workflow sample, you want to create a project package that contains a `"Year"` object with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4` and all its dependents in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. Use `"replace"` as a conflict rule for all these objects.
+In this workflow sample, you want to create a project package that contains a `"Year"` object with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4` and all its dependents in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. Use `"replace"` as a conflict rule for all these objects.
 
 :::info
 

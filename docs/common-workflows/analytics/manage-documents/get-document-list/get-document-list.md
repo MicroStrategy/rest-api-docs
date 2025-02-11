@@ -1,11 +1,11 @@
 ---
 title: Retrieve documents
-Description: Retrieve a list of documents using the MicroStrategy REST API.
+Description: Retrieve a list of documents using the Strategy REST API.
 ---
 
 <Available since="2021 Update 10" />
 
-This workflow sample demonstrates how to retrieve a list of documents using the MicroStrategy REST API.
+This workflow sample demonstrates how to retrieve a list of documents using the Strategy REST API.
 
 :::info
 

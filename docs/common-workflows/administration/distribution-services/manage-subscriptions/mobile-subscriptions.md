@@ -14,7 +14,7 @@ This workflow sample demonstrates how to create and update a mobile subscription
 
 This workflow follows the general steps described in [Create and get a subscription](create-and-get-a-subscription.md). You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-da43d1b1-a332-4452-829f-e07a041abc8f?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

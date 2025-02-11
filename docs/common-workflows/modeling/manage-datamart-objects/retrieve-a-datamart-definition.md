@@ -12,7 +12,7 @@ This topic covers several workflows to retrieve a datamart definition:
 - [Retrieve a datamart definition with a filter custom expression in tree and tokens formats](#retrieve-a-datamart-definition-with-a-filter-custom-expression-in-tree-and-tokens-formats)
 - [Retrieve a datamart definition with advanced properties](#retrieve-a-datamart-definition-with-advanced-properties)
 
-You want to get the definition of the “Customer" datamart object as below screenshot with datamart options. The object ID of the datamart is  CEA3C6FC4E6749C8F8B19580D16D2443 in the "MicroStrategy Tutorial" project. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.
+You want to get the definition of the “Customer" datamart object as below screenshot with datamart options. The object ID of the datamart is  CEA3C6FC4E6749C8F8B19580D16D2443 in the "Strategy Tutorial" project. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.
 
 :::info
 

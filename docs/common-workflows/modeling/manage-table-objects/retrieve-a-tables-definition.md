@@ -10,7 +10,7 @@ description: You can use REST APIs to retrieve the definition for a table throug
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-95d4124f-c4e5-48ce-986e-a05c6d47069f?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -18,7 +18,7 @@ You can use REST APIs to retrieve the definition for a table through the Modelin
 
 ## Retrieve a table's definition
 
-In this workflow sample, you want to get the definition of a table that is defined by a normal warehouse table. The object ID of the table is `862780DC499A14D74FEC7EB2EF317DA2`. The table is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you want to get the definition of a table that is defined by a normal warehouse table. The object ID of the table is `862780DC499A14D74FEC7EB2EF317DA2`. The table is in the Strategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 
@@ -323,7 +323,7 @@ Response Code: 200 (The table's definition is returned successfully.)
 
 ## Retrieve a table's definition within a changeset
 
-In this workflow sample, you want to get the definition of the same table object mentioned in [Retrieve a table's definition](#retrieve-a-tables-definition), while within a changeset. The object ID of the table is `862780DC499A14D74FEC7EB2EF317DA2`. The table is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you want to get the definition of the same table object mentioned in [Retrieve a table's definition](#retrieve-a-tables-definition), while within a changeset. The object ID of the table is `862780DC499A14D74FEC7EB2EF317DA2`. The table is in the Strategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::tip
 

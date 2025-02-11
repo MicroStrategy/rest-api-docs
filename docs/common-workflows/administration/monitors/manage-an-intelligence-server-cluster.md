@@ -7,11 +7,11 @@ description: Intelligence Server provides you the functionality to cluster a gro
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7f67e2a1-9eb5-45b1-8e4c-4fcec18a998a?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-Intelligence Server provides you the functionality to cluster a group of Intelligence Server machines to take advantage of the many benefits available in a clustered environment. MicroStrategy REST exposes a set of APIs for viewing and editing members of connected Intelligence Server cluster:
+Intelligence Server provides you the functionality to cluster a group of Intelligence Server machines to take advantage of the many benefits available in a clustered environment. Strategy REST exposes a set of APIs for viewing and editing members of connected Intelligence Server cluster:
 
 - View member nodes and projects of the connected cluster
 - Adding a node to the connected cluster
@@ -69,7 +69,7 @@ This operation requires the "Monitor cluster" privilege.
       "projects": [
         {
           "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-          "name": "MicroStrategy Tutorial",
+          "name": "Strategy Tutorial",
           "status": "loaded"
         }
       ],

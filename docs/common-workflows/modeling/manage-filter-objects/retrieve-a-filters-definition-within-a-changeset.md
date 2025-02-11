@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to retrieve a filter's defini
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-67e58dfc-a902-47a6-9166-a26e308ef644?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -22,7 +22,7 @@ Changesets are used in this workflow. For information on how to create and use c
 1. [Get the filter's definition within a changeset.](#get-a-filter-definition-within-a-changeset)
 1. Delete the changeset.
 
-You want to get the definition of the "Year > 2015" filter object. The object ID of the filter is `8018C24FEBC4406CB9E36838C01C82D1` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the "Year > 2015" filter object. The object ID of the filter is `8018C24FEBC4406CB9E36838C01C82D1` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

@@ -1,9 +1,9 @@
 ---
 title: REST API architecture
-description: The MicroStrategy REST framework follows REST conventions to provide a simplified interface for utilizing platform capabilities through JSON data via HTTP(s) protocol.
+description: The Strategy REST framework follows REST conventions to provide a simplified interface for utilizing platform capabilities through JSON data via HTTP(s) protocol.
 ---
 
-The MicroStrategy REST framework follows REST conventions to provide a simplified interface for utilizing platform capabilities through JSON data via HTTP(s) protocol. You can use the REST framework to perform actions such as:
+The Strategy REST framework follows REST conventions to provide a simplified interface for utilizing platform capabilities through JSON data via HTTP(s) protocol. You can use the REST framework to perform actions such as:
 
 - [Authentication](authentication.md)
 - [Retrieve data](../common-workflows/analytics/retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server.md)
@@ -12,7 +12,7 @@ The MicroStrategy REST framework follows REST conventions to provide a simplifie
 
 The REST framework is scalable, allowing you to configure a clustered environment that supports multiple instances of REST servers communicating with an Intelligence Server cluster.
 
-The REST Framework layer is built on top of the existing WebObjects and XML API layers. It provides a comprehensive set of APIs that allow developers to quickly and easily customize MicroStrategy BI functionality.
+The REST Framework layer is built on top of the existing WebObjects and XML API layers. It provides a comprehensive set of APIs that allow developers to quickly and easily customize Strategy BI functionality.
 
 ![REST Architecture](../images/REST_architecture.png)
 

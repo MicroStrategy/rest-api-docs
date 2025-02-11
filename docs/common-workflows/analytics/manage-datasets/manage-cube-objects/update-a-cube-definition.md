@@ -10,13 +10,13 @@ description: This workflow sample demonstrates how to update a cube’s definiti
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ef6003b3-abe9-40ee-abf7-ff72de088f22?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This workflow sample demonstrates how to update a cube’s definition through the Modeling service and Publish it through Library Server.
 
-You want to update the `Year, Category Analysis` cube object definition in the MicroStrategy Tutorial project. The cube ID is `2F15C95D934175CBC9B915915D485B0E`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to update the `Year, Category Analysis` cube object definition in the Strategy Tutorial project. The cube ID is `2F15C95D934175CBC9B915915D485B0E`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -302,7 +302,7 @@ Sample Response Code: 200 (The cube's definition is updated successfully.)
 
 <Available since="2021 Update 6" />
 
-You want to update the value of advanced properties of the `Actual vs Forecast Performance Cube` cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the `MicroStrategy Tutorial` project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to update the value of advanced properties of the `Actual vs Forecast Performance Cube` cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the `Strategy Tutorial` project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 Sample Curl:
 

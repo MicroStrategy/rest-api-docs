@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to create a new Incremental R
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-54f5b582-05ac-4f2d-88f9-98f36dd8373c?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -598,7 +598,7 @@ The model for the definition of the Incremental Refresh Report can be represente
 
 :::info
 
-`objectID`, `dateCreated`, `dateModified`, and `versionId` are generated automatically. As of MicroStrategy 2021 Update 6, only `en-US` is available for `primaryLocale`.
+`objectID`, `dateCreated`, `dateModified`, and `versionId` are generated automatically. As of Strategy 2021 Update 6, only `en-US` is available for `primaryLocale`.
 
 :::
 

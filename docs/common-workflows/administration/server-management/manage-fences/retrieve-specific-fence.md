@@ -70,7 +70,7 @@ You can view the detailed information of `administrator_user_fence` user fence i
   "projects": [
     {
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     }
   ],
   "id": "YWRtaW5pc3RyYXRvcl91c2VyX2ZlbmNl"

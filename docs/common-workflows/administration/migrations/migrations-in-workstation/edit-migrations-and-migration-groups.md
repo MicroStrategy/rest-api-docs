@@ -5,7 +5,7 @@ description: You can edit migration and migration group before importing.
 
 <Available since="2021 Update 9" />
 
-Starting in MicroStrategy 2021 Update 9, you can edit migrations and migration groups before importing. You can edit the names of migrations or migration groups and the objects within them, but not their type or purpose. You can edit migrations and migration groups for all types and purposes, except for uploaded migrations. However, you must pay attention to a migration's package and import statuses. You cannot edit migrations with a package status of 'creating' or 'locked'. You also cannot edit migrations with an import status of 'approved' or 'requested'. As expected, a migration group containing such a migration also cannot be edited.
+Starting in Strategy 2021 Update 9, you can edit migrations and migration groups before importing. You can edit the names of migrations or migration groups and the objects within them, but not their type or purpose. You can edit migrations and migration groups for all types and purposes, except for uploaded migrations. However, you must pay attention to a migration's package and import statuses. You cannot edit migrations with a package status of 'creating' or 'locked'. You also cannot edit migrations with an import status of 'approved' or 'requested'. As expected, a migration group containing such a migration also cannot be edited.
 
 ## APIs
 
@@ -67,7 +67,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "created",
     "message": "",
@@ -380,7 +380,7 @@ Sample Response Body:
     "storage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "creating",
     "message": "",
@@ -748,7 +748,7 @@ Use the response body you saved in step 1 and change `name`, `treeView`, and `mi
         "purpose": "migration_group",
         "project": {
           "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-          "name": "MicroStrategy Tutorial"
+          "name": "Strategy Tutorial"
         },
         "tocView": {
           "settings": {
@@ -770,7 +770,7 @@ Use the response body you saved in step 1 and change `name`, `treeView`, and `mi
       "importInfo": {
         "project": {
           "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-          "name": "MicroStrategy Tutorial"
+          "name": "Strategy Tutorial"
         }
       }
     },
@@ -780,7 +780,7 @@ Use the response body you saved in step 1 and change `name`, `treeView`, and `mi
         "purpose": "migration_group",
         "project": {
           "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-          "name": "MicroStrategy Tutorial"
+          "name": "Strategy Tutorial"
         },
         "tocView": {
           "settings": {
@@ -802,7 +802,7 @@ Use the response body you saved in step 1 and change `name`, `treeView`, and `mi
       "importInfo": {
         "project": {
           "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-          "name": "MicroStrategy Tutorial"
+          "name": "Strategy Tutorial"
         }
       }
     },
@@ -1134,7 +1134,7 @@ When the API call is successful, it returns response code `204` with no response
 
 ## Performance
 
-To improve performance, MicroStrategy suggests you edit one migration or migration group per session and time.
+To improve performance, Strategy suggests you edit one migration or migration group per session and time.
 
 ## Compatibility
 
@@ -1150,7 +1150,7 @@ A migration or migration group created in an earlier platform version can be edi
 ## Troubleshooting
 
 - If the Library server cannot connect to the database, you may receive the following error:
-  - The API requires MicroStrategy Storage Service. Please contact your administrator.
+  - The API requires Strategy Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
     - Database is not running
     - Database version is lower than required

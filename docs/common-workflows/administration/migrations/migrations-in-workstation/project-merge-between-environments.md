@@ -5,7 +5,7 @@ description: You can create migrations to merge all objects in a source project 
 
 <Available since="2021 Update 6" />
 
-Starting in MicroStrategy 2021 Update 6, you can create migrations to merge all objects in a source project into another target project.
+Starting in Strategy 2021 Update 6, you can create migrations to merge all objects in a source project into another target project.
 
 You must [configure the package storage location in Workstation](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service_config_workstation.htm) to use this feature.
 
@@ -108,7 +108,7 @@ Provide the correct `environment` and `project` in `packageInfo` of the request 
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     }
   }
 }
@@ -182,7 +182,7 @@ The value of `packageInfo.status` could be `creating`, and you should keep pulli
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "created",
     "message": "",
@@ -207,7 +207,7 @@ The value of `packageInfo.status` could be `creating`, and you should keep pulli
     "undoStorage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "deleted": false
   },
@@ -323,7 +323,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "locked",
     "message": "",
@@ -382,7 +382,7 @@ Sample Response Body:
     "undoStorage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "deleted": false
   },
@@ -431,7 +431,7 @@ Copy the response body from step 4 and change `"replicated": false"`, to `true`.
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "locked",
     "message": "",
@@ -490,7 +490,7 @@ Copy the response body from step 4 and change `"replicated": false"`, to `true`.
     "undoStorage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "deleted": false
   },
@@ -553,7 +553,7 @@ The value of `packageInfo.status` could be `creating`, and you should keep pulli
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "created",
     "message": "",
@@ -618,7 +618,7 @@ The value of `packageInfo.status` could be `creating`, and you should keep pulli
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "deleted": false
   },
@@ -749,7 +749,7 @@ Sample Request Header:
 
 ## Performance
 
-For performance concerns, MicroStrategy suggests you create or import one package per session and time.
+For performance concerns, Strategy suggests you create or import one package per session and time.
 
 ## Compatibility
 
@@ -776,7 +776,7 @@ A package created in an earlier platform version can be imported to a newer plat
 ## Troubleshooting
 
 - If the Library Server cannot connect to the database, you may receive the following error response:
-  - The API requires MicroStrategy Storage Service. Please contact your administrator.
+  - The API requires Strategy Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
     - Database not running
     - Database version is lower than required

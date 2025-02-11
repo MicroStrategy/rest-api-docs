@@ -10,11 +10,11 @@ description: You can use REST APIs to update a prompt of a table through the Mod
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-e3e4974a-dc93-4f79-9ea6-259a1693dc0d?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-Starting in MicroStrategy 2021 Update 6, you can use REST APIs to update a prompt of a table through the Modeling service.
+Starting in Strategy 2021 Update 6, you can use REST APIs to update a prompt of a table through the Modeling service.
 
 :::info
 
@@ -24,11 +24,11 @@ This workflow applies only to SAP HANA tables with input parameters because only
 
 :::tip
 
-You should at least have **read access** to the table to successfully complete this workflow. If the prompt you want to update is a managed object, **write access** to the table is also required. The managed prompts of an SAP HANA table with input parameters are automatically created by MicroStrategy by default. However, you can choose to replace these managed prompts with standalone ones by following the steps in [Update SAP HANA parameters for an SAP HANA table with input parameters](update-sap-hana-parameters.md). For more information on managed objects, see [About Managed Objects](https://www2.microstrategy.com/producthelp/2021/MDXCubeReporting/WebHelp/Lang_1033/Content/About_managed_objects.htm).
+You should at least have **read access** to the table to successfully complete this workflow. If the prompt you want to update is a managed object, **write access** to the table is also required. The managed prompts of an SAP HANA table with input parameters are automatically created by Strategy by default. However, you can choose to replace these managed prompts with standalone ones by following the steps in [Update SAP HANA parameters for an SAP HANA table with input parameters](update-sap-hana-parameters.md). For more information on managed objects, see [About Managed Objects](https://www2.microstrategy.com/producthelp/2021/MDXCubeReporting/WebHelp/Lang_1033/Content/About_managed_objects.htm).
 
 :::
 
-You want to update the prompt of a table. The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the MicroStrategy Tutorial Advanced project and its ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`. The object ID of the current prompt is `339585B03F354D11AE8760C4489160F1` and you want to update fields of the prompt, for example, the name and default answers.
+You want to update the prompt of a table. The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the Strategy Tutorial Advanced project and its ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`. The object ID of the current prompt is `339585B03F354D11AE8760C4489160F1` and you want to update fields of the prompt, for example, the name and default answers.
 
 :::info
 

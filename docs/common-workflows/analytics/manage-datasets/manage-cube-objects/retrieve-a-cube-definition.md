@@ -10,7 +10,7 @@ description: This topic cover several workflows for retrieving a cube's definiti
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-585d42d1-fbdc-4d1d-afbb-c4e872753709?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -22,7 +22,7 @@ This topic cover several workflows for retrieving a cube's definition.
 
 This workflow sample demonstrates how to retrieve the definition of a cube through the Modeling service.
 
-You want to get the definition of the `Year, Category Analysis` cube object. The object ID of the cube is `A7D792D54B58C6CB68F192A4A73E317F` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `Year, Category Analysis` cube object. The object ID of the cube is `A7D792D54B58C6CB68F192A4A73E317F` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -186,7 +186,7 @@ Response Code: 200 (The cube’s definition was returned successfully.)
 
 This workflow sample demonstrates how to retrieve the definition of a FFSQL cube through the Modeling service.
 
-You want to get the definition of the `Year, Category Analysis` cube object. The object ID of the cube is `A7D792D54B58C6CB68F192A4A73E317F` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `Year, Category Analysis` cube object. The object ID of the cube is `A7D792D54B58C6CB68F192A4A73E317F` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -439,7 +439,7 @@ Response Code: 200 (The cube’s definition was returned successfully.)
 
 This workflow sample demonstrates how to retrieve the definition of a cube with its filter in tokens format through the Modeling service. Unlike the first workflow, you want to enable the `showFilterTokens` parameter to retrieve the filter's definition in tokens format as well.
 
-Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a filter expression is `Revenue > Cost`. When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: `("Revenue", Revenue_ID)`, `(">", GreaterThan_ID)`, `("Cost", Cost_ID)`.
+Tokens are a semi-structured representation of Strategy expression text that includes object references. For example, let’s say a filter expression is `Revenue > Cost`. When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: `("Revenue", Revenue_ID)`, `(">", GreaterThan_ID)`, `("Cost", Cost_ID)`.
 
 A filter's "qualification" is presented in the following formats:
 
@@ -631,7 +631,7 @@ In this workflow sample, you want to get the definition cube when its filter con
 
 If custom expressions are used in a filter, this parameter specifies the format in the which they are returned in the response.
 
-Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a filter expression is `Revenue > Cost`. When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: `("Revenue", Revenue_ID)`, `(">", GreaterThan_ID)`, `("Cost", Cost_ID)`.
+Tokens are a semi-structured representation of Strategy expression text that includes object references. For example, let’s say a filter expression is `Revenue > Cost`. When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: `("Revenue", Revenue_ID)`, `(">", GreaterThan_ID)`, `("Cost", Cost_ID)`.
 
 A filter's "qualification" is presented in the following formats:
 
@@ -1001,7 +1001,7 @@ Sample Response Code: 200 (Cube’s definition is returned successfully.)
 
 This workflow sample demonstrates how to retrieve the definition of a cube with advanced properties through the Modeling service.
 
-You want to get the definition of the Actual vs Forecast Performance Cube cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the Actual vs Forecast Performance Cube cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 This workflow is similar to [Retrieve a cube definition](#retrieve-a-cubes-definition), except with `showAdvancedProperties=true`.
 
@@ -1142,7 +1142,7 @@ Response Code: 200 (The cube definition is returned successfully.)
 
 This workflow sample demonstrates how to retrieve all the applicable properties of a cube through the Modeling service.
 
-You want to get the applicable properties of the Actual vs Forecast Performance Cube cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD75`4.
+You want to get the applicable properties of the Actual vs Forecast Performance Cube cube object. The object ID of the cube is `CC02C5C24AE2803ABF14EDA5038159D4` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD75`4.
 
 Retrieve the applicable properties of a cube using [GET /api/model/cubes/\{cubeId}/applicableVldbProperties](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/ms-getCubeApplicableVldbProperties).
 
@@ -1173,8 +1173,8 @@ You can view the cube definition in the body of the response. The example below 
       "showSqlPreview": true,
       "options": [
         {
-          "value": "Choosing this option keeps the backward compatibility with MicroStrategy 2019 where SQL queries are governed by \"Cartesian Join Warning\" VLDB setting.",
-          "sqlPreview": "OBSOLETE - Keep backward compatibility with MicroStrategy 2019."
+          "value": "Choosing this option keeps the backward compatibility with Strategy 2019 where SQL queries are governed by \"Cartesian Join Warning\" VLDB setting.",
+          "sqlPreview": "OBSOLETE - Keep backward compatibility with Strategy 2019."
         },
         {
           "value": "Cancel execution of cartesian join for SQL, MDX, In-Memory queries.",

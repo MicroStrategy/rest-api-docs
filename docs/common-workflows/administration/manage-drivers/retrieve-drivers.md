@@ -57,7 +57,7 @@ You can get all the driver objects in the body of the response.
       "enabled": true,
       "id": "43A6758EF9CE9BBB12AD13C2636B162D",
       "isODBC": true,
-      "name": "MicroStrategy ODBC Driver for SQL Server Wire Protocol"
+      "name": "Strategy ODBC Driver for SQL Server Wire Protocol"
     }
   }
 }

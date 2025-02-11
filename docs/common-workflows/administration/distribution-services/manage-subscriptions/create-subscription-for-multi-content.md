@@ -7,7 +7,7 @@ description: This workflow sample demonstrates how to create email subscriptions
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-b83f6f30-6232-4e88-9d90-aee4837da5e7?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -18,7 +18,7 @@ This workflow sample demonstrates how to create email subscriptions with multipl
 1. [Create multi-content subscription.](#create-a-multi-content-subscription)
 1. [Delete subscription.](#delete-the-subscription)
 
-A detailed description of the critical steps in this workflow are listed down below. For a full list of API calls in the workflow, you can look at the workflow in the MicroStrategy POSTMAN collection.
+A detailed description of the critical steps in this workflow are listed down below. For a full list of API calls in the workflow, you can look at the workflow in the Strategy POSTMAN collection.
 
 ## Get a list of available schedules
 
@@ -147,7 +147,7 @@ Sample Response
         "name": "Shared Drive",
         "deliveryMode": "EMAIL",
         "deviceId": "18F9613B681E4E4FA671D1AED6B7B375",
-        "value": "C:\\Program Files\\MicroStrategy\\Analytics Modules",
+        "value": "C:\\Program Files\\Strategy\\Analytics Modules",
         "isDefault": true
       }
     ]
@@ -358,7 +358,7 @@ Sample Response
     "recipients": [
       {
         "id": "C1E141E611D603A2100086B3A5E8F8A4",
-        "name": "MicroStrategy Web User",
+        "name": "Strategy Web User",
         "isGroup": false,
         "type": "user",
         "includeType": "TO",

@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to retrieve an attribute's de
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5038d0d2-f112-47fc-b602-e01c58fd8aec?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -22,7 +22,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-You want to get the definition of the "Subcategory" attribute object. The object ID of the attribute is `E8C034036E4EE6404513A6B12FAE9481` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the "Subcategory" attribute object. The object ID of the attribute is `E8C034036E4EE6404513A6B12FAE9481` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

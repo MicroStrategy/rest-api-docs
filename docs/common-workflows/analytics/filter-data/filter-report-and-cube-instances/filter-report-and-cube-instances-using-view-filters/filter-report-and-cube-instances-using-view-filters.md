@@ -7,11 +7,11 @@ description: How to filter report and cube instances using view filters.
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-eb1fcb00-e3b5-4a0c-bef9-4639e04c675c?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-When you create a MicroStrategy report or cube instance using the following REST API endpoints, you can use a parameter called viewFilter in the body parameter of the request to filter the data that is returned:
+When you create a Strategy report or cube instance using the following REST API endpoints, you can use a parameter called viewFilter in the body parameter of the request to filter the data that is returned:
 
 - `POST /api/cubes/{cubeId}/instances`
 - `POST /api/reports/{reportId}/instances`

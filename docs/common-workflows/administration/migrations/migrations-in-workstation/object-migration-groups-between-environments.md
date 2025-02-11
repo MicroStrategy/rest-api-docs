@@ -5,7 +5,7 @@ description: You can move a group of object packages between environments within
 
 <Available since="2021 Update 7" />
 
-Starting in MicroStrategy 2021 Update 7, you can move a group of object packages between environments within Workstation. These groups of packages are all maintained by the [MicroStrategy Storage Service](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service.htm), instead of you having to manage the packages yourself.
+Starting in Strategy 2021 Update 7, you can move a group of object packages between environments within Workstation. These groups of packages are all maintained by the [Strategy Storage Service](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service.htm), instead of you having to manage the packages yourself.
 
 You must [configure the package storage location in Workstation](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service_config_workstation.htm) to use this feature.
 
@@ -1267,7 +1267,7 @@ Sample Request Header
 
 ## Performance
 
-For performance concerns, MicroStrategy suggests you create or import one package group per session and time.
+For performance concerns, Strategy suggests you create or import one package group per session and time.
 
 ## Compatibility
 
@@ -1312,7 +1312,7 @@ A package group created in an earlier platform version can be imported to a newe
 ## Troubleshooting
 
 - If the Library Server cannot connect to the database, you may receive the following error response:
-  - The API requires MicroStrategy Storage Service. Please contact your administrator.
+  - The API requires Strategy Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
   - Database not running
   - Database version is lower than required

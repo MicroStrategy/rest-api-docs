@@ -7,11 +7,11 @@ description: How to filter report and cube instances using requestedObjects.
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2650c93b-4797-4fa7-86cc-f38d0c43971e?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-When you create a MicroStrategy report or cube instance using the following REST API endpoints, you can use a parameter called `requestedObjects` in the body parameter of the request to specify the data that should be returned:
+When you create a Strategy report or cube instance using the following REST API endpoints, you can use a parameter called `requestedObjects` in the body parameter of the request to specify the data that should be returned:
 
 - `POST /api/cubes/{cubeId}/instances`
 - `POST /api/reports/{reportId}/instances`

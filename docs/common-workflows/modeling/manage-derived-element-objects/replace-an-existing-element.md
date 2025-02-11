@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to replace an existing derive
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d4a5b7c7-3dba-46fc-acce-0683a23bb1fe?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -21,7 +21,7 @@ This workflow sample demonstrates how to replace an existing derived element obj
 1. Commit the changeset.
 1. Delete the changeset.
 
-You want to replace the existing `"Region DE"` derived element object in the MicroStrategy Tutorial project. The derived element object ID is `610B9CC14AD9DCB69F094C89D3B5480B`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+You want to replace the existing `"Region DE"` derived element object in the Strategy Tutorial project. The derived element object ID is `610B9CC14AD9DCB69F094C89D3B5480B`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

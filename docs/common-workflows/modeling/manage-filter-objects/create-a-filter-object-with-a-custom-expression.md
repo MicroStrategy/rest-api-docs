@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to create a new filter object
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-b6421792-16ec-4d68-9af9-8fc38eb35b7e?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -29,7 +29,7 @@ This workflow sample demonstrates how to create a new filter object using a cust
 
 Additional samples are provided in [More samples](#more-samples).
 
-You want to create a new "(Year(CurrentDate()) - 5)< Year@ID" filter object under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to create a new "(Year(CurrentDate()) - 5)< Year@ID" filter object under the Public Objects folder in the Strategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

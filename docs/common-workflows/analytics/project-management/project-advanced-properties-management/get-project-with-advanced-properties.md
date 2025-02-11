@@ -9,13 +9,13 @@ description: The workflow involves getting project definition along with its adv
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c3c3e563-696d-45b8-8f65-b02cb1cb394e?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This workflow sample demonstrates how to retrieve project's definition and its advanced properties.
 
-You want to get the advanced properties of the `MicroStrategy Tutorial` Project object. The object ID is `6851110C470AF40EB46B559D5098F309`.
+You want to get the advanced properties of the `Strategy Tutorial` Project object. The object ID is `6851110C470AF40EB46B559D5098F309`.
 
 :::info
 
@@ -60,8 +60,8 @@ You can view project's definition and its advanced properties in the response.
     "primaryLocale": "en-US",
     "objectId": "6851110C470AF40EB46B559D5098F309",
     "subType": "project",
-    "name": "MicroStrategy Tutorial",
-    "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed."
+    "name": "Strategy Tutorial",
+    "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed."
   },
   "advancedProperties": {
     "vldbProperties": {

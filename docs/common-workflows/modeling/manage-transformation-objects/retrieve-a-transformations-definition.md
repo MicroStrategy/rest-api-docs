@@ -10,7 +10,7 @@ description: This topic covers the following workflows for retrieving an transfo
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-3fa0dd24-d717-46ba-831c-29cbfe75c3ba?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -18,7 +18,7 @@ This topic covers the following workflows for retrieving an transformation’s d
 
 ## Retrieve a transformation's definition
 
-In this workflow sample, you want to get the definition of the `"2 Weeks Ago"` transformation object. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you want to get the definition of the `"2 Weeks Ago"` transformation object. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the Strategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 
@@ -92,7 +92,7 @@ Response Code: 200 (The transformation's definition is returned successfully.)
 
 ## Retrieve a transformation's definition within a changeset
 
-In this workflow sample, you want to get the definition of the same transformation object mentioned in [Retrieve a transformation's definition](#retrieve-a-transformations-definition), while within a changeset. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this workflow sample, you want to get the definition of the same transformation object mentioned in [Retrieve a transformation's definition](#retrieve-a-transformations-definition), while within a changeset. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the Strategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of `GET /api/model/transformations/{transformationId}` to create a new table or update a specific table's definitions, you should associate all requests with one changeset.
 
@@ -168,13 +168,13 @@ Sample Response Code: 200 (The transformation's definition is returned successfu
 
 ## Retrieve a transformation's definition with transformation attribute form expressions in tree and tokens formats
 
-In this sample workflow, you want to get the definition of the `"2 Weeks Ago"` transformation object, with its transformation attribute form expressions returned in tree and tokens formats. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the MicroStrategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In this sample workflow, you want to get the definition of the `"2 Weeks Ago"` transformation object, with its transformation attribute form expressions returned in tree and tokens formats. The object ID of the transformation is `6CB9ABB711D3E4F11000E887EC6DE8A4`. The transformation is in the Strategy Tutorial project and its project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 Expressions are presented in the following formats:
 
 - "text": A human-readable, but non-parsable text, describing the expression. This is the default format that is always returned in the response.
 - "tree": A tree data structure fully defining the expression. This format can be used if you want to examine and modify the expression programmatically.
-- "tokens": A list of parsed tokens. This format can be used if you want to examine and modify the expression using the parser component. Be aware that generating tokens requires additional time. Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a filter expression is "Revenue > Cost". When the fact expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), ("-", `(">"`, `GreaterThan_ID`), (`"Cost"`, `Cost_ID`).
+- "tokens": A list of parsed tokens. This format can be used if you want to examine and modify the expression using the parser component. Be aware that generating tokens requires additional time. Tokens are a semi-structured representation of Strategy expression text that includes object references. For example, let’s say a filter expression is "Revenue > Cost". When the fact expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), ("-", `(">"`, `GreaterThan_ID`), (`"Cost"`, `Cost_ID`).
 
 If `showExpressionAs` is omitted, the expression is returned in "text" format.
 

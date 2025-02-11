@@ -10,13 +10,13 @@ description: This workflow sample demonstrates how to retrieve the relationships
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-063edda6-63ad-4938-ab4c-a4eb8f13d65e?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This workflow sample demonstrates how to retrieve the relationships related to an attribute through the Modeling service.
 
-You want to get the relationships of the "Month" attribute object. The object ID of the attribute is 8D679D4411D3E4981000E787EC6DE8A4 in the MicroStrategy Tutorial project. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.
+You want to get the relationships of the "Month" attribute object. The object ID of the attribute is 8D679D4411D3E4981000E787EC6DE8A4 in the Strategy Tutorial project. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754.
 
 :::info
 

@@ -7,7 +7,7 @@ description: This workflow sample demonstrates how to retrieve a subscription, a
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-da43d1b1-a332-4452-829f-e07a041abc8f?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -32,7 +32,7 @@ A detailed description of each step of this workflow is listed down below.
 
 Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
-This endpoint allows the caller to authenticate with the MicroStrategy REST Server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing `X-MSTR-AuthToken`, the authorization token that will be used in subsequent requests.
+This endpoint allows the caller to authenticate with the Strategy REST Server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing `X-MSTR-AuthToken`, the authorization token that will be used in subsequent requests.
 
 Sample Request
 
@@ -88,7 +88,7 @@ The authorization token "`x-mstr-authtoken`" is returned in the response header.
 
 Endpoint: [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1)
 
-This endpoint allows the caller to get the list of projects with the MicroStrategy REST Server. In this example, you get the list of projects in the MicroStrategy Tutorial metadata. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
+This endpoint allows the caller to get the list of projects with the Strategy REST Server. In this example, you get the list of projects in the Strategy Tutorial metadata. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a list of the active projects that the user session has access to.
 
 Sample Request
 
@@ -115,9 +115,9 @@ Sample Response
   [
     {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial",
+      "name": "Strategy Tutorial",
       "alias": "",
-      "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
+      "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
       "status": 0
     },
     {
@@ -321,7 +321,7 @@ Sample Request
 
   ```bash
   curl -X GET -b ~/cookie-jar.txt --header 'Accept: application/json'
-  --header 'X-MSTR-AuthToken: lb15fie86urdnsldk71a02gls2' https://demo.microstrategy.com/MicroStrategyLibrary/api/users?nameBegins=MicroStrategy Web User&fields=name,id
+  --header 'X-MSTR-AuthToken: lb15fie86urdnsldk71a02gls2' https://demo.microstrategy.com/MicroStrategyLibrary/api/users?nameBegins=Strategy Web User&fields=name,id
   ```
 
 Sample Response
@@ -332,7 +332,7 @@ Sample Response
   [
     {
       "id": "C1E141E611D603A2100086B3A5E8F8A4",
-      "name": "MicroStrategy Web User"
+      "name": "Strategy Web User"
     }
   ]
   ```

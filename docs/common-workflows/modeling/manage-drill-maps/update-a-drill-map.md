@@ -10,13 +10,13 @@ description: This workflow sample demonstrates how to update an existing drill m
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2b7a0f0c-2172-418a-93ec-e0f0a13fa741?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This workflow sample demonstrates how to update an existing drill map object through the Modeling service.
 
-You want to update the existing `Drill Map for Demo` drill map object in the MicroStrategy Tutorial project. The project ID is `091B51154B22036C53CFBB9958B2E8FC`). The drill map ID is `CC2E6AA3421EFF5C41C2D0939750BB24`.
+You want to update the existing `Drill Map for Demo` drill map object in the Strategy Tutorial project. The project ID is `091B51154B22036C53CFBB9958B2E8FC`). The drill map ID is `CC2E6AA3421EFF5C41C2D0939750BB24`.
 
 :::info
 

@@ -7,7 +7,7 @@ description: This workflow sample demonstrates how to retrieve applicable proper
 
 You can use REST APIs to retrieve all the applicable properties of a report through the Modeling service. The workflow includes the following REST APIs requests.
 
-The report object ID is `E472644E4239AD7EFDBD869600C93E4D`. The report is in the project "MicroStrategy Tutorial", and the project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+The report object ID is `E472644E4239AD7EFDBD869600C93E4D`. The report is in the project "Strategy Tutorial", and the project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 ## Retrieve applicable properties of a report directly
 
@@ -45,8 +45,8 @@ Sample Response Body:
       "showSqlPreview": true,
       "options": [
         {
-          "value": "Choosing this option keeps the backward compatibility with MicroStrategy 2019 where SQL queries are governed by \"Cartesian Join Warning\" VLDB setting.",
-          "sqlPreview": "OBSOLETE - Keep backward compatibility with MicroStrategy 2019."
+          "value": "Choosing this option keeps the backward compatibility with Strategy 2019 where SQL queries are governed by \"Cartesian Join Warning\" VLDB setting.",
+          "sqlPreview": "OBSOLETE - Keep backward compatibility with Strategy 2019."
         },
         {
           "value": "Cancel execution of cartesian join for SQL, MDX, In-Memory queries.",

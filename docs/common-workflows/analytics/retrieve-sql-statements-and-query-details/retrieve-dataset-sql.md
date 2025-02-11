@@ -10,13 +10,13 @@ description: You can retrieve the SQL statements of all datasets in a document o
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5d5e523d-6a02-45a1-9537-bc0d37f9c10c).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 You can retrieve the SQL statements of all datasets in a document or dashboard instance. In this workflow sample, a dashboard instance is used. However, the same workflow applies to a document instance.
 
-You want to view the SQL statement of every dataset in the Cost Analysis Dashboard in the MicroStrategy Tutorial project. The object ID of the dashboard is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to view the SQL statement of every dataset in the Cost Analysis Dashboard in the Strategy Tutorial project. The object ID of the dashboard is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

@@ -10,7 +10,7 @@
   - [Open a pull request](#open-a-pull-request)
   - [Submit your PR & get it reviewed](#submit-your-pr--get-it-reviewed)
   - [Your PR is merged](#your-pr-is-merged)
-  - [Keep contributing as you use MicroStrategy Docs](#keep-contributing-as-you-use-microstrategy-docs)
+  - [Keep contributing as you use Strategy Docs](#keep-contributing-as-you-use-strategy-docs)
 
 ## Getting started
 
@@ -44,7 +44,7 @@ Fork using GitHub Desktop:
 
 ### Make your update
 
-Make your changes to the file(s) you'd like to update. Here are some tips and tricks for [using the docs codebase](#working-in-the-microstrategyrest-api-docs-repository).
+Make your changes to the file(s) you'd like to update. Here are some tips and tricks for [using the docs codebase](#working-in-the-strategyrest-api-docs-repository).
 
 - Are you making changes to the application code? You'll need **Node.js v16** to run the site locally. See [contributing/development.md](contributing/development.md).
 - Are you contributing to markdown? We use [Markdown](https://www.markdownguide.org/basic-syntax/).
@@ -60,13 +60,13 @@ When you're done making changes and you'd like to propose them for review, use t
 
 ### Your PR is merged
 
-Congratulations! The whole MicroStrategy community thanks you. :sparkles:
+Congratulations! The whole Strategy community thanks you. :sparkles:
 
 Once your PR is merged, you will be proudly listed as a contributor in the [contributor chart](https://github.com/MicroStrategy/rest-api-docs/graphs/contributors) and at the bottom of the page you contributed to.
 
-### Keep contributing as you use MicroStrategy Docs
+### Keep contributing as you use Strategy Docs
 
-Now that you're a part of the MicroStrategy Docs community, you can keep participating in many ways.
+Now that you're a part of the Strategy Docs community, you can keep participating in many ways.
 
 **Learn more about contributing:**
 
@@ -77,7 +77,7 @@ Now that you're a part of the MicroStrategy Docs community, you can keep partici
   - [:earth_asia: Translations](#earth_asia-translations)
 - [Starting with an issue](#starting-with-an-issue)
 - [Opening a pull request](#opening-a-pull-request)
-- [Working in the MicroStrategy/rest-api-docs repository](#working-in-the-microstrategyrest-api-docs-repository)
+- [Working in the Strategy/rest-api-docs repository](#working-in-the-strategyrest-api-docs-repository)
 - [Reviewing](#reviewing)
   - [Self review](#self-review)
   - [Test it locally](#test-it-locally)
@@ -87,7 +87,7 @@ Now that you're a part of the MicroStrategy Docs community, you can keep partici
 
 ## :memo: Types of contributions
 
-You can contribute to the REST API Docs content and site in several ways. This repo is a place to discuss and collaborate on MicroStrategy REST API Docs! Our small, but mighty :muscle: docs team is maintaining this repo, to preserve our bandwidth, off topic conversations will be closed.
+You can contribute to the REST API Docs content and site in several ways. This repo is a place to discuss and collaborate on Strategy REST API Docs! Our small, but mighty :muscle: docs team is maintaining this repo, to preserve our bandwidth, off topic conversations will be closed.
 
 ### :beetle: Issues
 
@@ -101,7 +101,7 @@ When we merge those changes, they should be deployed to the live site within 24 
 
 ### :question: Support
 
-We are a small team working hard to keep up with the documentation demands of a continuously changing product. Unfortunately, we just can't help with support questions in this repository. If you are experiencing a problem with MicroStrategy, unrelated to our documentation, please [contact MicroStrategy Support directly](https://www.microstrategy.com/support). Any issues, or pull requests opened here requesting support will be given information about how to contact MicroStrategy Support, then closed and locked.
+We are a small team working hard to keep up with the documentation demands of a continuously changing product. Unfortunately, we just can't help with support questions in this repository. If you are experiencing a problem with Strategy, unrelated to our documentation, please [contact Strategy Support directly](https://www.microstrategy.com/support). Any issues, or pull requests opened here requesting support will be given information about how to contact Strategy Support, then closed and locked.
 
 ### :earth_asia: Translations
 
@@ -117,7 +117,7 @@ You can browse existing issues to find something that needs help!
 
 You can use the GitHub user interface :pencil2: for some small changes, like fixing a typo or updating a readme. You can also fork the repo and then clone it locally, to view changes and run your tests on your machine.
 
-## Working in the MicroStrategy/rest-api-docs repository
+## Working in the Strategy/rest-api-docs repository
 
 Here's some information that might be helpful while working on a Docs PR:
 
@@ -126,7 +126,7 @@ Here's some information that might be helpful while working on a Docs PR:
 
 ## Reviewing
 
-We (usually the docs team, but sometimes MicroStrategy product managers, engineers, or supportocats too!) review every single PR. The purpose of reviews is to create the best content we can for people who use MicroStrategy.
+We (usually the docs team, but sometimes Strategy product managers, engineers, or supportocats too!) review every single PR. The purpose of reviews is to create the best content we can for people who use Strategy.
 
 :yellow_heart: Reviews are always respectful, acknowledging that everyone did the best possible job with the knowledge they had at the time.
 

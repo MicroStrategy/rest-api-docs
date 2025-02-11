@@ -10,7 +10,7 @@ description: Change the owner of an object.
 
 You can try this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-dc9e5266-db8c-4842-9c44-16b5dd614f47).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -233,7 +233,7 @@ You can view the updated owner and access rights information in the body of the 
   "viewMedia": 1879072805,
   "ancestors": [
     {
-      "name": "MicroStrategy Tutorial",
+      "name": "Strategy Tutorial",
       "id": "D43364C684E34A5F9B2F9AD7108F7828",
       "level": 3
     },

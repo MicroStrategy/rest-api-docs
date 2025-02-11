@@ -9,11 +9,11 @@ description: You can use REST API requests retrieve, create, and update the In
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-bc4cbadd-29e6-4426-85ff-30bcc0f20d60?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-Starting in MicroStrategy 2021 Update 6, you can use REST API requests retrieve, create, and update the Incremental Refresh Report (IRR) objects through the Modeling service.
+Starting in Strategy 2021 Update 6, you can use REST API requests retrieve, create, and update the Incremental Refresh Report (IRR) objects through the Modeling service.
 
 - [Retrieve an IRR definition](retrieve-an-irr-definition.md)
 - [Create an IRR](create-an-irr.md)

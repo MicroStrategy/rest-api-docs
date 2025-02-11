@@ -5,7 +5,7 @@ description: You can move packages of objects between environments within Workst
 
 <Available since="2021 Update 6" />
 
-Starting in MicroStrategy 2021 Update 6, you can move packages of objects between environments within Workstation. These packages are all maintained by the [MicroStrategy Storage Service](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service.htm), instead of you having to manage the packages yourself.
+Starting in Strategy 2021 Update 6, you can move packages of objects between environments within Workstation. These packages are all maintained by the [Strategy Storage Service](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service.htm), instead of you having to manage the packages yourself.
 
 You must [configure the package storage location in Workstation](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service_config_workstation.htm) to use this feature.
 
@@ -87,7 +87,7 @@ Sample Request Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     }
   }
 }
@@ -152,7 +152,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "created",
     "message": "",
@@ -177,7 +177,7 @@ Sample Response Body:
     "undoStorage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "deleted": false
   },
@@ -298,7 +298,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "locked",
     "message": "",
@@ -356,7 +356,7 @@ Copy the response body from step 4 and change `"replicated": false`, to `true`.
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "locked",
     "message": "",
@@ -417,7 +417,7 @@ Since the package import is asynchronously processing, this call checks the impo
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "deleted": false
   }
@@ -545,7 +545,7 @@ Sample Request Header
 
 ## Performance
 
-For performance concerns, MicroStrategy suggests you create or import one package per session and time.
+For performance concerns, Strategy suggests you create or import one package per session and time.
 
 ## Compatibility
 
@@ -586,7 +586,7 @@ A package created in an earlier platform version can be imported to a newer plat
 ## Troubleshooting
 
 - If the Library Server cannot connect to the database, you may receive the following error response:
-  - The API requires MicroStrategy Storage Service. Please contact your administrator.
+  - The API requires Strategy Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
     - Database not running
     - Database version is lower than required

@@ -10,7 +10,7 @@ description: Get applicable properties for a datasource.
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-585d42d1-fbdc-4d1d-afbb-c4e872753709?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -65,8 +65,8 @@ You can view the applicable properties in the body of the response.
       "showSqlPreview": true,
       "options": [
         {
-          "value": "Choosing this option keeps the backward compatibility with MicroStrategy 2019 where SQL queries are governed by \"Cartesian Join Warning\" VLDB setting.",
-          "sqlPreview": "OBSOLETE - Keep backward compatibility with MicroStrategy 2019."
+          "value": "Choosing this option keeps the backward compatibility with Strategy 2019 where SQL queries are governed by \"Cartesian Join Warning\" VLDB setting.",
+          "sqlPreview": "OBSOLETE - Keep backward compatibility with Strategy 2019."
         },
         {
           "value": "Cancel execution of cartesian join for SQL, MDX, In-Memory queries.",

@@ -41,4 +41,4 @@ Attribute-based view filters can be applied in a number of ways. For example, th
    1. Click **OK**.
    1. Click **Save**.
 
-Refer to the MicroStrategy product manuals for a detailed explanation of attribute-based view filters and how they can be applied.
+Refer to the Strategy product manuals for a detailed explanation of attribute-based view filters and how they can be applied.

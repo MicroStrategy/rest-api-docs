@@ -10,7 +10,7 @@ description: This topic covers three workflows for retrieving a custom group’s
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-1cd8c3f9-4d8f-496f-b183-3f615c8812e2?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -20,7 +20,7 @@ This topic covers three workflows for retrieving a custom group’s definition.
 
 This workflow sample demonstrates how to retrieve the definition of a custom group with filter elements through the Modeling service.
 
-You want to get the definition of the `"Age Group"` custom group object. The object ID of the custom group is `085CBF314703A71E926EA187C2002969` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `"Age Group"` custom group object. The object ID of the custom group is `085CBF314703A71E926EA187C2002969` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -276,7 +276,7 @@ Response Code: 200 (The custom group's definition was returned successfully.)
 
 This workflow sample demonstrates how to retrieve the definition of a custom group with a banding element through the Modeling service.
 
-You want to get the definition of the `"Customers Value Banding"` custom group object. The object ID of the custom group is `F519146F4B0A6EC81ED3CFA30F1C90B4` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `"Customers Value Banding"` custom group object. The object ID of the custom group is `F519146F4B0A6EC81ED3CFA30F1C90B4` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -393,7 +393,7 @@ Expressions are presented in the following formats:
 - `"tree"`: A tree data structure fully defining the expression. This format can be used if you want to examine and modify the expression programmatically.
 - `"tokens"`: A list of parsed tokens. This format can be used if you want to examine and modify the expression using the parser component. Be aware that generating tokens requires additional time.
 
-  Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a custom group filter element's expression is "Revenue > Cost". When the custom group filter element's expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), (">", GreaterThan_ID), ("Cost", Cost_ID).
+  Tokens are a semi-structured representation of Strategy expression text that includes object references. For example, let’s say a custom group filter element's expression is "Revenue > Cost". When the custom group filter element's expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), (">", GreaterThan_ID), ("Cost", Cost_ID).
 
 If omitted, the expression is returned in `"text"` format.
 

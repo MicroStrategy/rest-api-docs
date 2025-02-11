@@ -10,13 +10,13 @@ description: You can retrieve a report or card instance’s SQL statement. In th
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c962ed90-f4e6-4934-8b65-4480bf45746e?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 You can retrieve a report or card instance’s SQL statement. In this workflow sample, a document with a report object is used. However, the same workflow applies to card objects.
 
-You want to get the definition of the SQL statement from the Cost Analysis Report in the MicroStrategy Tutorial project. The object ID of the report is `CA8E4E2C6F4AC30B0DDE2195998B82DC`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the SQL statement from the Cost Analysis Report in the Strategy Tutorial project. The object ID of the report is `CA8E4E2C6F4AC30B0DDE2195998B82DC`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

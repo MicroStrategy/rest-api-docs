@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to retrieve a custom group’
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-1cd8c3f9-4d8f-496f-b183-3f615c8812e2?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -18,7 +18,7 @@ This workflow sample demonstrates how to retrieve a custom group’s definition 
 
 Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md). If you plan to use the response of `GET /api/model/customGroups/{customGroupsId}` to create a new custom group or update the custom group's definition, it is recommended to associate all requests to one changeset.
 
-You want to get the definition of the `"Age Group"` custom group object. The object ID of the custom group is `085CBF314703A71E926EA187C2002969` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `"Age Group"` custom group object. The object ID of the custom group is `085CBF314703A71E926EA187C2002969` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

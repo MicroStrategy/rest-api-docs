@@ -9,11 +9,11 @@ description: You can use REST API requests to retrieve, create, and update dat
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-1f302e4e-e863-4247-a360-802794a8d8a5?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-Starting in MicroStrategy 2021 Update 7, you can use REST API requests retrieve, create, and update datamart objects through the Modeling service.
+Starting in Strategy 2021 Update 7, you can use REST API requests retrieve, create, and update datamart objects through the Modeling service.
 
 - [Retrieve a datamart definition](retrieve-a-datamart-definition.md)
 - [Create a datamart from a source report](create-a-datamart-from-a-source-report.md)

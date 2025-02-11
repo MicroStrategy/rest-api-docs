@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to retrieve a base formula's 
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7bcc16b2-2864-4980-b2b1-77681174827a?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -22,7 +22,7 @@ An authorization token allows the API layer to hide internal session-related imp
 
 ::::
 
-You want to get the definition of the `"Cost"` related base formula object, which is defined as `”Sum(Cost)”` and named as `“base_sum(Cost)“`. The object ID of the base formula is `594A680CB5894B25BD3AE8BB47AAF424`  in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the `"Cost"` related base formula object, which is defined as `”Sum(Cost)”` and named as `“base_sum(Cost)“`. The object ID of the base formula is `594A680CB5894B25BD3AE8BB47AAF424`  in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 For different formats of base formula expressions, please refer to [Retrieve a base formula's definition](retrieve-a-base-formulas-definition.md).
 

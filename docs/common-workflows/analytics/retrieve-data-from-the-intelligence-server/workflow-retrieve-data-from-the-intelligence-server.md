@@ -8,7 +8,7 @@ description: You can use REST APIs to retrieve both the definition and data for 
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-84db2127-16e8-4fd2-909f-b5990516f889?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -36,7 +36,7 @@ To make it easy for you to try out this workflow in your environment, we have pr
 
 Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
-This endpoint allows the caller to authenticate with the MicroStrategy REST Server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing X-MSTR-AuthToken, the authorization token that will be used in subsequent requests.
+This endpoint allows the caller to authenticate with the Strategy REST Server. You provide the information used to create the session in the body of the request. In this example, you use standard authentication so you need to provide username, password, and loginMode (which specifies the authentication mode to use). If you omit an optional field, the REST Server uses the default value. If the call is successful, the resulting HTTP response returns an HTTP status code 204 and a response header containing X-MSTR-AuthToken, the authorization token that will be used in subsequent requests.
 
 ![swagger_POST_auth_login](../../../images/swagger_POST_auth_login.png)
 
@@ -106,12 +106,12 @@ A detailed explanation of how to retrieve the definition of a report, cube, or d
 
 Endpoint: [GET /api/reports/\{reportId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/getDefinition_1)
 
-This endpoint returns the definition for a specific report in a specific project from the MicroStrategy Intelligence Server. The body of the response contains the name and ID for the report and all the attributes and metrics included in the report.
+This endpoint returns the definition for a specific report in a specific project from the Strategy Intelligence Server. The body of the response contains the name and ID for the report and all the attributes and metrics included in the report.
 
 - Identify the project by passing the project ID in the request header.
 - Identify the report by passing the report ID in the path of the request.
 
-In the sample provided, you get the definition for the report “01 Basic Report” in the “MicroStrategy Tutorial” project. This report has two attributes and three metrics.
+In the sample provided, you get the definition for the report “01 Basic Report” in the “Strategy Tutorial” project. This report has two attributes and three metrics.
 
 ![GET_report_definition](../../../images/GET_report_definition.png)
 
@@ -217,12 +217,12 @@ Response Code: 204 (Success: No Content)
 
 Endpoint: [GET /api/cubes/\{cubeId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getDefinition)
 
-This endpoint returns the definition for a specific cube in a specific project from the MicroStrategy Intelligence Server. The body of the response contains the name and ID for the cube and all the attributes and metrics included in the cube definition.
+This endpoint returns the definition for a specific cube in a specific project from the Strategy Intelligence Server. The body of the response contains the name and ID for the cube and all the attributes and metrics included in the cube definition.
 
 - Identify the project by passing the project ID in the request header.
 - Identify the cube by passing the cube ID in the path of the request.
 
-In the sample provided, you get the definition for the cube “Advanced sort" in the “MicroStrategy Tutorial” project. This cube has two attributes and two metrics.
+In the sample provided, you get the definition for the cube “Advanced sort" in the “Strategy Tutorial” project. This cube has two attributes and two metrics.
 
 ![GET_cube_definition](../../../images/GET_cube_definition.png)
 
@@ -311,12 +311,12 @@ Response Code: 204 (Success: No Content)
 
 Endpoint: [GET /api/dossiers/\{dossierId}/definition](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getVisualizationList)
 
-This endpoint returns the hierarchy for a specific dashboard in a specific project from the MicroStrategy Intelligence Server. The body of the response contains the chapters, pages, and visualizations in the dashboard.
+This endpoint returns the hierarchy for a specific dashboard in a specific project from the Strategy Intelligence Server. The body of the response contains the chapters, pages, and visualizations in the dashboard.
 
 - Identify the project by passing the project ID in the request header.
 - Identify the dashboard by passing the dashboard ID in the path of the request.
 
-In the sample provided, you get the hierarchy for the dashboard “Dossier of Advanced sort" in the “MicroStrategy Tutorial” project. This dashboard has one chapter, one page, and one visualization.
+In the sample provided, you get the hierarchy for the dashboard “Dossier of Advanced sort" in the “Strategy Tutorial” project. This dashboard has one chapter, one page, and one visualization.
 
 ![GET_dossier_hierarchy](../../../images/GET_dossier_hierarchy.png)
 
@@ -394,14 +394,14 @@ When you create a report or cube instance using a POST request, the instance ID 
 
 Endpoint: [POST /api/reports/\{reportId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/createReportInstance)
 
-This endpoint creates a new instance of a specific report in a specific project on the MicroStrategy Intelligence Server and returns the results if processing has finished. You can refine the amount of data that is returned using offset and limit parameters in the request and specifying filtering parameters in the body of the request. You can check whether processing has finished by checking the value of status in the body of the request.
+This endpoint creates a new instance of a specific report in a specific project on the Strategy Intelligence Server and returns the results if processing has finished. You can refine the amount of data that is returned using offset and limit parameters in the request and specifying filtering parameters in the body of the request. You can check whether processing has finished by checking the value of status in the body of the request.
 
 - Identify the project by passing the project ID in the request header.
 - Identify the report by passing the report ID in the path of the request.
 
 :::tip
 
-In the sample that was provided, you create an instance of the report “01 Basic Report” in the “MicroStrategy Tutorial” project. This report has two attributes and three metrics.
+In the sample that was provided, you create an instance of the report “01 Basic Report” in the “Strategy Tutorial” project. This report has two attributes and three metrics.
 
 :::
 
@@ -661,12 +661,12 @@ Response Code: 204 (Success: OK)
 
 Endpoint: [POST /api/cubes/\{cubeId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/createCubeInstance)
 
-This endpoint creates a new instance of a specific cube in a specific project on the MicroStrategy Intelligence Server and returns the results if processing has finished. You can refine the amount of data that is returned using offset and limit parameters in the request and specifying filtering parameters in the body of the request. You can check whether processing has finished by checking the value of status in the body of the request.
+This endpoint creates a new instance of a specific cube in a specific project on the Strategy Intelligence Server and returns the results if processing has finished. You can refine the amount of data that is returned using offset and limit parameters in the request and specifying filtering parameters in the body of the request. You can check whether processing has finished by checking the value of status in the body of the request.
 
 - Identify the project by passing the project ID in the request header.
 - Identify the cube by passing the cube ID in the path of the request.
 
-  In sample that was provided, you create an instance of the cube “Advanced Sort” in the “MicroStrategy Tutorial” project. This cube has two attributes and two metrics.
+  In sample that was provided, you create an instance of the cube “Advanced Sort” in the “Strategy Tutorial” project. This cube has two attributes and two metrics.
 
 - Identity the start and end position as offset and limit request parameters
 
@@ -859,9 +859,9 @@ Response Code: 204 (Success: OK)
 
 Endpoint: [POST /api/dossiers/\{dossierId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/createDossierInstance_2)
 
-This endpoint allows the caller to create a new instance of a specific dashboard in a specific project from the MicroStrategy Intelligence Server. The request body contains linking and bookmark information for the dashboard. The body of the response contains the instance ID for the dashboard and the status.
+This endpoint allows the caller to create a new instance of a specific dashboard in a specific project from the Strategy Intelligence Server. The request body contains linking and bookmark information for the dashboard. The body of the response contains the instance ID for the dashboard and the status.
 
-In the sample that was provided, you create an instance of the dashboard “Dossier for Advanced sort” in the “MicroStrategy Tutorial” project. This dashboard has two attributes and two metrics.
+In the sample that was provided, you create an instance of the dashboard “Dossier for Advanced sort” in the “Strategy Tutorial” project. This dashboard has two attributes and two metrics.
 
 ![POST_dossier_instance](../../../images/POST_dossier_instance.png)
 
@@ -906,12 +906,12 @@ For dashboards, you can retrieve only data for a specific visualization in the d
 
 Endpoint: [GET /api/reports/\{reportId}/instances/\{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/executeReport)
 
-This endpoint gets the data for a specific report instance in a specific project from the MicroStrategy Intelligence Server. The results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
+This endpoint gets the data for a specific report instance in a specific project from the Strategy Intelligence Server. The results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
 
 - Identify the project by passing the project ID in the request header.
 - Identify the report instance by passing the report ID and the report instance ID in the path of the request.
 
-  In the downloadable sample that was provided, you get the data for an instance of the report “01 Basic Report” in the “MicroStrategy Tutorial” project. This report has two attributes and three metrics.
+  In the downloadable sample that was provided, you get the data for an instance of the report “01 Basic Report” in the “Strategy Tutorial” project. This report has two attributes and three metrics.
 
 - Identity the start and end position as offset and limit request parameters
   - offset is the start point of your response. For example, if offset=2, it will return the report data beginning with the second record. The default value is 0.
@@ -1045,10 +1045,10 @@ Response Code: 204 (Success: OK)
 
 Endpoint: [GET /api/cubes/\{cubeId}/instances/\{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Cubes/getReport)
 
-This endpoint gets the data for a specific cube instance in a specific project from the MicroStrategy Intelligence Server. The response body contains the cube data; the results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
+This endpoint gets the data for a specific cube instance in a specific project from the Strategy Intelligence Server. The response body contains the cube data; the results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
 
 - Identify the project by passing the project ID in the request header.
-- Identify the cube instance by passing the cube ID and the cube instance ID in the path of the request. In the sample that was provided, you get the data for an instance of the cube “Advanced sort” in the “MicroStrategy Tutorial” project. This cube has two attributes and two metrics.
+- Identify the cube instance by passing the cube ID and the cube instance ID in the path of the request. In the sample that was provided, you get the data for an instance of the cube “Advanced sort” in the “Strategy Tutorial” project. This cube has two attributes and two metrics.
 
 - Identity the start and end position as offset and limit request parameters
   - offset is the start point of your response. For example, if offset=2, it will return the cube data beginning with the second record. The default value is 0.
@@ -1233,13 +1233,13 @@ Response Code: 204 (Success: OK)
 
 ### Get dashboard data (specific visualization)
 
-This endpoint gets dashboard data by visualization for a specific dashboard instance in a specific project from the MicroStrategy Intelligence Server. The response body contains the cube data; the results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
+This endpoint gets dashboard data by visualization for a specific dashboard instance in a specific project from the Strategy Intelligence Server. The response body contains the cube data; the results are determined by the conditions you applied when you created the instance. You can refine the amount of data that is returned using offset and limit parameters in the request.
 
 - Identify the project by passing the project ID in the request header.
 - Identify the dashboard instance by passing the dashboard ID and the dashboard instance ID in the path of the request.
 - Identify the chapter and visualization by passing the chapter key and visualization key in the path of the request.
 
-  In the sample that was provided, you get the data for a visualization in an instance of the dashboard “Year Cost” in the “MicroStrategy Tutorial” project.
+  In the sample that was provided, you get the data for a visualization in an instance of the dashboard “Year Cost” in the “Strategy Tutorial” project.
 
 - Identity the start and end position as offset and limit request parameters
   - offset is the start point of your response. For example, if offset=2, it will return the report data beginning with the second record. The default value is 0.
@@ -1390,7 +1390,7 @@ Response Code: 204 (Success: OK)
 
 Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
-This endpoint allows the caller to log out for the authenticated user with the MicroStrategy REST Server. In this example, you close the active user session by providing the authorization token, `X-MSTR-AuthToken`, generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
+This endpoint allows the caller to log out for the authenticated user with the Strategy REST Server. In this example, you close the active user session by providing the authorization token, `X-MSTR-AuthToken`, generated during login. If the call is successful, the resulting HTTP response returns an HTTP status code 204.
 
 ![swagger_POST_auth_logout](../../../images/swagger_POST_auth_logout.png)
 

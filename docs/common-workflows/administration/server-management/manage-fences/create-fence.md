@@ -9,7 +9,7 @@ description: This workflow sample demonstrates how to create a new user or workl
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5aef5846-6a6a-4d65-a91d-b3ebf5d96520?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -65,7 +65,7 @@ The `name`, `rank` and `nodes` are mandatory fields for both types of fences. Th
   "projects": [
     {
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     }
   ]
 }
@@ -99,7 +99,7 @@ curl -X POST \
   "projects": [
     {
      "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-     "name": "MicroStrategy Tutorial"
+     "name": "Strategy Tutorial"
     }
   ]
 }'
@@ -136,7 +136,7 @@ You can view the detailed information of new created `administrator_user_fence` 
   "projects": [
     {
       "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     }
   ],
   "id": "YWRtaW5pc3RyYXRvcl91c2VyX2ZlbmNl"

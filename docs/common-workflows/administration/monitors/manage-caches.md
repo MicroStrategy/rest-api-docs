@@ -10,11 +10,11 @@ sidebar_label: Purge object and element caches
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7238f434-a209-45b1-a227-cba9887c20b4?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-When a user works with MicroStrategy, cache data is created. The data stored in the cache allows to increase system performance and improve user’s experience. Instead of loading the data required by system from some database, i.e., meta-data database, the data is retrieved from a cache memory. However, Platform Administrator or Analytics Architect may decide to purge the caches periodically. Currently, the REST API allows to delete cache data for objects and elements using a following endpoint:
+When a user works with Strategy, cache data is created. The data stored in the cache allows to increase system performance and improve user’s experience. Instead of loading the data required by system from some database, i.e., meta-data database, the data is retrieved from a cache memory. However, Platform Administrator or Analytics Architect may decide to purge the caches periodically. Currently, the REST API allows to delete cache data for objects and elements using a following endpoint:
 
 - `DELETE /api/monitors/projects/{projectId}/cache/{cacheType}`
 
@@ -31,7 +31,7 @@ The sections below present Cache Management REST API usage.
 ### Header
 
 - `X-MSTR-AuthToken`
-  - (Required) MicroStrategy authorization token.
+  - (Required) Strategy authorization token.
   - Data Type: `string`
   - Allowable Values: valid authorization token.
 
@@ -73,10 +73,10 @@ The X-MSTR-AuthToken is an authentication token which you receive during authent
   {
     "acg": 255,
     "id": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
-    "name": "MicroStrategy Tutorial",
+    "name": "Strategy Tutorial",
     "status": 0,
     "alias": "",
-    "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
+    "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
     "dateCreated": "2015-06-30T21:55:35.000+0000",
     "dateModified": "2022-06-25T12:48:15.000+0000",
     "owner": {
@@ -102,7 +102,7 @@ The X-MSTR-AuthToken is an authentication token which you receive during authent
 ]
 ```
 
-Please find the `id` for the desired project. For example, `id` of the project: “MicroStrategy Tutorial” is `B7CA92F04B9FAE8D941C3E9B7E0CD75`. We will use it in the next step.
+Please find the `id` for the desired project. For example, `id` of the project: “Strategy Tutorial” is `B7CA92F04B9FAE8D941C3E9B7E0CD75`. We will use it in the next step.
 
 ### Step 2 – Deleting the cache
 

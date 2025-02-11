@@ -7,13 +7,13 @@ description: While API endpoints define full response models, you may only need 
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ea1451c1-67fc-44c2-9f08-427b6cd60393?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 While API endpoints define full response models, you may only need a subset of the available data. You can ask the server to only send the fields you need and get a partial response instead. This helps improve performance, since extra resources are not devoted transferring, parsing, and storing unnecessary fields.
 
-MicroStrategy supports top-level field selection on most endpoints.
+Strategy supports top-level field selection on most endpoints.
 
 - For endpoints that return a JSON object, the client specifies which fields to include for the root object.
 - For endpoints that return a JSON array, the client specifies which fields to include for every element of the root array.
@@ -56,7 +56,7 @@ The fields query parameter is exposed on endpoints that support field selection.
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-6ea58912-5546-4576-a94b-01db9437118d?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -67,7 +67,7 @@ Here is an example using `GET /api/projects/MicroStrategy%20Tutorial?fields=id,n
 ```json
 {
   "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-  "name": "MicroStrategy Tutorial",
+  "name": "Strategy Tutorial",
   "owner": {
     "name": "Administrator",
     "id": "54F3D26011D2896560009A8E67019608"
@@ -81,10 +81,10 @@ Here is an example of full representation without fields.
 {
   "acg": 255,
   "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-  "name": "MicroStrategy Tutorial",
+  "name": "Strategy Tutorial",
   "status": 0,
   "alias": "",
-  "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
+  "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed.",
   "dateCreated": "2001-01-02T20:42:04.000+0000",
   "dateModified": "2019-06-28T03:32:24.000+0000",
   "owner": {
@@ -100,7 +100,7 @@ Here is an example of full representation without fields.
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2f86322d-d0b2-4005-881e-f8b878c83680?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -116,7 +116,7 @@ Here is an example using `GET /api/projects?fields=id,name`.
   },
   {
     "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-    "name": "MicroStrategy Tutorial"
+    "name": "Strategy Tutorial"
   }
 ]
 ```

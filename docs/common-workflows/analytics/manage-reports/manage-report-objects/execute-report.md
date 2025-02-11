@@ -195,7 +195,7 @@ Sample Request Header:
 
 Sample Request Body: Empty
 
-Sample Response Body: See details in [MicroStrategy REST](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/executeReport_1)
+Sample Response Body: See details in [Strategy REST](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Reports/executeReport_1)
 
 Sample Response Code: 200 (Report data has been returned.)
 

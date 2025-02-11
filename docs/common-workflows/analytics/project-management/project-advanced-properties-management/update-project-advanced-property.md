@@ -9,7 +9,7 @@ description: The workflow involves modifying project's advanced properties value
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-804b24e1-dccb-48c1-bfde-0a132163e409?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -17,7 +17,7 @@ Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/
 
 This workflow sample demonstrates how to update project's advanced property value
 
-You want to get update an advanced property of the `MicroStrategy Tutorial` Project object. The object ID is `6851110C470AF40EB46B559D5098F309`.
+You want to get update an advanced property of the `Strategy Tutorial` Project object. The object ID is `6851110C470AF40EB46B559D5098F309`.
 
 :::info
 
@@ -74,8 +74,8 @@ You can view list of advanced properties including updated property in the respo
     "primaryLocale": "en-US",
     "objectId": "6851110C470AF40EB46B559D5098F309",
     "subType": "project",
-    "name": "MicroStrategy Tutorial",
-    "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed."
+    "name": "Strategy Tutorial",
+    "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed."
   },
   "advancedProperties": {
     "vldbProperties": {
@@ -155,8 +155,8 @@ You can view list of advanced properties including updated property in the respo
     "primaryLocale": "en-US",
     "objectId": "6851110C470AF40EB46B559D5098F309",
     "subType": "project",
-    "name": "MicroStrategy Tutorial",
-    "description": "MicroStrategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed."
+    "name": "Strategy Tutorial",
+    "description": "Strategy Tutorial project and application set designed to illustrate the platform's rich functionality. The theme is an Electronics, Books, Movies and Music store. Employees, Inventory, Finance, Product Sales and Suppliers are analyzed."
   },
   "advancedProperties": {
     "vldbProperties": {

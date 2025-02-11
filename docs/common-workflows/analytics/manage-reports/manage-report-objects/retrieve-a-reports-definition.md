@@ -13,7 +13,7 @@ You can use REST APIs to retrieve the definition of a report through Modeling se
   - [2. Get a report's definition within the instance](#2-get-a-reports-definition-within-the-instance)
   - [3. Delete report instance](#3-delete-report-instance)
 
-In both sample workflows, we want to retrieve a report’s definition from “MicroStrategy Tutorial“ project. The report ID is `FFDAB82F4CA397073ABD4196FCBCD918`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+In both sample workflows, we want to retrieve a report’s definition from “Strategy Tutorial“ project. The report ID is `FFDAB82F4CA397073ABD4196FCBCD918`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

@@ -9,7 +9,7 @@ description: The Manage Quick Search Indices API family allows you to view the s
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-75d970f5-31b8-4fda-93cc-1aabe3f7441d?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -71,7 +71,7 @@ Sample Response Body:
       "machineName": "aws-amazonlinux-base-template"
     },
     {
-      "projectName": "MicroStrategy Tutorial",
+      "projectName": "Strategy Tutorial",
       "projectId": "B7CA92F04B9FAE8D941C3E9B7E0CD754",
       "status": "completed_on",
       "percentComplete": 1.0,

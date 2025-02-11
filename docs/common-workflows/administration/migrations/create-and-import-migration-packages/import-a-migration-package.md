@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to import a migration package
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7a6ff268-6e87-449b-a51f-30f134ab54d4?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -27,7 +27,7 @@ This workflow sample demonstrates how to import a migration package using REST A
 
 ## Import a project package
 
-You want to import a project package that contains a `"Year"` object, with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4`, and all its dependents in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. You are using the `"Demo Project"`, which has a project ID of `B19DEDCC11D4E0EFC000EB9495D0F44F`.
+You want to import a project package that contains a `"Year"` object, with an attribute object ID of `8D679D5111D3E4981000E787EC6DE8A4`, and all its dependents in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`. You are using the `"Demo Project"`, which has a project ID of `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 
 :::info
 

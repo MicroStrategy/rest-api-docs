@@ -5,7 +5,7 @@ description: You can validate migrations between environments within Workstation
 
 <Available since="2021 Update 6" />
 
-Starting in MicroStrategy 2021 Update 6, you can validate migrations between environments within Workstation. When you validate a migration, you are performing all merges without committing any changes to the metadata. If a migration fails to be validated in a target environment, the migration also fails when being migrated to the same target. Administrator users can only validate migrations prior to migration.
+Starting in Strategy 2021 Update 6, you can validate migrations between environments within Workstation. When you validate a migration, you are performing all merges without committing any changes to the metadata. If a migration fails to be validated in a target environment, the migration also fails when being migrated to the same target. Administrator users can only validate migrations prior to migration.
 
 You must [configure the package storage location in Workstation](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service_config_workstation.htm) to use this feature.
 
@@ -132,7 +132,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "created",
     "message": "",
@@ -157,7 +157,7 @@ Sample Response Body:
     "undoStorage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "deleted": false
   },
@@ -310,7 +310,7 @@ Sample Response Body:
     },
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "status": "created",
     "message": "",
@@ -335,7 +335,7 @@ Sample Response Body:
     "undoStorage": {},
     "project": {
       "id": "B19DEDCC11D4E0EFC000EB9495D0F44F",
-      "name": "MicroStrategy Tutorial"
+      "name": "Strategy Tutorial"
     },
     "deleted": false
   },
@@ -352,7 +352,7 @@ Sample Response Body:
 
 ## Performance
 
-For performance concerns, MicroStrategy suggests you validate one package per session and time.
+For performance concerns, Strategy suggests you validate one package per session and time.
 
 ## Compatibility
 
@@ -368,7 +368,7 @@ A package validated in an earlier platform version can be validated to a newer p
 ## Troubleshooting
 
 - If the Library Server cannot connect to the database, you may receive the following error response:
-  - The API requires MicroStrategy Storage Service. Please contact your administrator.
+  - The API requires Strategy Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
     - Database not running
     - Database version is lower than required
@@ -381,6 +381,6 @@ A package validated in an earlier platform version can be validated to a newer p
   - Cannot create or modify the shared file. It may be temporarily unavailable for accessing the storage location.
   - The shared file cannot be accessed. It may be deleted or the storage location cannot be accessed.
 
-- MicroStrategy advises setting the **Maximum tolerance for computer clock synchronization** to a value of five minutes. See [Maximum tolerance for computer clock synchronization](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/maximum-tolerance-for-computer-clock-synchronization) on the [Microsoft technical documentation](https://docs.microsoft.com/en-us/) site for more information about modifying this setting. After making this change, if your environment times differ by more than five minutes, you receive the following message:
+- Strategy advises setting the **Maximum tolerance for computer clock synchronization** to a value of five minutes. See [Maximum tolerance for computer clock synchronization](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/maximum-tolerance-for-computer-clock-synchronization) on the [Microsoft technical documentation](https://docs.microsoft.com/en-us/) site for more information about modifying this setting. After making this change, if your environment times differ by more than five minutes, you receive the following message:
 
   The time difference between the source and target environments should be five minutes or less. Please modify the environment system time and try again.

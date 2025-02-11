@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to retrieve a fact's definiti
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-440d539e-15d7-4709-94a5-9c74eecc03db?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -26,7 +26,7 @@ Changesets are used in this workflow. For information on how to create and use c
 1. [Get a fact's definition within a changeset.](#get-a-facts-definition-within-a-changeset)
 1. Delete the changeset.
 
-You want to get the definition of the "Profit" fact object. The object ID of the fact is `FDD652E7444ADD7AB6B25F9C1FA15F92` in the "MicroStrategy Tutorial" project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the "Profit" fact object. The object ID of the fact is `FDD652E7444ADD7AB6B25F9C1FA15F92` in the "Strategy Tutorial" project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

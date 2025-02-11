@@ -6,7 +6,7 @@ description: You can use REST APIs to update a prompt of a table through the Mod
 
 <Available since="2021 Update 6" />
 
-Similar to [Update a prompt of an SAP HANA table with input parameters](update-a-prompt-of-an-sap-hana-table.md), you can use REST APIs to update the table definition through the Modeling service starting in MicroStrategy 2021 Update 6.
+Similar to [Update a prompt of an SAP HANA table with input parameters](update-a-prompt-of-an-sap-hana-table.md), you can use REST APIs to update the table definition through the Modeling service starting in Strategy 2021 Update 6.
 
 :::info
 
@@ -32,7 +32,7 @@ To replace the current prompt with a standalone prompt, the prompt must either b
 
 :::
 
-The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the MicroStrategy Tutorial Advanced project and its ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`. Different operations on different SAP HANA parameters are done:
+The object ID of the table is `84AF2517E662417D9924FD678B44591A`. The table is in the Strategy Tutorial Advanced project and its ID is `6AB8DFFE4B99B7F6FB0E94AD176C4A28`. Different operations on different SAP HANA parameters are done:
 
 - Keep `IP_Column_Hier_Value_Help` the same
 - Reset `IP_Static_List`

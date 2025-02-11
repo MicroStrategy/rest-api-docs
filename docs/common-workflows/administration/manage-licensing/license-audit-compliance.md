@@ -158,11 +158,11 @@ Sample Response Body:
   "auditTime": "2023-05-04T10:47:46.766Z",
   "contactLicenses": [],
   "userGroups": [
-    ["3D0F5EF8978D4AE086012C196BF01EBA", "MicroStrategy Groups"],
+    ["3D0F5EF8978D4AE086012C196BF01EBA", "Strategy Groups"],
     ["5F3FAFE011D2D8CC6000CC8E67019608", "System Monitors"],
     ["5F3FAFE111D2D8CC6000CC8E67019608", "System Administrators"],
     ["C82C6B1011D2894CC0009D9F29718E4F", "Everyone"],
-    ["5B6C1434431D99F9A8230191FE5F6849", "MicroStrategy Service Accounts"],
+    ["5B6C1434431D99F9A8230191FE5F6849", "Strategy Service Accounts"],
     ["FB5CDCCE4D0E70EDE48110A0FDCFD370", "Platform Support Administrators"]
   ],
   "userLicenses": [
@@ -267,7 +267,7 @@ Sample Response Body:
       "privilege": {
         "id": "266",
         "name": "Use Application",
-        "description": "Provide the ability for organizations to connect to the MicroStrategy Intelligence Server through custom applications.",
+        "description": "Provide the ability for organizations to connect to the Strategy Intelligence Server through custom applications.",
         "level": "project"
       },
       "sources": [

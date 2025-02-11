@@ -10,13 +10,13 @@ description: Get applicable properties for a project.
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-585d42d1-fbdc-4d1d-afbb-c4e872753709?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This workflow sample demonstrates how to retrieve the applicable properties of a project through Modeling Service.
 
-You want to get the applicable properties of the `MicroStrategy Tutorial` Project object. The object ID is `6851110C470AF40EB46B559D5098F309`.
+You want to get the applicable properties of the `Strategy Tutorial` Project object. The object ID is `6851110C470AF40EB46B559D5098F309`.
 
 :::info
 
@@ -65,8 +65,8 @@ You can view the applicable properties of a project in the body of the response.
       "showSqlPreview": true,
       "options": [
         {
-          "value": "Choosing this option keeps the backward compatibility with MicroStrategy 2019 where SQL queries are governed by \"Cartesian Join Warning\" VLDB setting.",
-          "sqlPreview": "OBSOLETE - Keep backward compatibility with MicroStrategy 2019."
+          "value": "Choosing this option keeps the backward compatibility with Strategy 2019 where SQL queries are governed by \"Cartesian Join Warning\" VLDB setting.",
+          "sqlPreview": "OBSOLETE - Keep backward compatibility with Strategy 2019."
         },
         {
           "value": "Cancel execution of cartesian join for SQL, MDX, In-Memory queries.",

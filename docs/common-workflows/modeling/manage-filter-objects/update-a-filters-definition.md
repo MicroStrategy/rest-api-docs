@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to update a filter's definiti
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5bb60de6-52e2-43c4-87bc-b404125f96ad?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -21,7 +21,7 @@ This workflow sample demonstrates how to update a filter's definition through th
 1. Commit the changeset using `POST /api/model/changesets/{changesetId}/commit`
 1. Delete the changeset using `DELETE /api/model/changesets/{changesetId}`
 
-You want to update the definition of the "Year > 2015" filter and rename it to "Year > 2020". The filter is in the MicroStrategy Tutorial project. The object ID of the filter is 8018C24FEBC4406CB9E36838C01C82D1. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754
+You want to update the definition of the "Year > 2015" filter and rename it to "Year > 2020". The filter is in the Strategy Tutorial project. The object ID of the filter is 8018C24FEBC4406CB9E36838C01C82D1. The project ID is B7CA92F04B9FAE8D941C3E9B7E0CD754
 
 :::info
 

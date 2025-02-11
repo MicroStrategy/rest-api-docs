@@ -10,13 +10,13 @@ description: This topic covers the workflow for retrieving a metric's applicable
 
 You can try this workflow with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c9639bc3-853f-4746-94b6-528b5aed21a5?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This topic covers the workflow to retrieve a metric's applicable properties.
 
-Get the applicable properties of the `“Cost Comparison"` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+Get the applicable properties of the `“Cost Comparison"` metric object. The object ID of the metric is `28F95FDC4EF1CA5746F8E6971A144BED` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

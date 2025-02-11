@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to create a new custom group 
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-595a6492-e685-41a9-bdc2-5c0b9c571315?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -21,7 +21,7 @@ You want to create a new `"Last 10 year"` custom group object with 2 filter elem
 - last 5 year: "(Year(CurrentDate()) - 5)\<= Year@ID"
 - last 10-5 years: "((Year(CurrentDate()) - 10)\<= Year@ID)AND((Year(CurrentDate()) - 5)>Year@ID)"
 
-You want to save the object under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to save the object under the Public Objects folder in the Strategy Tutorial project. The folder object ID is `98FE182C2A10427EACE0CD30B6768258`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 

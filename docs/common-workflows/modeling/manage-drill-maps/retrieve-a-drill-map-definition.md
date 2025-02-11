@@ -10,7 +10,7 @@ description: You can use REST API requests to retrieve, create, and update drill
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2b7a0f0c-2172-418a-93ec-e0f0a13fa741?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -18,7 +18,7 @@ You can use REST APIs to retrieve the definition of a drill map through the Mode
 
 ## Retrieve a drill map definition
 
-You want to get the definition of a drill map object. The object ID of the drill map is `CC2E6AA3421EFF5C41C2D0939750BB24` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of a drill map object. The object ID of the drill map is `CC2E6AA3421EFF5C41C2D0939750BB24` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 
@@ -187,7 +187,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-You want to get the definition of the Sample Drill Map drill map object. The object ID of this drill map is `CC2E6AA3421EFF5C41C2D0939750BB24` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to get the definition of the Sample Drill Map drill map object. The object ID of this drill map is `CC2E6AA3421EFF5C41C2D0939750BB24` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 

@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to create a new consolidation
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-cd93cd32-2391-4f2f-9308-9f47783540bf?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -23,7 +23,7 @@ This workflow sample demonstrates how to create a new consolidation object throu
 
 [More Example: Create a consolidation with two elements.](#example-create-a-consolidation-with-two-elements)
 
-You want to create a new consolidation with the expression "(\{Customer Age=20 AND Customer=Aaby:Alen} + \{Customer City=Addison})" under the Public Objects folder in the MicroStrategy Tutorial project. The folder object ID is 98FE182C2A10427EACE0CD30B6768258. The project ID is 091B51154B22036C53CFBB9958B2E8FC.
+You want to create a new consolidation with the expression "(\{Customer Age=20 AND Customer=Aaby:Alen} + \{Customer City=Addison})" under the Public Objects folder in the Strategy Tutorial project. The folder object ID is 98FE182C2A10427EACE0CD30B6768258. The project ID is 091B51154B22036C53CFBB9958B2E8FC.
 
 :::info
 

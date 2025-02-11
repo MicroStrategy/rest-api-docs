@@ -16,7 +16,7 @@ This topic covers several workflows for retrieving a security filter's definitio
 
 ## Retrieve a security filter's definition
 
-In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -104,7 +104,7 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the MicroStrategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the Strategy Tutorial project. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::info
 
@@ -252,11 +252,11 @@ Sample Response Code: 204 (The changeset has been deleted successfully)
 
 ## Retrieve a security filter's definition in tokens format
 
-In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the MicroStrategy Tutorial project. This procedure is similar to [Retrieve a security filter's definition](#retrieve-a-security-filters-definition), except you want to enable the `showFilterTokens` parameter to retrieve the security filter's definition in tokens format.
+In this workflow sample, you want to get the definition of the "Year > 2015" security filter object. The object ID of the security filter is `8018C24FEBC4406CB9E36838C01C82D1` in the Strategy Tutorial project. This procedure is similar to [Retrieve a security filter's definition](#retrieve-a-security-filters-definition), except you want to enable the `showFilterTokens` parameter to retrieve the security filter's definition in tokens format.
 
 :::tip
 
-Security filter tokens are used the same manner as filter tokens. Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let's say a security filter expression is "Revenue > Cost". When the security filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), (">", GreaterThan_ID), ("Cost", Cost_ID).<br/><br/>A security filter's "qualification" is presented in the following formats:
+Security filter tokens are used the same manner as filter tokens. Tokens are a semi-structured representation of Strategy expression text that includes object references. For example, let's say a security filter expression is "Revenue > Cost". When the security filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), (">", GreaterThan_ID), ("Cost", Cost_ID).<br/><br/>A security filter's "qualification" is presented in the following formats:
 
 - "text": A human-readable, but non-parsable text, describing a filter's qualification.
 - "tree": A tree data structure fully defining the filter's qualification.
@@ -392,7 +392,7 @@ Custom expressions are presented in the following formats:
 - "tree": A tree data structure fully defining the expression. This format can be used if you want to examine and modify the expression programmatically.
 - "tokens": A list of parsed tokens. This format can be used if you want to examine and modify the expression using the parser component. Be aware that generating tokens requires additional time.
 
-  Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let's say a security filter expression is "Revenue > Cost". When the security filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), (">", GreaterThan_ID), ("Cost", Cost_ID).
+  Tokens are a semi-structured representation of Strategy expression text that includes object references. For example, let's say a security filter expression is "Revenue > Cost". When the security filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), (">", GreaterThan_ID), ("Cost", Cost_ID).
 
 If omitted, the custom expression is returned in "text" format.
 

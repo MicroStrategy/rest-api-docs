@@ -1,17 +1,17 @@
 ---
 title: Field selection for data API v2 result-fetching endpoints
-description: For Data API v2 result-fetching endpoints, the MicroStrategy REST API provides a specialized flavor of field selection support. It is tailored for Data API specific use cases using a similar syntax.
+description: For Data API v2 result-fetching endpoints, the Strategy REST API provides a specialized flavor of field selection support. It is tailored for Data API specific use cases using a similar syntax.
 ---
 
 :::tip
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-a6457d75-f616-4092-9485-e6007627b73d?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-For Data API v2 result-fetching endpoints, the MicroStrategy REST API provides a specialized flavor of field selection support. It is tailored for Data API specific use cases using a similar syntax.
+For Data API v2 result-fetching endpoints, the Strategy REST API provides a specialized flavor of field selection support. It is tailored for Data API specific use cases using a similar syntax.
 
 The endpoints are:
 
@@ -27,7 +27,7 @@ The endpoints are:
 Keep in the mind the following specific considerations for Data API v2 result-fetching endpoints:
 
 - When performance is a concern, we encourage reducing computations. Rather than just transferring data to the client, use existing [filter functionality](../../common-workflows/analytics/filter-data/filter-data.md), such as `requestedObjects`, view filters, and metric limits.
-- General top-level field selection has been supported since the MicroStrategy 2020 release. However, for the Data API, you rarely exclude top-level fields. If the client only needs a definition, and not data, it is simpler to use the Get Definition endpoints instead.
+- General top-level field selection has been supported since the Strategy 2020 release. However, for the Data API, you rarely exclude top-level fields. If the client only needs a definition, and not data, it is simpler to use the Get Definition endpoints instead.
 - Using field selection instead of the recommended ways above, while reducing data transfer size, may lead to unused computations and unnecessary post-computation filtering costs. This is suboptimal in terms of performance.
 
 Therefore, general field selection is designed to not apply to these endpoints. On the other hand, we are also aware of valid client use cases and make them possible through field selection syntax in a disciplined way.
@@ -45,9 +45,9 @@ Some things to keep in mind:
 
 ## Supported rule: Filtering metric value representations and other per metric-cell information
 
-MicroStrategy Library Server 2020 Update 2 and above
+Strategy Library Server 2020 Update 2 and above
 
-MicroStrategy Intelligence Server 2020 Update 2 and above
+Strategy Intelligence Server 2020 Update 2 and above
 
 By default, metric values are returned in both raw representation (data.metricValues.raw) and formatted representation (`data.metricValues.formatted`). Other metric cell information under extras, such as optional thresholds, are returned as well.
 
@@ -59,7 +59,7 @@ Clients can request part of these fields by using the following exclusion rules:
 
 Exclusion rules can significantly improve the performance of certain clients, such as the ones mentioned below, roughly halving the size of data transfers:
 
-- Frontend apps and exporters that render results similarly as MicroStrategy client products, by focusing on human-reader formatted values that can be rendered directly. These frontend apps and exporters may need extras for determining advanced formatting.
+- Frontend apps and exporters that render results similarly as Strategy client products, by focusing on human-reader formatted values that can be rendered directly. These frontend apps and exporters may need extras for determining advanced formatting.
 
 - Data connectors that focus on raw values are compact and easily parsed and post-processed.
 

@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to create a new table object 
 
 You can try this workflow with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-69df2b48-9b7c-4f35-9b80-15c9066d48b0?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -18,7 +18,7 @@ This workflow sample demonstrates how to create a new table object through the M
 
 ## Create a new table object
 
-In this workflow sample, you create a new `"CITY_CTR_SLS"` table object in the MicroStrategy Tutorial project. Table name should be unique within the project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`. All schema tables are created under the objects/tables folder schema.
+In this workflow sample, you create a new `"CITY_CTR_SLS"` table object in the Strategy Tutorial project. Table name should be unique within the project. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`. All schema tables are created under the objects/tables folder schema.
 
 Get the authorization token needed to execute the request with [POST /api/auth/login]([https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 

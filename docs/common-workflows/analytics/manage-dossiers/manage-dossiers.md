@@ -1,6 +1,6 @@
 ---
 title: Manage dashboards
-Description: Manage dashboards using the MicroStrategy REST API.
+Description: Manage dashboards using the Strategy REST API.
 ---
 
 <Available since="2021 Update 10" />

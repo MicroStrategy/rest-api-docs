@@ -10,13 +10,13 @@ description: This workflow sample demonstrates how to retrieve the query details
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-b0ee6146-bd68-4aae-adfb-ef186d9e26ee?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 This workflow sample demonstrates how to retrieve the query details of grids and graphs in a document instance.
 
-You want to view query details of grids and graphs in the Cost Analysis Document in the MicroStrategy Tutorial project. The object ID of the document is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
+You want to view query details of grids and graphs in the Cost Analysis Document in the Strategy Tutorial project. The object ID of the document is `D14F30994A4B97AD8EF6AEA5F589E30B`. The project ID is `B7CA92F04B9FAE8D941C3E9B7E0CD754`.
 
 :::tip
 
