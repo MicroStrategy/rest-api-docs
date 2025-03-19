@@ -10,7 +10,7 @@ description: You can use REST APIs to retrieve the definition for a consolidatio
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d0ad5e63-76a5-47c8-b185-1f5781a443f6?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

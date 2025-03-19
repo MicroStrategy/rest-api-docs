@@ -9,7 +9,7 @@ description: A value prompt allows the results to be filtered based on a specifi
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-30ed13b7-880a-4b38-bdf7-363d868bf70c?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

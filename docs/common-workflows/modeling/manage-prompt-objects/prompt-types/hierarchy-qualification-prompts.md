@@ -7,7 +7,7 @@ description: A hierarchy qualification prompt allows users to filter data in a r
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c7bb0522-b646-4b0a-93a1-159c55b3af82?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

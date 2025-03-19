@@ -3,7 +3,7 @@ title: Question with Bot Routing APIs
 description: This page contains a summary of REST APIs for the "questions" endpoint. You can use REST API requests to ask question with bot routing.
 ---
 
-<Available since="MicroStrategy ONE (June 2024)" />
+<Available since="Strategy ONE (June 2024)" />
 
 With our newly added question with bot routing APIs, you can inquire all bots within the entire application without the need to manually identify the appropriate bot. The API automatically determines the most suitable bot to address your questions. Additionally, you have the option to specify the search scope using content groups and bot IDs for more accurate responses.
 

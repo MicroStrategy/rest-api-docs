@@ -8,7 +8,7 @@ This interactive REST API sample highlights the ability to create reports on the
 
 This sample gets data from an Intelligent cube or a report. It uses the attributes and metrics from the report definition to populate two list boxes. When a user selects attributes and metrics from the list boxes, an ad-hoc report is run on the cube and the results are displayed. A specified number of rows are returned, with additional rows displayed each time the user clicks the forward and backward arrows. Two types of view filters allow the user to narrow the results that are displayed. An auto-load button lets a user decide whether to automatically apply changes as they are made.
 
-You can [view a live demo](https://microstrategy.github.io/data-api-demo/site/) of the sample. You can also [download the code](https://github.com/microstrategy/data-api-demo/) for this sample to help you understand and use MicroStrategy REST APIs in your application.
+You can [view a live demo](https://microstrategy.github.io/data-api-demo/site/) of the sample. You can also [download the code](https://github.com/microstrategy/data-api-demo/) for this sample to help you understand and use Strategy REST APIs in your application.
 
 ## Understand the REST API workflow in the sample
 
@@ -16,7 +16,7 @@ This sample uses REST APIs to authenticate the user, get a list of reports and c
 
 **1.** `POST /api/auth/login`
 
-This REST API authenticates a user. It creates a MicroStrategy session using credentials for the user and a specified authentication mode. It returns an authorization token, which is used by subsequent REST API calls. In this sample, the API is used to create a configuration session.
+This REST API authenticates a user. It creates a session using credentials for the user and a specified authentication mode. It returns an authorization token, which is used by subsequent REST API calls. In this sample, the API is used to create a configuration session.
 
 **2.** `GET /api/searches/results`
 
@@ -57,7 +57,7 @@ The config.js file is used to configure the sample for your environment. Set val
 | Variable name | Variable description                                                                                                                               |
 | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------- |
 | restServerURL | Base URL of the REST API. For example, `http://localhost:8080/MicroStrategyLibrary/api`. The REST API endpoints will be appended to this base URL. |
-| projectId     | ID of the MicroStrategy project that will be used by the REST API endpoints. For example, "B19DEDCC11D4E0EFC000EB9495D0F44F".                      |
+| projectId     | ID of the project that will be used by the REST API endpoints. For example, "B19DEDCC11D4E0EFC000EB9495D0F44F".                                    |
 | username      | Username that will be authenticated. The default value is "administrator".                                                                         |
 | password      | Password for username that will be authenticated.                                                                                                  |
 | cubes         | Array of cube IDs. These cubes are listed in the Datasets panel on the left of the sample, under Cubes. Be sure to use valid cube IDs.             |

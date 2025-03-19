@@ -1,11 +1,11 @@
 ---
 title: Retrieve history lists
-Description: Retrieve history lists using the MicroStrategy REST API.
+Description: Retrieve history lists using the Strategy REST API.
 ---
 
 <Available since="2021 Update 8" />
 
-This workflow sample demonstrates how to retrieve messages from the history list using the MicroStrategy REST API.
+This workflow sample demonstrates how to retrieve messages from the history list using the Strategy REST API.
 
 :::info
 

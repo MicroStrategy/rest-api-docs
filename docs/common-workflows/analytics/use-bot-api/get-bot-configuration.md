@@ -4,7 +4,7 @@ title: Get a chat bot's configuration
 description: This workflow sample demonstrates how to get a chat bot's configuration.
 ---
 
-<Available since="MicroStrategy ONE (March 2024)" />
+<Available since="Strategy ONE (March 2024)" />
 
 This workflow sample demonstrates how to get a chat bot's configuration.
 

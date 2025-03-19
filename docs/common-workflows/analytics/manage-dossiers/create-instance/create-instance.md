@@ -11,7 +11,7 @@ This workflow sample demonstrates how to create an instance of a dashboard in me
 
 You can try this API with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/request/16131298-c530c47a-845f-4231-b071-2247bd846c66).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

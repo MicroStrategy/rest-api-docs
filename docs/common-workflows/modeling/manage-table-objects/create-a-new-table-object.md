@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to create a new table object 
 
 You can try this workflow with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-69df2b48-9b7c-4f35-9b80-15c9066d48b0?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

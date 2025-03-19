@@ -1,17 +1,17 @@
 ---
  title: Retrieve the hierarchy of document
- Description: Retrieve the hierarchy of document using the MicroStrategy REST API.
+ Description: Retrieve the hierarchy of document using the Strategy REST API.
 ---
 
  <Available since="2021 Update 10" />
 
 :::tip
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-This workflow sample demonstrates how to retrieve the document definition directly using the MicroStrategy REST API.
+This workflow sample demonstrates how to retrieve the document definition directly using the Strategy REST API.
 
 You want to retrieve the document's definition from “MicroStrategy Tutorial“ project. The document ID is `643209B54CC84199C48A238ACB6CB621`. The project ID is `B19DEDCC11D4E0EFC000EB9495D0F44F`.
 

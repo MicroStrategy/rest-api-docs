@@ -48,7 +48,7 @@ content-type: application/json
 date: Thu,09 Feb 2023 06:16:42 GMT
 expires: 0
 pragma: no-cache
-server: MicroStrategy
+server: Strategy
 strict-transport-security: max-age=31536000;includeSubDomains
 x-content-type-options: nosniff
 x-mstr-ms-instance: 35DCAB983549ECD49FC20F9AB0CC4C28

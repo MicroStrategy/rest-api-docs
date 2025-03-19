@@ -10,4 +10,4 @@ You can use the following REST APIs to filter the data that is returned when you
 
 We have provided a [workflow sample](apply-filters-to-a-dossier.md) that illustrates how to create an instance of a dashboard with an existing filter applied, and then re-execute the same dashboard instance with updated selections for the same filter.
 
-For detailed information about filtering data in dashboards, see the [MicroStrategy product help](https://www2.microstrategy.com/producthelp/current/MSTRWeb/WebHelp/Lang_1033/Content/filter_data.htm).
+For detailed information about filtering data in dashboards, see the [Strategy product help](https://www2.microstrategy.com/producthelp/current/MSTRWeb/WebHelp/Lang_1033/Content/filter_data.htm).

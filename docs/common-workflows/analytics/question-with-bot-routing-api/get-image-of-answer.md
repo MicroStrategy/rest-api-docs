@@ -4,7 +4,7 @@ title: Get an image of an answer related to a question with bot routing
 description: This workflow sample demonstrates how to get an image of an answer related to a question with bot routing.
 ---
 
-<Available since="MicroStrategy ONE (June 2024)" />
+<Available since="Strategy ONE (June 2024)" />
 
 This workflow sample demonstrates how to get an image of an answer related to a question with bot routing.
 

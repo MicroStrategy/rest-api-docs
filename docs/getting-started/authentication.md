@@ -6,7 +6,7 @@ description: The REST API provides authentication endpoints to initiate a sessio
 
 The REST API provides authentication endpoints to initiate a session with the Intelligence Server. It supports multiple authentication modes such as Standard, LDAP, SAML, and so on.
 
-The diagram below shows the workflow when the MicroStrategy REST API is used to authenticate a user.
+The diagram below shows the workflow when the Strategy REST API is used to authenticate a user.
 
 ![REST_Login_Workflow](../images/REST_Login_Workflow.png)
 
@@ -18,7 +18,7 @@ The diagram below shows the workflow when the MicroStrategy REST API is used to 
 
 :::tip
 
-The MicroStrategy REST server maintains an HTTP session for every client connecting to it.
+The Strategy REST server maintains an HTTP session for every client connecting to it.
 
 :::
 
@@ -30,7 +30,7 @@ Once the REST API layer has validated the user's credentials using the specified
 
 - **Session cookie**
 
-The MicroStrategy REST framework currently relies on an HTTP session. The Java EE server (for example, Tomcat) sends a session cookie in the response header for the client to maintain. If a browser is handling requests, it will also handle the cookies. However, if you are using your own client, you need to maintain the cookie and include it in further requests, together with the authorization token.
+The Strategy REST framework currently relies on an HTTP session. The Java EE server (for example, Tomcat) sends a session cookie in the response header for the client to maintain. If a browser is handling requests, it will also handle the cookies. However, if you are using your own client, you need to maintain the cookie and include it in further requests, together with the authorization token.
 
 - **Session timeout**
 

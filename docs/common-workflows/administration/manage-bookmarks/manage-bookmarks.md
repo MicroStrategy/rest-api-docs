@@ -1,6 +1,6 @@
 ---
 title: Manage Bookmarks
-Description: Manage bookmarks using the MicroStrategy REST API.
+Description: Manage bookmarks using the Strategy REST API.
 ---
 
 You can use REST API requests to manage bookmarks:

@@ -7,7 +7,7 @@ description: You can use REST API requests to filter data that is returned and t
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-b0a16367-8997-447d-8731-2d6281d4f9bc?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -39,7 +39,7 @@ You can use the following REST APIs to [filter the data that is returned when yo
 
 We have provided a [workflow sample](filter-dossier-instances/apply-filters-to-a-dossier.md) that illustrates how to create an instance of a dashboard with an existing filter applied, and then re-execute the same dashboard instance with updated selections for the same filter.
 
-For detailed information about filtering data in dashboards, see the [MicroStrategy product help](https://www2.microstrategy.com/producthelp/Current/MSTRWeb/WebHelp/Lang_1033/Content/filter_data.htm).
+For detailed information about filtering data in dashboards, see the [Strategy product help](https://www2.microstrategy.com/producthelp/Current/MSTRWeb/WebHelp/Lang_1033/Content/filter_data.htm).
 
 ### Retrieve filters applied in dashboard chapters
 

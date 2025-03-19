@@ -15,7 +15,7 @@ A detailed description of each step of this request is listed down below.
 
 Endpoint: [PATCH /api/datasources/\{datasourceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/updateDatasource)
 
-This endpoint allows the caller to update a database source with the MicroStrategy REST Server. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. You can find the datasourceId using the endpoint `GET /api/datasources`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a info for the updated database source.
+This endpoint allows the caller to update a database source with the Strategy REST Server. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. You can find the datasourceId using the endpoint `GET /api/datasources`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing a info for the updated database source.
 
 Sample Request
 
@@ -100,7 +100,7 @@ Sample Response
 
 Endpoint: [PATCH /api/datasources/connections/\{connectionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/updateDatasourceConnection)
 
-This endpoint allows the caller to update a datasource connection with the MicroStrategy REST Server. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. You can find the connectionId using the endpoint `GET /api/datasources/connections`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing info for the updated datasource connection.
+This endpoint allows the caller to update a datasource connection with the Strategy REST Server. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. You can find the connectionId using the endpoint `GET /api/datasources/connections`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing info for the updated datasource connection.
 
 Sample Request
 
@@ -183,7 +183,7 @@ Sample Response
 
 Endpoint: [PATCH /api/datasources/logins/\{loginId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management/updateDatasourceLogin)
 
-This endpoint allows the caller to update a datasource login with the MicroStrategy REST Server. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. You can find the loginId using the endpoint `GET /api/datasources/logins`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing info for the updated datasource login.
+This endpoint allows the caller to update a datasource login with the Strategy REST Server. You use the authorization token returned during login as the value for `X-MSTR-AuthToken`. You can find the loginId using the endpoint `GET /api/datasources/logins`. If the call is successful, the resulting HTTP response returns an HTTP status code 200 and a response body containing info for the updated datasource login.
 
 Sample Request
 

@@ -2,7 +2,7 @@
   "data": [
     {
       "id": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
-      "name": "MicroStrategy REST API",
+      "name": "Strategy REST API",
       "folders_order": [
         "c3e9496b-0d87-4a9e-908c-2ac6072cc4ac",
         "e1477e3c-37b0-4778-8729-1dd86275ee70",
@@ -7975,7 +7975,7 @@
             },
             {
               "id": "16131298-ac58f345-f38f-4703-abf6-5cf4900b8ca9",
-              "name": "Update MicroStrategy Web configuration settings",
+              "name": "Update Web configuration settings",
               "method": "PUT",
               "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
               "folder": "16131298-c75abd47-feaf-44cb-ae44-59232bbfe566",
@@ -8208,7 +8208,7 @@
             },
             {
               "id": "16131298-e2d1b1d8-b956-49ab-ae90-d1fc4200e853",
-              "name": "Update MicroStrategy Web configuration settings",
+              "name": "Update Web configuration settings",
               "method": "PUT",
               "collection": "16131298-15ac2bcb-1b3c-4be4-81b2-c3defec602ad",
               "folder": "16131298-c75abd47-feaf-44cb-ae44-59232bbfe566",
@@ -11550,7 +11550,7 @@
     },
     {
       "id": "16131298-9ba9a108-18ee-438e-8f4f-df058f265f1b",
-      "name": "MicroStrategy REST API Workflows",
+      "name": "Strategy REST API Workflows",
       "folders_order": [
         "b999a521-d7c7-45b6-9da8-41e22b5491ec",
         "6aebd4c5-6eae-4ce4-9ecc-4c8769f68208",

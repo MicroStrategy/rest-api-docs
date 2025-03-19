@@ -10,13 +10,13 @@ description: You can use REST APIs to retrieve the definition for a partition ma
 
 You can try this workflow with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-43769ee1-7480-4413-990a-13b50119b384).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-You can use REST APIs to retrieve the definition for a partition mapping table through the Modeling service. A brief introduction of partition mapping is provided in this documentation. To learn more about partition mapping, refer to [Microstrategy Community](https://www2.microstrategy.com/producthelp/Current/ProjectDesignGuide/WebHelp/Lang_1033/Content/Dividing_tables_to_increase_performance__Partition.htm).
+You can use REST APIs to retrieve the definition for a partition mapping table through the Modeling service. A brief introduction of partition mapping is provided in this documentation. To learn more about partition mapping, refer to [Strategy Community](https://www2.microstrategy.com/producthelp/Current/ProjectDesignGuide/WebHelp/Lang_1033/Content/Dividing_tables_to_increase_performance__Partition.htm).
 
-The partitioning feature improves query performance when working with large data volumes. Partitioning "breaks" the data into different (ideally balanced) portions, and each portion is called a partition base table (PBT), or a partition table. In other words, a partition table is a warehouse table that contains one part of a larger set of data. To manage which partition table to use for a given query, partition mapping is introduced by MicroStrategy to identify and keep track of the partitioned base tables as part of a logical whole. MicroStrategy supports two types of partition mapping:
+The partitioning feature improves query performance when working with large data volumes. Partitioning "breaks" the data into different (ideally balanced) portions, and each portion is called a partition base table (PBT), or a partition table. In other words, a partition table is a warehouse table that contains one part of a larger set of data. To manage which partition table to use for a given query, partition mapping is introduced by Strategy to identify and keep track of the partitioned base tables as part of a logical whole. Strategy supports two types of partition mapping:
 
 **Warehouse partition mapping (WHPM)**: uses a specialized warehouse table (WHPM table) to determine which table to access
 

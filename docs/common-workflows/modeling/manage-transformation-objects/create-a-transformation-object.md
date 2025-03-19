@@ -10,7 +10,7 @@ description: The workflow to create a transformation object.
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ad947705-6f6c-433c-ae10-cfe90ba9a364?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -38,7 +38,7 @@ To create a transformation, in the request body, `"attributes"` contains a list 
 
 `"forms"`: A list of transformation attribute forms, which are generated according to the base attribute key form. Each transformation attribute form contains a `"lookupTable"` and `"expression"`. The `"expression"` needs to be in either `"tree"` or `"tokens"` format.
 
-Tokens are a semi-structured representation of a MicroStrategy expression text including object references. For example, let’s say a filter expression is `"Revenue > Cost"`. When represented as tokens, the text is broken down into pieces (tokens) with information of what these parts represent in the metadata: (`"Revenue"`, `Revenue_ID`), (`">"`, `GreaterThan_ID`), (`"Cost"`, `Cost_ID`)
+Tokens are a semi-structured representation of a expression text including object references. For example, let’s say a filter expression is `"Revenue > Cost"`. When represented as tokens, the text is broken down into pieces (tokens) with information of what these parts represent in the metadata: (`"Revenue"`, `Revenue_ID`), (`">"`, `GreaterThan_ID`), (`"Cost"`, `Cost_ID`)
 
 `"mappingType"`: Defines a mapping relationship. This can be either `“one_to_one”` or `“many_to_many”`.
 

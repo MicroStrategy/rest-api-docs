@@ -9,7 +9,7 @@ description: Within a cluster, fences allows an administrator or a user with Dss
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-2564e447-4b77-42c9-99a4-97d7979b348c?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -31,7 +31,7 @@ Manage User and Workload Fences REST APIs were released in 2021 Update 6
 
 :::
 
-You can use REST API requests to retrieve, create, update, and delete the user and workload fences with [DssXmlPrivilegesConfigureServerBasic](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesConfigureServerBasic) and [DssXmlPrivilegesUseClusterMonitor](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesUseClusterMonitor) privileges across all nodes without restarting the clustered MicroStrategy Intelligence Servers.
+You can use REST API requests to retrieve, create, update, and delete the user and workload fences with [DssXmlPrivilegesConfigureServerBasic](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesConfigureServerBasic) and [DssXmlPrivilegesUseClusterMonitor](https://www2.microstrategy.com/producthelp/Current/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPrivilegeTypes.html#DssXmlPrivilegesUseClusterMonitor) privileges across all nodes without restarting the clustered Intelligence Servers.
 
 - [Create a new fence](create-fence.md)
 - [Retrieve the list of fences](retrieve-list-of-fences.md)

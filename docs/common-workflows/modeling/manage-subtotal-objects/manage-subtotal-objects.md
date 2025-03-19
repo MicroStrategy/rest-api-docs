@@ -9,7 +9,7 @@ description: Subtotals allow you to dynamically control the computation and disp
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-0e8e2533-03d6-4235-8aa0-6aef1cc2e723?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -34,7 +34,7 @@ There are three important fields in the API response body defined for a subtotal
 
   :information_source: **Info**
 
-  Tokens are a semi-structured representation of a MicroStrategy expression text that includes object references. When the subtotal’s expression is represented as tokens, the text is broken down into pieces, or tokens, with information about what these pieces represent in the metadata.
+  Tokens are a semi-structured representation of a expression text that includes object references. When the subtotal’s expression is represented as tokens, the text is broken down into pieces, or tokens, with information about what these pieces represent in the metadata.
 
   :::
 

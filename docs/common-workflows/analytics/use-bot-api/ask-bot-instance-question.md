@@ -4,11 +4,11 @@ title: Ask the bot instance a question
 description: This workflow sample demonstrates how to ask the bot instance a question.
 ---
 
-<Available since="MicroStrategy ONE (March 2024)" />
+<Available since="Strategy ONE (March 2024)" />
 
 :::caution
 
-This API is planned for future retirement. Therefore, MicroStrategy recommends that you transition to the [Ask Question to Bots in the Application API](../question-with-bot-routing-api/ask-question-to-bots-in-the-application) for bot-related workflows.
+This API is planned for future retirement. Therefore, Strategy recommends that you transition to the [Ask Question to Bots in the Application API](../question-with-bot-routing-api/ask-question-to-bots-in-the-application) for bot-related workflows.
 
 Using Ask Question to Bots in the Application API:
 

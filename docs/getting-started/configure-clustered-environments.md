@@ -3,7 +3,7 @@ title: Configure clustered environments
 description: This page provides information for clustered environment configuration.
 ---
 
-The MicroStrategy REST platform provides a highly scalable solution to meet your performance needs by installing multiple instances of REST servers that can communicate with an Intelligence Server cluster.
+The Strategy REST platform provides a highly scalable solution to meet your performance needs by installing multiple instances of REST servers that can communicate with an Intelligence Server cluster.
 
 ![REST Configuration](../images/REST_Configuration.png)
 
@@ -22,9 +22,9 @@ You must configure certain properties for horizontal scaling of REST Servers.
   - /WEB-INF/classes/config/\*
   - /WEB-INF/classes/auth/\*
 
-- The MicroStrategyLibrary REST Server provides an admin page to modify some of the configuration settings.
+- The StrategyLibrary REST Server provides an admin page to modify some of the configuration settings.
 
-  The MicroStrategy REST Server contains default values for configuration in …/config/configDefaults.properties. The configDefaults.properties file contains key-value pairs of configuration options. To specify a configuration option, the desired key can be copied from the configDefaults.properties file, and saved into configOverride.properties with a different value.
+  The Strategy REST Server contains default values for configuration in …/config/configDefaults.properties. The configDefaults.properties file contains key-value pairs of configuration options. To specify a configuration option, the desired key can be copied from the configDefaults.properties file, and saved into configOverride.properties with a different value.
 
   However, if you use this method to make configuration changes and your REST Server is running in a clustered environment, only one of the nodes in the cluster is modified. To resolve this problem, you can use a shared drive across all nodes via Mount or Symbolic links. If you use Symbolic links, you need to enable the Tomcat property allowLinking. Refer to the Apache Tomcat Configuration Reference.
 

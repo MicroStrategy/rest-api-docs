@@ -62,7 +62,7 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: "MicroStrategy Developer",
+          alt: "Strategy Developer",
           src: "img/dev-docs-logo.png",
           href: "https://microstrategy.github.io/",
         },

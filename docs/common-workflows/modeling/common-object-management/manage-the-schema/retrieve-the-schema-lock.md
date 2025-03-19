@@ -51,7 +51,7 @@ Sample Response Body:
 {
   "lockType": "exclusive_constituent",
   "dateCreated": "2021-03-24T01:39:04",
-  "comment": "<COMMENTS><PRODUCT>MicroStrategy Modeling Service</PRODUCT><COMPONENT>MicroStrategy Modeling Service</COMPONENT><LOCKID>E723124CEE0E481FBC8AC539D89C6A67</LOCKID></COMMENTS>",
+  "comment": "<COMMENTS><PRODUCT>Strategy Modeling Service</PRODUCT><COMPONENT>Strategy Modeling Service</COMPONENT><LOCKID>E723124CEE0E481FBC8AC539D89C6A67</LOCKID></COMMENTS>",
   "machineName": "env-247993laiouse1",
   "ownerName": "MSTR User",
   "ownerId": "7FC05A65473CE2FD845CE6A1D3F13233"

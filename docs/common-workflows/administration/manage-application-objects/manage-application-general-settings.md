@@ -891,7 +891,7 @@ Sample Response Body:
         "showMobileButton": true,
         "showReminder": true,
         "showSentBy": true,
-        "sentByText": "MicroStrategy Inc.",
+        "sentByText": "Strategy Inc.",
         "showSocialMedia": true
       }
     }

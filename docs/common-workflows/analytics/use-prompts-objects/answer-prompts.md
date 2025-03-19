@@ -122,7 +122,7 @@ This endpoint allows the caller to export the document to a PDF file (in the for
 
 You can use REST APIs to provide prompt answers for three types of prompts applied to dashboards, documents, and reports. For these three prompt types, you can provide specific answers to prompts, choose to [use default prompt answers](#use-default-prompt-answers), or [close optional prompts without providing answers](#close-prompts-without-answers). You can also reset the status so that the dashboard, document, or report will be re-prompted the next time it is run.
 
-The prompts supported in the MicroStrategy platform are defined in [EnumDSSXMLPromptType.](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPromptType.html)
+The prompts supported in the Strategy platform are defined in [EnumDSSXMLPromptType.](https://www2.microstrategy.com/producthelp/2021/WebAPIReference/com/microstrategy/webapi/EnumDSSXMLPromptType.html)
 
 You use the following REST API endpoints to answer a prompt applied to a dashboard, document, or report:
 

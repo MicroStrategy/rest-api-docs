@@ -1,9 +1,9 @@
 ---
 title: Manage selectors
-description: The MicroStrategy RESTful server supports different types of selectors, similar to the function in MicroStrategy Library Web.
+description: The Strategy RESTful server supports different types of selectors, similar to the function in Library Web.
 ---
 
-The MicroStrategy RESTful server supports different types of selectors, similar to the function in MicroStrategy Library Web.
+The Strategy RESTful server supports different types of selectors, similar to the function in Library Web.
 
 The following five selector types are supported:
 

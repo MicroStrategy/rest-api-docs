@@ -7,7 +7,7 @@ description: An attribute qualification prompt is a restrictive type prompt that
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-ac7cde77-bb20-4c51-86e3-a457f5b8f43f?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

@@ -749,7 +749,7 @@ Sample Request Header:
 
 ## Performance
 
-For performance concerns, MicroStrategy suggests you create or import one package per session and time.
+For performance concerns, Strategy suggests you create or import one package per session and time.
 
 ## Compatibility
 
@@ -776,7 +776,7 @@ A package created in an earlier platform version can be imported to a newer plat
 ## Troubleshooting
 
 - If the Library Server cannot connect to the database, you may receive the following error response:
-  - The API requires MicroStrategy Storage Service. Please contact your administrator.
+  - The API requires Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
     - Database not running
     - Database version is lower than required

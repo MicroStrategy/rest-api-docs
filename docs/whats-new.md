@@ -79,7 +79,7 @@ Description: What's New in the REST API.
 - [Create and edit incremental refresh reports (IRR).](common-workflows/analytics/manage-reports/manage-incremental-refresh-report/manage-incremental-refresh-report.md)
 - [Create and manage cube objects](common-workflows/analytics/manage-datasets/manage-cube-objects/manage-cube-objects.md) with advanced properties.
 - [Create and manage SAP HANA tables with input parameters using the modeling schema.](common-workflows/modeling/manage-table-objects/manage-table-objects.md)
-- [Create and import migration packages](common-workflows/administration/migrations/migrations-in-workstation/migrations-in-workstation.md) just as in Workstation. This allows all packages to be managed by the MicroStrategy Storage Service so migration processes can be monitored in Workstation.
+- [Create and import migration packages](common-workflows/administration/migrations/migrations-in-workstation/migrations-in-workstation.md) just as in Workstation. This allows all packages to be managed by the Storage Service so migration processes can be monitored in Workstation.
 
 ## 2021 Update 5
 
@@ -141,14 +141,14 @@ Description: What's New in the REST API.
 - Enhancement to APIs returning data from reports and cubes to allow the modification of attribute and metric template positioning.
 - Enhancement to APIs that execute reports, cubes, and dashboards to allow the request for asynchronous executions.
 - [Monitor and manage cubes](common-workflows/administration/monitors/monitor-and-manage-cube-caches.md). This includes viewing and changing the status of a cube.
-- Additional [server](common-workflows/administration/server-management/manage-server-settings.md) and [application level settings](common-workflows/analytics/project-management/manage-project-settings.md) from MicroStrategy Developer are available in MicroStrategy Workstation.
+- Additional [server](common-workflows/administration/server-management/manage-server-settings.md) and [application level settings](common-workflows/analytics/project-management/manage-project-settings.md) from MicroStrategy Developer are available in Workstation.
 - Ability to [request object lineage information](common-workflows/analytics/object-discovery/data-lineage-analysis-via-rest-apis.md).
 - Create, list, and delete multi-content subscriptions.
 
 ## 2020 Update 2
 
 - [Asynchronously extract data from reports, cubes. and dashboards.](common-workflows/analytics/retrieve-data-from-the-intelligence-server/asynchronous-execution-of-reports-and-cubes.md)
-- [Exclude raw or formatted values](https://community.microstrategy.com/s/article/KB484350-Data-API-Filtering-Enhancement-to-Improve-Performance-in-MicroStrategy-2020-Update-2) to reduce the volume of data transferred when using report, cube, and dashboard data APIs.
+- [Exclude raw or formatted values](https://community.microstrategy.com/s/article/KB484350-Data-API-Filtering-Enhancement-to-Improve-Performance-in-Strategy-2020-Update-2) to reduce the volume of data transferred when using report, cube, and dashboard data APIs.
 - List available schedules and schedule metadata, such as schedule type and next delivery.
 - List subscriptions and their recipients, content, and delivery information.
 - Delete subscriptions.
@@ -183,7 +183,7 @@ Description: What's New in the REST API.
 
 - [Push Data API has been enhanced](common-workflows/analytics/manage-datasets/make-external-data-available/create-a-dataset-incrementally-with-multiple-requests/create-a-dataset-incrementally-with-multiple-requests.md).
 
-The ability to make external data available to MicroStrategy—often referred to as the Push Data API—has been enhanced. The newest version of the Push Data API supports complex scenarios where a large number of columns/metrics need to be managed at a different update/load/refresh schedule. This is accomplished by separating dataset definition, data upload, and dataset creation, using multiple requests to incrementally add data before publication.
+The ability to make external data available to Strategy—often referred to as the Push Data API—has been enhanced. The newest version of the Push Data API supports complex scenarios where a large number of columns/metrics need to be managed at a different update/load/refresh schedule. This is accomplished by separating dataset definition, data upload, and dataset creation, using multiple requests to incrementally add data before publication.
 
 Performance was significantly improved for [Data import using the Push Data API (with multiple requests)](common-workflows/analytics/filter-data/filter-data.md), and issues were addressed for stability improvements.
 
@@ -211,7 +211,7 @@ The REST API has been enhanced to support the ability to pass filters into the R
 
 - The stand-alone JSON Data API Server has been removed.
 
-The [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server.md) is made up of four different MicroStrategy API families. All of these families are part of the MicroStrategy REST Server, which is shipped inside the MicroStrategyLibrary.war web application.
+The [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server.md) is made up of four different Strategy API families. All of these families are part of the Strategy REST Server, which is shipped inside the MicroStrategyLibrary.war web application.
 
 ## 10.10
 
@@ -221,7 +221,7 @@ The [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligen
 
 ## 10.9
 
-- The MicroStrategy REST API has been unified and expanded to include the following [REST API families](getting-started/rest-api-families.md):
+- The Strategy REST API has been unified and expanded to include the following [REST API families](getting-started/rest-api-families.md):
   - Authentication API
   - Browsing API
   - Cubes API
@@ -237,12 +237,12 @@ The [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligen
   - System Administration API
   - User Management API
 - The /reports endpoint accepts the `requestedObjects` parameter, allowing the caller to dynamically decide which objects to include on the template when the data is returned. Previously, only the /cubes endpoint accepted the `requestedObjects` parameter. However ,there is a difference in the implementation for reports and cubes. When `requestedObjects` is null for the /reports endpoint, the result of the original template is returned and nothing is done; for the /cubes endpoint, all attributes and metrics in the working set are added to the template and the result is run.
-- You can view and use all of the MicroStrategy REST API endpoints in the [MicroStrategy REST API Explorer](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/).
-- Quick Start Guides illustrate how to use the MicroStrategy REST API for common workflows, including [folder browsing](common-workflows/analytics/object-discovery/folder-browsing.md), [searcommon-workflows/modeling/object-discovery/search-for-objects.mdects.md), creating and modifying datasets, and [exporting a document to PDF](common-workflows/analytics/export-to-pdf.md).
-- The JSON Data API and Push Data API are part of the unified MicroStrategy REST platform. This platform is contained within the MicroStrategyLibrary war file, which can be deployed to application servers.
+- You can view and use all of the Strategy REST API endpoints in the [Strategy REST API Explorer](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/).
+- Quick Start Guides illustrate how to use the Strategy REST API for common workflows, including [folder browsing](common-workflows/analytics/object-discovery/folder-browsing.md), [searcommon-workflows/modeling/object-discovery/search-for-objects.mdects.md), creating and modifying datasets, and [exporting a document to PDF](common-workflows/analytics/export-to-pdf.md).
+- The JSON Data API and Push Data API are part of the unified Strategy REST platform. This platform is contained within the StrategyLibrary war file, which can be deployed to application servers.
 - The current packaging of the [JSON Data API](common-workflows/analytics/retrieve-data-from-the-intelligence-server/retrieve-data-from-the-intelligence-server.md) (jar deployment) has been deprecated. It will be supported until the next platform release.
-- X-MSTR-ProjectID has been added for every endpoint to provide context. The X-MSTR-AuthToken stores a reference to all of the user's sessions in memory on the MicroStrategy REST Server, abstracting project session creation and management from the end user.
-- The result format for error cases has been changed. This information is available in the [MicroStrategy REST API Explorer](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/).
+- X-MSTR-ProjectID has been added for every endpoint to provide context. The X-MSTR-AuthToken stores a reference to all of the user's sessions in memory on the Strategy REST Server, abstracting project session creation and management from the end user.
+- The result format for error cases has been changed. This information is available in the [Strategy REST API Explorer](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/).
 - The version information included in the contentType and Accept headers has been removed.
 
 ## 10.8

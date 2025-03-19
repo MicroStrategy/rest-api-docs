@@ -10,11 +10,11 @@ sidebar_label: Purge object and element caches
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-7238f434-a209-45b1-a227-cba9887c20b4?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-When a user works with MicroStrategy, cache data is created. The data stored in the cache allows to increase system performance and improve user’s experience. Instead of loading the data required by system from some database, i.e., meta-data database, the data is retrieved from a cache memory. However, Platform Administrator or Analytics Architect may decide to purge the caches periodically. Currently, the REST API allows to delete cache data for objects and elements using a following endpoint:
+When a user works with Strategy, cache data is created. The data stored in the cache allows to increase system performance and improve user’s experience. Instead of loading the data required by system from some database, i.e., meta-data database, the data is retrieved from a cache memory. However, Platform Administrator or Analytics Architect may decide to purge the caches periodically. Currently, the REST API allows to delete cache data for objects and elements using a following endpoint:
 
 - `DELETE /api/monitors/projects/{projectId}/cache/{cacheType}`
 
@@ -31,7 +31,7 @@ The sections below present Cache Management REST API usage.
 ### Header
 
 - `X-MSTR-AuthToken`
-  - (Required) MicroStrategy authorization token.
+  - (Required) authorization token.
   - Data Type: `string`
   - Allowable Values: valid authorization token.
 

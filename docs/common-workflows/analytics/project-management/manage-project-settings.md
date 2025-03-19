@@ -9,7 +9,7 @@ description: A high-level workflow sample for managing project settings is shown
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-d30bab86-7c75-4b05-88d2-35ca2091e983?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -19,7 +19,7 @@ A high-level workflow sample for managing project settings is shown below. The s
 
 Endpoint: [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin)
 
-This endpoint allows the user to authenticate with the MicroStrategy REST Server. You can provide the information used to create the session in the body of the request. In this example, you can use standard authentication, so you need to provide the username and password. If the call is successful, the resulting response returns a status code of 204 and a response header containing X-MSTR-AuthToken. This authorization token is used by all subsequent requests.
+This endpoint allows the user to authenticate with the Strategy REST Server. You can provide the information used to create the session in the body of the request. In this example, you can use standard authentication, so you need to provide the username and password. If the call is successful, the resulting response returns a status code of 204 and a response header containing X-MSTR-AuthToken. This authorization token is used by all subsequent requests.
 
 In the following example, standard authentication uses a username of administrator and a blank password.
 
@@ -58,7 +58,7 @@ Response Code: 204 (Success: No Content)
 
 Endpoint: [GET /api/v2/projects/\{projectId}/settings/config](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getServerSettingProperties)
 
-This endpoint allows the user to retrieve information on all project settings that are available in MicroStrategy REST API. The information includes the setting description, type, options, unit, minimum value, maximum value, and reboot rule. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
+This endpoint allows the user to retrieve information on all project settings that are available in Strategy REST API. The information includes the setting description, type, options, unit, minimum value, maximum value, and reboot rule. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
 :::tip
 
@@ -133,7 +133,7 @@ Response Code: 200 (Success: OK)
 
 Endpoint: [GET /api/v2/projects/\{projectId}/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getServerSettings_3)
 
-This endpoint allows you to retrieve all project setting values that are available in MicroStrategy REST API. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
+This endpoint allows you to retrieve all project setting values that are available in Strategy REST API. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
 :::tip
 
@@ -285,7 +285,7 @@ Response Code: 200 (Success: OK)
 
 Endpoint: [PUT /api/v2/projects/\{projectId}/settings](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/setAllServerSettings)
 
-This endpoint allows you to access all of the setting values that are available in MicroStrategy REST API. In this endpoint, you must provide a complete list of project settings, which is the different from the `PATCH /api/v2/projects/{projectId}/settings` endpoint. You can find a list of project settings exposed in REST API via `GET /api/v2/projects/{projectId}/settings/config`. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
+This endpoint allows you to access all of the setting values that are available in Strategy REST API. In this endpoint, you must provide a complete list of project settings, which is the different from the `PATCH /api/v2/projects/{projectId}/settings` endpoint. You can find a list of project settings exposed in REST API via `GET /api/v2/projects/{projectId}/settings/config`. You must specify an authorization token in the request header, which can be obtained from `POST /api/auth/login` during [login](#log-in).
 
 :::tip
 
@@ -396,7 +396,7 @@ Response Code: 200 (Success: OK)
 
 Endpoint: [POST /api/auth/logout](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogout)
 
-This endpoint allows the caller to log out the authenticated user from the MicroStrategy REST server. In this example, you close the active user session by providing the `X-MSTR-AuthToken` authorization token, which is generated by `POST /api/auth/login`. If the call is successful, the resulting response returns a status code of 204.
+This endpoint allows the caller to log out the authenticated user from the Strategy REST server. In this example, you close the active user session by providing the `X-MSTR-AuthToken` authorization token, which is generated by `POST /api/auth/login`. If the call is successful, the resulting response returns a status code of 204.
 
 ### Sample request
 

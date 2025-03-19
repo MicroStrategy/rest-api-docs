@@ -1066,7 +1066,7 @@ const sidebars = {
         type: "doc",
         id: "microstrategy-rest-api-samples/microstrategy-rest-api-samples",
       },
-      label: "MicroStrategy REST API samples",
+      label: "Strategy REST API samples",
       items: [
         "microstrategy-rest-api-samples/create-reports-on-the-fly",
         "microstrategy-rest-api-samples/react-user-manage-sample",

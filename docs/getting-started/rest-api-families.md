@@ -1,10 +1,10 @@
 ---
 sidebar_label: REST API families
-title: MicroStrategy REST API families
-description: The MicroStrategy REST API Explorer lets you drill down into the individual APis. You can see HTTP headers and input and output information for each request, and enter values to try out the APIs.
+title: Strategy REST API families
+description: The Strategy REST API Explorer lets you drill down into the individual APis. You can see HTTP headers and input and output information for each request, and enter values to try out the APIs.
 ---
 
-The [MicroStrategy REST API Explorer](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/) lets you drill down into the individual APis. You can see HTTP headers and input and output information for each request, and enter values to try out the APIs.
+The [Strategy REST API Explorer](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/) lets you drill down into the individual APis. You can see HTTP headers and input and output information for each request, and enter values to try out the APIs.
 
 ## [Authentication API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication)
 
@@ -48,11 +48,11 @@ The Custom Groups API family allows developers to obtain a custom group's defini
 
 ## [Datasets API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasets)
 
-The Datasets API family allows developers to push external data directly to the MicroStrategy Intelligence Server. This data can be used to create a dataset or to modify an existing dataset in a Data Import cube. Once the data has been pushed to the Intelligence Server, developers can use the Cubes API or the Reports API to manipulate that data. This API is often referred to as the Push Data API.
+The Datasets API family allows developers to push external data directly to the Intelligence Server. This data can be used to create a dataset or to modify an existing dataset in a Data Import cube. Once the data has been pushed to the Intelligence Server, developers can use the Cubes API or the Reports API to manipulate that data. This API is often referred to as the Push Data API.
 
 ## [Datasource management API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Datasource%20Management)
 
-The Datasource Management API family allows administrators to create, update, and delete database connections in the MicroStrategy metadata. This functionality can be used to automate the update of data source credentials.
+The Datasource Management API family allows administrators to create, update, and delete database connections in the metadata. This functionality can be used to automate the update of data source credentials.
 
 ## [Derived elements API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Derived%20Elements)
 
@@ -68,7 +68,7 @@ The Drivers API family allows developers to obtain drivers' definition and updat
 
 ## [Emails API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Emails)
 
-The Emails API family allows administrators and developers to send emails using MicroStrategy Distribution Services email transmitters.
+The Emails API family allows administrators and developers to send emails using Distribution Services email transmitters.
 
 ## [Facts API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Facts)
 
@@ -88,7 +88,7 @@ The Library API family exposes the publishing workflow, allowing requests to pub
 
 ## [Object management API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Object%20Management)
 
-The Object Management API family exposes the ability to programmatically manage objects in the MicroStrategy metadata. Endpoints can be used to certify or de-certify a report or dashboard, delete objects, and update object info for any object type.
+The Object Management API family exposes the ability to programmatically manage objects in the metadata. Endpoints can be used to certify or de-certify a report or dashboard, delete objects, and update object info for any object type.
 
 ## [Packages API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Packages)
 
@@ -124,7 +124,7 @@ The Security Roles API family allows administrators and developers to obtain a l
 
 ## [System administration API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Administration)
 
-The System Administration API family allows administrators and developers to programmatically configure the settings related to the MicroStrategy Library web application. For example, this functionality can be used to configure default values related to the authentication process, set up trust relationships to the Intelligence Server, and more.
+The System Administration API family allows administrators and developers to programmatically configure the settings related to the Library web application. For example, this functionality can be used to configure default values related to the authentication process, set up trust relationships to the Intelligence Server, and more.
 
 ## [System hierarchy API](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/System%20Hierarchy)
 

@@ -135,7 +135,7 @@ The list below shows the usage of emojis in our Docs site:
 
 - Titles, sidebar labels, and headers
 
-  - These should use **sentence case**. For example, prefer "This is the title from MicroStrategy" over "This Is The Title From MicroStrategy".
+  - These should use **sentence case**. For example, prefer "This is the title from Strategy" over "This Is The Title From Strategy".
   - `sidebar_label` should only be used if you want a different title in the sidebar than the `title` in front matter. (Note: For folders, `label` in sidebars.js takes priority over `sidebar_label`)
 
 ## Tables
@@ -209,7 +209,7 @@ For the root of a collection of workflows, please use the template below:
 
 You can try these workflows with [REST API Playground]().
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 ```
@@ -221,7 +221,7 @@ For the workflow page, please use the template below:
 
 You can try out this workflow at [REST API Playground]().
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 ```

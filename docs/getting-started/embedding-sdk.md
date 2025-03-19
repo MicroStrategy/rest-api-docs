@@ -1,11 +1,11 @@
 ---
 title: Using REST API with Embedding SDK
-description: You can use MicroStrategy REST API together with MicroStrategy Embedding SDK.
+description: You can use Strategy REST API together with Strategy Embedding SDK.
 ---
 
 ## What is the Embedding SDK?
 
-The Embedding SDK allows you to quickly integrate a MicroStrategy dashboard into a web application in a responsive manner. It also provides resources to add functionality such as controlling navigation, retrieving and applying filters, setting properties, and managing events, and supports different authentication environments.
+The Embedding SDK allows you to quickly integrate a dashboard into a web application in a responsive manner. It also provides resources to add functionality such as controlling navigation, retrieving and applying filters, setting properties, and managing events, and supports different authentication environments.
 
 ## Common use cases of REST API with Embedding SDK
 

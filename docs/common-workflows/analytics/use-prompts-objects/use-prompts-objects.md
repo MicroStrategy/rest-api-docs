@@ -1,6 +1,6 @@
 ---
 title: Use prompts objects
-description: Prompts are a platform capability of MicroStrategy that refine the data displayed in reports, documents, and dashboards. The system poses the prompt as a question during execution of a dashboard, document, or report, and the answer determines the data that is returned. A prompt is similar to a filter; both are applied at runtime and customize the results of data that is returned from a data source. The actual prompt definition cannot be changed at runtime, but the answers to the prompt can be changed dynamically. Together with filtering, prompts allow you to build feature-rich applications by leveraging core MicroStrategy platform capabilities.
+description: Prompts are a platform capability of Strategy that refine the data displayed in reports, documents, and dashboards. The system poses the prompt as a question during execution of a dashboard, document, or report, and the answer determines the data that is returned. A prompt is similar to a filter; both are applied at runtime and customize the results of data that is returned from a data source. The actual prompt definition cannot be changed at runtime, but the answers to the prompt can be changed dynamically. Together with filtering, prompts allow you to build feature-rich applications by leveraging core Strategy platform capabilities.
 ---
 
 <Available since="2021 Update 1" />
@@ -9,11 +9,11 @@ description: Prompts are a platform capability of MicroStrategy that refine the 
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c22a4c1c-85a3-4f3b-8b34-ffeebd05e795?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-Prompts are a platform capability of MicroStrategy that refine the data displayed in reports, documents, and dashboards. The system poses the prompt as a question during execution of a dashboard, document, or report, and the answer determines the data that is returned. A prompt is similar to a [filter](../filter-data/filter-data.md); both are applied at runtime and customize the results of data that is returned from a data source. The actual prompt definition cannot be changed at runtime, but the answers to the prompt can be changed dynamically. Together with filtering, prompts allow you to build feature-rich applications by leveraging core MicroStrategy platform capabilities.
+Prompts are a platform capability of Strategy that refine the data displayed in reports, documents, and dashboards. The system poses the prompt as a question during execution of a dashboard, document, or report, and the answer determines the data that is returned. A prompt is similar to a [filter](../filter-data/filter-data.md); both are applied at runtime and customize the results of data that is returned from a data source. The actual prompt definition cannot be changed at runtime, but the answers to the prompt can be changed dynamically. Together with filtering, prompts allow you to build feature-rich applications by leveraging core Strategy platform capabilities.
 
 Prompts are applied directly to reports and stored with the dataset for the report. Prompts are applied to dashboards and documents more indirectly. When you use a prompted report as a dataset for a dashboard or document, the prompts stored with the dataset are automatically applied to the document or dashboard.
 
@@ -26,6 +26,6 @@ You can use REST APIs to integrate prompts into your application workflow. You c
 
 :::tip
 
-For general information about prompts, see the [MicroStrategy product help](https://doc-archives.microstrategy.com/producthelp/10.5/basicreporting/webhelp/lang_1033/content/basicreporting/Asking_for_user_input__Prompts.htm#brcreatingquery_2014045409_1076748). For information on using prompts in data displayed on a mobile device, see the MicroStrategy Mobile Design and Administration Guide.
+For general information about prompts, see the [Strategy product help](https://doc-archives.microstrategy.com/producthelp/10.5/basicreporting/webhelp/lang_1033/content/basicreporting/Asking_for_user_input__Prompts.htm#brcreatingquery_2014045409_1076748). For information on using prompts in data displayed on a mobile device, see the Mobile Design and Administration Guide.
 
 :::

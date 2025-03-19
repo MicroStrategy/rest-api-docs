@@ -10,7 +10,7 @@ description: This topic covers several workflows for retrieving a filter's defin
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-c532ccd7-317b-4f18-9a37-1388740cbab5?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -109,7 +109,7 @@ In this workflow sample, you want to get the definition of the "Year < 2015" fil
 
 :::tip
 
-Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a filter expression is "Revenue > Cost". When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), (">", GreaterThan_ID), ("Cost", Cost_ID).
+Tokens are a semi-structured representation of expression text that includes object references. For example, let’s say a filter expression is "Revenue > Cost". When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), (">", GreaterThan_ID), ("Cost", Cost_ID).
 
 A filter's "qualification" is presented in the following formats:
 
@@ -245,7 +245,7 @@ Custom expressions are presented in the following formats:
 - "tree": A tree data structure fully defining the expression. This format can be used if you want to examine and modify the expression programmatically.
 - "tokens": A list of parsed tokens. This format can be used if you want to examine and modify the expression using the parser component. Be aware that generating tokens requires additional time.
 
-Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a filter expression is "Revenue > Cost". When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), (">", GreaterThan_ID), ("Cost", Cost_ID).
+Tokens are a semi-structured representation of expression text that includes object references. For example, let’s say a filter expression is "Revenue > Cost". When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), (">", GreaterThan_ID), ("Cost", Cost_ID).
 
 If omitted, the custom expression is returned in "text" format.
 
