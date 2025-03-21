@@ -4,7 +4,7 @@ title: Ask a question with bot routing
 description: This workflow sample demonstrates how to ask a question with bot routing.
 ---
 
-<Available since="MicroStrategy ONE (June 2024)" />
+<Available since="Strategy ONE (June 2024)" />
 
 Use this API to identify the most suitable bot to answer your question based on the application, content group, and specific bots.
 

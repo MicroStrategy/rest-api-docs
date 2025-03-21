@@ -5,7 +5,7 @@ description: You can upload and download migration packages in Workstation.
 
 <Available since="2021 Update 7" />
 
-Starting in MicroStrategy 2021 Update 7, you can upload and download migration packages in Workstation. These packages are all maintained by the [MicroStrategy Storage Service](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service.htm), users can download these packages from one storage service and then upload to another the storage service.
+Starting in MicroStrategy 2021 Update 7, you can upload and download migration packages in Workstation. These packages are all maintained by the [Strategy Storage Service](https://www2.microstrategy.com/producthelp/Current/Workstation/WebHelp/Lang_1033/Content/storage_service.htm), users can download these packages from one storage service and then upload to another the storage service.
 
 This feature is usually used in the following two scenarios:
 
@@ -353,7 +353,7 @@ A package created in an earlier platform version can be downloaded, uploaded and
 ## Troubleshooting
 
 - If the Library Server cannot connect to the database, you may receive the following error responses:
-  - The API requires MicroStrategy Storage Service. Please contact your administrator.
+  - The API requires Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
     - Database version is lower than required
     - Database configuration is missing or invalid in `configOverride.properties` file

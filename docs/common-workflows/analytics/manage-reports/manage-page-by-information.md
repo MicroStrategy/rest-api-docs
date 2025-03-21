@@ -7,7 +7,7 @@ description: You can use REST API requests to manage page-by information for rep
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-244d4021-db1d-4e6d-9b3e-04dd192faa2f?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -17,7 +17,7 @@ You can use REST API requests to manage page-by information for reports.
 - [Execute the report and fetch data to apply to the page-by information](#execute-the-report-and-fetch-data-to-apply-to-the-page-by-information)
 - [Update a report instance to modify the current page of page-by(s)](#update-a-report-instance-to-modify-the-current-page-of-page-bys)
 
-The workflows on this page use the Unit Sales Paged report located in the MicroStrategy Tutorial project at **Shared Reports** > **MicroStrategy Platform Capabilities** > **MicroStrategy Office** > **Excel - Self-Service Report Book** > **Paged Report**.
+The workflows on this page use the Unit Sales Paged report located in the MicroStrategy Tutorial project at **Shared Reports** > **Strategy Platform Capabilities** > **Strategy Office** > **Excel - Self-Service Report Book** > **Paged Report**.
 
 ![page_by_report](../../../images/page_by_report.png)
 

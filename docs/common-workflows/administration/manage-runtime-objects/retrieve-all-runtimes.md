@@ -44,7 +44,7 @@ You can get al the runtime objects in the body of the response.
 {
   "runtimes": [
     {
-      "name": "(Default) MicroStrategy",
+      "name": "(Default) Strategy",
       "id": "0F35652CA7D041978BF0CBCB67531203",
       "type": 80,
       "description": "A default server configuration used to execute Python scripts on IServer. It includes the latest versions of both Python and mstrio packages, as well as a default network access configuration. Allows for network access customization.",

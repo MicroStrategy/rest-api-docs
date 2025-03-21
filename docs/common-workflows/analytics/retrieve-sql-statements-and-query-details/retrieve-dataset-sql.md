@@ -10,7 +10,7 @@ description: You can retrieve the SQL statements of all datasets in a document o
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-5d5e523d-6a02-45a1-9537-bc0d37f9c10c).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

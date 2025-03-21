@@ -1134,7 +1134,7 @@ When the API call is successful, it returns response code `204` with no response
 
 ## Performance
 
-To improve performance, MicroStrategy suggests you edit one migration or migration group per session and time.
+To improve performance, Strategy suggests you edit one migration or migration group per session and time.
 
 ## Compatibility
 
@@ -1150,7 +1150,7 @@ A migration or migration group created in an earlier platform version can be edi
 ## Troubleshooting
 
 - If the Library server cannot connect to the database, you may receive the following error:
-  - The API requires MicroStrategy Storage Service. Please contact your administrator.
+  - The API requires Storage Service. Please contact your administrator.
   - This can occur due to the following reasons:
     - Database is not running
     - Database version is lower than required

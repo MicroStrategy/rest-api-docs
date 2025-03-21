@@ -9,13 +9,13 @@ description: The metadata is used in object management use cases, such as editin
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-e42edf07-9e68-4cc2-9eb9-a16ad920bb49?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
 The metadata is used in object management use cases, such as editing a metric to use a different fact object. In such a use case, the user needs to understand how an object is used and where it comes from. To do so, the user can use a data lineage or data traceability function. Here, we can use search API to perform data lineage analysis on the metadata.
 
-There are two functions that MicroStrategy data lineage supports:
+There are two functions that Strategy data lineage supports:
 
 - Given an object, for example a report, attribute, dashboard, or database, list the direct and indirect components of that object
 - Given an object, list the objects which directly and indirectly depend on that object

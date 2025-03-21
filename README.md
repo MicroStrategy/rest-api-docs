@@ -61,7 +61,7 @@ pull request. For more details about this process, please check out
 
 #### And that's it
 
-That's how you can get started easily as a member of the MicroStrategy Embedding SDK Documentation
+That's how you can get started easily as a member of the Strategy Embedding SDK Documentation
 community. :sparkles:
 
 If you want to know more, or you're making a more complex contribution, check out

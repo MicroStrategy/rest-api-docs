@@ -51,7 +51,7 @@ When you use a view filter to refine the data returned in a report or cube insta
   - Page by
   - Prompt
 - Features that may not work well with view filters include:
-  - Derived elements and other objects that cannot be qualified on in MicroStrategy Web
+  - Derived elements and other objects that cannot be qualified on in Web
   - Other REST API unsupported features
 - Attribute / element / form / metric IDs must be valid, which means:
 

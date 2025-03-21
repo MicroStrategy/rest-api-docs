@@ -7,7 +7,7 @@ description: An Access Control List (ACL) is a set of permissions on objects so 
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-638a5542-2f37-4df9-be9a-972a11055db5?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

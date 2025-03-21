@@ -264,7 +264,7 @@ Sample request body
         "installationUse": "production",
         "contact": {
           "customer": {
-            "company": "MicroStrategy",
+            "company": "Strategy",
             "department": "TEC",
             "firstName": "John",
             "lastName": "Doe",
@@ -279,7 +279,7 @@ Sample request body
             "usePersonalInfo": true
           },
           "installer": {
-            "company": "NotMicroStrategy",
+            "company": "NotStrategy",
             "department": "NotTEC",
             "firstName": "John",
             "lastName": "Doe",
@@ -316,7 +316,7 @@ curl --location --request PATCH 'https://demo.microstrategy.com/MicroStrategyLib
    "installationUse": "production",
    "contact": {
     "customer": {
-     "company": "MicroStrategy",
+     "company": "Strategy",
      "department": "TEC",
      "firstName": "John",
      "lastName": "Doe",
@@ -331,7 +331,7 @@ curl --location --request PATCH 'https://demo.microstrategy.com/MicroStrategyLib
      "usePersonalInfo": true
     },
     "installer": {
-     "company": "NotMicroStrategy",
+     "company": "NotStrategy",
      "department": "NotTEC",
      "firstName": "John",
      "lastName": "Doe",
@@ -421,24 +421,24 @@ Sample Response Body:
 <default_locale>9</default_locale>\n
 <products>\n
     <product>\n
-        <name>MicroStrategy Intelligence Server Universal</name>\n
+        <name>Strategy Intelligence Server Universal</name>\n
         <version>Unknown</version>\n
         <prompted_cpus>2</prompted_cpus>\n
     </product>\n
     <product>\n
-        <name>MicroStrategy OLAP Services Universal</name>\n
+        <name>Strategy OLAP Services Universal</name>\n
         <version>1.1.111.111</version>\n
     </product>\n
     <product>\n
-        <name>MicroStrategy Transaction Services Universal</name>\n
+        <name>Strategy Transaction Services Universal</name>\n
         <version>1.1.111.111</version>\n
     </product>\n
     <product>\n
-        <name>MicroStrategy Report Services Universal</name>\n
+        <name>Strategy Report Services Universal</name>\n
         <version>1.1.111.111</version>\n
     </product>\n
     <product>\n
-        <name>MicroStrategy Distribution Services</name>\n
+        <name>Strategy Distribution Services</name>\n
         <version>1.1.111.111</version>\n
     </product>\n
 </products>\n
@@ -484,7 +484,7 @@ Sample Response Body:
 <last_name>Doe</last_name>\n
 <email>johndoe@microstrategy.com</email>\n
 <phone>9998889999</phone>\n
-<company>NotMicroStrategy</company>\n
+<company>NotStrategy</company>\n
 <department>NotTEC</department>\n
 <title>Not Software Engineer</title>\n
 <street_address>1851 Towers Crescent Plaza</street_address>\n

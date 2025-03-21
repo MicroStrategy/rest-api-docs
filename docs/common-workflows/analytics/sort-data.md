@@ -7,7 +7,7 @@ description: When you use a REST API request to create a cube or report, you can
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-f01c3304-fd56-48bf-a13a-cae926afb2a5?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -69,7 +69,7 @@ In MicroStrategy Developer, you can set a default attribute sort property, which
 
 - If you are creating a report instance that includes an attribute whose form has the default attribute sort property set and it is one of the multiple sorting criteria that is used in the report, you must specify the sort in the hierarchical order where it should be applied. You provide the ID of the attribute. You do not have to specify the attribute form to use or the sort order because they are part of the default attribute sort property.
 
-You cannot set the default attribute sort property in MicroStrategy Web. It can only be set in MicroStrategy Developer.
+You cannot set the default attribute sort property in Web. It can only be set in MicroStrategy Developer.
 
 ### Sample body parameter
 

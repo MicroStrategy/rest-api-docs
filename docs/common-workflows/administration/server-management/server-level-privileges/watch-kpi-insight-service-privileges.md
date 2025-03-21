@@ -7,7 +7,7 @@ description: A high-level workflow sample for managing Watch KPI and Insight ser
 
 A high-level workflow sample for managing Watch KPI and Insight service privileges is shown below. The sequence of REST API requests in the following procedure allows an administrative user to assign server-level privilege for a specific user or user group to use Watch KPI and Insight service.
 
-For the privileges to use Watch KPI and Insight service, please refer to [Assign privileges to MicroStrategy Insight](https://www2.microstrategy.com/producthelp/2021/Library/en-us/Content/insights_privileges.htm).
+For the privileges to use Watch KPI and Insight service, please refer to [Assign privileges to Strategy Insight](https://www2.microstrategy.com/producthelp/2021/Library/en-us/Content/insights_privileges.htm).
 
 A detailed explanation of each step is provided below:
 

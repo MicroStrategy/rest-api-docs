@@ -10,7 +10,7 @@ description: This topic cover several workflows for retrieving a cube's definiti
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-585d42d1-fbdc-4d1d-afbb-c4e872753709?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -439,7 +439,7 @@ Response Code: 200 (The cube’s definition was returned successfully.)
 
 This workflow sample demonstrates how to retrieve the definition of a cube with its filter in tokens format through the Modeling service. Unlike the first workflow, you want to enable the `showFilterTokens` parameter to retrieve the filter's definition in tokens format as well.
 
-Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a filter expression is `Revenue > Cost`. When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: `("Revenue", Revenue_ID)`, `(">", GreaterThan_ID)`, `("Cost", Cost_ID)`.
+Tokens are a semi-structured representation of expression text that includes object references. For example, let’s say a filter expression is `Revenue > Cost`. When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: `("Revenue", Revenue_ID)`, `(">", GreaterThan_ID)`, `("Cost", Cost_ID)`.
 
 A filter's "qualification" is presented in the following formats:
 
@@ -631,7 +631,7 @@ In this workflow sample, you want to get the definition cube when its filter con
 
 If custom expressions are used in a filter, this parameter specifies the format in the which they are returned in the response.
 
-Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a filter expression is `Revenue > Cost`. When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: `("Revenue", Revenue_ID)`, `(">", GreaterThan_ID)`, `("Cost", Cost_ID)`.
+Tokens are a semi-structured representation of expression text that includes object references. For example, let’s say a filter expression is `Revenue > Cost`. When the filter expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: `("Revenue", Revenue_ID)`, `(">", GreaterThan_ID)`, `("Cost", Cost_ID)`.
 
 A filter's "qualification" is presented in the following formats:
 

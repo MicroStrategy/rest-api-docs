@@ -11,7 +11,7 @@ reserved_phrases = {
   'microstrategy.': 'microstrategy.',
   'microstrategy-rest-api-samples': 'microstrategy-rest-api-samples',
   './microstrategy-rest-api-explorer.md': './microstrategy-rest-api-explorer.md',
-  '#working-in-the-microstrategyrest-api-docs-repository': '#working-in-the-microstrategyrest-api-docs-repository',
+  '#working-in-the-strategyrest-api-docs-repository': '#working-in-the-strategyrest-api-docs-repository',
   'embedding sdk': 'Embedding SDK',
   'embedding sdk playground': 'Embedding SDK Playground',
   'rest api playground': 'REST API Playground',
@@ -20,7 +20,7 @@ reserved_phrases = {
   'samesite': 'SameSite',
   'cross-origin resource sharing': 'Cross-Origin Resource Sharing',
   'developer': 'Developer',
-  'microstrategy developer': 'MicroStrategy Developer',
+  'microstrategy developer': 'Strategy Developer',
   'json data api': 'JSON Data API',
   'push data api': 'Push Data API',
   'api explorer': 'API Explorer',
@@ -44,9 +44,9 @@ reserved_phrases = {
   'to the library': 'to the Library',
   'modeling service': 'Modeling service',
   'shared reports': "Shared Reports",
-  'microstrategy docs': 'MicroStrategy Docs',
+  'microstrategy docs': 'Strategy Docs',
   'github docs': 'GitHub Docs',
-  '#keep-contributing-as-you-use-microstrategy-docs': '#keep-contributing-as-you-use-microstrategy-docs',
+  '#keep-contributing-as-you-use-strategy-docs': '#keep-contributing-as-you-use-strategy-docs',
 }
 
 def is_word_in_camel_case(word):

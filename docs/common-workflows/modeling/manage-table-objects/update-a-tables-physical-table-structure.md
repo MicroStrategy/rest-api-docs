@@ -8,7 +8,7 @@ description: This workflow sample demonstrates how to update a table's physical 
 
 You can try out this workflow at [REST API Playground].
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

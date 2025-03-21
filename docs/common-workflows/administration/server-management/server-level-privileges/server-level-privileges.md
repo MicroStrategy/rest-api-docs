@@ -7,7 +7,7 @@ description: Privileges are assigned to users and user groups to authorize what 
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-27dd7275-e91a-4fe8-900b-0590e0de37b6?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

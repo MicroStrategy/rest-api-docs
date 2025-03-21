@@ -10,7 +10,7 @@ description: This topic covers two workflows for retrieving a fact’s definitio
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-3b137a26-4cf4-4902-8f11-9d7a7cffc5f0?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -109,7 +109,7 @@ Expressions are presented in the following formats:
 - "tree": A tree data structure fully defining the expression. This format can be used if you want to examine and modify the expression programmatically.
 - "tokens": A list of parsed tokens. This format can be used if you want to examine and modify the expression using the parser component. Be aware that generating tokens requires additional time.
 
-Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say a fact expression is "Revenue - Cost". When the fact expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), ("-", Minus_ID), ("Cost", Cost_ID).
+Tokens are a semi-structured representation of expression text that includes object references. For example, let’s say a fact expression is "Revenue - Cost". When the fact expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Revenue", Revenue_ID), ("-", Minus_ID), ("Cost", Cost_ID).
 
 If `showExpressionAs` is omitted, the expression is returned in "text" format.
 

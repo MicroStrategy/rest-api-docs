@@ -9,7 +9,7 @@ description: You can use REST API requests to retrieve, create, and update dat
 
 You can try these workflows with [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-1f302e4e-e863-4247-a360-802794a8d8a5?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

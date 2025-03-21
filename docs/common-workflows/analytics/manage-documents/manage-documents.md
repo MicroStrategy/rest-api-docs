@@ -1,6 +1,6 @@
 ---
 title: Manage documents
-Description: Manage documents using the MicroStrategy REST API.
+Description: Manage documents using the Strategy REST API.
 ---
 
 <Available since="2021 Update 10" />

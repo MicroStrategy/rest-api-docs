@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to update an attribute's defi
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-0c9c449c-883d-4112-af6d-f14656ed5d30?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -46,7 +46,7 @@ To update an attribute, in the request body, "forms" contains the detailed defin
 
   - "expression": Must be in either "tree" or "tokens" format.
 
-    Tokens are a semi-structured representation of MicroStrategy expression text that includes object references. For example, let’s say an attribute form expression is "Year - 10". When the attribute form expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Year_ID", Year_column_ID), ("-", Minus_ID), ("10", Constant).
+    Tokens are a semi-structured representation of expression text that includes object references. For example, let’s say an attribute form expression is "Year - 10". When the attribute form expression is represented as tokens, the text is broken down into pieces (tokens) with information about what these pieces represent in the metadata: ("Year_ID", Year_column_ID), ("-", Minus_ID), ("10", Constant).
 
   - "tables": A list of tables that the "expression" applies to. Warehouse partition base tables and metadata partition mapping tables are not allowed here.
 

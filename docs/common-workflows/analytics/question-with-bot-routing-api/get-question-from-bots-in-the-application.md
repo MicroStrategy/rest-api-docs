@@ -4,7 +4,7 @@ title: Get a question with bot routing
 description: This workflow sample demonstrates how to get a question with bot routing.
 ---
 
-<Available since="MicroStrategy ONE (June 2024)" />
+<Available since="Strategy ONE (June 2024)" />
 
 This workflow sample demonstrates how to get a question with bot routing.
 

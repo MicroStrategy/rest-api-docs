@@ -7,7 +7,7 @@ description: An object prompt allows the caller to supply a list of objects, suc
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-10f21f1c-3d27-4459-80ba-729a44b945a7?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

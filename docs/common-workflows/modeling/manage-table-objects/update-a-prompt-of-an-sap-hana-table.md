@@ -10,7 +10,7 @@ description: You can use REST APIs to update a prompt of a table through the Mod
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-e3e4974a-dc93-4f79-9ea6-259a1693dc0d?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
@@ -24,7 +24,7 @@ This workflow applies only to SAP HANA tables with input parameters because only
 
 :::tip
 
-You should at least have **read access** to the table to successfully complete this workflow. If the prompt you want to update is a managed object, **write access** to the table is also required. The managed prompts of an SAP HANA table with input parameters are automatically created by MicroStrategy by default. However, you can choose to replace these managed prompts with standalone ones by following the steps in [Update SAP HANA parameters for an SAP HANA table with input parameters](update-sap-hana-parameters.md). For more information on managed objects, see [About Managed Objects](https://www2.microstrategy.com/producthelp/2021/MDXCubeReporting/WebHelp/Lang_1033/Content/About_managed_objects.htm).
+You should at least have **read access** to the table to successfully complete this workflow. If the prompt you want to update is a managed object, **write access** to the table is also required. The managed prompts of an SAP HANA table with input parameters are automatically created by Strategy by default. However, you can choose to replace these managed prompts with standalone ones by following the steps in [Update SAP HANA parameters for an SAP HANA table with input parameters](update-sap-hana-parameters.md). For more information on managed objects, see [About Managed Objects](https://www2.microstrategy.com/producthelp/2021/MDXCubeReporting/WebHelp/Lang_1033/Content/About_managed_objects.htm).
 
 :::
 

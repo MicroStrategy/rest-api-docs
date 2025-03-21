@@ -1,18 +1,18 @@
 ---
-title: MicroStrategy REST API Playground
-description: MicroStrategy REST API Playground is a place you can see live demos of our REST API, API specifications, and code examples. You can also play with it without writing a single line of code.
+title: Strategy REST API Playground
+description: Strategy REST API Playground is a place you can see live demos of our REST API, API specifications, and code examples. You can also play with it without writing a single line of code.
 ---
 
 ## What is the playground?
 
-MicroStrategy REST API Playground is a place you can see live demos of our REST API, API specifications, and code examples. You can also play with it without writing a single line of code.
+Strategy REST API Playground is a place you can see live demos of our REST API, API specifications, and code examples. You can also play with it without writing a single line of code.
 
 [This GitHub Page](https://github.com/MicroStrategy/rest-api-playground) provides the instructions for you to set up and start to use it. You can access the playground at [https://www.postman.com/microstrategysdk](https://www.postman.com/microstrategysdk). If you are not familiar Postman interface, be sure to check out [the documentation](https://learning.postman.com/docs/getting-started/introduction/) on Postman's learning center.
 
 There are two collections in the workspace:
 
-- MicroStrategy REST API: Use it as API Documentation. It contains examples and built-in scripts to save the context information after some requests, such as `authToken`, `userId`.
-- MicroStrategy REST API Workflows: It contains workflow examples. You can pick a folder and run all the requests.
+- Strategy REST API: Use it as API Documentation. It contains examples and built-in scripts to save the context information after some requests, such as `authToken`, `userId`.
+- Strategy REST API Workflows: It contains workflow examples. You can pick a folder and run all the requests.
 
 You need to pick an environment to run the requests. There are two environments shipped:
 

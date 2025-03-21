@@ -267,7 +267,7 @@ Sample Response Body:
       "privilege": {
         "id": "266",
         "name": "Use Application",
-        "description": "Provide the ability for organizations to connect to the MicroStrategy Intelligence Server through custom applications.",
+        "description": "Provide the ability for organizations to connect to the Intelligence Server through custom applications.",
         "level": "project"
       },
       "sources": [

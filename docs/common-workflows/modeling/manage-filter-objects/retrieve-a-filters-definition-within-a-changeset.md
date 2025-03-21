@@ -10,7 +10,7 @@ description: This workflow sample demonstrates how to retrieve a filter's defini
 
 You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-67e58dfc-a902-47a6-9166-a26e308ef644?ctx=documentation).
 
-Learn more about MicroStrategy REST API Playground [here](/docs/getting-started/playground.md).
+Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 

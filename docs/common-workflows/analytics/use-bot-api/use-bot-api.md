@@ -3,11 +3,11 @@ title: Bot APIs
 description: This page contains a summary of REST APIs for the "bots" endpoint. You can use REST API requests to consume the chat bots.
 ---
 
-<Available since="MicroStrategy ONE (March 2024)" />
+<Available since="Strategy ONE (March 2024)" />
 
 :::caution
 
-The following Bot APIs are planned for future retirement. Therefore, MicroStrategy recommends that you use the [Question with Bot Routing APIs](../question-with-bot-routing-api/question-api.md) instead:
+The following Bot APIs are planned for future retirement. Therefore, Strategy recommends that you use the [Question with Bot Routing APIs](../question-with-bot-routing-api/question-api.md) instead:
 
 - [Create a bot instance.](./create-a-bot-instance.md)
 - [Ask for suggested questions](./ask-bot-instance-suggested-question.md)
@@ -23,7 +23,7 @@ Reason:
 
 :::
 
-For users interested in creating a custom chatbot experience utilizing the capabilities of MicroStrategy AI, a suite of bot-related APIs is available. These APIs are designed to facilitate seamless integration of MicroStrategy AI into nearly any application. By leveraging these tools, users can enhance their applications with advanced AI features quickly and efficiently. For further details on how to use these APIs, please refer to the following sections of this manual.
+For users interested in creating a custom chatbot experience utilizing the capabilities of Strategy AI, a suite of bot-related APIs is available. These APIs are designed to facilitate seamless integration of Strategy AI into nearly any application. By leveraging these tools, users can enhance their applications with advanced AI features quickly and efficiently. For further details on how to use these APIs, please refer to the following sections of this manual.
 
 - [Get a bot's configuration](./get-bot-configuration.md)
 - [Get a bot question list.](./get-bot-question-list.md)
