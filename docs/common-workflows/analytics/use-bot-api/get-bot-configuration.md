@@ -16,7 +16,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 ## Get a chat bot's configuration
 
-Endpoint: [GET /api/bots/\{botId}/configuration](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/AI%20Chatbot/getConfiguration)
+Endpoint: [GET /api/bots/\{botId}/configuration](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Auto%20Bots%20/getConfiguration)
 
 :::note
 Replace `{botId}` in `GET /api/bots/{botId}/configuration` with the chatbot ID and `{questionId}` with your question ID in your environment.

@@ -24,7 +24,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 ## Get a chat bot's question
 
-Endpoint: [GET /api/bots/\{botId}/questions/\{questionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/AI%20Chatbot/queryMessage)
+Endpoint: [GET /api/bots/\{botId}/questions/\{questionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Auto%20Bots%20/queryMessage)
 
 :::note
 Replace `{botId}` in `GET /api/bots/{botId}/questions/{questionId}` with the chatbot ID and `{questionId}` with your question ID in your environment.

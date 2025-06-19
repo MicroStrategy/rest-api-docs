@@ -28,7 +28,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 ## Create a bot instance
 
-Endpoint: [POST /api/bots/\{botId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/AI%20Chatbot/createInstance)
+Endpoint: [POST /api/bots/\{botId}/instances](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Auto%20Bots%20/createInstance)
 
 :::note
 Replace `{botId}` in `POST /api/bots/{botId}/instances` with the chatbot ID in your environment.

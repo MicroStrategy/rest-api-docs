@@ -8,7 +8,8 @@ To get started, view the following topics to know the basics of the Strategy RES
 - [REST API architecture](rest-api-architecture.md)
 - [REST API families](rest-api-families.md)
 
-After learning the basics, view the following topics to understand some general topics that apply to the REST API:
+After learning the basics, view the following topics to understand some general topics that apply to
+the REST API:
 
 - [Authentication](authentication.md)
 - [Configure clustered environments](configure-clustered-environments.md)
@@ -21,4 +22,10 @@ You can use the REST API Explorer and Playground as tools to learn more and run 
 - [Strategy REST API Explorer](microstrategy-rest-api-explorer.md)
 - [Strategy REST API Playground](playground.md)
 
-For more specific REST API topics, view the [common workflows](../common-workflows/common-workflows.md).
+For more specific REST API topics, view the
+[common workflows](../common-workflows/common-workflows.md).
+
+As newly introduced, Strategy Library now supports OAuth2 authorization for accessing the Strategy
+Library API, which can simplify API usage:
+
+- [Using REST API with OAuth2](oauth2.md)

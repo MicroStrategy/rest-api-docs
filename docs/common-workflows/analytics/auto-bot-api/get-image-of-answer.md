@@ -1,12 +1,12 @@
 ---
-sidebar_label: Get an image of an answer related to a question with bot routing
-title: Get an image of an answer related to a question with bot routing
-description: This workflow sample demonstrates how to get an image of an answer related to a question with bot routing.
+sidebar_label: Get an image in the answer of a specific question
+title: Get an image in the answer of a specific question
+description: This workflow sample demonstrates how to get an image in the answer of a specific question.
 ---
 
 <Available since="Strategy ONE (June 2024)" />
 
-This workflow sample demonstrates how to get an image of an answer related to a question with bot routing.
+This workflow sample demonstrates how to get an image in the answer of a specific question.
 
 :::info
 
@@ -16,7 +16,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 ## Get an image of an answer related to a question with bot routing
 
-Endpoint: [GET /api/questions/\{questionsId}/answers/images/\{imageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Auto%20Bots%20/getMessageImage)
+Endpoint: [GET /api/questions/\{questionsId}/answers/images/\{imageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Next-Gen%20AI/getMessageImage)
 
 :::note
 Replace `{questionsId}` in `GET /api/questions/{questionsId}/answers/images/{imageId}` with the question ID from `POST /api/questions` and `{imageId}` with your image ID from `GET /api/questions/{questionId}`.
