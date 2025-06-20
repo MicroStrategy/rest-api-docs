@@ -16,7 +16,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 ## Get a question with bot routing
 
-Endpoint: [GET /api/questions/\{questionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/AI%20Chatbot/queryMessage_1)
+Endpoint: [GET /api/questions/\{questionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Next-Gen%20AI/queryMessage_1)
 
 :::note
 Replace `{questionId}` in `GET /api/questions/{questionId}` with your question ID from `POST /api/questions`.

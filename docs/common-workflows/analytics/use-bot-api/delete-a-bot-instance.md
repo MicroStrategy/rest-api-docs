@@ -32,7 +32,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 ## Delete a bot instance
 
-Endpoint: [DELETE /api/bots/\{botId}/instances/\{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/AI%20Chatbot/deleteInstance)
+Endpoint: [DELETE /api/bots/\{botId}/instances/\{instanceId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Auto%20Bots%20/deleteInstance)
 
 :::note
 Replace `{botId}` in `DELETE /api/bots/{botId}/instances/{instanceId}` with the chatbot ID and `{instanceId}` with your bot instance ID created with `POST /api/bots/{botId}/instances` in your environment.

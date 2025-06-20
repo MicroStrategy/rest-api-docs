@@ -47,6 +47,7 @@ const sidebars = {
         "getting-started/microstrategy-rest-api-explorer",
         "getting-started/playground",
         "getting-started/embedding-sdk",
+        "getting-started/oauth2",
       ],
     },
     {
@@ -413,9 +414,24 @@ const sidebars = {
               type: "category",
               link: {
                 type: "doc",
+                id: "common-workflows/analytics/auto-bot-api/auto-bot-api",
+              },
+              label: "Next-Gen AI",
+              items: [
+                "common-workflows/analytics/auto-bot-api/post-question",
+                "common-workflows/analytics/auto-bot-api/get-question-by-id",
+                "common-workflows/analytics/auto-bot-api/get-questions-by-bot",
+                "common-workflows/analytics/auto-bot-api/post-suggestion",
+                "common-workflows/analytics/auto-bot-api/get-image-of-answer",
+              ],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
                 id: "common-workflows/analytics/use-bot-api/use-bot-api",
               },
-              label: "Bot APIs",
+              label: "Bot APIs ",
               items: [
                 "common-workflows/analytics/use-bot-api/get-bot-configuration",
                 "common-workflows/analytics/use-bot-api/get-bot-question-list",
@@ -432,7 +448,7 @@ const sidebars = {
                 type: "doc",
                 id: "common-workflows/analytics/question-with-bot-routing-api/question-api",
               },
-              label: "Question with Bot Routing APIs",
+              label: "Question with Bot Routing APIs ",
               items: [
                 "common-workflows/analytics/question-with-bot-routing-api/ask-question-to-bots-in-the-application",
                 "common-workflows/analytics/question-with-bot-routing-api/get-question-from-bots-in-the-application",
@@ -1055,6 +1071,15 @@ const sidebars = {
                 "common-workflows/administration/manage-bookmarks/bulk-deletion/bulk-deletion",
                 "common-workflows/administration/manage-bookmarks/get-bookmarks/get-bookmarks",
               ],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/administration/project-duplication/project-duplication",
+              },
+              label: "Project Duplication",
+              items: ["common-workflows/administration/project-duplication/project-duplication"],
             },
           ],
         },

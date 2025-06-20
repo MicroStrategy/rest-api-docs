@@ -4,6 +4,15 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## Strategy ONE (June 2025)
+
+- [Next-Gen AI Image Support](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Request and retrieve images in answer from Next-Gen AI.
+- [Project Duplication](common-workflows/administration/project-duplication/project-duplication.md). Duplicate a project within the same environment.
+
+## Strategy ONE (March 2025)
+
+- [Next-Gen AI](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Ask questions, retrieve answers, get historical chat messages and suggested questions from Next-Gen AI.
+
 ## MicroStrategy ONE (September 2024)
 
 - [Managing bookmarks](common-workflows/administration/manage-bookmarks/manage-bookmarks.md). Retrieve, create, update, and delete bookmarks.

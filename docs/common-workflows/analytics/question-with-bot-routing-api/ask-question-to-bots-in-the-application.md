@@ -16,7 +16,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 ## Ask a question with bot routing
 
-Endpoint: [POST /api/questions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/AI%20Chatbot/createQuestion)
+Endpoint: [POST /api/questions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Next-Gen%20AI/createQuestion)
 
 Sample Request Headers:
 
