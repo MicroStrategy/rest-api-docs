@@ -9,10 +9,10 @@ Project duplication enables administrators to duplicate projects within the same
 
 ## APIs
 
-- [POST /api/projectDuplications](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplication/createProjectDuplication)
-- [GET /api/projectDuplications/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplication/getProjectDuplication)
-- [GET /api/projectDuplications](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplication/getProjectDuplications)
-- [PUT /api/projectDuplications/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplication/updateProjectDuplication)
+- [POST /api/projectDuplications](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplications/createDuplication)
+- [GET /api/projectDuplications/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplications/getProjectDuplication)
+- [GET /api/projectDuplications](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplications/getProjectDuplications)
+- [PUT /api/projectDuplications/\{id}/status](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplications/cancelDuplication)
 
 ## Privileges and authorization
 
@@ -374,7 +374,7 @@ Sample Response Code: 200 (OK)
 
 ### Cancel project duplication
 
-Use `PUT /api/projectDuplications/{id}` to cancel an ongoing project duplication operation. This is
+Use `PUT /api/projectDuplications/{id}/status` to cancel an ongoing project duplication operation. This is
 useful if you made a mistake or need to stop a long-running duplication task.
 
 #### Step 3: Cancel a duplication (if needed)
@@ -397,7 +397,7 @@ Sample Request Body:
 Sample Curl:
 
 ```bash
-curl -X PUT "https://demo.microstrategy.com/MicroStrategyLibrary/api/projectDuplications/F8F1280022A444C5A10B3445B552E33A" \
+curl -X PUT "https://demo.microstrategy.com/MicroStrategyLibrary/api/projectDuplications/F8F1280022A444C5A10B3445B552E33A/status" \
   -H "Content-Type: application/json" \
   -H "X-MSTR-AuthToken: o0ak9privdo27nfo798j40m8aa" \
   -d '{
