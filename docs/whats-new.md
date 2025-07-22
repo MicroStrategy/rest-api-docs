@@ -4,6 +4,11 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## Strategy ONE (July 2025)
+
+- [Project duplication across environments](common-workflows/administration/project-duplication/cross-env-project-duplication.md). Duplicate a project across two environments.
+- [Get attributes forms and metrics from a specific bot](common-workflows/analytics/auto-bot-api/get-columns.md). Fetch the column information (attributes and metrics) from a specific bot, which can be used for auto-complete functionality in user inputs.
+
 ## Strategy ONE (June 2025)
 
 - [Next-Gen AI Image Support](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Request and retrieve images in answer from Next-Gen AI.

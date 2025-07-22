@@ -423,6 +423,7 @@ const sidebars = {
                 "common-workflows/analytics/auto-bot-api/get-questions-by-bot",
                 "common-workflows/analytics/auto-bot-api/post-suggestion",
                 "common-workflows/analytics/auto-bot-api/get-image-of-answer",
+                "common-workflows/analytics/auto-bot-api/get-columns",
               ],
             },
             {
@@ -1079,7 +1080,10 @@ const sidebars = {
                 id: "common-workflows/administration/project-duplication/project-duplication",
               },
               label: "Project Duplication",
-              items: ["common-workflows/administration/project-duplication/project-duplication"],
+              items: [
+                "common-workflows/administration/project-duplication/project-duplication",
+                "common-workflows/administration/project-duplication/cross-env-project-duplication",
+              ],
             },
           ],
         },

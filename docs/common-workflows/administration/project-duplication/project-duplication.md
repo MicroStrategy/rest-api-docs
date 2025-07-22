@@ -1,11 +1,17 @@
 ---
-sidebar_label: Project Duplication
-title: Project Duplication
+sidebar_label: Project Duplication (Same Environment)
+title: Project Duplication (Same Environment)
 description: The REST API provides endpoints to duplicate projects within same environment, enabling
   administrators to create copies of projects with customizable settings.
 ---
 
 Project duplication enables administrators to duplicate projects within the same environment for the same MD type (PostgreSQL to PostgreSQL) directly using REST APIs, replacing the need for legacy tools like Object Manager, Developer.
+
+:::warning
+
+These project duplication APIs do not work when [User Fencing](https://www2.microstrategy.com/producthelp/current/SystemAdmin/WebHelp/Lang_1033/content/Work_Fences.htm) is enabled. Please ensure that User Fencing is disabled in the Library.
+
+:::
 
 ## APIs
 
@@ -13,6 +19,7 @@ Project duplication enables administrators to duplicate projects within the same
 - [GET /api/projectDuplications/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplications/getProjectDuplication)
 - [GET /api/projectDuplications](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplications/getProjectDuplications)
 - [PUT /api/projectDuplications/\{id}/status](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplications/cancelDuplication)
+- [DELETE /api/projectDuplications/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Project%20Duplications/deleteDuplication)
 
 ## Privileges and authorization
 
@@ -498,14 +505,13 @@ The following table describes the fields available in the project duplication re
 
 ## Common errors and troubleshooting
 
-| HTTP Status | Error Code             | Description                                     | Resolution                                                                      |
-| ----------- | ---------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------- |
-| 400         | DIFFERENT_ENVIRONMENTS | Source and target environments are not the same | Ensure source.environment.id and target.environment.id are identical            |
-| 400         | INVALID_REQUEST        | Request body is not valid                       | Check the request JSON format and required fields                               |
-| 403         | FORBIDDEN              | User lacks sufficient privileges                | Ensure the user has administrator privileges on both source and target projects |
-| 404         | PROJECT_NOT_FOUND      | Source project not found                        | Verify the source project ID is correct                                         |
-| 409         | PROJECT_NAME_EXISTS    | Target project name already exists              | Choose a different name for the target project                                  |
-| 500         | INTERNAL_SERVER_ERROR  | Internal server error occurred                  | Check server logs for details and retry the operation                           |
+| HTTP Status | Error Code            | Description                        | Resolution                                                                      |
+| ----------- | --------------------- | ---------------------------------- | ------------------------------------------------------------------------------- |
+| 400         | INVALID_REQUEST       | Request body is not valid          | Check the request JSON format and required fields                               |
+| 403         | FORBIDDEN             | User lacks sufficient privileges   | Ensure the user has administrator privileges on both source and target projects |
+| 404         | PROJECT_NOT_FOUND     | Source project not found           | Verify the source project ID is correct                                         |
+| 409         | PROJECT_NAME_EXISTS   | Target project name already exists | Choose a different name for the target project                                  |
+| 500         | INTERNAL_SERVER_ERROR | Internal server error occurred     | Check server logs for details and retry the operation                           |
 
 ## Best practices
 

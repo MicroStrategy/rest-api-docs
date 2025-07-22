@@ -18,6 +18,7 @@ Starting from Strategy ONE (June 2025), we've added support for retrieving image
 - **Get chat history from a specific bot**: Obtain all historical chat messages from a specific bot.
 - **Get suggested questions from a specific bot**: Get recommended questions based on the context from a specific bot.
 - **Image support in answers**: Request and retrieve images as part of answers from Next-Gen AI, with customizable resolution settings. (Available from Strategy ONE (June 2025))
+- **Get attributes and metrics from a specific bot**: Fetch the column information (attributes and metrics) from a specific bot, which can be used for auto-complete functionality in user inputs. (Available from Strategy ONE (July 2025))
 
 For further details on how to use these APIs, please refer to the following sections of this manual:
 
@@ -26,3 +27,4 @@ For further details on how to use these APIs, please refer to the following sect
 - [Get chat history from a specific bot](./get-questions-by-bot.md)
 - [Get suggested questions from a specific bot](./post-suggestion.md)
 - [Get image from an answer](./get-image-of-answer.md)
+- [Get attributes and metrics from a specific bot](./get-columns.md)
