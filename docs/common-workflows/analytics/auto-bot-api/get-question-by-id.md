@@ -56,7 +56,7 @@ If the question is being processed, the response is:
 ```json
 {
   "id": "9161386651E84054A6230796C84E12C5:68696ADB633946B4B430ABD959433B3B:FCC1C28296014AB19ABD877E60590890",
-  "text": "Analyze the distribution of cooking times for recipes",
+  "text": "What was the Number of Flights for AirTran Airways Corporation in July 2010?",
   "answers": [],
   "creationDate": "2024-03-08T09:01:43.154+0000"
 }
@@ -69,11 +69,12 @@ If the status code is 200, indicating that the question has been answered.
 ```json
 {
   "id": "9161386651E84054A6230796C84E12C5:68696ADB633946B4B430ABD959433B3B:FCC1C28296014AB19ABD877E60590890",
-  "text": "Analyze the distribution of cooking times for recipes",
+  "text": "What was the Number of Flights for AirTran Airways Corporation in July 2010?",
   "answers": [
     {
       "bot": { "id": "68696ADB633946B4B430ABD959433B3B" },
-      "text": "#Title 1\nThe distribution of cooking times for recipes is as follows:\n- The shortest cooking time is -1 minute.\n- The majority of recipes have cooking times ranging from 2 to 60 minutes.\n- There are a few recipes with longer cooking times, such as 75, 90, 120, and 720 minutes.\n- The exact distribution of cooking times can be seen in the visualization result.",
+      "text": "**The Number of Flights for AirTran Airways Corporation in July 2010 was 2260.**",
+      "insights": "- \uD83D\uDE0A **July is often a peak travel month, so seeing a high number of flights is typical for airlines during this period.**\n- ✈️ **A total of 2260 flights in one month indicates strong operational capacity and demand for AirTran Airways Corporation at that time.**\n- \uD83D\uDCC8 **Tracking monthly flight numbers can help identify seasonal trends and inform future scheduling or marketing strategies.**",
       "images": [{ "id": "79FD176AEAD9446395B083B5931E9EC7", "width": 800, "height": 600 }],
       "route": "sql"
     }

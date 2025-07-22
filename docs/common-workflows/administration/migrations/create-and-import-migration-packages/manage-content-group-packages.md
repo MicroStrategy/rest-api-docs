@@ -89,6 +89,7 @@ Sample request of the project package:
     {
       "id": "54F3D26011D2896560009A8E67019608",
       "name": "admin_group",
+      "level": "configuration_object",
       "type": 77,
       "action": "replace",
       "includeDependents": true
@@ -139,6 +140,7 @@ Sample request of the project package:
     {
       "id": "54F3D26011D2896560009A8E67019608",
       "name": "admin_group",
+      "level": "configuration_object",
       "type": 77,
       "action": "replace",
       "includeDependents": true

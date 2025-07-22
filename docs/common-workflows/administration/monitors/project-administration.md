@@ -309,6 +309,86 @@ In the example above, the project status of `"MicroStrategy Tutorial"` was chang
   }
   ```
 
+## Update status for a specific project on all cluster nodes
+
+<Available since="Strategy ONE (June 2025)" />
+
+Endpoint: [PATCH /api/monitors/projects/status](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/updateProjectStatusOnAllNodes)
+
+There are several use cases in which it is required to load or unload a project on an environment. A dedicated endpoint `PATCH /api/monitors/projects/status` is implemented to address these use cases. The endpoint call requires to provide the identifier or the name of the project in the query parameters and `X-MSTR-AuthToken` in the header.
+
+If a project ID is passed in the query parameter, we will use the project by ID. Otherwise, a project name must be passed and the project with specific name ignoring cases will be used.
+
+This API will accept the request and start processing to execute based on the request submitted. By default, the API will wait for server session to expire before unloading a project. You can provide a `deleteSessions` query parameter in the case of unloading project to close all active sessions immediately.
+
+- Request parameters:
+
+  - `X-MSTR- AuthToken`: Authorization Token
+  - `projectId`: Project Id
+  - `projectName`: Project name
+  - `deleteSessions`: Whether to close all active sessions when unloading project
+
+- Request body:
+
+  ```json
+  {
+    "status": "loaded" // Valid values are: loaded, unloaded, request_idle, exec_idle, partial_idle, wh_exec_idle, full_idle
+  }
+  ```
+
+- Curl:
+
+  ```bash
+  curl -X PATCH " https:// demo.microstrategy.com/MicroStrategyLibrary/api/monitors/projects/status?projectId=B7CA92F04B9FAE8D941C3E9B7E0CD754" -H "accept: application/json" -H "X-MSTR-AuthToken: jal5uua4uo6gfag1vivmadag17" -H "Content-Type: application/json" -d "{\\"status\\":\\"unloaded\\"}"
+  ```
+
+- Response code: 202 (Accepted)
+
+## Get status for a specific project on all cluster nodes
+
+<Available since="Strategy ONE (June 2025)" />
+
+Endpoint: [GET /api/monitors/projects/status](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getProjectStatusOnAllNodes)
+
+This endpoint queries the status of a project on each node, especially after you load or unload a project with the `PATCH /api/monitors/projects/status` API. The endpoint call requires to provide the identifier or the name of the project in the query parameters and `X-MSTR-AuthToken` in the header.
+
+If a project ID is passed in the query parameter, we will use the project by ID. Otherwise, a project name must be passed and the project with specific name ignoring cases will be used.
+
+You can expect the following statuses of the project to be returned with respect to the nodes: unloaded, loaded, exec_idle, request_idle, full_idle, wh_exec_idle, partial_idle, unloaded_pending, loaded_pending.
+
+- Request parameters:
+
+  - `X-MSTR- AuthToken`: Authorization Token
+  - `projectId`: Project Id
+  - `projectName`: Project name
+
+- Curl:
+
+  ```bash
+  curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/monitors/projects/status?projectId=B7CA92F04B9FAE8D941C3E9B7E0CD754" -H "accept: application/json" -H "X-MSTR-AuthToken: s664q0cqjergslaj4vfpnneb3m"
+  ```
+
+- Response body:
+
+  ```json
+  {
+    "nodes": [
+      {
+        "serverName": "env-160560laio1use1",
+        "serverPort": 34952,
+        "status": "running"
+      },
+      {
+        "serverName": "env-160560laio2use1",
+        "serverPort": 34952,
+        "status": "unloaded"
+      }
+    ]
+  }
+  ```
+
+- Response code: 200 (Success: OK)
+
 ## Delete project
 
 <Available since="2021 Update 8" />
@@ -319,7 +399,9 @@ There are several use cases in which it is required to delete a project from an 
 curl -X 'DELETE' 'https://demo.microstrategy.com/MicroStrategyLibrary/api/projects/A435ED1A4CF916B9A0A0729F9C93C9B9' -H 'accept: */*' -H 'X-MSTR-AuthToken: tp43crmdrkf54avoo9jbgj4a3q'
 ```
 
-The response code is either `202 Accepted` or `204 No Content`. The code depends on the deletion execution status. If the endpoint manages to delete the project in a given timeout, it sends `204` code. If the deletion takes longer than the timeout, the endpoint sends `202` code. The status of the operation can be checked using `GET /api/monitors/iServer/nodes` endpoint. If the deletion is successful, the endpoint stops reporting the project. The endpoint will delete a project only if the project has unloaded status on every node. If the project is not unloaded a following error will be provided to a client.
+The response code is either `202 Accepted` or `204 No Content`. The code depends on the deletion execution status. If the endpoint manages to delete the project in a given timeout, it sends `204` code. If the deletion takes longer than the timeout, the endpoint sends `202` code. The status of the operation can be checked using `GET /api/monitors/iServer/nodes` endpoint. If the deletion is successful, the endpoint stops reporting the project.
+
+By default, the endpoint will delete a project only if the project has unloaded status on every node. If the project is not unloaded a following error will be provided to a client.
 
 ```json
 {
@@ -330,6 +412,14 @@ The response code is either `202 Accepted` or `204 No Content`. The code depends
 ```
 
 The project status can be changed using the `PATCH /api/monitors/iServer/nodes/{nodeName}/projects/{projectId}` endpoint. The client can delete the project if it is administrator or owner of the project.
+
+<Available since="Strategy ONE (June 2025)" />
+
+You can provide a `deleteSessions` query parameter which will help to automatically close all active sessions across all the clustered nodes and then delete the project. The exemplary call is listed below:
+
+```bash
+curl -X 'DELETE' \ 'https://demo.microstrategy.com/MicroStrategyLibrary/api/projects/B7CA92F04B9FAE8D941C3E9B7E0CD754?deleteSessions=true' \ -H 'accept: */*' \ -H 'X-MSTR-AuthToken: tp43crmdrkf54avoo9jbgj4a3q'
+```
 
 ## Log out
 
