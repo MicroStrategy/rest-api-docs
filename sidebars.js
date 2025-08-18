@@ -1087,6 +1087,68 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Mosaic",
+          link: {
+            type: "doc",
+            id: "common-workflows/mosaic/mosaic",
+          },
+          items: [
+            {
+              type: "category",
+              label: "Publish data models",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/publish/manage-data-model-publish",
+              },
+              items: [
+                "common-workflows/mosaic/publish/refresh-a-data-model",
+                "common-workflows/mosaic/publish/schedule-refresh-a-data-model",
+              ],
+            },
+            {
+              type: "category",
+              label: "Manage data model security filter objects",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/manage-data-model-security-filter-objects/manage-data-model-security-filter-objects",
+              },
+              items: [
+                "common-workflows/mosaic/manage-data-model-security-filter-objects/create-a-security-filter-object-in-data-model",
+                "common-workflows/mosaic/manage-data-model-security-filter-objects/update-a-security-filter-object-in-data-model",
+                "common-workflows/mosaic/manage-data-model-security-filter-objects/retrieve-a-security-filter-definition-in-data-model",
+                "common-workflows/mosaic/manage-data-model-security-filter-objects/retrieve-all-security-filters-in-data-model",
+                "common-workflows/mosaic/manage-data-model-security-filter-objects/retrieve-a-security-filters-member-in-data-model",
+                "common-workflows/mosaic/manage-data-model-security-filter-objects/modify-a-security-filters-member-in-data-model",
+                "common-workflows/mosaic/manage-data-model-security-filter-objects/delete-a-security-filter-object-in-data-model",
+              ],
+            },
+            {
+              type: "category",
+              label: "Manage data model attributes objects",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/manage-data-model-attribute-objects/manage-data-model-attribute-objects",
+              },
+              items: [
+                "common-workflows/mosaic/manage-data-model-attribute-objects/retrieve-an-attributes-elements-in-data-model",
+              ],
+            },
+            {
+              type: "category",
+              label: "Manage data model object acl",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/manage-data-model-object-acl/manage-data-model-object-acl",
+              },
+              items: [
+                "common-workflows/mosaic/manage-data-model-object-acl/retrieve-a-data-model-object-acl",
+                "common-workflows/mosaic/manage-data-model-object-acl/update-a-data-model-object-acl",
+              ],
+            },
+          ],
+        },
       ],
     },
     {

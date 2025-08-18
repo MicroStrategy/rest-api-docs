@@ -4,6 +4,21 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## Strategy ONE (August 2025)
+
+- [Refresh a Data Model](common-workflows/mosaic/publish/refresh-a-data-model.md).
+- [Schedule Refresh a Data Model](common-workflows/mosaic/publish/schedule-refresh-a-data-model.md).
+- [Create a Security Filter object in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/create-a-security-filter-object-in-data-model.md).
+- [Update a Security Filter object in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/update-a-security-filter-object-in-data-model.md).
+- [Retrieve a Security Filter Definition in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/retrieve-a-security-filter-definition-in-data-model.md).
+- [Retrieve all Security Filters in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/retrieve-all-security-filters-in-data-model.md).
+- [Retrieve a Security Filter's Member in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/retrieve-a-security-filters-member-in-data-model.md).
+- [Modify a Security Filter's Member in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/modify-a-security-filters-member-in-data-model.md).
+- [Delete a Security Filter Object in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/delete-a-security-filter-object-in-data-model.md).
+- [Retrieve an Attribute's Elements in a Data Model](common-workflows/mosaic/manage-data-model-attribute-objects/retrieve-an-attributes-elements-in-data-model.md).
+- [Get ACL of an object in a Data Model](common-workflows/mosaic/manage-data-model-object-acl/retrieve-a-data-model-object-acl.md).
+- [Update ACL of an object in a Data Model](common-workflows/mosaic/manage-data-model-object-acl/update-a-data-model-object-acl.md).
+
 ## Strategy ONE (July 2025)
 
 - [Project duplication across environments](common-workflows/administration/project-duplication/cross-env-project-duplication.md). Duplicate a project across two environments.
