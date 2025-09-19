@@ -4,17 +4,13 @@ title: Ask a bot instance for suggested questions
 description: This workflow sample demonstrates how to ask a bot instance for suggested questions
 ---
 
-<Available since="Strategy ONE (March 2024)" />
+<Deprecated since="Strategy ONE (September 2025)" />
 
 :::caution
 
-This API is planned for future retirement. Therefore, Strategy recommends that you transition to the [Ask Suggested Question to Bots in the Application API](../question-with-bot-routing-api/ask-suggested-question-to-bots-in-the-application.md) for retrieving suggested questions from bots.
+The API has been **deprecated** and will be completely unavailable in the near future.
 
-Using Ask Suggested Question to Bots in the Application API:
-
-- You do not need to manually create or manage bot instances. The API automatically creates and manages bot instances.
-- The API automatically selects the most appropriate bot based on your previous questions to suggest relevant questions.
-- You can use query parameters to specify a bot to receive suggested questions.
+The API is deprecated due to the introduction of Strategy's new **Auto Agent** technology, which replaces the legacy Auto Bot system. Legacy Auto Bot support will be gradually discontinued after **Strategy One (September 2025)**.
 
 :::
 

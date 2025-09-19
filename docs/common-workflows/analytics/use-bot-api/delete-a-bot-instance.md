@@ -4,25 +4,17 @@ title: Delete a bot instance
 description: This workflow sample demonstrates how to delete a bot instance
 ---
 
-<Available since="Strategy ONE (March 2024)" />
+<Deprecated since="Strategy ONE (September 2025)" />
 
 :::caution
 
-This API is planned for future retirement. Therefore, Strategy recommends that you transition to the [Question with Bot Routing API](../question-with-bot-routing-api/question-api.md) for bot-related workflows.
+The API has been **deprecated** and will be completely unavailable in the near future.
 
-Using the Question with Bot Routing API:
-
-- You do not need to manually create or manage bot instances. The API automatically creates and manages bot instances.
-- It offers ongoing support and updates, ensuring compatibility with new bot-related features.
-- It provides enhanced functionality, such as intelligent bot selection and flexible bot routing.
+The API is deprecated due to the introduction of Strategy's new **Auto Agent** technology, which replaces the legacy Auto Bot system. Legacy Auto Bot support will be gradually discontinued after **Strategy One (September 2025)**.
 
 :::
 
 This workflow sample demonstrates how to create a bot instance.
-
-:::info
-
-This workflow sample demonstrates how to delete a bot instance.
 
 :::info
 

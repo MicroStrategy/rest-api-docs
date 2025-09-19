@@ -1,12 +1,12 @@
 ---
-sidebar_label: Get chat history from a specific bot
-title: Get chat history from a specific bot
-description: This workflow sample demonstrates how to get the historical chat messages from a specific bot.
+sidebar_label: Get chat history from a specific agent
+title: Get chat history from a specific agent
+description: This workflow sample demonstrates how to get the historical chat messages from a specific agent.
 ---
 
 <Available since="Strategy ONE (March 2025)" />
 
-This API is used to get the historical questions from a specific bot for the current user, which can be used as the `history` parameter in the `Ask a question to a specific bot` API.
+This API is used to get the historical questions from a specific agent for the current user, which can be used as the `history` parameter in the `Ask a question to a specific agent` API.
 
 :::info
 
@@ -14,7 +14,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 :::
 
-## Get Questions by Bot
+## Get Questions by Agent
 
 Endpoint: [GET /api/questions/](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Next-Gen%20AI/getChats_1)
 
@@ -28,9 +28,9 @@ Sample Request Headers:
 
 Sample Request Query Strings:
 
-| Query String | Required | Description                                                | Sample Value                     |
-| ------------ | -------- | ---------------------------------------------------------- | -------------------------------- |
-| botId        | Yes      | The ID of the bot whose chat history you want to retrieve. | 065B007500614D158B41B0D020C96966 |
+| Query String | Required | Description                                                  | Sample Value                     |
+| ------------ | -------- | ------------------------------------------------------------ | -------------------------------- |
+| botId        | Yes      | The ID of the agent whose chat history you want to retrieve. | 065B007500614D158B41B0D020C96966 |
 
 Sample Curl:
 
@@ -43,16 +43,16 @@ curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/questions?botId=06
 
 Sample Response Code:
 
-| Response Code | Status                                           |
-| ------------- | ------------------------------------------------ |
-| 200           | Successfully returned the questions from the bot |
-| 400           | Error in getting the questions from the bot      |
-| 401           | Authorization failed                             |
-| 404           | Bot does not exist                               |
+| Response Code | Status                                             |
+| ------------- | -------------------------------------------------- |
+| 200           | Successfully returned the questions from the agent |
+| 400           | Error getting questions from the agent             |
+| 401           | Authorization failed                               |
+| 404           | Agent does not exist                               |
 
 ## Response Body on Success
 
-The response is a list of questions and answers from the specific bot.
+The response is a list of questions and answers from the specific agent.
 
 ### Sample Response
 

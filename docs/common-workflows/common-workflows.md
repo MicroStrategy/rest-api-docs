@@ -15,8 +15,9 @@ The first step in a typical Strategy REST API workflow is authenticating the use
 
 REST API request sequences with descriptions and code samples have been provided for the following common Strategy REST API workflows.
 
-Our workflows are arranged in 3 sections:
+Our workflows are arranged in 4 sections:
 
 - [Analytics](analytics/analytics.md) - used for handling data and objects such as reports, datasets, documents, dashboards, and projects.
 - [Modeling](modeling/modeling.md) - used for handling schema and application objects.
 - [Administration](administration/administration.md) - used for handling administration related workflows.
+- [Mosaic](mosaic/mosaic.md) - used for handling Mosaic data model related workflows.

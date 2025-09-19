@@ -6,20 +6,14 @@ description: This page contains a summary of REST APIs for the "bots" endpoint. 
 <Available since="Strategy ONE (March 2024)" />
 
 :::caution
-
-The following Bot APIs are planned for future retirement. Therefore, Strategy recommends that you use the [Question with Bot Routing APIs](../question-with-bot-routing-api/question-api.md) instead:
+The following Bot APIs have been **deprecated** and will be completely unavailable in the near future.
 
 - [Create a bot instance.](./create-a-bot-instance.md)
 - [Ask for suggested questions](./ask-bot-instance-suggested-question.md)
 - [Ask a bot question](./ask-bot-instance-question.md)
-- [Get a bot question](./get-a-bot-question.md)
 - [Delete a bot instance](./delete-a-bot-instance.md)
 
-Reason:
-
-- **Easy to use**: The [Question with Bot Routing APIs](../question-with-bot-routing-api/question-api.md) automatically manage bot instances, eliminating the need for users to manually create and manage bot instances through separate API calls.
-- **More powerful**: The [Question with Bot Routing APIs](../question-with-bot-routing-api/question-api.md) provide intelligent bot routing by automatically selecting the most appropriate bot to handle a question. If you need to ask a specific bot, you can specify the bot ID as a query parameter. For more details, see [Ask a Question to Bots in the Application](../question-with-bot-routing-api/ask-question-to-bots-in-the-application.md).
-- **Ongoing support and updates**: The [Question with Bot Routing APIs](../question-with-bot-routing-api/question-api.md) will continue to receive updates and support for future bot-related features. In contrast, the Bot APIs will not receive updates or new features and may eventually lead to exceptions as maintenance ends.
+The API is deprecated due to the introduction of Strategy's new **Auto Agent** technology, which replaces the legacy Auto Bot system. Legacy Auto Bot support will be gradually discontinued after **Strategy One (September 2025)**.
 
 :::
 
