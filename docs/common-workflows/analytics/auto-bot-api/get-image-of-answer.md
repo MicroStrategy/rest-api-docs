@@ -4,7 +4,7 @@ title: Get an image in the answer of a specific question
 description: This workflow sample demonstrates how to get an image in the answer of a specific question.
 ---
 
-<Available since="Strategy ONE (June 2024)" />
+<Available since="Strategy ONE (June 2025)" />
 
 This workflow sample demonstrates how to get an image in the answer of a specific question.
 
@@ -14,7 +14,7 @@ Obtain the authorization token needed to execute the request using [POST /api/au
 
 :::
 
-## Get an image of an answer related to a question with bot routing
+## Get an image of an answer
 
 Endpoint: [GET /api/questions/\{questionsId}/answers/images/\{imageId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Next-Gen%20AI/getMessageImage)
 

@@ -6,14 +6,6 @@ description: This workflow sample demonstrates how to get a chat bot's question.
 
 <Available since="Strategy ONE (March 2024)" />
 
-:::caution
-
-This API is planned for future retirement. Therefore, Strategy recommends that you transition to the [Get Question from Bots in the Application API](../question-with-bot-routing-api/get-question-from-bots-in-the-application.md) for retrieving bot responses.
-
-The Get Question from Bots in the Application API can be used in combination with the [Ask Question to Bots in the Application API](../question-with-bot-routing-api/ask-question-to-bots-in-the-application.md) to ask questions and retrieve answers from bots. This streamlined workflow removes manual bot instance management and provides flexible bot routing.
-
-:::
-
 This workflow sample demonstrates how to get a chat bot's question.
 
 :::info

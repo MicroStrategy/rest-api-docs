@@ -39,9 +39,16 @@ Sample Request
   ```json
   {
     "name": "Example",
+    "multipleContents": true,
+    "editable": false,
     "allowDeliveryChanges": false,
     "allowPersonalizationChanges": false,
-    "allowUnsubscribe": false,
+    "allowUnsubscribe": true,
+    "allowUnsubscribeFromEmail": false,
+    "owner": {
+      "id": "54F3D26011D2896560009A8E67019608",
+      "name": "Administrator"
+    },
     "schedules": [
       {
         "id": "3450AE6F4E29E9A6E1075DA93B7062AA"
@@ -49,35 +56,79 @@ Sample Request
     ],
     "contents": [
       {
-        "id": "E63834A411D5C49EC0000C881FDA1A4F",
-        "name": "Unit Tracking by Supplier",
-        "type": "report",
+        "id": "2649260543F8E86FBA0A36A7BE8BBC9F",
+        "name": "DashboardForTelemetry1",
+        "type": "dossier",
+        "projectId": "B19DEDCC11D4E0EFC000EB9495D0F44F",
         "personalization": {
           "compressed": false,
-          "formatMode": "CURRENT_PAGE",
-          "viewMode": "BOTH",
-          "formatType": "HTML"
-        }
+          "contentModes": ["bookmark"],
+          "bookmarkIds": ["5228FBC043BC7964DB682D816C7AECB6"],
+          "manipulations": "<rw_manipulations><rw_manipulation><rw_manipulation_method>51</rw_manipulation_method><rw_node_key>K36</rw_node_key></rw_manipulation><rw_manipulation><rw_manipulation_method>72</rw_manipulation_method><rw_node_key>K53</rw_node_key></rw_manipulation><rw_manipulation><rw_manipulation_method>19</rw_manipulation_method><rw_node_key>K52</rw_node_key><report_manipulation><report_manipulation_method>58</report_manipulation_method><unit_id>4C051DB611D3E877C000B3B2D86C964F</unit_id><unit_type>4</unit_type><threshold enabled=\"1\" is_delivery=\"1\" ix=\"1\"><threshold_properties><name>threshold 0</name><scope>1</scope><text_semantics>2</text_semantics><rw_alt_text/></threshold_properties><grid_format><prs n=\"FormattingFont\"><pr pri=\"7\" v=\"0\"/></prs><prs n=\"FormattingPatterns\"><pr pri=\"4\" v=\"1\"/></prs></grid_format><mi rfd=\"1\"><in><oi ab=\"\" acg=\"0\" des=\"\" did=\"29240359C02142F68BF6587F610E64AB\" dirty=\"1\" ext_type=\"0\" hid=\"0\" id=\"1\" mf=\"1\" n=\"\" nct=\"\" new=\"1\" nmdt=\"\" sta=\"0\" stp=\"256\" tp=\"1\" vr=\"\"/><oi ab=\"\" acg=\"0\" bodyDirty=\"1\" des=\"\" did=\"4C051DB611D3E877C000B3B2D86C964F\" dirty=\"1\" ext_type=\"0\" hid=\"0\" id=\"2\" n=\"Profit\" nct=\"\" nmdt=\"\" sta=\"0\" stp=\"-1\" tp=\"4\" vr=\"\"/></in><exp dirty=\"1\"><nd ddt=\"-1\" disp_id=\"2\" dmt=\"1\" et=\"14\" is_indp_csi=\"0\" nt=\"4\"><nd ddt=\"-1\" disp_id=\"3\" dmt=\"7\" et=\"10\" is_indp_csi=\"0\" nt=\"4\"><nd ddt=\"-1\" disp_id=\"4\" dmt=\"1\" et=\"1\" is_indp_csi=\"0\" nt=\"5\"><mt rfd=\"2\"/></nd><nd ddt=\"5\" disp_id=\"5\" dmt=\"1\" et=\"1\" is_indp_csi=\"0\" nt=\"3\"><cst ddt=\"5\">0</cst></nd><op fnt=\"8\" node=\"0\"/></nd><op fnt=\"19\" node=\"0\"/></nd></exp></mi></threshold></report_manipulation></rw_manipulation></rw_manipulations>",
+          "exportToPdfSettings": null,
+          "exportToCsvSettings": null
+        },
+        "alertActions": [
+          {
+            "act": "setCurrentLayout",
+            "unitKey": "K36",
+            "panelUnitKey": "K53"
+          },
+          {
+            "act": "updateTemplate",
+            "keyContext": "K52",
+            "actions": [
+              {
+                "act": "threshold",
+                "nodeKey": "K52",
+                "thresholds": [
+                  {
+                    "n": "threshold 0",
+                    "scope": 1,
+                    "rtp": 2,
+                    "rtxt": "",
+                    "expr": "<exp><nd et=\"14\" fn=\"19\" node=\"0\"><nds><nd fn=\"8\" et=\"10\"><m did=\"4C051DB611D3E877C000B3B2D86C964F\" n=\"Profit\"></m><cs><c v=\"9\" dtp=\"5\"></c></cs></nd></nds></nd></exp>",
+                    "fmt": {
+                      "FormattingFont": {
+                        "Color": 0
+                      },
+                      "FormattingPatterns": {
+                        "FillStyle": 1
+                      }
+                    }
+                  }
+                ],
+                "thresholdType": -1,
+                "basedOnId": "4C051DB611D3E877C000B3B2D86C964F",
+                "did": "4C051DB611D3E877C000B3B2D86C964F",
+                "objType": 4
+              }
+            ]
+          }
+        ]
       }
     ],
     "recipients": [
       {
         "id": "54F3D26011D2896560009A8E67019608",
-        "type": "user",
-        "includeType": "TO"
+        "type": "user"
       }
     ],
     "delivery": {
       "mode": "MOBILE",
+      "expirationTimeZone": "Europe/London",
       "contactSecurity": false,
       "mobile": {
-        "clientType": "TABLET",
-        "deviceId": "E206C75BABC441C5B13B60C5D956F605",
-        "doNotCreateUpdateCaches": false,
+        "deviceId": "E206C75BABC441C5B13B60C5D956F605,DD197BFE29A047BC890742C611DC8D94",
+        "doNotCreateUpdateCaches": true,
         "overwriteOlderVersion": true,
-        "reRunHl": false
+        "libraryUrl": "http://localhost:8080/MicroStrategyLibrary/",
+        "reRunHl": true,
+        "message": "Mobile alert",
+        "subject": "Alert from Mobile"
       }
-    }
+    },
+    "alert": true
   }
   ```
 
@@ -93,61 +144,59 @@ Sample Response
 
   ```json
   {
-    "id": "0BC64C0AFA4F86A55FB8BEA3332F90B7",
-    "multipleContents": false,
     "name": "Example",
-    "editable": true,
+    "multipleContents": true,
+    "editable": false,
     "allowDeliveryChanges": false,
     "allowPersonalizationChanges": false,
-    "allowUnsubscribe": false,
-    "dateCreated": "2021-08-03T13:08:47+0000",
-    "dateModified": "2021-08-03T13:08:47+0000",
+    "allowUnsubscribe": true,
+    "allowUnsubscribeFromEmail": false,
     "owner": {
-      "id": "7FC05A65473CE2FD845CE6A1D3F13233",
-      "name": "MSTR User"
+      "id": "54F3D26011D2896560009A8E67019608",
+      "name": "Administrator"
     },
     "schedules": [
       {
-        "id": "3450AE6F4E29E9A6E1075DA93B7062AA",
-        "name": "Books Closed",
-        "type": "event_based",
-        "expired": false
+        "id": "3450AE6F4E29E9A6E1075DA93B7062AA"
       }
     ],
     "contents": [
       {
-        "id": "E63834A411D5C49EC0000C881FDA1A4F",
-        "name": "Unit Tracking by Supplier",
-        "type": "report",
+        "id": "2649260543F8E86FBA0A36A7BE8BBC9F",
+        "name": "DashboardForTelemetry1",
+        "type": "dossier",
+        "projectId": "B19DEDCC11D4E0EFC000EB9495D0F44F",
         "personalization": {
           "compressed": false,
-          "formatMode": "CURRENT_PAGE",
-          "viewMode": "BOTH",
-          "formatType": "HTML"
+          "contentModes": ["bookmark"],
+          "bookmarkIds": ["5228FBC043BC7964DB682D816C7AECB6"],
+          "manipulations": "<rw_manipulations><rw_manipulation><rw_manipulation_method>51</rw_manipulation_method><rw_node_key>K36</rw_node_key></rw_manipulation><rw_manipulation><rw_manipulation_method>72</rw_manipulation_method><rw_node_key>K53</rw_node_key></rw_manipulation><rw_manipulation><rw_manipulation_method>19</rw_manipulation_method><rw_node_key>K52</rw_node_key><report_manipulation><report_manipulation_method>58</report_manipulation_method><unit_id>4C051DB611D3E877C000B3B2D86C964F</unit_id><unit_type>4</unit_type><threshold enabled=\"1\" is_delivery=\"1\" ix=\"1\"><threshold_properties><name>threshold 0</name><scope>1</scope><text_semantics>2</text_semantics><rw_alt_text/></threshold_properties><grid_format><prs n=\"FormattingFont\"><pr pri=\"7\" v=\"0\"/></prs><prs n=\"FormattingPatterns\"><pr pri=\"4\" v=\"1\"/></prs></grid_format><mi rfd=\"1\"><in><oi ab=\"\" acg=\"0\" des=\"\" did=\"29240359C02142F68BF6587F610E64AB\" dirty=\"1\" ext_type=\"0\" hid=\"0\" id=\"1\" mf=\"1\" n=\"\" nct=\"\" new=\"1\" nmdt=\"\" sta=\"0\" stp=\"256\" tp=\"1\" vr=\"\"/><oi ab=\"\" acg=\"0\" bodyDirty=\"1\" des=\"\" did=\"4C051DB611D3E877C000B3B2D86C964F\" dirty=\"1\" ext_type=\"0\" hid=\"0\" id=\"2\" n=\"Profit\" nct=\"\" nmdt=\"\" sta=\"0\" stp=\"-1\" tp=\"4\" vr=\"\"/></in><exp dirty=\"1\"><nd ddt=\"-1\" disp_id=\"2\" dmt=\"1\" et=\"14\" is_indp_csi=\"0\" nt=\"4\"><nd ddt=\"-1\" disp_id=\"3\" dmt=\"7\" et=\"10\" is_indp_csi=\"0\" nt=\"4\"><nd ddt=\"-1\" disp_id=\"4\" dmt=\"1\" et=\"1\" is_indp_csi=\"0\" nt=\"5\"><mt rfd=\"2\"/></nd><nd ddt=\"5\" disp_id=\"5\" dmt=\"1\" et=\"1\" is_indp_csi=\"0\" nt=\"3\"><cst ddt=\"5\">0</cst></nd><op fnt=\"8\" node=\"0\"/></nd><op fnt=\"19\" node=\"0\"/></nd></exp></mi></threshold></report_manipulation></rw_manipulation></rw_manipulations>",
+          "exportToPdfSettings": null,
+          "exportToCsvSettings": null
         }
       }
     ],
     "recipients": [
       {
         "id": "54F3D26011D2896560009A8E67019608",
-        "name": "Administrator",
-        "isGroup": false,
-        "type": "user",
-        "includeType": "TO",
-        "childSubscriptionId": "8B1B107C2D4D82C13F1342B7959E9B4D"
+        "type": "user"
       }
     ],
     "delivery": {
       "mode": "MOBILE",
+      "expirationTimeZone": "Europe/London",
       "contactSecurity": false,
       "mobile": {
-        "clientType": "TABLET",
-        "deviceId": "E206C75BABC441C5B13B60C5D956F605",
-        "doNotCreateUpdateCaches": false,
+        "deviceId": "E206C75BABC441C5B13B60C5D956F605,DD197BFE29A047BC890742C611DC8D94",
+        "doNotCreateUpdateCaches": true,
         "overwriteOlderVersion": true,
-        "reRunHl": false
+        "libraryUrl": "http://localhost:8080/MicroStrategyLibrary/",
+        "reRunHl": true,
+        "message": "Mobile alert",
+        "subject": "Alert from Mobile"
       }
-    }
+    },
+    "alert": true
   }
   ```
 
@@ -174,9 +223,16 @@ Sample Request
   ```json
   {
     "name": "Example",
+    "multipleContents": true,
+    "editable": false,
     "allowDeliveryChanges": false,
     "allowPersonalizationChanges": false,
-    "allowUnsubscribe": false,
+    "allowUnsubscribe": true,
+    "allowUnsubscribeFromEmail": false,
+    "owner": {
+      "id": "54F3D26011D2896560009A8E67019608",
+      "name": "Administrator"
+    },
     "schedules": [
       {
         "id": "3450AE6F4E29E9A6E1075DA93B7062AA"
@@ -184,35 +240,80 @@ Sample Request
     ],
     "contents": [
       {
-        "id": "E63834A411D5C49EC0000C881FDA1A4F",
-        "name": "Unit Tracking by Supplier",
-        "type": "report",
+        "id": "2649260543F8E86FBA0A36A7BE8BBC9F",
+        "name": "DashboardForTelemetry1",
+        "type": "dossier",
+        "projectId": "B19DEDCC11D4E0EFC000EB9495D0F44F",
         "personalization": {
           "compressed": false,
-          "formatMode": "CURRENT_PAGE",
-          "viewMode": "BOTH",
-          "formatType": "HTML"
-        }
+          "contentModes": ["bookmark"],
+          "bookmarkIds": ["5228FBC043BC7964DB682D816C7AECB6"],
+          "manipulations": "<rw_manipulations><rw_manipulation><rw_manipulation_method>51</rw_manipulation_method><rw_node_key>K36</rw_node_key></rw_manipulation><rw_manipulation><rw_manipulation_method>72</rw_manipulation_method><rw_node_key>K53</rw_node_key></rw_manipulation><rw_manipulation><rw_manipulation_method>19</rw_manipulation_method><rw_node_key>K52</rw_node_key><report_manipulation><report_manipulation_method>58</report_manipulation_method><unit_id>4C051DB611D3E877C000B3B2D86C964F</unit_id><unit_type>4</unit_type><threshold enabled=\"1\" is_delivery=\"1\" ix=\"1\"><threshold_properties><name>threshold 0</name><scope>1</scope><text_semantics>2</text_semantics><rw_alt_text/></threshold_properties><grid_format><prs n=\"FormattingFont\"><pr pri=\"7\" v=\"0\"/></prs><prs n=\"FormattingPatterns\"><pr pri=\"4\" v=\"1\"/></prs></grid_format><mi rfd=\"1\"><in><oi ab=\"\" acg=\"0\" des=\"\" did=\"29240359C02142F68BF6587F610E64AB\" dirty=\"1\" ext_type=\"0\" hid=\"0\" id=\"1\" mf=\"1\" n=\"\" nct=\"\" new=\"1\" nmdt=\"\" sta=\"0\" stp=\"256\" tp=\"1\" vr=\"\"/><oi ab=\"\" acg=\"0\" bodyDirty=\"1\" des=\"\" did=\"4C051DB611D3E877C000B3B2D86C964F\" dirty=\"1\" ext_type=\"0\" hid=\"0\" id=\"2\" n=\"Profit\" nct=\"\" nmdt=\"\" sta=\"0\" stp=\"-1\" tp=\"4\" vr=\"\"/></in><exp dirty=\"1\"><nd ddt=\"-1\" disp_id=\"2\" dmt=\"1\" et=\"14\" is_indp_csi=\"0\" nt=\"4\"><nd ddt=\"-1\" disp_id=\"3\" dmt=\"7\" et=\"10\" is_indp_csi=\"0\" nt=\"4\"><nd ddt=\"-1\" disp_id=\"4\" dmt=\"1\" et=\"1\" is_indp_csi=\"0\" nt=\"5\"><mt rfd=\"2\"/></nd><nd ddt=\"5\" disp_id=\"5\" dmt=\"1\" et=\"1\" is_indp_csi=\"0\" nt=\"3\"><cst ddt=\"5\">0</cst></nd><op fnt=\"8\" node=\"0\"/></nd><op fnt=\"19\" node=\"0\"/></nd></exp></mi></threshold></report_manipulation></rw_manipulation></rw_manipulations>",
+          "exportToPdfSettings": null,
+          "exportToCsvSettings": null
+        },
+        "alertActions": [
+          {
+            "act": "setCurrentLayout",
+            "unitKey": "K36",
+            "panelUnitKey": "K53"
+          },
+          {
+            "act": "updateTemplate",
+            "keyContext": "K52",
+            "actions": [
+              {
+                "act": "threshold",
+                "nodeKey": "K52",
+                "thresholds": [
+                  {
+                    "n": "threshold 0",
+                    "scope": 1,
+                    "rtp": 2,
+                    "rtxt": "",
+                    "expr": "<exp><nd et=\"14\" fn=\"19\" node=\"0\"><nds><nd fn=\"8\" et=\"10\"><m did=\"4C051DB611D3E877C000B3B2D86C964F\" n=\"Profit\"></m><cs><c v=\"9\" dtp=\"5\"></c></cs></nd></nds></nd></exp>",
+                    "fmt": {
+                      "FormattingFont": {
+                        "Color": 0
+                      },
+                      "FormattingPatterns": {
+                        "FillStyle": 1
+                      }
+                    }
+                  }
+                ],
+                "thresholdType": -1,
+                "basedOnId": "4C051DB611D3E877C000B3B2D86C964F",
+                "did": "4C051DB611D3E877C000B3B2D86C964F",
+                "objType": 4
+              }
+            ]
+          }
+        ]
       }
     ],
     "recipients": [
       {
         "id": "54F3D26011D2896560009A8E67019608",
-        "type": "user",
-        "includeType": "TO"
+        "type": "user"
       }
     ],
     "delivery": {
       "mode": "MOBILE",
+      "expirationTimeZone": "Europe/London",
       "contactSecurity": false,
       "mobile": {
-        "clientType": "TABLET",
         "deviceId": "E206C75BABC441C5B13B60C5D956F605",
-        "doNotCreateUpdateCaches": false,
+        "doNotCreateUpdateCaches": true,
         "overwriteOlderVersion": true,
-        "reRunHl": false
+        "libraryUrl": "http://localhost:8080/MicroStrategyLibrary/",
+        "reRunHl": true,
+        "message": "Mobile alert",
+        "subject": "Alert from Mobile"
       }
-    }
+    },
+    "alert": true,
+    "sendNow": false
   }
   ```
 
@@ -228,61 +329,59 @@ Sample Response
 
   ```json
   {
-    "id": "0BC64C0AFA4F86A55FB8BEA3332F90B7",
-    "multipleContents": false,
     "name": "Example",
-    "editable": true,
+    "multipleContents": true,
+    "editable": false,
     "allowDeliveryChanges": false,
     "allowPersonalizationChanges": false,
-    "allowUnsubscribe": false,
-    "dateCreated": "2021-08-03T13:08:47+0000",
-    "dateModified": "2021-08-03T13:08:47+0000",
+    "allowUnsubscribe": true,
+    "allowUnsubscribeFromEmail": false,
     "owner": {
-      "id": "7FC05A65473CE2FD845CE6A1D3F13233",
-      "name": "MSTR User"
+      "id": "54F3D26011D2896560009A8E67019608",
+      "name": "Administrator"
     },
     "schedules": [
       {
-        "id": "3450AE6F4E29E9A6E1075DA93B7062AA",
-        "name": "Books Closed",
-        "type": "event_based",
-        "expired": false
+        "id": "3450AE6F4E29E9A6E1075DA93B7062AA"
       }
     ],
     "contents": [
       {
-        "id": "E63834A411D5C49EC0000C881FDA1A4F",
-        "name": "Unit Tracking by Supplier",
-        "type": "report",
+        "id": "2649260543F8E86FBA0A36A7BE8BBC9F",
+        "name": "DashboardForTelemetry1",
+        "type": "dossier",
+        "projectId": "B19DEDCC11D4E0EFC000EB9495D0F44F",
         "personalization": {
           "compressed": false,
-          "formatMode": "CURRENT_PAGE",
-          "viewMode": "BOTH",
-          "formatType": "HTML"
+          "contentModes": ["bookmark"],
+          "bookmarkIds": ["5228FBC043BC7964DB682D816C7AECB6"],
+          "manipulations": "<rw_manipulations><rw_manipulation><rw_manipulation_method>51</rw_manipulation_method><rw_node_key>K36</rw_node_key></rw_manipulation><rw_manipulation><rw_manipulation_method>72</rw_manipulation_method><rw_node_key>K53</rw_node_key></rw_manipulation><rw_manipulation><rw_manipulation_method>19</rw_manipulation_method><rw_node_key>K52</rw_node_key><report_manipulation><report_manipulation_method>58</report_manipulation_method><unit_id>4C051DB611D3E877C000B3B2D86C964F</unit_id><unit_type>4</unit_type><threshold enabled=\"1\" is_delivery=\"1\" ix=\"1\"><threshold_properties><name>threshold 0</name><scope>1</scope><text_semantics>2</text_semantics><rw_alt_text/></threshold_properties><grid_format><prs n=\"FormattingFont\"><pr pri=\"7\" v=\"0\"/></prs><prs n=\"FormattingPatterns\"><pr pri=\"4\" v=\"1\"/></prs></grid_format><mi rfd=\"1\"><in><oi ab=\"\" acg=\"0\" des=\"\" did=\"29240359C02142F68BF6587F610E64AB\" dirty=\"1\" ext_type=\"0\" hid=\"0\" id=\"1\" mf=\"1\" n=\"\" nct=\"\" new=\"1\" nmdt=\"\" sta=\"0\" stp=\"256\" tp=\"1\" vr=\"\"/><oi ab=\"\" acg=\"0\" bodyDirty=\"1\" des=\"\" did=\"4C051DB611D3E877C000B3B2D86C964F\" dirty=\"1\" ext_type=\"0\" hid=\"0\" id=\"2\" n=\"Profit\" nct=\"\" nmdt=\"\" sta=\"0\" stp=\"-1\" tp=\"4\" vr=\"\"/></in><exp dirty=\"1\"><nd ddt=\"-1\" disp_id=\"2\" dmt=\"1\" et=\"14\" is_indp_csi=\"0\" nt=\"4\"><nd ddt=\"-1\" disp_id=\"3\" dmt=\"7\" et=\"10\" is_indp_csi=\"0\" nt=\"4\"><nd ddt=\"-1\" disp_id=\"4\" dmt=\"1\" et=\"1\" is_indp_csi=\"0\" nt=\"5\"><mt rfd=\"2\"/></nd><nd ddt=\"5\" disp_id=\"5\" dmt=\"1\" et=\"1\" is_indp_csi=\"0\" nt=\"3\"><cst ddt=\"5\">0</cst></nd><op fnt=\"8\" node=\"0\"/></nd><op fnt=\"19\" node=\"0\"/></nd></exp></mi></threshold></report_manipulation></rw_manipulation></rw_manipulations>",
+          "exportToPdfSettings": null,
+          "exportToCsvSettings": null
         }
       }
     ],
     "recipients": [
       {
         "id": "54F3D26011D2896560009A8E67019608",
-        "name": "Administrator",
-        "isGroup": false,
-        "type": "user",
-        "includeType": "TO",
-        "childSubscriptionId": "8B1B107C2D4D82C13F1342B7959E9B4D"
+        "type": "user"
       }
     ],
     "delivery": {
       "mode": "MOBILE",
+      "expirationTimeZone": "Europe/London",
       "contactSecurity": false,
       "mobile": {
-        "clientType": "TABLET",
         "deviceId": "E206C75BABC441C5B13B60C5D956F605",
-        "doNotCreateUpdateCaches": false,
+        "doNotCreateUpdateCaches": true,
         "overwriteOlderVersion": true,
-        "reRunHl": false
+        "libraryUrl": "http://localhost:8080/MicroStrategyLibrary/",
+        "reRunHl": true,
+        "message": "Mobile alert",
+        "subject": "Alert from Mobile"
       }
-    }
+    },
+    "alert": true
   }
   ```
 

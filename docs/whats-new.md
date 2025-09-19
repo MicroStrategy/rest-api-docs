@@ -4,18 +4,35 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## Strategy ONE (September 2025)
+
+- [Retrieve a Data Model](common-workflows/mosaic/manage-data-models/retrieve-a-data-model.md).
+- [Retrieve Data Model Folders](common-workflows/mosaic/manage-data-model-folders/retrieve-data-model-folders.md).
+- [Retrieve Data Model Tables](common-workflows/mosaic/manage-data-model-tables/retrieve-data-model-tables.md).
+- [Retrieve Data Model Metrics](common-workflows/mosaic/manage-data-model-metrics/retrieve-data-model-metrics.md).
+- [Retrieve a Data Model Metric Embedded Object](common-workflows/mosaic/manage-data-model-metrics/retrieve-a-data-model-metric-embedded-object.md).
+- [Retrieve Data Model Attributes](common-workflows/mosaic/manage-data-model-attributes/retrieve-data-model-attributes.md).
+- [Retrieve an Attribute's Relationships in a Data Model](common-workflows/mosaic/manage-data-model-attributes/retrieve-an-attributes-relationships-in-data-model.md).
+- [Retrieve Smart Attributes for an attribute in a Data Model](common-workflows/mosaic/manage-data-model-attributes/retrieve-smart-attributes-for-an-attribute-in-data-model).
+- [Retrieve Smart Attribute Templates for an attribute in a Data Model](common-workflows/mosaic/manage-data-model-attributes/retrieve-smart-attribute-templates-for-an-attribute-in-data-model).
+- [Retrieve Data Model Base Metrics](common-workflows/mosaic/manage-data-model-base-metrics/retrieve-data-model-base-metrics.md).
+- [Retrieve a Data Model Hierarchy](common-workflows/mosaic/manage-data-model-hierarchy/retrieve-a-data-model-hierarchy.md).
+- Some of the [Bot APIs](common-workflows/analytics/use-bot-api/use-bot-api.md) have been **deprecated** and will be completely unavailable in the near future.
+- Rename 'Next-Gen AI' to 'Agent'.
+- Merge 'Question with Bot Routing APIs' into 'Agent APIs'.
+
 ## Strategy ONE (August 2025)
 
 - [Refresh a Data Model](common-workflows/mosaic/publish/refresh-a-data-model.md).
 - [Schedule Refresh a Data Model](common-workflows/mosaic/publish/schedule-refresh-a-data-model.md).
-- [Create a Security Filter object in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/create-a-security-filter-object-in-data-model.md).
-- [Update a Security Filter object in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/update-a-security-filter-object-in-data-model.md).
-- [Retrieve a Security Filter Definition in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/retrieve-a-security-filter-definition-in-data-model.md).
-- [Retrieve all Security Filters in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/retrieve-all-security-filters-in-data-model.md).
-- [Retrieve a Security Filter's Member in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/retrieve-a-security-filters-member-in-data-model.md).
-- [Modify a Security Filter's Member in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/modify-a-security-filters-member-in-data-model.md).
-- [Delete a Security Filter Object in a Data Model](common-workflows/mosaic/manage-data-model-security-filter-objects/delete-a-security-filter-object-in-data-model.md).
-- [Retrieve an Attribute's Elements in a Data Model](common-workflows/mosaic/manage-data-model-attribute-objects/retrieve-an-attributes-elements-in-data-model.md).
+- [Create a Security Filter object in a Data Model](common-workflows/mosaic/manage-data-model-security-filters/create-a-security-filter-object-in-data-model.md).
+- [Update a Security Filter object in a Data Model](common-workflows/mosaic/manage-data-model-security-filters/update-a-security-filter-object-in-data-model.md).
+- [Retrieve a Security Filter Definition in a Data Model](common-workflows/mosaic/manage-data-model-security-filters/retrieve-a-security-filter-definition-in-data-model.md).
+- [Retrieve all Security Filters in a Data Model](common-workflows/mosaic/manage-data-model-security-filters/retrieve-all-security-filters-in-data-model.md).
+- [Retrieve a Security Filter's Member in a Data Model](common-workflows/mosaic/manage-data-model-security-filters/retrieve-a-security-filters-member-in-data-model.md).
+- [Modify a Security Filter's Member in a Data Model](common-workflows/mosaic/manage-data-model-security-filters/modify-a-security-filters-member-in-data-model.md).
+- [Delete a Security Filter Object in a Data Model](common-workflows/mosaic/manage-data-model-security-filters/delete-a-security-filter-object-in-data-model.md).
+- [Retrieve an Attribute's Elements in a Data Model](common-workflows/mosaic/manage-data-model-attributes/retrieve-an-attributes-elements-in-data-model.md).
 - [Get ACL of an object in a Data Model](common-workflows/mosaic/manage-data-model-object-acl/retrieve-a-data-model-object-acl.md).
 - [Update ACL of an object in a Data Model](common-workflows/mosaic/manage-data-model-object-acl/update-a-data-model-object-acl.md).
 
@@ -26,12 +43,12 @@ Description: What's New in the REST API.
 
 ## Strategy ONE (June 2025)
 
-- [Next-Gen AI Image Support](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Request and retrieve images in answer from Next-Gen AI.
+- [Auto Agent APIs Image Support](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Request and retrieve images in answer from Auto Agent APIs.
 - [Project Duplication](common-workflows/administration/project-duplication/project-duplication.md). Duplicate a project within the same environment.
 
 ## Strategy ONE (March 2025)
 
-- [Next-Gen AI](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Ask questions, retrieve answers, get historical chat messages and suggested questions from Next-Gen AI.
+- [Auto Agent APIs](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Ask questions, retrieve answers, get historical chat messages and suggested questions from Auto Agent APIs.
 
 ## MicroStrategy ONE (September 2024)
 
@@ -39,7 +56,7 @@ Description: What's New in the REST API.
 
 ## MicroStrategy ONE (June 2024)
 
-- [Question with Bot Routing APIs](common-workflows/analytics/question-with-bot-routing-api/question-api.md). Leverage bot routing to ensure user questions are directed to the most appropriate bot with no need to manually switch bots.
+- [Question with Bot Routing APIs](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Leverage bot routing to ensure user questions are directed to the most appropriate bot with no need to manually switch bots.
 
 ## MicroStrategy ONE (March 2024)
 

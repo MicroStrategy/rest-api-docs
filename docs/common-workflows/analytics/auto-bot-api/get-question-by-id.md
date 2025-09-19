@@ -35,13 +35,13 @@ curl 'https://demo.microstrategy.com/MicroStrategyLibrary/api/questions/91613866
 
 Sample Response Code:
 
-| Response Code | Status                                                                         |
-| ------------- | ------------------------------------------------------------------------------ |
-| 200           | Successfully returned the question from the bot that has been answered         |
-| 202           | Successfully returned the question from the bot which is still being processed |
-| 400           | Error in getting the question from the bot                                     |
-| 401           | Authorization failed                                                           |
-| 404           | Question does not exist                                                        |
+| Response Code | Status                                                                            |
+| ------------- | --------------------------------------------------------------------------------- |
+| 200           | Successfully returned the answered question from the agent                        |
+| 202           | Successfully returned the question from the agent, which is still being processed |
+| 400           | Error getting the question from the agent                                         |
+| 401           | Authorization failed                                                              |
+| 404           | Question does not exist                                                           |
 
 ## Response Body on Success
 

@@ -1,5 +1,5 @@
 ---
-title: Retrieve an attribute's elements in data model
+title: Retrieve an attribute's elements in a data model
 sidebar_label: Retrieve an attribute's elements in data model
 description: This workflow sample demonstrates how to retrieve an attribute's elements in data model.
 ---
