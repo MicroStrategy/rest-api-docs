@@ -18,7 +18,12 @@ You can use REST API requests to retrieve an attribute's elements in a data mode
 - [Retrieve an Attribute's Elements in a Data Model](retrieve-an-attributes-elements-in-data-model.md)
 - [Retrieve Data Model Attributes](retrieve-data-model-attributes.md)
 - [Retrieve an Attribute's Relationships in a Data Model](retrieve-an-attributes-relationships-in-data-model.md)
+- [Create a Data Model Attribute](create-a-data-model-attribute.md)
+- [Update a Data Model Attribute](update-a-data-model-attribute.md)
+- [Delete a Data Model Attribute](delete-a-data-model-attribute.md)
+- [Update a Data Model Attribute's Relationships](update-a-data-model-attributes-relationships.md)
 - [Retrieve Smart Attributes for an attribute in a Data Model](retrieve-smart-attributes-for-an-attribute-in-data-model.md)
 - [Retrieve Smart Attribute Templates for an attribute in a Data Model](retrieve-smart-attribute-templates-for-an-attribute-in-data-model.md)
+- [Create and Update Smart Attributes](create-and-update-smart-attributes.md)
 
 For more information about the Modeling service, see [Configuring the Modeling Service](https://www2.microstrategy.com/producthelp/Current/InstallConfig/en-us/Content/modeling_service.htm).

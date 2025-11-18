@@ -12,7 +12,9 @@ This workflow sample demonstrates how to create and update a mobile subscription
 
 :::tip
 
-This workflow follows the general steps described in [Create and get a subscription](create-and-get-a-subscription.md). You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-da43d1b1-a332-4452-829f-e07a041abc8f?ctx=documentation).
+This workflow follows the general steps described in
+[Create and get a subscription](create-and-get-a-subscription.md). You can try out this workflow at
+[REST API Playground](https://www.postman.com/microstrategysdk/workspace/microstrategy-rest-api/folder/16131298-da43d1b1-a332-4452-829f-e07a041abc8f?ctx=documentation).
 
 Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
@@ -20,9 +22,14 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 ## Create a new mobile subscription
 
-Endpoint: [POST /api/subscriptions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/createSubscription)
+Endpoint:
+[POST /api/subscriptions](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/createSubscription)
 
-This endpoint allows you to create a new subscription for a given project. Obtain the authorization token needed to execute the request using `POST /api/auth/login`. Obtain the project ID using `GET /api/projects`. Provide the information used to create a subscription in the body parameter of the request. If the call is successful, the resulting HTTP response returns an HTTP status code of 201 and a response body containing all the information on the newly created subscription.
+This endpoint allows you to create a new subscription for a given project. Obtain the authorization
+token needed to execute the request using `POST /api/auth/login`. Obtain the project ID using
+`GET /api/projects`. Provide the information used to create a subscription in the body parameter of
+the request. If the call is successful, the resulting HTTP response returns an HTTP status code of
+201 and a response body containing all the information on the newly created subscription.
 
 Sample Request
 
@@ -204,9 +211,15 @@ Sample Response
 
 ## Update an existing mobile subscription
 
-Endpoint: [PUT /api/subscriptions/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/updateSubscription)
+Endpoint:
+[PUT /api/subscriptions/\{id}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Subscriptions/updateSubscription)
 
-This endpoint allows you to update all of the information for a specific subscription. Obtain the authorization token needed to execute the request using `POST /api/auth/login`. Obtain the project ID using `GET /api/projects`. Provide the information used to update a subscription in the body parameter of the request and provide the subscription ID in the request path. If the call is successful, the resulting HTTP response returns an HTTP status code of 200 and a response body containing all the information on the updated subscription.
+This endpoint allows you to update all of the information for a specific subscription. Obtain the
+authorization token needed to execute the request using `POST /api/auth/login`. Obtain the project
+ID using `GET /api/projects`. Provide the information used to update a subscription in the body
+parameter of the request and provide the subscription ID in the request path. If the call is
+successful, the resulting HTTP response returns an HTTP status code of 200 and a response body
+containing all the information on the updated subscription.
 
 Sample Request
 

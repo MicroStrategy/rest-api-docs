@@ -16,3 +16,4 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 You can use REST API requests to manage data model tables.
 
 - [Retrieve Data Model Tables](retrieve-data-model-tables.md)
+- [Create, Update, and Delete a Table](create-update-and-delete-a-table.md)
