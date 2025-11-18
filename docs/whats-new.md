@@ -4,6 +4,42 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## Strategy ONE (December 2025)
+
+- [Retrieve Data through Cube Instance](common-workflows/mosaic/retrieve-data-from-data-models/retrieve-data-through-cube-instance.md)
+- [Retrieve Data Model SQL View](common-workflows/mosaic/retrieve-data-from-data-models/retrieve-data-model-sql-view.md)
+
+## Strategy ONE (November 2025)
+
+- [Retrieve all the Relationships in the System Hierarchy](common-workflows/modeling/manage-system-hierarchy/retrieve-all-the-relationships-in-the-system-hierarchy.md).
+- [Manage scope filter objects](common-workflows/modeling/manage-scope-filter-objects/manage-scope-filter-objects.md).
+
+## Strategy ONE (October 2025)
+
+- [Create and Update a Data Model](common-workflows/mosaic/manage-data-models/create-and-update-a-data-model.md).
+- [Create, Update, and Delete a Folder](common-workflows/mosaic/manage-data-model-folders/create-update-and-delete-a-folder.md).
+- [Create, Update, and Delete a Table](common-workflows/mosaic/manage-data-model-tables/create-update-and-delete-a-table.md).
+- [Create a Data Model Attribute](common-workflows/mosaic/manage-data-model-attributes/create-a-data-model-attribute.md).
+- [Update a Data Model Attribute](common-workflows/mosaic/manage-data-model-attributes/update-a-data-model-attribute.md).
+- [Delete a Data Model Attribute](common-workflows/mosaic/manage-data-model-attributes/delete-a-data-model-attribute.md).
+- [Update a Data Model Attribute's Relationships](common-workflows/mosaic/manage-data-model-attributes/update-a-data-model-attributes-relationships.md).
+- [Create a Data Model Base Metric](common-workflows/mosaic/manage-data-model-base-metrics/create-a-data-model-base-metric.md).
+- [Update a Data Model Base Metric](common-workflows/mosaic/manage-data-model-base-metrics/update-a-data-model-base-metric.md).
+- [Delete a Data Model Base Metric](common-workflows/mosaic/manage-data-model-base-metrics/delete-a-data-model-base-metric.md).
+- [Create and Update Smart Attributes](common-workflows/mosaic/manage-data-model-attributes/create-and-update-smart-attributes.md).
+- [Create, Update, and Delete a Metric](common-workflows/mosaic/manage-data-model-metrics/create-update-and-delete-a-metric.md).
+- [Create and Update a Metric Embedded Object](common-workflows/mosaic/manage-data-model-metrics/create-and-update-a-metric-embedded-object.md).
+- [Create, Retrieve, Update, and Delete a Workspace](common-workflows/mosaic/manage-workspaces/create-retrieve-update-and-delete-a-workspace.md).
+- [Restore a Workspace](common-workflows/mosaic/manage-workspaces/restore-a-workspace.md).
+- [Create, Retrieve, Update, and Delete a Pipeline](common-workflows/mosaic/manage-workspace-pipelines/create-retrieve-update-and-delete-a-pipeline.md).
+- [Refresh a Pipeline](common-workflows/mosaic/manage-workspace-pipelines/refresh-a-pipeline.md).
+- [Create, Retrieve, Update, and Delete a Source Table](common-workflows/mosaic/manage-workspace-pipeline-tables/create-retrieve-update-and-delete-a-source-table.md).
+- [Create, Retrieve, Update, and Delete a Wrangle table](common-workflows/mosaic/manage-workspace-pipeline-tables/create-retrieve-update-and-delete-a-wrangle-table.md).
+- [Get object translations in a Data Model](common-workflows/mosaic/manage-data-model-object-translations/retrieve-a-data-model-object-translations.md).
+- [Update object translations in a Data Model](common-workflows/mosaic/manage-data-model-object-translations/update-a-data-model-object-translations.md).
+- [Create a Data Model from Scratch](common-workflows/mosaic/end-to-end/create-a-data-model-from-scratch.md).
+- [Edit an Existing Data Model](common-workflows/mosaic/end-to-end/edit-an-existing-data-model.md).
+
 ## Strategy ONE (September 2025)
 
 - [Retrieve a Data Model](common-workflows/mosaic/manage-data-models/retrieve-a-data-model.md).

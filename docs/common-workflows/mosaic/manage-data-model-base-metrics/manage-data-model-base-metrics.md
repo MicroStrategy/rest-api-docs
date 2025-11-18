@@ -16,3 +16,6 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 You can use REST API requests to manage data model base metrics.
 
 - [Retrieve Data Model Base Metrics](retrieve-data-model-base-metrics.md)
+- [Create a Data Model Base Metric](create-a-data-model-base-metric.md)
+- [Update a Data Model Base Metric](update-a-data-model-base-metric.md)
+- [Delete a Data Model Base Metric](delete-a-data-model-base-metric.md)

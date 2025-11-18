@@ -16,3 +16,4 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 You can use REST API requests to manage data model folders.
 
 - [Retrieve Data Model Folders](retrieve-data-model-folders.md)
+- [Create, Update, and Delete a Folder](create-update-and-delete-a-folder.md)

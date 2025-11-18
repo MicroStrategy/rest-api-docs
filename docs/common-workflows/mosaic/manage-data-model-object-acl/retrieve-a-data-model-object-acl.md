@@ -5,20 +5,7 @@ description: You can use REST API requests to retrieve acl of an object inside a
 
 <Available since="Strategy ONE (August 2025)" />
 
-:::tip
-
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/microstrategy-rest-api/collection/5aq5sem/strategy-rest-api-workflows).
-
-Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
-
-:::
-
-You can use REST APIs to retrieve the acl of an object inside a data model through the Modeling service.
-
-## Retrieve acl of an attribute inside a data model
-
-There is a "Customer Statistics" data model with an "A44F79895E9247719292556AA14373F5" ID. This data model contains a "Customer" attribute with an "B9E7FD5911D3E936C000B3B2D86C964F" ID.
-You want to get the acl of the "Customer" attribute.
+This workflow sample demonstrates how to retrieve the object ACL inside a data model, using the REST API with and without a changeset.
 
 :::info
 
@@ -34,9 +21,32 @@ Changesets are used in this workflow. For information on how to create and use c
 
 :::
 
-To get the acl of the object in your data model, use [GET /api/model/dataModels/\{dataModelId}/objects/\{objectId}/acl](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Data%20Models/getDataModelObjectAcl).
+## Retrieve acl of an attribute inside a data model
 
-Sample Request Header
+There is a "Customer Statistics" data model with an "A44F79895E9247719292556AA14373F5" ID. This data model contains a "Customer" attribute with an "B9E7FD5911D3E936C000B3B2D86C964F" ID.
+You want to get the acl of the "Customer" attribute.
+
+To get the object ACL in your data model, use [GET /api/model/dataModels/\{dataModelId}/objects/\{objectId}/acl](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Data%20Models/getDataModelObjectAcl).
+
+Sample Request Without Changeset
+
+- Request Headers
+
+```http
+"accept": "application/json"
+"X-MSTR-AuthToken": "pisu5dkkutqfblaamdomgr00ch"
+"X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
+```
+
+- Curl:
+
+```bash
+curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/dataModels/A44F79895E9247719292556AA14373F5/objects/B9E7FD5911D3E936C000B3B2D86C964F/acl?subType=attribute" -H "accept: application/json" -H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
+```
+
+Sample Request With Changeset
+
+- Request Headers
 
 ```http
 "accept": "application/json"
@@ -44,9 +54,7 @@ Sample Request Header
 "X-MSTR-MS-Changeset": "0E9F01172ECF4BA2BB510F7B9FB4F6E8"
 ```
 
-Sample Request Body: Empty
-
-Sample Curl:
+- Curl:
 
 ```bash
 curl -X GET "https://demo.microstrategy.com/MicroStrategyLibrary/api/dataModels/A44F79895E9247719292556AA14373F5/objects/B9E7FD5911D3E936C000B3B2D86C964F/acl?subType=attribute" -H "accept: application/json" -H "X-MSTR-AuthToken: pisu5dkkutqfblaamdomgr00ch" -H "X-MSTR-MS-Changeset: 0E9F01172ECF4BA2BB510F7B9FB4F6E8"
