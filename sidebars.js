@@ -787,6 +787,31 @@ const sidebars = {
                 "common-workflows/modeling/manage-user-hierarchy-objects/user-hierarchy-import-parameters",
               ],
             },
+            {
+              type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/modeling/manage-system-hierarchy/manage-system-hierarchy",
+              },
+              label: "Manage system hierarchy",
+              items: [
+                "common-workflows/modeling/manage-system-hierarchy/retrieve-all-the-relationships-in-the-system-hierarchy",
+              ],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/modeling/manage-scope-filter-objects/manage-scope-filter-objects",
+              },
+              label: "Manage scope filter objects",
+              items: [
+                "common-workflows/modeling/manage-scope-filter-objects/retrieve-a-scope-filter-definition",
+                "common-workflows/modeling/manage-scope-filter-objects/retrieve-a-scope-filter-definition-within-a-changeset",
+                "common-workflows/modeling/manage-scope-filter-objects/create-a-scope-filter-object",
+                "common-workflows/modeling/manage-scope-filter-objects/update-a-scope-filter-definition",
+              ],
+            },
           ],
         },
         {
@@ -1063,6 +1088,19 @@ const sidebars = {
               type: "category",
               link: {
                 type: "doc",
+                id: "common-workflows/administration/manage-system-prompts/manage-system-prompts",
+              },
+              label: "Manage system prompts",
+              items: [
+                "common-workflows/administration/manage-system-prompts/get-system-prompts/get-system-prompts",
+                "common-workflows/administration/manage-system-prompts/update-system-prompts/update-system-prompts",
+                "common-workflows/administration/manage-system-prompts/appendix/system-prompt-index",
+              ],
+            },
+            {
+              type: "category",
+              link: {
+                type: "doc",
                 id: "common-workflows/administration/project-duplication/project-duplication",
               },
               label: "Project Duplication",
@@ -1088,7 +1126,10 @@ const sidebars = {
                 type: "doc",
                 id: "common-workflows/mosaic/manage-data-models/manage-data-models",
               },
-              items: ["common-workflows/mosaic/manage-data-models/retrieve-a-data-model"],
+              items: [
+                "common-workflows/mosaic/manage-data-models/retrieve-a-data-model",
+                "common-workflows/mosaic/manage-data-models/create-and-update-a-data-model",
+              ],
             },
             {
               type: "category",
@@ -1099,6 +1140,7 @@ const sidebars = {
               },
               items: [
                 "common-workflows/mosaic/manage-data-model-tables/retrieve-data-model-tables",
+                "common-workflows/mosaic/manage-data-model-tables/create-update-and-delete-a-table",
               ],
             },
             {
@@ -1110,6 +1152,9 @@ const sidebars = {
               },
               items: [
                 "common-workflows/mosaic/manage-data-model-base-metrics/retrieve-data-model-base-metrics",
+                "common-workflows/mosaic/manage-data-model-base-metrics/create-a-data-model-base-metric",
+                "common-workflows/mosaic/manage-data-model-base-metrics/update-a-data-model-base-metric",
+                "common-workflows/mosaic/manage-data-model-base-metrics/delete-a-data-model-base-metric",
               ],
             },
             {
@@ -1122,6 +1167,8 @@ const sidebars = {
               items: [
                 "common-workflows/mosaic/manage-data-model-metrics/retrieve-data-model-metrics",
                 "common-workflows/mosaic/manage-data-model-metrics/retrieve-a-data-model-metric-embedded-object",
+                "common-workflows/mosaic/manage-data-model-metrics/create-update-and-delete-a-metric",
+                "common-workflows/mosaic/manage-data-model-metrics/create-and-update-a-metric-embedded-object",
               ],
             },
             {
@@ -1135,8 +1182,13 @@ const sidebars = {
                 "common-workflows/mosaic/manage-data-model-attributes/retrieve-an-attributes-elements-in-data-model",
                 "common-workflows/mosaic/manage-data-model-attributes/retrieve-data-model-attributes",
                 "common-workflows/mosaic/manage-data-model-attributes/retrieve-an-attributes-relationships-in-data-model",
+                "common-workflows/mosaic/manage-data-model-attributes/create-a-data-model-attribute",
+                "common-workflows/mosaic/manage-data-model-attributes/update-a-data-model-attribute",
+                "common-workflows/mosaic/manage-data-model-attributes/delete-a-data-model-attribute",
+                "common-workflows/mosaic/manage-data-model-attributes/update-a-data-model-attributes-relationships",
                 "common-workflows/mosaic/manage-data-model-attributes/retrieve-smart-attributes-for-an-attribute-in-data-model",
                 "common-workflows/mosaic/manage-data-model-attributes/retrieve-smart-attribute-templates-for-an-attribute-in-data-model",
+                "common-workflows/mosaic/manage-data-model-attributes/create-and-update-smart-attributes",
               ],
             },
             {
@@ -1159,6 +1211,7 @@ const sidebars = {
               },
               items: [
                 "common-workflows/mosaic/manage-data-model-folders/retrieve-data-model-folders",
+                "common-workflows/mosaic/manage-data-model-folders/create-update-and-delete-a-folder",
               ],
             },
             {
@@ -1192,6 +1245,18 @@ const sidebars = {
             },
             {
               type: "category",
+              label: "Retrieve data from data models",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/retrieve-data-from-data-models/retrieve-data-from-data-models",
+              },
+              items: [
+                "common-workflows/mosaic/retrieve-data-from-data-models/retrieve-data-through-cube-instance",
+                "common-workflows/mosaic/retrieve-data-from-data-models/retrieve-data-model-sql-view",
+              ],
+            },
+            {
+              type: "category",
               label: "Manage data model object acl",
               link: {
                 type: "doc",
@@ -1200,6 +1265,66 @@ const sidebars = {
               items: [
                 "common-workflows/mosaic/manage-data-model-object-acl/retrieve-a-data-model-object-acl",
                 "common-workflows/mosaic/manage-data-model-object-acl/update-a-data-model-object-acl",
+              ],
+            },
+            {
+              type: "category",
+              label: "Manage data model object translations",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/manage-data-model-object-translations/manage-data-model-object-translations",
+              },
+              items: [
+                "common-workflows/mosaic/manage-data-model-object-translations/retrieve-a-data-model-object-translations",
+                "common-workflows/mosaic/manage-data-model-object-translations/update-a-data-model-object-translations",
+              ],
+            },
+            {
+              type: "category",
+              label: "Manage workspaces",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/manage-workspaces/manage-workspaces",
+              },
+              items: [
+                "common-workflows/mosaic/manage-workspaces/create-retrieve-update-and-delete-a-workspace",
+                "common-workflows/mosaic/manage-workspaces/restore-a-workspace",
+              ],
+            },
+            {
+              type: "category",
+              label: "Manage workspace pipelines",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/manage-workspace-pipelines/manage-workspace-pipelines",
+              },
+              items: [
+                "common-workflows/mosaic/manage-workspace-pipelines/create-retrieve-update-and-delete-a-pipeline",
+                "common-workflows/mosaic/manage-workspace-pipelines/refresh-a-pipeline",
+              ],
+            },
+            {
+              type: "category",
+              label: "Manage workspace pipeline tables",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/manage-workspace-pipeline-tables/manage-workspace-pipeline-tables",
+              },
+              items: [
+                "common-workflows/mosaic/manage-workspace-pipeline-tables/create-retrieve-update-and-delete-a-source-table",
+                "common-workflows/mosaic/manage-workspace-pipeline-tables/create-retrieve-update-and-delete-a-wrangle-table",
+              ],
+            },
+            {
+              type: "category",
+              label: "Data model end-to-end management",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/end-to-end/end-to-end",
+              },
+              items: [
+                "common-workflows/mosaic/end-to-end/create-a-data-model-from-scratch",
+                "common-workflows/mosaic/end-to-end/edit-an-existing-data-model",
               ],
             },
           ],

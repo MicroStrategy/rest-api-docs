@@ -1,9 +1,9 @@
 ---
-title: Manage data models
-description: You can use REST API requests to manage data models.
+title: Data model end-to-end management
+description: Use REST APIs to manage data models from end to end.
 ---
 
-<Available since="Strategy ONE (September 2025)" />
+<Available since="Strategy ONE (October 2025)" />
 
 :::tip
 
@@ -15,5 +15,5 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 
 You can use REST API requests to manage data models.
 
-- [Retrieve a Data Model](retrieve-a-data-model.md)
-- [Create and Update a Data Model](create-and-update-a-data-model.md)
+- [Create a Data Model From Scratch](create-a-data-model-from-scratch.md)
+- [Edit an Existing Data Model](edit-an-existing-data-model.md)
