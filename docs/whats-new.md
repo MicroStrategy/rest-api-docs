@@ -4,6 +4,18 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## Strategy ONE (January 2026)
+
+- [Retrieve Data Model External Data Models](common-workflows/mosaic/manage-data-model-external-data-models/retrieve-data-model-external-data-models.md)
+- [Create a Data Model External Data Model](common-workflows/mosaic/manage-data-model-external-data-models/create-a-data-model-external-data-model.md)
+- [Update a Data Model External Data Model](common-workflows/mosaic/manage-data-model-external-data-models/update-a-data-model-external-data-model.md)
+- [Delete a Data Model External Data Model](common-workflows/mosaic/manage-data-model-external-data-models/delete-a-data-model-external-data-model.md)
+- [Update a Data Model External Data Model's Object](common-workflows/mosaic/manage-data-model-external-data-models/update-a-data-model-external-data-models-object.md)
+- [Refresh a Data Model External Data Models](common-workflows/mosaic/manage-data-model-external-data-models/refresh-a-data-model-external-data-models.md)
+- [Retrieve Data Model Links](common-workflows/mosaic/manage-data-model-links/retrieve-data-model-links.md)
+- [Create a Data Model Link](common-workflows/mosaic/manage-data-model-links/create-a-data-model-link.md)
+- [Update Data Model Links](common-workflows/mosaic/manage-data-model-links/update-data-model-links.md)
+
 ## Strategy ONE (December 2025)
 
 - [Retrieve Data through Cube Instance](common-workflows/mosaic/retrieve-data-from-data-models/retrieve-data-through-cube-instance.md)
