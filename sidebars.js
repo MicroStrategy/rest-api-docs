@@ -1327,6 +1327,35 @@ const sidebars = {
                 "common-workflows/mosaic/end-to-end/edit-an-existing-data-model",
               ],
             },
+            {
+              type: "category",
+              label: "Manage data model external data models",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/manage-data-model-external-data-models/manage-data-model-external-data-models",
+              },
+              items: [
+                "common-workflows/mosaic/manage-data-model-external-data-models/retrieve-data-model-external-data-models",
+                "common-workflows/mosaic/manage-data-model-external-data-models/create-a-data-model-external-data-model",
+                "common-workflows/mosaic/manage-data-model-external-data-models/update-a-data-model-external-data-model",
+                "common-workflows/mosaic/manage-data-model-external-data-models/delete-a-data-model-external-data-model",
+                "common-workflows/mosaic/manage-data-model-external-data-models/update-a-data-model-external-data-models-object",
+                "common-workflows/mosaic/manage-data-model-external-data-models/refresh-a-data-model-external-data-models",
+              ],
+            },
+            {
+              type: "category",
+              label: "Manage data model links",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/manage-data-model-links/manage-data-model-links",
+              },
+              items: [
+                "common-workflows/mosaic/manage-data-model-links/retrieve-data-model-links",
+                "common-workflows/mosaic/manage-data-model-links/create-a-data-model-link",
+                "common-workflows/mosaic/manage-data-model-links/update-data-model-links",
+              ],
+            },
           ],
         },
       ],

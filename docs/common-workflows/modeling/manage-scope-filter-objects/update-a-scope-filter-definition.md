@@ -1,20 +1,24 @@
 ---
 title: Update a scope filter's definition
 sidebar_label: Update a scope filter's definition
-description: This workflow sample demonstrates how to update a scope filter's definition using the Modeling service.
+description:
+  This workflow sample demonstrates how to update a scope filter's definition using the Modeling
+  service.
 ---
 
 <Available since="Strategy ONE (November 2025)" />
 
 :::tip
 
-You can try out this workflow at [REST API Playground](https://www.postman.com/microstrategysdk/microstrategy-rest-api/collection/5aq5sem/strategy-rest-api-workflows).
+You can try out this workflow at
+[REST API Playground](https://www.postman.com/microstrategysdk/microstrategy-rest-api/collection/5aq5sem/strategy-rest-api-workflows).
 
 Learn more about Strategy REST API Playground [here](/docs/getting-started/playground.md).
 
 :::
 
-This workflow sample demonstrates how to update a scope filter's definition through the using service.
+This workflow sample demonstrates how to update a scope filter's definition through the using
+service.
 
 1. Create a changeset
 1. [Update a scope filter definition](#update-a-scope-filter)
@@ -23,19 +27,23 @@ This workflow sample demonstrates how to update a scope filter's definition thro
 
 :::info
 
-Get the authorization token needed to execute the request with [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Get the authorization token needed to execute the request with
+[POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
-Get the project ID from [GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
+Get the project ID from
+[GET /api/projects](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Projects/getProjects_1).
 
 :::
 
-Changesets are used in this workflow. For information on how to create and use changesets, see [Changesets](/docs/common-workflows/modeling/changesets.md).
+Changesets are used in this workflow. For information on how to create and use changesets, see
+[Changesets](/docs/common-workflows/modeling/changesets.md).
 
 ## Update a scope filter
 
 Endpoint:[PUT /api/model/scopeFilters/\{scopeFilterId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Scope%20Filters/putScopeFilter)
 
-You want to update the scope filter to have an attribute elements prompt based on the "Customer" attribute. The attribute elements should be in the "Smith:Laurell" and "Smith:Sarah" lists.
+You want to update the scope filter to have an attribute elements prompt based on the "Customer"
+attribute. The attribute elements should be in the "Smith:Laurell" and "Smith:Sarah" lists.
 
 Sample Request Header:
 
