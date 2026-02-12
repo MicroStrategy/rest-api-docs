@@ -4,6 +4,10 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## Strategy ONE (March 2026)
+
+- [Unstructured Data APIs](common-workflows/analytics/unstructured-data-api/unstructured-data-api.md)
+
 ## Strategy ONE (January 2026)
 
 - [Retrieve Data Model External Data Models](common-workflows/mosaic/manage-data-model-external-data-models/retrieve-data-model-external-data-models.md)

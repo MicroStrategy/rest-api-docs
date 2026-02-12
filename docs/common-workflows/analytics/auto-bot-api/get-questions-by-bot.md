@@ -6,20 +6,17 @@ description: This workflow sample demonstrates how to get the historical chat me
 
 <Available since="Strategy ONE (March 2025)" />
 
-This API is used to get the historical questions from a specific agent for the current user, which
-can be used as the `history` parameter in the `Ask a question to a specific agent` API.
+This API is used to get the historical questions from a specific agent for the current user, which can be used as the `history` parameter in the `Ask a question to a specific agent` API.
 
 :::info
 
-Obtain the authorization token needed to execute the request using
-[POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 :::
 
 ## Get Questions by Agent
 
-Endpoint:
-[GET /api/questions/](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Next-Gen%20AI/getChats_1)
+Endpoint: [GET /api/questions/](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Next-Gen%20AI/getChats_1)
 
 Sample Request Headers:
 
@@ -100,5 +97,6 @@ The response is a list of questions and answers from the specific agent.
 }
 ```
 
-:::note Questions with `type` as `snapshots` should not be used as history in the
-`Ask a Specific Bot a Question` API. :::
+:::note
+Questions with `type` as `snapshots` should not be used as history in the `Ask a Specific Bot a Question` API.
+:::

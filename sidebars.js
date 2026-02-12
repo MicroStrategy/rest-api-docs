@@ -443,6 +443,19 @@ const sidebars = {
                 "common-workflows/analytics/use-bot-api/delete-a-bot-instance",
               ],
             },
+            {
+              type: "category",
+              link: {
+                type: "doc",
+                id: "common-workflows/analytics/unstructured-data-api/unstructured-data-api",
+              },
+              label: "Unstructured Data APIs",
+              items: [
+                "common-workflows/analytics/unstructured-data-api/update-unstructured-data",
+                "common-workflows/analytics/unstructured-data-api/update-unstructured-data-categories",
+                "common-workflows/analytics/unstructured-data-api/get-unstructured-data-categories",
+              ],
+            },
           ],
         },
         {

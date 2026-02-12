@@ -10,20 +10,20 @@ This workflow sample demonstrates how to get a question's answer by the question
 
 :::info
 
-Obtain the authorization token needed to execute the request using
-[POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
+Obtain the authorization token needed to execute the request using [POST /api/auth/login](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Authentication/postLogin).
 
 :::
 
 ## Get a question with question ID
 
-Endpoint:
-[GET /api/questions/\{questionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Next-Gen%20AI/queryMessage_1)
+Endpoint: [GET /api/questions/\{questionId}](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Next-Gen%20AI/queryMessage_1)
 
-:::note Replace `{questionId}` in `GET /api/questions/{questionId}` with your question ID from
-`POST /api/questions`. :::
+:::note
+Replace `{questionId}` in `GET /api/questions/{questionId}` with your question ID from `POST /api/questions`.
+:::
 
-Sample Request Body: No request body.
+Sample Request Body:
+No request body.
 
 Sample Curl:
 
@@ -49,8 +49,7 @@ The response is the question and answer with the specific ID.
 
 ### Response when the question is still being processed
 
-If the response code is 202, indicating that the question is still being processed, continue calling
-this API to check the status of the question.
+If the response code is 202, indicating that the question is still being processed, continue calling this API to check the status of the question.
 
 If the question is being processed, the response is:
 
