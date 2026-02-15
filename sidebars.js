@@ -1383,6 +1383,7 @@ const sidebars = {
       items: [
         "microstrategy-rest-api-samples/create-reports-on-the-fly",
         "microstrategy-rest-api-samples/react-user-manage-sample",
+        "microstrategy-rest-api-samples/apply-filters-parallel-rendering-workflow",
       ],
     },
   ],
