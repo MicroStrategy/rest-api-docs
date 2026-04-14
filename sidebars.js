@@ -451,6 +451,7 @@ const sidebars = {
               },
               label: "Unstructured Data APIs",
               items: [
+                "common-workflows/analytics/unstructured-data-api/create-unstructured-data",
                 "common-workflows/analytics/unstructured-data-api/update-unstructured-data",
                 "common-workflows/analytics/unstructured-data-api/update-unstructured-data-categories",
                 "common-workflows/analytics/unstructured-data-api/get-unstructured-data-categories",
@@ -1142,6 +1143,8 @@ const sidebars = {
               items: [
                 "common-workflows/mosaic/manage-data-models/retrieve-a-data-model",
                 "common-workflows/mosaic/manage-data-models/create-and-update-a-data-model",
+                "common-workflows/mosaic/manage-data-models/export-a-data-model",
+                "common-workflows/mosaic/manage-data-models/restore-a-data-model",
               ],
             },
             {

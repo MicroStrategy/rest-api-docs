@@ -13,6 +13,7 @@ Previously available as internal APIs, these endpoints are now publicly accessib
 
 ### Key Features
 
+- **Create unstructured data**: Upload new files as unstructured data sources to expand the agent knowledge base.
 - **Update unstructured data**: Re-upload files to refresh or replace the content of existing unstructured data, keeping your agent's knowledge base current.
 - **Update categories**: Assign or modify category tags that describe the data within unstructured data, helping agents better understand the content and context of each data source.
 - **Retrieve categories**: Get the current category tags of an unstructured data source to understand which descriptive information is available to agents.
@@ -26,6 +27,7 @@ Previously available as internal APIs, these endpoints are now publicly accessib
 
 For more information on how to use these APIs, see the following sections of this manual:
 
+- [Create an unstructured data](./create-unstructured-data.md)
 - [Update an unstructured data](./update-unstructured-data.md)
 - [Update categories for an unstructured data](./update-unstructured-data-categories.md)
 - [Get categories for an unstructured data](./get-unstructured-data-categories.md)
