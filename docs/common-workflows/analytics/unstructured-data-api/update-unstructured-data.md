@@ -1,6 +1,6 @@
 ---
 title: Update unstructured data
-description: This page describes how to update unstructured data by re-uploading a file to a specific nugget.
+description: This page describes how to update unstructured data by re-uploading a file to a specific unstructured data.
 ---
 
 <Available since="Strategy ONE (March 2026)" />
@@ -24,9 +24,9 @@ Request Parameters:
 | id               | path       | ID of the unstructured data     | Yes      | string  |
 | X-MSTR-ProjectID | header     | Project ID                      | Yes      | string  |
 | X-MSTR-AuthToken | header     | Authentication token            | Yes      | string  |
-| fileName         | form-data  | Name of the file being uploaded | No       | string  |
+| fileName         | form-data  | Name of the file being uploaded | Yes      | string  |
 | fileLocation     | form-data  | Location of the file            | No       | string  |
-| fileType         | form-data  | Type of the file                | No       | integer |
+| fileType         | form-data  | Type of the file                | Yes      | integer |
 | fileSize         | form-data  | Size of the file in bytes       | No       | integer |
 | file             | form-data  | The file to upload              | Yes      | binary  |
 
@@ -36,7 +36,6 @@ File Type Mapping (the `fileType` parameter must be a numeric value):
 | --------- | ------------ | ----- |
 | PDF       | PDF          | 0     |
 | WORD      | DOCX         | 1     |
-| HTML      | HTML         | 2     |
 | MARKDOWN  | MD           | 3     |
 | TEXT      | TXT          | 4     |
 | EMAIL     | EMAIL        | 5     |
@@ -60,15 +59,13 @@ HTTP Status: 200 OK
 
 ```json
 {
-  "id": "4B7EF8B549D2D32E941C3E9B7E0CD754",
-  "status": "processing"
+  "id": "4B7EF8B549D2D32E941C3E9B7E0CD754"
 }
 ```
 
 Notes:
 
 - This API returns a 200 OK response, indicating that the request was successful.
-- The unstructured data status will update to "Unloaded" initially and then processed in the background.
 - You can check the processing status of the unstructured data using a separate status endpoint.
 - The file should be uploaded as multipart/form-data.
 

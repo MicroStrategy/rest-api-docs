@@ -17,3 +17,5 @@ You can use REST API requests to manage data models.
 
 - [Retrieve a Data Model](retrieve-a-data-model.md)
 - [Create and Update a Data Model](create-and-update-a-data-model.md)
+- [Export a Data Model](export-a-data-model.md)
+- [Restore a Data Model](restore-a-data-model.md)
