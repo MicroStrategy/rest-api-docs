@@ -1145,6 +1145,7 @@ const sidebars = {
                 "common-workflows/mosaic/manage-data-models/create-and-update-a-data-model",
                 "common-workflows/mosaic/manage-data-models/export-a-data-model",
                 "common-workflows/mosaic/manage-data-models/restore-a-data-model",
+                "common-workflows/mosaic/manage-data-models/save-a-data-model-as-a-new-data-model",
               ],
             },
             {
