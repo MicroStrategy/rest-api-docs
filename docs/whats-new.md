@@ -4,6 +4,10 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
+## Strategy ONE (May 2026)
+
+- [Save a Data Model as a New Data Model](common-workflows/mosaic/manage-data-models/save-a-data-model-as-a-new-data-model.md)
+
 ## Strategy ONE (April 2026)
 
 - [Export a Data Model](common-workflows/mosaic/manage-data-models/export-a-data-model.md)
