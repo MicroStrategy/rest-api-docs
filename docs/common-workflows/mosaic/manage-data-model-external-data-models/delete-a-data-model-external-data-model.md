@@ -4,7 +4,7 @@ sidebar_label: Delete a data model external data model
 description: This workflow sample demonstrates how to delete a data model external data model through the Modeling service.
 ---
 
-<Available since="Strategy ONE (January 2026)" />
+<Available since="Strategy (January 2026)" />
 
 :::tip
 

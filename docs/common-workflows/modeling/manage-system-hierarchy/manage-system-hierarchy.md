@@ -3,7 +3,7 @@ title: Manage the system hierarchy
 description: You can use REST API requests to manage the system hierarchy.
 ---
 
-<Available since="Strategy ONE (November 2025)" />
+<Available since="Strategy (November 2025)" />
 
 :::tip
 

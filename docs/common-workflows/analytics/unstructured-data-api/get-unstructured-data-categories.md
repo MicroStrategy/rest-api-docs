@@ -3,7 +3,7 @@ title: Get categories for an unstructured data
 description: This page explains how to retrieve categories (tags) for a specific unstructured data item that helps agents better understand and use the data.
 ---
 
-<Available since="Strategy ONE (March 2026)" />
+<Available since="Strategy (March 2026)" />
 
 This API is used to retrieve the categories for unstructured data. Categories are tags that describe the data within the unstructured data, helping agents better understand the context and content of the data source. By retrieving the categories, you can see which descriptive tags have been assigned to the data and use this information to understand how agents will interpret and utilize the data source when answering questions.
 

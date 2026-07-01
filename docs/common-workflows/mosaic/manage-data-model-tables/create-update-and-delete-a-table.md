@@ -3,7 +3,7 @@ title: Create, update, and delete a table
 description: This workflow demonstrates how to create, update, and delete a table using REST API.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 This workflow sample demonstrates how to create, update, and delete a table using the REST API.
 

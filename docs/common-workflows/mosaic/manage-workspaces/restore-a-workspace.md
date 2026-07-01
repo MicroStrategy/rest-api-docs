@@ -3,7 +3,7 @@ title: Restore a workspace
 description: This workflow demonstrates how to restore a workspace using REST API.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 This workflow sample demonstrates how to restore a workspace using the REST API.
 

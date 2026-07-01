@@ -4,7 +4,7 @@ sidebar_label: Create a scope filter object
 description: This workflow sample demonstrates how to create a new scope filter object using the Modeling service.
 ---
 
-<Available since="Strategy ONE (November 2025)" />
+<Available since="Strategy (November 2025)" />
 
 :::tip
 

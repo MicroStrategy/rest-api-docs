@@ -3,7 +3,7 @@ title: Retrieve a data model hierarchy
 description: This workflow demonstrates how to retrieve a data model hierarchy's definition using REST API.
 ---
 
-<Available since="Strategy ONE (September 2025)" />
+<Available since="Strategy (September 2025)" />
 
 This workflow sample demonstrates how to retrieve a data model hierarchy's definition using the REST API with and without a changeset.
 

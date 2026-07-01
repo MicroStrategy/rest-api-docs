@@ -4,7 +4,7 @@ sidebar_label: Retrieve all security filters in data model
 description: This topic covers several workflows for retrieving all security filters in data model.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 This topic covers several workflows to retrieve all security filters in a data model.
 

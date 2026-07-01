@@ -311,7 +311,7 @@ In the example above, the project status of `"MicroStrategy Tutorial"` was chang
 
 ## Update status for a specific project on all cluster nodes
 
-<Available since="Strategy ONE (June 2025)" />
+<Available since="Strategy (June 2025)" />
 
 Endpoint: [PATCH /api/monitors/projects/status](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/updateProjectStatusOnAllNodes)
 
@@ -346,7 +346,7 @@ This API will accept the request and start processing to execute based on the re
 
 ## Get status for a specific project on all cluster nodes
 
-<Available since="Strategy ONE (June 2025)" />
+<Available since="Strategy (June 2025)" />
 
 Endpoint: [GET /api/monitors/projects/status](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Monitors/getProjectStatusOnAllNodes)
 
@@ -413,7 +413,7 @@ By default, the endpoint will delete a project only if the project has unloaded 
 
 The project status can be changed using the `PATCH /api/monitors/iServer/nodes/{nodeName}/projects/{projectId}` endpoint. The client can delete the project if it is administrator or owner of the project.
 
-<Available since="Strategy ONE (June 2025)" />
+<Available since="Strategy (June 2025)" />
 
 You can provide a `deleteSessions` query parameter which will help to automatically close all active sessions across all the clustered nodes and then delete the project. The exemplary call is listed below:
 

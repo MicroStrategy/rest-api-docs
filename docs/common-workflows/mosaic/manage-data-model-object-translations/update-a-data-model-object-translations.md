@@ -3,7 +3,7 @@ title: Update object translations inside a data model
 description: You can use REST API requests to update object translations inside a data model.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 :::tip
 

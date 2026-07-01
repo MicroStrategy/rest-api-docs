@@ -3,7 +3,7 @@ title: Manage data model links
 description: You can use REST API requests to manage data model links.
 ---
 
-<Available since="Strategy ONE (January 2026)" />
+<Available since="Strategy (January 2026)" />
 
 :::tip
 

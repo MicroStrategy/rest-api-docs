@@ -4,7 +4,7 @@ title: Get a bot's question
 description: This workflow sample demonstrates how to get a chat bot's question.
 ---
 
-<Available since="Strategy ONE (March 2024)" />
+<Available since="Strategy (March 2024)" />
 
 This workflow sample demonstrates how to get a chat bot's question.
 

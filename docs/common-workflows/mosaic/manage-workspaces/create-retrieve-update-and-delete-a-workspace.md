@@ -3,7 +3,7 @@ title: Create, retrieve, update, and delete a workspace
 description: This workflow demonstrates how to create, retrieve, update, and delete a workspace using REST API.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 This workflow sample demonstrates how to create, retrieve, update, and delete a workspace using the REST API.
 

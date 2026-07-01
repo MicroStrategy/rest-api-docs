@@ -4,7 +4,7 @@ title: Ask the agent a question
 description: Submit a question to the agent and receive a question ID.
 ---
 
-<Available since="Strategy ONE (June 2025)" />
+<Available since="Strategy (June 2025)" />
 
 Use this API to submit a question to the agent and receive an question ID.
 

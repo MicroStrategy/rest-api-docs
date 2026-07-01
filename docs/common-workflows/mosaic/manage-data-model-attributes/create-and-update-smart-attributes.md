@@ -3,7 +3,7 @@ title: Create and update smart attributes
 description: This workflow demonstrates how to create and update smart attributes using REST API.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 This workflow sample demonstrates how to create and update smart attributes using the REST API.
 

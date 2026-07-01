@@ -3,7 +3,7 @@ title: Save a data model as a new data model
 description: This workflow demonstrates how to save a data model as a new data model using REST API.
 ---
 
-<Available since="Strategy ONE (May 2026)" />
+<Available since="Strategy (May 2026)" />
 
 This workflow sample demonstrates how to save an existing data model as a new data model using the REST API.
 

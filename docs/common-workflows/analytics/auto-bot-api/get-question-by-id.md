@@ -4,7 +4,7 @@ title: Get answer by the question ID
 description: This workflow sample demonstrates how to get a question's answer by the question ID.
 ---
 
-<Available since="Strategy ONE (March 2025)" />
+<Available since="Strategy (March 2025)" />
 
 This workflow sample demonstrates how to get a question's answer by the question ID.
 

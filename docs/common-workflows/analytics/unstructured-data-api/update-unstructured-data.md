@@ -3,7 +3,7 @@ title: Update unstructured data
 description: This page describes how to update unstructured data by re-uploading a file to a specific unstructured data.
 ---
 
-<Available since="Strategy ONE (March 2026)" />
+<Available since="Strategy (March 2026)" />
 
 This API is used to update unstructured data by re-uploading a file. When you need to refresh or replace the content of existing unstructured data, this endpoint allows you to upload a new file that will replace the existing data. The unstructured data's metadata and configuration are preserved while the underlying data source is updated.
 

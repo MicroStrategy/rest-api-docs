@@ -3,7 +3,7 @@ title: Retrieve a data model metric embedded object
 description: This workflow demonstrates how to retrieve a data model metric embedded object using REST API.
 ---
 
-<Available since="Strategy ONE (September 2025)" />
+<Available since="Strategy (September 2025)" />
 
 This workflow sample demonstrates how to retrieve a data model metric embedded object using the REST API with and without a changeset.
 

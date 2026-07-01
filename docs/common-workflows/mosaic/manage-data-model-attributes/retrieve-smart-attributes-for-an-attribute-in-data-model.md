@@ -4,7 +4,7 @@ sidebar_label: Retrieve smart attributes for an attribute in a data model
 description: This workflow sample demonstrates how to retrieve smart attributes for an attribute in a data model.
 ---
 
-<Available since="Strategy ONE (September 2025)" />
+<Available since="Strategy (September 2025)" />
 
 :::tip
 

@@ -4,7 +4,7 @@ sidebar_label: Delete a data model base metric
 description: This workflow sample demonstrates how to delete a data model base metric through the Modeling service.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 :::tip
 

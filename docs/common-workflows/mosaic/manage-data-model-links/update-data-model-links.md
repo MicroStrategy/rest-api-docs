@@ -4,7 +4,7 @@ sidebar_label: Update data model links
 description: This workflow sample demonstrates how to update data model links through the Modeling service.
 ---
 
-<Available since="Strategy ONE (January 2026)" />
+<Available since="Strategy (January 2026)" />
 
 :::tip
 

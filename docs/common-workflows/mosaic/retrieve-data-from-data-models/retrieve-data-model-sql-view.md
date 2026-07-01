@@ -3,7 +3,7 @@ title: Retrieve the data model SQL view
 description: This workflow demonstrates how to retrieve the data model SQL view.
 ---
 
-<Available since="Strategy ONE (December 2025)" />
+<Available since="Strategy (December 2025)" />
 
 :::info
 

@@ -3,7 +3,7 @@ title: Create and update a data model
 description: This workflow demonstrates how to create and update a data model using REST API.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 This workflow sample demonstrates how to create and update a data model using the REST API.
 

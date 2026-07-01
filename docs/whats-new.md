@@ -4,21 +4,21 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
-## Strategy ONE (May 2026)
+## Strategy (May 2026)
 
 - [Save a Data Model as a New Data Model](common-workflows/mosaic/manage-data-models/save-a-data-model-as-a-new-data-model.md)
 
-## Strategy ONE (April 2026)
+## Strategy (April 2026)
 
 - [Export a Data Model](common-workflows/mosaic/manage-data-models/export-a-data-model.md)
 - [Restore a Data Model](common-workflows/mosaic/manage-data-models/restore-a-data-model.md)
 - [Create unstructured data](common-workflows/analytics/unstructured-data-api/create-unstructured-data.md)
 
-## Strategy ONE (March 2026)
+## Strategy (March 2026)
 
 - [Unstructured Data APIs](common-workflows/analytics/unstructured-data-api/unstructured-data-api.md)
 
-## Strategy ONE (January 2026)
+## Strategy (January 2026)
 
 - [Retrieve Data Model External Data Models](common-workflows/mosaic/manage-data-model-external-data-models/retrieve-data-model-external-data-models.md)
 - [Create a Data Model External Data Model](common-workflows/mosaic/manage-data-model-external-data-models/create-a-data-model-external-data-model.md)
@@ -30,17 +30,17 @@ Description: What's New in the REST API.
 - [Create a Data Model Link](common-workflows/mosaic/manage-data-model-links/create-a-data-model-link.md)
 - [Update Data Model Links](common-workflows/mosaic/manage-data-model-links/update-data-model-links.md)
 
-## Strategy ONE (December 2025)
+## Strategy (December 2025)
 
 - [Retrieve Data through Cube Instance](common-workflows/mosaic/retrieve-data-from-data-models/retrieve-data-through-cube-instance.md)
 - [Retrieve Data Model SQL View](common-workflows/mosaic/retrieve-data-from-data-models/retrieve-data-model-sql-view.md)
 
-## Strategy ONE (November 2025)
+## Strategy (November 2025)
 
 - [Retrieve all the Relationships in the System Hierarchy](common-workflows/modeling/manage-system-hierarchy/retrieve-all-the-relationships-in-the-system-hierarchy.md).
 - [Manage scope filter objects](common-workflows/modeling/manage-scope-filter-objects/manage-scope-filter-objects.md).
 
-## Strategy ONE (October 2025)
+## Strategy (October 2025)
 
 - [Create and Update a Data Model](common-workflows/mosaic/manage-data-models/create-and-update-a-data-model.md).
 - [Create, Update, and Delete a Folder](common-workflows/mosaic/manage-data-model-folders/create-update-and-delete-a-folder.md).
@@ -66,7 +66,7 @@ Description: What's New in the REST API.
 - [Create a Data Model from Scratch](common-workflows/mosaic/end-to-end/create-a-data-model-from-scratch.md).
 - [Edit an Existing Data Model](common-workflows/mosaic/end-to-end/edit-an-existing-data-model.md).
 
-## Strategy ONE (September 2025)
+## Strategy (September 2025)
 
 - [Retrieve a Data Model](common-workflows/mosaic/manage-data-models/retrieve-a-data-model.md).
 - [Retrieve Data Model Folders](common-workflows/mosaic/manage-data-model-folders/retrieve-data-model-folders.md).
@@ -83,7 +83,7 @@ Description: What's New in the REST API.
 - Rename 'Next-Gen AI' to 'Agent'.
 - Merge 'Question with Bot Routing APIs' into 'Agent APIs'.
 
-## Strategy ONE (August 2025)
+## Strategy (August 2025)
 
 - [Refresh a Data Model](common-workflows/mosaic/publish/refresh-a-data-model.md).
 - [Schedule Refresh a Data Model](common-workflows/mosaic/publish/schedule-refresh-a-data-model.md).
@@ -98,29 +98,29 @@ Description: What's New in the REST API.
 - [Get ACL of an object in a Data Model](common-workflows/mosaic/manage-data-model-object-acl/retrieve-a-data-model-object-acl.md).
 - [Update ACL of an object in a Data Model](common-workflows/mosaic/manage-data-model-object-acl/update-a-data-model-object-acl.md).
 
-## Strategy ONE (July 2025)
+## Strategy (July 2025)
 
 - [Project duplication across environments](common-workflows/administration/project-duplication/cross-env-project-duplication.md). Duplicate a project across two environments.
 - [Get attributes forms and metrics from a specific bot](common-workflows/analytics/auto-bot-api/get-columns.md). Fetch the column information (attributes and metrics) from a specific bot, which can be used for auto-complete functionality in user inputs.
 
-## Strategy ONE (June 2025)
+## Strategy (June 2025)
 
 - [Auto Agent APIs Image Support](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Request and retrieve images in answer from Auto Agent APIs.
 - [Project Duplication](common-workflows/administration/project-duplication/project-duplication.md). Duplicate a project within the same environment.
 
-## Strategy ONE (March 2025)
+## Strategy (March 2025)
 
 - [Auto Agent APIs](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Ask questions, retrieve answers, get historical chat messages and suggested questions from Auto Agent APIs.
 
-## MicroStrategy ONE (September 2024)
+## MicroStrategy (September 2024)
 
 - [Managing bookmarks](common-workflows/administration/manage-bookmarks/manage-bookmarks.md). Retrieve, create, update, and delete bookmarks.
 
-## MicroStrategy ONE (June 2024)
+## MicroStrategy (June 2024)
 
 - [Question with Bot Routing APIs](common-workflows/analytics/auto-bot-api/auto-bot-api.md). Leverage bot routing to ensure user questions are directed to the most appropriate bot with no need to manually switch bots.
 
-## MicroStrategy ONE (March 2024)
+## MicroStrategy (March 2024)
 
 - Rename 'dossier' into 'dashboard'.
 - [Bot APIs](common-workflows/analytics/use-bot-api/use-bot-api.md)

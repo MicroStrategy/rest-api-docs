@@ -3,7 +3,7 @@ title: Retrieve all relationships stored in the system hierarchy
 description: This workflow demonstrates how to retrieve all the relationships stored in the system hierarchy using REST API.
 ---
 
-<Available since="Strategy ONE (November 2025)" />
+<Available since="Strategy (November 2025)" />
 
 This workflow sample demonstrates how to retrieve all relationships stored in the system hierarchy using the REST API with and without a changeset.
 

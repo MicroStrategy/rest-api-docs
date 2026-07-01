@@ -3,7 +3,7 @@ title: Edit an existing data model
 description: This workflow demonstrates how to edit an existing data model using the REST API.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 This workflow sample demonstrates how to edit an existing data model using the REST API.
 

@@ -3,7 +3,7 @@ title: Manage data model security filter objects
 description: You can use REST API requests to retrieve, create and update security filter objects in data model through the Modeling service.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 :::tip
 

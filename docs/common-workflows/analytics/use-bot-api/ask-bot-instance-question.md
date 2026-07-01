@@ -4,13 +4,13 @@ title: Ask the bot instance a question
 description: This workflow sample demonstrates how to ask the bot instance a question.
 ---
 
-<Deprecated since="Strategy ONE (September 2025)" />
+<Deprecated since="Strategy (September 2025)" />
 
 :::caution
 
 The API has been **deprecated** and will be completely unavailable in the near future.
 
-This deprecation is due to the introduction of our new **Auto Agent** technology, which replaces the legacy Auto Bot system. Legacy Auto Bot support will be gradually discontinued after **Strategy One (September 2025)**.
+This deprecation is due to the introduction of our new **Auto Agent** technology, which replaces the legacy Auto Bot system. Legacy Auto Bot support will be gradually discontinued after **Strategy (September 2025)**.
 
 :::
 

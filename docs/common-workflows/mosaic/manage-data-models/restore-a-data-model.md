@@ -3,7 +3,7 @@ title: Restore a data model
 description: This workflow demonstrates how to restore a data model from a YAML file using REST API.
 ---
 
-<Available since="Strategy ONE (April 2026)" />
+<Available since="Strategy (April 2026)" />
 
 This workflow sample demonstrates how to restore a data model from a previously exported YAML file using the REST API.
 

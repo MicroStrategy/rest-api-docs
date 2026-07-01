@@ -3,7 +3,7 @@ title: Publish data models
 description: You can use REST API requests to publish data models.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 :::tip
 

@@ -3,7 +3,7 @@ title: Manage workspace pipelines
 description: You can use REST API requests to manage workspace pipelines.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 :::tip
 

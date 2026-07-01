@@ -3,9 +3,9 @@ title: Unstructured Data APIs
 description: This page contains a summary of REST APIs for managing unstructured data. You can use REST API requests to update and configure unstructured data that agents use to answer questions.
 ---
 
-<Available since="Strategy ONE (March 2026)" />
+<Available since="Strategy (March 2026)" />
 
-Strategy ONE (March 2026) introduces a set of public APIs designed to manage unstructured data that power agent capabilities.
+Strategy (March 2026) introduces a set of public APIs designed to manage unstructured data that power agent capabilities.
 
 The Unstructured Data APIs provide comprehensive control over unstructured data, allowing you to update data content, manage categories (tags) that describe the data, and retrieve category information. Unstructured data serves as knowledge sources that agents use to provide contextual and accurate answers to user questions. Categories are descriptive tags that help agents understand the nature and content of each data source, enabling them to provide more relevant and accurate responses. These APIs enable you to keep your data up-to-date and well-described, ensuring optimal agent performance.
 

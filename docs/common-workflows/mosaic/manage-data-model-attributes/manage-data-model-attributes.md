@@ -3,7 +3,7 @@ title: Manage data model attribute objects
 description: You can use REST API requests to retrieve an attribute's elements in a data model.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 :::tip
 

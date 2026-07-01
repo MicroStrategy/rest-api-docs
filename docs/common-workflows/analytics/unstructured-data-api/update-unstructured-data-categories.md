@@ -3,7 +3,7 @@ title: Update categories for an unstructured data
 description: This page explains how to retrieve categories (tags) for a specific unstructured data item that helps agents better understand and use the data.
 ---
 
-<Available since="Strategy ONE (March 2026)" />
+<Available since="Strategy (March 2026)" />
 
 This API is used to update the categories for unstructured data. Categories are tags that describe the data within the unstructured data, helping agents better understand the context and content of the data source. By assigning appropriate categories (tags), you enable agents to provide more accurate and contextually relevant answers to user questions.
 

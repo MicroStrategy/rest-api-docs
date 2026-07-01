@@ -3,7 +3,7 @@ title: Refresh a data model
 description: This workflow demonstrates how to refresh a data model using REST API.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 This workflow sample demonstrates how to refresh a data model by creating a data model instance and publish it using the REST API.
 
