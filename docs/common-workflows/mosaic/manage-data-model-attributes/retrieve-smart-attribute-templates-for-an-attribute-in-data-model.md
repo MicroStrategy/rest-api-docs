@@ -6,7 +6,7 @@ description:
   model.
 ---
 
-<Available since="Strategy ONE (September 2025)" />
+<Available since="Strategy (September 2025)" />
 
 :::tip
 

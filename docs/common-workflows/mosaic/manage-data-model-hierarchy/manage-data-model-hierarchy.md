@@ -3,7 +3,7 @@ title: Manage data model hierarchy
 description: You can use REST API requests to manage data model hierarchy.
 ---
 
-<Available since="Strategy ONE (September 2025)" />
+<Available since="Strategy (September 2025)" />
 
 :::tip
 

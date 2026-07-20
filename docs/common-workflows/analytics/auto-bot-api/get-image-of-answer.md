@@ -4,7 +4,7 @@ title: Get an image in the answer of a specific question
 description: This workflow sample demonstrates how to get an image in the answer of a specific question.
 ---
 
-<Available since="Strategy ONE (June 2025)" />
+<Available since="Strategy (June 2025)" />
 
 This workflow sample demonstrates how to get an image in the answer of a specific question.
 

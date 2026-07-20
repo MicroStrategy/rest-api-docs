@@ -3,7 +3,7 @@ title: Retrieve a data model
 description: This workflow demonstrates how to retrieve a data model using REST API.
 ---
 
-<Available since="Strategy ONE (September 2025)" />
+<Available since="Strategy (September 2025)" />
 
 This workflow sample demonstrates how to retrieve a data model either with or without the changeset using the REST API.
 

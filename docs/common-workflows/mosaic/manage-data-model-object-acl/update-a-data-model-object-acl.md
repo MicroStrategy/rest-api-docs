@@ -3,7 +3,7 @@ title: Update acl of an object inside a data model
 description: You can use REST API requests to update acl of an object inside a data model.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 :::tip
 

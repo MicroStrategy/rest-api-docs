@@ -4,7 +4,7 @@ sidebar_label: Retrieve an attribute's elements in data model
 description: This workflow sample demonstrates how to retrieve an attribute's elements in data model.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 :::tip
 

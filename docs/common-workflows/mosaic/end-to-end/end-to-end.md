@@ -3,7 +3,7 @@ title: Data model end-to-end management
 description: Use REST APIs to manage data models from end to end.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 :::tip
 

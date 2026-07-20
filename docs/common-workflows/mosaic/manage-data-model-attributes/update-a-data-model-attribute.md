@@ -4,7 +4,7 @@ sidebar_label: Update a data model attribute
 description: This workflow sample demonstrates how to update a data model attribute through the Modeling service.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 :::tip
 

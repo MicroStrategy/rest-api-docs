@@ -3,7 +3,7 @@ title: Create, retrieve, update, and delete a pipeline
 description: This workflow demonstrates how to create, retrieve, update, and delete a pipeline using REST API.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 This workflow sample demonstrates how to create, retrieve, update, and delete a pipeline using the REST API.
 

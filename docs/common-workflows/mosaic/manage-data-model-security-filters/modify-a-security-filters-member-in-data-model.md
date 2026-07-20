@@ -4,7 +4,7 @@ sidebar_label: Modify a security filter's member in data model
 description: This workflow sample demonstrates how to modify the users and user groups that a specified security filter in data model is applied to.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 :::tip
 

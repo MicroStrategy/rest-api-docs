@@ -3,7 +3,7 @@ title: Retrieve data model links
 description: This workflow demonstrates how to retrieve data model links using REST API.
 ---
 
-<Available since="Strategy ONE (January 2026)" />
+<Available since="Strategy (January 2026)" />
 
 :::tip
 

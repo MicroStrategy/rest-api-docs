@@ -3,7 +3,7 @@ title: Retrieve data model folders
 description: This workflow demonstrates how to retrieve data model folders using REST API.
 ---
 
-<Available since="Strategy ONE (September 2025)" />
+<Available since="Strategy (September 2025)" />
 
 This workflow sample demonstrates how to retrieve one or more data model folders using the REST API with and without a changeset.
 

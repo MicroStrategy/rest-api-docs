@@ -4,7 +4,7 @@ sidebar_label: Update a scope filter's definition
 description: This workflow sample demonstrates how to update a scope filter's definition using the Modeling service.
 ---
 
-<Available since="Strategy ONE (November 2025)" />
+<Available since="Strategy (November 2025)" />
 
 :::tip
 

@@ -3,7 +3,7 @@ title: Refresh data model external data models
 description: This workflow demonstrates how to refresh data model external data models using REST API.
 ---
 
-<Available since="Strategy ONE (January 2026)" />
+<Available since="Strategy (January 2026)" />
 
 :::tip
 

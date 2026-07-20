@@ -3,7 +3,7 @@ title: Retrieve data model metrics
 description: This workflow demonstrates how to retrieve data model metrics using REST API.
 ---
 
-<Available since="Strategy ONE (September 2025)" />
+<Available since="Strategy (September 2025)" />
 
 This workflow demonstrates how to retrieve data model metrics and their advanced properties using the REST API, with and without a changeset.
 

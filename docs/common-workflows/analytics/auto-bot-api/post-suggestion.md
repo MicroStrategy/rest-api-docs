@@ -4,7 +4,7 @@ title: Get suggested questions from the agent
 description: This workflow sample demonstrates how to get suggested questions from the agent.
 ---
 
-<Available since="Strategy ONE (March 2025)" />
+<Available since="Strategy (March 2025)" />
 
 This workflow sample demonstrates how to get suggested questions from the agent.
 

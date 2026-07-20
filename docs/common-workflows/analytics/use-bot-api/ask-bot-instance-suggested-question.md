@@ -4,13 +4,13 @@ title: Ask a bot instance for suggested questions
 description: This workflow sample demonstrates how to ask a bot instance for suggested questions
 ---
 
-<Deprecated since="Strategy ONE (September 2025)" />
+<Deprecated since="Strategy (September 2025)" />
 
 :::caution
 
 The API has been **deprecated** and will be completely unavailable in the near future.
 
-The API is deprecated due to the introduction of Strategy's new **Auto Agent** technology, which replaces the legacy Auto Bot system. Legacy Auto Bot support will be gradually discontinued after **Strategy One (September 2025)**.
+The API is deprecated due to the introduction of Strategy's new **Auto Agent** technology, which replaces the legacy Auto Bot system. Legacy Auto Bot support will be gradually discontinued after **Strategy (September 2025)**.
 
 :::
 

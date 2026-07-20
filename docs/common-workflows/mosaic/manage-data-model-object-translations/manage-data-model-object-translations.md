@@ -3,7 +3,7 @@ title: Manage data model object translations
 description: You can use REST API requests to retrieve and update object translations in the data model through the Modeling service.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 :::tip
 

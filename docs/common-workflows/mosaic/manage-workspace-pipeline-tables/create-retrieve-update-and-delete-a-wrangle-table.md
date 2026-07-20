@@ -3,7 +3,7 @@ title: Create, retrieve, update, and delete a wrangle table
 description: This workflow demonstrates how to create, retrieve, update, and delete a wrangle table using REST API.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 This workflow sample demonstrates how to create, retrieve, update, and delete a wrangle table using the REST API.
 

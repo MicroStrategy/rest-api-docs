@@ -3,7 +3,7 @@ title: Create unstructured data
 description: This page describes how to create unstructured data by uploading a file to a specific folder.
 ---
 
-<Available since="Strategy ONE (April 2026)" />
+<Available since="Strategy (April 2026)" />
 
 Use this API to create unstructured data by uploading a file. When you add a new knowledge source for agents, call this endpoint to upload the file and create an unstructured data item that can be indexed and used to answer questions.
 

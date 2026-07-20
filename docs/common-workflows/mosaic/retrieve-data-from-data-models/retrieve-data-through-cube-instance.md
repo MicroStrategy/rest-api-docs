@@ -3,7 +3,7 @@ title: Retrieve data through cube instance
 description: This workflow demonstrates how to retrieve data for a data model through cube instance using REST API.
 ---
 
-<Available since="Strategy ONE (December 2025)" />
+<Available since="Strategy (December 2025)" />
 
 :::info
 

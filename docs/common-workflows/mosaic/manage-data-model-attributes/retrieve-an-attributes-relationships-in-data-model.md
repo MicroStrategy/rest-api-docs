@@ -3,7 +3,7 @@ title: Retrieve an attribute's relationships in a data model
 description: This workflow demonstrates how to retrieve an attribute's relationships in a data model using REST API.
 ---
 
-<Available since="Strategy ONE (September 2025)" />
+<Available since="Strategy (September 2025)" />
 
 This workflow sample demonstrates how to retrieve an attribute's relationship in a data model with and without a changeset.
 

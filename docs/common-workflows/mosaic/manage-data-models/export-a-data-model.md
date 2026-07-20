@@ -3,7 +3,7 @@ title: Export a data model
 description: This workflow demonstrates how to export a data model to a YAML file using REST API.
 ---
 
-<Available since="Strategy ONE (April 2026)" />
+<Available since="Strategy (April 2026)" />
 
 This workflow sample demonstrates how to export a data model to a YAML file using the REST API.
 

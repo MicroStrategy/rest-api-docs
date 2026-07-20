@@ -3,7 +3,7 @@ title: Create and update a metric embedded object
 description: This workflow demonstrates how to create and update a metric embedded object using REST API.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 This workflow sample demonstrates how to create and update a metric embedded object using the REST API.
 

@@ -3,7 +3,7 @@ title: Retrieve data from data models
 description: You can use REST API requests to retrieve data from data models.
 ---
 
-<Available since="Strategy ONE (December 2025)" />
+<Available since="Strategy (December 2025)" />
 
 :::tip
 

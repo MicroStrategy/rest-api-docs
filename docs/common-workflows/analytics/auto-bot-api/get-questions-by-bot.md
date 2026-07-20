@@ -4,7 +4,7 @@ title: Get chat history from a specific agent
 description: This workflow sample demonstrates how to get the historical chat messages from a specific agent.
 ---
 
-<Available since="Strategy ONE (March 2025)" />
+<Available since="Strategy (March 2025)" />
 
 This API is used to get the historical questions from a specific agent for the current user, which can be used as the `history` parameter in the `Ask a question to a specific agent` API.
 

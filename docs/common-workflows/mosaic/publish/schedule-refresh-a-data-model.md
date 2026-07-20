@@ -3,7 +3,7 @@ title: Schedule refresh a data model
 description: This workflow demonstrates how to schedule a refresh for a data model.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 This workflow sample demonstrates how to schedule a refresh for a data model using the REST API.
 

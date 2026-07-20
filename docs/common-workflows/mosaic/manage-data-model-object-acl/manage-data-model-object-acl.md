@@ -3,7 +3,7 @@ title: Manage data model object acl
 description: You can use REST API requests to retrieve and update acl of objects in data model through the Modeling service.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 :::tip
 

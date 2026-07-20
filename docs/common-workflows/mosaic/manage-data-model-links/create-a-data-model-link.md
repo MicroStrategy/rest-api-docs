@@ -4,7 +4,7 @@ sidebar_label: Create a data model link
 description: This workflow sample demonstrates how to create a data model link through the Modeling service.
 ---
 
-<Available since="Strategy ONE (January 2026)" />
+<Available since="Strategy (January 2026)" />
 
 :::tip
 

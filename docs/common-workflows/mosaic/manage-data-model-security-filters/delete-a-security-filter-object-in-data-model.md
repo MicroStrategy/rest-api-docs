@@ -4,7 +4,7 @@ sidebar_label: Delete a security filter definition in data model
 description: This workflow sample demonstrates how to delete a security filter object in data model through the Modeling service.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 :::tip
 

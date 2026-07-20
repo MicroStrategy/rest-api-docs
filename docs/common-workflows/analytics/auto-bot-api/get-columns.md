@@ -3,7 +3,7 @@ title: Get attributes forms and metrics from a specific agent
 description: This page describes how to fetch the column information (attributes and metrics) from a specific agent.
 ---
 
-<Available since="Strategy ONE (July 2025)" />
+<Available since="Strategy (July 2025)" />
 
 This API is used to get column information (attributes forms and metrics) from a specific agent. This information is essential to understand what data elements the agent can access and use in its answers. The column information can be used to provide auto-complete functionality for user inputs, helping users formulate more accurate questions by suggesting relevant data elements as they type.
 

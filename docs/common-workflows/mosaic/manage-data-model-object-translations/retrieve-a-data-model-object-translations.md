@@ -3,7 +3,7 @@ title: Retrieve object translations inside a data model
 description: You can use REST API requests to retrieve object translations inside a data model.
 ---
 
-<Available since="Strategy ONE (October 2025)" />
+<Available since="Strategy (October 2025)" />
 
 This workflow sample demonstrates how to retrieve object translations inside a data model, using the REST API with and without a changeset.
 

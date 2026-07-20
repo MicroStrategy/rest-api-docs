@@ -4,7 +4,7 @@ sidebar_label: Create a security filter object in data model
 description: This workflow sample demonstrates how to create a security filter object in data model through the Modeling service.
 ---
 
-<Available since="Strategy ONE (August 2025)" />
+<Available since="Strategy (August 2025)" />
 
 :::tip
 

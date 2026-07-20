@@ -4,7 +4,7 @@ sidebar_label: Retrieve a scope filter's definition within a changeset
 description: This workflow sample demonstrates how to retrieve a scope filter's definition within a changeset.
 ---
 
-<Available since="Strategy ONE (November 2025)" />
+<Available since="Strategy (November 2025)" />
 
 :::tip
 

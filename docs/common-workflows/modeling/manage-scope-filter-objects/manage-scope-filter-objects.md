@@ -3,7 +3,7 @@ title: Manage scope filter objects
 description: You can use REST API requests to retrieve, create, and update scope filter objects using the Modeling service.
 ---
 
-<Available since="Strategy ONE (November 2025)" />
+<Available since="Strategy (November 2025)" />
 
 :::tip
 
