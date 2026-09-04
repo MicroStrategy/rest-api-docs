@@ -18,17 +18,20 @@ This endpoint fetches a selector's definition and dataset information of a dashb
     <summary>Output example for a dashboard and dashboard instance definition</summary>
 
     ```json
-    { "id": "D29DC6464099A518DE19FEA4C25D346B", "name": "temp Dossier", "hasPrompt": false, "chapters": [ { "key": "K36", "name": "Chapter 1", "pages": [ { "key": "K53", "name": "Page 1", "visualizations": [ { "key": "K52", "name": "Visualization 1", "filteredTargetVisualizations": [ { "key": "W65" } ] }, { "key": "W62", "name": "Visualization 2" }, { "key": "W65", "name": "Visualization 3" } ], "inCanvasSelectors": [] } ], "filters": [ { "key": "W134", "name": "Cost", "summary": "((Cost Between 5707743.0 And 21191039.0))", "source": { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "type": 4 }, "synchronizedAcrossChapter":false "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "expression": { "operator": "And", "operands": [ { "operator": "Between", "operands": [ { "type": "metric", "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost" }, { "type": "constant", "dataType": "Real", "value": "5707743" }, { "type": "constant", "dataType": "Real", "value": "21191039" } ] } ] }, "selections": [] }, { "key": "W138", "name": "Category", "summary": "Category In List Electronics", "source": { "id": "8D679D3711D3E4981000E787EC6DE8A4", "type": 12 }, "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "selections": [ { "id": "h2;8D679D3711D3E4981000E787EC6DE8A4", "name": "Electronics" } ] } ] } ], "datasets": [ { "name": "8DFA1ABC41C2F43530645FA90B80C745", "id": "New Dataset 1", "availableObjects": [ { "id": "8D679D3711D3E4981000E787EC6DE8A4", "name": "Category", "type": "attribute", "forms": [ { "id": "CCFBE2A5EADB4F50941FB879CCF1721C", "name": "DESC" } ] }, { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost", "type": "metric" } ] } ] }
+    { "id": "D29DC6464099A518DE19FEA4C25D346B", "name": "temp Dossier", "hasPrompt": false, "chapters": [ { "key": "K36", "name": "Chapter 1", "pages": [ { "key": "K53", "name": "Page 1", "visualizations": [ { "key": "K52", "name": "Visualization 1", "filteredTargetVisualizations": [ { "key": "W65" } ] }, { "key": "W62", "name": "Visualization 2" }, { "key": "W65", "name": "Visualization 3" } ], "inCanvasSelectors": [] } ], "filters": [ { "key": "W134", "name": "Cost", "summary": "((Cost Between 5707743.0 And 21191039.0))", "source": { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "type": 4 }, "synchronizedAcrossChapter":false, "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "expression": { "operator": "And", "operands": [ { "operator": "Between", "operands": [ { "type": "metric", "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost" }, { "type": "constant", "dataType": "Real", "value": "5707743" }, { "type": "constant", "dataType": "Real", "value": "21191039" } ] } ] }, "selections": [] }, { "key": "W138", "name": "Category", "summary": "Category In List Electronics", "source": { "id": "8D679D3711D3E4981000E787EC6DE8A4", "type": 12 }, "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "selections": [ { "id": "h2;8D679D3711D3E4981000E787EC6DE8A4", "name": "Electronics" } ] } ] } ], "datasets": [ { "name": "8DFA1ABC41C2F43530645FA90B80C745", "id": "New Dataset 1", "availableObjects": [ { "id": "8D679D3711D3E4981000E787EC6DE8A4", "name": "Category", "type": "attribute", "forms": [ { "id": "CCFBE2A5EADB4F50941FB879CCF1721C", "name": "DESC" } ] }, { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost", "type": "metric" } ] } ] }
     ```
 
     </details>
 
 - Filter definition:
+  - The examples below are independent selector object snippets from definition responses. Object names and IDs are illustrative and may differ across examples. Parameter selectors can share the same selectorType as non-parameter selectors:
+    - Element list parameter selectors use attribute_element_list, and object parameter selectors use object_replacement.
+    - Only value parameter selectors use value_parameter.
 
-  - Element list selector (in chapter-level, in canvas)
+  - Element list selector (in chapter-level, in canvas) or element list parameter selector (in chapter-level, in canvas)
 
     <details>
-    <summary>Output examples for an element list selector definition</summary>
+    <summary>Output examples for an element list (parameter) selector definition</summary>
 
     Common attribute element list:
 
@@ -84,6 +87,38 @@ This endpoint fetches a selector's definition and dataset information of a dashb
         "elements": []
       },
       "defaultDynamicSelection": { "status": "first_elements", "quantity": 1 }
+    }
+    ```
+
+    Common element list parameter:
+    
+    ```json
+    {
+      "key": "IGKD091F7A20147A4F1943537A36FDE1ED0",
+      "name": "Category Parameter",
+      "summary": "Category Parameter In List Books",
+      "source": {
+        "id": "8D679D3711D3E4981000E787EC6DE8A4",
+        "name": "Category",
+        "type": 12
+      },
+      "synchronizedAcrossChapter": true,
+      "selectorType": "attribute_element_list",
+      "displayStyle": "check_boxes",
+      "hasAllOption": true,
+      "targets": [],
+      "multiSelectionAllowed": true,
+      "selectionRequired": false,
+      "currentSelection": {
+        "selectionStatus": "included",
+        "allSelected": false,
+        "elements": [
+          {
+            "id": "h1;8D679D3711D3E4981000E787EC6DE8A4",
+            "name": "Books"
+          }
+        ]
+      }
     }
     ```
 
@@ -257,10 +292,40 @@ This endpoint fetches a selector's definition and dataset information of a dashb
 
     </details>
 
-  - Object replacement selector (in-canvas)
+  - Value parameter selector (in chapter-level, in canvas)
 
     <details>
-    <summary>Output example for an object replacement selector definition</summary>
+    <summary>Output example for a value parameter selector definition</summary>
+
+    ```json
+    {
+      "key": "WF4E8A712EF9942989C3FA03EDBE22769",
+      "name": "Cost Value Parameter",
+      "summary": "Cost Value Parameter In List NONE",
+      "synchronizedAcrossChapter": true,
+      "selectorType": "value_parameter",
+      "displayStyle": "text_box",
+      "hasAllOption": false,
+      "targets": [
+      ],
+      "multiSelectionAllowed": false,
+      "currentSelection": {
+          "selectionStatus": "included",
+          "values": [
+          ]
+      }
+    }
+    ```
+    
+    </details>
+
+
+  - Object replacement selector (in-canvas) or object parameter selector (in chapter-level, in canvas)
+
+    <details>
+    <summary>Output examples for an object replacement selector definition and an object parameter selector definition</summary>
+
+    Common object replacement selector:
 
     ```json
     {
@@ -295,6 +360,52 @@ This endpoint fetches a selector's definition and dataset information of a dashb
           "name": "Profit"
         }
       ]
+    }
+    ```
+
+    Common object parameter selector:
+
+    ```json  
+    {
+      "key": "WB255D7448AAE4A46BA68DA3E8EB9E51C",
+      "name": "Time Object Parameter",
+      "summary": "Time Object Parameter In List Year, Quarter",
+      "synchronizedAcrossChapter": true,
+      "selectorType": "object_replacement",
+      "displayStyle": "check_boxes",
+      "hasAllOption": false,
+      "targets": [
+      ],
+      "multiSelectionAllowed": true,
+      "currentSelection": {
+          "selectionStatus": "included",
+          "objectItems": [
+              {
+                  "id": "U0C2C22CB4183D69EC1791D9EEAA52772;0C2C22CB4183D69EC1791D9EEAA52772",
+                  "name": "Year"
+              },
+              {
+                  "id": "U550D8DC747552CA13A939C843798EE1F;550D8DC747552CA13A939C843798EE1F",
+                  "name": "Quarter"
+              }
+          ]
+      },
+      "availableObjectItems": [
+          {
+              "id": "U0C2C22CB4183D69EC1791D9EEAA52772;0C2C22CB4183D69EC1791D9EEAA52772",
+              "name": "Year"
+          },
+          {
+              "id": "U550D8DC747552CA13A939C843798EE1F;550D8DC747552CA13A939C843798EE1F",
+              "name": "Quarter"
+          },
+          {
+              "id": "U12811362465C929D0A27ED85E4F2ADD0;12811362465C929D0A27ED85E4F2ADD0",
+              "name": "Month"
+          }
+      ],
+      "parameterId": "6C812C1F62467971837A54B0B1397251",
+      "isParameterBased": true
     }
     ```
 
@@ -363,17 +474,20 @@ This endpoint fetches a selector's definition and dataset information from an ex
     <summary>Output example for a dashboard and dashboard instance definition</summary>
 
     ```json
-    { "id": "D29DC6464099A518DE19FEA4C25D346B", "name": "temp Dossier", "hasPrompt": false, "chapters": [ { "key": "K36", "name": "Chapter 1", "pages": [ { "key": "K53", "name": "Page 1", "visualizations": [ { "key": "K52", "name": "Visualization 1", "filteredTargetVisualizations": [ { "key": "W65" } ] }, { "key": "W62", "name": "Visualization 2" }, { "key": "W65", "name": "Visualization 3" } ], "inCanvasSelectors": [] } ], "filters": [ { "key": "W134", "name": "Cost", "summary": "((Cost Between 5707743.0 And 21191039.0))", "source": { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "type": 4 }, "synchronizedAcrossChapter":false "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "expression": { "operator": "And", "operands": [ { "operator": "Between", "operands": [ { "type": "metric", "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost" }, { "type": "constant", "dataType": "Real", "value": "5707743" }, { "type": "constant", "dataType": "Real", "value": "21191039" } ] } ] }, "selections": [] }, { "key": "W138", "name": "Category", "summary": "Category In List Electronics", "source": { "id": "8D679D3711D3E4981000E787EC6DE8A4", "type": 12 }, "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "selections": [ { "id": "h2;8D679D3711D3E4981000E787EC6DE8A4", "name": "Electronics" } ] } ] } ], "datasets": [ { "name": "8DFA1ABC41C2F43530645FA90B80C745", "id": "New Dataset 1", "availableObjects": [ { "id": "8D679D3711D3E4981000E787EC6DE8A4", "name": "Category", "type": "attribute", "forms": [ { "id": "CCFBE2A5EADB4F50941FB879CCF1721C", "name": "DESC" } ] }, { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost", "type": "metric" } ] } ] }
+    { "id": "D29DC6464099A518DE19FEA4C25D346B", "name": "temp Dossier", "hasPrompt": false, "chapters": [ { "key": "K36", "name": "Chapter 1", "pages": [ { "key": "K53", "name": "Page 1", "visualizations": [ { "key": "K52", "name": "Visualization 1", "filteredTargetVisualizations": [ { "key": "W65" } ] }, { "key": "W62", "name": "Visualization 2" }, { "key": "W65", "name": "Visualization 3" } ], "inCanvasSelectors": [] } ], "filters": [ { "key": "W134", "name": "Cost", "summary": "((Cost Between 5707743.0 And 21191039.0))", "source": { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "type": 4 }, "synchronizedAcrossChapter":false, "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "expression": { "operator": "And", "operands": [ { "operator": "Between", "operands": [ { "type": "metric", "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost" }, { "type": "constant", "dataType": "Real", "value": "5707743" }, { "type": "constant", "dataType": "Real", "value": "21191039" } ] } ] }, "selections": [] }, { "key": "W138", "name": "Category", "summary": "Category In List Electronics", "source": { "id": "8D679D3711D3E4981000E787EC6DE8A4", "type": 12 }, "unset": false, "include": true, "multiSelected": true, "hasAllOption": true, "selections": [ { "id": "h2;8D679D3711D3E4981000E787EC6DE8A4", "name": "Electronics" } ] } ] } ], "datasets": [ { "name": "8DFA1ABC41C2F43530645FA90B80C745", "id": "New Dataset 1", "availableObjects": [ { "id": "8D679D3711D3E4981000E787EC6DE8A4", "name": "Category", "type": "attribute", "forms": [ { "id": "CCFBE2A5EADB4F50941FB879CCF1721C", "name": "DESC" } ] }, { "id": "7FD5B69611D5AC76C000D98A4CC5F24F", "name": "Cost", "type": "metric" } ] } ] }
     ```
 
     </details>
 
 - Filter definition:
-
+  - The examples below are independent selector object snippets from definition responses. Object names and IDs are illustrative and may differ across examples. Parameter selectors can share the same selectorType as non-parameter selectors:
+    - Element list parameter selectors use attribute_element_list, and object parameter selectors use object_replacement.
+    - Only value parameter selectors use value_parameter.
+ 
   - Element list selector (in chapter-level, in canvas)
 
     <details>
-    <summary>Output examples for an element list selector definition</summary>
+    <summary>Output examples for an element list (parameter) selector definition</summary>
 
     Common attribute element list:
 
@@ -431,6 +545,39 @@ This endpoint fetches a selector's definition and dataset information from an ex
       "defaultDynamicSelection": { "status": "first_elements", "quantity": 1 }
     }
     ```
+
+    Common element list parameter:
+
+    ```json
+    {
+      "key": "IGKD091F7A20147A4F1943537A36FDE1ED0",
+      "name": "Category Parameter",
+      "summary": "Category Parameter In List Books",
+      "source": {
+          "id": "8D679D3711D3E4981000E787EC6DE8A4",
+          "name": "Category",
+          "type": 12
+      },
+      "synchronizedAcrossChapter": true,
+      "selectorType": "attribute_element_list",
+      "displayStyle": "check_boxes",
+      "hasAllOption": true,
+      "targets": [
+      ],
+      "multiSelectionAllowed": true,
+      "selectionRequired": false,
+      "currentSelection": {
+          "selectionStatus": "included",
+          "allSelected": false,
+          "elements": [
+              {
+                  "id": "h1;8D679D3711D3E4981000E787EC6DE8A4",
+                  "name": "Books"
+              }
+          ]
+      }
+    }
+    ```           
 
     </details>
 
@@ -602,10 +749,38 @@ This endpoint fetches a selector's definition and dataset information from an ex
 
     </details>
 
-  - Object replacement selector (in-canvas)
+  - Value parameter selector (in chapter-level, in canvas)
 
     <details>
-    <summary>Output example for an object replacement selector definition</summary>
+    <summary>Output example for a value parameter selector definition</summary>
+    ```json
+    {
+      "key": "WF4E8A712EF9942989C3FA03EDBE22769",
+      "name": "Cost Value Parameter",
+      "summary": "Cost Value Parameter In List NONE",
+      "synchronizedAcrossChapter": true,
+      "selectorType": "value_parameter",
+      "displayStyle": "text_box",
+      "hasAllOption": false,
+      "targets": [
+      ],
+      "multiSelectionAllowed": false,
+      "currentSelection": {
+          "selectionStatus": "included",
+          "values": [
+          ]
+      }
+    }
+    ```
+
+    </details>
+
+  - Object replacement selector (in-canvas) or object parameter selector (in chapter-level, in canvas)
+
+    <details>
+    <summary>Output examples for an object replacement selector definition and an object parameter selector definition</summary>
+
+    Common object replacement selector:
 
     ```json
     {
@@ -640,6 +815,51 @@ This endpoint fetches a selector's definition and dataset information from an ex
           "name": "Profit"
         }
       ]
+    }
+    ```
+    Common object parameter selector:
+
+    ```json
+    {
+      "key": "WB255D7448AAE4A46BA68DA3E8EB9E51C",
+      "name": "Time Object Parameter",
+      "summary": "Time Object Parameter In List Year, Quarter",
+      "synchronizedAcrossChapter": true,
+      "selectorType": "object_replacement",
+      "displayStyle": "check_boxes",
+      "hasAllOption": false,
+      "targets": [
+      ],
+      "multiSelectionAllowed": true,
+      "currentSelection": {
+          "selectionStatus": "included",
+          "objectItems": [
+              {
+                  "id": "U0C2C22CB4183D69EC1791D9EEAA52772;0C2C22CB4183D69EC1791D9EEAA52772",
+                  "name": "Year"
+              },
+              {
+                  "id": "U550D8DC747552CA13A939C843798EE1F;550D8DC747552CA13A939C843798EE1F",
+                  "name": "Quarter"
+              }
+          ]
+      },
+      "availableObjectItems": [
+          {
+              "id": "U0C2C22CB4183D69EC1791D9EEAA52772;0C2C22CB4183D69EC1791D9EEAA52772",
+              "name": "Year"
+          },
+          {
+              "id": "U550D8DC747552CA13A939C843798EE1F;550D8DC747552CA13A939C843798EE1F",
+              "name": "Quarter"
+          },
+          {
+              "id": "U12811362465C929D0A27ED85E4F2ADD0;12811362465C929D0A27ED85E4F2ADD0",
+              "name": "Month"
+          }
+      ],
+      "parameterId": "6C812C1F62467971837A54B0B1397251",
+      "isParameterBased": true
     }
     ```
 
