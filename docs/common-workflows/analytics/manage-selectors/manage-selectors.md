@@ -81,6 +81,7 @@ For Library versions on and after MicroStrategy 2021 Update 1, the behavior chan
 ### Compatibility on and after MicroStrategy 2021 Update 12
 
 For Library and Intelligence Server versions on and after MicroStrategy 2021 Update 12, both the GET Filter API and the Setting Filter API are extended to support parameter selectors in addition to the existing selector types.
+
 - The following parameter selector types are supported:
   - Element list parameter selector
   - Object parameter selector
