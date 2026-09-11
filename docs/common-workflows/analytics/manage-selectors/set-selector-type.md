@@ -9,11 +9,10 @@ You can set the different types of selector using the following requests.
 
 This endpoint is used to execute a dashboard with specific filtering criteria applied in the current chapter. You can set the following selector types:
 
-- Element list selector or element list parameter selector (in chapter-level, in canvas)
+- Element list selector (in chapter-level, in canvas)
 - Attribute qualification selector (in chapter-level, in canvas)
 - Metric qualification selector (in chapter-level, in canvas)
-- Value parameter selector (in chapter-level, in canvas)
-- Object replacement selector (in canvas) or object parameter selector (in chapter-level, in canvas)
+- Object replacement selector (in canvas)
 - Visualization as filter
 
 You can also perform the following:
@@ -32,7 +31,7 @@ You can also perform the following:
 
 Sample Input Body:
 
-- Element list selector or element list parameter selector:
+- Element list selector:
 
   ```json
   {
@@ -120,19 +119,7 @@ Sample Input Body:
   }
   ```
 
-- Value parameter selector:
-
-  ```json
-  {
-    "key": "WF4E8A712EF9942989C3FA03EDBE22769",
-    "currentSelection": {
-      "selectionStatus": "included",
-      "values": ["1000"]
-    }
-  }
-  ```
-
-- Object replacement selector or object parameter selector:
+- Object replacement selector:
 
   ```json
   {
@@ -219,11 +206,10 @@ Sample Response Body:
 
 This endpoint is used to execute a dashboard with specific filtering criteria applied in the current chapter. You can set the following selector types:
 
-- Element list selector or element list parameter selector (in chapter-level, in canvas)
+- Element list selector (in chapter-level, in canvas)
 - Attribute qualification selector (in chapter-level, in canvas)
 - Metric qualification selector (in chapter-level, in canvas)
-- Value parameter selector (in chapter-level, in canvas)
-- Object replacement selector (in canvas) or object parameter selector (in chapter-level, in canvas)
+- Object replacement selector (in canvas)
 - Visualization as filter
 
 You can also perform the following:
@@ -330,19 +316,7 @@ Sample Input Body:
   }
   ```
 
-- Value parameter selector:
-
-  ```json
-  {
-    "key": "WF4E8A712EF9942989C3FA03EDBE22769",
-    "currentSelection": {
-      "selectionStatus": "included",
-      "values": ["1000"]
-    }
-  }
-  ```
-
-- Object replacement selector or object parameter selector:
+- Object replacement selector:
 
   ```json
   {
@@ -418,7 +392,7 @@ Response Code: 204 (no content)
 
 ## API: [GET /api/dossiers/\{dossierId}/instances/\{instanceId}/elements](https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html#/Dossiers%20and%20Documents/getDossierDatasetFilterElements)
 
-This endpoint is used to fetch available elements for an element list selector or an element list parameter selector.
+This endpoint is used to fetch available elements for the element list selector.
 
 ### Functionality
 

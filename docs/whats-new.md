@@ -4,10 +4,6 @@ sidebar_label: What's new
 Description: What's New in the REST API.
 ---
 
-## Strategy (September 2026)
-
-- [Apply Parameters to a Data Model Instance](common-workflows/mosaic/retrieve-data-from-data-models/apply-parameters-to-a-data-model-instance.md)
-
 ## Strategy (May 2026)
 
 - [Save a Data Model as a New Data Model](common-workflows/mosaic/manage-data-models/save-a-data-model-as-a-new-data-model.md)
@@ -129,10 +125,6 @@ Description: What's New in the REST API.
 - Rename 'dossier' into 'dashboard'.
 - [Bot APIs](common-workflows/analytics/use-bot-api/use-bot-api.md)
 - Support [FFSQL cube](common-workflows/analytics/manage-datasets/manage-cube-objects/manage-cube-objects.md) and [FFSQL IRR](common-workflows/analytics/manage-reports/manage-incremental-refresh-report/manage-incremental-refresh-report.md).
-
-## 2021 Update 12
-
-- Support parameter selectors in [Manage selectors](common-workflows/analytics/manage-selectors/manage-selectors.md), [Retrieve a selector's definition](common-workflows/analytics/manage-selectors/retrieve-a-selectors-definition.md), and [Set selector type](common-workflows/analytics/manage-selectors/set-selector-type.md), including element list parameter selectors, object parameter selectors, and value parameter selectors.
 
 ## 2021 Update 11
 

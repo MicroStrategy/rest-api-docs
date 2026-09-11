@@ -16,5 +16,4 @@ Learn more about Strategy REST API Playground [here](/docs/getting-started/playg
 Data model is a special kind of cube. You can use some cube APIs to interact with data models. The following workflows demonstrate how to retrieve data from data models using cube APIs.
 
 - [Retrieve Data through Cube Instance](retrieve-data-through-cube-instance.md)
-- [Apply Parameters to a Data Model Instance](apply-parameters-to-a-data-model-instance.md)
 - [Retrieve Data Model SQL View](retrieve-data-model-sql-view.md)
