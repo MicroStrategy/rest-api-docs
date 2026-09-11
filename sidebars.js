@@ -1269,7 +1269,6 @@ const sidebars = {
               },
               items: [
                 "common-workflows/mosaic/retrieve-data-from-data-models/retrieve-data-through-cube-instance",
-                "common-workflows/mosaic/retrieve-data-from-data-models/apply-parameters-to-a-data-model-instance",
                 "common-workflows/mosaic/retrieve-data-from-data-models/retrieve-data-model-sql-view",
               ],
             },
