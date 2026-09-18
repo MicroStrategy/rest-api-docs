@@ -5,13 +5,17 @@ description: The Strategy RESTful server supports different types of selectors, 
 
 The Strategy RESTful server supports different types of selectors, similar to the function in Library Web.
 
-The following five selector types are supported:
+The following selector types are supported (depending on the product version):
 
 - Attribute qualification selector
 - Attribute element list selector
 - Metric qualification selector
 - Object replacement selector
 - Visualization as filter
+- Parameter selector (MicroStrategy 2021 Update 12 or later)
+  - Element list parameter selector
+  - Object parameter selector
+  - Value parameter selector
 
 You can use the following APIs to set the different types of selectors and view selector definitions:
 
@@ -36,7 +40,7 @@ The following section outlines a summary of the compatibility.
 
 ### Compatibility prior to MicroStrategy 2021 Update 1
 
-For library versions prior to MicroStrategy 2021 Update 1:
+For Library versions prior to MicroStrategy 2021 Update 1:
 
 - The behavior remains the same for all Intelligence Server versions.
 - The expected behavior for the GET Filter API is that the fetched filter definition json returns the chapter-level selector key, name, and summary.
@@ -46,10 +50,10 @@ For library versions prior to MicroStrategy 2021 Update 1:
 
 ### Compatibility on and after MicroStrategy 2021 Update 1
 
-For library versions on and after MicroStrategy 2021 Update 1, the behavior changes based on the Intelligence Server version.
+For Library versions on and after MicroStrategy 2021 Update 1, the behavior changes based on the Intelligence Server version.
 
 - For Intelligence Server versions prior to MicroStrategy 2021 Update 1
-  - The expected behavior for the GET filter API is that the fetched filter definition json is missing information for visualization as filter and dataset name for dataset. Returns the definition of the following selector types:
+  - The expected behavior for the GET Filter API is that the fetched filter definition json is missing information for visualization as filter and dataset name for dataset. Returns the definition of the following selector types:
     - Attribute element list selector
     - Attribute qualification selector
     - Metric qualification selector
@@ -61,7 +65,7 @@ For library versions on and after MicroStrategy 2021 Update 1, the behavior chan
     - Object replacement selector(Attribute/metric selector)
     - Visualization as filter
 - For Intelligence Server versions on and after MicroStrategy 2021 Update 1
-  - The expected behavior for the GET filter API is that the fetched filter definition json is complete and returns the definition of the following selector types:
+  - The expected behavior for the GET Filter API is that the fetched filter definition json is complete and returns the definition of the following selector types:
     - Attribute element list selector
     - Attribute qualification selector
     - Metric qualification selector
@@ -73,6 +77,15 @@ For library versions on and after MicroStrategy 2021 Update 1, the behavior chan
     - Metric qualification selector
     - Object replacement selector(Attribute/metric selector)
     - Visualization as filter
+
+### Compatibility on and after MicroStrategy 2021 Update 12
+
+For Library and Intelligence Server versions on and after MicroStrategy 2021 Update 12, both the GET Filter API and the Setting Filter API are extended to support parameter selectors in addition to the existing selector types.
+
+- The following parameter selector types are supported:
+  - Element list parameter selector
+  - Object parameter selector
+  - Value parameter selector
 
 ## How to use selector consumption APIs
 
