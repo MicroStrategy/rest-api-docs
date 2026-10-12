@@ -1233,6 +1233,22 @@ const sidebars = {
             },
             {
               type: "category",
+              label: "Manage data model parameters",
+              link: {
+                type: "doc",
+                id: "common-workflows/mosaic/manage-data-model-parameters/manage-data-model-parameters",
+              },
+              items: [
+                "common-workflows/mosaic/manage-data-model-parameters/retrieve-data-model-parameters",
+                "common-workflows/mosaic/manage-data-model-parameters/create-a-data-model-parameter",
+                "common-workflows/mosaic/manage-data-model-parameters/retrieve-a-data-model-parameter",
+                "common-workflows/mosaic/manage-data-model-parameters/update-a-data-model-parameter",
+                "common-workflows/mosaic/manage-data-model-parameters/delete-a-data-model-parameter",
+                "common-workflows/mosaic/manage-data-model-parameters/retrieve-data-model-parameter-translations",
+              ],
+            },
+            {
+              type: "category",
               label: "Manage data model security filters",
               link: {
                 type: "doc",

@@ -7,6 +7,7 @@ Description: What's New in the REST API.
 ## Strategy (September 2026)
 
 - [Apply Parameters to a Data Model Instance](common-workflows/mosaic/retrieve-data-from-data-models/apply-parameters-to-a-data-model-instance.md)
+- [Manage Data Model Parameters](common-workflows/mosaic/manage-data-model-parameters/manage-data-model-parameters.md)
 
 ## Strategy (May 2026)
 
