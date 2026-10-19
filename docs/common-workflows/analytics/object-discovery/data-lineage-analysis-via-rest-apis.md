@@ -44,13 +44,13 @@ You need to use the metadata search API to get the indirect and direct component
    Curl:
 
    ```bash
-   curl -X POST "https://demo.microstrategy/MicroStrategyLibrary/api/metadataSearches/results?domain=2&amp;usedByObject=B7CA92F04B9FAE8D941C3E9B70CD754%3B32&amp;usedByRecursive=false" -H "accept: application/json" -H "X-MSTR-AuthToken: 14bu7siu403m9qr9987ejofill" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
+   curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/metadataSearches/results?domain=2&amp;usedByObject=B7CA92F04B9FAE8D941C3E9B70CD754%3B32&amp;usedByRecursive=false" -H "accept: application/json" -H "X-MSTR-AuthToken: 14bu7siu403m9qr9987ejofill" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
    ```
 
    Request URL:
 
    ```url
-   https://demo.microstrategy/MicroStrategyLibrary/api/metadataSearches/results?domain=2&usedByObject=B7CA92F04B9FAE8D941C3E9B7E0CD754%3B32&usedByRecursive=false
+   https://demo.microstrategy.com/MicroStrategyLibrary/api/metadataSearches/results?domain=2&usedByObject=B7CA92F04B9FAE8D941C3E9B7E0CD754%3B32&usedByRecursive=false
    ```
 
 1. Use `GET /api/metadataSearches/results` to get the search results. Get the search results previously stored in an instance in the Intelligence Server memory and display them in a list.
@@ -71,13 +71,13 @@ You need to use the metadata search API to get the indirect and direct dependent
    Curl:
 
    ```bash
-   curl -X POST "https://demo.microstrategy/MicroStrategyLibrary/api/metadataSearches/results?domain=2&amp;usesObject=B7CA92F04B9FAE8D941C3E9B70CD754%3B32&amp;usesRecursive=false" -H "accept: application/json" -H "X-MSTR-AuthToken: 14bu7siu403m9qr9987ejofill" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
+   curl -X POST "https://demo.microstrategy.com/MicroStrategyLibrary/api/metadataSearches/results?domain=2&amp;usesObject=B7CA92F04B9FAE8D941C3E9B70CD754%3B32&amp;usesRecursive=false" -H "accept: application/json" -H "X-MSTR-AuthToken: 14bu7siu403m9qr9987ejofill" -H "X-MSTR-ProjectID: B7CA92F04B9FAE8D941C3E9B7E0CD754"
    ```
 
    Request URL:
 
    ```url
-   https://demo.microstrategy/MicroStrategyLibrary/api/metadataSearches/results?domain=2 usesObject=B7CA92F04B9FAE8D941C3E9B7E0CD754%3B32&usesRecursive=false
+   https://demo.microstrategy.com/MicroStrategyLibrary/api/metadataSearches/results?domain=2&usesObject=B7CA92F04B9FAE8D941C3E9B7E0CD754%3B32&usesRecursive=false
    ```
 
 1. Get the search results by using `GET /api/metadataSearches/results`. Get the search results previously stored in an instance in the Intelligence Server memory and display them in a list.
